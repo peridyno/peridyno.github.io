@@ -1,21 +1,21 @@
 [
 {
-	"uri": "/zh/overview/",
+	"uri": "https://peridyno.github.io/zh/overview/",
 	"title": "概要",
 	"tags": [],
 	"description": "Peridyno概述。
 ",
-	"content": "PeriDyno是什么 PeriDyno是一个基于物理的交互式运动学架构。 它基于开源节点的架构，旨在实时模拟不同的物理材料。目前，它支持模拟流体、弹性物体和断裂等物理现象，具有高度模块化可以帮助研究界开发新的算法。\nPeriDyno特性 PeriDyno具有以下特性，可以有效地模拟复杂的物理场景：\n  模板编程：Peridyno以模板的形式支持广泛的常用数据结构；\n  高度模块化：整体从上到下模块化，因此可以通过扩展现有组件轻松获得自定义行为；\n  复杂耦合：支持多种不同物理材料的耦合；\n  高性能：架构经过高度优化以提高执行性能。\n  如何进一步学习PeriDyno 为您的用户提供概览中的后续步骤。 例如：\n 安装指引: Peridyno入门教程 引擎框架：对PeriDyno引擎的框架介绍 仿真案例：查看一些示例代码！  "
+	"content": "PeriDyno是什么 PeriDyno是一个基于物理的交互式运动学架构。 它基于开源节点的架构，旨在实时模拟不同的物理材料。目前，它支持模拟流体、弹性物体和断裂等物理现象，具有高度模块化可以帮助研究界开发新的算法。\nPeriDyno特性 PeriDyno具有以下特性，可以有效地模拟复杂的物理场景：\n  模板编程：Peridyno以模板的形式支持广泛的常用数据结构；\n  高度模块化：整体从上到下模块化，因此可以通过扩展现有组件轻松获得自定义行为；\n  复杂耦合：支持多种不同物理材料的耦合；\n  高性能：架构经过高度优化以提高执行性能。\n  如何进一步学习PeriDyno 为您的用户提供概览中的后续步骤。 例如：\n 安装指引: Peridyno入门教程 引擎框架：对PeriDyno引擎的框架介绍 仿真案例：查看一些示例代码  "
 },
 {
-	"uri": "/zh/framework/scenegraph/",
+	"uri": "https://peridyno.github.io/zh/framework/scenegraph/",
 	"title": "场景图",
 	"tags": [],
 	"description": "",
 	"content": "场景图主要包含节点管理、节点运行逻辑管理两部分功能。\n1、节点管理 节点管理功能包括：\n 添加节点  template\u0026lt;class TNode, class ...Args\u0026gt; std::shared_ptr\u0026lt;TNode\u0026gt; addNode(Args\u0026amp;\u0026amp; ... args) template\u0026lt;class TNode\u0026gt; std::shared_ptr\u0026lt;TNode\u0026gt; addNode(std::shared_ptr\u0026lt;TNode\u0026gt; tNode) 其中TNode表示节点（Node）的派生类型，Args则对应节点构造过程所需要的参数\n 删除节点  void deleteNode(std::shared_ptr\u0026lt;Node\u0026gt; node); 2、节点运行逻辑管理   更新运行队列   void updateExecutionQueue(); 更新的时机主要依赖于场景图中的节点以及连接关系是否发生变动，一旦任意一项发生改变，场景的节点执行队列会在下次执行节点功能的时候优先更新运行队列。\n 更新节点状态  void propagateNode(std::shared_ptr\u0026lt;Node\u0026gt; node); 当某个特定节点的运行状态发生改变，如改节点的配置参数发生改变，场景图可以通过调用propagateNode()函数对后续所有依赖该节点的节点的状态进行更新。\n3、功能拓展 待补充\u0026hellip;\n"
 },
 {
-	"uri": "/zh/installation/",
+	"uri": "https://peridyno.github.io/zh/installation/",
 	"title": "安装指引",
 	"tags": [],
 	"description": "Peridyno安装教程.
@@ -23,14 +23,14 @@
 	"content": "接下来介绍如何在Windows平台安装Peridyno。\n安装平台   Windows 10: 完全能运行；\n  Linux: 应该也可以，但不能保证。\n  依赖 IDE:\n Visual studio 2017+  CUDA:\n CUDA Toolkit 11.4（应该兼容其他旧版本）  图形库:\n glad: https://github.com/Dav1dde/glad.git glfw: https://github.com/glfw/glfw imgui: https://github.com/ocornut/imgui  可选择的库:\n Qt: https://download.qt.io/ VTK: https://github.com/Kitware/VTK Alembic: https://github.com/alembic/alembic Imath: https://github.com/AcademySoftwareFoundation/Imath  安装 除了上述可选的库，其他库都可以在项目中简化安装。使用 git 命令克隆项目及子模块。\ngit clone --recursive https://github.com/peridyno/peridyno.git\r编译项目 检查您的系统是否安装了 CMake，如果没有，请点击 Cmake下载 下载最新版本。\n运行 运行cmake-gui.exe，设置为源代码目录和生成二进制文件目录；\nConfigure 构建的库；\nGenerate 构建项目。\n使用默认设置构建项目的更为简便的方法如下：\ncd peridyo/build cmake ..\rExamples 协议 Peridyno 的默认许可是 Apache 2.0（参见 许可）。\n外部库是根据自己的条款协议分发。\n"
 },
 {
-	"uri": "/zh/framework/nodes/",
+	"uri": "https://peridyno.github.io/zh/framework/nodes/",
 	"title": "节点",
 	"tags": [],
 	"description": "",
-	"content": "1、功能简介 节点为功能相对独立的、封装了特定功能模块的算法集合，其主要由输入节点、输入数据、输出节点、输出数据、状态变量以及功能模块构成。\n2、如何实现一个自定义功能节点 创建一个完整的节点包含如下步骤：\n  定义输入节点（可选）\nDEF_NODE_PORT(T, name, desc)\r该宏定义定义单一节点输入，其中T代表节点类型，name表示名称，desc表示输入节点描述信息。\nDEF_NODE_PORTS(T, name, desc)\r该宏定义可定义输入节点数组，其可接入0到任意数量类型为T的节点作为输入。\n  定义输入数据（可选）\nDEF_VAR_IN(T, name, desc)\r定义输入类型为T、名称为name的单一数据类型作为输入。\nDEF_ARRAY_IN(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维数组作为输入。\nDEF_ARRAY2D_IN(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的二维数组作为输入。\nDEF_ARRAY3D_IN(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的三维数组作为输入。\nDEF_INSTANCE_IN(T, name, desc)\r定义输入类型为T、名称为name的实例作为输入。\nDEF_ARRAYLIST_IN(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维动态列表数组作为输入。\n  定义输出数据（可选）\nDEF_VAR_OUT(T, name, desc)\r定义输入类型为T、名称为name的单一数据类型作为输出。\nDEF_ARRAY_OUT(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维数组作为输出。\nDEF_ARRAY2D_OUT(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的二维数组作为输出。\nDEF_ARRAY3D_OUT(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的三维数组作为输出。\nDEF_INSTANCE_OUT(T, name, desc)\r定义输入类型为T、名称为name的实例作为输出。\nDEF_ARRAYLIST_OUT(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维动态列表数组作为输出。\n  定义状态变量\nDEF_VAR(T, name, value, desc)\r定义类型为T、名称为name、初值类型为value的单一数据类型作为状态变量。\nDEF_ARRAY_STATE(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维数组作为状态变量。\nDEF_ARRAY2D_STATE(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的二维数组作为状态变量。\nDEF_ARRAY3D_STATE(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的三维数组作为状态变量。\nDEF_INSTANCE_STATE(T, name, desc)\r定义输入类型为T、名称为name的实例作为状态变量。\nDEF_ARRAYLIST_STATE(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维动态列表数组作为状态变量。\n  创建功能模块\n以RigidBodySystem为例，其构造函数中创建的功能模块如下：\n//创建自碰撞检测模块 auto elementQuery = std::make_shared\u0026lt;NeighborElementQuery\u0026lt;TDataType\u0026gt;\u0026gt;(); this-\u0026gt;currentTopology()-\u0026gt;connect(elementQuery-\u0026gt;inDiscreteElements()); this-\u0026gt;stateCollisionMask()-\u0026gt;connect(elementQuery-\u0026gt;inCollisionMask()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(elementQuery); //创建边界包围盒碰撞检测功能模块 auto cdBV = std::make_shared\u0026lt;CollistionDetectionBoundingBox\u0026lt;TDataType\u0026gt;\u0026gt;(); this-\u0026gt;currentTopology()-\u0026gt;connect(cdBV-\u0026gt;inDiscreteElements()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(cdBV); //创建合并触点功能模块 auto merge = std::make_shared\u0026lt;ContactsUnion\u0026lt;TDataType\u0026gt;\u0026gt;(); elementQuery-\u0026gt;outContacts()-\u0026gt;connect(merge-\u0026gt;inContactsA()); cdBV-\u0026gt;outContacts()-\u0026gt;connect(merge-\u0026gt;inContactsB()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(merge); //创建刚体动力学求解模块 auto iterSolver = std::make_shared\u0026lt;IterativeConstraintSolver\u0026lt;TDataType\u0026gt;\u0026gt;(); this-\u0026gt;varTimeStep()-\u0026gt;connect(iterSolver-\u0026gt;inTimeStep()); this-\u0026gt;varFrictionEnabled()-\u0026gt;connect(iterSolver-\u0026gt;varFrictionEnabled()); this-\u0026gt;stateMass()-\u0026gt;connect(iterSolver-\u0026gt;inMass()); this-\u0026gt;stateCenter()-\u0026gt;connect(iterSolver-\u0026gt;inCenter()); this-\u0026gt;stateVelocity()-\u0026gt;connect(iterSolver-\u0026gt;inVelocity()); this-\u0026gt;stateAngularVelocity()-\u0026gt;connect(iterSolver-\u0026gt;inAngularVelocity()); this-\u0026gt;stateRotationMatrix()-\u0026gt;connect(iterSolver-\u0026gt;inRotationMatrix()); this-\u0026gt;stateInertia()-\u0026gt;connect(iterSolver-\u0026gt;inInertia()); this-\u0026gt;stateQuaternion()-\u0026gt;connect(iterSolver-\u0026gt;inQuaternion()); this-\u0026gt;stateInitialInertia()-\u0026gt;connect(iterSolver-\u0026gt;inInitialInertia()); merge-\u0026gt;outContacts()-\u0026gt;connect(iterSolver-\u0026gt;inContacts()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(iterSolver);   重载虚函数\nvirtual void preUpdateStates(); 状态更新前处理函数\nvirtual void updateStates(); 状态更新函数，默认为调用pipeline执行默认算法流程\nvirtual void postUpdateStates(); 状态更新后处理函数\n  "
+	"content": "1、功能简介 节点为功能相对独立的、封装了特定功能模块的算法集合，其主要由输入节点、输入数据、输出节点、输出数据、状态变量以及功能模块构成。\n2、如何实现一个自定义功能节点 创建一个完整的节点包含如下步骤：\n  定义输入节点（可选）\nDEF_NODE_PORT(T, name, desc)\r该宏定义定义单一节点输入，其中T代表节点类型，name表示名称，desc表示输入节点描述信息，访问方式为import+数据名称。\nDEF_NODE_PORTS(T, name, desc)\r该宏定义可定义输入节点数组，其可接入0到任意数量类型为T的节点作为输入，访问方式为import+数据名称+s。\n  定义输入数据（可选）\nDEF_VAR_IN(T, name, desc)\r定义输入类型为T、名称为name的单一数据类型作为输入。\nDEF_ARRAY_IN(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维数组作为输入。\nDEF_ARRAY2D_IN(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的二维数组作为输入。\nDEF_ARRAY3D_IN(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的三维数组作为输入。\nDEF_INSTANCE_IN(T, name, desc)\r定义输入类型为T、名称为name的实例作为输入。\nDEF_ARRAYLIST_IN(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维动态列表数组作为输入。\n  定义输出数据（可选）\nDEF_VAR_OUT(T, name, desc)\r定义输入类型为T、名称为name的单一数据类型作为输出。\nDEF_ARRAY_OUT(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维数组作为输出。\nDEF_ARRAY2D_OUT(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的二维数组作为输出。\nDEF_ARRAY3D_OUT(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的三维数组作为输出。\nDEF_INSTANCE_OUT(T, name, desc)\r定义输入类型为T、名称为name的实例作为输出。\nDEF_ARRAYLIST_OUT(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维动态列表数组作为输出。\n  定义状态变量\nDEF_VAR(T, name, value, desc)\r定义类型为T、名称为name、初值类型为value的单一数据类型作为状态变量。\nDEF_ARRAY_STATE(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维数组作为状态变量。\nDEF_ARRAY2D_STATE(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的二维数组作为状态变量。\nDEF_ARRAY3D_STATE(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的三维数组作为状态变量。\nDEF_INSTANCE_STATE(T, name, desc)\r定义输入类型为T、名称为name的实例作为状态变量。\nDEF_ARRAYLIST_STATE(T, name, device, desc)\r在device（CPU/GPU）设备上定义类型为T、名称为name的一维动态列表数组作为状态变量。\n  创建功能模块\n以RigidBodySystem为例，其构造函数中创建的功能模块如下：\n//创建自碰撞检测模块 auto elementQuery = std::make_shared\u0026lt;NeighborElementQuery\u0026lt;TDataType\u0026gt;\u0026gt;(); this-\u0026gt;currentTopology()-\u0026gt;connect(elementQuery-\u0026gt;inDiscreteElements()); this-\u0026gt;stateCollisionMask()-\u0026gt;connect(elementQuery-\u0026gt;inCollisionMask()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(elementQuery); //创建边界包围盒碰撞检测功能模块 auto cdBV = std::make_shared\u0026lt;CollistionDetectionBoundingBox\u0026lt;TDataType\u0026gt;\u0026gt;(); this-\u0026gt;currentTopology()-\u0026gt;connect(cdBV-\u0026gt;inDiscreteElements()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(cdBV); //创建合并触点功能模块 auto merge = std::make_shared\u0026lt;ContactsUnion\u0026lt;TDataType\u0026gt;\u0026gt;(); elementQuery-\u0026gt;outContacts()-\u0026gt;connect(merge-\u0026gt;inContactsA()); cdBV-\u0026gt;outContacts()-\u0026gt;connect(merge-\u0026gt;inContactsB()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(merge); //创建刚体动力学求解模块 auto iterSolver = std::make_shared\u0026lt;IterativeConstraintSolver\u0026lt;TDataType\u0026gt;\u0026gt;(); this-\u0026gt;varTimeStep()-\u0026gt;connect(iterSolver-\u0026gt;inTimeStep()); this-\u0026gt;varFrictionEnabled()-\u0026gt;connect(iterSolver-\u0026gt;varFrictionEnabled()); this-\u0026gt;stateMass()-\u0026gt;connect(iterSolver-\u0026gt;inMass()); this-\u0026gt;stateCenter()-\u0026gt;connect(iterSolver-\u0026gt;inCenter()); this-\u0026gt;stateVelocity()-\u0026gt;connect(iterSolver-\u0026gt;inVelocity()); this-\u0026gt;stateAngularVelocity()-\u0026gt;connect(iterSolver-\u0026gt;inAngularVelocity()); this-\u0026gt;stateRotationMatrix()-\u0026gt;connect(iterSolver-\u0026gt;inRotationMatrix()); this-\u0026gt;stateInertia()-\u0026gt;connect(iterSolver-\u0026gt;inInertia()); this-\u0026gt;stateQuaternion()-\u0026gt;connect(iterSolver-\u0026gt;inQuaternion()); this-\u0026gt;stateInitialInertia()-\u0026gt;connect(iterSolver-\u0026gt;inInitialInertia()); merge-\u0026gt;outContacts()-\u0026gt;connect(iterSolver-\u0026gt;inContacts()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(iterSolver);   重载虚函数\nvirtual void preUpdateStates(); 状态更新前处理函数\nvirtual void updateStates(); 状态更新函数，默认为调用pipeline执行默认算法流程\nvirtual void postUpdateStates(); 状态更新后处理函数\n  "
 },
 {
-	"uri": "/zh/framework/",
+	"uri": "https://peridyno.github.io/zh/framework/",
 	"title": "引擎架构",
 	"tags": [],
 	"description": "PeriDyno 框架细节介绍。
@@ -38,14 +38,14 @@
 	"content": "1、场景示意图 泛动引擎通过场景图（Scene Graph）对包括节点（Field）、模块（Module）以及数据（Field）在内的全要素进行统一管理。 如下图展示了一个包含四个仿真节点的场景图：\n2、如何创建场景 接下来流体仿真案例为例展示如何基于泛动引擎创建一个完整的演示demo，完整流程包含如下四个步骤：\n  创建场景图\nstd::shared_ptr\u0026lt;SceneGraph\u0026gt; scn = std::make_shared\u0026lt;SceneGraph\u0026gt;();   添加仿真节点\n//添加流体仿真节点 auto fluid = scn-\u0026gt;addNode(std::make_shared\u0026lt;ParticleFluid\u0026lt;DataType3f\u0026gt;\u0026gt;()); fluid-\u0026gt;loadParticles(Vec3f(0.5, 0.2, 0.4), Vec3f(0.7, 1.5, 0.6), 0.005); //添加边界节点 auto boundary = scn-\u0026gt;addNode(std::make_shared\u0026lt;StaticBoundary\u0026lt;DataType3f\u0026gt;\u0026gt;()); boundary-\u0026gt;loadSDF(getAssetPath() + \u0026#34;bowl/bowl.sdf\u0026#34;, false); //添加粒子可视化节点 auto visualizer = scn-\u0026gt;addNode(std::make_shared\u0026lt;GLPointVisualNode\u0026lt;DataType3f\u0026gt;\u0026gt;());   设置节点数据连接关系\n//流体节点--\u0026gt;边界约束节点 fluid-\u0026gt;connect(boundary-\u0026gt;importParticleSystems()); //流体节点--\u0026gt;可视化节点 fluid-\u0026gt;connect(visualizer-\u0026gt;importParticleSystem());   创建应用界面，PeriDyno目前同时支持GLFW和QT两套应用界面，以GLFW为例，其算法流程如下\nGlfwApp window; //设置仿真场景 window.setSceneGraph(scn); //创建应用界面 window.createWindow(1024, 768); window.mainLoop();  当前版本要求createWindow()函数边界必须在setSceneGraph()和setRenderEngine()两个函数调用之后进行，如不显式设置渲染引擎，则默认采用内置基于OpenGL实现的GLRenderEngine来完成。\n 效果示意图如下：\n  类似的，如果将应用界面\nQtApp window;\r//设置仿真场景\rwindow.setSceneGraph(scn);\r//创建应用界面\rwindow.createWindow(1024, 768);\rwindow.mainLoop();\r对应的效果图下，做的节点编辑器展示了所有的功能节点以及节点之间的链接 关系，通过连接/断开对应的连线可以改变仿真场景图的节点执行顺序。\n完整示例代码参见examples/GL_ParticleFluid和examples/Qt_GLVisualModule。\n "
 },
 {
-	"uri": "/zh/framework/modules/",
+	"uri": "https://peridyno.github.io/zh/framework/modules/",
 	"title": "模块",
 	"tags": [],
 	"description": "",
 	"content": "1、功能简介 模块定义为供节点内部调用的功能独立的算法单元，其由输入数据、输出数据和控制变量构成。其与节点最大的差别在于输入输出类型只接受Field类型。\n2、如何实现一个功能模块 其包含如下步骤：\n  定义输入数据（通常至少要求一个）\n与节点中定义类似，采用DEF_{*}_IN的宏定义完成。\n  定义输出数据（可选）\n与节点中定义类似，采用DEF_{*}_OUT的宏定义完成。\n  定义控制变量\nDEF_VAR(T, name, value, desc)\r 控制变量必须在模块执行之前完成初始化。\n   3、模块样例 /** * @brief The standard summation density * * @tparam TDataType */ template\u0026lt;typename TDataType\u0026gt; class SummationDensity : public virtual ParticleApproximation\u0026lt;TDataType\u0026gt; { DECLARE_TCLASS(SummationDensity, TDataType) public: typedef typename TDataType::Real Real; typedef typename TDataType::Coord Coord; SummationDensity(); ~SummationDensity() override {}; void compute() override; public: void compute( DArray\u0026lt;Real\u0026gt;\u0026amp; rho, DArray\u0026lt;Coord\u0026gt;\u0026amp; pos, DArrayList\u0026lt;int\u0026gt;\u0026amp; neighbors, Real smoothingLength, Real mass); void compute( DArray\u0026lt;Real\u0026gt;\u0026amp; rho, DArray\u0026lt;Coord\u0026gt;\u0026amp; pos, DArray\u0026lt;Coord\u0026gt;\u0026amp; posQueried, DArrayList\u0026lt;int\u0026gt;\u0026amp; neighbors, Real smoothingLength, Real mass); public: DEF_VAR(Real, RestDensity, 1000, \u0026#34;Rest Density\u0026#34;); ///Define inputs \t/** * @brief Particle positions */ DEF_ARRAY_IN(Coord, Position, DeviceType::GPU, \u0026#34;Particle position\u0026#34;); /** * @brief Particle positions */ DEF_ARRAY_IN(Coord, Other, DeviceType::GPU, \u0026#34;Particle position\u0026#34;); /** * @brief Neighboring particles * */ DEF_ARRAYLIST_IN(int, NeighborIds, DeviceType::GPU, \u0026#34;Neighboring particles\u0026#39; ids\u0026#34;); ///Define outputs \t/** * @brief Particle densities */ DEF_ARRAY_OUT(Real, Density, DeviceType::GPU, \u0026#34;Return the particle density\u0026#34;); private: void calculateParticleMass(); Real m_particle_mass; Real m_factor; }; IMPLEMENT_TCLASS(SummationDensity, TDataType) "
 },
 {
-	"uri": "/zh/topics/",
+	"uri": "https://peridyno.github.io/zh/topics/",
 	"title": "技术专题",
 	"tags": [],
 	"description": "Show your user how to work through some end to end examples.
@@ -53,14 +53,14 @@
 	"content": "Tutorials are complete worked examples made up of multiple tasks that guide the user through a relatively simple but realistic scenario: building an application that uses some of your project’s features, for example. If you have already created some Examples for your project you can base Tutorials on them. This section is optional. However, remember that although you may not need this section at first, having tutorials can be useful to help your users engage with your example code, especially if there are aspects that need more explanation than you can easily provide in code comments.\n"
 },
 {
-	"uri": "/zh/framework/fields/",
+	"uri": "https://peridyno.github.io/zh/framework/fields/",
 	"title": "数据",
 	"tags": [],
 	"description": "",
 	"content": "1、Field功能简介 Field主要通过对典型数据类型的封装实现节点以及模块之间的数据传递。如下图所示，GLPointVisualNode通过定义FInstance类型的Field将点云数据传递给InputFieldTest使用。\nField之间的连接和断开主要依赖一下两个函数实现\nvirtual bool connect(FBase* dst) = 0; virtual bool disconnect(FBase* dst); FBase作为所有Field的基类，其功能主要是对Field的连接状态进行统一管理\nconnect(FBase* dst)在FBase中被定义了纯虚函数，因而其具体实现依赖于特定Field，该设计主要为了保证对数据连接进行有效性验证，仿真将数据连接到错误的类型。\n 假设存在A、B、C三个Field类型数据，他们的连接关系设置为A$\\rightarrow$B$\\rightarrow$C。此时为了降低数据转换和存储开销，当我们对C的数据进行操作时，其会根据连接关系返回最顶端（这里对应的是A）的数据指针进行操作。\n2、Field类型   FVar：继承自FBase，是对单一数据类型的封装，包括标量数据，如int、float、double；矢量数据，如Vec3f；以及二阶张量，如Mat3f。节点和模块中可以通过使用DEF_VAR/DEF_VAR_IN等宏定义来进行定义\nDEF_VAR(Real, RestDensity, 1000, \u0026#34;Rest Density\u0026#34;); 其中Real代表数据类型，RestDesntiy代表数据名称，1000代表初值，\u0026ldquo;Rest Density\u0026quot;则表示数据的说明。通过DEF_VAR定义的数据实际使用过程中可以通var+数据名称的方式对数据进行操作，假设我们需要将上述Field连接到另一个功能模块，则可以调用如下接口进行\nthis-\u0026gt;varRestDensity()-\u0026gt;connect(...);\r  FArray：对Core/Array.h中定义的一维数组的封装，类似于STL中的vector。根据其在节点/模块中的不同功能，我们采用如下三种定义：\nDEF_ARRAY_IN(Coord, Position, DeviceType::GPU, \u0026#34;Output\u0026#34;);\t//输入 输入数据的访问方式为in+数据名称，即inPosition()\nDEF_ARRAY_OUT(Coord, Position, DeviceType::GPU, \u0026#34;Output\u0026#34;);\t//输出 输入数据的访问方式为out+数据名称，即outPosition()\nDEF_ARRAY_STATE(Coord, Position, DeviceType::GPU, \u0026#34;Internal state\u0026#34;);\t//内部状态变量 状态变量的访问方式为state+数据名称，statePosition()\n  FArrayList：对Core/ArrayList.h数据的封装，用于支持CPU/GPU兼容的动态数据类型。其定义方式与FArray类似，即\nDEF_ARRAYLIST_IN(Coord, Position, DeviceType::GPU, \u0026#34;Input\u0026#34;);\t//输入 输入数据的访问方式为in+数据名称，即inPosition()\nDEF_ARRAYLIST_OUT(Coord, Position, DeviceType::GPU, \u0026#34;Output\u0026#34;);\t//输出 输入数据的访问方式为out+数据名称，即outPosition()\nDEF_ARRAYLIST_STATE(Coord, Position, DeviceType::GPU, \u0026#34;Internal state\u0026#34;);\t//内部状态变量 状态变量的访问方式为state+数据名称，statePosition()\n  FInstance：主要为了支持存在继承关系的数据之间的连接，典型应用为利用FInstance定义不同拓扑结构数据\nDEF_INSTANCE_IN(PointSet\u0026lt;TDataType\u0026gt;, PointSet, \u0026#34;PointSet is derived from TopologyModule\u0026#34;);\t//输入 输入数据的访问方式为in+数据名称，任意继承自PointSet的对应都可以连接到该数据。\nDEF_INSTANCE_OUT(PointSet\u0026lt;TDataType\u0026gt;, PointSet, \u0026#34;Output\u0026#34;);\t//输出 输入数据的访问方式为out+数据名称\nDEF_INSTANCE_STATE(PointSet\u0026lt;TDataType\u0026gt;, PointSet, \u0026#34;Internal state\u0026#34;);\t//内部状态变量 状态变量的访问方式为state+数据名称\n  参加src/Framework/FBase.h。\n "
 },
 {
-	"uri": "/zh/examples/",
+	"uri": "https://peridyno.github.io/zh/examples/",
 	"title": "仿真案例",
 	"tags": [],
 	"description": "A set of examples guiding users on how to set up different cases.
@@ -68,14 +68,14 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/zh/framework/reflection/",
+	"uri": "https://peridyno.github.io/zh/framework/reflection/",
 	"title": "反射机制",
 	"tags": [],
 	"description": "",
 	"content": "1、反射是什么 假设我们已知某个类的名称，那么如何通过类名称字符串来动态生成类的对象？\n在Java编程中，这并不是个问题。但是C++的语言特性决定了其并不支持通过类名称字符串”ClassXX”来生成对象的，也就是说在C++中我们可以使用ClassXX* object =new ClassXX来生成对象，但是不能通过ClassXX* object=new “ClassXX”来生成对象。这导致我们对节点和模块功能扩展的时候无法做到自适应扩展，也就是如果我们额外引入一个新的功能模块，仿真引擎无法动态感知到它的存在。\n反射机制引入的就是为了解决仿真节点和功能模块的自适应扩充问题，从而避免代码之间的深度耦合。\n2、C++反射原理 参加src/Framework/Object.h。\n 3、扩展模块如何支持反射 所有需要支持反射的类需要继承自Object。以src/Dynamics/ParticleSystem/SummationDensity.h中实现的类为例，其支持反射的流程包含两个步骤\n  派生Object或者Object的子类\ntemplate\u0026lt;typename TDataType\u0026gt; class SummationDensity : public virtual ParticleApproximation\u0026lt;TDataType\u0026gt;   接口申明\nDECLARE_CLASS(SummationDensity)\r//或者\rDECLARE_TCLASS(SummationDensity, TDataType)\r其中SummationDensity对应类的名称，TDataType对应模板参数\n  接口实现\nIMPLEMENT_TCLASS(SummationDensity)\r//或者\rIMPLEMENT_TCLASS(SummationDensity, TDataType)\r其中通过DECLARE_CLASS/DECLARE_TCLASS通过定义静态变量完成对SummationDensity的注册。\n  DECLARE_TCLASS和IMPLEMENT_TCLASS要求定义在同一头文件内，该方式对于实现文件为cpp后缀的类有效。然而当前NVCC的编译器依然存在一定问题，也就如果实现文件为.cu后缀，则定义的static变量无法完成初始化，需要通过额外的类来完成。\n 一个可行的解决方案是针对每一个静态链接库引入一个额外的类来完成初始化，在initializeParticleSystem.h中引入\nclass ParticleSystemInitializer : public Object { public: ParticleSystemInitializer(); }; const static ParticleSystemInitializer particleSystemInitializer; 同时再initializeParticleSystem.cpp中定义实现如下构造函数来完成对.cu文件中定义的类进行显式调用。\nParticleSystemInitializer::ParticleSystemInitializer() { TypeInfo::New\u0026lt;LinearDamping\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;ParticleIntegrator\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;ImplicitViscosity\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;DensityPBD\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;SummationDensity\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;VariationalApproximateProjection\u0026lt;DataType3f\u0026gt;\u0026gt;(); } "
 },
 {
-	"uri": "/zh/reference/",
+	"uri": "https://peridyno.github.io/zh/reference/",
 	"title": "相关资料",
 	"tags": [],
 	"description": "External resources related to physical-based simulations.
@@ -83,7 +83,7 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/zh/contributing/",
+	"uri": "https://peridyno.github.io/zh/contributing/",
 	"title": "贡献",
 	"tags": [],
 	"description": "See the list of contributors.
@@ -91,42 +91,42 @@
 	"content": "See also the list of contributors who are currently participated in this project.\n"
 },
 {
-	"uri": "/zh/examples/cloth/",
+	"uri": "https://peridyno.github.io/zh/examples/cloth/",
 	"title": "布料仿真",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/zh/examples/elasticity/",
+	"uri": "https://peridyno.github.io/zh/examples/elasticity/",
 	"title": "弹性体仿真",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/zh/examples/rigidbody/",
+	"uri": "https://peridyno.github.io/zh/examples/rigidbody/",
 	"title": "刚体动力学",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/zh/examples/collision/",
+	"uri": "https://peridyno.github.io/zh/examples/collision/",
 	"title": "碰撞检测",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/zh/examples/fluids/",
+	"uri": "https://peridyno.github.io/zh/examples/fluids/",
 	"title": "不可压缩流体",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/zh/topics/particlesystem/",
+	"uri": "https://peridyno.github.io/zh/topics/particlesystem/",
 	"title": "粒子系统",
 	"tags": [],
 	"description": "To be continued...
@@ -134,7 +134,7 @@
 	"content": "未完待续。。。\n"
 },
 {
-	"uri": "/zh/topics/rigidbodydynamics/",
+	"uri": "https://peridyno.github.io/zh/topics/rigidbodydynamics/",
 	"title": "刚体动力学",
 	"tags": [],
 	"description": "To be continued...
@@ -142,7 +142,7 @@
 	"content": ""
 },
 {
-	"uri": "/zh/topics/fem/",
+	"uri": "https://peridyno.github.io/zh/topics/fem/",
 	"title": "有限元法",
 	"tags": [],
 	"description": "To be continued...
@@ -150,7 +150,7 @@
 	"content": "未完待续。。。\n"
 },
 {
-	"uri": "/zh/topics/heightfield/",
+	"uri": "https://peridyno.github.io/zh/topics/heightfield/",
 	"title": "高度场",
 	"tags": [],
 	"description": "把水面表示成为一个连续的平面网格
@@ -158,7 +158,7 @@
 	"content": "高度场流体总体介绍 基于二维高度场的网格流体模拟方法，该方法把水面表示成为一个连续的平面网格，生成一系列对应于这张网络的连续的高度纹理－称为高度图，每个网格顶点对应于一个高度图的像素，作为水面高度，从而表示出整个水面。\n高度场流体仿真分为两个部分，基于浅水方程（SWE）的浅水波模拟和基于快速傅里叶变换（FFT）的海浪模拟。浅水方程（SWE）是描述浅水流动的数学模型，同时也是水力学中的一个重要的数学模型。浅水方程建立在具有物理意义的物理量守恒基础上，也可以称为双曲守恒型方程组。基于快速傅里叶变换（FFT）的海浪模拟的主要思想就是按照Phillips波普得到海面的高度场（也就是傅里叶变换的频域），然后将其逆傅里叶变换（IFFT）得到海面（也就是时域）。\n浅水波仿真 目前实时系统中用于建模大规模水体广泛使用Gerstner模型，其核心思想是通过对计算格点的位置进行周期性的偏移来达到水波翻滚的效果。尽管Gerstner Wave适用于建模大范围的水体，然而其在展现精细尺度水波上能力有限，且无法反应水体与刚体的交互。鉴于此，本项目使用浅水方程来实现精细尺度的水波模拟：\n\\begin{array}{l} \\frac{{\\partial h}}{{\\partial t}} + \\frac{\\partial }{{\\partial x}}\\left( {hu} \\right) + \\frac{\\partial }{{\\partial y}}\\left( {hv} \\right) = 0 \\\\\n\\frac{\\partial }{{\\partial t}}\\left( {hu} \\right) + \\frac{\\partial }{{\\partial x}}\\left( {\\frac{{h{u^2}}}{2}} \\right) + \\frac{\\partial }{{\\partial y}}\\left( {huv} \\right) = - gh\\frac{{\\partial s}}{{\\partial x}} \\\\\n\\frac{\\partial }{{\\partial t}}\\left( {hv} \\right) + \\frac{\\partial }{{\\partial x}}\\left( {huv} \\right) + \\frac{\\partial }{{\\partial y}}\\left( {\\frac{{h{v^2}}}{2}} \\right) = - gh\\frac{{\\partial s}}{{\\partial y}} \\end{array}\n其中u、v分别表示洋流水平速度的两个分量，h表示洋流的深度，s表示海面垂直坐标，g表示重力加速度。求解过程，首先基于高度场对仿真区域进行如图所示的离散。\n然后，通过求解波动方程计算每个时刻的高度场的位置。最终，将基于浅水方程（SWE）得到的高度场叠加到大区域水体上从而实现更加逼得水体仿真。 首先初始化水面的初始高度：\n对于水面边界的高度进行处理，每次计算后：\na) x=0点的粒子高度值等于x=1点的粒子高度值； b) x= width - 1点的粒子高度值等于x= width - 2点的粒子高度值；\rc) y=0点的粒子高度值等于y=1点的粒子高度值；\rd) y= height- 1点的粒子高度值等于y= height - 2点的粒子高度值。\rHeightField --\u0026gt; CapillaryWave.cu 中实现如下： __global__ void C_ImposeBC(Vec4f* grid_next, Vec4f* grid, int width, int height, int pitch) { int x = threadIdx.x + blockIdx.x * blockDim.x; int y = threadIdx.y + blockIdx.y * blockDim.y; if (x \u0026lt; width \u0026amp;\u0026amp; y \u0026lt; height) { if (x == 0) { Vec4f a = grid[(y)*pitch + 1]; grid_next[(y)*pitch + x] = a; } else if (x == width - 1) { Vec4f a = grid[(y)*pitch + width - 2]; grid_next[(y)*pitch + x] = a; } else if (y == 0) { Vec4f a = grid[(1) * pitch + x]; grid_next[(y)*pitch + x] = a; } else if (y == height - 1) { Vec4f a = grid[(height - 2) * pitch + x]; grid_next[(y)*pitch + x] = a; } else { Vec4f a = grid[(y)*pitch + x]; grid_next[(y)*pitch + x] = a; } } } 对每个时间内的高度场进行迭代：\n__global__ void C_OneWaveStep(Vec4f* grid_next, Vec4f* grid, int width, int height, float timestep, int pitch) 最后计算u、v洋流水平速度的两个分量，h洋流的深度，s海面垂直坐标。\n__global__ void C_InitHeightField( Vec4f* height, Vec4f* grid, int patchSize, float horizon, float realSize) { int i = threadIdx.x + blockIdx.x * blockDim.x; int j = threadIdx.y + blockIdx.y * blockDim.y; if (i \u0026lt; patchSize \u0026amp;\u0026amp; j \u0026lt; patchSize) { int gridx = i + 1; int gridy = j + 1; Vec4f gp = grid[gridx + patchSize * gridy]; height[i + j * patchSize].x = gp.x - horizon; float d = sqrtf((i - patchSize / 2) * (i - patchSize / 2) + (j - patchSize / 2) * (j - patchSize / 2)); float q = d / (0.49f * patchSize); float weight = q \u0026lt; 1.0f ? 1.0f - q * q : 0.0f; height[i + j * patchSize].y = 1.3f * realSize * sinf(3.0f * weight * height[i + j * patchSize].x * 0.5f * M_PI); } } 基于快速傅里叶变换（FFT）的海浪模拟 FFT模型是一种统计模型。不同于Gerstner模型采用多个正弦余弦函数去拟合，FFT模型采用傅里叶变换的方式。傅里叶变换的核心就是用sin(nx)和cos(nx)去模拟任意的周期函数。在FFT模型中，用时间和水平高度的随机函数h(x,t)来表示浪的高度。该方法仿真度高，易于建模，其计算公式如下[1]：\n$$h(X,t) = \\sum\\limits_K^{} {\\tilde h(K,t){{\\mathop{\\rm e}\\nolimits} ^{(iK{\\rm{X}})}}} $$\n式中，$X{\\rm{ = }}(x,z)$水平位置；$t$代表时间；$K$是一个二维向量；$\\tilde h(k,t)$表示海浪表面结构。\n构建FFT模型的高度场之后，接下来创建随机的高度场。引入高斯随机函数，有：\n$${\\tilde h_0}(K) = \\frac{1}{{\\sqrt 2 }}({\\xi _r} + i{\\xi _i})\\sqrt {{P_h}(K)} $$\n其中，${\\xi _r}$和${\\xi _i}$是相互独立的高斯随机数（均值为 0，方差为 1）。此时在$t$时刻波的振幅为：\n$$\\tilde h(K,t) = \\tilde h(K){e^{i\\omega (K)t}} + \\tilde h_0^*( - K){e^{ - i\\omega ({\\rm{K}})t}}$$ 其中，$\\omega (k)$是波$K$的角频率，可以根据${\\omega ^2}(k) = g|K|$计算得到；*号表示复数的共轭运算。根据FFT模型，海浪的高度最终一定为实数，所以一定满足$\\tilde h(-K)= \\tilde h_0^*(K)$。\ntemplate\u0026lt;typename TDataType\u0026gt; void OceanPatch\u0026lt;TDataType\u0026gt;::generateH0(Vec2f* h0) { for (unsigned int y = 0; y \u0026lt;= mResolution; y++) { for (unsigned int x = 0; x \u0026lt;= mResolution; x++) { float kx = (-( int )mResolution / 2.0f + x) * (2.0f * CUDART_PI_F / m_realPatchSize); float ky = (-( int )mResolution / 2.0f + y) * (2.0f * CUDART_PI_F / m_realPatchSize); float P = sqrtf(phillips(kx, ky, windDir, m_windSpeed, A, dirDepend)); if (kx == 0.0f \u0026amp;\u0026amp; ky == 0.0f) { P = 0.0f; } float Er = gauss(); float Ei = gauss(); float h0_re = Er * P * CUDART_SQRT_HALF_F; float h0_im = Ei * P * CUDART_SQRT_HALF_F; int i = y * mSpectrumWidth + x; h0[i].x = h0_re; h0[i].y = h0_im; } } } 初始化相位和振幅。频谱可以采用Phillips频谱。Phillips频谱适用于海面网格并行化计算。它是一种真实度较高的频谱，多用于在有风的影响下。Phillips频谱的定义如下：\n$${P_h}(K) = A\\frac{{\\exp ( - 1/{{(kL)}^2})}}{{{k^4}}}|\\hat K\\hat \\omega {|^2}$$\n其中，$g$表示重力加速度；$k = |K| = 2\\pi / \\lambda $；$\\lambda $表示波长；$A$表示一个常系数；$L = {V^2}/g$表示风速在$V$的情况下产生的最大波浪；$\\hat \\omega $表示风向；$|\\hat K\\hat \\omega {|^2}$表示消除了垂直于风向运动的波。\n// generate wave heightfield at time t based on initial heightfield and dispersion relationship __global__ void generateSpectrumKernel(Vec2f* h0, Vec2f* ht, unsigned int in_width, unsigned int out_width, unsigned int out_height, float t, float patchSize) { unsigned int x = blockIdx.x * blockDim.x + threadIdx.x; unsigned int y = blockIdx.y * blockDim.y + threadIdx.y; unsigned int in_index = y * in_width + x; unsigned int in_mindex = (out_height - y) * in_width + (out_width - x); // mirrored  unsigned int out_index = y * out_width + x; // calculate wave vector  Vec2f k; k.x = (-( int )out_width / 2.0f + x) * (2.0f * CUDART_PI_F / patchSize); k.y = (-( int )out_width / 2.0f + y) * (2.0f * CUDART_PI_F / patchSize); // calculate dispersion w(k)  float k_len = sqrtf(k.x * k.x + k.y * k.y); float w = sqrtf(9.81f * k_len); if ((x \u0026lt; out_width) \u0026amp;\u0026amp; (y \u0026lt; out_height)) { Vec2f h0_k = h0[in_index]; Vec2f h0_mk = h0[in_mindex]; // output frequency-space complex values  ht[out_index] = complex_add(complex_mult(h0_k, complex_exp(w * t)), complex_mult(conjugate(h0_mk), complex_exp(-w * t))); //ht[out_index] = h0_k;  } } 在使用FFT模型在流体仿真的过程中，需要根据每个点的斜率之计算表面的法向量。在实际的计算过程中，一般采用邻近网格点有限差分来计算斜率值。但为了减少小波波长的斜率误差，可使用反向FFT变换的方式进行求解：\n$$\\nabla h(X,t) = \\sum\\limits_K^{} {iK\\tilde h(K,t)\\exp (iKX)} $$\ncufftExecC2C(fftPlan, (float2*)m_ht, (float2*)m_ht, CUFFT_INVERSE); cufftExecC2C(fftPlan, (float2*)m_Dxt, (float2*)m_Dxt, CUFFT_INVERSE); cufftExecC2C(fftPlan, (float2*)m_Dzt, (float2*)m_Dzt, CUFFT_INVERSE); 此外，还需要一个偏置向量D(x,t)来模拟海水的浪尖，可以如下设置：\n$$D(x,t) = \\sum\\limits_k { - i\\frac{k}{{|k|}}h(k,t){e^{ikx}}} $$\n其中雅克比矩阵为： \\begin{equation} J\\left( x \\right) =\\left| \\begin{matrix} J_{xx}\u0026amp;\tJ_{xy}\\\\\nJ_{zx}\u0026amp;\tJ_{yy}\\\\\n\\end{matrix} \\right| \\end{equation}\n$$ \\begin{array}{l} J_{xx}=\\frac{\\partial x^{'}}{\\partial x}=1+\\lambda \\frac{\\partial D_x\\left( x,t \\right)}{\\partial x}\\\\\nJ_{yy}=\\frac{\\partial y^{'}}{\\partial y}=1+\\lambda \\frac{\\partial D_y\\left( x,t \\right)}{\\partial y}\\\\\nJ_{yx}=\\frac{\\partial y^{'}}{\\partial x}=\\lambda \\frac{\\partial D_y\\left( x,t \\right)}{\\partial x}\\\\\nJ_{xy}=\\frac{\\partial x^{'}}{\\partial y}=\\lambda \\frac{\\partial D_x\\left( x,t \\right)}{\\partial y}\\\\\n\\end{array} $$\n[1] Tessendorf J. Simulating ocean water[J]. Simulating nature: realistic and interactive techniques. SIGGRAPH, 2001, 1(2): 5.\n"
 },
 {
-	"uri": "/zh/topics/rigidbodydynamics/impulsebased/",
+	"uri": "https://peridyno.github.io/zh/topics/rigidbodydynamics/impulsebased/",
 	"title": "基于脉冲的多体动画",
 	"tags": [],
 	"description": "Impulse-Based Multibody Animation
@@ -166,21 +166,21 @@
 	"content": "Impulse $J$ 冲量\nBasic Theorem  Single-Point Collision Multiple-Point Collision  1 Single-Point Collision: Theorem 6.2 (Applying Impulse to a Rigid Body) 两个刚体且只有一对碰撞点的碰撞：\n首先确立刚体的$v,w$与冲量$J$关系： $$ \\begin{aligned} \u0026amp;\\Delta \\boldsymbol{v}=\\frac{\\boldsymbol{J}}{m} \\\\\n\u0026amp;\\Delta \\boldsymbol{\\omega}=\\boldsymbol{I}^{-1}(\\boldsymbol{r} \\times \\boldsymbol{J}) \\end{aligned} $$\n然后根据刚体与碰撞点的关系：（$\\gamma$可以暂时理解为时间步长）\n$$ v_{\\text{point}}^A\\left( \\gamma \\right) =\\omega ^A\\left( \\gamma \\right) \\times r^A+v_{\\text{body}}^{A}\\left( \\gamma \\right) $$\n以及一对碰撞点\u0026lt;A,B\u0026gt;的关系： $$ \\boldsymbol{J}^{B}=-\\boldsymbol{J}^{A} $$ 推导出碰撞点对相对速度的变化量与冲量关系：（根据模型分类，可以得到$\\Delta \\boldsymbol{u}$，即已知量） $$ \\Delta \\boldsymbol{u}(\\gamma)=\\underbrace{\\left(\\left(\\frac{1}{m_{A}}+\\frac{1}{m_{B}}\\right) \\boldsymbol{1}-\\left(\\left(\\boldsymbol{r}^{\\boldsymbol{A}}\\right)^{\\times} \\boldsymbol{I}_{A}^{-1}\\left(\\boldsymbol{r}^{\\boldsymbol{A}}\\right)^{\\times}+\\left(\\boldsymbol{r}^{\\boldsymbol{B}}\\right)^{\\times} \\boldsymbol{I}_{B}^{-1}\\left(\\boldsymbol{r}^{\\boldsymbol{B}}\\right)^{\\times}\\right)\\right)}_{\\boldsymbol{K}} \\boldsymbol{J}^{A}(\\gamma) . $$ 其中， $$ u =v^A_{point}-v^B_{point}\\\n\\Delta u=u(f)-u(i) $$ $K$被称为碰撞矩阵 Collision Matrix，其中$\\left(r\\right)^{\\times}$计算方式为：\n自此，得到两个刚体碰撞且只有一对碰撞点的计算方法。\n2 Multiple-Point Collision 多对刚体且多对碰撞点的碰撞。\n Sequential Collision （AKA. propagating impulses 依次碰撞） Simultaneous Collision （同时碰撞）  2.1 Sequential Collision 将Single-Point执行多次，缺点：\n 执行碰撞点顺序会影响结果 可能死循环  2.2 Simultaneous Collision 将考虑碰撞点受到其他碰撞点所带来的多个冲量的影响。\n以Newton‘s Collision Law为例子，重新描述式子：\n一些特征：\n 不考虑摩擦 只考虑法向冲量和法向速度变化  关键思路：\n\u0026lt;1 碰撞点相对速度会受多个冲量影响，故速度会大于等于原先单一冲量影响下的速度（只考虑法向速度变化故）（预谋获取$\\Delta u$） $$ u_{i_{f}} \\geq-e u_{i_{i}} $$\n做一个假设：$u_{i_{f}}\u0026gt;-e u_{i_{i}} \\Rightarrow j_{i}=0$，使得$j_i$并不会太大。（这里可能不太有准确的意义，只是一个假设）\n然后同resting contact problem一样，可以整合成互补条件： $$ 0\\le j_i \\bot (u_{i_{f}} +e u_{i_{i}}) \\ge 0 $$ \u0026lt;2 利用刚体与碰撞点关系衡量其他冲量对碰撞点的影响 （推导出$\\Delta u$与$J$的关系）\n表示物体 $X$ 的接触点 $j$ 受冲量 $J_i$的影响，即 $ \\Delta v_{ji}^{X}=u_{ji}^{X}\\left( after \\right) -u_{ji}^{X}\\left( before \\right) $\n$$ \\Delta v_{ji}^{X}=\\Delta v_{i}^{X}+\\Delta \\omega _{i}^{X}\\times r_{j}^{X} $$\n其中冲量$J_i$对物体$X$的影响： $$ \\Delta v_{i}^{X}=\\pm \\frac{n_i}{m_X}j_i,,,,,\\Delta \\omega _i^X=\\pm I_{X}^{-1}\\left( r_i^X\\times n_i \\right) j_i $$\n其中 $n_i$ 表示$\\vec{J_i}$的方向\n进一步推导： $$ \\begin{aligned} \\Delta v_{ji}^{X}\u0026amp;=\\left( \\frac{n_i}{m_X}+\\left( I_{X}^{-1}\\left( r_{i}^{X}\\times n_i \\right) \\right) \\times r_{j}^{X} \\right) j_i\\\\\n\\Delta v_{ji}^{X}\u0026amp;=s_{ji}^{X}j_i\\\n\\end{aligned} $$\n累加在碰撞点$j$的所有冲量影响： $$ \\Delta v_{j}^{X}=\\Delta v_{j0}^{X}+\\cdots +\\Delta v_{ji}^{X}+\\cdots +\\Delta v_{jn}^{X} $$\n计算物体$X,Y$的碰撞点 $j$ 相对速度： $$ \\Delta u=\\Delta v_{j}^{X}-\\Delta v_{j}^{Y}=\\left( s_{j0}^{X}-s_{j0}^{Y} \\right) j_0+\\cdots +\\left( s_{ji}^{X}-s_{ji}^{Y} \\right) j_i+\\cdots +\\left( s_{jn}^{X}-s_{jn}^{Y} \\right) j_n $$\n又因$\\Delta u=u_f-u_i$，得： $$ \\begin{gathered} u_{j}(f)=\\boldsymbol{A}_{j 0} j_{0}+\\cdots+\\boldsymbol{A}_{j i} j_{i}+\\cdots+\\boldsymbol{A}_{j n} j_{n}+u_{j}(i) \\\\\n\\boldsymbol{A}_{j i}=\\left(\\boldsymbol{s}_{j i}^{X}-\\boldsymbol{s}_{j i}^{Y}\\right) \\cdot \\boldsymbol{n}_{j} \\end{gathered} $$\n求解：\n整理公式得LCP（二次优化问题，需要使用一些求解器） $$ 0\\le J \\bot (AJ + (1+e) u_{i}) \\ge 0 $$\nCollision Laws 一些模型例子，主要是描述 $\\Delta \\boldsymbol{u}$ 的含义。\n  Algebraic Collision Laws\n  Incremental Collision Laws\n  Full Deformation Collision Laws\n  Compliant Contact Model Collision Laws\n  Examples of Algebraic Collision Laws  Newton’s collision law A two-parameter frictional law A frictional version of Newton’s collision law  Newton‘s Collision Law 特征：\n 不考虑摩擦 采用弹性碰撞  关键假设：\n\u0026lt;1 冲量与碰撞平面法线平行 $$ \\boldsymbol{J}=j\\boldsymbol{n} $$ \u0026lt;2 相对速度弹性恢复 （时间$i\\longrightarrow f$，恢复系数coefficient of restitution $e$） $$ u_{n}\\left(\\gamma_{f}\\right)=-e u_{n}\\left(\\gamma_{i}\\right) $$ 进一步推导，$u_i \\longrightarrow \\Delta u$ $$ \\begin{aligned} \\Delta \\boldsymbol{u} \\cdot \\boldsymbol{n} \u0026amp;=u_{n}\\left(\\gamma_{f}\\right)-u_{n}\\left(\\gamma_{i}\\right) \\\\\n\\Delta \\boldsymbol{u} \\cdot \\boldsymbol{n} \u0026amp;=-e u_{n}\\left(\\gamma_{i}\\right)-u_{n}\\left(\\gamma_{i}\\right) \\\\\n\\Delta \\boldsymbol{u} \\cdot \\boldsymbol{n} \u0026amp;=-(1+e) \\boldsymbol{u}_{i} \\cdot \\boldsymbol{n} \\end{aligned} $$ 进一步推导，$\\Delta u \\longrightarrow j$ $$ \\begin{aligned} \\Delta \\boldsymbol{u} \\cdot \\boldsymbol{n} \u0026amp;=(\\boldsymbol{K} j \\boldsymbol{n}) \\cdot \\boldsymbol{n}, \\\\\n\\Delta \\boldsymbol{u} \\cdot \\boldsymbol{n} \u0026amp;=j(\\boldsymbol{n}^{T} \\boldsymbol{K} \\boldsymbol{n}), \\end{aligned} $$\n$$ j=\\frac{-(1+e) \\boldsymbol{u}_{i} \\cdot \\boldsymbol{n}}{\\boldsymbol{n}^{T} \\boldsymbol{K} \\boldsymbol{n}} $$\n计算流程 Collision Detection\rCompute the wanted collision point's vel: u_i\rCompute K\rCompute J\rCompute \\Delta v, \\Delta w.\rUpdate Position x.\rSome knowledge Collision Matrix $K$ $K$矩阵有一些性质：\nContact Normal $\\vec{n}$ 推导技巧  $(An)\\cdot n =n^{T}An$  参考资料  Physically Based Animation 【Chapter6 Impulse-Based Multibody Animation】 Analytical Methods for Dynamic Simulation of Non-penetrating Rigid Bodies, Baraff, SIGGRAPH ’89  "
 },
 {
-	"uri": "/zh/",
+	"uri": "https://peridyno.github.io/zh/",
 	"title": "泛动引擎",
 	"tags": [],
 	"description": "",
-	"content": "泛动引擎（PeriDyno）帮助文档 "
+	"content": "泛动引擎（PeriDyno）帮助文档 查看PeriDyno类图\n"
 },
 {
-	"uri": "/zh/categories/",
+	"uri": "https://peridyno.github.io/zh/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/zh/tags/",
+	"uri": "https://peridyno.github.io/zh/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

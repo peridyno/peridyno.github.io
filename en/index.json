@@ -1,6 +1,6 @@
 [
 {
-	"uri": "/en/overview/",
+	"uri": "https://peridyno.github.io/en/overview/",
 	"title": "Overview",
 	"tags": [],
 	"description": "An overview of Peridyno.
@@ -8,14 +8,14 @@
 	"content": "What is it? Peridyno is short fo Physics-based Interactive Kinematics Architecture. It is an open source node-based architecture targeted at real-time simulation of versatile physical materials. Currently, it supports simulating physical phenomena ranging from fluids, elastic objects and fracture, etc. It is higly modualized and can also help the research community develop novel algorithms.\nWhat can I expect from Peridyno? Followings are a set of features making Peridyno unique to simulate a complex physical senario in a efficient way:\n  Template programming: Peridyno support a wide class of commonly used data structre in the form of templates.\n  Highly modularized: The whole is modularized from top to bottom, therefore, custom behaviors can easily obtained by extending existing components.\n  Complex coupling: It supports the coupling of a variety of different physical materials.\n  High performance: The architecture is highly optimized to improve the execuation performance.\n  Where should I go next? Give your users next steps from the Overview. For example:\n Getting Started: Get started with Peridyno Examples: Check out some example code!  "
 },
 {
-	"uri": "/en/framework/scenegraph/",
+	"uri": "https://peridyno.github.io/en/framework/scenegraph/",
 	"title": "Scene Graph",
 	"tags": [],
 	"description": "",
 	"content": "Structure of a scene Scene graph traversal "
 },
 {
-	"uri": "/en/installation/",
+	"uri": "https://peridyno.github.io/en/installation/",
 	"title": "Installation",
 	"tags": [],
 	"description": "Tutorials on how to set up Peridyno and run examples on both Windows and Linux.
@@ -23,14 +23,14 @@
 	"content": "Tutorials on how to set up Peridyno.\nPlatforms Windows 10: fully tested\nLinux: should work as well, yet not guranteed.\nPrerequisites: IDE:\n Visual studio 2017+  CUDA:\n Latest tests were done based on CUDA Toolkit 11.4, should be compatible will other old version.  Graphics:\n glad: https://github.com/Dav1dde/glad.git glfw: https://github.com/glfw/glfw imgui: https://github.com/ocornut/imgui  Optional:\n Qt: https://download.qt.io/ VTK: https://github.com/Kitware/VTK Alembic: https://github.com/alembic/alembic Imath: https://github.com/AcademySoftwareFoundation/Imath  Installation: Aside from those optional, other libraries are integrated inside the project to simplify the installation. Use the following git command to down the project as well as other dependences.\ngit clone --recursive https://github.com/peridyno/peridyno.git\rBuild the project: Check whether CMake has been installed on your system, if not, visit https://cmake.org/download/ to download the lastest version.\nPreferred: Run cmake-gui.exe, set the top two entries with the source code and binary directories. Configure the libararies you want to build, then click the Generate button to build the project.\nA more convient way to build the project with a default setting is as follows\ncd peridyo/build cmake ..\rExamples License Peridyno\u0026rsquo;s default license is the Apache 2.0 (See LICENSE).\nExternal libraries are distributed under their own terms.\n"
 },
 {
-	"uri": "/en/framework/nodes/",
+	"uri": "https://peridyno.github.io/en/framework/nodes/",
 	"title": "Node",
 	"tags": [],
 	"description": "",
 	"content": "Structure of a node The follow code demonstrates a typical implementation of a node that handles the one-way coupling between particles and static trianglar boundaries.\ntemplate\u0026lt;typename TDataType\u0026gt; class StaticMeshBoundary : public Node { DECLARE_CLASS_1(StaticMeshBoundary, TDataType) public: typedef typename TDataType::Real Real; typedef typename TDataType::Coord Coord; typedef typename TopologyModule::Triangle Triangle; StaticMeshBoundary(); ~StaticMeshBoundary() override; void advance(Real dt) override; public: /** * @brief Input rigid bodies */ DEF_NODE_PORTS(RigidBody, RigidBody\u0026lt;TDataType\u0026gt;, \u0026#34;A rigid body\u0026#34;); /** * @brief Input particle systems */ DEF_NODE_PORTS(ParticleSystem, ParticleSystem\u0026lt;TDataType\u0026gt;, \u0026#34;Particle Systems\u0026#34;); public: /** * @brief Particle position */ DEF_EMPTY_CURRENT_ARRAY(ParticlePosition, Coord, DeviceType::GPU, \u0026#34;Particle position\u0026#34;); /** * @brief Particle velocity */ DEF_EMPTY_CURRENT_ARRAY(ParticleVelocity, Coord, DeviceType::GPU, \u0026#34;Particle velocity\u0026#34;); /** * @brief Triangle vertex */ DEF_EMPTY_CURRENT_ARRAY(TriangleVertex, Coord, DeviceType::GPU, \u0026#34;Particle position\u0026#34;); /** * @brief Particle velocity */ DEF_EMPTY_CURRENT_ARRAY(TriangleIndex, Triangle, DeviceType::GPU, \u0026#34;Particle velocity\u0026#34;); private: /** * @brief Define other private members below */ }; To be recognized by the reflecting system in Peridyno, each class should be started with the following macro definition\nDECLARE_CLASS(ClassName) or\nDECLARE_CLASS_1(ClassName, TemplateName) for templated class.\nThe above declaration should be concluded with the following macro definition\nIMPLEMENT_CLASS(ClassName) or\nIMPLEMENT_CLASS_1(ClassName, TemplateName) for templated class.\nThen, an instance of StaticMeshBoundary can correctly created by passing the class name to the static function in the Object class.\nstatic Object* createObject(std::string name); In addition, an instance of the reflected class can also be create from the Peridyno Studio.\nNode Ports Mechanical Status Topology "
 },
 {
-	"uri": "/en/framework/",
+	"uri": "https://peridyno.github.io/en/framework/",
 	"title": "Framework",
 	"tags": [],
 	"description": "An introduction to the details of PeriDyno Framework. 
@@ -38,14 +38,14 @@
 	"content": "A complete scene in Peridyno consists of four layers of components. From top to bottom are, scene graph, nodes, modules and fields.\n"
 },
 {
-	"uri": "/en/framework/modules/",
+	"uri": "https://peridyno.github.io/en/framework/modules/",
 	"title": "Module",
 	"tags": [],
 	"description": "",
 	"content": "Structure of a module The following code demonstrates the typical strcuture of a module, which contains regular variables, input variables and output variables.\ntemplate\u0026lt;typename TDataType\u0026gt; class SummationDensity : public ComputeModule { DECLARE_CLASS_1(SummationDensity, TDataType) public: typedef typename TDataType::Real Real; typedef typename TDataType::Coord Coord; SummationDensity(); ~SummationDensity() override {}; void compute() override; protected: void calculateScalingFactor(); void compute(DeviceArray\u0026lt;Real\u0026gt;\u0026amp; rho); void compute( DeviceArray\u0026lt;Real\u0026gt;\u0026amp; rho, DeviceArray\u0026lt;Coord\u0026gt;\u0026amp; pos, NeighborList\u0026lt;int\u0026gt;\u0026amp; neighbors, Real smoothingLength, Real mass); public: ///Define intrinsic fields  DEF_EMPTY_VAR(RestDensity, Real, \u0026#34;Rest Density\u0026#34;); DEF_EMPTY_VAR(Mass, Real, \u0026#34;Particle mass, note that this module only support a constant mass for all particles.\u0026#34;); DEF_EMPTY_VAR(SmoothingLength, Real, \u0026#34;Indicating the smoothing length\u0026#34;); DEF_EMPTY_VAR(SamplingDistance, Real, \u0026#34;Indicating the initial sampling distance\u0026#34;); ///Define input fields  /** * @brief Particle positions */ DEF_EMPTY_IN_ARRAY(Position, Coord, DeviceType::GPU, \u0026#34;Particle position\u0026#34;); /** * @brief Neighboring particles * */ DEF_EMPTY_IN_NEIGHBOR_LIST(NeighborIndex, int, \u0026#34;Neighboring particles\u0026#39; ids\u0026#34;); ///Define output fields  /** * @brief Particle densities */ DEF_EMPTY_OUT_ARRAY(Density, Real, DeviceType::GPU, \u0026#34;Particle position\u0026#34;); private: ///Define other class members }; In the Qt-based GUI, the above module appears like\nBesides, all regular variables will be shown in the property editor\nIntrinsic fields  All intrinsic field names are started with an prefix var, e.g., this-\u0026gt;varRestDensity().\n If a intrinsic field is defined, it can be used by the module without explicitly initializing its value.\nTo declare an empty field of real type, use the following formulation\nDEF_EMPTY_VAR(RestDensity, Real, \u0026quot;Rest Density\u0026quot;);\rInput fields  All input field names are started with an prefix in, e.g., this-\u0026gt;inPosition().\n Input fields of a module are usually empty. Therefore, to execuate a module, its input fields should be explicitly specified.\nTo set up an input field, the most efficienty way is by connecting an output field to an input field, e.g.,\nthis-\u0026gt;outPosition().connect(m_densitySum-\u0026gt;inPosition()); Output fields  All output field names are started with an prefix out, e.g., this-\u0026gt;outPosition().\n The values of output fields are computed from input fields. As long as either the intrinsic fields all input fields are changed, the output fields should be updated again.\n"
 },
 {
-	"uri": "/en/examples/",
+	"uri": "https://peridyno.github.io/en/examples/",
 	"title": "Examples",
 	"tags": [],
 	"description": "A set of examples guiding users on how to set up different cases.
@@ -53,14 +53,14 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/en/framework/fields/",
+	"uri": "https://peridyno.github.io/en/framework/fields/",
 	"title": "Field",
 	"tags": [],
 	"description": "",
 	"content": "Field types VarField\rArrayField\rNeighborField\r"
 },
 {
-	"uri": "/en/topics/",
+	"uri": "https://peridyno.github.io/en/topics/",
 	"title": "Advanced Topics",
 	"tags": [],
 	"description": "Show your user how to work through some end to end examples.
@@ -68,14 +68,14 @@
 	"content": "Tutorials are complete worked examples made up of multiple tasks that guide the user through a relatively simple but realistic scenario: building an application that uses some of your project’s features, for example. If you have already created some Examples for your project you can base Tutorials on them. This section is optional. However, remember that although you may not need this section at first, having tutorials can be useful to help your users engage with your example code, especially if there are aspects that need more explanation than you can easily provide in code comments.\n"
 },
 {
-	"uri": "/en/framework/reflection/",
+	"uri": "https://peridyno.github.io/en/framework/reflection/",
 	"title": "Reflection",
 	"tags": [],
 	"description": "",
 	"content": "Field types VarField\rArrayField\rNeighborField\r"
 },
 {
-	"uri": "/en/reference/",
+	"uri": "https://peridyno.github.io/en/reference/",
 	"title": "Reference",
 	"tags": [],
 	"description": "External resources related to physical-based simulations.
@@ -83,7 +83,7 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/en/contributing/",
+	"uri": "https://peridyno.github.io/en/contributing/",
 	"title": "Contribution",
 	"tags": [],
 	"description": "See the list of contributors.
@@ -91,42 +91,42 @@
 	"content": "See also the list of contributors who are currently participated in this project.\n"
 },
 {
-	"uri": "/en/examples/cloth/",
+	"uri": "https://peridyno.github.io/en/examples/cloth/",
 	"title": "Cloth Simulation",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/en/examples/elasticity/",
+	"uri": "https://peridyno.github.io/en/examples/elasticity/",
 	"title": "Particle-based Elastic Objects",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/en/examples/rigidbody/",
+	"uri": "https://peridyno.github.io/en/examples/rigidbody/",
 	"title": "Rigid Body Dynamics",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/en/examples/collision/",
+	"uri": "https://peridyno.github.io/en/examples/collision/",
 	"title": "collision",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/en/examples/fluids/",
+	"uri": "https://peridyno.github.io/en/examples/fluids/",
 	"title": "Incompressible Fluids",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "/en/topics/particlesystem/",
+	"uri": "https://peridyno.github.io/en/topics/particlesystem/",
 	"title": "Particle System",
 	"tags": [],
 	"description": "To be continued...
@@ -134,7 +134,7 @@
 	"content": ""
 },
 {
-	"uri": "/en/topics/rigidbodydynamics/",
+	"uri": "https://peridyno.github.io/en/topics/rigidbodydynamics/",
 	"title": "Rigid Body Dynamics",
 	"tags": [],
 	"description": "To be continued...
@@ -142,7 +142,7 @@
 	"content": ""
 },
 {
-	"uri": "/en/topics/fem/",
+	"uri": "https://peridyno.github.io/en/topics/fem/",
 	"title": "Finite Element Method",
 	"tags": [],
 	"description": "To be continued...
@@ -150,7 +150,7 @@
 	"content": ""
 },
 {
-	"uri": "/en/topics/heightfield/",
+	"uri": "https://peridyno.github.io/en/topics/heightfield/",
 	"title": "Height Field",
 	"tags": [],
 	"description": "To be continued...
@@ -158,7 +158,7 @@
 	"content": ""
 },
 {
-	"uri": "/en/topics/rigidbodydynamics/impulsebased/",
+	"uri": "https://peridyno.github.io/en/topics/rigidbodydynamics/impulsebased/",
 	"title": "Impulse-Based Multibody Animation",
 	"tags": [],
 	"description": "Impulse-Based Multibody Animation
@@ -166,21 +166,21 @@
 	"content": "Impulse $J$ 冲量\nBasic Theorem  Single-Point Collision Multiple-Point Collision  1 Single-Point Collision: Theorem 6.2 (Applying Impulse to a Rigid Body) 两个刚体且只有一对碰撞点的碰撞：\n首先确立刚体的$v,w$与冲量$J$关系： $$ \\begin{aligned} \u0026amp;\\Delta \\boldsymbol{v}=\\frac{\\boldsymbol{J}}{m} \\\\\n\u0026amp;\\Delta \\boldsymbol{\\omega}=\\boldsymbol{I}^{-1}(\\boldsymbol{r} \\times \\boldsymbol{J}) \\end{aligned} $$\n然后根据刚体与碰撞点的关系：（$\\gamma$可以暂时理解为时间步长）\n$$ v_{\\text{point}}^A\\left( \\gamma \\right) =\\omega ^A\\left( \\gamma \\right) \\times r^A+v_{\\text{body}}^{A}\\left( \\gamma \\right) $$\n以及一对碰撞点\u0026lt;A,B\u0026gt;的关系： $$ \\boldsymbol{J}^{B}=-\\boldsymbol{J}^{A} $$ 推导出碰撞点对相对速度的变化量与冲量关系：（根据模型分类，可以得到$\\Delta \\boldsymbol{u}$，即已知量） $$ \\Delta \\boldsymbol{u}(\\gamma)=\\underbrace{\\left(\\left(\\frac{1}{m_{A}}+\\frac{1}{m_{B}}\\right) \\boldsymbol{1}-\\left(\\left(\\boldsymbol{r}^{\\boldsymbol{A}}\\right)^{\\times} \\boldsymbol{I}_{A}^{-1}\\left(\\boldsymbol{r}^{\\boldsymbol{A}}\\right)^{\\times}+\\left(\\boldsymbol{r}^{\\boldsymbol{B}}\\right)^{\\times} \\boldsymbol{I}_{B}^{-1}\\left(\\boldsymbol{r}^{\\boldsymbol{B}}\\right)^{\\times}\\right)\\right)}_{\\boldsymbol{K}} \\boldsymbol{J}^{A}(\\gamma) . $$ 其中， $$ u =v^A_{point}-v^B_{point}\\\n\\Delta u=u(f)-u(i) $$ $K$被称为碰撞矩阵 Collision Matrix，其中$\\left(r\\right)^{\\times}$计算方式为：\n自此，得到两个刚体碰撞且只有一对碰撞点的计算方法。\n2 Multiple-Point Collision 多对刚体且多对碰撞点的碰撞。\n Sequential Collision （AKA. propagating impulses 依次碰撞） Simultaneous Collision （同时碰撞）  2.1 Sequential Collision 将Single-Point执行多次，缺点：\n 执行碰撞点顺序会影响结果 可能死循环  2.2 Simultaneous Collision 将考虑碰撞点受到其他碰撞点所带来的多个冲量的影响。\n以Newton‘s Collision Law为例子，重新描述式子：\n一些特征：\n 不考虑摩擦 只考虑法向冲量和法向速度变化  关键思路：\n\u0026lt;1 碰撞点相对速度会受多个冲量影响，故速度会大于等于原先单一冲量影响下的速度（只考虑法向速度变化故）（预谋获取$\\Delta u$） $$ u_{i_{f}} \\geq-e u_{i_{i}} $$\n做一个假设：$u_{i_{f}}\u0026gt;-e u_{i_{i}} \\Rightarrow j_{i}=0$，使得$j_i$并不会太大。（这里可能不太有准确的意义，只是一个假设）\n然后同resting contact problem一样，可以整合成互补条件： $$ 0\\le j_i \\bot (u_{i_{f}} +e u_{i_{i}}) \\ge 0 $$ \u0026lt;2 利用刚体与碰撞点关系衡量其他冲量对碰撞点的影响 （推导出$\\Delta u$与$J$的关系）\n表示物体 $X$ 的接触点 $j$ 受冲量 $J_i$的影响，即 $ \\Delta v_{ji}^{X}=u_{ji}^{X}\\left( after \\right) -u_{ji}^{X}\\left( before \\right) $\n$$ \\Delta v_{ji}^{X}=\\Delta v_{i}^{X}+\\Delta \\omega _{i}^{X}\\times r_{j}^{X} $$\n其中冲量$J_i$对物体$X$的影响： $$ \\Delta v_{i}^{X}=\\pm \\frac{n_i}{m_X}j_i,,,,,\\Delta \\omega _i^X=\\pm I_{X}^{-1}\\left( r_i^X\\times n_i \\right) j_i $$\n其中 $n_i$ 表示$\\vec{J_i}$的方向\n进一步推导： $$ \\begin{aligned} \\Delta v_{ji}^{X}\u0026amp;=\\left( \\frac{n_i}{m_X}+\\left( I_{X}^{-1}\\left( r_{i}^{X}\\times n_i \\right) \\right) \\times r_{j}^{X} \\right) j_i\\\\\n\\Delta v_{ji}^{X}\u0026amp;=s_{ji}^{X}j_i\\\n\\end{aligned} $$\n累加在碰撞点$j$的所有冲量影响： $$ \\Delta v_{j}^{X}=\\Delta v_{j0}^{X}+\\cdots +\\Delta v_{ji}^{X}+\\cdots +\\Delta v_{jn}^{X} $$\n计算物体$X,Y$的碰撞点 $j$ 相对速度： $$ \\Delta u=\\Delta v_{j}^{X}-\\Delta v_{j}^{Y}=\\left( s_{j0}^{X}-s_{j0}^{Y} \\right) j_0+\\cdots +\\left( s_{ji}^{X}-s_{ji}^{Y} \\right) j_i+\\cdots +\\left( s_{jn}^{X}-s_{jn}^{Y} \\right) j_n $$\n又因$\\Delta u=u_f-u_i$，得： $$ \\begin{gathered} u_{j}(f)=\\boldsymbol{A}_{j 0} j_{0}+\\cdots+\\boldsymbol{A}_{j i} j_{i}+\\cdots+\\boldsymbol{A}_{j n} j_{n}+u_{j}(i) \\\\\n\\boldsymbol{A}_{j i}=\\left(\\boldsymbol{s}_{j i}^{X}-\\boldsymbol{s}_{j i}^{Y}\\right) \\cdot \\boldsymbol{n}_{j} \\end{gathered} $$\n求解：\n整理公式得LCP（二次优化问题，需要使用一些求解器） $$ 0\\le J \\bot (AJ + (1+e) u_{i}) \\ge 0 $$\nCollision Laws 一些模型例子，主要是描述 $\\Delta \\boldsymbol{u}$ 的含义。\n  Algebraic Collision Laws\n  Incremental Collision Laws\n  Full Deformation Collision Laws\n  Compliant Contact Model Collision Laws\n  Examples of Algebraic Collision Laws  Newton’s collision law A two-parameter frictional law A frictional version of Newton’s collision law  Newton‘s Collision Law 特征：\n 不考虑摩擦 采用弹性碰撞  关键假设：\n\u0026lt;1 冲量与碰撞平面法线平行 $$ \\boldsymbol{J}=j\\boldsymbol{n} $$ \u0026lt;2 相对速度弹性恢复 （时间$i\\longrightarrow f$，恢复系数coefficient of restitution $e$） $$ u_{n}\\left(\\gamma_{f}\\right)=-e u_{n}\\left(\\gamma_{i}\\right) $$ 进一步推导，$u_i \\longrightarrow \\Delta u$ $$ \\begin{aligned} \\Delta \\boldsymbol{u} \\cdot \\boldsymbol{n} \u0026amp;=u_{n}\\left(\\gamma_{f}\\right)-u_{n}\\left(\\gamma_{i}\\right) \\\\\n\\Delta \\boldsymbol{u} \\cdot \\boldsymbol{n} \u0026amp;=-e u_{n}\\left(\\gamma_{i}\\right)-u_{n}\\left(\\gamma_{i}\\right) \\\\\n\\Delta \\boldsymbol{u} \\cdot \\boldsymbol{n} \u0026amp;=-(1+e) \\boldsymbol{u}_{i} \\cdot \\boldsymbol{n} \\end{aligned} $$ 进一步推导，$\\Delta u \\longrightarrow j$ $$ \\begin{aligned} \\Delta \\boldsymbol{u} \\cdot \\boldsymbol{n} \u0026amp;=(\\boldsymbol{K} j \\boldsymbol{n}) \\cdot \\boldsymbol{n}, \\\\\n\\Delta \\boldsymbol{u} \\cdot \\boldsymbol{n} \u0026amp;=j(\\boldsymbol{n}^{T} \\boldsymbol{K} \\boldsymbol{n}), \\end{aligned} $$\n$$ j=\\frac{-(1+e) \\boldsymbol{u}_{i} \\cdot \\boldsymbol{n}}{\\boldsymbol{n}^{T} \\boldsymbol{K} \\boldsymbol{n}} $$\n计算流程 Collision Detection\rCompute the wanted collision point's vel: u_i\rCompute K\rCompute J\rCompute \\Delta v, \\Delta w.\rUpdate Position x.\rSome knowledge Collision Matrix $K$ $K$矩阵有一些性质：\nContact Normal $\\vec{n}$ 推导技巧  $(An)\\cdot n =n^{T}An$  参考资料  Physically Based Animation 【Chapter6 Impulse-Based Multibody Animation】 Analytical Methods for Dynamic Simulation of Non-penetrating Rigid Bodies, Baraff, SIGGRAPH ’89  "
 },
 {
-	"uri": "/en/",
+	"uri": "https://peridyno.github.io/en/",
 	"title": "PeriDyno",
 	"tags": [],
 	"description": "",
 	"content": "PERIDYNO "
 },
 {
-	"uri": "/en/categories/",
+	"uri": "https://peridyno.github.io/en/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/en/contributing/website/",
+	"uri": "https://peridyno.github.io/en/contributing/website/",
 	"title": "How to contribute to Peridyno documentation",
 	"tags": [],
 	"description": "This page tells you how to build PeriDyno website, including installation and basic configuration.
@@ -188,7 +188,7 @@
 	"content": "Prerequisites and installation Install Hugo You need a recent extended version (we recommend version 0.53 or later) of Hugo to do local builds and previews of sites (like this one) that use Docsy. If you install from the release page, make sure to get the extended Hugo version, which supports SCSS; you may need to scroll down the list of releases to see it.\nFor comprehensive Hugo documentation, see gohugo.io.\nTo see if you already have hugo installed and check the installed version, run the following commands:\nhugo version\rwindows 1.Download hugo executable file\nClick Here to download hugo executable file, you must download an extended version. For example, an 64bit windows OS should download hugo_extended_0.75.1_Windows-64bit.zip.\n2.Config the path\nConfig the path where .exe file exist to environment variables. The path should not have spaces, which may cause some unexpected problems.\nFor example, the path of D:\\Hugo\\bin is ok. The path of D:\\Program Files (x86)\\Hugo\\bin may cause some unexpected problems.\nLinux Do not use sudo apt-get install hugo, as it currently doesn\u0026rsquo;t get you the extended version.\nIf you\u0026rsquo;ve already installed Hugo, check your version:\nhugo version\rIf the result is v0.52 or earlier, or if you don\u0026rsquo;t see Extended, you\u0026rsquo;ll need to install the latest version.\n  Go to the Hugo releases page.\n  In the most recent release, scroll down until you find a list of Extended versions.\n  Download the latest extended version (hugo_extended_0.5X_Linux-64bit.tar.gz).\n  Create a new directory:\nmkdir hugo\r   Extract the files you downloaded to hugo.\n  Switch to your new directory:\ncd hugo\r   Install Hugo:\nsudo install hugo /usr/bin    macOS Install Hugo using Brew.\nInstall Node.js and npm To see if you already have Node.js and npm installed and check the installed version, run the following commands:\nnode -v\rnpm -v\rClick Here to download Node.js and install it.\nInstall PostCSS To build or update your site\u0026rsquo;s CSS resources, you also need PostCSS to create the final assets. If you need to install it, you must have a recent version of NodeJS installed on your machine so you can use npm, the Node package manager. By default npm installs tools under the directory where you run npm install:\nnpm install postcss --save-dev\rnpm install -D --save autoprefixer\rnpm install -D --save postcss-cli\rNote that versions of PostCSS later than 5.0.1 will not load autoprefixer if installed globally, you must use a local install.\nClone Peridyno webset code and run   Make a local working copy of the Peridyno webset directly using git clone:\ngit clone https://github.com/peridyno/peri-docs.git\r   Switch to the root of the cloned project, for example:\n cd peri-docs\r   Build your site:\n hugo server\r   Preview your site in your browser at: http://localhost:1313/. You can use Ctrl + c to stop the Hugo server whenever you like.\n  In the cmd of windows, enter into current folder, and input hugo server to launch the local server. Pull requests Finally, you should make an \u0026ldquo;Pull requests\u0026rdquo; at our github repository. Thanks for your contribution to Peridyno opensource project!\nPublishing website   Generate public folder\n cd physiIKA-website\rhugo\r   Push files(If you have permission)\n cd public git init\rgit add -A\rgit commit -am \u0026quot;init\u0026quot;\rgit remote add origin https://github.com/peridyno/peri-docs.github.io\rgit push -f origin master\r   If our project is helpful to you, give a star and watch us!!! "
 },
 {
-	"uri": "/en/tags/",
+	"uri": "https://peridyno.github.io/en/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

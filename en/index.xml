@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PeriDyno on Documentation for PeriDyno</title>
-    <link>/en/</link>
+    <link>https://peridyno.github.io/en/</link>
     <description>Recent content in PeriDyno on Documentation for PeriDyno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 29 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://peridyno.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Module</title>
-      <link>/en/framework/modules/</link>
+      <link>https://peridyno.github.io/en/framework/modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/en/framework/modules/</guid>
+      <guid>https://peridyno.github.io/en/framework/modules/</guid>
       <description>Structure of a module The following code demonstrates the typical strcuture of a module, which contains regular variables, input variables and output variables.
 template&amp;lt;typename TDataType&amp;gt; class SummationDensity : public ComputeModule { DECLARE_CLASS_1(SummationDensity, TDataType) public: typedef typename TDataType::Real Real; typedef typename TDataType::Coord Coord; SummationDensity(); ~SummationDensity() override {}; void compute() override; protected: void calculateScalingFactor(); void compute(DeviceArray&amp;lt;Real&amp;gt;&amp;amp; rho); void compute( DeviceArray&amp;lt;Real&amp;gt;&amp;amp; rho, DeviceArray&amp;lt;Coord&amp;gt;&amp;amp; pos, NeighborList&amp;lt;int&amp;gt;&amp;amp; neighbors, Real smoothingLength, Real mass); public: ///Define intrinsic fields  DEF_EMPTY_VAR(RestDensity, Real, &amp;#34;Rest Density&amp;#34;); DEF_EMPTY_VAR(Mass, Real, &amp;#34;Particle mass, note that this module only support a constant mass for all particles.</description>
     </item>
