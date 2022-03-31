@@ -13,22 +13,22 @@
     <title>Framework :: Documentation for PeriDyno</title>
 
     
-    <link href="/css/nucleus.css?1645540235" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540235" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540235" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540235" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540235" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540235" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540235" rel="stylesheet">
-    <link href="/css/theme.css?1645540235" rel="stylesheet">
-    <link href="/css/tabs.css?1645540235" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540235" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708717" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708717" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708717" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708717" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708717" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708717" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708717" rel="stylesheet">
+    <link href="/css/theme.css?1648708717" rel="stylesheet">
+    <link href="/css/tabs.css?1648708717" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708717" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540235" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708717" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540235"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708717"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540235"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540235"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708717"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708717"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540235"></script>
+<script type="text/javascript" src="/js/search.js?1648708717"></script>
 
     
   </div>
@@ -748,13 +748,13 @@
  
   
     
-    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno documentation" class="dd-item
+    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno " class="dd-item
         
         
         
         ">
       <a href="/en/contributing/website/">
-          Docs
+          peridno-docs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -921,7 +921,16 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1schematic-diagram-of-the-scene-graph">1、Schematic diagram of the scene graph</a></li>
+        <li><a href="#2how-to-create-a-scene-graph">2、How to create a scene graph</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -949,7 +958,71 @@
 
 
 
-	<p>A complete scene in Peridyno consists of four layers of components. From top to bottom are, <strong>scene graph</strong>, <strong>nodes</strong>, <strong>modules</strong> and <strong>fields</strong>.</p>
+	<h3 id="1schematic-diagram-of-the-scene-graph">1、Schematic diagram of the scene graph</h3>
+<p><strong>Peridyno</strong> manages all elements including <strong>Field</strong>, <strong>Module</strong> and <strong>Field</strong> in a unified manner through <strong>Scene Graph</strong>。The following figure shows a scene graph with four simulation nodes:</p>
+<p><img src="/images/frameWork/scenegraph.jpg?width=50pc" alt="A Chapter"></p>
+<h3 id="2how-to-create-a-scene-graph">2、How to create a scene graph</h3>
+<p>Next, take fluid simulation as an example to show how to use <strong>peridyno</strong> to create a complete demo. The complete process consists of the following four steps:</p>
+<ul>
+<li>
+<p>Create a scene graph</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">std<span style="color:#f92672">::</span>shared_ptr<span style="color:#f92672">&lt;</span>SceneGraph<span style="color:#f92672">&gt;</span> scn <span style="color:#f92672">=</span> std<span style="color:#f92672">::</span>make_shared<span style="color:#f92672">&lt;</span>SceneGraph<span style="color:#f92672">&gt;</span>();
+</code></pre></div></li>
+<li>
+<p>Add a simulation node</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//Add a fluid simulation node
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> fluid <span style="color:#f92672">=</span> scn<span style="color:#f92672">-&gt;</span>addNode(std<span style="color:#f92672">::</span>make_shared<span style="color:#f92672">&lt;</span>ParticleFluid<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>());
+fluid<span style="color:#f92672">-&gt;</span>loadParticles(Vec3f(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">0.4</span>), Vec3f(<span style="color:#ae81ff">0.7</span>, <span style="color:#ae81ff">1.5</span>, <span style="color:#ae81ff">0.6</span>), <span style="color:#ae81ff">0.005</span>);
+  
+<span style="color:#75715e">//add boundary constraint Node
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> boundary <span style="color:#f92672">=</span> scn<span style="color:#f92672">-&gt;</span>addNode(std<span style="color:#f92672">::</span>make_shared<span style="color:#f92672">&lt;</span>StaticBoundary<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>());
+boundary<span style="color:#f92672">-&gt;</span>loadSDF(getAssetPath() <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;bowl/bowl.sdf&#34;</span>, false);
+  
+<span style="color:#75715e">//Add particle visualization node
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> visualizer <span style="color:#f92672">=</span> scn<span style="color:#f92672">-&gt;</span>addNode(std<span style="color:#f92672">::</span>make_shared<span style="color:#f92672">&lt;</span>GLPointVisualNode<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>());
+</code></pre></div></li>
+<li>
+<p>Set the node data connection relationship</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//Fluid Node --&gt; Boundary Constraint Node
+</span><span style="color:#75715e"></span>fluid<span style="color:#f92672">-&gt;</span>connect(boundary<span style="color:#f92672">-&gt;</span>importParticleSystems());
+  
+<span style="color:#75715e">//Fluid Node --&gt; Visualization Node
+</span><span style="color:#75715e"></span>fluid<span style="color:#f92672">-&gt;</span>connect(visualizer<span style="color:#f92672">-&gt;</span>importParticleSystem());
+</code></pre></div></li>
+<li>
+<p>Create an application interface. PeriDyno currently supports both GLFW and QT application interfaces. Taking GLFW as an example, the algorithm flow is as follows:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">GlfwApp window;
+  
+<span style="color:#75715e">//Set up the simulation scene
+</span><span style="color:#75715e"></span>window.setSceneGraph(scn);
+  
+<span style="color:#75715e">//Create application interface
+</span><span style="color:#75715e"></span>window.createWindow(<span style="color:#ae81ff">1024</span>, <span style="color:#ae81ff">768</span>);
+window.mainLoop();
+</code></pre></div>
+<div class="notices note" ><pre><code>The current version requires that the createWindow() function boundary must be made after the setSceneGraph() and setRenderEngine() function calls. If the rendering engine is not explicitly set, the built-in OpenGL-based GLRenderEngine is used by default.
+</code></pre>
+</div>
+
+<p>The effect diagram is as follows：</p>
+</li>
+</ul>
+<p><img src="/images/frameWork/glfw.png?width=50pc" alt="A Chapter"></p>
+<p>Similarly, if using the app interface：</p>
+<pre><code>QtApp window;
+
+//Set up the simulation scene
+window.setSceneGraph(scn);
+
+//Create application interface
+window.createWindow(1024, 768);
+window.mainLoop();
+</code></pre><p>对应的效果图下，做的节点编辑器展示了所有的功能节点以及节点之间的链接 关系，通过连接/断开对应的连线可以改变仿真场景图的节点执行顺序。</p>
+<p><img src="/images/frameWork/qt.png?width=50pc" alt="A Chapter"></p>
+
+<div class="notices info" ><p>完整示例代码参见examples/GL_ParticleFluid和examples/Qt_GLVisualModule。</p>
+</div>
+
 
 
 
@@ -1392,16 +1465,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540235"></script>
-    <script src="/js/jquery.sticky.js?1645540235"></script>
-    <script src="/js/featherlight.min.js?1645540235"></script>
-    <script src="/js/highlight.pack.js?1645540235"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540235"></script>
-    <script src="/js/learn.js?1645540235"></script>
-    <script src="/js/hugo-learn.js?1645540235"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

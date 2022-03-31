@@ -12,22 +12,22 @@
     <title>反射机制 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1645540236" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540236" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540236" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540236" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540236" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540236" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540236" rel="stylesheet">
-    <link href="/css/theme.css?1645540236" rel="stylesheet">
-    <link href="/css/tabs.css?1645540236" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540236" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708718" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708718" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708718" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708718" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708718" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708718" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708718" rel="stylesheet">
+    <link href="/css/theme.css?1648708718" rel="stylesheet">
+    <link href="/css/tabs.css?1648708718" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708718" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540236" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708718" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540236"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708718"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540236"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540236"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708718"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708718"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540236"></script>
+<script type="text/javascript" src="/js/search.js?1648708718"></script>
 
     
   </div>
@@ -729,6 +729,46 @@
       </a>
       
       
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/zh/contributing/website/" title="文档维护" class="dd-item
+        
+        
+        
+        ">
+      <a href="/zh/contributing/website/">
+          文档维护
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
     </li>
   
  
@@ -940,7 +980,7 @@
 <p>反射机制引入的就是为了解决仿真节点和功能模块的自适应扩充问题，从而避免代码之间的深度耦合。</p>
 <h3 id="2c反射原理">2、C++反射原理</h3>
 
-<div class="notices info" ><p>参加src/Framework/Object.h。</p>
+<div class="notices info" ><p>参考代码src/Framework/Object.h。</p>
 </div>
 
 <h3 id="3扩展模块如何支持反射">3、扩展模块如何支持反射</h3>
@@ -967,7 +1007,7 @@ IMPLEMENT_TCLASS(SummationDensity, TDataType)
 </li>
 </ul>
 
-<div class="notices note" ><p>DECLARE_TCLASS和IMPLEMENT_TCLASS要求定义在同一头文件内，该方式对于实现文件为cpp后缀的类有效。然而当前NVCC的编译器依然存在一定问题，也就如果实现文件为.cu后缀，则定义的static变量无法完成初始化，需要通过额外的类来完成。</p>
+<div class="notices note" ><p>DECLARE_TCLASS和IMPLEMENT_TCLASS要求定义在同一头文件内，该方式对于实现文件为cpp后缀的类有效。然而当前NVCC的编译器依然存在一定问题，如果实现文件为.cu后缀，则定义的static变量无法完成初始化，需要通过额外的类来完成。</p>
 </div>
 
 <p>一个可行的解决方案是针对每一个静态链接库引入一个额外的类来完成初始化，在initializeParticleSystem.h中引入</p>
@@ -988,7 +1028,10 @@ IMPLEMENT_TCLASS(SummationDensity, TDataType)
     TypeInfo<span style="color:#f92672">::</span>New<span style="color:#f92672">&lt;</span>SummationDensity<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>();
     TypeInfo<span style="color:#f92672">::</span>New<span style="color:#f92672">&lt;</span>VariationalApproximateProjection<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>();
 }
-</code></pre></div>
+</code></pre></div><p>最后在待运行的Qt项目的CMakeLists.txt中加入&quot;WHOLEARCHIVE&quot;（链接自动注册类的lib库）。例如，运行Qt_VtkVisualModule项目，并期望在项目中自动注册initializeParticleSystem.cpp中类。在{peridyno_Code_path}/examples/Qt_VtkVisualModule/CMakeLists.txt中添加
+：</p>
+<p><img src="/images/frameWork/CMakeLists.jpg?width=70pc" alt=""></p>
+
 
 
 
@@ -1388,8 +1431,26 @@ IMPLEMENT_TCLASS(SummationDensity, TDataType)
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -1416,16 +1477,16 @@ IMPLEMENT_TCLASS(SummationDensity, TDataType)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540236"></script>
-    <script src="/js/jquery.sticky.js?1645540236"></script>
-    <script src="/js/featherlight.min.js?1645540236"></script>
-    <script src="/js/highlight.pack.js?1645540236"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540236"></script>
-    <script src="/js/learn.js?1645540236"></script>
-    <script src="/js/hugo-learn.js?1645540236"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

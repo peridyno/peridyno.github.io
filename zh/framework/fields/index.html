@@ -12,22 +12,22 @@
     <title>数据 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1645540236" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540236" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540236" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540236" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540236" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540236" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540236" rel="stylesheet">
-    <link href="/css/theme.css?1645540236" rel="stylesheet">
-    <link href="/css/tabs.css?1645540236" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540236" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708718" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708718" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708718" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708718" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708718" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708718" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708718" rel="stylesheet">
+    <link href="/css/theme.css?1648708718" rel="stylesheet">
+    <link href="/css/tabs.css?1648708718" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708718" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540236" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708718" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540236"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708718"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540236"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540236"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708718"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708718"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540236"></script>
+<script type="text/javascript" src="/js/search.js?1648708718"></script>
 
     
   </div>
@@ -729,6 +729,46 @@
       </a>
       
       
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/zh/contributing/website/" title="文档维护" class="dd-item
+        
+        
+        
+        ">
+      <a href="/zh/contributing/website/">
+          文档维护
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
     </li>
   
  
@@ -936,7 +976,7 @@
 
 	<h3 id="1field功能简介">1、Field功能简介</h3>
 <p>Field主要通过对典型数据类型的封装实现节点以及模块之间的数据传递。如下图所示，GLPointVisualNode通过定义FInstance类型的Field将点云数据传递给InputFieldTest使用。</p>
-<p><img src="images/field.png?width=30pc" alt=""></p>
+<p><img src="/images/fields/field.png?width=30pc" alt=""></p>
 <p>Field之间的连接和断开主要依赖一下两个函数实现</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">connect</span>(FBase<span style="color:#f92672">*</span> dst) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
 <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">disconnect</span>(FBase<span style="color:#f92672">*</span> dst);
@@ -945,7 +985,7 @@
 <div class="notices note" ><p>connect(FBase* dst)在FBase中被定义了纯虚函数，因而其具体实现依赖于特定Field，该设计主要为了保证对数据连接进行有效性验证，仿真将数据连接到错误的类型。</p>
 </div>
 
-<p>假设存在A、B、C三个Field类型数据，他们的连接关系设置为A$\rightarrow$B$\rightarrow$C。此时为了降低数据转换和存储开销，当我们对C的数据进行操作时，其会根据连接关系返回最顶端（这里对应的是A）的数据指针进行操作。</p>
+<p>假设存在A、B、C三个Field类型数据，他们的连接关系设置为A-&gt;B-&gt;C。此时为了降低数据转换和存储开销，当我们对C的数据进行操作时，其会根据连接关系返回最顶端（这里对应的是A）的数据指针进行操作。</p>
 <h3 id="2field类型">2、Field类型</h3>
 <ul>
 <li>
@@ -983,7 +1023,7 @@
 </li>
 </ul>
 
-<div class="notices info" ><p>参加src/Framework/FBase.h。</p>
+<div class="notices info" ><p>参考代码src/Framework/FBase.h。</p>
 </div>
 
 
@@ -1386,8 +1426,26 @@
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -1414,16 +1472,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540236"></script>
-    <script src="/js/jquery.sticky.js?1645540236"></script>
-    <script src="/js/featherlight.min.js?1645540236"></script>
-    <script src="/js/highlight.pack.js?1645540236"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540236"></script>
-    <script src="/js/learn.js?1645540236"></script>
-    <script src="/js/hugo-learn.js?1645540236"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

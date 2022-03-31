@@ -12,22 +12,22 @@
     <title>Scene Graph :: Documentation for PeriDyno</title>
 
     
-    <link href="/css/nucleus.css?1645540235" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540235" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540235" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540235" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540235" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540235" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540235" rel="stylesheet">
-    <link href="/css/theme.css?1645540235" rel="stylesheet">
-    <link href="/css/tabs.css?1645540235" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540235" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708717" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708717" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708717" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708717" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708717" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708717" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708717" rel="stylesheet">
+    <link href="/css/theme.css?1648708717" rel="stylesheet">
+    <link href="/css/tabs.css?1648708717" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708717" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540235" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708717" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540235"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708717"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540235"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540235"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708717"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708717"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540235"></script>
+<script type="text/javascript" src="/js/search.js?1648708717"></script>
 
     
   </div>
@@ -747,13 +747,13 @@
  
   
     
-    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno documentation" class="dd-item
+    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno " class="dd-item
         
         
         
         ">
       <a href="/en/contributing/website/">
-          Docs
+          peridno-docs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -945,9 +945,36 @@
 
 
 
-	<h2 id="structure-of-a-scene">Structure of a scene</h2>
-<p><img src="sceneflow.jpg" alt="SceneFlow"></p>
-<h2 id="scene-graph-traversal">Scene graph traversal</h2>
+	<p>The scene graph mainly includes two functions: <strong>node management</strong> and <strong>node operation logic management</strong>.</p>
+<h3 id="1node-management">1、Node management</h3>
+<p>Node management functions include:</p>
+<ul>
+<li>add node</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TNode</span>, <span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">...</span><span style="color:#a6e22e">Args</span><span style="color:#f92672">&gt;</span> 
+    std<span style="color:#f92672">::</span>shared_ptr<span style="color:#f92672">&lt;</span>TNode<span style="color:#f92672">&gt;</span> addNode(Args<span style="color:#f92672">&amp;&amp;</span> ... args)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TNode</span><span style="color:#f92672">&gt;</span>
+    std<span style="color:#f92672">::</span>shared_ptr<span style="color:#f92672">&lt;</span>TNode<span style="color:#f92672">&gt;</span> addNode(std<span style="color:#f92672">::</span>shared_ptr<span style="color:#f92672">&lt;</span>TNode<span style="color:#f92672">&gt;</span> tNode)
+</code></pre></div><p>Where TNode represents the derived type of the node, and Args is the parameter required by the node construction process</p>
+<ul>
+<li>delete node</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">deleteNode</span>(std<span style="color:#f92672">::</span>shared_ptr<span style="color:#f92672">&lt;</span>Node<span style="color:#f92672">&gt;</span> node);
+</code></pre></div><h3 id="2node-operation-logic-management">2、Node operation logic management</h3>
+<blockquote>
+<ul>
+<li>Update run queue</li>
+</ul>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">updateExecutionQueue</span>();
+</code></pre></div><p>The timing of the update mainly depends on whether the nodes in the scene graph and the connection relationship have changed. Once any item is changed, the node execution queue of the scene will update the run queue first the next time the node function is executed.</p>
+<ul>
+<li>update node status</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">propagateNode</span>(std<span style="color:#f92672">::</span>shared_ptr<span style="color:#f92672">&lt;</span>Node<span style="color:#f92672">&gt;</span> node);
+</code></pre></div><p>When the running state of a specific node changes, for example, the configuration parameters of the node are changed, the scene graph can update the state of all subsequent nodes that depend on the node by calling the propagateNode() function.</p>
+<h3 id="3function-expansion">3、Function expansion</h3>
+<p>To be added&hellip;</p>
 
 
 
@@ -1391,16 +1418,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540235"></script>
-    <script src="/js/jquery.sticky.js?1645540235"></script>
-    <script src="/js/featherlight.min.js?1645540235"></script>
-    <script src="/js/highlight.pack.js?1645540235"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540235"></script>
-    <script src="/js/learn.js?1645540235"></script>
-    <script src="/js/hugo-learn.js?1645540235"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

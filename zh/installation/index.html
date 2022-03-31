@@ -13,22 +13,22 @@
     <title>安装指引 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1645540236" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540236" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540236" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540236" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540236" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540236" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540236" rel="stylesheet">
-    <link href="/css/theme.css?1645540236" rel="stylesheet">
-    <link href="/css/tabs.css?1645540236" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540236" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708718" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708718" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708718" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708718" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708718" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708718" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708718" rel="stylesheet">
+    <link href="/css/theme.css?1648708718" rel="stylesheet">
+    <link href="/css/tabs.css?1648708718" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708718" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540236" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708718" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540236"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708718"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540236"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540236"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708718"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708718"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540236"></script>
+<script type="text/javascript" src="/js/search.js?1648708718"></script>
 
     
   </div>
@@ -730,6 +730,46 @@
       </a>
       
       
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/zh/contributing/website/" title="文档维护" class="dd-item
+        
+        
+        
+        ">
+      <a href="/zh/contributing/website/">
+          文档维护
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
     </li>
   
  
@@ -898,6 +938,7 @@
         <li><a href="#安装">安装</a></li>
         <li><a href="#编译项目">编译项目</a></li>
         <li><a href="#examples">Examples</a></li>
+        <li><a href="#可选库qt以及vtk安装">可选库QT以及VTK安装</a></li>
         <li><a href="#协议">协议</a></li>
       </ul>
     </li>
@@ -974,8 +1015,27 @@
 <pre><code>cd peridyo/build 
 cmake ..
 </code></pre><h3 id="examples">Examples</h3>
-<p><!-- raw HTML omitted --></p>
-<p><img src="fluid.jpg" alt=""></p>
+<p><img src="/images/installation/fluid.jpg" alt=""></p>
+<h3 id="可选库qt以及vtk安装">可选库QT以及VTK安装</h3>
+<p>QT安装：推荐下载<a href="https://download.qt.io/archive/qt/5.13/5.13.2/">QT5.13.0</a> 以上</p>
+<p>1、需要注册账户：</p>
+<p><img src="/images/installation/register.jpg?width=20pc" alt=""></p>
+<p>2、需要选择的组件：</p>
+<p><img src="/images/installation/components.jpg?width=20pc" alt=""></p>
+<p>3、重新Cmake项目，并勾选QT相关选项：</p>
+<p><img src="/images/installation/configure.jpg?width=50pc" alt=""></p>
+<p>VTK安装：推荐下载<a href="https://www.vtk.org/files/release/8.2/VTK-8.2.0.zip">VTK8.2.0</a> 以上</p>
+<p>1、下载VTK源码</p>
+<p>2.勾选Moduel中QT相关的这些选项：</p>
+<p><img src="/images/installation/VTKModule.jpg?width=30pc" alt=""></p>
+<p>3.设置OpenGL相关选项：
+<img src="/images/installation/vtk_cmake.jpg" alt=""></p>
+<p>4.然后点Generate再打开VS项目进行生成</p>
+<p>5.打开VTK的VS工程。生成-&gt;批生成 ALL_BUILD Release x64 栏 勾选 √&mdash;-&gt;点击【生成】
+<img src="/images/installation/vtk_build.jpg" alt=""></p>
+<p>6.把刚刚勾选的ALL_BUILD Release后面的√去掉，下拉，在INSTALL Release后面勾选</p>
+<p>7.将VTK路径加入到Path中
+<img src="/images/installation/vtk_path.jpg" alt=""></p>
 <h3 id="协议">协议</h3>
 <p>Peridyno 的默认许可是 Apache 2.0（参见 <a href="https://github.com/peridyno/peridyno/blob/master/LICENSE">许可</a>）。</p>
 <p>外部库是根据自己的条款协议分发。</p>
@@ -1375,8 +1435,26 @@ cmake ..
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -1403,16 +1481,16 @@ cmake ..
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540236"></script>
-    <script src="/js/jquery.sticky.js?1645540236"></script>
-    <script src="/js/featherlight.min.js?1645540236"></script>
-    <script src="/js/highlight.pack.js?1645540236"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540236"></script>
-    <script src="/js/learn.js?1645540236"></script>
-    <script src="/js/hugo-learn.js?1645540236"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

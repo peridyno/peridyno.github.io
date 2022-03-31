@@ -12,22 +12,22 @@
     <title>Node :: Documentation for PeriDyno</title>
 
     
-    <link href="/css/nucleus.css?1645540235" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540235" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540235" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540235" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540235" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540235" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540235" rel="stylesheet">
-    <link href="/css/theme.css?1645540235" rel="stylesheet">
-    <link href="/css/tabs.css?1645540235" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540235" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708717" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708717" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708717" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708717" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708717" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708717" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708717" rel="stylesheet">
+    <link href="/css/theme.css?1648708717" rel="stylesheet">
+    <link href="/css/tabs.css?1648708717" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708717" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540235" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708717" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540235"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708717"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540235"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540235"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708717"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708717"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540235"></script>
+<script type="text/javascript" src="/js/search.js?1648708717"></script>
 
     
   </div>
@@ -747,13 +747,13 @@
  
   
     
-    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno documentation" class="dd-item
+    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno " class="dd-item
         
         
         
         ">
       <a href="/en/contributing/website/">
-          Docs
+          peridno-docs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -945,77 +945,110 @@
 
 
 
-	<h2 id="structure-of-a-node">Structure of a node</h2>
-<p>The follow code demonstrates a typical implementation of a node that handles the one-way coupling between particles and static trianglar boundaries.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">template</span>&lt;<span style="color:#a6e22e">typename</span> <span style="color:#a6e22e">TDataType</span>&gt;
-<span style="color:#a6e22e">class</span> <span style="color:#a6e22e">StaticMeshBoundary</span> : <span style="color:#a6e22e">public</span> <span style="color:#a6e22e">Node</span>
-{
-  <span style="color:#a6e22e">DECLARE_CLASS_1</span>(<span style="color:#a6e22e">StaticMeshBoundary</span>, <span style="color:#a6e22e">TDataType</span>)
-<span style="color:#a6e22e">public</span>:
-  <span style="color:#a6e22e">typedef</span> <span style="color:#a6e22e">typename</span> <span style="color:#a6e22e">TDataType</span>::<span style="color:#a6e22e">Real</span> <span style="color:#a6e22e">Real</span>;
-  <span style="color:#a6e22e">typedef</span> <span style="color:#a6e22e">typename</span> <span style="color:#a6e22e">TDataType</span>::<span style="color:#a6e22e">Coord</span> <span style="color:#a6e22e">Coord</span>;
-  <span style="color:#a6e22e">typedef</span> <span style="color:#a6e22e">typename</span> <span style="color:#a6e22e">TopologyModule</span>::<span style="color:#a6e22e">Triangle</span> <span style="color:#a6e22e">Triangle</span>;
-
-  <span style="color:#a6e22e">StaticMeshBoundary</span>();
-  <span style="color:#960050;background-color:#1e0010">~</span><span style="color:#a6e22e">StaticMeshBoundary</span>() <span style="color:#a6e22e">override</span>;
-
-  <span style="color:#a6e22e">void</span> <span style="color:#a6e22e">advance</span>(<span style="color:#a6e22e">Real</span> <span style="color:#a6e22e">dt</span>) <span style="color:#a6e22e">override</span>;
-<span style="color:#a6e22e">public</span>:
-  <span style="color:#75715e">/**
-</span><span style="color:#75715e">    * @brief Input rigid bodies
-</span><span style="color:#75715e">    */</span>
-  <span style="color:#a6e22e">DEF_NODE_PORTS</span>(<span style="color:#a6e22e">RigidBody</span>, <span style="color:#a6e22e">RigidBody</span>&lt;<span style="color:#a6e22e">TDataType</span>&gt;, <span style="color:#e6db74">&#34;A rigid body&#34;</span>);
-
-  <span style="color:#75715e">/**
-</span><span style="color:#75715e">    * @brief Input particle systems
-</span><span style="color:#75715e">    */</span>
-  <span style="color:#a6e22e">DEF_NODE_PORTS</span>(<span style="color:#a6e22e">ParticleSystem</span>, <span style="color:#a6e22e">ParticleSystem</span>&lt;<span style="color:#a6e22e">TDataType</span>&gt;, <span style="color:#e6db74">&#34;Particle Systems&#34;</span>);
-
-
-<span style="color:#a6e22e">public</span>:
-  <span style="color:#75715e">/**
-</span><span style="color:#75715e">    * @brief Particle position
-</span><span style="color:#75715e">    */</span>
-  <span style="color:#a6e22e">DEF_EMPTY_CURRENT_ARRAY</span>(<span style="color:#a6e22e">ParticlePosition</span>, <span style="color:#a6e22e">Coord</span>, <span style="color:#a6e22e">DeviceType</span>::<span style="color:#a6e22e">GPU</span>, <span style="color:#e6db74">&#34;Particle position&#34;</span>);
-
-
-  <span style="color:#75715e">/**
-</span><span style="color:#75715e">    * @brief Particle velocity
-</span><span style="color:#75715e">    */</span>
-  <span style="color:#a6e22e">DEF_EMPTY_CURRENT_ARRAY</span>(<span style="color:#a6e22e">ParticleVelocity</span>, <span style="color:#a6e22e">Coord</span>, <span style="color:#a6e22e">DeviceType</span>::<span style="color:#a6e22e">GPU</span>, <span style="color:#e6db74">&#34;Particle velocity&#34;</span>);
-
-  <span style="color:#75715e">/**
-</span><span style="color:#75715e">    * @brief Triangle vertex
-</span><span style="color:#75715e">    */</span>
-  <span style="color:#a6e22e">DEF_EMPTY_CURRENT_ARRAY</span>(<span style="color:#a6e22e">TriangleVertex</span>, <span style="color:#a6e22e">Coord</span>, <span style="color:#a6e22e">DeviceType</span>::<span style="color:#a6e22e">GPU</span>, <span style="color:#e6db74">&#34;Particle position&#34;</span>);
-
-  <span style="color:#75715e">/**
-</span><span style="color:#75715e">    * @brief Particle velocity
-</span><span style="color:#75715e">    */</span>
-  <span style="color:#a6e22e">DEF_EMPTY_CURRENT_ARRAY</span>(<span style="color:#a6e22e">TriangleIndex</span>, <span style="color:#a6e22e">Triangle</span>, <span style="color:#a6e22e">DeviceType</span>::<span style="color:#a6e22e">GPU</span>, <span style="color:#e6db74">&#34;Particle velocity&#34;</span>);
-
-<span style="color:#a6e22e">private</span>:
-  <span style="color:#75715e">/**
-</span><span style="color:#75715e">    * @brief Define other private members below
-</span><span style="color:#75715e">    */</span>
-};
-</code></pre></div><p>To be recognized by the reflecting system in Peridyno, each class should be started with the following macro definition</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">  <span style="color:#a6e22e">DECLARE_CLASS</span>(<span style="color:#a6e22e">ClassName</span>)
-</code></pre></div><p>or</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">  <span style="color:#a6e22e">DECLARE_CLASS_1</span>(<span style="color:#a6e22e">ClassName</span>, <span style="color:#a6e22e">TemplateName</span>)
-</code></pre></div><p>for templated class.</p>
-<p>The above declaration should be concluded with the following macro definition</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">  <span style="color:#a6e22e">IMPLEMENT_CLASS</span>(<span style="color:#a6e22e">ClassName</span>)
-</code></pre></div><p>or</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">  <span style="color:#a6e22e">IMPLEMENT_CLASS_1</span>(<span style="color:#a6e22e">ClassName</span>, <span style="color:#a6e22e">TemplateName</span>)
-</code></pre></div><p>for templated class.</p>
-<p>Then, an instance of StaticMeshBoundary can correctly created by passing the class name to the static function in the Object class.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">  <span style="color:#a6e22e">static</span> <span style="color:#a6e22e">Object</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">createObject</span>(<span style="color:#a6e22e">std</span>::<span style="color:#66d9ef">string</span> <span style="color:#a6e22e">name</span>);
-</code></pre></div><p>In addition, an instance of the reflected class can also be create from the Peridyno Studio.</p>
-<p><img src="createInstanceFromQt.jpg" alt="Example"></p>
-<h3 id="node-ports">Node Ports</h3>
-<h3 id="mechanical-status">Mechanical Status</h3>
-<h3 id="topology">Topology</h3>
+	<h3 id="1function-introduction">1、Function introduction</h3>
+<p>A node is a collection of algorithms with relatively independent functions that encapsulate specific function modules. It is mainly composed of <strong>input node</strong>, <strong>input data</strong>, <strong>output node</strong>, <strong>output data</strong>, <strong>state variable</strong> and <strong>function module</strong>.</p>
+<h3 id="2how-to-implement-a-custom-function-node">2、How to implement a custom function node</h3>
+<p>Creating a complete node consists of the following steps:</p>
+<ul>
+<li>
+<p>define <strong>input</strong> nodes (optional)</p>
+<pre><code>DEF_NODE_PORT(T, name, desc)
+</code></pre><p>This macro defines a single node input, where T represents the node type, name represents the name, desc represents the input node description information, and the access method is <strong>import+data name</strong>.</p>
+<pre><code>DEF_NODE_PORTS(T, name, desc)
+</code></pre><p>This macro definition can define an array of input nodes, which can access 0 to any number of nodes of type T as input. The access method is <strong>import+data name+s</strong>.</p>
+</li>
+<li>
+<p>define <strong>input</strong> data (optional)</p>
+<pre><code>DEF_VAR_IN(T, name, desc)
+</code></pre><p>Define a single data type with input type T and name name as input.</p>
+<pre><code>DEF_ARRAY_IN(T, name, device, desc)
+</code></pre><p>Define a one-dimensional array of type T and name name as input on the device (CPU/GPU) device.</p>
+<pre><code>DEF_ARRAY2D_IN(T, name, device, desc)
+</code></pre><p>Define a two-dimensional array of type T and name as input on the device (CPU/GPU) device.</p>
+<pre><code>DEF_ARRAY3D_IN(T, name, device, desc)
+</code></pre><p>Define a three-dimensional array of type T and name name as input on the device (CPU/GPU) device.</p>
+<pre><code>DEF_INSTANCE_IN(T, name, desc)
+</code></pre><p>Define an instance of input type T and name name as input.</p>
+<pre><code>DEF_ARRAYLIST_IN(T, name, device, desc)
+</code></pre><p>Define a one-dimensional dynamic list array of type T and name name as input on the device (CPU/GPU) device.</p>
+</li>
+<li>
+<p>define <strong>output</strong> data (optional)</p>
+<pre><code>DEF_VAR_OUT(T, name, desc)
+</code></pre><p>Define a single data type with input type T and name name as output.</p>
+<pre><code>DEF_ARRAY_OUT(T, name, device, desc)
+</code></pre><p>Define a one-dimensional array of type T and name name as output on the device (CPU/GPU) device.</p>
+<pre><code>DEF_ARRAY2D_OUT(T, name, device, desc)
+</code></pre><p>Define a two-dimensional array of type T and name name as output on the device (CPU/GPU) device.</p>
+<pre><code>DEF_ARRAY3D_OUT(T, name, device, desc)
+</code></pre><p>Define a three-dimensional array of type T and name name as output on the device (CPU/GPU) device.</p>
+<pre><code>DEF_INSTANCE_OUT(T, name, desc)
+</code></pre><p>Define an instance of input type T and name name as output.</p>
+<pre><code>DEF_ARRAYLIST_OUT(T, name, device, desc)
+</code></pre><p>Define a one-dimensional dynamic list array with type T and name name as output on the device (CPU/GPU) device.</p>
+</li>
+<li>
+<p>define <strong>state variables</strong></p>
+<pre><code>DEF_VAR(T, name, value, desc)
+</code></pre><p>Define a single data type with type T, name as name, and initial value type as value as a state variable.</p>
+<pre><code>DEF_ARRAY_STATE(T, name, device, desc)
+</code></pre><p>Define a one-dimensional array of type T and name name as a state variable on the device (CPU/GPU) device.</p>
+<pre><code>DEF_ARRAY2D_STATE(T, name, device, desc)
+</code></pre><p>Define a two-dimensional array of type T and name as a state variable on the device (CPU/GPU) device.</p>
+<pre><code>DEF_ARRAY3D_STATE(T, name, device, desc)
+</code></pre><p>Define a three-dimensional array of type T and name as a state variable on the device (CPU/GPU) device.</p>
+<pre><code>DEF_INSTANCE_STATE(T, name, desc)
+</code></pre><p>Define an instance of input type T and name name as a state variable.</p>
+<pre><code>DEF_ARRAYLIST_STATE(T, name, device, desc)
+</code></pre><p>Define a one-dimensional dynamic list array of type T and name name as a state variable on the device (CPU/GPU) device.</p>
+</li>
+<li>
+<p>Create function modules</p>
+<p>Taking RigidBodySystem as an example, the function modules created in the constructor are as follows:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">//Create a self-collision detection module
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> elementQuery <span style="color:#f92672">=</span> std<span style="color:#f92672">::</span>make_shared<span style="color:#f92672">&lt;</span>NeighborElementQuery<span style="color:#f92672">&lt;</span>TDataType<span style="color:#f92672">&gt;&gt;</span>();
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>currentTopology()<span style="color:#f92672">-&gt;</span>connect(elementQuery<span style="color:#f92672">-&gt;</span>inDiscreteElements());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>stateCollisionMask()<span style="color:#f92672">-&gt;</span>connect(elementQuery<span style="color:#f92672">-&gt;</span>inCollisionMask());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>animationPipeline()<span style="color:#f92672">-&gt;</span>pushModule(elementQuery);
+  
+<span style="color:#75715e">//Create a Bounding Box Collision Detection Function Module
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> cdBV <span style="color:#f92672">=</span> std<span style="color:#f92672">::</span>make_shared<span style="color:#f92672">&lt;</span>CollistionDetectionBoundingBox<span style="color:#f92672">&lt;</span>TDataType<span style="color:#f92672">&gt;&gt;</span>();
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>currentTopology()<span style="color:#f92672">-&gt;</span>connect(cdBV<span style="color:#f92672">-&gt;</span>inDiscreteElements());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>animationPipeline()<span style="color:#f92672">-&gt;</span>pushModule(cdBV);
+  
+<span style="color:#75715e">//Create a combined contact function block
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> merge <span style="color:#f92672">=</span> std<span style="color:#f92672">::</span>make_shared<span style="color:#f92672">&lt;</span>ContactsUnion<span style="color:#f92672">&lt;</span>TDataType<span style="color:#f92672">&gt;&gt;</span>();
+elementQuery<span style="color:#f92672">-&gt;</span>outContacts()<span style="color:#f92672">-&gt;</span>connect(merge<span style="color:#f92672">-&gt;</span>inContactsA());
+cdBV<span style="color:#f92672">-&gt;</span>outContacts()<span style="color:#f92672">-&gt;</span>connect(merge<span style="color:#f92672">-&gt;</span>inContactsB());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>animationPipeline()<span style="color:#f92672">-&gt;</span>pushModule(merge);
+  
+<span style="color:#75715e">//Create a Rigid Body Dynamics Solver Module
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">auto</span> iterSolver <span style="color:#f92672">=</span> std<span style="color:#f92672">::</span>make_shared<span style="color:#f92672">&lt;</span>IterativeConstraintSolver<span style="color:#f92672">&lt;</span>TDataType<span style="color:#f92672">&gt;&gt;</span>();
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>varTimeStep()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>inTimeStep());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>varFrictionEnabled()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>varFrictionEnabled());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>stateMass()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>inMass());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>stateCenter()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>inCenter());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>stateVelocity()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>inVelocity());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>stateAngularVelocity()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>inAngularVelocity());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>stateRotationMatrix()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>inRotationMatrix());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>stateInertia()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>inInertia());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>stateQuaternion()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>inQuaternion());
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>stateInitialInertia()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>inInitialInertia());
+  
+merge<span style="color:#f92672">-&gt;</span>outContacts()<span style="color:#f92672">-&gt;</span>connect(iterSolver<span style="color:#f92672">-&gt;</span>inContacts());
+  
+<span style="color:#66d9ef">this</span><span style="color:#f92672">-&gt;</span>animationPipeline()<span style="color:#f92672">-&gt;</span>pushModule(iterSolver);
+</code></pre></div></li>
+<li>
+<p><strong>Overload virtual function</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">preUpdateStates</span>();
+</code></pre></div><p>Status update pre-processing function</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">updateStates</span>();
+</code></pre></div><p>The state update function, the default is to call the pipeline to execute the default algorithm process</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">postUpdateStates</span>();
+</code></pre></div><p>Status update post-processing function</p>
+</li>
+</ul>
 
 
 
@@ -1462,16 +1495,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540235"></script>
-    <script src="/js/jquery.sticky.js?1645540235"></script>
-    <script src="/js/featherlight.min.js?1645540235"></script>
-    <script src="/js/highlight.pack.js?1645540235"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540235"></script>
-    <script src="/js/learn.js?1645540235"></script>
-    <script src="/js/hugo-learn.js?1645540235"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

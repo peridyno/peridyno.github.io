@@ -13,22 +13,22 @@
     <title>高度场 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1645540236" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540236" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540236" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540236" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540236" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540236" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540236" rel="stylesheet">
-    <link href="/css/theme.css?1645540236" rel="stylesheet">
-    <link href="/css/tabs.css?1645540236" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540236" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708718" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708718" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708718" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708718" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708718" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708718" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708718" rel="stylesheet">
+    <link href="/css/theme.css?1648708718" rel="stylesheet">
+    <link href="/css/tabs.css?1648708718" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708718" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540236" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708718" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540236"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708718"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540236"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540236"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708718"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708718"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540236"></script>
+<script type="text/javascript" src="/js/search.js?1648708718"></script>
 
     
   </div>
@@ -730,6 +730,46 @@
       </a>
       
       
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/zh/contributing/website/" title="文档维护" class="dd-item
+        
+        
+        
+        ">
+      <a href="/zh/contributing/website/">
+          文档维护
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
     </li>
   
  
@@ -897,10 +937,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#高度场流体总体介绍">高度场流体总体介绍</a>
+    <li><a href="#总体介绍">总体介绍</a>
       <ul>
         <li><a href="#浅水波仿真">浅水波仿真</a></li>
         <li><a href="#基于快速傅里叶变换fft的海浪模拟">基于快速傅里叶变换（FFT）的海浪模拟</a></li>
+        <li><a href="#参考文献">参考文献</a></li>
       </ul>
     </li>
   </ul>
@@ -953,14 +994,13 @@
 
 
 
-	<h2 id="高度场流体总体介绍">高度场流体总体介绍</h2>
+	<h2 id="总体介绍">总体介绍</h2>
 <p>基于二维高度场的网格流体模拟方法，该方法把水面表示成为一个连续的平面网格，生成一系列对应于这张网络的连续的高度纹理－称为高度图，每个网格顶点对应于一个高度图的像素，作为水面高度，从而表示出整个水面。</p>
 <p>高度场流体仿真分为两个部分，基于浅水方程（SWE）的浅水波模拟和基于快速傅里叶变换（FFT）的海浪模拟。浅水方程（SWE）是描述浅水流动的数学模型，同时也是水力学中的一个重要的数学模型。浅水方程建立在具有物理意义的物理量守恒基础上，也可以称为双曲守恒型方程组。基于快速傅里叶变换（FFT）的海浪模拟的主要思想就是按照Phillips波普得到海面的高度场（也就是傅里叶变换的频域），然后将其逆傅里叶变换（IFFT）得到海面（也就是时域）。</p>
-<!-- raw HTML omitted -->
-<p><img src="CapillaryWave.png" alt="">
-<img src="Ocean.png" alt=""></p>
+<p><img src="/images/topics/heightField/CapillaryWave.png?width=40pc" alt=""></p>
+<p><img src="/images/topics/heightField/Ocean.png?width=40pc" alt=""></p>
 <h3 id="浅水波仿真">浅水波仿真</h3>
-<p>目前实时系统中用于建模大规模水体广泛使用Gerstner模型，其核心思想是通过对计算格点的位置进行周期性的偏移来达到水波翻滚的效果。尽管Gerstner Wave适用于建模大范围的水体，然而其在展现精细尺度水波上能力有限，且无法反应水体与刚体的交互。鉴于此，本项目使用浅水方程来实现精细尺度的水波模拟：</p>
+<p>目前实时系统大规模水体仿真广泛使用Gerstner模型，其核心思想是通过对计算格点的位置进行周期性的偏移来达到水波翻滚的效果。尽管Gerstner Wave适用于建模大范围的水体，然而其在展现精细尺度水波上能力有限，且无法反应水体与刚体的交互。鉴于此，本项目使用浅水方程来实现精细尺度的水波模拟：</p>
 <p>\begin{array}{l}
 \frac{{\partial h}}{{\partial t}} + \frac{\partial }{{\partial x}}\left( {hu} \right) + \frac{\partial }{{\partial y}}\left( {hv} \right) = 0 \\<br>
 \frac{\partial }{{\partial t}}\left( {hu} \right) + \frac{\partial }{{\partial x}}\left( {\frac{{h{u^2}}}{2}} \right) + \frac{\partial }{{\partial y}}\left( {huv} \right) =  - gh\frac{{\partial s}}{{\partial x}} \\<br>
@@ -969,9 +1009,8 @@
 <p>其中u、v分别表示洋流水平速度的两个分量，h表示洋流的深度，s表示海面垂直坐标，g表示重力加速度。求解过程，首先基于高度场对仿真区域进行如图所示的离散。</p>
 <!-- raw HTML omitted -->
 <p><img src="HeightField.png" alt=""></p>
-<p>然后，通过求解波动方程计算每个时刻的高度场的位置。最终，将基于浅水方程（SWE）得到的高度场叠加到大区域水体上从而实现更加逼得水体仿真。
-首先初始化水面的初始高度：</p>
-<p>对于水面边界的高度进行处理，每次计算后：</p>
+<p>然后，通过求解波动方程计算每个时刻的高度场的位置。最终，将基于浅水方程（SWE）得到的高度场叠加到大区域水体上从而实现更加逼得水体仿真。</p>
+<p>首先初始化水面的初始高度。对于水面边界的高度进行处理，每次计算后：</p>
 <pre><code>a) x=0点的粒子高度值等于x=1点的粒子高度值； 
 
 b) x= width - 1点的粒子高度值等于x= width - 2点的粒子高度值；
@@ -1138,6 +1177,7 @@ J_{yx}=\frac{\partial y^{'}}{\partial x}=\lambda \frac{\partial D_y\left( x,t \r
 J_{xy}=\frac{\partial x^{'}}{\partial y}=\lambda \frac{\partial D_x\left( x,t \right)}{\partial y}\\<br>
 \end{array}
 $$</p>
+<h3 id="参考文献">参考文献</h3>
 <p>[1] Tessendorf J. Simulating ocean water[J]. Simulating nature: realistic and interactive techniques. SIGGRAPH, 2001, 1(2): 5.</p>
 
 
@@ -1539,8 +1579,26 @@ $$</p>
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -1567,16 +1625,16 @@ $$</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540236"></script>
-    <script src="/js/jquery.sticky.js?1645540236"></script>
-    <script src="/js/featherlight.min.js?1645540236"></script>
-    <script src="/js/highlight.pack.js?1645540236"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540236"></script>
-    <script src="/js/learn.js?1645540236"></script>
-    <script src="/js/hugo-learn.js?1645540236"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

@@ -13,22 +13,22 @@
     <title>Installation :: Documentation for PeriDyno</title>
 
     
-    <link href="/css/nucleus.css?1645540235" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540235" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540235" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540235" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540235" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540235" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540235" rel="stylesheet">
-    <link href="/css/theme.css?1645540235" rel="stylesheet">
-    <link href="/css/tabs.css?1645540235" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540235" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708717" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708717" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708717" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708717" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708717" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708717" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708717" rel="stylesheet">
+    <link href="/css/theme.css?1648708717" rel="stylesheet">
+    <link href="/css/tabs.css?1648708717" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708717" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540235" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708717" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540235"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708717"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540235"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540235"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708717"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708717"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540235"></script>
+<script type="text/javascript" src="/js/search.js?1648708717"></script>
 
     
   </div>
@@ -748,13 +748,13 @@
  
   
     
-    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno documentation" class="dd-item
+    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno " class="dd-item
         
         
         
         ">
       <a href="/en/contributing/website/">
-          Docs
+          peridno-docs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -925,10 +925,11 @@
   <ul>
     <li><a href="#platforms">Platforms</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites:</a></li>
-        <li><a href="#installation">Installation:</a></li>
-        <li><a href="#build-the-project">Build the project:</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#build-the-project">Build the project</a></li>
         <li><a href="#examples">Examples</a></li>
+        <li><a href="#optional-library-qt-and-vtk-installation">Optional library QT and VTK installation</a></li>
         <li><a href="#license">License</a></li>
       </ul>
     </li>
@@ -965,7 +966,7 @@
 <h2 id="platforms">Platforms</h2>
 <p><strong>Windows 10</strong>: fully tested</p>
 <p><strong>Linux</strong>: should work as well, yet not guranteed.</p>
-<h3 id="prerequisites">Prerequisites:</h3>
+<h3 id="prerequisites">Prerequisites</h3>
 <p>IDE:</p>
 <ul>
 <li>Visual studio 2017+</li>
@@ -987,18 +988,37 @@
 <li>Alembic: <a href="https://github.com/alembic/alembic">https://github.com/alembic/alembic</a></li>
 <li>Imath: <a href="https://github.com/AcademySoftwareFoundation/Imath">https://github.com/AcademySoftwareFoundation/Imath</a></li>
 </ul>
-<h3 id="installation">Installation:</h3>
+<h3 id="installation">Installation</h3>
 <p>Aside from those optional, other libraries are integrated inside the project to simplify the installation. Use the following git command to down the project as well as other dependences.</p>
 <pre><code>git clone --recursive https://github.com/peridyno/peridyno.git
-</code></pre><h3 id="build-the-project">Build the project:</h3>
+</code></pre><h3 id="build-the-project">Build the project</h3>
 <p>Check whether CMake has been installed on your system, if not, visit <a href="https://cmake.org/download/">https://cmake.org/download/</a> to download the lastest version.</p>
 <p><strong>Preferred</strong>: Run cmake-gui.exe, set the top two entries with the source code and binary directories.  <strong>Configure</strong> the libararies you want to build, then click the <strong>Generate</strong> button to build the project.</p>
 <p>A more convient way to build the project with a default setting is as follows</p>
 <pre><code>cd peridyo/build 
 cmake ..
 </code></pre><h3 id="examples">Examples</h3>
-<p><!-- raw HTML omitted --></p>
-<p><img src="fluid.jpg" alt=""></p>
+<p><img src="/images/installation/fluid.jpg" alt=""></p>
+<h3 id="optional-library-qt-and-vtk-installation">Optional library QT and VTK installation</h3>
+<p>QT installation: Recommended download<a href="https://download.qt.io/archive/qt/5.13/5.13.2/">QT5.13.0</a> or above</p>
+<p>1、Register account：</p>
+<p><img src="/images/installation/register.jpg?width=20pc" alt=""></p>
+<p>2、Components to be selected：</p>
+<p><img src="/images/installation/components.jpg?width=20pc" alt=""></p>
+<p>3、Cmake project, and check the QT related options：</p>
+<p><img src="/images/installation/configure.jpg?width=50pc" alt=""></p>
+<p>VTK installation: Recommended download<a href="https://www.vtk.org/files/release/8.2/VTK-8.2.0.zip">VTK8.2.0</a> or above</p>
+<p>1、Download VTK source code</p>
+<p>2.勾选Moduel中QT相关的这些选项：</p>
+<p><img src="/images/installation/VTKModule.jpg?width=30pc" alt=""></p>
+<p>3.设置OpenGL相关选项：
+<img src="/images/installation/vtk_cmake.jpg" alt=""></p>
+<p>4.然后点Generate再打开VS项目进行生成</p>
+<p>5.打开VTK的VS工程。生成-&gt;批生成 ALL_BUILD Release x64 栏 勾选 √&mdash;-&gt;点击【生成】
+<img src="/images/installation/vtk_build.jpg" alt=""></p>
+<p>6.把刚刚勾选的ALL_BUILD Release后面的√去掉，下拉，在INSTALL Release后面勾选</p>
+<p>7.将VTK路径加入到Path中
+<img src="/images/installation/vtk_path.jpg" alt=""></p>
 <h3 id="license">License</h3>
 <p>Peridyno&rsquo;s default license is the Apache 2.0 (See <a href="https://github.com/peridyno/peridyno/blob/master/LICENSE">LICENSE</a>).</p>
 <p>External libraries are distributed under their own terms.</p>
@@ -1444,16 +1464,16 @@ cmake ..
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540235"></script>
-    <script src="/js/jquery.sticky.js?1645540235"></script>
-    <script src="/js/featherlight.min.js?1645540235"></script>
-    <script src="/js/highlight.pack.js?1645540235"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540235"></script>
-    <script src="/js/learn.js?1645540235"></script>
-    <script src="/js/hugo-learn.js?1645540235"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

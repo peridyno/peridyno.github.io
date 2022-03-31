@@ -12,22 +12,22 @@
     <title>Reflection :: Documentation for PeriDyno</title>
 
     
-    <link href="/css/nucleus.css?1645540235" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540235" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540235" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540235" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540235" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540235" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540235" rel="stylesheet">
-    <link href="/css/theme.css?1645540235" rel="stylesheet">
-    <link href="/css/tabs.css?1645540235" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540235" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708717" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708717" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708717" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708717" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708717" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708717" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708717" rel="stylesheet">
+    <link href="/css/theme.css?1648708717" rel="stylesheet">
+    <link href="/css/tabs.css?1648708717" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708717" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540235" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708717" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540235"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708717"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540235"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540235"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708717"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708717"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540235"></script>
+<script type="text/javascript" src="/js/search.js?1648708717"></script>
 
     
   </div>
@@ -747,13 +747,13 @@
  
   
     
-    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno documentation" class="dd-item
+    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno " class="dd-item
         
         
         
         ">
       <a href="/en/contributing/website/">
-          Docs
+          peridno-docs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -945,11 +945,63 @@
 
 
 
-	<h2 id="field-types">Field types</h2>
-<pre><code>VarField
-</code></pre><pre><code>ArrayField
-</code></pre><pre><code>NeighborField
-</code></pre>
+	<h3 id="1what-is-reflection">1、what is reflection</h3>
+<p>Assuming we know the name of a class, how can we dynamically generate an object of a class from the class name string?</p>
+<p>In Java programming, this is not a problem. However, the language characteristics of C++ determine that it does not support generating objects through the class name string &ldquo;ClassXX&rdquo;, that is to say, in C++ we can use ClassXX* object =new ClassXX to generate objects, but not through ClassXX* object= new &ldquo;ClassXX&rdquo; to generate the object. This makes it impossible to achieve adaptive expansion when we expand the functions of nodes and modules, that is, if we introduce a new function module, the simulation engine cannot dynamically perceive its existence.</p>
+<p>The reflection mechanism is introduced to solve the problem of adaptive expansion of simulation nodes and functional modules, thereby avoiding deep coupling between codes.</p>
+<h3 id="2c-reflection-principle">2、C++ reflection principle</h3>
+
+<div class="notices info" ><p>Reference code src/Framework/Object.h.</p>
+</div>
+
+<h3 id="3how-extension-modules-support-reflection">3、How extension modules support reflection</h3>
+<p>All classes that need to support reflection need to inherit from Object. Taking the class implemented in src/Dynamics/ParticleSystem/SummationDensity.h as an example, the process of supporting reflection consists of two steps</p>
+<ul>
+<li>
+<p>Derived from Object or a subclass of Object</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> TDataType<span style="color:#f92672">&gt;</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SummationDensity</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">virtual</span> ParticleApproximation<span style="color:#f92672">&lt;</span>TDataType<span style="color:#f92672">&gt;</span>
+</code></pre></div></li>
+<li>
+<p>interface declaration</p>
+<pre><code>DECLARE_CLASS(SummationDensity)
+//or
+DECLARE_TCLASS(SummationDensity, TDataType)
+</code></pre><p>Among them, SummationDensity corresponds to the name of the class, and TDataType corresponds to the template parameter</p>
+</li>
+<li>
+<p>interface implementation</p>
+<pre><code>IMPLEMENT_TCLASS(SummationDensity)
+//or
+IMPLEMENT_TCLASS(SummationDensity, TDataType)
+</code></pre><p>Among them, the registration of SummationDensity is completed by defining static variables through DECLARE_CLASS/DECLARE_TCLASS.</p>
+</li>
+</ul>
+
+<div class="notices note" ><p>DECLARE_TCLASS and IMPLEMENT_TCLASS are required to be defined in the same header file. This method is valid for classes whose implementation files are cpp suffixes. However, there are still some problems with the current NVCC compiler. If the implementation file has a .cu suffix, the defined static variable cannot be initialized, and it needs to be done through an additional class.</p>
+</div>
+
+<p>A feasible solution is to introduce an additional class for each static link library to complete the initialization, which is introduced in initializeParticleSystem.h</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ParticleSystemInitializer</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> Object
+{
+	<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+		ParticleSystemInitializer();
+};
+
+<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">static</span> ParticleSystemInitializer particleSystemInitializer;
+</code></pre></div><p>At the same time, define and implement the following constructor in initializeParticleSystem.cpp to complete the explicit call to the class defined in the .cu file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">ParticleSystemInitializer<span style="color:#f92672">::</span>ParticleSystemInitializer()
+{
+    TypeInfo<span style="color:#f92672">::</span>New<span style="color:#f92672">&lt;</span>LinearDamping<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>();
+    TypeInfo<span style="color:#f92672">::</span>New<span style="color:#f92672">&lt;</span>ParticleIntegrator<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>();
+    TypeInfo<span style="color:#f92672">::</span>New<span style="color:#f92672">&lt;</span>ImplicitViscosity<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>();
+    TypeInfo<span style="color:#f92672">::</span>New<span style="color:#f92672">&lt;</span>DensityPBD<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>();
+    TypeInfo<span style="color:#f92672">::</span>New<span style="color:#f92672">&lt;</span>SummationDensity<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>();
+    TypeInfo<span style="color:#f92672">::</span>New<span style="color:#f92672">&lt;</span>VariationalApproximateProjection<span style="color:#f92672">&lt;</span>DataType3f<span style="color:#f92672">&gt;&gt;</span>();
+}
+</code></pre></div><p>Finally, add <strong>WHOLEARCHIVE</strong> to the <strong>CMakeLists.txt</strong> (<code>{peridyno_Code_path}/examples/Qt_VtkVisualModule/CMakeLists.txt</code>) of the Qt project:
+<img src="/images/frameWork/CMakeLists.jpg?width=70pc" alt=""></p>
+
 
 
 
@@ -1395,16 +1447,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540235"></script>
-    <script src="/js/jquery.sticky.js?1645540235"></script>
-    <script src="/js/featherlight.min.js?1645540235"></script>
-    <script src="/js/highlight.pack.js?1645540235"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540235"></script>
-    <script src="/js/learn.js?1645540235"></script>
-    <script src="/js/hugo-learn.js?1645540235"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

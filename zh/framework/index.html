@@ -13,22 +13,22 @@
     <title>引擎架构 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1645540236" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540236" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540236" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540236" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540236" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540236" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540236" rel="stylesheet">
-    <link href="/css/theme.css?1645540236" rel="stylesheet">
-    <link href="/css/tabs.css?1645540236" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540236" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708718" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708718" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708718" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708718" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708718" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708718" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708718" rel="stylesheet">
+    <link href="/css/theme.css?1648708718" rel="stylesheet">
+    <link href="/css/tabs.css?1648708718" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708718" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540236" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708718" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540236"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708718"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540236"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540236"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708718"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708718"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540236"></script>
+<script type="text/javascript" src="/js/search.js?1648708718"></script>
 
     
   </div>
@@ -730,6 +730,46 @@
       </a>
       
       
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/zh/contributing/website/" title="文档维护" class="dd-item
+        
+        
+        
+        ">
+      <a href="/zh/contributing/website/">
+          文档维护
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
     </li>
   
  
@@ -928,9 +968,9 @@
 
 	<h3 id="1场景示意图">1、场景示意图</h3>
 <p><strong>泛动引擎</strong>通过<strong>场景图</strong>（Scene Graph）对包括<strong>节点</strong>（Field）、<strong>模块</strong>（Module）以及<strong>数据</strong>（Field）在内的全要素进行统一管理。 如下图展示了一个包含四个仿真节点的场景图：</p>
-<p><img src="images/scenegraph.jpg?width=50pc" alt="A Chapter"></p>
+<p><img src="/images/frameWork/scenegraph.jpg?width=50pc" alt="A Chapter"></p>
 <h3 id="2如何创建场景">2、如何创建场景</h3>
-<p>接下来流体仿真案例为例展示如何基于<strong>泛动引擎</strong>创建一个完整的演示demo，完整流程包含如下四个步骤：</p>
+<p>接下来,以流体仿真案例为例展示如何基于<strong>泛动引擎</strong>创建一个完整的演示demo，完整流程包含如下四个步骤：</p>
 <ul>
 <li>
 <p>创建场景图</p>
@@ -974,8 +1014,8 @@ window.mainLoop();
 <p>效果示意图如下：</p>
 </li>
 </ul>
-<p><img src="images/glfw.png?width=50pc" alt="A Chapter"></p>
-<p>类似的，如果将应用界面</p>
+<p><img src="/images/frameWork/glfw.png?width=50pc" alt="A Chapter"></p>
+<p>类似的，如果使用应用界面</p>
 <pre><code>QtApp window;
 
 //设置仿真场景
@@ -984,10 +1024,10 @@ window.setSceneGraph(scn);
 //创建应用界面
 window.createWindow(1024, 768);
 window.mainLoop();
-</code></pre><p>对应的效果图下，做的节点编辑器展示了所有的功能节点以及节点之间的链接 关系，通过连接/断开对应的连线可以改变仿真场景图的节点执行顺序。</p>
-<p><img src="images/qt.png?width=50pc" alt="A Chapter"></p>
+</code></pre><p>Below the renderings. The node editor displays all functional nodes and links between nodes. The execution order of nodes in the simulation scene graph can be changed by connecting/disconnecting the corresponding connections.</p>
+<p><img src="/images/frameWork/qt.png?width=50pc" alt="A Chapter"></p>
 
-<div class="notices info" ><p>完整示例代码参见examples/GL_ParticleFluid和examples/Qt_GLVisualModule。</p>
+<div class="notices info" ><p>For complete sample code see examples/GL_ParticleFluid和examples/Qt_GLVisualModule。</p>
 </div>
 
 
@@ -1386,8 +1426,26 @@ window.mainLoop();
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -1414,16 +1472,16 @@ window.mainLoop();
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540236"></script>
-    <script src="/js/jquery.sticky.js?1645540236"></script>
-    <script src="/js/featherlight.min.js?1645540236"></script>
-    <script src="/js/highlight.pack.js?1645540236"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540236"></script>
-    <script src="/js/learn.js?1645540236"></script>
-    <script src="/js/hugo-learn.js?1645540236"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

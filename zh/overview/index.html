@@ -13,22 +13,22 @@
     <title>概要 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1645540236" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540236" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540236" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540236" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540236" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540236" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540236" rel="stylesheet">
-    <link href="/css/theme.css?1645540236" rel="stylesheet">
-    <link href="/css/tabs.css?1645540236" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540236" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708718" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708718" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708718" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708718" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708718" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708718" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708718" rel="stylesheet">
+    <link href="/css/theme.css?1648708718" rel="stylesheet">
+    <link href="/css/tabs.css?1648708718" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708718" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540236" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708718" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540236"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708718"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540236"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540236"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708718"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708718"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540236"></script>
+<script type="text/javascript" src="/js/search.js?1648708718"></script>
 
     
   </div>
@@ -730,6 +730,46 @@
       </a>
       
       
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/zh/contributing/website/" title="文档维护" class="dd-item
+        
+        
+        
+        ">
+      <a href="/zh/contributing/website/">
+          文档维护
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
     </li>
   
  
@@ -891,9 +931,9 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#peridyno是什么">PeriDyno是什么</a></li>
-    <li><a href="#peridyno特性">PeriDyno特性</a></li>
-    <li><a href="#如何进一步学习peridyno">如何进一步学习PeriDyno</a></li>
+    <li><a href="#pfont-size5erifontdfont-size5ynofont概述">P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->概述</a></li>
+    <li><a href="#pfont-size5erifontdfont-size5ynofont特性">P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->特性</a></li>
+    <li><a href="#如何进一步学习pfont-size5erifontdfont-size5ynofont">如何进一步学习P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted --></a></li>
   </ul>
 </nav>
     </div>
@@ -923,30 +963,37 @@
 
 
 
-	<h2 id="peridyno是什么">PeriDyno是什么</h2>
-<p>PeriDyno是一个基于物理的交互式运动学架构。 它基于开源节点的架构，旨在实时模拟不同的物理材料。目前，它支持模拟流体、弹性物体和断裂等物理现象，具有高度模块化可以帮助研究界开发新的算法。</p>
-<h2 id="peridyno特性">PeriDyno特性</h2>
-<p>PeriDyno具有以下特性，可以有效地模拟复杂的物理场景：</p>
+	<h2 id="pfont-size5erifontdfont-size5ynofont概述">P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->概述</h2>
+<p>P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->是一个基于CPU/GPU混合架构实现的实时物理仿真引擎， 其通过基于<strong>数据</strong>（<a href="../framework/fields">Field</a>）-&gt;<strong>模块</strong>（<a href="../framework/modules">Module</a>）-&gt;<strong>节点</strong>（<a href="../framework/nodes">Node</a>）-&gt;<strong>场景图</strong>（<a href="../framework/scenegraph">SceneGraph</a>）的<strong>通用物理仿真框架</strong>，将仿真计算与渲染、仿真计算与交互、仿真计算与底层分离有效实现了仿真算法模块的复用。P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->旨在解决通用物理仿真任务的增量开发、集成与模块复用难题，实现端云协同环境一套仿真计算代码零成本迁移、多平台复用的目标，其解决的核心问题包括：</p>
+<ul>
+<li><strong>物理仿真数据表示的完备性问题。</strong></li>
+<li><strong>复杂场景作用机理的模块化难题。</strong></li>
+<li><strong>仿真数据与作用机制模块的统一计算图。</strong></li>
+</ul>
+<p>目前，P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->支持模拟流体、弹性物体和断裂等典型物理仿真场景及多物理场景的耦合仿真，具备良好的扩展性，可方便得辅助研发人员开发与验证新的仿真算法。</p>
+<h2 id="pfont-size5erifontdfont-size5ynofont特性">P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->特性</h2>
+<p>P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->具有以下特性，可以有效地模拟复杂的物理场景：</p>
 <ul>
 <li>
-<p><strong>模板编程</strong>：Peridyno以模板的形式支持广泛的常用数据结构；</p>
+<p><strong>模板编程</strong>：P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->以模板的形式支持CPU/GPU兼容的典型数据结构，包括一维数组、二维数组、三维数组、动态数组以及稀疏八叉树等数据数据类型的高效并行实现；</p>
 </li>
 <li>
 <p><strong>高度模块化</strong>：整体从上到下模块化，因此可以通过扩展现有组件轻松获得自定义行为；</p>
 </li>
 <li>
-<p><strong>复杂耦合</strong>：支持多种不同物理材料的耦合；</p>
+<p><strong>复杂耦合</strong>：支持通用物理仿真任务，包括刚体、流体、形变体以及多物理场耦合仿真；</p>
 </li>
 <li>
-<p><strong>高性能</strong>：架构经过高度优化以提高执行性能。</p>
+<p><strong>高性能</strong>：核心仿真算法做到100%GPU并行化，实现了仿真、渲染、交互的高效协同。</p>
 </li>
 </ul>
-<h2 id="如何进一步学习peridyno">如何进一步学习PeriDyno</h2>
-<p>为您的用户提供概览中的后续步骤。 例如：</p>
+<h2 id="如何进一步学习pfont-size5erifontdfont-size5ynofont">如何进一步学习P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted --></h2>
+<p>本文档主要包含如下几大块内容，即：</p>
 <ul>
-<li><a href="../installation">安装指引</a>: Peridyno入门教程</li>
-<li><a href="../framework">引擎框架</a>：对PeriDyno引擎的框架介绍</li>
-<li><a href="../examples/">仿真案例</a>：查看一些示例代码</li>
+<li><a href="../installation">安装指引</a>:  重点介绍P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->及配套工具在不同系统平台下的安装与编译过程；</li>
+<li><a href="../framework">引擎框架</a>：对P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->引擎的框架介绍；</li>
+<li><a href="../topics">技术专题</a>：介绍P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->现有的仿真算法算法；</li>
+<li><a href="../examples/">仿真案例</a>：通过典型仿真案例学习如何基于P<!-- raw HTML omitted -->ERI<!-- raw HTML omitted -->D<!-- raw HTML omitted -->YNO<!-- raw HTML omitted -->进行研发。</li>
 </ul>
 
 
@@ -1341,8 +1388,26 @@
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -1369,16 +1434,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540236"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540236"></script>
-    <script src="/js/jquery.sticky.js?1645540236"></script>
-    <script src="/js/featherlight.min.js?1645540236"></script>
-    <script src="/js/highlight.pack.js?1645540236"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540236"></script>
-    <script src="/js/learn.js?1645540236"></script>
-    <script src="/js/hugo-learn.js?1645540236"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

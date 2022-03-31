@@ -12,22 +12,22 @@
     <title>Field :: Documentation for PeriDyno</title>
 
     
-    <link href="/css/nucleus.css?1645540235" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540235" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540235" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540235" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540235" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540235" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540235" rel="stylesheet">
-    <link href="/css/theme.css?1645540235" rel="stylesheet">
-    <link href="/css/tabs.css?1645540235" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540235" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708717" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708717" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708717" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708717" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708717" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708717" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708717" rel="stylesheet">
+    <link href="/css/theme.css?1648708717" rel="stylesheet">
+    <link href="/css/tabs.css?1648708717" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708717" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540235" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708717" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540235"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708717"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540235"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540235"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708717"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708717"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540235"></script>
+<script type="text/javascript" src="/js/search.js?1648708717"></script>
 
     
   </div>
@@ -747,13 +747,13 @@
  
   
     
-    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno documentation" class="dd-item
+    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno " class="dd-item
         
         
         
         ">
       <a href="/en/contributing/website/">
-          Docs
+          peridno-docs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -945,11 +945,59 @@
 
 
 
-	<h2 id="field-types">Field types</h2>
-<pre><code>VarField
-</code></pre><pre><code>ArrayField
-</code></pre><pre><code>NeighborField
-</code></pre>
+	<h3 id="1field-function-introduction">1、Field function introduction</h3>
+<p>Field mainly realizes data transfer between nodes and modules by encapsulating typical data types. As shown in the figure below, GLPointVisualNode passes point cloud data to InputFieldTest for use by defining Field of type FInstance.</p>
+<p><img src="/images/fields/field.png?width=30pc" alt=""></p>
+<p>The connection and disconnection between fields mainly depend on the implementation of the following two functions:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">connect</span>(FBase<span style="color:#f92672">*</span> dst) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+<span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">disconnect</span>(FBase<span style="color:#f92672">*</span> dst);
+</code></pre></div><p>As the base class of all Fields, FBase mainly manages the connection status of Fields in a unified manner.</p>
+
+<div class="notices note" ><p>connect(FBase* dst) is a pure virtual function defined in FBase, so its specific implementation depends on a specific Field. The design is mainly to ensure the validity of the data connection, and to simulate connecting the data to the wrong type.</p>
+</div>
+
+<p>Assuming that there are three Field types of data A, B, and C, their connection relationship is set to A-&gt;B-&gt;C. At this time, in order to reduce the data conversion and storage overhead, when we operate the data of C, it will return the data pointer at the top (corresponding to A) according to the connection relationship.</p>
+<h3 id="2-field-type">2. Field type</h3>
+<ul>
+<li>
+<p><strong>FVar</strong>: Inherited from FBase, it is a package for a single data type, including scalar data, such as int, float, double; vector data, such as Vec3f; and second-order tensors, such as Mat3f. Nodes and modules can be defined by using macro definitions such as DEF_VAR/DEF_VAR_IN</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">DEF_VAR(Real, RestDensity, <span style="color:#ae81ff">1000</span>, <span style="color:#e6db74">&#34;Rest Density&#34;</span>);
+</code></pre></div><p>其中Real代表数据类型，RestDesntiy代表数据名称，1000代表初值，&ldquo;Rest Density&quot;则表示数据的说明。通过DEF_VAR定义的数据实际使用过程中可以通<strong>var+数据名称</strong>的方式对数据进行操作，假设我们需要将上述Field连接到另一个功能模块，则可以调用如下接口进行</p>
+<pre><code>this-&gt;varRestDensity()-&gt;connect(...);
+</code></pre></li>
+<li>
+<p><strong>FArray</strong>：The encapsulation of the one-dimensional array defined in Core/Array.h, similar to the vector in STL. According to its different functions in nodes/modules, we adopt the following three definitions:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">DEF_ARRAY_IN(Coord, Position, DeviceType<span style="color:#f92672">::</span>GPU, <span style="color:#e6db74">&#34;Output&#34;</span>);						<span style="color:#75715e">//input
+</span></code></pre></div><p>The access method of input data is <strong>in+data name</strong>, that is, inPosition()</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">DEF_ARRAY_OUT(Coord, Position, DeviceType<span style="color:#f92672">::</span>GPU, <span style="color:#e6db74">&#34;Output&#34;</span>);						<span style="color:#75715e">//ouput
+</span></code></pre></div><p>The access method of input data is <strong>out+data name</strong>, namely outPosition()</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">DEF_ARRAY_STATE(Coord, Position, DeviceType<span style="color:#f92672">::</span>GPU, <span style="color:#e6db74">&#34;Internal state&#34;</span>);			<span style="color:#75715e">//internal state variable
+</span></code></pre></div><p>The access method of the state variable is <strong>state+data name</strong>, statePosition()</p>
+</li>
+<li>
+<p><strong>FArrayList</strong>：Encapsulation of Core/ArrayList.h data to support CPU/GPU compatible dynamic data types. It is defined in a similar way to FArray, i.e.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++">DEF_ARRAYLIST_IN(Coord, Position, DeviceType<span style="color:#f92672">::</span>GPU, <span style="color:#e6db74">&#34;Input&#34;</span>);						<span style="color:#75715e">//input
+</span></code></pre></div><p>The access method of input data is <strong>in+data name</strong>, that is, inPosition()</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">DEF_ARRAYLIST_OUT(Coord, Position, DeviceType<span style="color:#f92672">::</span>GPU, <span style="color:#e6db74">&#34;Output&#34;</span>);						<span style="color:#75715e">//ouput
+</span></code></pre></div><p>The access method of input data is <strong>out+data name</strong>, namely outPosition()</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">DEF_ARRAYLIST_STATE(Coord, Position, DeviceType<span style="color:#f92672">::</span>GPU, <span style="color:#e6db74">&#34;Internal state&#34;</span>);			<span style="color:#75715e">//internal state variable
+</span></code></pre></div><p>The access method of the state variable is <strong>state+data name</strong>, statePosition()</p>
+</li>
+<li>
+<p><strong>FInstance</strong>：Mainly to support the connection between data with inheritance relationship, the typical application is to use FInstance to define different topology data</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++">DEF_INSTANCE_IN(PointSet<span style="color:#f92672">&lt;</span>TDataType<span style="color:#f92672">&gt;</span>, PointSet, <span style="color:#e6db74">&#34;PointSet is derived from TopologyModule&#34;</span>);						<span style="color:#75715e">//input
+</span></code></pre></div><p>The access method of input data is <strong>in+data name</strong>, and any correspondence inherited from PointSet<!-- raw HTML omitted --> can be connected to this data.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">DEF_INSTANCE_OUT(PointSet<span style="color:#f92672">&lt;</span>TDataType<span style="color:#f92672">&gt;</span>, PointSet, <span style="color:#e6db74">&#34;Output&#34;</span>);						<span style="color:#75715e">//output
+</span></code></pre></div><p>The access method of input data is <strong>out+data name</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">DEF_INSTANCE_STATE(PointSet<span style="color:#f92672">&lt;</span>TDataType<span style="color:#f92672">&gt;</span>, PointSet, <span style="color:#e6db74">&#34;Internal state&#34;</span>);			<span style="color:#75715e">//internal state variable
+</span></code></pre></div><p>The access method of the state variable is <strong>state+data name</strong></p>
+</li>
+</ul>
+
+<div class="notices info" ><p>Reference code src/Framework/FBase.h.</p>
+</div>
+
+
 
 
 
@@ -1395,16 +1443,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540235"></script>
-    <script src="/js/jquery.sticky.js?1645540235"></script>
-    <script src="/js/featherlight.min.js?1645540235"></script>
-    <script src="/js/highlight.pack.js?1645540235"></script>
+    <script src="/js/clipboard.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
+    <script src="/js/jquery.sticky.js?1648708718"></script>
+    <script src="/js/featherlight.min.js?1648708718"></script>
+    <script src="/js/highlight.pack.js?1648708718"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540235"></script>
-    <script src="/js/learn.js?1645540235"></script>
-    <script src="/js/hugo-learn.js?1645540235"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
+    <script src="/js/learn.js?1648708718"></script>
+    <script src="/js/hugo-learn.js?1648708718"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

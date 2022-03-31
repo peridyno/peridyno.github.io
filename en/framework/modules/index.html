@@ -12,22 +12,22 @@
     <title>Module :: Documentation for PeriDyno</title>
 
     
-    <link href="/css/nucleus.css?1645540235" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1645540235" rel="stylesheet">
-    <link href="/css/hybrid.css?1645540235" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1645540235" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1645540235" rel="stylesheet">
-    <link href="/css/auto-complete.css?1645540235" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1645540235" rel="stylesheet">
-    <link href="/css/theme.css?1645540235" rel="stylesheet">
-    <link href="/css/tabs.css?1645540235" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1645540235" rel="stylesheet">
+    <link href="/css/nucleus.css?1648708717" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648708717" rel="stylesheet">
+    <link href="/css/hybrid.css?1648708717" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648708717" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648708717" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648708717" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648708717" rel="stylesheet">
+    <link href="/css/theme.css?1648708717" rel="stylesheet">
+    <link href="/css/tabs.css?1648708717" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648708717" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1645540235" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648708717" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1645540235"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648708717"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1645540235"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1645540235"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648708717"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648708717"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1645540235"></script>
+<script type="text/javascript" src="/js/search.js?1648708717"></script>
 
     
   </div>
@@ -747,13 +747,13 @@
  
   
     
-    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno documentation" class="dd-item
+    <li data-nav-id="/en/contributing/website/" title="How to contribute to Peridyno " class="dd-item
         
         
         
         ">
       <a href="/en/contributing/website/">
-          Docs
+          peridno-docs
           
             <i class="fas fa-check read-icon"></i>
           
@@ -944,87 +944,98 @@
 
 
 
-<h2 id="structure-of-a-module">Structure of a module</h2>
-<p>The following code demonstrates the typical strcuture of a module, which contains regular variables, input variables and output variables.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">template</span>&lt;<span style="color:#a6e22e">typename</span> <span style="color:#a6e22e">TDataType</span>&gt;
-<span style="color:#a6e22e">class</span> <span style="color:#a6e22e">SummationDensity</span> : <span style="color:#a6e22e">public</span> <span style="color:#a6e22e">ComputeModule</span>
-{
-  <span style="color:#a6e22e">DECLARE_CLASS_1</span>(<span style="color:#a6e22e">SummationDensity</span>, <span style="color:#a6e22e">TDataType</span>)
+<h3 id="1function-introduction">1、Function introduction</h3>
+<p>The module is a function-independent algorithm unit for internal calling of the node, which consists of <strong>input data</strong>, <strong>output data</strong> and <strong>control variables</strong>. The biggest difference between it and the node is that the input and output types only accept the Field type.</p>
+<h3 id="2how-to-implement-a-functional-module">2、How to implement a functional module</h3>
+<p>It includes the following steps:</p>
+<ul>
+<li>
+<p>Define input data (usually at least one is required)</p>
+<p>Similar to the definition in the node, the macro definition of DEF_{*}_IN is used to complete.</p>
+</li>
+<li>
+<p>define output data (optional)</p>
+<p>Similar to the definition in the node, the macro definition of DEF_{*}_OUT is used to complete.</p>
+</li>
+<li>
+<p>Define control variables</p>
+<pre><code>DEF_VAR(T, name, value, desc)
+</code></pre>
+<div class="notices note" ><p>Control variables must be initialized before module execution.</p>
+</div>
 
-<span style="color:#a6e22e">public</span>:
-  <span style="color:#a6e22e">typedef</span> <span style="color:#a6e22e">typename</span> <span style="color:#a6e22e">TDataType</span>::<span style="color:#a6e22e">Real</span> <span style="color:#a6e22e">Real</span>;
-  <span style="color:#a6e22e">typedef</span> <span style="color:#a6e22e">typename</span> <span style="color:#a6e22e">TDataType</span>::<span style="color:#a6e22e">Coord</span> <span style="color:#a6e22e">Coord</span>;
+</li>
+</ul>
+<h3 id="3module-example">3、Module example</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">	<span style="color:#75715e">/**
+</span><span style="color:#75715e">	 * @brief The standard summation density
+</span><span style="color:#75715e">	 * 
+</span><span style="color:#75715e">	 * @tparam TDataType 
+</span><span style="color:#75715e">	 */</span>
+	<span style="color:#66d9ef">template</span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> TDataType<span style="color:#f92672">&gt;</span>
+	<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SummationDensity</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">virtual</span> ParticleApproximation<span style="color:#f92672">&lt;</span>TDataType<span style="color:#f92672">&gt;</span>
+	{
+		DECLARE_TCLASS(SummationDensity, TDataType)
+	<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+		<span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">typename</span> TDataType<span style="color:#f92672">::</span>Real Real;
+		<span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">typename</span> TDataType<span style="color:#f92672">::</span>Coord Coord;
 
-  <span style="color:#a6e22e">SummationDensity</span>();
-  <span style="color:#960050;background-color:#1e0010">~</span><span style="color:#a6e22e">SummationDensity</span>() <span style="color:#a6e22e">override</span> {};
+		SummationDensity();
+		<span style="color:#f92672">~</span>SummationDensity() <span style="color:#66d9ef">override</span> {};
 
-  <span style="color:#a6e22e">void</span> <span style="color:#a6e22e">compute</span>() <span style="color:#a6e22e">override</span>;
+		<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">compute</span>() <span style="color:#66d9ef">override</span>;
+	
+	<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+		<span style="color:#66d9ef">void</span> compute(
+			DArray<span style="color:#f92672">&lt;</span>Real<span style="color:#f92672">&gt;&amp;</span> rho,
+			DArray<span style="color:#f92672">&lt;</span>Coord<span style="color:#f92672">&gt;&amp;</span> pos,
+			DArrayList<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&amp;</span> neighbors,
+			Real smoothingLength,
+			Real mass);
 
-<span style="color:#a6e22e">protected</span>:
-  <span style="color:#a6e22e">void</span> <span style="color:#a6e22e">calculateScalingFactor</span>();
+		<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">compute</span>(
+			DArray<span style="color:#f92672">&lt;</span>Real<span style="color:#f92672">&gt;&amp;</span> rho,
+			DArray<span style="color:#f92672">&lt;</span>Coord<span style="color:#f92672">&gt;&amp;</span> pos,
+			DArray<span style="color:#f92672">&lt;</span>Coord<span style="color:#f92672">&gt;&amp;</span> posQueried,
+			DArrayList<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;&amp;</span> neighbors,
+			Real smoothingLength,
+			Real mass);
 
-  <span style="color:#a6e22e">void</span> <span style="color:#a6e22e">compute</span>(<span style="color:#a6e22e">DeviceArray</span>&lt;<span style="color:#a6e22e">Real</span>&gt;<span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">rho</span>);
+	<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+		DEF_VAR(Real, RestDensity, <span style="color:#ae81ff">1000</span>, <span style="color:#e6db74">&#34;Rest Density&#34;</span>);
 
-  <span style="color:#a6e22e">void</span> <span style="color:#a6e22e">compute</span>(
-    <span style="color:#a6e22e">DeviceArray</span>&lt;<span style="color:#a6e22e">Real</span>&gt;<span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">rho</span>,
-    <span style="color:#a6e22e">DeviceArray</span>&lt;<span style="color:#a6e22e">Coord</span>&gt;<span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">pos</span>,
-    <span style="color:#a6e22e">NeighborList</span>&lt;<span style="color:#66d9ef">int</span>&gt;<span style="color:#f92672">&amp;</span> <span style="color:#a6e22e">neighbors</span>,
-    <span style="color:#a6e22e">Real</span> <span style="color:#a6e22e">smoothingLength</span>,
-    <span style="color:#a6e22e">Real</span> <span style="color:#a6e22e">mass</span>);
+		<span style="color:#75715e">///Define inputs
+</span><span style="color:#75715e"></span>		<span style="color:#75715e">/**
+</span><span style="color:#75715e">		 * @brief Particle positions
+</span><span style="color:#75715e">		 */</span>
+		DEF_ARRAY_IN(Coord, Position, DeviceType<span style="color:#f92672">::</span>GPU, <span style="color:#e6db74">&#34;Particle position&#34;</span>);
 
-<span style="color:#a6e22e">public</span>:
-  <span style="color:#75715e">///Define intrinsic fields
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">DEF_EMPTY_VAR</span>(<span style="color:#a6e22e">RestDensity</span>, <span style="color:#a6e22e">Real</span>, <span style="color:#e6db74">&#34;Rest Density&#34;</span>);
-  <span style="color:#a6e22e">DEF_EMPTY_VAR</span>(<span style="color:#a6e22e">Mass</span>, <span style="color:#a6e22e">Real</span>, <span style="color:#e6db74">&#34;Particle mass, note that this module only support a constant mass for all particles.&#34;</span>);
-  <span style="color:#a6e22e">DEF_EMPTY_VAR</span>(<span style="color:#a6e22e">SmoothingLength</span>, <span style="color:#a6e22e">Real</span>, <span style="color:#e6db74">&#34;Indicating the smoothing length&#34;</span>);
-  <span style="color:#a6e22e">DEF_EMPTY_VAR</span>(<span style="color:#a6e22e">SamplingDistance</span>, <span style="color:#a6e22e">Real</span>, <span style="color:#e6db74">&#34;Indicating the initial sampling distance&#34;</span>);
+		<span style="color:#75715e">/**
+</span><span style="color:#75715e">		 * @brief Particle positions
+</span><span style="color:#75715e">		 */</span>
+		DEF_ARRAY_IN(Coord, Other, DeviceType<span style="color:#f92672">::</span>GPU, <span style="color:#e6db74">&#34;Particle position&#34;</span>);
 
-  <span style="color:#75715e">///Define input fields
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">/**
-</span><span style="color:#75715e">    * @brief Particle positions
-</span><span style="color:#75715e">    */</span>
-  <span style="color:#a6e22e">DEF_EMPTY_IN_ARRAY</span>(<span style="color:#a6e22e">Position</span>, <span style="color:#a6e22e">Coord</span>, <span style="color:#a6e22e">DeviceType</span>::<span style="color:#a6e22e">GPU</span>, <span style="color:#e6db74">&#34;Particle position&#34;</span>);
+		<span style="color:#75715e">/**
+</span><span style="color:#75715e">		 * @brief Neighboring particles
+</span><span style="color:#75715e">		 *
+</span><span style="color:#75715e">		 */</span>
+		DEF_ARRAYLIST_IN(<span style="color:#66d9ef">int</span>, NeighborIds, DeviceType<span style="color:#f92672">::</span>GPU, <span style="color:#e6db74">&#34;Neighboring particles&#39; ids&#34;</span>);
 
-  <span style="color:#75715e">/**
-</span><span style="color:#75715e">    * @brief Neighboring particles
-</span><span style="color:#75715e">    *
-</span><span style="color:#75715e">    */</span>
-  <span style="color:#a6e22e">DEF_EMPTY_IN_NEIGHBOR_LIST</span>(<span style="color:#a6e22e">NeighborIndex</span>, <span style="color:#66d9ef">int</span>, <span style="color:#e6db74">&#34;Neighboring particles&#39; ids&#34;</span>);
+		<span style="color:#75715e">///Define outputs
+</span><span style="color:#75715e"></span>		<span style="color:#75715e">/**
+</span><span style="color:#75715e">		 * @brief Particle densities
+</span><span style="color:#75715e">		 */</span>
+		DEF_ARRAY_OUT(Real, Density, DeviceType<span style="color:#f92672">::</span>GPU, <span style="color:#e6db74">&#34;Return the particle density&#34;</span>);
 
-  <span style="color:#75715e">///Define output fields
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">/**
-</span><span style="color:#75715e">    * @brief Particle densities
-</span><span style="color:#75715e">    */</span>
-  <span style="color:#a6e22e">DEF_EMPTY_OUT_ARRAY</span>(<span style="color:#a6e22e">Density</span>, <span style="color:#a6e22e">Real</span>, <span style="color:#a6e22e">DeviceType</span>::<span style="color:#a6e22e">GPU</span>, <span style="color:#e6db74">&#34;Particle position&#34;</span>);
+	<span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+		<span style="color:#66d9ef">void</span> calculateParticleMass();
 
-<span style="color:#a6e22e">private</span>:
-  <span style="color:#75715e">///Define other class members
-</span><span style="color:#75715e"></span>};
-</code></pre></div><p>In the Qt-based GUI, the above module appears like</p>
-<p><img src="images/summation-density.jpg" alt="ModuleView"></p>
-<p>Besides, all regular variables will be shown in the property editor</p>
-<p><img src="images/property.jpg" alt="Property"></p>
-<h3 id="intrinsic-fields">Intrinsic fields</h3>
-<blockquote>
-<p>All intrinsic field names are started with an prefix <strong>var</strong>, e.g., this-&gt;varRestDensity().</p>
-</blockquote>
-<p>If a intrinsic field is defined, it can be used by the module without explicitly initializing its value.</p>
-<p>To declare an empty field of real type, use the following formulation</p>
-<pre><code>DEF_EMPTY_VAR(RestDensity, Real, &quot;Rest Density&quot;);
-</code></pre><h3 id="input-fields">Input fields</h3>
-<blockquote>
-<p>All input field names are started with an prefix <strong>in</strong>, e.g., this-&gt;inPosition().</p>
-</blockquote>
-<p>Input fields of a module are usually empty. Therefore, to execuate a module, its input fields should be explicitly specified.</p>
-<p>To set up an input field, the most efficienty way is by connecting an output field to an input field, e.g.,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">this</span><span style="color:#f92672">-</span>&gt;<span style="color:#a6e22e">outPosition</span>().<span style="color:#a6e22e">connect</span>(<span style="color:#a6e22e">m_densitySum</span><span style="color:#f92672">-</span>&gt;<span style="color:#a6e22e">inPosition</span>());
-</code></pre></div><h3 id="output-fields">Output fields</h3>
-<blockquote>
-<p>All output field names are started with an prefix <strong>out</strong>, e.g., this-&gt;outPosition().</p>
-</blockquote>
-<p>The values of output fields are computed from input fields.
-As long as either the intrinsic fields all input fields are changed, the output fields should be updated again.</p>
+		Real m_particle_mass;
+		Real m_factor;
+	};
 
+	IMPLEMENT_TCLASS(SummationDensity, TDataType)
+</code></pre></div>
 
 <footer class="footline">
 	
@@ -1467,16 +1478,16 @@ As long as either the intrinsic fields all input fields are changed, the output 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.min.js?1645540235"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1645540235"></script>
-    <script src="/js/jquery.sticky.js?1645540235"></script>
-    <script src="/js/featherlight.min.js?1645540235"></script>
-    <script src="/js/highlight.pack.js?1645540235"></script>
+    <script src="/js/clipboard.min.js?1648708717"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648708717"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648708717"></script>
+    <script src="/js/jquery.sticky.js?1648708717"></script>
+    <script src="/js/featherlight.min.js?1648708717"></script>
+    <script src="/js/highlight.pack.js?1648708717"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1645540235"></script>
-    <script src="/js/learn.js?1645540235"></script>
-    <script src="/js/hugo-learn.js?1645540235"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648708717"></script>
+    <script src="/js/learn.js?1648708717"></script>
+    <script src="/js/hugo-learn.js?1648708717"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
