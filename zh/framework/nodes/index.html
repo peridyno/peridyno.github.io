@@ -12,22 +12,22 @@
     <title>节点 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1648708718" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1648708718" rel="stylesheet">
-    <link href="/css/hybrid.css?1648708718" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1648708718" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1648708718" rel="stylesheet">
-    <link href="/css/auto-complete.css?1648708718" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1648708718" rel="stylesheet">
-    <link href="/css/theme.css?1648708718" rel="stylesheet">
-    <link href="/css/tabs.css?1648708718" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1648708718" rel="stylesheet">
+    <link href="/css/nucleus.css?1648717677" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648717677" rel="stylesheet">
+    <link href="/css/hybrid.css?1648717677" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648717677" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648717677" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648717677" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648717677" rel="stylesheet">
+    <link href="/css/theme.css?1648717677" rel="stylesheet">
+    <link href="/css/tabs.css?1648717677" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648717677" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1648708718" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648717677" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1648708718"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648717677"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1648708718"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1648708718"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648717677"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648717677"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1648708718"></script>
+<script type="text/javascript" src="/js/search.js?1648717677"></script>
 
     
   </div>
@@ -1057,6 +1057,37 @@ merge<span style="color:#f92672">-&gt;</span>outContacts()<span style="color:#f9
 </code></pre></div><p>状态更新后处理函数</p>
 </li>
 </ul>
+<h3 id="3qt-gui视图">3、QT GUI视图</h3>
+<p>一个节点对应的GUI视图由两部分组成，即Node Editor视图和Property Editor视图。</p>
+<p>Node Editor主要展示节点对应的输入和输出，支持利用鼠标进行数据之间的连接和断开连接操作，典型视图如下：</p>
+<p><img src="/images/fields/node.png" alt=""></p>
+<p>Property Editor窗口则显示每个节点的状态变量以及控制参数信息。例如，当鼠标单击InputFieldTest节点时，Property Editor窗口显示的属性信息如下图所示：
+<img src="/images/fields/PropertyEditor.png?width=30pc" alt=""></p>
+<h4 id="1控制变量">（1）控制变量</h4>
+<p>控制变量用于展示通过Fvar定义的变量，根据变量数据类型的差异，Property Editor窗口可以显示不同的空间实现对控制变量进行更改。</p>
+<ul>
+<li>
+<p>bool</p>
+<p><img src="/images/fields/bool.png?width=30pc" alt=""></p>
+<p>例如当FVar中Visible勾选时，仿真过程中，将会把该节点渲染出来；如果取消勾选，则仿真过程中，不会渲染该节点。</p>
+</li>
+<li>
+<p>float或者double</p>
+<p><img src="/images/fields/float.png?width=30pc" alt=""></p>
+</li>
+<li>
+<p>Vec3f或者Vec3d</p>
+<p><img src="/images/fields/Vec3f.png?width=30pc" alt=""></p>
+</li>
+<li>
+<p>FilePath</p>
+<p><img src="/images/fields/path.png?width=30pc" alt=""></p>
+<p>其中FilePath对应系统路径，用于支持文件读取等功能。</p>
+</li>
+</ul>
+<h4 id="2状态变量">（2）状态变量</h4>
+<p>FState属性允许将Node Editor窗口中，节点FState类型的属性信息显示和隐藏。例如，<strong>ParticleFluid</strong>节点把Velocity属性勾选时，Node Editor窗口中对应输出会增加Velocity属性，从而使Velocity可以作为其他节点输入使用。
+<img src="/images/fields/FState.png" alt=""></p>
 
 
 
@@ -1503,16 +1534,16 @@ merge<span style="color:#f92672">-&gt;</span>outContacts()<span style="color:#f9
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1648708718"></script>
-    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
-    <script src="/js/jquery.sticky.js?1648708718"></script>
-    <script src="/js/featherlight.min.js?1648708718"></script>
-    <script src="/js/highlight.pack.js?1648708718"></script>
+    <script src="/js/clipboard.min.js?1648717677"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648717677"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648717677"></script>
+    <script src="/js/jquery.sticky.js?1648717677"></script>
+    <script src="/js/featherlight.min.js?1648717677"></script>
+    <script src="/js/highlight.pack.js?1648717677"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
-    <script src="/js/learn.js?1648708718"></script>
-    <script src="/js/hugo-learn.js?1648708718"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648717677"></script>
+    <script src="/js/learn.js?1648717677"></script>
+    <script src="/js/hugo-learn.js?1648717677"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

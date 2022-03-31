@@ -12,22 +12,22 @@
     <title>数据 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1648708718" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1648708718" rel="stylesheet">
-    <link href="/css/hybrid.css?1648708718" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1648708718" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1648708718" rel="stylesheet">
-    <link href="/css/auto-complete.css?1648708718" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1648708718" rel="stylesheet">
-    <link href="/css/theme.css?1648708718" rel="stylesheet">
-    <link href="/css/tabs.css?1648708718" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1648708718" rel="stylesheet">
+    <link href="/css/nucleus.css?1648717677" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1648717677" rel="stylesheet">
+    <link href="/css/hybrid.css?1648717677" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1648717677" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1648717677" rel="stylesheet">
+    <link href="/css/auto-complete.css?1648717677" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1648717677" rel="stylesheet">
+    <link href="/css/theme.css?1648717677" rel="stylesheet">
+    <link href="/css/tabs.css?1648717677" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1648717677" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1648708718" rel="stylesheet">
+    <link href="/css/theme-blue.css?1648717677" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1648708718"></script>
+    <script src="/js/jquery-3.3.1.min.js?1648717677"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1648708718"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1648708718"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1648717677"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1648717677"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1648708718"></script>
+<script type="text/javascript" src="/js/search.js?1648717677"></script>
 
     
   </div>
@@ -975,9 +975,9 @@
 
 
 	<h3 id="1field功能简介">1、Field功能简介</h3>
-<p>Field主要通过对典型数据类型的封装实现节点以及模块之间的数据传递。如下图所示，GLPointVisualNode通过定义FInstance类型的Field将点云数据传递给InputFieldTest使用。</p>
-<p><img src="/images/fields/field.png?width=30pc" alt=""></p>
-<p>Field之间的连接和断开主要依赖一下两个函数实现</p>
+<p><strong>Field</strong>主要通过对典型数据类型的封装实现节点以及模块之间的数据传递。如下图所示，<strong>ParticleFluid</strong>节点将<strong>FInstance</strong>类型的<strong>Topology</strong>拓扑数据和<strong>FArray</strong>类型的<strong>Velocity</strong>数据，传递给<strong>GLPointVisualNode</strong>节点使用。同时将<strong>ParticleFluid</strong>节点还定义了输入节点数据<strong>ParticleEmitter</strong>和输出节点数据<strong>ParticleSystem</strong>。</p>
+<p><img src="/images/fields/field.jpg?width=25pc" alt=""></p>
+<p>Field之间的连接和断开主要依赖以下两个函数实现</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">connect</span>(FBase<span style="color:#f92672">*</span> dst) <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
 <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">disconnect</span>(FBase<span style="color:#f92672">*</span> dst);
 </code></pre></div><p>FBase作为所有Field的基类，其功能主要是对Field的连接状态进行统一管理</p>
@@ -986,7 +986,7 @@
 </div>
 
 <p>假设存在A、B、C三个Field类型数据，他们的连接关系设置为A-&gt;B-&gt;C。此时为了降低数据转换和存储开销，当我们对C的数据进行操作时，其会根据连接关系返回最顶端（这里对应的是A）的数据指针进行操作。</p>
-<h3 id="2field类型">2、Field类型</h3>
+<h3 id="2field数据类型">2、Field数据类型</h3>
 <ul>
 <li>
 <p><strong>FVar</strong>：继承自FBase，是对单一数据类型的封装，包括标量数据，如int、float、double；矢量数据，如Vec3f；以及二阶张量，如Mat3f。节点和模块中可以通过使用DEF_VAR/DEF_VAR_IN等宏定义来进行定义</p>
@@ -1022,10 +1022,6 @@
 </span></code></pre></div><p>状态变量的访问方式为<strong>state+数据名称</strong></p>
 </li>
 </ul>
-
-<div class="notices info" ><p>参考代码src/Framework/FBase.h。</p>
-</div>
-
 
 
 
@@ -1472,16 +1468,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1648708718"></script>
-    <script src="/js/perfect-scrollbar.min.js?1648708718"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1648708718"></script>
-    <script src="/js/jquery.sticky.js?1648708718"></script>
-    <script src="/js/featherlight.min.js?1648708718"></script>
-    <script src="/js/highlight.pack.js?1648708718"></script>
+    <script src="/js/clipboard.min.js?1648717677"></script>
+    <script src="/js/perfect-scrollbar.min.js?1648717677"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1648717677"></script>
+    <script src="/js/jquery.sticky.js?1648717677"></script>
+    <script src="/js/featherlight.min.js?1648717677"></script>
+    <script src="/js/highlight.pack.js?1648717677"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1648708718"></script>
-    <script src="/js/learn.js?1648708718"></script>
-    <script src="/js/hugo-learn.js?1648708718"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1648717677"></script>
+    <script src="/js/learn.js?1648717677"></script>
+    <script src="/js/hugo-learn.js?1648717677"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
