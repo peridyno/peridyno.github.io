@@ -6,13 +6,13 @@
     <description>Recent content in PeriDyno on Documentation for PeriDyno</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 29 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://peridyno.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://peridyno.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Module</title>
-      <link>https://peridyno.github.io/en/framework/modules/</link>
+      <link>https://peridyno.github.io/en/framework/scenegraph/modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://peridyno.github.io/en/framework/modules/</guid>
+      <guid>https://peridyno.github.io/en/framework/scenegraph/modules/</guid>
       <description>1、Function introduction The module is a function-independent algorithm unit for internal calling of the node, which consists of input data, output data and control variables. The biggest difference between it and the node is that the input and output types only accept the Field type.
 2、How to implement a functional module It includes the following steps:
   Define input data (usually at least one is required)

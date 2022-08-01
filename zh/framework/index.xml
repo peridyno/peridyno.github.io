@@ -6,22 +6,5 @@
     <description>Recent content in 引擎架构 on PeriDyno帮助文档</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="https://peridyno.github.io/zh/framework/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>模块</title>
-      <link>https://peridyno.github.io/zh/framework/modules/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://peridyno.github.io/zh/framework/modules/</guid>
-      <description>1、功能简介 模块定义为供节点内部调用的功能独立的算法单元，其由输入数据、输出数据和控制变量构成。其与节点最大的差别在于输入输出类型只接受Field类型。
-2、如何实现一个功能模块 其包含如下步骤：
-  定义输入数据（通常至少要求一个）
-与节点中定义类似，采用DEF_{*}_IN的宏定义完成。
-  定义输出数据（可选）
-与节点中定义类似，采用DEF_{*}_OUT的宏定义完成。
-  定义控制变量
-DEF_VAR(T, name, value, desc)控制变量必须在模块执行之前完成初始化。
-  3、模块样例 /** * @brief The standard summation density * * @tparam TDataType */ template&amp;lt;typename TDataType&amp;gt; class SummationDensity : public virtual ParticleApproximation&amp;lt;TDataType&amp;gt; { DECLARE_TCLASS(SummationDensity, TDataType) public: typedef typename TDataType::Real Real; typedef typename TDataType::Coord Coord; SummationDensity(); ~SummationDensity() override {}; void compute() override; public: void compute( DArray&amp;lt;Real&amp;gt;&amp;amp; rho, DArray&amp;lt;Coord&amp;gt;&amp;amp; pos, DArrayList&amp;lt;int&amp;gt;&amp;amp; neighbors, Real smoothingLength, Real mass); void compute( DArray&amp;lt;Real&amp;gt;&amp;amp; rho, DArray&amp;lt;Coord&amp;gt;&amp;amp; pos, DArray&amp;lt;Coord&amp;gt;&amp;amp; posQueried, DArrayList&amp;lt;int&amp;gt;&amp;amp; neighbors, Real smoothingLength, Real mass); public: DEF_VAR(Real, RestDensity, 1000, &amp;#34;Rest Density&amp;#34;); ///Define inputs 	/** * @brief Particle positions */ DEF_ARRAY_IN(Coord, Position, DeviceType::GPU, &amp;#34;Particle position&amp;#34;); /** * @brief Particle positions */ DEF_ARRAY_IN(Coord, Other, DeviceType::GPU, &amp;#34;Particle position&amp;#34;); /** * @brief Neighboring particles * */ DEF_ARRAYLIST_IN(int, NeighborIds, DeviceType::GPU, &amp;#34;Neighboring particles&amp;#39; ids&amp;#34;); ///Define outputs 	/** * @brief Particle densities */ DEF_ARRAY_OUT(Real, Density, DeviceType::GPU, &amp;#34;Return the particle density&amp;#34;); private: void calculateParticleMass(); Real m_particle_mass; Real m_factor; }; IMPLEMENT_TCLASS(SummationDensity, TDataType) 4、QT GUI视图 鼠标双击Node Editor窗口中的节点，会出现该节点更为详细的属性信息。例如，双击ParticleFluid节点后，其详细的属性信息如下图所示： </description>
-    </item>
-    
   </channel>
 </rss>
