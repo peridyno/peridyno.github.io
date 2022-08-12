@@ -12,22 +12,22 @@
     <title>Linux平台安装 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1659328580" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1659328580" rel="stylesheet">
-    <link href="/css/hybrid.css?1659328580" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1659328580" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1659328580" rel="stylesheet">
-    <link href="/css/auto-complete.css?1659328580" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1659328580" rel="stylesheet">
-    <link href="/css/theme.css?1659328580" rel="stylesheet">
-    <link href="/css/tabs.css?1659328580" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1659328580" rel="stylesheet">
+    <link href="/css/nucleus.css?1660310883" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1660310883" rel="stylesheet">
+    <link href="/css/hybrid.css?1660310883" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1660310883" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1660310883" rel="stylesheet">
+    <link href="/css/auto-complete.css?1660310883" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1660310883" rel="stylesheet">
+    <link href="/css/theme.css?1660310883" rel="stylesheet">
+    <link href="/css/tabs.css?1660310883" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1660310883" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1659328580" rel="stylesheet">
+    <link href="/css/theme-blue.css?1660310883" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1659328580"></script>
+    <script src="/js/jquery-3.3.1.min.js?1660310883"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1659328580"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1659328580"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1660310883"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1660310883"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1659328580"></script>
+<script type="text/javascript" src="/js/search.js?1660310883"></script>
 
     
   </div>
@@ -1546,10 +1546,11 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1安装平台">1、安装平台</a></li>
+        <li><a href="#1平台">1、平台</a></li>
         <li><a href="#2依赖">2、依赖</a></li>
-        <li><a href="#3安装">3、安装</a></li>
+        <li><a href="#3安装项目">3、安装项目</a></li>
         <li><a href="#4编译项目">4、编译项目</a></li>
+        <li><a href="#4运行示例">4、运行示例</a></li>
       </ul>
     </li>
   </ul>
@@ -1577,35 +1578,241 @@
 		
 		
 
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [["$", "$"]],
+    },
+    displayMath: [
+      ["$$", "$$"],
+      ["\[\[", "\]\]"],
+    ],
+    svg: {
+      fontCache: "global",
+    },
+  };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
 
 
 
 
-	<h3 id="1安装平台">1、安装平台</h3>
+
+	<h3 id="1平台">1、平台</h3>
 <ul>
-<li><strong>Linux 平台</strong>：ubuntu 18.04及以上平台</li>
+<li><strong>Linux 平台</strong>：<a href="http://mirrors.aliyun.com/ubuntu-releases/20.04/">ubuntu:20.04.4-LTS-desktop</a></li>
+<li><strong>不支持虚拟机安装</strong>：虚拟机中的显卡不是真实的物理显卡，在CUDA安装及后续的项目编译中会出现问题。</li>
 </ul>
+
+<div class="notices info" ><p><strong>ubuntu:20.04-LTS-desktop</strong>版系统与本项目运行环境契合度比较大，项目编译起来问题较少。<strong>ubuntu:18.04-LTS-desktop</strong>版本OpenGL版本低于4.3，而且升级较为麻烦。<strong>ubuntu22.04-LTS-desktop</strong>版系统g++、gcc以及cuda的版本较高。因此笔者选用<strong>ubuntu:20.04-LTS-desktop</strong>版系统作为运行环境，其他版本的linux系统，读者可以自行尝试。</p>
+</div>
+
 <h3 id="2依赖">2、依赖</h3>
 <ul>
-<li>CUDA: CUDA Toolkit 11.0+（推荐11.2）</li>
-<li>g++:  11.1.0+ (推荐 11.1.0)</li>
+<li>OpenGL version：4.3+</li>
 </ul>
-<p>可选择的库:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> glxinfo <span style="color:#f92672">|</span> grep <span style="color:#e6db74">&#34;OpenGL version&#34;</span>
+OpenGL version string: <span style="color:#ae81ff">4.6.0</span> NVIDIA <span style="color:#ae81ff">510.47.03</span>
+</code></pre></div><ul>
+<li>Nvidia Driver Version: 470+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> nvidia<span style="color:#f92672">-</span>smi
+Fri Aug <span style="color:#ae81ff">12</span> <span style="color:#ae81ff">14</span><span style="color:#f92672">:</span><span style="color:#ae81ff">51</span><span style="color:#f92672">:</span><span style="color:#ae81ff">28</span> <span style="color:#ae81ff">2022</span>       
+<span style="color:#f92672">+-----------------------------------------------------------------------------+</span>
+<span style="color:#f92672">|</span> NVIDIA<span style="color:#f92672">-</span>SMI <span style="color:#ae81ff">510.47.03</span>    Driver Version: <span style="color:#ae81ff">510.47.03</span>    CUDA Version: <span style="color:#ae81ff">11.6</span>     <span style="color:#f92672">|</span>
+<span style="color:#f92672">|-------------------------------+----------------------+----------------------+</span>
+<span style="color:#f92672">|</span> GPU  Name        Persistence<span style="color:#f92672">-</span>M<span style="color:#f92672">|</span> Bus<span style="color:#f92672">-</span>Id        Disp.A <span style="color:#f92672">|</span> Volatile Uncorr. ECC <span style="color:#f92672">|</span>
+<span style="color:#f92672">|</span> Fan  Temp  Perf  Pwr:Usage<span style="color:#f92672">/</span>Cap<span style="color:#f92672">|</span>         Memory<span style="color:#f92672">-</span>Usage <span style="color:#f92672">|</span> GPU<span style="color:#f92672">-</span>Util  Compute M. <span style="color:#f92672">|</span>
+<span style="color:#f92672">|</span>                               <span style="color:#f92672">|</span>                      <span style="color:#f92672">|</span>               MIG M. <span style="color:#f92672">|</span>
+<span style="color:#f92672">|===============================+======================+======================|</span>
+<span style="color:#f92672">|</span>   <span style="color:#ae81ff">0</span>  NVIDIA GeForce ...  Off  <span style="color:#f92672">|</span> <span style="color:#ae81ff">00000000</span><span style="color:#f92672">:</span><span style="color:#ae81ff">01</span><span style="color:#f92672">:</span><span style="color:#ae81ff">00.0</span> Off <span style="color:#f92672">|</span>                  N<span style="color:#f92672">/</span>A <span style="color:#f92672">|</span>
+<span style="color:#f92672">|</span> <span style="color:#ae81ff">30</span><span style="color:#f92672">%</span>   <span style="color:#ae81ff">31</span>C    P8    <span style="color:#ae81ff">18</span>W <span style="color:#f92672">/</span> <span style="color:#ae81ff">220</span>W <span style="color:#f92672">|</span>    <span style="color:#ae81ff">171</span>MiB <span style="color:#f92672">/</span>  <span style="color:#ae81ff">8192</span>MiB <span style="color:#f92672">|</span>      <span style="color:#ae81ff">0</span><span style="color:#f92672">%</span>      Default <span style="color:#f92672">|</span>
+<span style="color:#f92672">|</span>                               <span style="color:#f92672">|</span>                      <span style="color:#f92672">|</span>                  N<span style="color:#f92672">/</span>A <span style="color:#f92672">|</span>
+<span style="color:#f92672">+-------------------------------+----------------------+----------------------+</span>
+<span style="color:#f92672">+-----------------------------------------------------------------------------+</span>
+<span style="color:#f92672">|</span> Processes:                                                                  <span style="color:#f92672">|</span>
+<span style="color:#f92672">|</span>  GPU   GI   CI        PID   Type   Process name                  GPU Memory <span style="color:#f92672">|</span>
+<span style="color:#f92672">|</span>        ID   ID                                                   Usage      <span style="color:#f92672">|</span>
+<span style="color:#f92672">|=============================================================================|</span>
+<span style="color:#f92672">|</span>    <span style="color:#ae81ff">0</span>   N<span style="color:#f92672">/</span>A  N<span style="color:#f92672">/</span>A      <span style="color:#ae81ff">1338</span>      G   <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>lib<span style="color:#f92672">/</span>xorg<span style="color:#f92672">/</span>Xorg                 <span style="color:#ae81ff">36</span>MiB <span style="color:#f92672">|</span>
+<span style="color:#f92672">|</span>    <span style="color:#ae81ff">0</span>   N<span style="color:#f92672">/</span>A  N<span style="color:#f92672">/</span>A      <span style="color:#ae81ff">3416</span>      G   <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>lib<span style="color:#f92672">/</span>xorg<span style="color:#f92672">/</span>Xorg                 <span style="color:#ae81ff">35</span>MiB <span style="color:#f92672">|</span>
+<span style="color:#f92672">|</span>    <span style="color:#ae81ff">0</span>   N<span style="color:#f92672">/</span>A  N<span style="color:#f92672">/</span>A      <span style="color:#ae81ff">3546</span>      G   <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>gnome<span style="color:#f92672">-</span>shell               <span style="color:#ae81ff">86</span>MiB <span style="color:#f92672">|</span>
+<span style="color:#f92672">+-----------------------------------------------------------------------------+</span>
+</code></pre></div><ul>
+<li>CUDA Version: 11+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> nvcc <span style="color:#f92672">--</span>version
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) <span style="color:#ae81ff">2005</span><span style="color:#f92672">-</span><span style="color:#ae81ff">2021</span> NVIDIA Corporation
+Built on Fri_Dec_17_18:<span style="color:#ae81ff">16</span><span style="color:#f92672">:</span><span style="color:#ae81ff">03</span>_PST_2021
+Cuda compilation tools, release <span style="color:#ae81ff">11.6</span>, V11<span style="color:#ae81ff">.6.55</span>
+Build cuda_11<span style="color:#ae81ff">.6</span>.r11<span style="color:#ae81ff">.6</span><span style="color:#f92672">/</span>compiler<span style="color:#ae81ff">.30794723</span>_0
+</code></pre></div><p>同时推荐安装<a href="https://cmake.org/files/">cmake-gui</a>。PeriDyno项目编译可选参数较多，使用图形化界面可以便捷的选择需要编译的库。</p>
 <ul>
-<li>Qt: <a href="https://download.qt.io/">https://download.qt.io/</a></li>
-<li>VTK: <a href="https://github.com/Kitware/VTK">https://github.com/Kitware/VTK</a></li>
-<li>Alembic: <a href="https://github.com/alembic/alembic">https://github.com/alembic/alembic</a></li>
-<li>Imath: <a href="https://github.com/AcademySoftwareFoundation/Imath">https://github.com/AcademySoftwareFoundation/Imath</a></li>
+<li>Cmake version: 3.10+</li>
 </ul>
-<h3 id="3安装">3、安装</h3>
-<p>除了上述可选的库，其他库都可以在项目中简化安装。使用 git 命令克隆项目及子模块。</p>
-<pre><code>git clone --recursive https://github.com/peridyno/peridyno.git
-</code></pre><h3 id="4编译项目">4、编译项目</h3>
-<p>打开Linux终端：</p>
-<pre><code>cd peridyo/build 
-cmake ..
-make -j8
-</code></pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> cmake <span style="color:#f92672">--</span>version
+cmake version <span style="color:#ae81ff">3.16.3</span>
+CMake suite maintained and supported by Kitware (kitware.com<span style="color:#f92672">/</span>cmake).
+</code></pre></div><h3 id="3安装项目">3、安装项目</h3>
+<p>（1）更新系统软件环境</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> sudo apt<span style="color:#f92672">-</span>get update
+</code></pre></div><p>（2）安装依赖包</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> sudo apt<span style="color:#f92672">-</span>get install libx11<span style="color:#f92672">-</span>dev libxext<span style="color:#f92672">-</span>dev libxrender<span style="color:#f92672">-</span>dev libxtst<span style="color:#f92672">-</span>dev libxt<span style="color:#f92672">-</span>dev libxrandr<span style="color:#f92672">-</span>dev libxinerama<span style="color:#f92672">-</span>dev libxcursor<span style="color:#f92672">-</span>devmak 
+<span style="color:#960050;background-color:#1e0010">$</span> sudo apt install <span style="color:#f92672">-</span>y mesa<span style="color:#f92672">-</span>common<span style="color:#f92672">-</span>dev  libgl 
+</code></pre></div><p>（3）克隆项目及子模块</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#960050;background-color:#1e0010">$</span> git clone <span style="color:#f92672">--</span>recursive https:<span style="color:#75715e">//github.com/peridyno/peridyno.git
+</span></code></pre></div><p>（4）创建build文件夹</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#960050;background-color:#1e0010">$</span> mkdir build 
+<span style="color:#960050;background-color:#1e0010">$</span> cd build 
+</code></pre></div><h3 id="4编译项目">4、编译项目</h3>
+<ul>
+<li>cmake项目，其中参数 <strong>-D PERIDYNO_EXMAPLE=ON</strong> 表示编译PeriDyno的exmaple。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> cmake <span style="color:#f92672">-</span>D PERIDYNO_EXMAPLE<span style="color:#f92672">=</span>ON ..
+<span style="color:#f92672">--</span> Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+<span style="color:#f92672">--</span> Using X11 <span style="color:#66d9ef">for</span> window creation
+<span style="color:#f92672">--</span> Imath is configuring as a cmake sub project
+<span style="color:#f92672">--</span> Configure Imath <span style="color:#ae81ff">3.2.0</span><span style="color:#f92672">-</span>dev, library API version: <span style="color:#ae81ff">29.0.0</span>
+<span style="color:#f92672">--</span> CMAKE SYSTEM NAME: Linux
+<span style="color:#f92672">--</span> The install dir is <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local
+<span style="color:#f92672">--</span> Found package Imath
+   <span style="color:#f92672">*</span> Alembic Configuration          <span style="color:#f92672">===</span>
+   <span style="color:#f92672">*</span> USE_ARNOLD                     OFF
+   <span style="color:#f92672">*</span> USE_BINARIES                   OFF
+   <span style="color:#f92672">*</span> USE_EXAMPLES                   OFF
+   <span style="color:#f92672">*</span> USE_HDF5                       OFF
+   <span style="color:#f92672">*</span> USE_MAYA                       OFF
+   <span style="color:#f92672">*</span> USE_PRMAN                      OFF
+   <span style="color:#f92672">*</span> USE_PYALEMBIC                  OFF
+   <span style="color:#f92672">*</span> USE_STATIC_BOOST               OFF
+   <span style="color:#f92672">*</span> USE_STATIC_HDF5                OFF
+   <span style="color:#f92672">*</span> USE_TESTS                      OFF
+   <span style="color:#f92672">*</span> ALEMBIC_ILMBASE_LINK_STATIC    OFF
+   <span style="color:#f92672">*</span> ALEMBIC_SHARED_LIBS            ON
+   <span style="color:#f92672">*</span> PYALEMBIC_PYTHON_MAJOR         <span style="color:#ae81ff">3</span>
+   <span style="color:#f92672">*</span> DOCS_PATH                      OFF
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>blur.frag.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>helper<span style="color:#f92672">/</span>axis.frag.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>helper<span style="color:#f92672">/</span>axis.vert.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>helper<span style="color:#f92672">/</span>background.frag.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>helper<span style="color:#f92672">/</span>bbox.frag.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>helper<span style="color:#f92672">/</span>bbox.vert.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>helper<span style="color:#f92672">/</span>plane.frag.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>helper<span style="color:#f92672">/</span>plane.vert.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>instance.frag.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>instance.geom.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>instance.vert.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>line.frag.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>line.geom.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>line.vert.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>point.frag.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>point.vert.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>screen.vert.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>ssao.frag.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>surface.frag.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>surface.geom.glsl
+Process: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>shader<span style="color:#f92672">/</span>surface.vert.glsl
+<span style="color:#f92672">--</span> Configuring done
+<span style="color:#f92672">--</span> Generating done	
+CMake Warning:
+  Manually<span style="color:#f92672">-</span>specified variables were not used by the project:
+    PERIDYNO_EXMAPLE
+<span style="color:#f92672">--</span> Build files have been written to: <span style="color:#f92672">/</span>home<span style="color:#f92672">/</span>hehao<span style="color:#f92672">/</span>Documents<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>peridyno<span style="color:#f92672">/</span>build
+</code></pre></div><ul>
+<li>make项目，其中 <strong>-j8</strong> 表示使用8个线程同时编译，加快编译速度。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#960050;background-color:#1e0010">$</span> make <span style="color:#f92672">-</span>j8
+[  <span style="color:#ae81ff">2</span><span style="color:#f92672">%</span>] Built target Imath
+[  <span style="color:#ae81ff">6</span><span style="color:#f92672">%</span>] Built target glfw
+[  <span style="color:#ae81ff">7</span><span style="color:#f92672">%</span>] Built target glad
+[  <span style="color:#ae81ff">9</span><span style="color:#f92672">%</span>] Built target imgui
+[ <span style="color:#ae81ff">12</span><span style="color:#f92672">%</span>] Built target Core
+[ <span style="color:#ae81ff">38</span><span style="color:#f92672">%</span>] Built target Alembic
+[ <span style="color:#ae81ff">58</span><span style="color:#f92672">%</span>] Built target Framework
+[ <span style="color:#ae81ff">60</span><span style="color:#f92672">%</span>] Built target RenderCore
+[ <span style="color:#ae81ff">60</span><span style="color:#f92672">%</span>] Built target ABCExporter
+[ <span style="color:#ae81ff">62</span><span style="color:#f92672">%</span>] Built target ImWidgets
+[ <span style="color:#ae81ff">65</span><span style="color:#f92672">%</span>] Built target IO
+Scanning dependencies of target GLRenderEngine
+[ <span style="color:#ae81ff">67</span><span style="color:#f92672">%</span>] Built target Volume
+[ <span style="color:#ae81ff">69</span><span style="color:#f92672">%</span>] Built target HeightField
+[ <span style="color:#ae81ff">70</span><span style="color:#f92672">%</span>] Built target RigidBody
+[ <span style="color:#ae81ff">75</span><span style="color:#f92672">%</span>] Built target ParticleSystem
+[ <span style="color:#ae81ff">75</span><span style="color:#f92672">%</span>] Building CXX object src<span style="color:#f92672">/</span>Rendering<span style="color:#f92672">/</span>Engine<span style="color:#f92672">/</span>OpenGL<span style="color:#f92672">/</span>CMakeFiles<span style="color:#f92672">/</span>GLRenderEngine.dir<span style="color:#f92672">/</span>gl<span style="color:#f92672">/</span>Program.cpp.o
+[ <span style="color:#ae81ff">79</span><span style="color:#f92672">%</span>] Built target Peridynamics
+[ <span style="color:#ae81ff">79</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GLRenderEngine.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">79</span><span style="color:#f92672">%</span>] Linking CXX <span style="color:#66d9ef">static</span> library ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>lib<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>libGLRenderEngine.a
+[ <span style="color:#ae81ff">85</span><span style="color:#f92672">%</span>] Built target GLRenderEngine
+[ <span style="color:#ae81ff">86</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GlfwGUI.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">86</span><span style="color:#f92672">%</span>] Linking CXX shared library ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>lib<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>libdynoGlfwGUI<span style="color:#f92672">-</span><span style="color:#ae81ff">0.6.0</span>.so
+[ <span style="color:#ae81ff">86</span><span style="color:#f92672">%</span>] Built target GlfwGUI
+[ <span style="color:#ae81ff">86</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_GlfwGUI.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">86</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_Bricks.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">87</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_Buoyancy.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">87</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_InstanceVisualizer.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">88</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_CapillaryWave.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">88</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_Cloth.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">88</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_Elasticity.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">88</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_CollisionMask.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">88</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_GlfwGUI
+[ <span style="color:#ae81ff">89</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_Buoyancy
+[ <span style="color:#ae81ff">89</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_Bricks
+[ <span style="color:#ae81ff">89</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_Elasticity
+[ <span style="color:#ae81ff">89</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_CapillaryWave
+[ <span style="color:#ae81ff">89</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_CollisionMask
+[ <span style="color:#ae81ff">89</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_InstanceVisualizer
+[ <span style="color:#ae81ff">89</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_Cloth
+[ <span style="color:#ae81ff">89</span><span style="color:#f92672">%</span>] Built target GL_GlfwGUI
+[ <span style="color:#ae81ff">90</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_Ocean.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">91</span><span style="color:#f92672">%</span>] Built target GL_CollisionMask
+[ <span style="color:#ae81ff">91</span><span style="color:#f92672">%</span>] Built target GL_Elasticity
+[ <span style="color:#ae81ff">91</span><span style="color:#f92672">%</span>] Built target GL_Cloth
+[ <span style="color:#ae81ff">91</span><span style="color:#f92672">%</span>] Built target GL_Buoyancy
+[ <span style="color:#ae81ff">92</span><span style="color:#f92672">%</span>] Built target GL_Bricks
+[ <span style="color:#ae81ff">93</span><span style="color:#f92672">%</span>] Built target GL_InstanceVisualizer
+[ <span style="color:#ae81ff">93</span><span style="color:#f92672">%</span>] Built target GL_CapillaryWave
+[ <span style="color:#ae81ff">93</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_OceanPatch.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">93</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_ParticleEmitter.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">94</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_ParticleFluid.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">94</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_Plasticity.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">94</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_Timing.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">94</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_TwoTets.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">94</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_Ocean
+[ <span style="color:#ae81ff">94</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_TwoBoxes.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">94</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_ParticleFluid
+[ <span style="color:#ae81ff">94</span><span style="color:#f92672">%</span>] Built target GL_Ocean
+[ <span style="color:#ae81ff">96</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_Timing
+[ <span style="color:#ae81ff">96</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_OceanPatch
+[ <span style="color:#ae81ff">96</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_Plasticity
+[ <span style="color:#ae81ff">96</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_ParticleEmitter
+[ <span style="color:#ae81ff">96</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_TwoTets
+[ <span style="color:#ae81ff">97</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_Wireframe.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">97</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_TwoBoxes
+[ <span style="color:#ae81ff">97</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_Wireframe
+[ <span style="color:#ae81ff">98</span><span style="color:#f92672">%</span>] Built target GL_ParticleFluid
+[ <span style="color:#ae81ff">98</span><span style="color:#f92672">%</span>] Built target GL_OceanPatch
+[ <span style="color:#ae81ff">98</span><span style="color:#f92672">%</span>] Linking CUDA device code CMakeFiles<span style="color:#f92672">/</span>GL_GhostSPH.dir<span style="color:#f92672">/</span>cmake_device_link.o
+[ <span style="color:#ae81ff">98</span><span style="color:#f92672">%</span>] Built target GL_Timing
+[ <span style="color:#ae81ff">99</span><span style="color:#f92672">%</span>] Built target GL_TwoTets
+[ <span style="color:#ae81ff">99</span><span style="color:#f92672">%</span>] Built target GL_ParticleEmitter
+[ <span style="color:#ae81ff">99</span><span style="color:#f92672">%</span>] Built target GL_Plasticity
+[ <span style="color:#ae81ff">99</span><span style="color:#f92672">%</span>] Built target GL_TwoBoxes
+[<span style="color:#ae81ff">100</span><span style="color:#f92672">%</span>] Linking CXX executable ..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>..<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>Release<span style="color:#f92672">/</span>GL_GhostSPH
+[<span style="color:#ae81ff">100</span><span style="color:#f92672">%</span>] Built target GL_Wireframe
+[<span style="color:#ae81ff">100</span><span style="color:#f92672">%</span>] Built target GL_GhostSPH
+</code></pre></div><h3 id="4运行示例">4、运行示例</h3>
+<p>运行PeriDyno示例：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#960050;background-color:#1e0010">$</span> cd bin<span style="color:#f92672">/</span>Release
+<span style="color:#960050;background-color:#1e0010">$</span> .<span style="color:#f92672">/</span>GL_GlfwGUI
+</code></pre></div><p>运行效果如下：
+<img src="/images/installation/linux/GL_GlfwGUI.jpg?width=70pc" alt=""></p>
+
 
 
 
@@ -2379,16 +2586,16 @@ make -j8
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1659328580"></script>
-    <script src="/js/perfect-scrollbar.min.js?1659328580"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1659328580"></script>
-    <script src="/js/jquery.sticky.js?1659328580"></script>
-    <script src="/js/featherlight.min.js?1659328580"></script>
-    <script src="/js/highlight.pack.js?1659328580"></script>
+    <script src="/js/clipboard.min.js?1660310883"></script>
+    <script src="/js/perfect-scrollbar.min.js?1660310883"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1660310883"></script>
+    <script src="/js/jquery.sticky.js?1660310883"></script>
+    <script src="/js/featherlight.min.js?1660310883"></script>
+    <script src="/js/highlight.pack.js?1660310883"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1659328580"></script>
-    <script src="/js/learn.js?1659328580"></script>
-    <script src="/js/hugo-learn.js?1659328580"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1660310883"></script>
+    <script src="/js/learn.js?1660310883"></script>
+    <script src="/js/hugo-learn.js?1660310883"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
