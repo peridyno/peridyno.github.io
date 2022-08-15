@@ -196,10 +196,10 @@
 },
 {
 	"uri": "https://peridyno.github.io/zh/examples/instancevisualizer/",
-	"title": "实例化模型",
+	"title": "实例渲染",
 	"tags": [],
 	"description": "",
-	"content": "1、实例化模型 peridyno允许用户自定义实例节点，该节点只需继承Node节点。用户可以在节点中加载obj模型，并可以使用代码对模型进行位置，尺寸及旋转进行定义。\n2、创建过程  自定义Instance类，该类继承于Node节点  class Instances : public Node  通过this-\u0026gt;stateTransforms()-\u0026gt;allocate()-\u0026gt;assign()函数设置模型的位置，尺寸，旋转等变换。  Transform3f tm; CArray\u0026lt;Transform3f\u0026gt; hTransform; for (uint i = 0; i \u0026lt; 5; i++) { tm.translation() = Vec3f(0.4 * i, 0, 0); tm.scale() = Vec3f(1.0 + 0.1*i, 1.0 - 0.1*i, 1.0); tm.rotation() = Quat\u0026lt;float\u0026gt;(i * (-0.2), Vec3f(1, 0, 0)).toMatrix3x3(); hTransform.pushBack(tm); } this-\u0026gt;stateTransforms()-\u0026gt;allocate()-\u0026gt;assign(hTransform);  加载obj模型，并绑定拓扑结构：  std::shared_ptr\u0026lt;TriangleSet\u0026lt;DataType3f\u0026gt;\u0026gt; triSet = std::make_shared\u0026lt;TriangleSet\u0026lt;DataType3f\u0026gt;\u0026gt;(); triSet-\u0026gt;loadObjFile(\u0026#34;../../data/armadillo/armadillo.obj\u0026#34;); this-\u0026gt;stateTopology()-\u0026gt;setDataPtr(triSet); hTransform.clear(); DEF_ARRAY_STATE(Transform3f, Transforms, DeviceType::GPU, \u0026#34;Instance transform\u0026#34;); DEF_INSTANCE_STATE(TopologyModule, Topology, \u0026#34;Topology\u0026#34;); 3、仿真效果 代码参考example/GL_InstanceVisualizer/main.h: "
+	"content": "1、实例渲染 peridyno允许用户自定义实例节点，该节点只需继承Node节点。用户可以在节点中加载obj模型，并可以使用代码对模型进行位置，尺寸及旋转进行定义。\n2、创建过程  自定义Instance类，该类继承于Node节点  class Instances : public Node  通过this-\u0026gt;stateTransforms()-\u0026gt;allocate()-\u0026gt;assign()函数设置模型的位置，尺寸，旋转等变换。  Transform3f tm; CArray\u0026lt;Transform3f\u0026gt; hTransform; for (uint i = 0; i \u0026lt; 5; i++) { tm.translation() = Vec3f(0.4 * i, 0, 0); tm.scale() = Vec3f(1.0 + 0.1*i, 1.0 - 0.1*i, 1.0); tm.rotation() = Quat\u0026lt;float\u0026gt;(i * (-0.2), Vec3f(1, 0, 0)).toMatrix3x3(); hTransform.pushBack(tm); } this-\u0026gt;stateTransforms()-\u0026gt;allocate()-\u0026gt;assign(hTransform);  加载obj模型，并绑定拓扑结构：  std::shared_ptr\u0026lt;TriangleSet\u0026lt;DataType3f\u0026gt;\u0026gt; triSet = std::make_shared\u0026lt;TriangleSet\u0026lt;DataType3f\u0026gt;\u0026gt;(); triSet-\u0026gt;loadObjFile(\u0026#34;../../data/armadillo/armadillo.obj\u0026#34;); this-\u0026gt;stateTopology()-\u0026gt;setDataPtr(triSet); hTransform.clear(); DEF_ARRAY_STATE(Transform3f, Transforms, DeviceType::GPU, \u0026#34;Instance transform\u0026#34;); DEF_INSTANCE_STATE(TopologyModule, Topology, \u0026#34;Topology\u0026#34;); 3、仿真效果 代码参考example/GL_InstanceVisualizer/main.h: "
 },
 {
 	"uri": "https://peridyno.github.io/zh/contributing/",
@@ -207,7 +207,7 @@
 	"tags": [],
 	"description": "See the list of contributors.
 ",
-	"content": "PeriDyno现有框架及核心算法主要贡献主要来自北京大学图形与交互技术实验室、中科院软件所人交互与智能信息处理实验室、中科院软件所计算机科学国家重点实验室、湖南大学汽车车身先进设计制造国家重点实验室、迈曦软件等研发团队\n已开源 主体框架：何小伟、常悦、郭煜中、叶子萌、任丽欣、徐力有\n渲染引擎及云端框架：石剑、罗旭锟、何小伟\n光滑粒子动力学：何小伟、刘树森、夏提\n近场动力学：何小伟、郭德闻\n刚体及多体动力学：常悦、叶子萌\n基于高度场的洋流模拟：何浩、何小伟\n文档维护：何浩、常悦、石剑、刘树森、郭煜中、何小伟\n即将开源 工业CAE软件集成开发与应用：蔡勇、蔡元添、王宇杰、赵博伟光、王强\n超弹性模拟：郭德闻、卢子璇、何小伟\n欧拉流体及实体建模：任丽欣\n多物理场耦合：常悦、缪冉\n最后也欢迎更多开发者一切贡献更多仿真、渲染及交互相关的算法，如有兴趣可联系xiaowei(AT)iscas.ac.cn或者直接与研发团队成员联系！！！\n\r"
+	"content": "PeriDyno现有框架及核心算法主要贡献主要来自北京大学图形与交互技术实验室、中科院软件所人交互与智能信息处理实验室、中科院软件所计算机科学国家重点实验室、湖南大学汽车车身先进设计制造国家重点实验室、迈曦软件等研发团队\n已开源 主体框架：何小伟、常悦、郭煜中、叶子萌、任丽欣、徐力有\n渲染引擎及云端框架：石剑、罗旭锟、何小伟\n光滑粒子动力学：何小伟、刘树森、夏提\n近场动力学：何小伟、郭德闻\n刚体及多体动力学：常悦、叶子萌\n基于高度场的洋流模拟：何浩、何小伟\n文档维护：何浩、常悦、石剑、刘树森、郭煜中、何小伟\n即将开源 工业CAE软件集成开发与应用：蔡勇、蔡元添、王宇杰、赵博伟光、王强\n超弹性模拟：郭德闻、卢子璇、何小伟\n欧拉流体及实体建模：任丽欣\n多物理场耦合：常悦、缪冉\n最后也欢迎更多开发者一起贡献更多仿真、渲染及交互相关的算法，如有兴趣可联系xiaowei(AT)iscas.ac.cn或者直接与研发团队成员联系！！！\n\r"
 },
 {
 	"uri": "https://peridyno.github.io/zh/contributing/docs/",
