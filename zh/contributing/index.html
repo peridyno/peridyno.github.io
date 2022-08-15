@@ -10,25 +10,25 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>贡献 :: PeriDyno帮助文档</title>
+    <title>关于我们 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1660310883" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1660310883" rel="stylesheet">
-    <link href="/css/hybrid.css?1660310883" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1660310883" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1660310883" rel="stylesheet">
-    <link href="/css/auto-complete.css?1660310883" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1660310883" rel="stylesheet">
-    <link href="/css/theme.css?1660310883" rel="stylesheet">
-    <link href="/css/tabs.css?1660310883" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1660310883" rel="stylesheet">
+    <link href="/css/nucleus.css?1660544305" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1660544305" rel="stylesheet">
+    <link href="/css/hybrid.css?1660544305" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1660544305" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1660544305" rel="stylesheet">
+    <link href="/css/auto-complete.css?1660544305" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1660544305" rel="stylesheet">
+    <link href="/css/theme.css?1660544305" rel="stylesheet">
+    <link href="/css/tabs.css?1660544305" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1660544305" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1660310883" rel="stylesheet">
+    <link href="/css/theme-blue.css?1660544305" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1660310883"></script>
+    <script src="/js/jquery-3.3.1.min.js?1660544305"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -74,14 +74,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1660310883"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1660310883"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1660544305"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1660544305"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1660310883"></script>
+<script type="text/javascript" src="/js/search.js?1660544305"></script>
 
     
   </div>
@@ -1365,7 +1365,7 @@
  
   
     
-    <li data-nav-id="/zh/contributing/" title="贡献" class="dd-item
+    <li data-nav-id="/zh/contributing/" title="关于我们" class="dd-item
         parent
         active
         
@@ -1377,6 +1377,46 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/zh/contributing/docs/" title="如何完善文档" class="dd-item
+        
+        
+        
+        ">
+      <a href="/zh/contributing/docs/">
+          7.1 如何完善文档
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
       
     </li>
   
@@ -1526,7 +1566,7 @@
             
           
           
-            <a href='/zh/'>泛动引擎</a> > 贡献
+            <a href='/zh/'>泛动引擎</a> > 关于我们
           
         
           
@@ -1541,13 +1581,8 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1安装hugo">1、安装Hugo</a></li>
-        <li><a href="#2不同平台的安装">2、不同平台的安装</a></li>
-        <li><a href="#3安装-nodejs-和-npm">3、安装 Node.js 和 npm</a></li>
-        <li><a href="#4安装-postcss">4、安装 PostCSS</a></li>
-        <li><a href="#5克隆-peridyno-docs-网站代码">5、克隆 Peridyno-docs 网站代码</a></li>
-        <li><a href="#6pull-requests指令">6、Pull requests指令</a></li>
-        <li><a href="#7发布peridyno网站">7、发布Peridyno网站</a></li>
+        <li><a href="#已开源">已开源</a></li>
+        <li><a href="#即将开源">即将开源</a></li>
       </ul>
     </li>
   </ul>
@@ -1567,7 +1602,7 @@
           
             <h1>
               
-              贡献
+              关于我们
             </h1>
           
 
@@ -1579,123 +1614,22 @@
 
 
 
-	<p>接下来介绍如何向我们的开源项目做出贡献</p>
-<h3 id="1安装hugo">1、安装Hugo</h3>
-<p>你需要下一个较新的<a href="https://github.com/gohugoio/hugo/releases"><strong>extended</strong>版本</a> (推荐0.53以上) 的 <a href="https://gohugo.io/">Hugo</a>。
-确保下载的是extended版的hugo,千万不要下载relese版的Hugo,因为它不支持 <a href="https://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html">SCSS</a>.</p>
-<p>有关全面的 Hugo开发文档，请参阅 <a href="https://gohugo.io/">gohugo.io</a>。</p>
-<p>查看是否已经安装hugo ,或查看hugo安装的版本，请运行以下命令：</p>
-<pre><code>hugo version
-</code></pre><h3 id="2不同平台的安装">2、不同平台的安装</h3>
-<ul>
-<li>
-<p>windows平台</p>
-<p>（1）下载 hugo extended 版</p>
-<p>点击 <a href="https://github.com/gohugoio/hugo/releases">hugo下载</a> 下载。记得下载extended 版。例如，64位的windows系统可以下载<code>hugo_extended_0.75.1_Windows-64bit.zip</code>.</p>
-<p>（2）配置环境变量</p>
-<p>将hugo.exe加入windows系统环境变量，记得路径中不要有<strong>空格</strong>，否则出现一些奇奇怪怪的错误。例如，路径<code>D:\Hugo\bin</code>是正确的。<code>D:\Program Files (x86)\Hugo\bin</code>就不正确。</p>
-</li>
-<li>
-<p>Linux平台
-不要使用 <code>sudo apt-get install hugo</code>来安装hugo, 因为这样不会安装hugo <code>extended</code> 版。</p>
-<p>如果您已经安装了hugo，可以通过以下指令查看您安装的版本:</p>
-<pre><code>hugo version
-</code></pre><p>如果您安装的是 <code>v0.52</code> 或更早的版本。那您需要更新hugo：</p>
-<ol>
-<li>
-<p>下载<a href="https://github.com/gohugoio/hugo/releases">Hugo</a></p>
-</li>
-<li>
-<p>找到Hugo extended版</p>
-</li>
-<li>
-<p>下载(例如：<code>hugo_extended_0.5X_Linux-64bit.tar.gz</code>).</p>
-</li>
-<li>
-<p>创建一个文件夹:</p>
-<pre><code>mkdir hugo
-</code></pre>
-</li>
-<li>
-<p>加压下载的<code>hugo</code>压缩包。</p>
-</li>
-<li>
-<p>进入该文件夹:</p>
-<pre><code>cd hugo
-</code></pre>
-</li>
-<li>
-<p>安装hugo:</p>
-<pre><code>sudo install hugo /usr/bin    
-</code></pre>
-</li>
-</ol>
-</li>
-<li>
-<p>macOS平台</p>
-<p>使用 <a href="https://gohugo.io/getting-started/installing/#homebrew-macos">Brew</a>安装hugo。</p>
-</li>
-</ul>
-<h3 id="3安装-nodejs-和-npm">3、安装 Node.js 和 npm</h3>
-<p>如果您已经安装了Node.js和npm, 通过以下指令可以查看当前的版本：</p>
-<pre><code>node -v
-npm -v
-</code></pre><p>点击 <a href="http://nodejs.cn/download/">下载</a> Node.js并安装。</p>
-<h3 id="4安装-postcss">4、安装 PostCSS</h3>
-<p>安装了最新Node.js后，通过命令行可以安装 PostCSS:</p>
-<pre><code>npm install postcss --save-dev
-npm install -D --save autoprefixer
-npm install -D --save postcss-cli
-</code></pre><h3 id="5克隆-peridyno-docs-网站代码">5、克隆 Peridyno-docs 网站代码</h3>
-<ul>
-<li>
-<p>使用git 克隆网站源码:</p>
-<pre><code>git clone https://github.com/peridyno/peri-docs.git
-</code></pre>
-</li>
-<li>
-<p>进入文件夹:</p>
-<pre><code>cd peri-docs
-</code></pre>
-</li>
-<li>
-<p>运行完整:</p>
-<pre><code>hugo server
-</code></pre>
-</li>
-</ul>
-<p>在浏览器中输入 <code>http://localhost:1313/</code> 就能访问peridyno本地网站。通过 <code>Ctrl + c</code> 来关闭。</p>
-<p>在windows的cmd中，进入当前文件夹，输入<code>hugo server</code>启动本地服务器。</p>
-<p><img src="/images/contributing/hugoServer.jpg" alt=""></p>
-<h3 id="6pull-requests指令">6、Pull requests指令</h3>
-<p>最后，您可以在我们的 github 存储库中发出“Pull requests”指令。 感谢您对 Peridyno 开源项目的贡献！</p>
-<h3 id="7发布peridyno网站">7、发布Peridyno网站</h3>
-<ul>
-<li>
-<p>生成public文件夹</p>
-<pre><code>  cd peridyno-doc
-  hugo
-</code></pre>
-</li>
-<li>
-<p>推送项目文件（如果有权限的话）</p>
-<pre><code>  cd public 
-  git init
-  git add -A
-  git commit -am &quot;init&quot;
-  git remote add origin https://github.com/peridyno/peri-docs.github.io
-  git push -f origin master
-</code></pre>
-</li>
-<li>
-<p>修改域名（如果有权限的话）</p>
-<pre><code>  在 peridynoTeam.github.io 项目设置（https://github.com/peridyno/peri-docs.github.io/settings）中自定义域中添加“www.peridyno.com”。
-  等待几分钟，您可以在 `www.peridyno.com` 上看到 Peridyno 网站。
-</code></pre>
-</li>
-</ul>
+	<p>PeriDyno现有框架及核心算法主要贡献主要来自<a href="https://www.graphics.pku.edu.cn/index.htm">北京大学图形与交互技术实验室</a>、中科院软件所<a href="http://iel.iscas.ac.cn/">人交互与智能信息处理实验室</a>、中科院软件所<a href="http://lcs.ios.ac.cn/">计算机科学国家重点实验室</a>、湖南大学<a href="http://dmvb.hnu.edu.cn/">汽车车身先进设计制造国家重点实验室</a>等研发团队</p>
+<h3 id="已开源">已开源</h3>
+<p>主体框架：<a href="http://peridynamics.com/">何小伟</a>、<a href="https://changy1506.github.io/">常悦</a>、郭煜中、叶子萌、任丽欣、徐力有</p>
+<p>渲染引擎及云端框架：<a href="http://www.ia.cas.cn/sourcedb_ia_cas/cn/iaexpert/202204/t20220421_6434586.html">石剑</a>、罗旭锟、<a href="http://peridynamics.com/">何小伟</a></p>
+<p>光滑粒子动力学：<a href="http://peridynamics.com/">何小伟</a>、刘树森、夏提</p>
+<p>近场动力学：<a href="http://peridynamics.com/">何小伟</a>、郭德闻</p>
+<p>刚体及多体动力学：<a href="https://changy1506.github.io/">常悦</a>、叶子萌</p>
+<p>基于高度场的洋流模拟：何浩、<a href="http://peridynamics.com/">何小伟</a></p>
+<p>文档维护：何浩、<a href="https://changy1506.github.io/">常悦</a>、石剑、刘树森、郭煜中、<a href="http://peridynamics.com/">何小伟</a></p>
+<h3 id="即将开源">即将开源</h3>
+<p>有限元分析：<a href="http://grjl.hnu.edu.cn/p/1043623DCDF46A4AC8DB1E31E26CB72C">蔡勇</a>、蔡元添</p>
+<p>超弹性模拟：郭德闻、卢子璇、<a href="http://peridynamics.com/">何小伟</a></p>
+<p>欧拉流体及实体建模：任丽欣</p>
+<p>多物理场耦合：<a href="https://changy1506.github.io/">常悦</a>、缪冉</p>
 
-<div class="notices info" ><p>如果您觉得我们这个项目有意义，那就加入我们吧!!!</p>
+<div class="notices info" ><p>最后也欢迎更多开发者一切贡献更多仿真、渲染及交互相关的算法，如有兴趣可联系xiaowei(AT)iscas.ac.cn或者直接与研发团队成员联系！！！</p>
 </div>
 
 
@@ -2437,8 +2371,29 @@ npm install -D --save postcss-cli
 
                     
                     
+                        
+                    
                     
 
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
             
         
@@ -2455,7 +2410,7 @@ npm install -D --save postcss-cli
 			<a class="nav nav-prev" href="/zh/reference/reflection/" title="C&#43;&#43;反射"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zh/overview/" title="概要" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zh/contributing/docs/" title="如何完善文档" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2465,16 +2420,16 @@ npm install -D --save postcss-cli
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1660310883"></script>
-    <script src="/js/perfect-scrollbar.min.js?1660310883"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1660310883"></script>
-    <script src="/js/jquery.sticky.js?1660310883"></script>
-    <script src="/js/featherlight.min.js?1660310883"></script>
-    <script src="/js/highlight.pack.js?1660310883"></script>
+    <script src="/js/clipboard.min.js?1660544305"></script>
+    <script src="/js/perfect-scrollbar.min.js?1660544305"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1660544305"></script>
+    <script src="/js/jquery.sticky.js?1660544305"></script>
+    <script src="/js/featherlight.min.js?1660544305"></script>
+    <script src="/js/highlight.pack.js?1660544305"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1660310883"></script>
-    <script src="/js/learn.js?1660310883"></script>
-    <script src="/js/hugo-learn.js?1660310883"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1660544305"></script>
+    <script src="/js/learn.js?1660544305"></script>
+    <script src="/js/hugo-learn.js?1660544305"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
