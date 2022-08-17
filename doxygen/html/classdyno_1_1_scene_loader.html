@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -87,8 +87,10 @@ Inheritance diagram for dyno::SceneLoader:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1524128ffde700adb3ae18d56260aab9"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_scene_loader.html#a1524128ffde700adb3ae18d56260aab9">load</a> (const std::string filename)</td></tr>
-<tr class="separator:a1524128ffde700adb3ae18d56260aab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e429cfdb19777b1b9183dc7e3f6c8a0"><td class="memItemLeft" align="right" valign="top">virtual std::shared_ptr&lt; <a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_scene_loader.html#a7e429cfdb19777b1b9183dc7e3f6c8a0">load</a> (const std::string filename)</td></tr>
+<tr class="separator:a7e429cfdb19777b1b9183dc7e3f6c8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2144f73472a6a7c34b5c2a365bf91261"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_scene_loader.html#a2144f73472a6a7c34b5c2a365bf91261">save</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> &gt; scn, const std::string filename)</td></tr>
+<tr class="separator:a2144f73472a6a7c34b5c2a365bf91261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a819fe075a7d93f83f0f46fb7872fbca9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_scene_loader.html#a819fe075a7d93f83f0f46fb7872fbca9">canLoadFileByName</a> (const std::string filename)</td></tr>
 <tr class="separator:a819fe075a7d93f83f0f46fb7872fbca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70668140f9d76c9eb604314d245056f0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_scene_loader.html#a70668140f9d76c9eb604314d245056f0">canLoadFileByExtension</a> (const std::string extension)</td></tr>
@@ -124,7 +126,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_scene_loader_x_m_l.html#a290c1d362ac56426fbca60cefda341f8">dyno::SceneLoaderXML</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_scene_loader_factory_8h_source.html#l00020">20</a> of file <a class="el" href="_scene_loader_factory_8h_source.html">SceneLoaderFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_loader_factory_8h_source.html#l00022">22</a> of file <a class="el" href="_scene_loader_factory_8h_source.html">SceneLoaderFactory.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -161,7 +163,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_scene_loader_factory_8h_source.html#l00011">11</a> of file <a class="el" href="_scene_loader_factory_8h_source.html">SceneLoaderFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_scene_loader_factory_8h_source.html#l00013">13</a> of file <a class="el" href="_scene_loader_factory_8h_source.html">SceneLoaderFactory.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -174,8 +176,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a1524128ffde700adb3ae18d56260aab9" name="a1524128ffde700adb3ae18d56260aab9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1524128ffde700adb3ae18d56260aab9">&#9670;&nbsp;</a></span>load()</h2>
+<a id="a7e429cfdb19777b1b9183dc7e3f6c8a0" name="a7e429cfdb19777b1b9183dc7e3f6c8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e429cfdb19777b1b9183dc7e3f6c8a0">&#9670;&nbsp;</a></span>load()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,7 +186,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt; dyno::SceneLoader::load </td>
+          <td class="memname">virtual std::shared_ptr&lt; <a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> &gt; dyno::SceneLoader::load </td>
           <td>(</td>
           <td class="paramtype">const std::string&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
@@ -198,9 +200,72 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classdyno_1_1_scene_loader_x_m_l.html#a91d244d404d6b670a009ebd80e211686">dyno::SceneLoaderXML</a>.</p>
+<p>Reimplemented in <a class="el" href="classdyno_1_1_scene_loader_x_m_l.html#a873e4b879db23419dc9b039e0234ba77">dyno::SceneLoaderXML</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_scene_loader_factory_8h_source.html#l00009">9</a> of file <a class="el" href="_scene_loader_factory_8h_source.html">SceneLoaderFactory.h</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_scene_loader_a7e429cfdb19777b1b9183dc7e3f6c8a0_icgraph.png" border="0" usemap="#aclassdyno_1_1_scene_loader_a7e429cfdb19777b1b9183dc7e3f6c8a0_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_scene_loader_a7e429cfdb19777b1b9183dc7e3f6c8a0_icgraph" id="aclassdyno_1_1_scene_loader_a7e429cfdb19777b1b9183dc7e3f6c8a0_icgraph">
+<area shape="rect" title=" " alt="" coords="565,13,732,39"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a1913f593c59544df8db25c688286751e" title=" " alt="" coords="379,5,517,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7" title=" " alt="" coords="192,5,331,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="5,5,144,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2144f73472a6a7c34b5c2a365bf91261" name="a2144f73472a6a7c34b5c2a365bf91261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2144f73472a6a7c34b5c2a365bf91261">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool dyno::SceneLoader::save </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> &gt;&#160;</td>
+          <td class="paramname"><em>scn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classdyno_1_1_scene_loader_x_m_l.html#aeedc24b6772583b72b66b55417c4a301">dyno::SceneLoaderXML</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_scene_loader_factory_8h_source.html#l00011">11</a> of file <a class="el" href="_scene_loader_factory_8h_source.html">SceneLoaderFactory.h</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_scene_loader_a2144f73472a6a7c34b5c2a365bf91261_icgraph.png" border="0" usemap="#aclassdyno_1_1_scene_loader_a2144f73472a6a7c34b5c2a365bf91261_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_scene_loader_a2144f73472a6a7c34b5c2a365bf91261_icgraph" id="aclassdyno_1_1_scene_loader_a2144f73472a6a7c34b5c2a365bf91261_icgraph">
+<area shape="rect" title=" " alt="" coords="565,46,733,73"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a56b0b789252be19511aaa9609970fabb" title=" " alt="" coords="379,5,517,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#af0b8639a24417920462721be88ab6a88" title=" " alt="" coords="379,71,517,112"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7" title=" " alt="" coords="192,39,331,80"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="5,39,144,80"/>
+</map>
+</div>
 
 </div>
 </div>

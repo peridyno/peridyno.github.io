@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -412,7 +412,7 @@ $(function() {
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="classdyno_1_1_p_dock_widget.html#a748e257554880063f11614a53b810af7">  340</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_p_dock_widget.html#a748e257554880063f11614a53b810af7">PDockWidget::contextMenuEvent</a>(QContextMenuEvent *event)</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    {</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <span class="keyword">event</span>-&gt;accept();</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <a class="code hl_variable" href="classdyno_1_1_p_dock_widget.html#af82c37b170c0a54014c07ebb04c200d4">menu</a>-&gt;exec(event-&gt;globalPos());</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <span class="comment">//menu-&gt;exec(event-&gt;globalPos());</span></div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    }</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="preprocessor">#endif </span><span class="comment">// QT_NO_CONTEXTMENU</span></div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
@@ -726,7 +726,7 @@ $(function() {
 <div class="ttc" id="aclassdyno_1_1_p_dock_widget_html_ae952540c0965c84bb9aedfdeb92f5f9e"><div class="ttname"><a href="classdyno_1_1_p_dock_widget.html#ae952540c0965c84bb9aedfdeb92f5f9e">dyno::PDockWidget::setCustomSizeHint</a></div><div class="ttdeci">void setCustomSizeHint(const QSize &amp;size)</div><div class="ttdef"><b>Definition:</b> <a href="_p_dock_widget_8cpp_source.html#l00384">PDockWidget.cpp:384</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_p_dock_widget_html_aedd678baa424934fd341c38e8c9e3742"><div class="ttname"><a href="classdyno_1_1_p_dock_widget.html#aedd678baa424934fd341c38e8c9e3742">dyno::PDockWidget::allowedAreasActions</a></div><div class="ttdeci">QActionGroup * allowedAreasActions</div><div class="ttdef"><b>Definition:</b> <a href="_p_dock_widget_8h_source.html#l00109">PDockWidget.h:109</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_p_dock_widget_html_af82c37b170c0a54014c07ebb04c200d4"><div class="ttname"><a href="classdyno_1_1_p_dock_widget.html#af82c37b170c0a54014c07ebb04c200d4">dyno::PDockWidget::menu</a></div><div class="ttdeci">QMenu * menu</div><div class="ttdef"><b>Definition:</b> <a href="_p_dock_widget_8h_source.html#l00124">PDockWidget.h:124</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a2ce781d1d2d6b8de20cfb143f8ecb017"><div class="ttname"><a href="namespacedyno.html#a2ce781d1d2d6b8de20cfb143f8ecb017">dyno::findByName</a></div><div class="ttdeci">static PDockWidget * findByName(const QMainWindow *mainWindow, const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_p_dock_widget_8cpp_source.html#l00313">PDockWidget.cpp:313</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a59fd957d3f918537c5b50768d6280fd0"><div class="ttname"><a href="namespacedyno.html#a59fd957d3f918537c5b50768d6280fd0">dyno::bgColorForName</a></div><div class="ttdeci">QColor bgColorForName(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_p_dock_widget_8cpp_source.html#l00078">PDockWidget.cpp:78</a></div></div>
 <div class="ttc" id="anamespacedyno_html_abef5236f4b50167c6a29af695354798b"><div class="ttname"><a href="namespacedyno.html#abef5236f4b50167c6a29af695354798b">dyno::fgColorForName</a></div><div class="ttdeci">QColor fgColorForName(const QString &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="_p_dock_widget_8cpp_source.html#l00095">PDockWidget.cpp:95</a></div></div>

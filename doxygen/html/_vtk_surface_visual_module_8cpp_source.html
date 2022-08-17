@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -124,7 +124,7 @@ $(function() {
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">if</span> (node == NULL || !node-&gt;isVisible()) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">auto</span> mesh = std::dynamic_pointer_cast&lt;dyno::TriangleSet&lt;dyno::DataType3f&gt;&gt;(node-&gt;currentTopology()-&gt;getDataPtr());</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">auto</span> mesh = <a class="code hl_variable" href="class_surface_mapper.html#ac549791a4e271573514aafc4f0bca3fd">m_module</a>-&gt;inTriangleSet()-&gt;getDataPtr();</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">auto</span>&amp; faces = mesh-&gt;getTriangles();</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">auto</span>&amp; verts = mesh-&gt;getPoints();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
@@ -213,12 +213,12 @@ $(function() {
 <div class="ttc" id="aclass_surface_mapper_html_aac43acdbb8bc11b66f8f974d09d11500"><div class="ttname"><a href="class_surface_mapper.html#aac43acdbb8bc11b66f8f974d09d11500">SurfaceMapper::m_cudaIBO</a></div><div class="ttdeci">cudaGraphicsResource * m_cudaIBO</div><div class="ttdef"><b>Definition:</b> <a href="_vtk_surface_visual_module_8cpp_source.html#l00118">VtkSurfaceVisualModule.cpp:118</a></div></div>
 <div class="ttc" id="aclass_surface_mapper_html_ac549791a4e271573514aafc4f0bca3fd"><div class="ttname"><a href="class_surface_mapper.html#ac549791a4e271573514aafc4f0bca3fd">SurfaceMapper::m_module</a></div><div class="ttdeci">dyno::VtkSurfaceVisualModule * m_module</div><div class="ttdef"><b>Definition:</b> <a href="_vtk_surface_visual_module_8cpp_source.html#l00113">VtkSurfaceVisualModule.cpp:113</a></div></div>
 <div class="ttc" id="aclass_surface_mapper_html_ae9fd730f9c4f757be138be7905122cb8"><div class="ttname"><a href="class_surface_mapper.html#ae9fd730f9c4f757be138be7905122cb8">SurfaceMapper::SurfaceMapper</a></div><div class="ttdeci">SurfaceMapper(VtkSurfaceVisualModule *v)</div><div class="ttdef"><b>Definition:</b> <a href="_vtk_surface_visual_module_8cpp_source.html#l00031">VtkSurfaceVisualModule.cpp:31</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_module_html_a0b0882f625db1c53350db482d34a1b90"><div class="ttname"><a href="classdyno_1_1_module.html#a0b0882f625db1c53350db482d34a1b90">dyno::Module::isInitialized</a></div><div class="ttdeci">bool isInitialized()</div><div class="ttdef"><b>Definition:</b> <a href="_module_8cpp_source.html#l00155">Module.cpp:155</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_module_html_a2b50ee66c01dda6a05819eb246266d33"><div class="ttname"><a href="classdyno_1_1_module.html#a2b50ee66c01dda6a05819eb246266d33">dyno::Module::getParent</a></div><div class="ttdeci">Node * getParent()</div><div class="ttdef"><b>Definition:</b> <a href="_module_8h_source.html#l00050">Module.h:50</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_module_html_a0b0882f625db1c53350db482d34a1b90"><div class="ttname"><a href="classdyno_1_1_module.html#a0b0882f625db1c53350db482d34a1b90">dyno::Module::isInitialized</a></div><div class="ttdeci">bool isInitialized()</div><div class="ttdef"><b>Definition:</b> <a href="_module_8cpp_source.html#l00200">Module.cpp:200</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_module_html_a2b50ee66c01dda6a05819eb246266d33"><div class="ttname"><a href="classdyno_1_1_module.html#a2b50ee66c01dda6a05819eb246266d33">dyno::Module::getParent</a></div><div class="ttdeci">Node * getParent()</div><div class="ttdef"><b>Definition:</b> <a href="_module_8h_source.html#l00058">Module.h:58</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_vtk_surface_visual_module_html"><div class="ttname"><a href="classdyno_1_1_vtk_surface_visual_module.html">dyno::VtkSurfaceVisualModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_vtk_surface_visual_module_8h_source.html#l00024">VtkSurfaceVisualModule.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_vtk_visual_module_html_ad1b6e8ff868d9fa393dde6efcf8f0d33"><div class="ttname"><a href="classdyno_1_1_vtk_visual_module.html#ad1b6e8ff868d9fa393dde6efcf8f0d33">dyno::VtkVisualModule::isDirty</a></div><div class="ttdeci">bool isDirty(bool update=true)</div><div class="ttdef"><b>Definition:</b> <a href="_vtk_visual_module_8cpp_source.html#l00064">VtkVisualModule.cpp:64</a></div></div>
-<div class="ttc" id="anamespace_type_info_html_a83f26bf1dbb6b312cd35c91327816e8c"><div class="ttname"><a href="namespace_type_info.html#a83f26bf1dbb6b312cd35c91327816e8c">TypeInfo::New</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; New(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00238">Typedef.inl:238</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespace_type_info_html_a83f26bf1dbb6b312cd35c91327816e8c"><div class="ttname"><a href="namespace_type_info.html#a83f26bf1dbb6b312cd35c91327816e8c">TypeInfo::New</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; New(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00262">Typedef.inl:262</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -79,6 +79,14 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_vector2_d_8h_source.html">Vector2D.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for dyno::Vector&lt; T, 2 &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_vector_3_01_t_00_012_01_4__coll__graph.png" border="0" usemap="#adyno_1_1_vector_3_01_t_00_012_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="adyno_1_1_vector_3_01_t_00_012_01_4_coll__map" id="adyno_1_1_vector_3_01_t_00_012_01_4_coll__map">
+<area shape="rect" title=" " alt="" coords="5,5,148,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -91,7 +99,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2040e3a8524d65b0a18ef129c29bb073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58bd332c12c9804409c3e40ae0eddb5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vector_3_01_t_00_012_01_4.html#a58bd332c12c9804409c3e40ae0eddb5a">Vector</a> (<a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>)</td></tr>
 <tr class="separator:a58bd332c12c9804409c3e40ae0eddb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77cca3b9b8dd45726835a3130a19d089"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vector_3_01_t_00_012_01_4.html#a77cca3b9b8dd45726835a3130a19d089">Vector</a> (<a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> x, <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> y)</td></tr>
+<tr class="memitem:a77cca3b9b8dd45726835a3130a19d089"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vector_3_01_t_00_012_01_4.html#a77cca3b9b8dd45726835a3130a19d089">Vector</a> (<a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> <a class="el" href="classdyno_1_1_vector_3_01_t_00_012_01_4.html#afd1c4c0ba9588ca0ac7a7f15d78e71c4">x</a>, <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> <a class="el" href="classdyno_1_1_vector_3_01_t_00_012_01_4.html#a3204ab9d2e5d5b85bc6637269474e4bb">y</a>)</td></tr>
 <tr class="separator:a77cca3b9b8dd45726835a3130a19d089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a031ed7bc3d4d6c44bfa281276d73fbda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vector_3_01_t_00_012_01_4.html#a031ed7bc3d4d6c44bfa281276d73fbda">Vector</a> (const <a class="el" href="classdyno_1_1_vector.html">Vector</a>&lt; <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>, 2 &gt; &amp;)</td></tr>
 <tr class="separator:a031ed7bc3d4d6c44bfa281276d73fbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,8 +173,14 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a2d3cd500a3dc528ebe389dcf16067897"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="classdyno_1_1_vector.html">dyno::Vector</a>&lt; <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>, 2 &gt;:: { ... } &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a2d3cd500a3dc528ebe389dcf16067897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabd06a6172b36ebcfe8e148b2f20aa6d"><td class="memItemLeft" align="right" valign="top">glm::tvec2&lt; <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vector_3_01_t_00_012_01_4.html#aabd06a6172b36ebcfe8e148b2f20aa6d">data_</a></td></tr>
 <tr class="separator:aabd06a6172b36ebcfe8e148b2f20aa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1c4c0ba9588ca0ac7a7f15d78e71c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vector_3_01_t_00_012_01_4.html#afd1c4c0ba9588ca0ac7a7f15d78e71c4">x</a></td></tr>
+<tr class="separator:afd1c4c0ba9588ca0ac7a7f15d78e71c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3204ab9d2e5d5b85bc6637269474e4bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vector_3_01_t_00_012_01_4.html#a3204ab9d2e5d5b85bc6637269474e4bb">y</a></td></tr>
+<tr class="separator:a3204ab9d2e5d5b85bc6637269474e4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -1132,6 +1146,20 @@ template&lt;typename <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2d3cd500a3dc528ebe389dcf16067897" name="a2d3cd500a3dc528ebe389dcf16067897"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d3cd500a3dc528ebe389dcf16067897">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union dyno::Vector&lt; T, 2 &gt; { ... }  <a class="el" href="classdyno_1_1_vector.html">dyno::Vector</a>&lt; <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>, 2 &gt;::@1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aabd06a6172b36ebcfe8e148b2f20aa6d" name="aabd06a6172b36ebcfe8e148b2f20aa6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabd06a6172b36ebcfe8e148b2f20aa6d">&#9670;&nbsp;</a></span>data_</h2>
 
@@ -1146,7 +1174,43 @@ template&lt;typename <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_vector2_d_8h_source.html#l00071">71</a> of file <a class="el" href="_vector2_d_8h_source.html">Vector2D.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_vector2_d_8h_source.html#l00073">73</a> of file <a class="el" href="_vector2_d_8h_source.html">Vector2D.h</a>.</p>
+
+</div>
+</div>
+<a id="afd1c4c0ba9588ca0ac7a7f15d78e71c4" name="afd1c4c0ba9588ca0ac7a7f15d78e71c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd1c4c0ba9588ca0ac7a7f15d78e71c4">&#9670;&nbsp;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> <a class="el" href="classdyno_1_1_vector.html">dyno::Vector</a>&lt; <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>, 2 &gt;::x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_vector2_d_8h_source.html#l00074">74</a> of file <a class="el" href="_vector2_d_8h_source.html">Vector2D.h</a>.</p>
+
+</div>
+</div>
+<a id="a3204ab9d2e5d5b85bc6637269474e4bb" name="a3204ab9d2e5d5b85bc6637269474e4bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3204ab9d2e5d5b85bc6637269474e4bb">&#9670;&nbsp;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> <a class="el" href="classdyno_1_1_vector.html">dyno::Vector</a>&lt; <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a>, 2 &gt;::y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_vector2_d_8h_source.html#l00074">74</a> of file <a class="el" href="_vector2_d_8h_source.html">Vector2D.h</a>.</p>
 
 </div>
 </div>

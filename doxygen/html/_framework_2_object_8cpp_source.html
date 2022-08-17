@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -77,7 +77,7 @@ $(function() {
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="namespacedyno.html#ae995e13a71d79a3f0b3b8d6c4d8d4981">    6</a></span><span class="keyword">static</span> std::map&lt; std::string, ClassInfo*&gt; *<a class="code hl_variable" href="namespacedyno.html#ae995e13a71d79a3f0b3b8d6c4d8d4981">classInfoMap</a> = NULL;</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><a class="code hl_define" href="_framework_2_object_8h.html#a8e5cac1e1f9e4f23c17c6f84a729d72d">IMPLEMENT_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_object.html">Object</a>)</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><a class="code hl_function" href="namespacedyno.html#aabb2ab1ed20bd5d8aa56a41c7a530035">IMPLEMENT_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_object.html">Object</a>)</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="_framework_2_object_8cpp.html#ad85d35e4b8150cee7be371ef204e2926">   10</a></span><span class="preprocessor">#define BASE_ID 0</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -131,7 +131,6 @@ $(function() {
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="ttc" id="a_framework_2_object_8cpp_html_ad85d35e4b8150cee7be371ef204e2926"><div class="ttname"><a href="_framework_2_object_8cpp.html#ad85d35e4b8150cee7be371ef204e2926">BASE_ID</a></div><div class="ttdeci">#define BASE_ID</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8cpp_source.html#l00010">Object.cpp:10</a></div></div>
-<div class="ttc" id="a_framework_2_object_8h_html_a8e5cac1e1f9e4f23c17c6f84a729d72d"><div class="ttname"><a href="_framework_2_object_8h.html#a8e5cac1e1f9e4f23c17c6f84a729d72d">IMPLEMENT_CLASS</a></div><div class="ttdeci">#define IMPLEMENT_CLASS(name)</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8h_source.html#l00079">Object.h:79</a></div></div>
 <div class="ttc" id="a_rendering_2_engine_2_open_g_l_2gl_2_object_8h_html"><div class="ttname"><a href="_rendering_2_engine_2_open_g_l_2gl_2_object_8h.html">Object.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_class_info_html"><div class="ttname"><a href="classdyno_1_1_class_info.html">dyno::ClassInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8h_source.html#l00030">Object.h:31</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_class_info_html_a41ff4ed06838d43d78aaed0a346e5dd9"><div class="ttname"><a href="classdyno_1_1_class_info.html#a41ff4ed06838d43d78aaed0a346e5dd9">dyno::ClassInfo::m_className</a></div><div class="ttdeci">std::string m_className</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8h_source.html#l00061">Object.h:61</a></div></div>
@@ -143,9 +142,10 @@ $(function() {
 <div class="ttc" id="aclassdyno_1_1_object_html_a819ad107273ddc0b12b7c286ec8f120f"><div class="ttname"><a href="classdyno_1_1_object.html#a819ad107273ddc0b12b7c286ec8f120f">dyno::Object::registerClass</a></div><div class="ttdeci">static bool registerClass(ClassInfo *ci)</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8cpp_source.html#l00019">Object.cpp:19</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_object_html_ac0b017b91604713fa9adf02e4be2fc3a"><div class="ttname"><a href="classdyno_1_1_object.html#ac0b017b91604713fa9adf02e4be2fc3a">dyno::Object::generateObjectId</a></div><div class="ttdeci">static uint32_t generateObjectId()</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8cpp_source.html#l00051">Object.cpp:51</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_object_html_ac303344bc58c4568536a5329b0727b60"><div class="ttname"><a href="classdyno_1_1_object.html#ac303344bc58c4568536a5329b0727b60">dyno::Object::cId</a></div><div class="ttdeci">static std::atomic_uint32_t cId</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8h_source.html#l00134">Object.h:134</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a4ef83a0045a30b672a011b9cb8fbb865"><div class="ttname"><a href="namespacedyno.html#a4ef83a0045a30b672a011b9cb8fbb865">dyno::Register</a></div><div class="ttdeci">bool Register(ClassInfo *ci)</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8cpp_source.html#l00056">Object.cpp:56</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a77327e72be70120bf99d2e448fe18097"><div class="ttname"><a href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">dyno::ObjectId</a></div><div class="ttdeci">uint32_t ObjectId</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8h_source.html#l00110">Object.h:110</a></div></div>
+<div class="ttc" id="anamespacedyno_html_aabb2ab1ed20bd5d8aa56a41c7a530035"><div class="ttname"><a href="namespacedyno.html#aabb2ab1ed20bd5d8aa56a41c7a530035">dyno::IMPLEMENT_CLASS</a></div><div class="ttdeci">IMPLEMENT_CLASS(States)</div></div>
 <div class="ttc" id="anamespacedyno_html_ae995e13a71d79a3f0b3b8d6c4d8d4981"><div class="ttname"><a href="namespacedyno.html#ae995e13a71d79a3f0b3b8d6c4d8d4981">dyno::classInfoMap</a></div><div class="ttdeci">static std::map&lt; std::string, ClassInfo * &gt; * classInfoMap</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8cpp_source.html#l00006">Object.cpp:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

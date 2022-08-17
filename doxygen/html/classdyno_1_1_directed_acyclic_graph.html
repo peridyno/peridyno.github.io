@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -95,6 +95,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad2338b071bceba67f932373c980014e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ff5e6fa501a72674947317fbf0fca32"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_directed_acyclic_graph.html#a6ff5e6fa501a72674947317fbf0fca32">sizeOfVertex</a> () const</td></tr>
 <tr class="separator:a6ff5e6fa501a72674947317fbf0fca32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae0f28eb14b2efa96d8222ecc0162e3"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_directed_acyclic_graph.html#afae0f28eb14b2efa96d8222ecc0162e3">vertices</a> ()</td></tr>
+<tr class="separator:afae0f28eb14b2efa96d8222ecc0162e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754636a951a92fae2e7e47c647b670d9"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>, std::unordered_set&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_directed_acyclic_graph.html#a754636a951a92fae2e7e47c647b670d9">edges</a> ()</td></tr>
+<tr class="separator:a754636a951a92fae2e7e47c647b670d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883a71da1f2740d734c76dcf66f52955"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>, std::unordered_set&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_directed_acyclic_graph.html#a883a71da1f2740d734c76dcf66f52955">reverseEdges</a> ()</td></tr>
+<tr class="separator:a883a71da1f2740d734c76dcf66f52955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -109,13 +115,15 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a5ca05e9466e44f970e60693f026a26e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebb0572f8bf5cc660d6e191558ad3668"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_directed_acyclic_graph.html#aebb0572f8bf5cc660d6e191558ad3668">mVertices</a></td></tr>
 <tr class="separator:aebb0572f8bf5cc660d6e191558ad3668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a364639640a637096030c2a2c095fde43"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>, std::set&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_directed_acyclic_graph.html#a364639640a637096030c2a2c095fde43">mEdges</a></td></tr>
-<tr class="separator:a364639640a637096030c2a2c095fde43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3844049db5d07232a17d47c5b4fe1761"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>, std::unordered_set&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_directed_acyclic_graph.html#a3844049db5d07232a17d47c5b4fe1761">mEdges</a></td></tr>
+<tr class="separator:a3844049db5d07232a17d47c5b4fe1761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66ec0a10e68e579ed057953ea7ce99f"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>, std::unordered_set&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_directed_acyclic_graph.html#ab66ec0a10e68e579ed057953ea7ce99f">mReverseEdges</a></td></tr>
+<tr class="separator:ab66ec0a10e68e579ed057953ea7ce99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Graph class represents a directed graph. </p>
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00030">30</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00032">32</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3e9a1a8310a53d038854eb07c2f626be" name="a3e9a1a8310a53d038854eb07c2f626be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e9a1a8310a53d038854eb07c2f626be">&#9670;&nbsp;</a></span>DirectedAcyclicGraph()</h2>
@@ -140,7 +148,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00033">33</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00035">35</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
 
 </div>
 </div>
@@ -190,19 +198,74 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00016">16</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00023">23</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_directed_acyclic_graph_a4e9908833fad4fe38c120b09e55c4c21_icgraph.png" border="0" usemap="#aclassdyno_1_1_directed_acyclic_graph_a4e9908833fad4fe38c120b09e55c4c21_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_directed_acyclic_graph_a4e9908833fad4fe38c120b09e55c4c21_icgraph" id="aclassdyno_1_1_directed_acyclic_graph_a4e9908833fad4fe38c120b09e55c4c21_icgraph">
-<area shape="rect" title=" " alt="" coords="455,39,639,80"/>
-<area shape="rect" href="classdyno_1_1_group_module.html#aa1d0c0f523c9bcce42ba75a60d596203" title=" " alt="" coords="247,5,389,47"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#ad1e8ba420873845db26718e0f8329a4e" title=" " alt="" coords="229,71,407,112"/>
-<area shape="rect" href="classdyno_1_1_group_module.html#a33adea66d8401eea6cee523ceb7dd001" title=" " alt="" coords="22,5,165,47"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#a455cc2564ff3c17512d6187017f23ab0" title=" " alt="" coords="5,78,181,105"/>
+<area shape="rect" title=" " alt="" coords="488,207,672,248"/>
+<area shape="rect" href="classdyno_1_1_group_module.html#aa1d0c0f523c9bcce42ba75a60d596203" title=" " alt="" coords="280,43,423,84"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#ad1e8ba420873845db26718e0f8329a4e" title=" " alt="" coords="263,144,440,185"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a0213026fd0192eca76280c076f49b7da" title=" " alt="" coords="269,239,433,280"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#af66c8338521e25db6fdbdf31fdb93830" title=" " alt="" coords="275,369,427,411"/>
+<area shape="rect" href="classdyno_1_1_group_module.html#a33adea66d8401eea6cee523ceb7dd001" title=" " alt="" coords="39,5,181,47"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#aeec564118716a8eb0374ecd31a48d4a5" title=" " alt="" coords="13,71,207,98"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a455cc2564ff3c17512d6187017f23ab0" title=" " alt="" coords="22,122,198,149"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a3af6ef8a6c90d4dba82cee0a69249d0f" title=" " alt="" coords="5,173,215,215"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="39,239,181,280"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="28,304,192,345"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="41,369,179,411"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ab47298add0fea824f9705563d4ac7511" title=" " alt="" coords="34,435,186,476"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a754636a951a92fae2e7e47c647b670d9" name="a754636a951a92fae2e7e47c647b670d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754636a951a92fae2e7e47c647b670d9">&#9670;&nbsp;</a></span>edges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">dyno::ObjectId</a>, std::unordered_set&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">dyno::ObjectId</a> &gt; &gt; &amp; dyno::DirectedAcyclicGraph::edges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00093">93</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_directed_acyclic_graph_a754636a951a92fae2e7e47c647b670d9_icgraph.png" border="0" usemap="#aclassdyno_1_1_directed_acyclic_graph_a754636a951a92fae2e7e47c647b670d9_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_directed_acyclic_graph_a754636a951a92fae2e7e47c647b670d9_icgraph" id="aclassdyno_1_1_directed_acyclic_graph_a754636a951a92fae2e7e47c647b670d9_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,389,47"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#acd7d9a5a5e1d568560eb21f1c4e38f9b" title=" " alt="" coords="5,5,157,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a883a71da1f2740d734c76dcf66f52955" name="a883a71da1f2740d734c76dcf66f52955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a883a71da1f2740d734c76dcf66f52955">&#9670;&nbsp;</a></span>reverseEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">dyno::ObjectId</a>, std::unordered_set&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">dyno::ObjectId</a> &gt; &gt; &amp; dyno::DirectedAcyclicGraph::reverseEdges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00098">98</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
 
 </div>
 </div>
@@ -221,14 +284,18 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00072">72</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00083">83</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_directed_acyclic_graph_a6ff5e6fa501a72674947317fbf0fca32_icgraph.png" border="0" usemap="#aclassdyno_1_1_directed_acyclic_graph_a6ff5e6fa501a72674947317fbf0fca32_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_directed_acyclic_graph_a6ff5e6fa501a72674947317fbf0fca32_icgraph" id="aclassdyno_1_1_directed_acyclic_graph_a6ff5e6fa501a72674947317fbf0fca32_icgraph">
-<area shape="rect" title=" " alt="" coords="237,5,421,47"/>
-<area shape="rect" href="classdyno_1_1_directed_acyclic_graph.html#a81c471fa89f221676b39726ff40d78ce" title=" " alt="" coords="5,5,189,47"/>
+<area shape="rect" title=" " alt="" coords="720,49,904,90"/>
+<area shape="rect" href="classdyno_1_1_directed_acyclic_graph.html#a81c471fa89f221676b39726ff40d78ce" title=" " alt="" coords="488,49,672,90"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#ad1e8ba420873845db26718e0f8329a4e" title=" " alt="" coords="263,49,440,90"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#aeec564118716a8eb0374ecd31a48d4a5" title=" " alt="" coords="13,5,207,32"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a455cc2564ff3c17512d6187017f23ab0" title=" " alt="" coords="22,56,198,83"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a3af6ef8a6c90d4dba82cee0a69249d0f" title=" " alt="" coords="5,107,215,149"/>
 </map>
 </div>
 
@@ -249,7 +316,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00043">43</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00054">54</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -279,7 +346,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00024">24</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00035">35</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -288,6 +355,18 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,51,189,92"/>
 <area shape="rect" href="classdyno_1_1_directed_acyclic_graph.html#a6ff5e6fa501a72674947317fbf0fca32" title=" " alt="" coords="237,5,421,47"/>
 <area shape="rect" href="classdyno_1_1_directed_acyclic_graph.html#ae137b032c97c13c49980e03eb6fe820e" title=" " alt="" coords="237,95,421,136"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_directed_acyclic_graph_a81c471fa89f221676b39726ff40d78ce_icgraph.png" border="0" usemap="#aclassdyno_1_1_directed_acyclic_graph_a81c471fa89f221676b39726ff40d78ce_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_directed_acyclic_graph_a81c471fa89f221676b39726ff40d78ce_icgraph" id="aclassdyno_1_1_directed_acyclic_graph_a81c471fa89f221676b39726ff40d78ce_icgraph">
+<area shape="rect" title=" " alt="" coords="488,49,672,90"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#ad1e8ba420873845db26718e0f8329a4e" title=" " alt="" coords="263,49,440,90"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#aeec564118716a8eb0374ecd31a48d4a5" title=" " alt="" coords="13,5,207,32"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a455cc2564ff3c17512d6187017f23ab0" title=" " alt="" coords="22,56,198,83"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a3af6ef8a6c90d4dba82cee0a69249d0f" title=" " alt="" coords="5,107,215,149"/>
 </map>
 </div>
 
@@ -327,7 +406,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00091">91</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00126">126</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -380,7 +459,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00077">77</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00103">103</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -394,16 +473,48 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_directed_acyclic_graph_ae137b032c97c13c49980e03eb6fe820e_icgraph.png" border="0" usemap="#aclassdyno_1_1_directed_acyclic_graph_ae137b032c97c13c49980e03eb6fe820e_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_directed_acyclic_graph_ae137b032c97c13c49980e03eb6fe820e_icgraph" id="aclassdyno_1_1_directed_acyclic_graph_ae137b032c97c13c49980e03eb6fe820e_icgraph">
-<area shape="rect" title=" " alt="" coords="237,29,421,71"/>
-<area shape="rect" href="classdyno_1_1_directed_acyclic_graph.html#a81c471fa89f221676b39726ff40d78ce" title=" " alt="" coords="5,29,189,71"/>
+<area shape="rect" title=" " alt="" coords="720,49,904,90"/>
+<area shape="rect" href="classdyno_1_1_directed_acyclic_graph.html#a81c471fa89f221676b39726ff40d78ce" title=" " alt="" coords="488,49,672,90"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#ad1e8ba420873845db26718e0f8329a4e" title=" " alt="" coords="263,49,440,90"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#aeec564118716a8eb0374ecd31a48d4a5" title=" " alt="" coords="13,5,207,32"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a455cc2564ff3c17512d6187017f23ab0" title=" " alt="" coords="22,56,198,83"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a3af6ef8a6c90d4dba82cee0a69249d0f" title=" " alt="" coords="5,107,215,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afae0f28eb14b2efa96d8222ecc0162e3" name="afae0f28eb14b2efa96d8222ecc0162e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae0f28eb14b2efa96d8222ecc0162e3">&#9670;&nbsp;</a></span>vertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::set&lt; <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">dyno::ObjectId</a> &gt; &amp; dyno::DirectedAcyclicGraph::vertices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8cpp_source.html#l00088">88</a> of file <a class="el" href="_directed_acyclic_graph_8cpp_source.html">DirectedAcyclicGraph.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_directed_acyclic_graph_afae0f28eb14b2efa96d8222ecc0162e3_icgraph.png" border="0" usemap="#aclassdyno_1_1_directed_acyclic_graph_afae0f28eb14b2efa96d8222ecc0162e3_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_directed_acyclic_graph_afae0f28eb14b2efa96d8222ecc0162e3_icgraph" id="aclassdyno_1_1_directed_acyclic_graph_afae0f28eb14b2efa96d8222ecc0162e3_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,389,47"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#acd7d9a5a5e1d568560eb21f1c4e38f9b" title=" " alt="" coords="5,5,157,47"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a364639640a637096030c2a2c095fde43" name="a364639640a637096030c2a2c095fde43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a364639640a637096030c2a2c095fde43">&#9670;&nbsp;</a></span>mEdges</h2>
+<a id="a3844049db5d07232a17d47c5b4fe1761" name="a3844049db5d07232a17d47c5b4fe1761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3844049db5d07232a17d47c5b4fe1761">&#9670;&nbsp;</a></span>mEdges</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,7 +523,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>, std::set&lt;<a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&gt; &gt; dyno::DirectedAcyclicGraph::mEdges</td>
+          <td class="memname">std::map&lt;<a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>, std::unordered_set&lt;<a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&gt; &gt; dyno::DirectedAcyclicGraph::mEdges</td>
         </tr>
       </table>
   </td>
@@ -422,7 +533,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00055">55</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00063">63</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +557,31 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00053">53</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00061">61</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
+
+</div>
+</div>
+<a id="ab66ec0a10e68e579ed057953ea7ce99f" name="ab66ec0a10e68e579ed057953ea7ce99f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66ec0a10e68e579ed057953ea7ce99f">&#9670;&nbsp;</a></span>mReverseEdges</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>, std::unordered_set&lt;<a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&gt; &gt; dyno::DirectedAcyclicGraph::mReverseEdges</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00064">64</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
 
 </div>
 </div>
@@ -470,7 +605,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00054">54</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_directed_acyclic_graph_8h_source.html#l00062">62</a> of file <a class="el" href="_directed_acyclic_graph_8h_source.html">DirectedAcyclicGraph.h</a>.</p>
 
 </div>
 </div>

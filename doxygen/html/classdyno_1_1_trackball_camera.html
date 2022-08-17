@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -112,6 +112,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a794c4a91b205b21bd1867a62a2982f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b67b23c87aedc999c5b60eeb107a648"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_trackball_camera.html#a5b67b23c87aedc999c5b60eeb107a648">zoom</a> (float amount) override</td></tr>
 <tr class="separator:a5b67b23c87aedc999c5b60eeb107a648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc62b33094dd38e280cf8f602e584b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_trackball_camera.html#a9dc62b33094dd38e280cf8f602e584b2">setEyePos</a> (const <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;p) override</td></tr>
+<tr class="separator:a9dc62b33094dd38e280cf8f602e584b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81fe56ca21ef1d17a87a02a6bb409749"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_trackball_camera.html#a81fe56ca21ef1d17a87a02a6bb409749">setTargetPos</a> (const <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;p) override</td></tr>
+<tr class="separator:a81fe56ca21ef1d17a87a02a6bb409749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33b6ad5512934d8cde9255dff3008e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_trackball_camera.html#ab33b6ad5512934d8cde9255dff3008e3">getEyePos</a> () const override</td></tr>
+<tr class="separator:ab33b6ad5512934d8cde9255dff3008e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787fd0019b49dafaafc15af96e3dfd4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_trackball_camera.html#a787fd0019b49dafaafc15af96e3dfd4d">getTargetPos</a> () const override</td></tr>
+<tr class="separator:a787fd0019b49dafaafc15af96e3dfd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a008331aa117532d0970a4da240ee7a67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vg_math_8h.html#a698360488e1db6f145fee4b69917724f">glm::mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_trackball_camera.html#a008331aa117532d0970a4da240ee7a67">getViewMat</a> () override</td></tr>
 <tr class="separator:a008331aa117532d0970a4da240ee7a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3275566dc52bb2247792c6782680220"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vg_math_8h.html#a698360488e1db6f145fee4b69917724f">glm::mat4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_trackball_camera.html#af3275566dc52bb2247792c6782680220">getProjMat</a> () override</td></tr>
@@ -149,8 +157,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac909f2033439b5847212968e6cdf870 inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef0ec4bc2b5a0705744a249c9e0c392a inherit pub_methods_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#aef0ec4bc2b5a0705744a249c9e0c392a">clipFar</a> () const</td></tr>
 <tr class="separator:aef0ec4bc2b5a0705744a249c9e0c392a inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcce584f55dd50d9c7c6333ea3fb6343 inherit pub_methods_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#abcce584f55dd50d9c7c6333ea3fb6343">setEyePos</a> (const <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;p)=0</td></tr>
+<tr class="separator:abcce584f55dd50d9c7c6333ea3fb6343 inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56798396a3daea9dd17f3f084440c3e8 inherit pub_methods_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a56798396a3daea9dd17f3f084440c3e8">setTargetPos</a> (const <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;p)=0</td></tr>
+<tr class="separator:a56798396a3daea9dd17f3f084440c3e8 inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff778aab7397bfe1db30bbc40faa2b31 inherit pub_methods_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#aff778aab7397bfe1db30bbc40faa2b31">getEyePos</a> () const =0</td></tr>
+<tr class="separator:aff778aab7397bfe1db30bbc40faa2b31 inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d47dafb052f58e590852f81b4732df5 inherit pub_methods_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a7d47dafb052f58e590852f81b4732df5">getTargetPos</a> () const =0</td></tr>
+<tr class="separator:a7d47dafb052f58e590852f81b4732df5 inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c3629db7ec588e9c6d6f16114e88c3c inherit pub_methods_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_t_ray3_d.html">TRay3D</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a0c3629db7ec588e9c6d6f16114e88c3c">castRayInWorldSpace</a> (float x, float y)</td></tr>
 <tr class="separator:a0c3629db7ec588e9c6d6f16114e88c3c inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c27a8c082f8727bceebeb4c9e9e772 inherit pub_methods_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#af9c27a8c082f8727bceebeb4c9e9e772">setDistanceUnit</a> (float unit)</td></tr>
+<tr class="separator:af9c27a8c082f8727bceebeb4c9e9e772 inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef8b8e50479120d21dc3f126bc9c1f5 inherit pub_methods_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#aeef8b8e50479120d21dc3f126bc9c1f5">distanceUnit</a> ()</td></tr>
+<tr class="separator:aeef8b8e50479120d21dc3f126bc9c1f5 inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a226ba74f4c26669f2e3b6df358c8cc43 inherit pub_methods_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a226ba74f4c26669f2e3b6df358c8cc43">setProjectionType</a> (<a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a> type)</td></tr>
+<tr class="separator:a226ba74f4c26669f2e3b6df358c8cc43 inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf971762614950ec17d976fbcf1494d inherit pub_methods_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#aacf971762614950ec17d976fbcf1494d">projectionType</a> ()</td></tr>
+<tr class="separator:aacf971762614950ec17d976fbcf1494d inherit pub_methods_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -167,17 +191,26 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classdyno_1_1_camera"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classdyno_1_1_camera')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classdyno_1_1_camera.html">dyno::Camera</a></td></tr>
+<tr class="memitem:a6093cf69c4919e5e6444dc35f9c820f9 inherit pub_types_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a> { <a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9a4e5b1907583edb28a7fef2d96f500442">Perspective</a>
+, <a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9aa5174c96f16d13ecab1b84743ded70da">Orthogonal</a>
+ }</td></tr>
+<tr class="separator:a6093cf69c4919e5e6444dc35f9c820f9 inherit pub_types_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classdyno_1_1_camera"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classdyno_1_1_camera')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdyno_1_1_camera.html">dyno::Camera</a></td></tr>
-<tr class="memitem:a34b6617c8109855e8b3e76f92d40aa9d inherit pro_attribs_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a34b6617c8109855e8b3e76f92d40aa9d">mNear</a></td></tr>
+<tr class="memitem:a34b6617c8109855e8b3e76f92d40aa9d inherit pro_attribs_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a34b6617c8109855e8b3e76f92d40aa9d">mNear</a> = 0.01f</td></tr>
 <tr class="separator:a34b6617c8109855e8b3e76f92d40aa9d inherit pro_attribs_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38c7acaea4e451ffe76b5776053bcdae inherit pro_attribs_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a38c7acaea4e451ffe76b5776053bcdae">mFar</a></td></tr>
+<tr class="memitem:a38c7acaea4e451ffe76b5776053bcdae inherit pro_attribs_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a38c7acaea4e451ffe76b5776053bcdae">mFar</a> = 10.0f</td></tr>
 <tr class="separator:a38c7acaea4e451ffe76b5776053bcdae inherit pro_attribs_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932d9897d2ee7cf011bd64a83d939e08 inherit pro_attribs_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a932d9897d2ee7cf011bd64a83d939e08">mFov</a></td></tr>
+<tr class="memitem:a932d9897d2ee7cf011bd64a83d939e08 inherit pro_attribs_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a932d9897d2ee7cf011bd64a83d939e08">mFov</a> = 0.0f</td></tr>
 <tr class="separator:a932d9897d2ee7cf011bd64a83d939e08 inherit pro_attribs_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd35230d4c9b1ebe4245619ffdfc684 inherit pro_attribs_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a5dd35230d4c9b1ebe4245619ffdfc684">mViewportWidth</a></td></tr>
 <tr class="separator:a5dd35230d4c9b1ebe4245619ffdfc684 inherit pro_attribs_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2515c19562888e023816b89b11bd09b4 inherit pro_attribs_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a2515c19562888e023816b89b11bd09b4">mViewportHeight</a></td></tr>
 <tr class="separator:a2515c19562888e023816b89b11bd09b4 inherit pro_attribs_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f13aa219c2ae508e52d3e5b5a44bc50 inherit pro_attribs_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a1f13aa219c2ae508e52d3e5b5a44bc50">mProjectionType</a> = <a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9a4e5b1907583edb28a7fef2d96f500442">Perspective</a></td></tr>
+<tr class="separator:a1f13aa219c2ae508e52d3e5b5a44bc50 inherit pro_attribs_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5940b7052df8e81b7a3c826e945a5fd inherit pro_attribs_classdyno_1_1_camera"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#ad5940b7052df8e81b7a3c826e945a5fd">mDistanceUnit</a> = 1.0f</td></tr>
+<tr class="separator:ad5940b7052df8e81b7a3c826e945a5fd inherit pro_attribs_classdyno_1_1_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -239,6 +272,35 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab33b6ad5512934d8cde9255dff3008e3" name="ab33b6ad5512934d8cde9255dff3008e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33b6ad5512934d8cde9255dff3008e3">&#9670;&nbsp;</a></span>getEyePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> dyno::TrackballCamera::getEyePos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classdyno_1_1_camera.html#aff778aab7397bfe1db30bbc40faa2b31">dyno::Camera</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00027">27</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
+
+</div>
+</div>
 <a id="af3275566dc52bb2247792c6782680220" name="af3275566dc52bb2247792c6782680220"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af3275566dc52bb2247792c6782680220">&#9670;&nbsp;</a></span>getProjMat()</h2>
 
@@ -270,7 +332,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_trackball_camera_af3275566dc52bb2247792c6782680220_cgraph.png" border="0" usemap="#aclassdyno_1_1_trackball_camera_af3275566dc52bb2247792c6782680220_cgraph" alt=""/></div>
 <map name="aclassdyno_1_1_trackball_camera_af3275566dc52bb2247792c6782680220_cgraph" id="aclassdyno_1_1_trackball_camera_af3275566dc52bb2247792c6782680220_cgraph">
-<area shape="rect" title=" " alt="" coords="5,313,160,354"/>
+<area shape="rect" title=" " alt="" coords="5,287,160,329"/>
+<area shape="rect" href="namespacevgm.html#aac03fcd52ab35ef6eb8836fcd2de8315" title=" " alt="" coords="226,269,309,296"/>
 <area shape="rect" href="namespacevgm.html#a866b55b197ee7edad01394f5584711ba" title=" " alt="" coords="208,320,327,347"/>
 <area shape="rect" href="namespacedyno.html#a73ea0f9d3df090790a74819185dbce46" title=" " alt="" coords="375,320,451,347"/>
 <area shape="rect" href="classdyno_1_1_complex.html#ac27c15f0b204f54a8d087b3ca2424371" title=" " alt="" coords="1144,119,1313,145"/>
@@ -283,6 +346,35 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespacedyno.html#a611f1e43a5ee147f9c3f11d256378bbe" title=" " alt="" coords="893,245,971,272"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a787fd0019b49dafaafc15af96e3dfd4d" name="a787fd0019b49dafaafc15af96e3dfd4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a787fd0019b49dafaafc15af96e3dfd4d">&#9670;&nbsp;</a></span>getTargetPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> dyno::TrackballCamera::getTargetPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classdyno_1_1_camera.html#a7d47dafb052f58e590852f81b4732df5">dyno::Camera</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00030">30</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +467,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classdyno_1_1_camera.html#a60bd38f248375e3adafe2ef7583330f7">dyno::Camera</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_trackball_camera_8cpp_source.html#l00051">51</a> of file <a class="el" href="_trackball_camera_8cpp_source.html">TrackballCamera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8cpp_source.html#l00064">64</a> of file <a class="el" href="_trackball_camera_8cpp_source.html">TrackballCamera.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -444,7 +536,7 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classdyno_1_1_camera.html#a41e5c2aadeb8b9556e1620ea1f856220">dyno::Camera</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_trackball_camera_8cpp_source.html#l00056">56</a> of file <a class="el" href="_trackball_camera_8cpp_source.html">TrackballCamera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8cpp_source.html#l00069">69</a> of file <a class="el" href="_trackball_camera_8cpp_source.html">TrackballCamera.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -454,6 +546,66 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classdyno_1_1_trackball_camera.html#ac5a283ed63696a1f52804ee5c12204aa" title=" " alt="" coords="208,5,363,47"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a9dc62b33094dd38e280cf8f602e584b2" name="a9dc62b33094dd38e280cf8f602e584b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dc62b33094dd38e280cf8f602e584b2">&#9670;&nbsp;</a></span>setEyePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::TrackballCamera::setEyePos </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classdyno_1_1_camera.html#abcce584f55dd50d9c7c6333ea3fb6343">dyno::Camera</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00021">21</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
+
+</div>
+</div>
+<a id="a81fe56ca21ef1d17a87a02a6bb409749" name="a81fe56ca21ef1d17a87a02a6bb409749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81fe56ca21ef1d17a87a02a6bb409749">&#9670;&nbsp;</a></span>setTargetPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::TrackballCamera::setTargetPos </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classdyno_1_1_camera.html#a56798396a3daea9dd17f3f084440c3e8">dyno::Camera</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00024">24</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +645,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classdyno_1_1_camera.html#af5af9deee3af935efbfe124e3a172ed3">dyno::Camera</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_trackball_camera_8cpp_source.html#l00077">77</a> of file <a class="el" href="_trackball_camera_8cpp_source.html">TrackballCamera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8cpp_source.html#l00090">90</a> of file <a class="el" href="_trackball_camera_8cpp_source.html">TrackballCamera.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -532,7 +684,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classdyno_1_1_camera.html#ac6220aa388d57ccdfb30874bb49739b6">dyno::Camera</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_trackball_camera_8cpp_source.html#l00039">39</a> of file <a class="el" href="_trackball_camera_8cpp_source.html">TrackballCamera.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8cpp_source.html#l00052">52</a> of file <a class="el" href="_trackball_camera_8cpp_source.html">TrackballCamera.cpp</a>.</p>
 
 </div>
 </div>
@@ -549,7 +701,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00027">27</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00039">39</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
 
 </div>
 </div>
@@ -565,7 +717,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00028">28</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00040">40</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
 
 </div>
 </div>
@@ -581,7 +733,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00029">29</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00041">41</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
 
 </div>
 </div>
@@ -597,7 +749,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00024">24</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00036">36</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
 
 </div>
 </div>
@@ -613,7 +765,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00025">25</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_trackball_camera_8h_source.html#l00037">37</a> of file <a class="el" href="_trackball_camera_8h_source.html">TrackballCamera.h</a>.</p>
 
 </div>
 </div>

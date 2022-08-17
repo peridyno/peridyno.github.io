@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -94,8 +94,8 @@ Collaboration diagram for dyno::GroundRenderer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af77174d5470cd0ee28f19001ac59d867"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ground_renderer.html#af77174d5470cd0ee28f19001ac59d867">GroundRenderer</a> ()</td></tr>
 <tr class="separator:af77174d5470cd0ee28f19001ac59d867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fc145b44c42456207fb6ac052e85247"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ground_renderer.html#a2fc145b44c42456207fb6ac052e85247">draw</a> (float scale, <a class="el" href="classdyno_1_1_g_l_visual_module.html#a43ba72c20d5bd1aef756ddb1be35553e">GLVisualModule::RenderPass</a> mode)</td></tr>
-<tr class="separator:a2fc145b44c42456207fb6ac052e85247"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf43c47f0cd2703df44fee10295b368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ground_renderer.html#a5bf43c47f0cd2703df44fee10295b368">draw</a> (float planeScale, float rulerScale)</td></tr>
+<tr class="separator:a5bf43c47f0cd2703df44fee10295b368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -169,8 +169,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2fc145b44c42456207fb6ac052e85247" name="a2fc145b44c42456207fb6ac052e85247"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fc145b44c42456207fb6ac052e85247">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a5bf43c47f0cd2703df44fee10295b368" name="a5bf43c47f0cd2703df44fee10295b368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf43c47f0cd2703df44fee10295b368">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,13 +182,13 @@ Here is the call graph for this function:</div>
           <td class="memname">void dyno::GroundRenderer::draw </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>scale</em>, </td>
+          <td class="paramname"><em>planeScale</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_g_l_visual_module.html#a43ba72c20d5bd1aef756ddb1be35553e">GLVisualModule::RenderPass</a>&#160;</td>
-          <td class="paramname"><em>mode</em>&#160;</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>rulerScale</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -207,24 +207,23 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_ground_renderer_a2fc145b44c42456207fb6ac052e85247_cgraph.png" border="0" usemap="#aclassdyno_1_1_ground_renderer_a2fc145b44c42456207fb6ac052e85247_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_ground_renderer_a2fc145b44c42456207fb6ac052e85247_cgraph" id="aclassdyno_1_1_ground_renderer_a2fc145b44c42456207fb6ac052e85247_cgraph">
-<area shape="rect" title=" " alt="" coords="5,99,157,141"/>
+<div class="center"><img src="classdyno_1_1_ground_renderer_a5bf43c47f0cd2703df44fee10295b368_cgraph.png" border="0" usemap="#aclassdyno_1_1_ground_renderer_a5bf43c47f0cd2703df44fee10295b368_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_ground_renderer_a5bf43c47f0cd2703df44fee10295b368_cgraph" id="aclassdyno_1_1_ground_renderer_a5bf43c47f0cd2703df44fee10295b368_cgraph">
+<area shape="rect" title=" " alt="" coords="5,74,157,115"/>
 <area shape="rect" href="classgl_1_1_texture.html#a97daa96cff3ab3db997ab9562d2557bb" title=" " alt="" coords="220,5,335,32"/>
 <area shape="rect" href="classgl_1_1_mesh.html#aaa77f37e865982ee38c7ad9c583b6544" title=" " alt="" coords="224,56,331,83"/>
-<area shape="rect" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784" title=" " alt="" coords="235,107,319,133"/>
-<area shape="rect" href="classgl_1_1_program.html#aa50c1f5f303bd2064f351de536a5d8e8" title=" " alt="" coords="205,157,349,184"/>
-<area shape="rect" href="classgl_1_1_program.html#ac7bee8c55a910dca94d7dab5eb76ebcd" title=" " alt="" coords="218,208,337,235"/>
+<area shape="rect" href="classgl_1_1_program.html#aa50c1f5f303bd2064f351de536a5d8e8" title=" " alt="" coords="205,107,349,133"/>
+<area shape="rect" href="classgl_1_1_program.html#ac7bee8c55a910dca94d7dab5eb76ebcd" title=" " alt="" coords="218,157,337,184"/>
 <area shape="rect" href="classgl_1_1_vertex_array.html#a25c3d239f6dec86fc96bef73662644e6" title=" " alt="" coords="397,56,539,83"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_ground_renderer_a2fc145b44c42456207fb6ac052e85247_icgraph.png" border="0" usemap="#aclassdyno_1_1_ground_renderer_a2fc145b44c42456207fb6ac052e85247_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_ground_renderer_a2fc145b44c42456207fb6ac052e85247_icgraph" id="aclassdyno_1_1_ground_renderer_a2fc145b44c42456207fb6ac052e85247_icgraph">
+<div class="center"><img src="classdyno_1_1_ground_renderer_a5bf43c47f0cd2703df44fee10295b368_icgraph.png" border="0" usemap="#aclassdyno_1_1_ground_renderer_a5bf43c47f0cd2703df44fee10295b368_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_ground_renderer_a5bf43c47f0cd2703df44fee10295b368_icgraph" id="aclassdyno_1_1_ground_renderer_a5bf43c47f0cd2703df44fee10295b368_icgraph">
 <area shape="rect" title=" " alt="" coords="411,5,563,47"/>
-<area shape="rect" href="classdyno_1_1_g_l_render_helper.html#a789a612db86e1b244179145467697fc2" title=" " alt="" coords="209,5,363,47"/>
+<area shape="rect" href="classdyno_1_1_g_l_render_helper.html#a7b8e1ccf72cdd3fd001b0dc44668e3a6" title=" " alt="" coords="209,5,363,47"/>
 <area shape="rect" href="classdyno_1_1_g_l_render_engine.html#a84fb8f11606d4a45921eb7ad92475e9a" title=" " alt="" coords="5,5,161,47"/>
 </map>
 </div>
@@ -252,7 +251,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00086">86</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00075">75</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
 
 </div>
 </div>
@@ -276,7 +275,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00088">88</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00077">77</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
 
 </div>
 </div>
@@ -300,7 +299,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00087">87</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00076">76</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
 
 </div>
 </div>

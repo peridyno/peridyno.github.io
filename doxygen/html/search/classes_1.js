@@ -8,7 +8,8 @@ var searchData=
   ['bluetitlebar_5',['BlueTitleBar',['../classdyno_1_1_blue_title_bar.html',1,'dyno']]],
   ['bool_6',['Bool',['../classdyno_1_1_bool.html',1,'dyno']]],
   ['boundaryconstraint_7',['BoundaryConstraint',['../classdyno_1_1_boundary_constraint.html',1,'dyno']]],
-  ['boxinfo_8',['BoxInfo',['../structdyno_1_1_box_info.html',1,'dyno']]],
-  ['buffer_9',['Buffer',['../classgl_1_1_buffer.html',1,'gl']]],
-  ['builder_10',['Builder',['../classtt_1_1_builder.html',1,'tt']]]
+  ['boundingbox_8',['BoundingBox',['../structdyno_1_1_node_1_1_bounding_box.html',1,'dyno::Node']]],
+  ['boxinfo_9',['BoxInfo',['../structdyno_1_1_box_info.html',1,'dyno']]],
+  ['buffer_10',['Buffer',['../classgl_1_1_buffer.html',1,'gl']]],
+  ['builder_11',['Builder',['../classtt_1_1_builder.html',1,'tt']]]
 ];

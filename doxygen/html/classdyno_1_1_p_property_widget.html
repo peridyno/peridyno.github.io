@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -92,21 +93,32 @@ Collaboration diagram for dyno::PPropertyWidget:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_p_property_widget__coll__graph.png" border="0" usemap="#adyno_1_1_p_property_widget_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_p_property_widget_coll__map" id="adyno_1_1_p_property_widget_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,163,107"/>
-<area shape="rect" title=" " alt="" coords="47,5,121,32"/>
+<area shape="rect" title=" " alt="" coords="5,171,163,197"/>
+<area shape="rect" title=" " alt="" coords="26,81,99,108"/>
+<area shape="rect" href="class_locker_button.html" title=" " alt="" coords="124,81,223,108"/>
+<area shape="rect" title=" " alt="" coords="123,5,223,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:aa3278270d05e7ff03fce24889a8d808f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#aa3278270d05e7ff03fce24889a8d808f">showProperty</a> (<a class="el" href="classdyno_1_1_module.html">Module</a> *module)</td></tr>
-<tr class="separator:aa3278270d05e7ff03fce24889a8d808f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9aa3e472107f8733942b401be71126c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#af9aa3e472107f8733942b401be71126c">showProperty</a> (<a class="el" href="classdyno_1_1_node.html">Node</a> *node)</td></tr>
-<tr class="separator:af9aa3e472107f8733942b401be71126c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0477d485b3b0ac0953db6a024c5261ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a0477d485b3b0ac0953db6a024c5261ab">showBlockProperty</a> (Qt::QtNode &amp;block)</td></tr>
-<tr class="separator:a0477d485b3b0ac0953db6a024c5261ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dc22bb36e84764af1fb2fa040411755"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a1dc22bb36e84764af1fb2fa040411755">updateDisplay</a> ()</td></tr>
-<tr class="separator:a1dc22bb36e84764af1fb2fa040411755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392d84a97438ecbbe31e2b83feb7e598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598">showProperty</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt; module)</td></tr>
+<tr class="separator:a392d84a97438ecbbe31e2b83feb7e598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a417dcdba024f6f06119c2830b42fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a35a417dcdba024f6f06119c2830b42fa">showProperty</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt; node)</td></tr>
+<tr class="separator:a35a417dcdba024f6f06119c2830b42fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600124b447ddebcc85e9fc47ea8da882"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882">showNodeProperty</a> (Qt::QtNode &amp;block)</td></tr>
+<tr class="separator:a600124b447ddebcc85e9fc47ea8da882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc378f318479fb81c1084faf6df767f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a3dc378f318479fb81c1084faf6df767f">contentUpdated</a> ()</td></tr>
+<tr class="separator:a3dc378f318479fb81c1084faf6df767f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a1799a491d351417babb5a7cf24391421"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a1799a491d351417babb5a7cf24391421">nodeUpdated</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt; node)</td></tr>
+<tr class="separator:a1799a491d351417babb5a7cf24391421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23bf6697adc0616ef429beb0719f719"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#af23bf6697adc0616ef429beb0719f719">moduleUpdated</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt; node)</td></tr>
+<tr class="separator:af23bf6697adc0616ef429beb0719f719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4174e4c9e858451d82045f4d8a2d97f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#af4174e4c9e858451d82045f4d8a2d97f">stateFieldUpdated</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field, int status)</td></tr>
+<tr class="separator:af4174e4c9e858451d82045f4d8a2d97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -123,29 +135,37 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ab82c51c0aac758be5379478c814ee3ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#ab82c51c0aac758be5379478c814ee3ac">updateContext</a> (<a class="el" href="classdyno_1_1_o_base.html">OBase</a> *base)</td></tr>
-<tr class="separator:ab82c51c0aac758be5379478c814ee3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc601326cf3201d864edb83e4e514c55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#acc601326cf3201d864edb83e4e514c55">addScalarFieldWidget</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
-<tr class="separator:acc601326cf3201d864edb83e4e514c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd088d209386cb84d9a6540507de9228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#acd088d209386cb84d9a6540507de9228">addScalarFieldWidget</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field, QGridLayout *layout, int j)</td></tr>
+<tr class="separator:acd088d209386cb84d9a6540507de9228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd7d79c4f675f549ed3f8876c5467c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a1cd7d79c4f675f549ed3f8876c5467c5">addArrayFieldWidget</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
 <tr class="separator:a1cd7d79c4f675f549ed3f8876c5467c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044f1160fe6763bafdebd240adb1d115"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a044f1160fe6763bafdebd240adb1d115">addStateFieldWidget</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
+<tr class="separator:a044f1160fe6763bafdebd240adb1d115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9dbd8fdb0c05759052de065506fe3828"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a9dbd8fdb0c05759052de065506fe3828">m_main_layout</a></td></tr>
-<tr class="separator:a9dbd8fdb0c05759052de065506fe3828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7285354d5d64126d974624ba8b0cbac"><td class="memItemLeft" align="right" valign="top">QScrollArea *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#ae7285354d5d64126d974624ba8b0cbac">m_scroll_area</a></td></tr>
-<tr class="separator:ae7285354d5d64126d974624ba8b0cbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9a57c76a9874b4a04cab1fd4fb97a31"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#ae9a57c76a9874b4a04cab1fd4fb97a31">m_scroll_widget</a></td></tr>
-<tr class="separator:ae9a57c76a9874b4a04cab1fd4fb97a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad3092b3bce0ac994ae4b7c2a5eb0635"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#aad3092b3bce0ac994ae4b7c2a5eb0635">m_scroll_layout</a></td></tr>
-<tr class="separator:aad3092b3bce0ac994ae4b7c2a5eb0635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a918f59af5d2223881ffb5f9e947ff73a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; QWidget * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a918f59af5d2223881ffb5f9e947ff73a">m_widgets</a></td></tr>
-<tr class="separator:a918f59af5d2223881ffb5f9e947ff73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35fe2373fcc34d0f44e5dfbe2560f014"><td class="memItemLeft" align="right" valign="top">QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a35fe2373fcc34d0f44e5dfbe2560f014">mMainLayout</a></td></tr>
+<tr class="separator:a35fe2373fcc34d0f44e5dfbe2560f014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb069ac0001769c781b8e7d1ec8f297"><td class="memItemLeft" align="right" valign="top">QScrollArea *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a4cb069ac0001769c781b8e7d1ec8f297">mScrollArea</a></td></tr>
+<tr class="separator:a4cb069ac0001769c781b8e7d1ec8f297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e406acef549b5e3cd285ee07e9ca4d"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#ad9e406acef549b5e3cd285ee07e9ca4d">mScrollLayout</a></td></tr>
+<tr class="separator:ad9e406acef549b5e3cd285ee07e9ca4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad3442a59b731a524184123ffc89d000"><td class="memItemLeft" align="right" valign="top">std::vector&lt; QWidget * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#aad3442a59b731a524184123ffc89d000">mPropertyItems</a></td></tr>
+<tr class="separator:aad3442a59b731a524184123ffc89d000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65ae74b1d91e8f52f0956a888d10827c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_locker_button.html">LockerButton</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a65ae74b1d91e8f52f0956a888d10827c">mPropertyLabel</a> [3]</td></tr>
+<tr class="separator:a65ae74b1d91e8f52f0956a888d10827c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a103ecf36f60803531b7097591dc0a085"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a103ecf36f60803531b7097591dc0a085">mPropertyWidget</a> [3]</td></tr>
+<tr class="separator:a103ecf36f60803531b7097591dc0a085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79399891f5d79ec976fd5ea43fff8c07"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a79399891f5d79ec976fd5ea43fff8c07">mPropertyLayout</a> [3]</td></tr>
+<tr class="separator:a79399891f5d79ec976fd5ea43fff8c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27cfda8e19ee90515b17cdc7a22defdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#a27cfda8e19ee90515b17cdc7a22defdd">mFlag</a> [3]</td></tr>
+<tr class="separator:a27cfda8e19ee90515b17cdc7a22defdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d14f27b23d88611c90909579908147"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_o_base.html">OBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_property_widget.html#af6d14f27b23d88611c90909579908147">mSeleted</a> = nullptr</td></tr>
+<tr class="separator:af6d14f27b23d88611c90909579908147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00099">99</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00035">35</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae58b05dc6afe510e3017df6d10b99be6" name="ae58b05dc6afe510e3017df6d10b99be6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae58b05dc6afe510e3017df6d10b99be6">&#9670;&nbsp;</a></span>PPropertyWidget()</h2>
@@ -171,7 +191,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00290">290</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00021">21</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -190,7 +210,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00318">318</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00049">49</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -219,12 +239,21 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00438">438</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00393">393</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_property_widget_a1cd7d79c4f675f549ed3f8876c5467c5_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a1cd7d79c4f675f549ed3f8876c5467c5_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_a1cd7d79c4f675f549ed3f8876c5467c5_cgraph" id="aclassdyno_1_1_p_property_widget_a1cd7d79c4f675f549ed3f8876c5467c5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,163,47"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a64c642055df63685fdff4a38bb05546c" title=" " alt="" coords="211,5,368,47"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="acc601326cf3201d864edb83e4e514c55" name="acc601326cf3201d864edb83e4e514c55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc601326cf3201d864edb83e4e514c55">&#9670;&nbsp;</a></span>addScalarFieldWidget()</h2>
+<a id="acd088d209386cb84d9a6540507de9228" name="acd088d209386cb84d9a6540507de9228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd088d209386cb84d9a6540507de9228">&#9670;&nbsp;</a></span>addScalarFieldWidget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,6 +263,72 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void dyno::PPropertyWidget::addScalarFieldWidget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QGridLayout *&#160;</td>
+          <td class="paramname"><em>layout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00322">322</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_property_widget_acd088d209386cb84d9a6540507de9228_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_acd088d209386cb84d9a6540507de9228_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_acd088d209386cb84d9a6540507de9228_cgraph" id="aclassdyno_1_1_p_property_widget_acd088d209386cb84d9a6540507de9228_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,163,76"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a3dc378f318479fb81c1084faf6df767f" title=" " alt="" coords="237,5,394,47"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="211,71,420,98"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_property_widget_acd088d209386cb84d9a6540507de9228_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_acd088d209386cb84d9a6540507de9228_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_acd088d209386cb84d9a6540507de9228_icgraph" id="aclassdyno_1_1_p_property_widget_acd088d209386cb84d9a6540507de9228_icgraph">
+<area shape="rect" title=" " alt="" coords="613,39,771,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="408,39,565,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="203,39,360,80"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="9,5,151,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,71,155,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a044f1160fe6763bafdebd240adb1d115" name="a044f1160fe6763bafdebd240adb1d115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a044f1160fe6763bafdebd240adb1d115">&#9670;&nbsp;</a></span>addStateFieldWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PPropertyWidget::addStateFieldWidget </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td>
           <td class="paramname"><em>field</em></td><td>)</td>
@@ -247,28 +342,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00410">410</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_property_widget_acc601326cf3201d864edb83e4e514c55_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_acc601326cf3201d864edb83e4e514c55_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_property_widget_acc601326cf3201d864edb83e4e514c55_cgraph" id="aclassdyno_1_1_p_property_widget_acc601326cf3201d864edb83e4e514c55_cgraph">
-<area shape="rect" title=" " alt="" coords="5,64,163,105"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a64c642055df63685fdff4a38bb05546c" title=" " alt="" coords="237,5,394,47"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="211,71,420,98"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a1dc22bb36e84764af1fb2fa040411755" title=" " alt="" coords="237,123,394,164"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00399">399</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_property_widget_acc601326cf3201d864edb83e4e514c55_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_acc601326cf3201d864edb83e4e514c55_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_property_widget_acc601326cf3201d864edb83e4e514c55_icgraph" id="aclassdyno_1_1_p_property_widget_acc601326cf3201d864edb83e4e514c55_icgraph">
-<area shape="rect" title=" " alt="" coords="812,5,969,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#ab82c51c0aac758be5379478c814ee3ac" title=" " alt="" coords="607,5,764,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#aa3278270d05e7ff03fce24889a8d808f" title=" " alt="" coords="401,5,559,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a0477d485b3b0ac0953db6a024c5261ab" title=" " alt="" coords="196,5,353,47"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,5,148,47"/>
+<div class="center"><img src="classdyno_1_1_p_property_widget_a044f1160fe6763bafdebd240adb1d115_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a044f1160fe6763bafdebd240adb1d115_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_a044f1160fe6763bafdebd240adb1d115_icgraph" id="aclassdyno_1_1_p_property_widget_a044f1160fe6763bafdebd240adb1d115_icgraph">
+<area shape="rect" title=" " alt="" coords="211,5,368,47"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a35a417dcdba024f6f06119c2830b42fa" title=" " alt="" coords="5,5,163,47"/>
 </map>
 </div>
 
@@ -290,18 +371,139 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00328">328</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00059">59</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_p_property_widget_a64c642055df63685fdff4a38bb05546c_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a64c642055df63685fdff4a38bb05546c_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_p_property_widget_a64c642055df63685fdff4a38bb05546c_icgraph" id="aclassdyno_1_1_p_property_widget_a64c642055df63685fdff4a38bb05546c_icgraph">
-<area shape="rect" title=" " alt="" coords="1017,5,1175,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#acc601326cf3201d864edb83e4e514c55" title=" " alt="" coords="812,5,969,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#ab82c51c0aac758be5379478c814ee3ac" title=" " alt="" coords="607,5,764,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#aa3278270d05e7ff03fce24889a8d808f" title=" " alt="" coords="401,5,559,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a0477d485b3b0ac0953db6a024c5261ab" title=" " alt="" coords="196,5,353,47"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,5,148,47"/>
+<area shape="rect" title=" " alt="" coords="613,39,771,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a1cd7d79c4f675f549ed3f8876c5467c5" title=" " alt="" coords="408,5,565,47"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="408,71,565,112"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="203,71,360,112"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="9,37,151,79"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,103,155,144"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3dc378f318479fb81c1084faf6df767f" name="a3dc378f318479fb81c1084faf6df767f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dc378f318479fb81c1084faf6df767f">&#9670;&nbsp;</a></span>contentUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PPropertyWidget::contentUpdated </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00309">309</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_property_widget_a3dc378f318479fb81c1084faf6df767f_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a3dc378f318479fb81c1084faf6df767f_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_a3dc378f318479fb81c1084faf6df767f_icgraph" id="aclassdyno_1_1_p_property_widget_a3dc378f318479fb81c1084faf6df767f_icgraph">
+<area shape="rect" title=" " alt="" coords="819,39,976,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#acd088d209386cb84d9a6540507de9228" title=" " alt="" coords="613,39,771,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="408,39,565,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="203,39,360,80"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="9,5,151,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,71,155,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af23bf6697adc0616ef429beb0719f719" name="af23bf6697adc0616ef429beb0719f719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af23bf6697adc0616ef429beb0719f719">&#9670;&nbsp;</a></span>moduleUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PPropertyWidget::moduleUpdated </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_property_widget_af23bf6697adc0616ef429beb0719f719_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_af23bf6697adc0616ef429beb0719f719_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_af23bf6697adc0616ef429beb0719f719_icgraph" id="aclassdyno_1_1_p_property_widget_af23bf6697adc0616ef429beb0719f719_icgraph">
+<area shape="rect" title=" " alt="" coords="1024,39,1181,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a3dc378f318479fb81c1084faf6df767f" title=" " alt="" coords="819,39,976,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#acd088d209386cb84d9a6540507de9228" title=" " alt="" coords="613,39,771,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="408,39,565,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="203,39,360,80"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="9,5,151,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,71,155,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1799a491d351417babb5a7cf24391421" name="a1799a491d351417babb5a7cf24391421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1799a491d351417babb5a7cf24391421">&#9670;&nbsp;</a></span>nodeUpdated</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PPropertyWidget::nodeUpdated </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_property_widget_a1799a491d351417babb5a7cf24391421_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a1799a491d351417babb5a7cf24391421_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_a1799a491d351417babb5a7cf24391421_icgraph" id="aclassdyno_1_1_p_property_widget_a1799a491d351417babb5a7cf24391421_icgraph">
+<area shape="rect" title=" " alt="" coords="1024,72,1181,113"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a3dc378f318479fb81c1084faf6df767f" title=" " alt="" coords="819,39,976,80"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6c261b693789b64d7a94da13fb8aa1b" title=" " alt="" coords="823,104,972,145"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#acd088d209386cb84d9a6540507de9228" title=" " alt="" coords="613,39,771,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="408,39,565,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="203,39,360,80"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="9,5,151,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,71,155,112"/>
 </map>
 </div>
 
@@ -322,24 +524,24 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00336">336</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00067">67</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_p_property_widget_a2f5db7f7dc59c1f9cc0dcb0cf551771e_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a2f5db7f7dc59c1f9cc0dcb0cf551771e_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_p_property_widget_a2f5db7f7dc59c1f9cc0dcb0cf551771e_icgraph" id="aclassdyno_1_1_p_property_widget_a2f5db7f7dc59c1f9cc0dcb0cf551771e_icgraph">
-<area shape="rect" title=" " alt="" coords="812,5,969,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#ab82c51c0aac758be5379478c814ee3ac" title=" " alt="" coords="607,5,764,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#aa3278270d05e7ff03fce24889a8d808f" title=" " alt="" coords="401,5,559,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a0477d485b3b0ac0953db6a024c5261ab" title=" " alt="" coords="196,5,353,47"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,5,148,47"/>
+<area shape="rect" title=" " alt="" coords="613,39,771,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="408,39,565,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="203,39,360,80"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="9,5,151,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,71,155,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a0477d485b3b0ac0953db6a024c5261ab" name="a0477d485b3b0ac0953db6a024c5261ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0477d485b3b0ac0953db6a024c5261ab">&#9670;&nbsp;</a></span>showBlockProperty</h2>
+<a id="a600124b447ddebcc85e9fc47ea8da882" name="a600124b447ddebcc85e9fc47ea8da882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600124b447ddebcc85e9fc47ea8da882">&#9670;&nbsp;</a></span>showNodeProperty</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +550,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::PPropertyWidget::showBlockProperty </td>
+          <td class="memname">void dyno::PPropertyWidget::showNodeProperty </td>
           <td>(</td>
           <td class="paramtype">Qt::QtNode &amp;&#160;</td>
           <td class="paramname"><em>block</em></td><td>)</td>
@@ -362,38 +564,41 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00361">361</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00290">290</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_property_widget_a0477d485b3b0ac0953db6a024c5261ab_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a0477d485b3b0ac0953db6a024c5261ab_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_property_widget_a0477d485b3b0ac0953db6a024c5261ab_cgraph" id="aclassdyno_1_1_p_property_widget_a0477d485b3b0ac0953db6a024c5261ab_cgraph">
-<area shape="rect" title=" " alt="" coords="5,148,163,189"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#aa3278270d05e7ff03fce24889a8d808f" title=" " alt="" coords="211,148,368,189"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#ab82c51c0aac758be5379478c814ee3ac" title=" " alt="" coords="416,148,573,189"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#acc601326cf3201d864edb83e4e514c55" title=" " alt="" coords="638,64,795,105"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a13d7c35a189c2112df3cc36ba4fbea2d" title=" " alt="" coords="622,130,811,157"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a2c66f20e578ecf9ae93a7211a8ba0888" title=" " alt="" coords="621,181,812,207"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a2f5db7f7dc59c1f9cc0dcb0cf551771e" title=" " alt="" coords="638,232,795,273"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a64c642055df63685fdff4a38bb05546c" title=" " alt="" coords="886,5,1043,47"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="860,71,1069,98"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a1dc22bb36e84764af1fb2fa040411755" title=" " alt="" coords="886,123,1043,164"/>
+<div class="center"><img src="classdyno_1_1_p_property_widget_a600124b447ddebcc85e9fc47ea8da882_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a600124b447ddebcc85e9fc47ea8da882_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_a600124b447ddebcc85e9fc47ea8da882_cgraph" id="aclassdyno_1_1_p_property_widget_a600124b447ddebcc85e9fc47ea8da882_cgraph">
+<area shape="rect" title=" " alt="" coords="5,235,163,276"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="211,235,368,276"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#acd088d209386cb84d9a6540507de9228" title=" " alt="" coords="434,35,591,76"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a64c642055df63685fdff4a38bb05546c" title=" " alt="" coords="434,100,591,141"/>
+<area shape="rect" href="_platform_8h.html#a44f975ef0e37b97956e79735c2532420" title=" " alt="" coords="462,166,563,193"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a13d7c35a189c2112df3cc36ba4fbea2d" title=" " alt="" coords="418,217,607,243"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a06ec06ffc42b9efe5186ffa584a99ae9" title=" " alt="" coords="423,267,602,294"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a2f5db7f7dc59c1f9cc0dcb0cf551771e" title=" " alt="" coords="434,319,591,360"/>
+<area shape="rect" href="class_locker_button.html#a23e03e5ad6aafd27b3fc98e334322d5f" title=" " alt="" coords="416,385,609,411"/>
+<area shape="rect" href="class_locker_button.html#ad56d675ec14901d7bdad9b6344b0e39b" title=" " alt="" coords="421,435,604,462"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a3dc378f318479fb81c1084faf6df767f" title=" " alt="" coords="683,5,841,47"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="657,71,867,98"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_property_widget_a0477d485b3b0ac0953db6a024c5261ab_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a0477d485b3b0ac0953db6a024c5261ab_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_property_widget_a0477d485b3b0ac0953db6a024c5261ab_icgraph" id="aclassdyno_1_1_p_property_widget_a0477d485b3b0ac0953db6a024c5261ab_icgraph">
-<area shape="rect" title=" " alt="" coords="196,5,353,47"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,5,148,47"/>
+<div class="center"><img src="classdyno_1_1_p_property_widget_a600124b447ddebcc85e9fc47ea8da882_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a600124b447ddebcc85e9fc47ea8da882_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_a600124b447ddebcc85e9fc47ea8da882_icgraph" id="aclassdyno_1_1_p_property_widget_a600124b447ddebcc85e9fc47ea8da882_icgraph">
+<area shape="rect" title=" " alt="" coords="203,39,360,80"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="9,5,151,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,71,155,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aa3278270d05e7ff03fce24889a8d808f" name="aa3278270d05e7ff03fce24889a8d808f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3278270d05e7ff03fce24889a8d808f">&#9670;&nbsp;</a></span>showProperty <span class="overload">[1/2]</span></h2>
+<a id="a392d84a97438ecbbe31e2b83feb7e598" name="a392d84a97438ecbbe31e2b83feb7e598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a392d84a97438ecbbe31e2b83feb7e598">&#9670;&nbsp;</a></span>showProperty <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,7 +609,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void dyno::PPropertyWidget::showProperty </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_module.html">Module</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt;&#160;</td>
           <td class="paramname"><em>module</em></td><td>)</td>
           <td></td>
         </tr>
@@ -416,38 +621,41 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00347">347</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00078">78</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_property_widget_aa3278270d05e7ff03fce24889a8d808f_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_aa3278270d05e7ff03fce24889a8d808f_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_property_widget_aa3278270d05e7ff03fce24889a8d808f_cgraph" id="aclassdyno_1_1_p_property_widget_aa3278270d05e7ff03fce24889a8d808f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,148,163,189"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#ab82c51c0aac758be5379478c814ee3ac" title=" " alt="" coords="211,148,368,189"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#acc601326cf3201d864edb83e4e514c55" title=" " alt="" coords="433,64,590,105"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a13d7c35a189c2112df3cc36ba4fbea2d" title=" " alt="" coords="417,130,606,157"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a2c66f20e578ecf9ae93a7211a8ba0888" title=" " alt="" coords="416,181,607,207"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a2f5db7f7dc59c1f9cc0dcb0cf551771e" title=" " alt="" coords="433,232,590,273"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a64c642055df63685fdff4a38bb05546c" title=" " alt="" coords="681,5,838,47"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="655,71,864,98"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a1dc22bb36e84764af1fb2fa040411755" title=" " alt="" coords="681,123,838,164"/>
+<div class="center"><img src="classdyno_1_1_p_property_widget_a392d84a97438ecbbe31e2b83feb7e598_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a392d84a97438ecbbe31e2b83feb7e598_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_a392d84a97438ecbbe31e2b83feb7e598_cgraph" id="aclassdyno_1_1_p_property_widget_a392d84a97438ecbbe31e2b83feb7e598_cgraph">
+<area shape="rect" title=" " alt="" coords="5,235,163,276"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#acd088d209386cb84d9a6540507de9228" title=" " alt="" coords="229,35,386,76"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a64c642055df63685fdff4a38bb05546c" title=" " alt="" coords="229,100,386,141"/>
+<area shape="rect" href="_platform_8h.html#a44f975ef0e37b97956e79735c2532420" title=" " alt="" coords="257,166,358,193"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a13d7c35a189c2112df3cc36ba4fbea2d" title=" " alt="" coords="213,217,402,243"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a06ec06ffc42b9efe5186ffa584a99ae9" title=" " alt="" coords="218,267,397,294"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a2f5db7f7dc59c1f9cc0dcb0cf551771e" title=" " alt="" coords="229,319,386,360"/>
+<area shape="rect" href="class_locker_button.html#a23e03e5ad6aafd27b3fc98e334322d5f" title=" " alt="" coords="211,385,404,411"/>
+<area shape="rect" href="class_locker_button.html#ad56d675ec14901d7bdad9b6344b0e39b" title=" " alt="" coords="216,435,399,462"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a3dc378f318479fb81c1084faf6df767f" title=" " alt="" coords="478,5,635,47"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="452,71,661,98"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_property_widget_aa3278270d05e7ff03fce24889a8d808f_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_aa3278270d05e7ff03fce24889a8d808f_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_property_widget_aa3278270d05e7ff03fce24889a8d808f_icgraph" id="aclassdyno_1_1_p_property_widget_aa3278270d05e7ff03fce24889a8d808f_icgraph">
-<area shape="rect" title=" " alt="" coords="401,5,559,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a0477d485b3b0ac0953db6a024c5261ab" title=" " alt="" coords="196,5,353,47"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,5,148,47"/>
+<div class="center"><img src="classdyno_1_1_p_property_widget_a392d84a97438ecbbe31e2b83feb7e598_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a392d84a97438ecbbe31e2b83feb7e598_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_a392d84a97438ecbbe31e2b83feb7e598_icgraph" id="aclassdyno_1_1_p_property_widget_a392d84a97438ecbbe31e2b83feb7e598_icgraph">
+<area shape="rect" title=" " alt="" coords="408,39,565,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="203,39,360,80"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="9,5,151,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,71,155,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af9aa3e472107f8733942b401be71126c" name="af9aa3e472107f8733942b401be71126c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9aa3e472107f8733942b401be71126c">&#9670;&nbsp;</a></span>showProperty <span class="overload">[2/2]</span></h2>
+<a id="a35a417dcdba024f6f06119c2830b42fa" name="a35a417dcdba024f6f06119c2830b42fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a417dcdba024f6f06119c2830b42fa">&#9670;&nbsp;</a></span>showProperty <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,7 +666,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void dyno::PPropertyWidget::showProperty </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt;&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
           <td></td>
         </tr>
@@ -470,21 +678,24 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00354">354</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00182">182</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_property_widget_af9aa3e472107f8733942b401be71126c_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_af9aa3e472107f8733942b401be71126c_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_property_widget_af9aa3e472107f8733942b401be71126c_cgraph" id="aclassdyno_1_1_p_property_widget_af9aa3e472107f8733942b401be71126c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,148,163,189"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#ab82c51c0aac758be5379478c814ee3ac" title=" " alt="" coords="211,148,368,189"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#acc601326cf3201d864edb83e4e514c55" title=" " alt="" coords="433,64,590,105"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a13d7c35a189c2112df3cc36ba4fbea2d" title=" " alt="" coords="417,130,606,157"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a2c66f20e578ecf9ae93a7211a8ba0888" title=" " alt="" coords="416,181,607,207"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a2f5db7f7dc59c1f9cc0dcb0cf551771e" title=" " alt="" coords="433,232,590,273"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a64c642055df63685fdff4a38bb05546c" title=" " alt="" coords="681,5,838,47"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="655,71,864,98"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a1dc22bb36e84764af1fb2fa040411755" title=" " alt="" coords="681,123,838,164"/>
+<div class="center"><img src="classdyno_1_1_p_property_widget_a35a417dcdba024f6f06119c2830b42fa_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a35a417dcdba024f6f06119c2830b42fa_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_a35a417dcdba024f6f06119c2830b42fa_cgraph" id="aclassdyno_1_1_p_property_widget_a35a417dcdba024f6f06119c2830b42fa_cgraph">
+<area shape="rect" title=" " alt="" coords="5,275,163,316"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#acd088d209386cb84d9a6540507de9228" title=" " alt="" coords="229,35,386,76"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a044f1160fe6763bafdebd240adb1d115" title=" " alt="" coords="229,100,386,141"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a64c642055df63685fdff4a38bb05546c" title=" " alt="" coords="229,165,386,207"/>
+<area shape="rect" href="_platform_8h.html#a44f975ef0e37b97956e79735c2532420" title=" " alt="" coords="257,231,358,258"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a13d7c35a189c2112df3cc36ba4fbea2d" title=" " alt="" coords="213,282,402,309"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a06ec06ffc42b9efe5186ffa584a99ae9" title=" " alt="" coords="218,333,397,359"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a2f5db7f7dc59c1f9cc0dcb0cf551771e" title=" " alt="" coords="229,384,386,425"/>
+<area shape="rect" href="class_locker_button.html#a23e03e5ad6aafd27b3fc98e334322d5f" title=" " alt="" coords="211,450,404,477"/>
+<area shape="rect" href="class_locker_button.html#ad56d675ec14901d7bdad9b6344b0e39b" title=" " alt="" coords="216,501,399,527"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a3dc378f318479fb81c1084faf6df767f" title=" " alt="" coords="478,5,635,47"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="452,71,661,98"/>
 </map>
 </div>
 
@@ -514,66 +725,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00323">323</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00054">54</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
 
 </div>
 </div>
-<a id="ab82c51c0aac758be5379478c814ee3ac" name="ab82c51c0aac758be5379478c814ee3ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab82c51c0aac758be5379478c814ee3ac">&#9670;&nbsp;</a></span>updateContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dyno::PPropertyWidget::updateContext </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_o_base.html">OBase</a> *&#160;</td>
-          <td class="paramname"><em>base</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00387">387</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_property_widget_ab82c51c0aac758be5379478c814ee3ac_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_ab82c51c0aac758be5379478c814ee3ac_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_property_widget_ab82c51c0aac758be5379478c814ee3ac_cgraph" id="aclassdyno_1_1_p_property_widget_ab82c51c0aac758be5379478c814ee3ac_cgraph">
-<area shape="rect" title=" " alt="" coords="5,148,163,189"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#acc601326cf3201d864edb83e4e514c55" title=" " alt="" coords="227,64,385,105"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a13d7c35a189c2112df3cc36ba4fbea2d" title=" " alt="" coords="211,130,401,157"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a2c66f20e578ecf9ae93a7211a8ba0888" title=" " alt="" coords="211,181,401,207"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a2f5db7f7dc59c1f9cc0dcb0cf551771e" title=" " alt="" coords="227,232,385,273"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a64c642055df63685fdff4a38bb05546c" title=" " alt="" coords="475,5,633,47"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="449,71,659,98"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a1dc22bb36e84764af1fb2fa040411755" title=" " alt="" coords="475,123,633,164"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_property_widget_ab82c51c0aac758be5379478c814ee3ac_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_ab82c51c0aac758be5379478c814ee3ac_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_property_widget_ab82c51c0aac758be5379478c814ee3ac_icgraph" id="aclassdyno_1_1_p_property_widget_ab82c51c0aac758be5379478c814ee3ac_icgraph">
-<area shape="rect" title=" " alt="" coords="607,5,764,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#aa3278270d05e7ff03fce24889a8d808f" title=" " alt="" coords="401,5,559,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a0477d485b3b0ac0953db6a024c5261ab" title=" " alt="" coords="196,5,353,47"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,5,148,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a1dc22bb36e84764af1fb2fa040411755" name="a1dc22bb36e84764af1fb2fa040411755"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dc22bb36e84764af1fb2fa040411755">&#9670;&nbsp;</a></span>updateDisplay</h2>
+<a id="af4174e4c9e858451d82045f4d8a2d97f" name="af4174e4c9e858451d82045f4d8a2d97f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4174e4c9e858451d82045f4d8a2d97f">&#9670;&nbsp;</a></span>stateFieldUpdated</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -582,39 +739,46 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::PPropertyWidget::updateDisplay </td>
+          <td class="memname">void dyno::PPropertyWidget::stateFieldUpdated </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00380">380</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_property_widget_a1dc22bb36e84764af1fb2fa040411755_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_a1dc22bb36e84764af1fb2fa040411755_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_property_widget_a1dc22bb36e84764af1fb2fa040411755_icgraph" id="aclassdyno_1_1_p_property_widget_a1dc22bb36e84764af1fb2fa040411755_icgraph">
-<area shape="rect" title=" " alt="" coords="1017,5,1175,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#acc601326cf3201d864edb83e4e514c55" title=" " alt="" coords="812,5,969,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#ab82c51c0aac758be5379478c814ee3ac" title=" " alt="" coords="607,5,764,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#aa3278270d05e7ff03fce24889a8d808f" title=" " alt="" coords="401,5,559,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a0477d485b3b0ac0953db6a024c5261ab" title=" " alt="" coords="196,5,353,47"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,5,148,47"/>
+<div class="center"><img src="classdyno_1_1_p_property_widget_af4174e4c9e858451d82045f4d8a2d97f_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_property_widget_af4174e4c9e858451d82045f4d8a2d97f_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_property_widget_af4174e4c9e858451d82045f4d8a2d97f_icgraph" id="aclassdyno_1_1_p_property_widget_af4174e4c9e858451d82045f4d8a2d97f_icgraph">
+<area shape="rect" title=" " alt="" coords="416,39,573,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a044f1160fe6763bafdebd240adb1d115" title=" " alt="" coords="211,5,368,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="215,71,364,112"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a35a417dcdba024f6f06119c2830b42fa" title=" " alt="" coords="5,5,163,47"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9dbd8fdb0c05759052de065506fe3828" name="a9dbd8fdb0c05759052de065506fe3828"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dbd8fdb0c05759052de065506fe3828">&#9670;&nbsp;</a></span>m_main_layout</h2>
+<a id="a27cfda8e19ee90515b17cdc7a22defdd" name="a27cfda8e19ee90515b17cdc7a22defdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27cfda8e19ee90515b17cdc7a22defdd">&#9670;&nbsp;</a></span>mFlag</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -623,7 +787,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QVBoxLayout* dyno::PPropertyWidget::m_main_layout</td>
+          <td class="memname">bool dyno::PPropertyWidget::mFlag[3]</td>
         </tr>
       </table>
   </td>
@@ -633,12 +797,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00129">129</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00080">80</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
 
 </div>
 </div>
-<a id="ae7285354d5d64126d974624ba8b0cbac" name="ae7285354d5d64126d974624ba8b0cbac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7285354d5d64126d974624ba8b0cbac">&#9670;&nbsp;</a></span>m_scroll_area</h2>
+<a id="a35fe2373fcc34d0f44e5dfbe2560f014" name="a35fe2373fcc34d0f44e5dfbe2560f014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35fe2373fcc34d0f44e5dfbe2560f014">&#9670;&nbsp;</a></span>mMainLayout</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -647,7 +811,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QScrollArea* dyno::PPropertyWidget::m_scroll_area</td>
+          <td class="memname">QVBoxLayout* dyno::PPropertyWidget::mMainLayout</td>
         </tr>
       </table>
   </td>
@@ -657,12 +821,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00130">130</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00071">71</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
 
 </div>
 </div>
-<a id="aad3092b3bce0ac994ae4b7c2a5eb0635" name="aad3092b3bce0ac994ae4b7c2a5eb0635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad3092b3bce0ac994ae4b7c2a5eb0635">&#9670;&nbsp;</a></span>m_scroll_layout</h2>
+<a id="aad3442a59b731a524184123ffc89d000" name="aad3442a59b731a524184123ffc89d000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad3442a59b731a524184123ffc89d000">&#9670;&nbsp;</a></span>mPropertyItems</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -671,7 +835,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QGridLayout* dyno::PPropertyWidget::m_scroll_layout</td>
+          <td class="memname">std::vector&lt;QWidget*&gt; dyno::PPropertyWidget::mPropertyItems</td>
         </tr>
       </table>
   </td>
@@ -681,12 +845,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00132">132</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00075">75</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
 
 </div>
 </div>
-<a id="ae9a57c76a9874b4a04cab1fd4fb97a31" name="ae9a57c76a9874b4a04cab1fd4fb97a31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9a57c76a9874b4a04cab1fd4fb97a31">&#9670;&nbsp;</a></span>m_scroll_widget</h2>
+<a id="a65ae74b1d91e8f52f0956a888d10827c" name="a65ae74b1d91e8f52f0956a888d10827c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65ae74b1d91e8f52f0956a888d10827c">&#9670;&nbsp;</a></span>mPropertyLabel</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -695,7 +859,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QWidget* dyno::PPropertyWidget::m_scroll_widget</td>
+          <td class="memname"><a class="el" href="class_locker_button.html">LockerButton</a>* dyno::PPropertyWidget::mPropertyLabel[3]</td>
         </tr>
       </table>
   </td>
@@ -705,12 +869,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00131">131</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00077">77</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
 
 </div>
 </div>
-<a id="a918f59af5d2223881ffb5f9e947ff73a" name="a918f59af5d2223881ffb5f9e947ff73a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a918f59af5d2223881ffb5f9e947ff73a">&#9670;&nbsp;</a></span>m_widgets</h2>
+<a id="a79399891f5d79ec976fd5ea43fff8c07" name="a79399891f5d79ec976fd5ea43fff8c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79399891f5d79ec976fd5ea43fff8c07">&#9670;&nbsp;</a></span>mPropertyLayout</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -719,7 +883,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;QWidget*&gt; dyno::PPropertyWidget::m_widgets</td>
+          <td class="memname">QGridLayout* dyno::PPropertyWidget::mPropertyLayout[3]</td>
         </tr>
       </table>
   </td>
@@ -729,7 +893,103 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00134">134</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00079">79</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+
+</div>
+</div>
+<a id="a103ecf36f60803531b7097591dc0a085" name="a103ecf36f60803531b7097591dc0a085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a103ecf36f60803531b7097591dc0a085">&#9670;&nbsp;</a></span>mPropertyWidget</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget* dyno::PPropertyWidget::mPropertyWidget[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00078">78</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+
+</div>
+</div>
+<a id="a4cb069ac0001769c781b8e7d1ec8f297" name="a4cb069ac0001769c781b8e7d1ec8f297"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb069ac0001769c781b8e7d1ec8f297">&#9670;&nbsp;</a></span>mScrollArea</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QScrollArea* dyno::PPropertyWidget::mScrollArea</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00072">72</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+
+</div>
+</div>
+<a id="ad9e406acef549b5e3cd285ee07e9ca4d" name="ad9e406acef549b5e3cd285ee07e9ca4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9e406acef549b5e3cd285ee07e9ca4d">&#9670;&nbsp;</a></span>mScrollLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGridLayout* dyno::PPropertyWidget::mScrollLayout</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00073">73</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+
+</div>
+</div>
+<a id="af6d14f27b23d88611c90909579908147" name="af6d14f27b23d88611c90909579908147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6d14f27b23d88611c90909579908147">&#9670;&nbsp;</a></span>mSeleted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_o_base.html">OBase</a>&gt; dyno::PPropertyWidget::mSeleted = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00082">82</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
 
 </div>
 </div>

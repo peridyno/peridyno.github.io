@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -69,7 +69,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdyno_1_1_input_module-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::InputModule Class Reference</div></div>
 </div><!--header-->
@@ -81,10 +80,15 @@ Inheritance diagram for dyno::InputModule:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_input_module__inherit__graph.png" border="0" usemap="#adyno_1_1_input_module_inherit__map" alt="Inheritance graph"/></div>
 <map name="adyno_1_1_input_module_inherit__map" id="adyno_1_1_input_module_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,229,133,256"/>
-<area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="19,155,119,181"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="20,80,119,107"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="21,5,117,32"/>
+<area shape="rect" title=" " alt="" coords="444,53,572,79"/>
+<area shape="rect" href="classdyno_1_1_keyboard_input_module.html" title=" " alt="" coords="620,27,803,54"/>
+<area shape="rect" href="classdyno_1_1_mouse_input_module.html" title=" " alt="" coords="628,78,795,105"/>
+<area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="296,53,396,79"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="149,53,248,79"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="5,53,101,79"/>
+<area shape="rect" href="classdyno_1_1_edge_interaction.html" title=" " alt="" coords="858,5,1006,47"/>
+<area shape="rect" href="classdyno_1_1_point_interaction.html" title=" " alt="" coords="858,71,1006,112"/>
+<area shape="rect" href="classdyno_1_1_surface_interaction.html" title=" " alt="" coords="851,136,1013,177"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -126,19 +130,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a57e0a79232327c7382c6a77dad3a9781 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44ee1b0af4e61e68d804680b27881999 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a44ee1b0af4e61e68d804680b27881999">getName</a> ()</td></tr>
 <tr class="separator:a44ee1b0af4e61e68d804680b27881999 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">setUpdateAlways</a> (bool b)</td></tr>
+<tr class="memdesc:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the update strategy for the module.  <a href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">More...</a><br /></td></tr>
+<tr class="separator:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b50ee66c01dda6a05819eb246266d33 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a2b50ee66c01dda6a05819eb246266d33">getParent</a> ()</td></tr>
 <tr class="separator:a2b50ee66c01dda6a05819eb246266d33 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0882f625db1c53350db482d34a1b90 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a0b0882f625db1c53350db482d34a1b90">isInitialized</a> ()</td></tr>
 <tr class="separator:a0b0882f625db1c53350db482d34a1b90 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bd819b959fd3894fa478167a5d2f190 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a3bd819b959fd3894fa478167a5d2f190">getModuleType</a> ()</td></tr>
 <tr class="separator:a3bd819b959fd3894fa478167a5d2f190 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19355f1b64015ec3f7ead31b90ed3be2 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual std::weak_ptr&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a19355f1b64015ec3f7ead31b90ed3be2">next</a> ()</td></tr>
-<tr class="separator:a19355f1b64015ec3f7ead31b90ed3be2 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1844d7262ff12b44775110324ef239a inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ad1844d7262ff12b44775110324ef239a">setNext</a> (std::weak_ptr&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt; next_module)</td></tr>
-<tr class="separator:ad1844d7262ff12b44775110324ef239a inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5144714bef507ab31afe6d902ab2e65 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65">attachField</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field, std::string name, std::string desc, bool autoDestroy=true) override</td></tr>
 <tr class="memdesc:af5144714bef507ab31afe6d902ab2e65 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a field to Base.  <a href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65">More...</a><br /></td></tr>
 <tr class="separator:af5144714bef507ab31afe6d902ab2e65 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a73f0c85f66dddc1ab648f2b628fa4fdb">isInputComplete</a> ()</td></tr>
+<tr class="memdesc:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the completeness of input fields.  <a href="classdyno_1_1_module.html#a73f0c85f66dddc1ab648f2b628fa4fdb">More...</a><br /></td></tr>
+<tr class="separator:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a5a53a1ff27547593a8358e6ab5767fa2">isOutputCompete</a> ()</td></tr>
+<tr class="separator:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ab65d583b85bc42e7b2faab3af43d159f">OBase</a> ()</td></tr>
 <tr class="separator:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,8 +215,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0a9735a2942cbc82f430d235e957edc5 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93a9bcaeabeccd666019e718bdde1dd2 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a93a9bcaeabeccd666019e718bdde1dd2">addOutputField</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
 <tr class="separator:a93a9bcaeabeccd666019e718bdde1dd2 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee38400e04dd178e78f32f2f190ea8a inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#afee38400e04dd178e78f32f2f190ea8a">addToOutput</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
+<tr class="separator:afee38400e04dd178e78f32f2f190ea8a inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a30b6e2f693fea4ce9d7703791f0f6f inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a5a30b6e2f693fea4ce9d7703791f0f6f">removeOutputField</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
 <tr class="separator:a5a30b6e2f693fea4ce9d7703791f0f6f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada356355f2102f1a7d3223e1416cd9dc inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ada356355f2102f1a7d3223e1416cd9dc">removeFromOutput</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
+<tr class="separator:ada356355f2102f1a7d3223e1416cd9dc inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e429b5c73bc7ae8ef707cd40ac3a2e5 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5">getOutputFields</a> ()</td></tr>
 <tr class="separator:a3e429b5c73bc7ae8ef707cd40ac3a2e5 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d077168c9c9f7ee0a615d2c5bb2913 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a71d077168c9c9f7ee0a615d2c5bb2913">findParameter</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
@@ -226,18 +238,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a65557eb441d1c0273b0d8d62c05dabe0 inherit pub_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8">objectId</a> ()</td></tr>
 <tr class="separator:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ad4a5b71c50d132c6cc9efe890b25c6ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_input_module.html#ad4a5b71c50d132c6cc9efe890b25c6ba">m_enabled</a></td></tr>
-<tr class="separator:ad4a5b71c50d132c6cc9efe890b25c6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
-<tr class="memitem:a8b5f7805d779751d0a57a8d397173585 inherit pro_attribs_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a8b5f7805d779751d0a57a8d397173585">fields_input</a></td></tr>
-<tr class="separator:a8b5f7805d779751d0a57a8d397173585 inherit pro_attribs_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70ce6e043e038d708801789e3b0147e9 inherit pro_attribs_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a70ce6e043e038d708801789e3b0147e9">fields_output</a></td></tr>
-<tr class="separator:a70ce6e043e038d708801789e3b0147e9 inherit pro_attribs_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d0264ff869bacb49574624275c089b inherit pro_attribs_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a28d0264ff869bacb49574624275c089b">fields_param</a></td></tr>
-<tr class="separator:a28d0264ff869bacb49574624275c089b inherit pro_attribs_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -271,20 +271,22 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a0b3d99d086effb856d9af1aa27bf5ece inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafed20478d711d12fb46f128addc9bb6 inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#aafed20478d711d12fb46f128addc9bb6">requireUpdate</a> ()</td></tr>
 <tr class="separator:aafed20478d711d12fb46f128addc9bb6 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a73f0c85f66dddc1ab648f2b628fa4fdb">isInputComplete</a> ()</td></tr>
-<tr class="memdesc:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pro_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the completeness of input fields.  <a href="classdyno_1_1_module.html#a73f0c85f66dddc1ab648f2b628fa4fdb">More...</a><br /></td></tr>
-<tr class="separator:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a53a1ff27547593a8358e6ab5767fa2 inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a5a53a1ff27547593a8358e6ab5767fa2">isOutputCompete</a> ()</td></tr>
-<tr class="separator:a5a53a1ff27547593a8358e6ab5767fa2 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7106075edd583ebbc5f5e4fc3a4cbd2d inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a7106075edd583ebbc5f5e4fc3a4cbd2d">updateStarted</a> ()</td></tr>
-<tr class="memdesc:a7106075edd583ebbc5f5e4fc3a4cbd2d inherit pro_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two functions called at the beginning and end of <a class="el" href="classdyno_1_1_module.html#a671334fb99ebe01b59adbfd9980fcfa9">update()</a> used for debug.  <a href="classdyno_1_1_module.html#a7106075edd583ebbc5f5e4fc3a4cbd2d">More...</a><br /></td></tr>
-<tr class="separator:a7106075edd583ebbc5f5e4fc3a4cbd2d inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf25260c1cb9e47adde11a5c2e58146 inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a0bf25260c1cb9e47adde11a5c2e58146">updateEnded</a> ()</td></tr>
-<tr class="separator:a0bf25260c1cb9e47adde11a5c2e58146 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a8cbb0f56e3117ad920133d28e4dc5cc1">updateStarted</a> ()</td></tr>
+<tr class="memdesc:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two functions called at the beginning and end of <a class="el" href="classdyno_1_1_module.html#a671334fb99ebe01b59adbfd9980fcfa9">update()</a> used for debug.  <a href="classdyno_1_1_module.html#a8cbb0f56e3117ad920133d28e4dc5cc1">More...</a><br /></td></tr>
+<tr class="separator:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ba5aec44b13ce53020c7e83a338f4c inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ae7ba5aec44b13ce53020c7e83a338f4c">updateEnded</a> ()</td></tr>
+<tr class="separator:ae7ba5aec44b13ce53020c7e83a338f4c inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
+<tr class="memitem:a8b5f7805d779751d0a57a8d397173585 inherit pro_attribs_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a8b5f7805d779751d0a57a8d397173585">fields_input</a></td></tr>
+<tr class="separator:a8b5f7805d779751d0a57a8d397173585 inherit pro_attribs_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ce6e043e038d708801789e3b0147e9 inherit pro_attribs_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a70ce6e043e038d708801789e3b0147e9">fields_output</a></td></tr>
+<tr class="separator:a70ce6e043e038d708801789e3b0147e9 inherit pro_attribs_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d0264ff869bacb49574624275c089b inherit pro_attribs_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a28d0264ff869bacb49574624275c089b">fields_param</a></td></tr>
+<tr class="separator:a28d0264ff869bacb49574624275c089b inherit pro_attribs_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_input_module_8h_source.html#l00006">6</a> of file <a class="el" href="_input_module_8h_source.html">InputModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_input_module_8h_source.html#l00210">210</a> of file <a class="el" href="_input_module_8h_source.html">InputModule.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af7f2a3e76625d6c83892c5388bf36152" name="af7f2a3e76625d6c83892c5388bf36152"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7f2a3e76625d6c83892c5388bf36152">&#9670;&nbsp;</a></span>InputModule()</h2>
@@ -328,7 +330,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_input_module_8cpp_source.html#l00012">12</a> of file <a class="el" href="_input_module_8cpp_source.html">InputModule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_input_module_8cpp_source.html#l00011">11</a> of file <a class="el" href="_input_module_8cpp_source.html">InputModule.cpp</a>.</p>
 
 </div>
 </div>
@@ -358,32 +360,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_module.html#a3bd819b959fd3894fa478167a5d2f190">dyno::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_input_module_8h_source.html#l00012">12</a> of file <a class="el" href="_input_module_8h_source.html">InputModule.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad4a5b71c50d132c6cc9efe890b25c6ba" name="ad4a5b71c50d132c6cc9efe890b25c6ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4a5b71c50d132c6cc9efe890b25c6ba">&#9670;&nbsp;</a></span>m_enabled</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool dyno::InputModule::m_enabled</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_input_module_8h_source.html#l00014">14</a> of file <a class="el" href="_input_module_8h_source.html">InputModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_input_module_8h_source.html#l00216">216</a> of file <a class="el" href="_input_module_8h_source.html">InputModule.h</a>.</p>
 
 </div>
 </div>

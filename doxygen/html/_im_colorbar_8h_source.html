@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(function() {
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classdyno_1_1_im_colorbar.html#a2781de8bfe826b67878d8ef24a9fd0b6">   38</a></span>        <a class="code hl_function" href="classdyno_1_1_im_colorbar.html#a2781de8bfe826b67878d8ef24a9fd0b6">DEF_ENUM</a>(ColorTable, Type, ColorTable::Jet, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classdyno_1_1_im_colorbar.html#a8b73348486c4f94b2a205ddaa0459a39">   39</a></span>        <a class="code hl_function" href="classdyno_1_1_im_colorbar.html#a8b73348486c4f94b2a205ddaa0459a39">DEF_VAR</a>(<a class="code hl_typedef" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>, Min, <a class="code hl_typedef" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>(0), <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classdyno_1_1_im_colorbar.html#a16f3e53a44ad9bc032ca75e394cde521">   40</a></span>        <a class="code hl_function" href="classdyno_1_1_im_colorbar.html#a16f3e53a44ad9bc032ca75e394cde521">DEF_VAR</a>(<a class="code hl_typedef" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>, Max, <a class="code hl_typedef" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>(1), <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classdyno_1_1_im_colorbar.html#a076d1549438f07107c9a331505ed595f">   41</a></span>        <a class="code hl_function" href="classdyno_1_1_im_colorbar.html#a076d1549438f07107c9a331505ed595f">DEF_VAR</a>(std::string, FieldName, <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classdyno_1_1_im_colorbar.html#a4cd73808fb9901498f41a51484030319">   42</a></span>        <a class="code hl_function" href="classdyno_1_1_im_colorbar.html#a4cd73808fb9901498f41a51484030319">DEF_ARRAY_IN</a>(<a class="code hl_typedef" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>, Scalar, <a class="code hl_enumvalue" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="comment">// DEF_ARRAY_IN(Vec3f, Color, DeviceType::CPU, &quot;&quot;);</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="comment">// DEF_ARRAY_IN(int, Value, DeviceType::GPU, &quot;&quot;);</span></div>
@@ -129,6 +129,7 @@ $(function() {
 <div class="ttc" id="a_typedef_8inl_html_a445a5f0e2a34c9d97d69a3c2d1957907"><div class="ttname"><a href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00019">Typedef.inl:19</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4_html"><div class="ttname"><a href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html">dyno::Array&lt; T, DeviceType::GPU &gt;</a></div><div class="ttdef"><b>Definition:</b> <a href="_array_8h_source.html#l00097">Array.h:98</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_im_colorbar_html"><div class="ttname"><a href="classdyno_1_1_im_colorbar.html">dyno::ImColorbar</a></div><div class="ttdef"><b>Definition:</b> <a href="_im_colorbar_8h_source.html#l00023">ImColorbar.h:24</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_im_colorbar_html_a076d1549438f07107c9a331505ed595f"><div class="ttname"><a href="classdyno_1_1_im_colorbar.html#a076d1549438f07107c9a331505ed595f">dyno::ImColorbar::DEF_VAR</a></div><div class="ttdeci">DEF_VAR(std::string, FieldName, &quot;&quot;, &quot;&quot;)</div></div>
 <div class="ttc" id="aclassdyno_1_1_im_colorbar_html_a16f3e53a44ad9bc032ca75e394cde521"><div class="ttname"><a href="classdyno_1_1_im_colorbar.html#a16f3e53a44ad9bc032ca75e394cde521">dyno::ImColorbar::DEF_VAR</a></div><div class="ttdeci">DEF_VAR(Real, Max, Real(1), &quot;&quot;)</div></div>
 <div class="ttc" id="aclassdyno_1_1_im_colorbar_html_a195887947513c1441cfa9fe9a5a0fac1"><div class="ttname"><a href="classdyno_1_1_im_colorbar.html#a195887947513c1441cfa9fe9a5a0fac1">dyno::ImColorbar::DECLARE_ENUM</a></div><div class="ttdeci">DECLARE_ENUM(ColorTable, Jet=0, Heat=1)</div></div>
 <div class="ttc" id="aclassdyno_1_1_im_colorbar_html_a2781de8bfe826b67878d8ef24a9fd0b6"><div class="ttname"><a href="classdyno_1_1_im_colorbar.html#a2781de8bfe826b67878d8ef24a9fd0b6">dyno::ImColorbar::DEF_ENUM</a></div><div class="ttdeci">DEF_ENUM(ColorTable, Type, ColorTable::Jet, &quot;&quot;)</div></div>
@@ -157,7 +158,7 @@ $(function() {
 <div class="ttc" id="aclassdyno_1_1_im_widget_html"><div class="ttname"><a href="classdyno_1_1_im_widget.html">dyno::ImWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_im_widget_8h_source.html#l00009">ImWidget.h:10</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_reduction_html"><div class="ttname"><a href="classdyno_1_1_reduction.html">dyno::Reduction&lt; Real &gt;</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_vector_html"><div class="ttname"><a href="classdyno_1_1_vector.html">dyno::Vector&lt; float, 3 &gt;</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

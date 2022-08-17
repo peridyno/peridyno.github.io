@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
+<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_qt_1_1_qt_module_flow_scene-members.html">List of all members</a>  </div>
@@ -94,42 +95,69 @@ Collaboration diagram for Qt::QtModuleFlowScene:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_qt_1_1_qt_module_flow_scene__coll__graph.png" border="0" usemap="#a_qt_1_1_qt_module_flow_scene_coll__map" alt="Collaboration graph"/></div>
 <map name="a_qt_1_1_qt_module_flow_scene_coll__map" id="a_qt_1_1_qt_module_flow_scene_coll__map">
-<area shape="rect" title="Scene holds connections and nodes." alt="" coords="19,171,183,197"/>
-<area shape="rect" title=" " alt="" coords="5,81,105,108"/>
-<area shape="rect" href="class_qt_1_1_qt_node_widget.html" title="The model dictates the number of inputs and outputs for the Node." alt="" coords="129,81,259,108"/>
-<area shape="rect" title=" " alt="" coords="130,5,258,32"/>
+<area shape="rect" title="Scene holds connections and nodes." alt="" coords="5,80,169,107"/>
+<area shape="rect" title=" " alt="" coords="37,5,137,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a539537559677b40ad4d71c7b69be0fac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a539537559677b40ad4d71c7b69be0fac">showNodeFlow</a> (<a class="el" href="classdyno_1_1_node.html">Node</a> *node)</td></tr>
-<tr class="separator:a539537559677b40ad4d71c7b69be0fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aabd77db4eb888ed33c3c499c13594a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a7aabd77db4eb888ed33c3c499c13594a">moveModulePosition</a> (QtNode &amp;n, const QPointF &amp;newLocation)</td></tr>
-<tr class="separator:a7aabd77db4eb888ed33c3c499c13594a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47d437f682b9803944bd89b8accc29a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#ab47d437f682b9803944bd89b8accc29a">showModuleFlow</a> (<a class="el" href="classdyno_1_1_node.html">Node</a> *node)</td></tr>
+<tr class="separator:ab47d437f682b9803944bd89b8accc29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5adb4cec576710a317f374c34d0e11b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a5adb4cec576710a317f374c34d0e11b4">updateModuleGraphView</a> ()</td></tr>
+<tr class="separator:a5adb4cec576710a317f374c34d0e11b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0213026fd0192eca76280c076f49b7da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a0213026fd0192eca76280c076f49b7da">reorderAllModules</a> ()</td></tr>
+<tr class="separator:a0213026fd0192eca76280c076f49b7da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912718e3541a9382983f45f4c098c199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a912718e3541a9382983f45f4c098c199">addModule</a> (QtNode &amp;n)</td></tr>
+<tr class="separator:a912718e3541a9382983f45f4c098c199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f32be654faab7fdd0a8c934c503f82e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a5f32be654faab7fdd0a8c934c503f82e">deleteModule</a> (QtNode &amp;n)</td></tr>
+<tr class="separator:a5f32be654faab7fdd0a8c934c503f82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b38ae1b7464ceb8b9ee345f51fba5d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a8b38ae1b7464ceb8b9ee345f51fba5d3">moveModule</a> (QtNode &amp;n, const QPointF &amp;newLocation)</td></tr>
+<tr class="separator:a8b38ae1b7464ceb8b9ee345f51fba5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addeed20a2928406fac8349fc3489ea4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#addeed20a2928406fac8349fc3489ea4a">showAnimationPipeline</a> ()</td></tr>
+<tr class="separator:addeed20a2928406fac8349fc3489ea4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd15be0b4f83b75d7f65d55b58803624"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624">showGraphicsPipeline</a> ()</td></tr>
+<tr class="separator:acd15be0b4f83b75d7f65d55b58803624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad024306e09b35557570fddcc7e3d312e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#ad024306e09b35557570fddcc7e3d312e">promoteOutput</a> (QtNode &amp;n, const PortIndex index, const QPointF &amp;pos)</td></tr>
+<tr class="separator:ad024306e09b35557570fddcc7e3d312e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Signals</h2></td></tr>
+<tr class="memitem:a59a16aca07909797ab11a4076534819e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a59a16aca07909797ab11a4076534819e">nodeExportChanged</a> ()</td></tr>
+<tr class="separator:a59a16aca07909797ab11a4076534819e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c3e4a41d9a729933426b1ee12c42abd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a3c3e4a41d9a729933426b1ee12c42abd">QtModuleFlowScene</a> (std::shared_ptr&lt; QtDataModelRegistry &gt; registry, QObject *parent=Q_NULLPTR)</td></tr>
 <tr class="separator:a3c3e4a41d9a729933426b1ee12c42abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28db0e7a7c8a2dbff2f201a587a5ff7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a28db0e7a7c8a2dbff2f201a587a5ff7e">QtModuleFlowScene</a> (QObject *parent=Q_NULLPTR, <a class="el" href="class_qt_1_1_qt_node_widget.html">QtNodeWidget</a> *node_widget=nullptr)</td></tr>
-<tr class="separator:a28db0e7a7c8a2dbff2f201a587a5ff7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19f78cfb9699a18375c5be14679f4d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0">QtModuleFlowScene</a> (QObject *parent=Q_NULLPTR, <a class="el" href="class_qt_1_1_qt_node_widget.html">QtNodeWidget</a> *widget=nullptr)</td></tr>
+<tr class="separator:ab19f78cfb9699a18375c5be14679f4d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac04b65dd023f4f9e238666a94e2d9ae4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#ac04b65dd023f4f9e238666a94e2d9ae4">~QtModuleFlowScene</a> ()</td></tr>
 <tr class="separator:ac04b65dd023f4f9e238666a94e2d9ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c904aec4ff16e3aa39d4f50fc87c65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a17c904aec4ff16e3aa39d4f50fc87c65">pushModule</a> ()</td></tr>
-<tr class="separator:a17c904aec4ff16e3aa39d4f50fc87c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af836a7e6cb53649cf69eceaefffb2422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#af836a7e6cb53649cf69eceaefffb2422">enableEditing</a> ()</td></tr>
+<tr class="separator:af836a7e6cb53649cf69eceaefffb2422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbab255fddc6494e68f9d7d6ce37e7b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#acbab255fddc6494e68f9d7d6ce37e7b3">disableEditing</a> ()</td></tr>
+<tr class="separator:acbab255fddc6494e68f9d7d6ce37e7b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a513bf3c8ea7a07a3377c2e9c97471fdd"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; <a class="el" href="classdyno_1_1_node.html">dyno::Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a513bf3c8ea7a07a3377c2e9c97471fdd">m_node</a></td></tr>
-<tr class="separator:a513bf3c8ea7a07a3377c2e9c97471fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b32f2f7af14e735a94634d9d4ea178e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_qt_1_1_qt_node_widget.html">QtNodeWidget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a2b32f2f7af14e735a94634d9d4ea178e">m_parent_node</a></td></tr>
-<tr class="separator:a2b32f2f7af14e735a94634d9d4ea178e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b65a8b287401a8f5e6d65643bcb9330"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">dyno::Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a6b65a8b287401a8f5e6d65643bcb9330">mNode</a></td></tr>
+<tr class="separator:a6b65a8b287401a8f5e6d65643bcb9330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3658fbc1fc771fdd3b2e22b6f055f1c9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pipeline.html">dyno::Pipeline</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a3658fbc1fc771fdd3b2e22b6f055f1c9">mActivePipeline</a></td></tr>
+<tr class="separator:a3658fbc1fc771fdd3b2e22b6f055f1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09e7e1da9dce11b6dbdfc91051cdbf3f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_module.html">dyno::Module</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#a09e7e1da9dce11b6dbdfc91051cdbf3f">mStates</a></td></tr>
+<tr class="separator:a09e7e1da9dce11b6dbdfc91051cdbf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ec6ec128efb6b09aa6ebffd458aa68"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#ab1ec6ec128efb6b09aa6ebffd458aa68">mDx</a> = 100.0f</td></tr>
+<tr class="separator:ab1ec6ec128efb6b09aa6ebffd458aa68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e821a0e57479fc0fcff2ab23a3916d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#ac7e821a0e57479fc0fcff2ab23a3916d">mDy</a> = 50.0f</td></tr>
+<tr class="separator:ac7e821a0e57479fc0fcff2ab23a3916d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56ab647f0451515b315aea4e9e34f4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html#aa56ab647f0451515b315aea4e9e34f4e">mEditingEnabled</a> = true</td></tr>
+<tr class="separator:aa56ab647f0451515b315aea4e9e34f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Scene holds connections and nodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8h_source.html#l00014">14</a> of file <a class="el" href="_qt_module_flow_scene_8h_source.html">QtModuleFlowScene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8h_source.html#l00015">15</a> of file <a class="el" href="_qt_module_flow_scene_8h_source.html">QtModuleFlowScene.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3c3e4a41d9a729933426b1ee12c42abd" name="a3c3e4a41d9a729933426b1ee12c42abd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c3e4a41d9a729933426b1ee12c42abd">&#9670;&nbsp;</a></span>QtModuleFlowScene() <span class="overload">[1/2]</span></h2>
@@ -157,23 +185,22 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00014">14</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00031">31</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a3c3e4a41d9a729933426b1ee12c42abd_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a3c3e4a41d9a729933426b1ee12c42abd_cgraph" alt=""/></div>
 <map name="aclass_qt_1_1_qt_module_flow_scene_a3c3e4a41d9a729933426b1ee12c42abd_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_a3c3e4a41d9a729933426b1ee12c42abd_cgraph">
-<area shape="rect" title=" " alt="" coords="5,35,169,76"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a7aabd77db4eb888ed33c3c499c13594a" title=" " alt="" coords="217,35,381,76"/>
-<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a11570f009988ee1b54a76d27c46fa9af" title=" " alt="" coords="454,5,595,47"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a65605cdaab13c46e9f1600711f16277c" title=" " alt="" coords="429,71,620,98"/>
+<area shape="rect" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a8b38ae1b7464ceb8b9ee345f51fba5d3" title=" " alt="" coords="217,5,381,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a0120ba29b5ef37acb4e1fac2c7d5872b" title=" " alt="" coords="429,5,571,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a28db0e7a7c8a2dbff2f201a587a5ff7e" name="a28db0e7a7c8a2dbff2f201a587a5ff7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28db0e7a7c8a2dbff2f201a587a5ff7e">&#9670;&nbsp;</a></span>QtModuleFlowScene() <span class="overload">[2/2]</span></h2>
+<a id="ab19f78cfb9699a18375c5be14679f4d0" name="ab19f78cfb9699a18375c5be14679f4d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19f78cfb9699a18375c5be14679f4d0">&#9670;&nbsp;</a></span>QtModuleFlowScene() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +215,7 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_qt_1_1_qt_node_widget.html">QtNodeWidget</a> *&#160;</td>
-          <td class="paramname"><em>node_widget</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>widget</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -198,23 +225,44 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00021">21</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00038">38</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a28db0e7a7c8a2dbff2f201a587a5ff7e_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a28db0e7a7c8a2dbff2f201a587a5ff7e_cgraph" alt=""/></div>
-<map name="aclass_qt_1_1_qt_module_flow_scene_a28db0e7a7c8a2dbff2f201a587a5ff7e_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_a28db0e7a7c8a2dbff2f201a587a5ff7e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,199,169,241"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a93a9bcaeabeccd666019e718bdde1dd2" title=" " alt="" coords="218,55,413,81"/>
-<area shape="rect" href="classdyno_1_1_object.html#a465a0dcfc83098c1b702a690e4db91ec" title=" " alt="" coords="226,105,405,132"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a26a92dccabfb97f51067aa945606281a" title=" " alt="" coords="228,156,403,183"/>
-<area shape="rect" href="classdyno_1_1_object.html#a082440458df8b634b7cd3d8d7fb0cc33" title=" " alt="" coords="225,207,405,233"/>
-<area shape="rect" href="classdyno_1_1_module.html#a3bd819b959fd3894fa478167a5d2f190" title=" " alt="" coords="217,257,413,284"/>
-<area shape="rect" href="class_qt_1_1_qt_node_widget.html#af1350f75e828fab6b9713c6ed0719406" title=" " alt="" coords="223,308,408,335"/>
-<area shape="rect" href="classdyno_1_1_module.html#a0972542b013c9ea7ae169cddf5fff0b5" title=" " alt="" coords="235,359,395,385"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47" title="Add a field to Base FieldID will be set to the name of Field by default." alt="" coords="481,29,635,56"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a0a9735a2942cbc82f430d235e957edc5" title=" " alt="" coords="461,80,655,107"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a1142c17b3aa48a8f53280e4a0eb75992" title=" " alt="" coords="703,29,897,56"/>
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_ab19f78cfb9699a18375c5be14679f4d0_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_ab19f78cfb9699a18375c5be14679f4d0_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_ab19f78cfb9699a18375c5be14679f4d0_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_ab19f78cfb9699a18375c5be14679f4d0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,380,169,421"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a912718e3541a9382983f45f4c098c199" title=" " alt="" coords="228,59,392,100"/>
+<area shape="rect" href="classdyno_1_1_object.html#a465a0dcfc83098c1b702a690e4db91ec" title=" " alt="" coords="221,125,399,151"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a5f32be654faab7fdd0a8c934c503f82e" title=" " alt="" coords="228,176,392,217"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#af836a7e6cb53649cf69eceaefffb2422" title=" " alt="" coords="693,148,857,189"/>
+<area shape="rect" href="classdyno_1_1_object.html#a082440458df8b634b7cd3d8d7fb0cc33" title=" " alt="" coords="220,671,400,698"/>
+<area shape="rect" href="class_qt_1_1_qt_node_widget.html#af1350f75e828fab6b9713c6ed0719406" title=" " alt="" coords="217,722,403,749"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a8b38ae1b7464ceb8b9ee345f51fba5d3" title=" " alt="" coords="228,540,392,581"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ad024306e09b35557570fddcc7e3d312e" title=" " alt="" coords="228,605,392,647"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a0213026fd0192eca76280c076f49b7da" title=" " alt="" coords="228,475,392,516"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab47d437f682b9803944bd89b8accc29a" title=" " alt="" coords="693,213,857,255"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a19b05d51b7d446e13cb50668b43f859d" title="When enabled, the scenegraph can be updated as long as the corresponding GUI is updated." alt="" coords="937,5,1078,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a0120ba29b5ef37acb4e1fac2c7d5872b" title=" " alt="" coords="475,759,617,800"/>
+<area shape="rect" href="classdyno_1_1_directed_acyclic_graph.html#a4e9908833fad4fe38c120b09e55c4c21" title=" " alt="" coords="454,693,638,735"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#ad4b67a9399ee9a81fd99bb9c2891d81c" title=" " alt="" coords="931,520,1083,561"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#a9f797817faeb0f26be778c6f39520b09" title=" " alt="" coords="470,475,622,516"/>
+<area shape="rect" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8" title=" " alt="" coords="1179,441,1329,467"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a65605cdaab13c46e9f1600711f16277c" title=" " alt="" coords="451,642,641,669"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#a144ea09d5017263863cd47c9559067bd" title=" " alt="" coords="470,409,622,451"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a5adb4cec576710a317f374c34d0e11b4" title=" " alt="" coords="459,344,633,385"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#a63fb5cb89703c21d19a262f2110147c9" title=" " alt="" coords="699,409,851,451"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#abc41454a06023bf8ef05c2ab31622a4e" title=" " alt="" coords="699,344,851,385"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#a413e854742dfe61dae7a0cc66ae5b402" title=" " alt="" coords="689,475,860,516"/>
+<area shape="rect" href="classdyno_1_1_object.html#a1c74670edfee2018cfa434a0a6380ed5" title="Base Id." alt="" coords="936,466,1079,493"/>
+<area shape="rect" href="namespacedyno.html#a109d8400a967092c2a34c16d8a413e73" title=" " alt="" coords="965,415,1049,442"/>
+<area shape="rect" href="classdyno_1_1_node.html#ac916b8e66f57d13e7480c7d1459382c4" title=" " alt="" coords="1159,390,1349,417"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5" title=" " alt="" coords="1155,193,1353,219"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acbab255fddc6494e68f9d7d6ce37e7b3" title=" " alt="" coords="693,279,857,320"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a6d92541b3413d8d0fc1fb4646b59fb8b" title="When disabled, the scenegraph can not be affected by the corresponding GUI." alt="" coords="937,325,1078,367"/>
+<area shape="rect" href="classdyno_1_1_node.html#aba92798b2bb44a2afb84042ff83d753e" title=" " alt="" coords="908,223,1107,250"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a26a92dccabfb97f51067aa945606281a" title=" " alt="" coords="920,122,1095,149"/>
+<area shape="rect" href="classdyno_1_1_node.html#a1d33561dd28263e7e987865f4ce5508e" title=" " alt="" coords="919,173,1096,199"/>
 </map>
 </div>
 
@@ -235,13 +283,23 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00084">84</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00083">83</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_ac04b65dd023f4f9e238666a94e2d9ae4_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_ac04b65dd023f4f9e238666a94e2d9ae4_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_ac04b65dd023f4f9e238666a94e2d9ae4_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_ac04b65dd023f4f9e238666a94e2d9ae4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acbab255fddc6494e68f9d7d6ce37e7b3" title=" " alt="" coords="217,5,381,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a6d92541b3413d8d0fc1fb4646b59fb8b" title="When disabled, the scenegraph can not be affected by the corresponding GUI." alt="" coords="429,5,571,47"/>
+</map>
+</div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7aabd77db4eb888ed33c3c499c13594a" name="a7aabd77db4eb888ed33c3c499c13594a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aabd77db4eb888ed33c3c499c13594a">&#9670;&nbsp;</a></span>moveModulePosition</h2>
+<a id="a912718e3541a9382983f45f4c098c199" name="a912718e3541a9382983f45f4c098c199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912718e3541a9382983f45f4c098c199">&#9670;&nbsp;</a></span>addModule</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +308,166 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Qt::QtModuleFlowScene::moveModulePosition </td>
+          <td class="memname">void Qt::QtModuleFlowScene::addModule </td>
+          <td>(</td>
+          <td class="paramtype">QtNode &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00411">411</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a912718e3541a9382983f45f4c098c199_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a912718e3541a9382983f45f4c098c199_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_a912718e3541a9382983f45f4c098c199_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_a912718e3541a9382983f45f4c098c199_icgraph">
+<area shape="rect" title=" " alt="" coords="217,5,381,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="5,5,169,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5f32be654faab7fdd0a8c934c503f82e" name="a5f32be654faab7fdd0a8c934c503f82e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f32be654faab7fdd0a8c934c503f82e">&#9670;&nbsp;</a></span>deleteModule</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtModuleFlowScene::deleteModule </td>
+          <td>(</td>
+          <td class="paramtype">QtNode &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00423">423</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a5f32be654faab7fdd0a8c934c503f82e_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a5f32be654faab7fdd0a8c934c503f82e_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_a5f32be654faab7fdd0a8c934c503f82e_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_a5f32be654faab7fdd0a8c934c503f82e_icgraph">
+<area shape="rect" title=" " alt="" coords="217,5,381,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="5,5,169,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acbab255fddc6494e68f9d7d6ce37e7b3" name="acbab255fddc6494e68f9d7d6ce37e7b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbab255fddc6494e68f9d7d6ce37e7b3">&#9670;&nbsp;</a></span>disableEditing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtModuleFlowScene::disableEditing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00105">105</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_acbab255fddc6494e68f9d7d6ce37e7b3_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_acbab255fddc6494e68f9d7d6ce37e7b3_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_acbab255fddc6494e68f9d7d6ce37e7b3_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_acbab255fddc6494e68f9d7d6ce37e7b3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a6d92541b3413d8d0fc1fb4646b59fb8b" title="When disabled, the scenegraph can not be affected by the corresponding GUI." alt="" coords="217,5,359,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_acbab255fddc6494e68f9d7d6ce37e7b3_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_acbab255fddc6494e68f9d7d6ce37e7b3_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_acbab255fddc6494e68f9d7d6ce37e7b3_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_acbab255fddc6494e68f9d7d6ce37e7b3_icgraph">
+<area shape="rect" title=" " alt="" coords="652,104,816,145"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a5adb4cec576710a317f374c34d0e11b4" title=" " alt="" coords="429,71,604,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ac04b65dd023f4f9e238666a94e2d9ae4" title=" " alt="" coords="435,136,599,177"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a0213026fd0192eca76280c076f49b7da" title=" " alt="" coords="217,136,381,177"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#addeed20a2928406fac8349fc3489ea4a" title=" " alt="" coords="217,5,381,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624" title=" " alt="" coords="217,71,381,112"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="16,71,159,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="5,136,169,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af836a7e6cb53649cf69eceaefffb2422" name="af836a7e6cb53649cf69eceaefffb2422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af836a7e6cb53649cf69eceaefffb2422">&#9670;&nbsp;</a></span>enableEditing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtModuleFlowScene::enableEditing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00089">89</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_af836a7e6cb53649cf69eceaefffb2422_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_af836a7e6cb53649cf69eceaefffb2422_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_af836a7e6cb53649cf69eceaefffb2422_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_af836a7e6cb53649cf69eceaefffb2422_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a19b05d51b7d446e13cb50668b43f859d" title="When enabled, the scenegraph can be updated as long as the corresponding GUI is updated." alt="" coords="217,5,359,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_af836a7e6cb53649cf69eceaefffb2422_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_af836a7e6cb53649cf69eceaefffb2422_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_af836a7e6cb53649cf69eceaefffb2422_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_af836a7e6cb53649cf69eceaefffb2422_icgraph">
+<area shape="rect" title=" " alt="" coords="652,37,816,79"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a5adb4cec576710a317f374c34d0e11b4" title=" " alt="" coords="429,67,604,108"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a0213026fd0192eca76280c076f49b7da" title=" " alt="" coords="217,35,381,76"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#addeed20a2928406fac8349fc3489ea4a" title=" " alt="" coords="217,100,381,141"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624" title=" " alt="" coords="217,165,381,207"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="16,100,159,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8b38ae1b7464ceb8b9ee345f51fba5d3" name="a8b38ae1b7464ceb8b9ee345f51fba5d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b38ae1b7464ceb8b9ee345f51fba5d3">&#9670;&nbsp;</a></span>moveModule</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtModuleFlowScene::moveModule </td>
           <td>(</td>
           <td class="paramtype">QtNode &amp;&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -274,22 +491,21 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00209">209</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00229">229</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a7aabd77db4eb888ed33c3c499c13594a_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a7aabd77db4eb888ed33c3c499c13594a_cgraph" alt=""/></div>
-<map name="aclass_qt_1_1_qt_module_flow_scene_a7aabd77db4eb888ed33c3c499c13594a_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_a7aabd77db4eb888ed33c3c499c13594a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,35,169,76"/>
-<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a11570f009988ee1b54a76d27c46fa9af" title=" " alt="" coords="242,5,383,47"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a65605cdaab13c46e9f1600711f16277c" title=" " alt="" coords="217,71,408,98"/>
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a8b38ae1b7464ceb8b9ee345f51fba5d3_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a8b38ae1b7464ceb8b9ee345f51fba5d3_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_a8b38ae1b7464ceb8b9ee345f51fba5d3_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_a8b38ae1b7464ceb8b9ee345f51fba5d3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a0120ba29b5ef37acb4e1fac2c7d5872b" title=" " alt="" coords="217,5,359,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a7aabd77db4eb888ed33c3c499c13594a_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a7aabd77db4eb888ed33c3c499c13594a_icgraph" alt=""/></div>
-<map name="aclass_qt_1_1_qt_module_flow_scene_a7aabd77db4eb888ed33c3c499c13594a_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_a7aabd77db4eb888ed33c3c499c13594a_icgraph">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a8b38ae1b7464ceb8b9ee345f51fba5d3_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a8b38ae1b7464ceb8b9ee345f51fba5d3_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_a8b38ae1b7464ceb8b9ee345f51fba5d3_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_a8b38ae1b7464ceb8b9ee345f51fba5d3_icgraph">
 <area shape="rect" title=" " alt="" coords="217,5,381,47"/>
 <area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a3c3e4a41d9a729933426b1ee12c42abd" title=" " alt="" coords="5,5,169,47"/>
 </map>
@@ -297,47 +513,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a17c904aec4ff16e3aa39d4f50fc87c65" name="a17c904aec4ff16e3aa39d4f50fc87c65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17c904aec4ff16e3aa39d4f50fc87c65">&#9670;&nbsp;</a></span>pushModule()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Qt::QtModuleFlowScene::pushModule </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00090">90</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a17c904aec4ff16e3aa39d4f50fc87c65_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a17c904aec4ff16e3aa39d4f50fc87c65_cgraph" alt=""/></div>
-<map name="aclass_qt_1_1_qt_module_flow_scene_a17c904aec4ff16e3aa39d4f50fc87c65_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_a17c904aec4ff16e3aa39d4f50fc87c65_cgraph">
-<area shape="rect" title=" " alt="" coords="5,64,169,105"/>
-<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a11570f009988ee1b54a76d27c46fa9af" title=" " alt="" coords="242,5,383,47"/>
-<area shape="rect" href="class_qt_1_1_qt_node_widget.html#af1350f75e828fab6b9713c6ed0719406" title=" " alt="" coords="220,71,405,98"/>
-<area shape="rect" href="classdyno_1_1_node.html#ae5191762a3921f2ed45b1789bb9baf86" title=" " alt="" coords="217,122,408,149"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a17c904aec4ff16e3aa39d4f50fc87c65_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a17c904aec4ff16e3aa39d4f50fc87c65_icgraph" alt=""/></div>
-<map name="aclass_qt_1_1_qt_module_flow_scene_a17c904aec4ff16e3aa39d4f50fc87c65_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_a17c904aec4ff16e3aa39d4f50fc87c65_icgraph">
-<area shape="rect" title=" " alt="" coords="221,5,385,47"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_widget.html#ac219283c69461fac721c7e6314110724" title=" " alt="" coords="5,5,173,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a539537559677b40ad4d71c7b69be0fac" name="a539537559677b40ad4d71c7b69be0fac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a539537559677b40ad4d71c7b69be0fac">&#9670;&nbsp;</a></span>showNodeFlow</h2>
+<a id="a59a16aca07909797ab11a4076534819e" name="a59a16aca07909797ab11a4076534819e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59a16aca07909797ab11a4076534819e">&#9670;&nbsp;</a></span>nodeExportChanged</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +523,285 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Qt::QtModuleFlowScene::showNodeFlow </td>
+          <td class="memname">void Qt::QtModuleFlowScene::nodeExportChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a59a16aca07909797ab11a4076534819e_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a59a16aca07909797ab11a4076534819e_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_a59a16aca07909797ab11a4076534819e_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_a59a16aca07909797ab11a4076534819e_icgraph">
+<area shape="rect" title=" " alt="" coords="429,39,593,80"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ad024306e09b35557570fddcc7e3d312e" title=" " alt="" coords="217,5,381,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#a1f679cc75f55eef97022452590d38da1" title=" " alt="" coords="225,71,374,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="13,71,162,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad024306e09b35557570fddcc7e3d312e" name="ad024306e09b35557570fddcc7e3d312e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad024306e09b35557570fddcc7e3d312e">&#9670;&nbsp;</a></span>promoteOutput</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtModuleFlowScene::promoteOutput </td>
+          <td>(</td>
+          <td class="paramtype">QtNode &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PortIndex&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QPointF &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >pos: screen pos </p>
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00261">261</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_ad024306e09b35557570fddcc7e3d312e_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_ad024306e09b35557570fddcc7e3d312e_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_ad024306e09b35557570fddcc7e3d312e_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_ad024306e09b35557570fddcc7e3d312e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a0120ba29b5ef37acb4e1fac2c7d5872b" title=" " alt="" coords="217,5,359,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_ad024306e09b35557570fddcc7e3d312e_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_ad024306e09b35557570fddcc7e3d312e_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_ad024306e09b35557570fddcc7e3d312e_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_ad024306e09b35557570fddcc7e3d312e_icgraph">
+<area shape="rect" title=" " alt="" coords="217,5,381,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="5,5,169,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0213026fd0192eca76280c076f49b7da" name="a0213026fd0192eca76280c076f49b7da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0213026fd0192eca76280c076f49b7da">&#9670;&nbsp;</a></span>reorderAllModules</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtModuleFlowScene::reorderAllModules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00305">305</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a0213026fd0192eca76280c076f49b7da_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a0213026fd0192eca76280c076f49b7da_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_a0213026fd0192eca76280c076f49b7da_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_a0213026fd0192eca76280c076f49b7da_cgraph">
+<area shape="rect" title=" " alt="" coords="5,217,169,259"/>
+<area shape="rect" href="classdyno_1_1_directed_acyclic_graph.html#a4e9908833fad4fe38c120b09e55c4c21" title=" " alt="" coords="221,5,405,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a0120ba29b5ef37acb4e1fac2c7d5872b" title=" " alt="" coords="242,71,383,112"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#ad4b67a9399ee9a81fd99bb9c2891d81c" title=" " alt="" coords="685,269,837,311"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#a9f797817faeb0f26be778c6f39520b09" title=" " alt="" coords="237,188,389,229"/>
+<area shape="rect" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8" title=" " alt="" coords="915,318,1065,345"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a65605cdaab13c46e9f1600711f16277c" title=" " alt="" coords="217,305,408,331"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#a144ea09d5017263863cd47c9559067bd" title=" " alt="" coords="237,364,389,405"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a5adb4cec576710a317f374c34d0e11b4" title=" " alt="" coords="456,551,631,592"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#a63fb5cb89703c21d19a262f2110147c9" title=" " alt="" coords="467,371,619,412"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#abc41454a06023bf8ef05c2ab31622a4e" title=" " alt="" coords="467,436,619,477"/>
+<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#a413e854742dfe61dae7a0cc66ae5b402" title=" " alt="" coords="458,305,629,347"/>
+<area shape="rect" href="classdyno_1_1_object.html#a1c74670edfee2018cfa434a0a6380ed5" title="Base Id." alt="" coords="689,345,832,371"/>
+<area shape="rect" href="namespacedyno.html#a109d8400a967092c2a34c16d8a413e73" title=" " alt="" coords="719,419,803,446"/>
+<area shape="rect" href="classdyno_1_1_node.html#ac916b8e66f57d13e7480c7d1459382c4" title=" " alt="" coords="895,369,1085,395"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5" title=" " alt="" coords="891,419,1089,446"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acbab255fddc6494e68f9d7d6ce37e7b3" title=" " alt="" coords="679,601,843,643"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#af836a7e6cb53649cf69eceaefffb2422" title=" " alt="" coords="679,667,843,708"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab47d437f682b9803944bd89b8accc29a" title=" " alt="" coords="679,492,843,533"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a6d92541b3413d8d0fc1fb4646b59fb8b" title="When disabled, the scenegraph can not be affected by the corresponding GUI." alt="" coords="919,623,1061,664"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a19b05d51b7d446e13cb50668b43f859d" title="When enabled, the scenegraph can be updated as long as the corresponding GUI is updated." alt="" coords="919,688,1061,729"/>
+<area shape="rect" href="classdyno_1_1_node.html#aba92798b2bb44a2afb84042ff83d753e" title=" " alt="" coords="891,571,1089,598"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a26a92dccabfb97f51067aa945606281a" title=" " alt="" coords="903,470,1077,497"/>
+<area shape="rect" href="classdyno_1_1_node.html#a1d33561dd28263e7e987865f4ce5508e" title=" " alt="" coords="901,521,1079,547"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a0213026fd0192eca76280c076f49b7da_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a0213026fd0192eca76280c076f49b7da_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_a0213026fd0192eca76280c076f49b7da_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_a0213026fd0192eca76280c076f49b7da_icgraph">
+<area shape="rect" title=" " alt="" coords="217,39,381,80"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="16,5,159,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="5,71,169,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="addeed20a2928406fac8349fc3489ea4a" name="addeed20a2928406fac8349fc3489ea4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addeed20a2928406fac8349fc3489ea4a">&#9670;&nbsp;</a></span>showAnimationPipeline</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtModuleFlowScene::showAnimationPipeline </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00241">241</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_addeed20a2928406fac8349fc3489ea4a_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_addeed20a2928406fac8349fc3489ea4a_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_addeed20a2928406fac8349fc3489ea4a_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_addeed20a2928406fac8349fc3489ea4a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,71,169,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a5adb4cec576710a317f374c34d0e11b4" title=" " alt="" coords="217,71,392,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acbab255fddc6494e68f9d7d6ce37e7b3" title=" " alt="" coords="440,5,604,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#af836a7e6cb53649cf69eceaefffb2422" title=" " alt="" coords="440,71,604,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab47d437f682b9803944bd89b8accc29a" title=" " alt="" coords="440,205,604,247"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a6d92541b3413d8d0fc1fb4646b59fb8b" title="When disabled, the scenegraph can not be affected by the corresponding GUI." alt="" coords="681,5,822,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a19b05d51b7d446e13cb50668b43f859d" title="When enabled, the scenegraph can be updated as long as the corresponding GUI is updated." alt="" coords="681,71,822,112"/>
+<area shape="rect" href="classdyno_1_1_node.html#aba92798b2bb44a2afb84042ff83d753e" title=" " alt="" coords="652,137,851,163"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a26a92dccabfb97f51067aa945606281a" title=" " alt="" coords="664,187,839,214"/>
+<area shape="rect" href="classdyno_1_1_node.html#a1d33561dd28263e7e987865f4ce5508e" title=" " alt="" coords="663,238,840,265"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5" title=" " alt="" coords="652,289,851,315"/>
+<area shape="rect" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8" title=" " alt="" coords="677,339,826,366"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_addeed20a2928406fac8349fc3489ea4a_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_addeed20a2928406fac8349fc3489ea4a_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_addeed20a2928406fac8349fc3489ea4a_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_addeed20a2928406fac8349fc3489ea4a_icgraph">
+<area shape="rect" title=" " alt="" coords="196,5,360,47"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="5,5,148,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acd15be0b4f83b75d7f65d55b58803624" name="acd15be0b4f83b75d7f65d55b58803624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd15be0b4f83b75d7f65d55b58803624">&#9670;&nbsp;</a></span>showGraphicsPipeline</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtModuleFlowScene::showGraphicsPipeline </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00251">251</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_acd15be0b4f83b75d7f65d55b58803624_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_acd15be0b4f83b75d7f65d55b58803624_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_acd15be0b4f83b75d7f65d55b58803624_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_acd15be0b4f83b75d7f65d55b58803624_cgraph">
+<area shape="rect" title=" " alt="" coords="5,71,169,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a5adb4cec576710a317f374c34d0e11b4" title=" " alt="" coords="217,71,392,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acbab255fddc6494e68f9d7d6ce37e7b3" title=" " alt="" coords="440,5,604,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#af836a7e6cb53649cf69eceaefffb2422" title=" " alt="" coords="440,71,604,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab47d437f682b9803944bd89b8accc29a" title=" " alt="" coords="440,205,604,247"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a6d92541b3413d8d0fc1fb4646b59fb8b" title="When disabled, the scenegraph can not be affected by the corresponding GUI." alt="" coords="681,5,822,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a19b05d51b7d446e13cb50668b43f859d" title="When enabled, the scenegraph can be updated as long as the corresponding GUI is updated." alt="" coords="681,71,822,112"/>
+<area shape="rect" href="classdyno_1_1_node.html#aba92798b2bb44a2afb84042ff83d753e" title=" " alt="" coords="652,137,851,163"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a26a92dccabfb97f51067aa945606281a" title=" " alt="" coords="664,187,839,214"/>
+<area shape="rect" href="classdyno_1_1_node.html#a1d33561dd28263e7e987865f4ce5508e" title=" " alt="" coords="663,238,840,265"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5" title=" " alt="" coords="652,289,851,315"/>
+<area shape="rect" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8" title=" " alt="" coords="677,339,826,366"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_acd15be0b4f83b75d7f65d55b58803624_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_acd15be0b4f83b75d7f65d55b58803624_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_acd15be0b4f83b75d7f65d55b58803624_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_acd15be0b4f83b75d7f65d55b58803624_icgraph">
+<area shape="rect" title=" " alt="" coords="196,5,360,47"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="5,5,148,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab47d437f682b9803944bd89b8accc29a" name="ab47d437f682b9803944bd89b8accc29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab47d437f682b9803944bd89b8accc29a">&#9670;&nbsp;</a></span>showModuleFlow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtModuleFlowScene::showModuleFlow </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdyno_1_1_node.html">Node</a> *&#160;</td>
           <td class="paramname"><em>node</em></td><td>)</td>
@@ -360,22 +815,98 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00125">125</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00121">121</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_ab47d437f682b9803944bd89b8accc29a_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_ab47d437f682b9803944bd89b8accc29a_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_ab47d437f682b9803944bd89b8accc29a_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_ab47d437f682b9803944bd89b8accc29a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,99,169,141"/>
+<area shape="rect" href="classdyno_1_1_node.html#aba92798b2bb44a2afb84042ff83d753e" title=" " alt="" coords="217,5,416,32"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a26a92dccabfb97f51067aa945606281a" title=" " alt="" coords="229,56,404,83"/>
+<area shape="rect" href="classdyno_1_1_node.html#a1d33561dd28263e7e987865f4ce5508e" title=" " alt="" coords="228,107,405,133"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5" title=" " alt="" coords="217,157,416,184"/>
+<area shape="rect" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8" title=" " alt="" coords="242,208,391,235"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a539537559677b40ad4d71c7b69be0fac_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a539537559677b40ad4d71c7b69be0fac_icgraph" alt=""/></div>
-<map name="aclass_qt_1_1_qt_module_flow_scene_a539537559677b40ad4d71c7b69be0fac_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_a539537559677b40ad4d71c7b69be0fac_icgraph">
-<area shape="rect" title=" " alt="" coords="196,5,360,47"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,5,148,47"/>
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_ab47d437f682b9803944bd89b8accc29a_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_ab47d437f682b9803944bd89b8accc29a_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_ab47d437f682b9803944bd89b8accc29a_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_ab47d437f682b9803944bd89b8accc29a_icgraph">
+<area shape="rect" title=" " alt="" coords="652,37,816,79"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a5adb4cec576710a317f374c34d0e11b4" title=" " alt="" coords="429,67,604,108"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a0213026fd0192eca76280c076f49b7da" title=" " alt="" coords="217,35,381,76"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#addeed20a2928406fac8349fc3489ea4a" title=" " alt="" coords="217,100,381,141"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624" title=" " alt="" coords="217,165,381,207"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="16,100,159,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5adb4cec576710a317f374c34d0e11b4" name="a5adb4cec576710a317f374c34d0e11b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5adb4cec576710a317f374c34d0e11b4">&#9670;&nbsp;</a></span>updateModuleGraphView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtModuleFlowScene::updateModuleGraphView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8cpp_source.html#l00293">293</a> of file <a class="el" href="_qt_module_flow_scene_8cpp_source.html">QtModuleFlowScene.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a5adb4cec576710a317f374c34d0e11b4_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a5adb4cec576710a317f374c34d0e11b4_cgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_a5adb4cec576710a317f374c34d0e11b4_cgraph" id="aclass_qt_1_1_qt_module_flow_scene_a5adb4cec576710a317f374c34d0e11b4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,71,180,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acbab255fddc6494e68f9d7d6ce37e7b3" title=" " alt="" coords="228,5,392,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#af836a7e6cb53649cf69eceaefffb2422" title=" " alt="" coords="228,71,392,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab47d437f682b9803944bd89b8accc29a" title=" " alt="" coords="228,205,392,247"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a6d92541b3413d8d0fc1fb4646b59fb8b" title="When disabled, the scenegraph can not be affected by the corresponding GUI." alt="" coords="469,5,610,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a19b05d51b7d446e13cb50668b43f859d" title="When enabled, the scenegraph can be updated as long as the corresponding GUI is updated." alt="" coords="469,71,610,112"/>
+<area shape="rect" href="classdyno_1_1_node.html#aba92798b2bb44a2afb84042ff83d753e" title=" " alt="" coords="440,137,639,163"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a26a92dccabfb97f51067aa945606281a" title=" " alt="" coords="452,187,627,214"/>
+<area shape="rect" href="classdyno_1_1_node.html#a1d33561dd28263e7e987865f4ce5508e" title=" " alt="" coords="451,238,628,265"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5" title=" " alt="" coords="440,289,639,315"/>
+<area shape="rect" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8" title=" " alt="" coords="465,339,614,366"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_module_flow_scene_a5adb4cec576710a317f374c34d0e11b4_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_scene_a5adb4cec576710a317f374c34d0e11b4_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_module_flow_scene_a5adb4cec576710a317f374c34d0e11b4_icgraph" id="aclass_qt_1_1_qt_module_flow_scene_a5adb4cec576710a317f374c34d0e11b4_icgraph">
+<area shape="rect" title=" " alt="" coords="429,71,604,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a0213026fd0192eca76280c076f49b7da" title=" " alt="" coords="217,136,381,177"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#addeed20a2928406fac8349fc3489ea4a" title=" " alt="" coords="217,5,381,47"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624" title=" " alt="" coords="217,71,381,112"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="16,71,159,112"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="5,136,169,177"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a513bf3c8ea7a07a3377c2e9c97471fdd" name="a513bf3c8ea7a07a3377c2e9c97471fdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a513bf3c8ea7a07a3377c2e9c97471fdd">&#9670;&nbsp;</a></span>m_node</h2>
+<a id="a3658fbc1fc771fdd3b2e22b6f055f1c9" name="a3658fbc1fc771fdd3b2e22b6f055f1c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3658fbc1fc771fdd3b2e22b6f055f1c9">&#9670;&nbsp;</a></span>mActivePipeline</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,7 +915,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::weak_ptr&lt;<a class="el" href="classdyno_1_1_node.html">dyno::Node</a>&gt; Qt::QtModuleFlowScene::m_node</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_pipeline.html">dyno::Pipeline</a>&gt; Qt::QtModuleFlowScene::mActivePipeline</td>
         </tr>
       </table>
   </td>
@@ -394,12 +925,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8h_source.html#l00039">39</a> of file <a class="el" href="_qt_module_flow_scene_8h_source.html">QtModuleFlowScene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8h_source.html#l00060">60</a> of file <a class="el" href="_qt_module_flow_scene_8h_source.html">QtModuleFlowScene.h</a>.</p>
 
 </div>
 </div>
-<a id="a2b32f2f7af14e735a94634d9d4ea178e" name="a2b32f2f7af14e735a94634d9d4ea178e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b32f2f7af14e735a94634d9d4ea178e">&#9670;&nbsp;</a></span>m_parent_node</h2>
+<a id="ab1ec6ec128efb6b09aa6ebffd458aa68" name="ab1ec6ec128efb6b09aa6ebffd458aa68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ec6ec128efb6b09aa6ebffd458aa68">&#9670;&nbsp;</a></span>mDx</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,7 +939,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_qt_1_1_qt_node_widget.html">QtNodeWidget</a>* Qt::QtModuleFlowScene::m_parent_node</td>
+          <td class="memname">float Qt::QtModuleFlowScene::mDx = 100.0f</td>
         </tr>
       </table>
   </td>
@@ -418,7 +949,103 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8h_source.html#l00040">40</a> of file <a class="el" href="_qt_module_flow_scene_8h_source.html">QtModuleFlowScene.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8h_source.html#l00065">65</a> of file <a class="el" href="_qt_module_flow_scene_8h_source.html">QtModuleFlowScene.h</a>.</p>
+
+</div>
+</div>
+<a id="ac7e821a0e57479fc0fcff2ab23a3916d" name="ac7e821a0e57479fc0fcff2ab23a3916d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7e821a0e57479fc0fcff2ab23a3916d">&#9670;&nbsp;</a></span>mDy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Qt::QtModuleFlowScene::mDy = 50.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8h_source.html#l00066">66</a> of file <a class="el" href="_qt_module_flow_scene_8h_source.html">QtModuleFlowScene.h</a>.</p>
+
+</div>
+</div>
+<a id="aa56ab647f0451515b315aea4e9e34f4e" name="aa56ab647f0451515b315aea4e9e34f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa56ab647f0451515b315aea4e9e34f4e">&#9670;&nbsp;</a></span>mEditingEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Qt::QtModuleFlowScene::mEditingEnabled = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8h_source.html#l00068">68</a> of file <a class="el" href="_qt_module_flow_scene_8h_source.html">QtModuleFlowScene.h</a>.</p>
+
+</div>
+</div>
+<a id="a6b65a8b287401a8f5e6d65643bcb9330" name="a6b65a8b287401a8f5e6d65643bcb9330"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b65a8b287401a8f5e6d65643bcb9330">&#9670;&nbsp;</a></span>mNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_node.html">dyno::Node</a>&gt; Qt::QtModuleFlowScene::mNode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8h_source.html#l00059">59</a> of file <a class="el" href="_qt_module_flow_scene_8h_source.html">QtModuleFlowScene.h</a>.</p>
+
+</div>
+</div>
+<a id="a09e7e1da9dce11b6dbdfc91051cdbf3f" name="a09e7e1da9dce11b6dbdfc91051cdbf3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09e7e1da9dce11b6dbdfc91051cdbf3f">&#9670;&nbsp;</a></span>mStates</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_module.html">dyno::Module</a>&gt; Qt::QtModuleFlowScene::mStates</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_scene_8h_source.html#l00063">63</a> of file <a class="el" href="_qt_module_flow_scene_8h_source.html">QtModuleFlowScene.h</a>.</p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -76,27 +76,26 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;cuda_runtime.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_typedef_8inl_source.html">Typedef.inl</a>&quot;</code><br />
-<code>#include &lt;string&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Platform.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="_platform_8h__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_core_2_platform_8h" alt=""/></div>
 <map name="a_e_1_2_peridyno_2peridyno_2src_2_core_2_platform_8h" id="a_e_1_2_peridyno_2peridyno_2src_2_core_2_platform_8h">
-<area shape="rect" title=" " alt="" coords="96,5,239,47"/>
+<area shape="rect" title=" " alt="" coords="241,5,384,47"/>
 <area shape="rect" title=" " alt="" coords="5,169,116,196"/>
-<area shape="rect" href="_typedef_8inl.html" title=" " alt="" coords="729,95,813,121"/>
-<area shape="rect" title=" " alt="" coords="140,169,195,196"/>
-<area shape="rect" title=" " alt="" coords="895,169,933,196"/>
-<area shape="rect" title=" " alt="" coords="958,169,1014,196"/>
-<area shape="rect" title=" " alt="" coords="1039,169,1085,196"/>
-<area shape="rect" title=" " alt="" coords="1110,169,1179,196"/>
-<area shape="rect" title=" " alt="" coords="1203,169,1278,196"/>
-<area shape="rect" title=" " alt="" coords="1302,169,1371,196"/>
-<area shape="rect" title=" " alt="" coords="219,169,281,196"/>
-<area shape="rect" title=" " alt="" coords="305,169,491,196"/>
-<area shape="rect" title=" " alt="" coords="515,169,622,196"/>
-<area shape="rect" title=" " alt="" coords="647,169,773,196"/>
-<area shape="rect" title=" " alt="" coords="798,169,870,196"/>
+<area shape="rect" href="_typedef_8inl.html" title=" " alt="" coords="479,95,563,121"/>
+<area shape="rect" title=" " alt="" coords="140,169,179,196"/>
+<area shape="rect" title=" " alt="" coords="203,169,259,196"/>
+<area shape="rect" title=" " alt="" coords="284,169,331,196"/>
+<area shape="rect" title=" " alt="" coords="355,169,425,196"/>
+<area shape="rect" title=" " alt="" coords="449,169,504,196"/>
+<area shape="rect" title=" " alt="" coords="529,169,603,196"/>
+<area shape="rect" title=" " alt="" coords="627,169,697,196"/>
+<area shape="rect" title=" " alt="" coords="721,169,782,196"/>
+<area shape="rect" title=" " alt="" coords="806,169,993,196"/>
+<area shape="rect" title=" " alt="" coords="1017,169,1123,196"/>
+<area shape="rect" title=" " alt="" coords="1148,169,1275,196"/>
+<area shape="rect" title=" " alt="" coords="1299,169,1371,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -104,56 +103,56 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="_platform_8h__dep__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_core_2_platform_8hdep" alt=""/></div>
 <map name="a_e_1_2_peridyno_2peridyno_2src_2_core_2_platform_8hdep" id="a_e_1_2_peridyno_2peridyno_2src_2_core_2_platform_8hdep">
-<area shape="rect" title=" " alt="" coords="3453,5,3596,47"/>
+<area shape="rect" title=" " alt="" coords="3507,5,3649,47"/>
 <area shape="rect" href="_cuda_rand_8h.html" title=" " alt="" coords="5,206,215,247"/>
 <area shape="rect" href="_functional_8h.html" title=" " alt="" coords="239,206,448,247"/>
-<area shape="rect" href="_array_8h.html" title=" " alt="" coords="1739,102,1895,143"/>
-<area shape="rect" href="_node_8h.html" title=" " alt="" coords="3471,511,3629,552"/>
-<area shape="rect" href="_array2_d_8h.html" title=" " alt="" coords="1952,102,2124,143"/>
-<area shape="rect" href="_array3_d_8h.html" title=" " alt="" coords="2148,102,2320,143"/>
-<area shape="rect" href="_distance_field3_d_8h.html" title="GPU supported signed distance field." alt="" coords="2637,199,2805,255"/>
-<area shape="rect" href="_complex_8h.html" title=" " alt="" coords="2447,102,2589,143"/>
-<area shape="rect" href="_interval_8h.html" title=" " alt="" coords="2613,102,2756,143"/>
-<area shape="rect" href="_matrix_func_8h.html" title=" " alt="" coords="2781,102,2975,143"/>
-<area shape="rect" href="rigid__base_8h.html" title=" " alt="" coords="3000,95,3143,151"/>
-<area shape="rect" href="_list_8h.html" title=" " alt="" coords="3319,206,3461,247"/>
-<area shape="rect" href="_map_8h.html" title=" " alt="" coords="2905,206,3048,247"/>
-<area shape="rect" href="_multi_map_8h.html" title=" " alt="" coords="3073,206,3243,247"/>
-<area shape="rect" href="_multi_set_8h.html" title=" " alt="" coords="3615,206,3781,247"/>
-<area shape="rect" href="_pair_8h.html" title=" " alt="" coords="3167,102,3309,143"/>
-<area shape="rect" href="_s_t_l_buffer_8h.html" title=" " alt="" coords="3638,102,3811,143"/>
-<area shape="rect" href="_set_8h.html" title=" " alt="" coords="4047,206,4189,247"/>
-<area shape="rect" href="_stack_8h.html" title=" " alt="" coords="4667,206,4817,247"/>
-<area shape="rect" href="_s_t_l_macro_8h.html" title=" " alt="" coords="3835,102,4011,143"/>
-<area shape="rect" href="_vector_base_8h.html" title=" " alt="" coords="4035,102,4235,143"/>
-<area shape="rect" href="_vector_n_d_8h.html" title=" " alt="" coords="4260,102,4448,143"/>
-<area shape="rect" href="_attribute_8h.html" title=" " alt="" coords="4472,95,4671,151"/>
-<area shape="rect" href="_kernel_8h.html" title=" " alt="" coords="4695,95,4893,151"/>
-<area shape="rect" href="_neighbor_data_8h.html" title=" " alt="" coords="2337,303,2526,359"/>
-<area shape="rect" href="_f_base_8h.html" title=" " alt="" coords="3126,310,3291,351"/>
-<area shape="rect" href="_module_8h.html" title=" " alt="" coords="5020,102,5189,143"/>
-<area shape="rect" href="_device_context_8h.html" title=" " alt="" coords="5081,199,5240,255"/>
-<area shape="rect" href="_animation_pipeline_8h.html" title=" " alt="" coords="3471,407,3629,463"/>
-<area shape="rect" href="_color_8h.html" title=" " alt="" coords="5316,102,5499,143"/>
-<area shape="rect" href="_glfw_app_8h.html" title=" " alt="" coords="5523,95,5705,151"/>
-<area shape="rect" href="_p_main_window_8cpp.html" title=" " alt="" coords="5729,95,5901,151"/>
-<area shape="rect" href="_algorithm_8h.html" title=" " alt="" coords="504,310,649,351"/>
-<area shape="rect" href="_arithmetic_8h.html" title=" " alt="" coords="473,206,681,247"/>
-<area shape="rect" href="_for_each_8h.html" title=" " alt="" coords="1580,206,1779,247"/>
-<area shape="rect" href="_function2_pt_8h.html" title=" " alt="" coords="2318,206,2537,247"/>
-<area shape="rect" href="_scan_8h.html" title=" " alt="" coords="705,206,883,247"/>
-<area shape="rect" href="_array_map_8inl.html" title=" " alt="" coords="1723,310,1910,351"/>
-<area shape="rect" href="_array_map_8h.html" title=" " alt="" coords="1726,414,1907,455"/>
-<area shape="rect" href="_s_m_algorithm_8h.html" title=" " alt="" coords="1810,511,2015,552"/>
-<area shape="rect" href="_sparse_matrix_8h.html" title=" " alt="" coords="1149,511,1356,552"/>
-<area shape="rect" href="_array_list_8h.html" title=" " alt="" coords="2551,310,2728,351"/>
-<area shape="rect" href="_shared_func_8h.html" title=" " alt="" coords="2337,407,2526,463"/>
-<area shape="rect" href="_field_8h.html" title=" " alt="" coords="2765,414,2919,455"/>
-<area shape="rect" href="_array_tools_8h.html" title=" " alt="" coords="1854,206,2041,247"/>
-<area shape="rect" href="_collidable_points_8h.html" title=" " alt="" coords="958,199,1123,255"/>
-<area shape="rect" href="_collidable_s_d_f_8h.html" title=" " alt="" coords="2097,303,2262,359"/>
-<area shape="rect" href="_frame_to_point_set_8h.html" title=" " alt="" coords="1147,199,1313,255"/>
-<area shape="rect" href="_sparse_octree_8h.html" title=" " alt="" coords="1337,199,1505,255"/>
+<area shape="rect" href="_array_8h.html" title=" " alt="" coords="1564,102,1720,143"/>
+<area shape="rect" href="_array2_d_8h.html" title=" " alt="" coords="507,102,679,143"/>
+<area shape="rect" href="_array3_d_8h.html" title=" " alt="" coords="713,102,885,143"/>
+<area shape="rect" href="_distance_field3_d_8h.html" title="GPU supported signed distance field." alt="" coords="715,199,883,255"/>
+<area shape="rect" href="_complex_8h.html" title=" " alt="" coords="2953,102,3096,143"/>
+<area shape="rect" href="_interval_8h.html" title=" " alt="" coords="3120,102,3263,143"/>
+<area shape="rect" href="_matrix_func_8h.html" title=" " alt="" coords="3287,102,3482,143"/>
+<area shape="rect" href="rigid__base_8h.html" title=" " alt="" coords="3507,95,3649,151"/>
+<area shape="rect" href="_list_8h.html" title=" " alt="" coords="2444,206,2587,247"/>
+<area shape="rect" href="_map_8h.html" title=" " alt="" coords="2081,206,2224,247"/>
+<area shape="rect" href="_multi_map_8h.html" title=" " alt="" coords="2249,206,2419,247"/>
+<area shape="rect" href="_multi_set_8h.html" title=" " alt="" coords="2662,206,2827,247"/>
+<area shape="rect" href="_pair_8h.html" title=" " alt="" coords="2263,102,2405,143"/>
+<area shape="rect" href="_s_t_l_buffer_8h.html" title=" " alt="" coords="2654,102,2827,143"/>
+<area shape="rect" href="_set_8h.html" title=" " alt="" coords="2852,206,2995,247"/>
+<area shape="rect" href="_stack_8h.html" title=" " alt="" coords="3019,206,3169,247"/>
+<area shape="rect" href="_s_t_l_macro_8h.html" title=" " alt="" coords="3674,102,3850,143"/>
+<area shape="rect" href="_vector_base_8h.html" title=" " alt="" coords="3874,102,4074,143"/>
+<area shape="rect" href="_vector_n_d_8h.html" title=" " alt="" coords="4099,102,4287,143"/>
+<area shape="rect" href="_attribute_8h.html" title=" " alt="" coords="4311,95,4509,151"/>
+<area shape="rect" href="_kernel_8h.html" title=" " alt="" coords="4533,95,4732,151"/>
+<area shape="rect" href="_neighbor_data_8h.html" title=" " alt="" coords="2481,303,2670,359"/>
+<area shape="rect" href="_f_base_8h.html" title=" " alt="" coords="4805,206,4970,247"/>
+<area shape="rect" href="_module_8h.html" title=" " alt="" coords="5025,102,5195,143"/>
+<area shape="rect" href="_device_context_8h.html" title=" " alt="" coords="5059,199,5217,255"/>
+<area shape="rect" href="_animation_pipeline_8h.html" title=" " alt="" coords="5271,95,5429,151"/>
+<area shape="rect" href="_node_8h.html" title=" " alt="" coords="5330,206,5487,247"/>
+<area shape="rect" href="_time_stamp_8h.html" title=" " alt="" coords="4756,102,4949,143"/>
+<area shape="rect" href="_color_8h.html" title=" " alt="" coords="5505,102,5688,143"/>
+<area shape="rect" href="_glfw_app_8h.html" title=" " alt="" coords="5712,95,5895,151"/>
+<area shape="rect" href="_p_animation_widget_8cpp.html" title=" " alt="" coords="5919,95,6091,151"/>
+<area shape="rect" href="_p_log_widget_8cpp.html" title=" " alt="" coords="6115,95,6287,151"/>
+<area shape="rect" href="_p_main_tool_bar_8cpp.html" title=" " alt="" coords="6311,95,6483,151"/>
+<area shape="rect" href="_p_main_window_8cpp.html" title=" " alt="" coords="6507,95,6679,151"/>
+<area shape="rect" href="_p_module_editor_tool_bar_8cpp.html" title=" " alt="" coords="6703,95,6883,151"/>
+<area shape="rect" href="_algorithm_8h.html" title=" " alt="" coords="509,310,655,351"/>
+<area shape="rect" href="_arithmetic_8h.html" title=" " alt="" coords="907,206,1115,247"/>
+<area shape="rect" href="_for_each_8h.html" title=" " alt="" coords="1705,206,1904,247"/>
+<area shape="rect" href="_function2_pt_8h.html" title=" " alt="" coords="473,206,691,247"/>
+<area shape="rect" href="_scan_8h.html" title=" " alt="" coords="1190,206,1369,247"/>
+<area shape="rect" href="_array_map_8inl.html" title=" " alt="" coords="1418,310,1605,351"/>
+<area shape="rect" href="_array_map_8h.html" title=" " alt="" coords="1577,414,1758,455"/>
+<area shape="rect" href="_s_m_algorithm_8h.html" title=" " alt="" coords="1677,511,1882,552"/>
+<area shape="rect" href="_sparse_matrix_8h.html" title=" " alt="" coords="1304,511,1511,552"/>
+<area shape="rect" href="_array_list_8h.html" title=" " alt="" coords="2204,310,2381,351"/>
+<area shape="rect" href="_shared_func_8h.html" title=" " alt="" coords="2198,407,2387,463"/>
+<area shape="rect" href="_array_tools_8h.html" title=" " alt="" coords="1393,206,1579,247"/>
 </map>
 </div>
 </div>
@@ -161,13 +160,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:afcca4bdec38092e934786f049f599881"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_platform_8h.html#afcca4bdec38092e934786f049f599881">PERIDYNO_VERSION</a>&#160;&#160;&#160;0.4.2</td></tr>
+<tr class="memitem:afcca4bdec38092e934786f049f599881"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_platform_8h.html#afcca4bdec38092e934786f049f599881">PERIDYNO_VERSION</a>&#160;&#160;&#160;0.6.1</td></tr>
 <tr class="separator:afcca4bdec38092e934786f049f599881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7aabf26de701ac9abfb472b1b69390e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_platform_8h.html#ad7aabf26de701ac9abfb472b1b69390e">PERIDYNO_VERSION_MAJOR</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:ad7aabf26de701ac9abfb472b1b69390e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0edba63cd9878824a2747d7b1788ab6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_platform_8h.html#aa0edba63cd9878824a2747d7b1788ab6">PERIDYNO_VERSION_MINOR</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memitem:aa0edba63cd9878824a2747d7b1788ab6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_platform_8h.html#aa0edba63cd9878824a2747d7b1788ab6">PERIDYNO_VERSION_MINOR</a>&#160;&#160;&#160;6</td></tr>
 <tr class="separator:aa0edba63cd9878824a2747d7b1788ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6973030b0fc53ab71a6c62015e57cfff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_platform_8h.html#a6973030b0fc53ab71a6c62015e57cfff">PERIDYNO_VERSION_PATCH</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:a6973030b0fc53ab71a6c62015e57cfff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_platform_8h.html#a6973030b0fc53ab71a6c62015e57cfff">PERIDYNO_VERSION_PATCH</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a6973030b0fc53ab71a6c62015e57cfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d08f15b80ca5f1ded7f374a172f7d4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_platform_8h.html#a6d08f15b80ca5f1ded7f374a172f7d4e">PERIDYNO_EXPORT</a></td></tr>
 <tr class="separator:a6d08f15b80ca5f1ded7f374a172f7d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,7 +302,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PERIDYNO_VERSION&#160;&#160;&#160;0.4.2</td>
+          <td class="memname">#define PERIDYNO_VERSION&#160;&#160;&#160;0.6.1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -335,7 +334,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PERIDYNO_VERSION_MINOR&#160;&#160;&#160;4</td>
+          <td class="memname">#define PERIDYNO_VERSION_MINOR&#160;&#160;&#160;6</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -351,7 +350,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PERIDYNO_VERSION_PATCH&#160;&#160;&#160;2</td>
+          <td class="memname">#define PERIDYNO_VERSION_PATCH&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -438,18 +437,31 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_platform_8h_source.html#l00053">53</a> of file <a class="el" href="_platform_8h_source.html">Platform.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_platform_8h_source.html#l00051">51</a> of file <a class="el" href="_platform_8h_source.html">Platform.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="_platform_8h_a44f975ef0e37b97956e79735c2532420_icgraph.png" border="0" usemap="#a_platform_8h_a44f975ef0e37b97956e79735c2532420_icgraph" alt=""/></div>
 <map name="a_platform_8h_a44f975ef0e37b97956e79735c2532420_icgraph" id="a_platform_8h_a44f975ef0e37b97956e79735c2532420_icgraph">
-<area shape="rect" title=" " alt="" coords="871,35,972,61"/>
-<area shape="rect" href="namespace_im_gui.html#a3efe91fac863dfddb0d0ab6491b67ad5" title=" " alt="" coords="681,35,823,61"/>
-<area shape="rect" href="classdyno_1_1_im_window.html#af9f5295ad72248cfcd9a9e2cb17dcf01" title=" " alt="" coords="460,35,633,61"/>
-<area shape="rect" href="classdyno_1_1_glfw_app.html#aa462562419fdf7f0b31aa192ba707877" title=" " alt="" coords="216,5,412,32"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4443931ffdaa4d0751e918e3f1f32ff2" title=" " alt="" coords="236,57,392,98"/>
-<area shape="rect" href="classdyno_1_1_glfw_app.html#accee0da648bbf85a02d0a7ab3c6845b3" title=" " alt="" coords="5,5,168,32"/>
+<area shape="rect" title=" " alt="" coords="929,232,1031,259"/>
+<area shape="rect" href="classdyno_1_1_p_log_widget.html#a73d6ad6b3d07d98fc65bc65c4f44c687" title=" " alt="" coords="699,5,877,32"/>
+<area shape="rect" href="namespace_im_gui.html#a3efe91fac863dfddb0d0ab6491b67ad5" title=" " alt="" coords="717,56,859,83"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a396e065b7db0d9f7b8a39e4750e973f0" title=" " alt="" coords="705,107,871,149"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="490,293,629,334"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6c261b693789b64d7a94da13fb8aa1b" title=" " alt="" coords="713,225,863,266"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor_tool_bar.html#a6734ff2c4f646df43bec28eff0d615a7" title=" " alt="" coords="695,290,881,331"/>
+<area shape="rect" href="classdyno_1_1_q_file_path_widget.html#a277633bbab5f43e85b8c7096400346ac" title=" " alt="" coords="709,355,867,397"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7" title=" " alt="" coords="719,421,857,462"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="709,486,867,527"/>
+<area shape="rect" href="classdyno_1_1_p_log_widget.html#af1e06188ad2139339ff85efa39c39601" title=" " alt="" coords="472,5,647,32"/>
+<area shape="rect" href="classdyno_1_1_p_log_widget.html#a46583f5073271753bb8b85ecc08c4c05" title=" " alt="" coords="216,5,424,32"/>
+<area shape="rect" href="classdyno_1_1_im_window.html#af9f5295ad72248cfcd9a9e2cb17dcf01" title=" " alt="" coords="473,56,646,83"/>
+<area shape="rect" href="classdyno_1_1_glfw_app.html#aa462562419fdf7f0b31aa192ba707877" title=" " alt="" coords="222,56,418,83"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4443931ffdaa4d0751e918e3f1f32ff2" title=" " alt="" coords="242,107,398,149"/>
+<area shape="rect" href="classdyno_1_1_glfw_app.html#accee0da648bbf85a02d0a7ab3c6845b3" title=" " alt="" coords="5,56,168,83"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="481,486,638,527"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="249,453,391,494"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="245,518,395,559"/>
 </map>
 </div>
 

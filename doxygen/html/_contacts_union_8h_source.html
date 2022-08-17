@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -95,8 +95,11 @@ $(function() {
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classdyno_1_1_contacts_union.html#a618db8bb2917366d7f57ab991c9dedff">   38</a></span>        <a class="code hl_function" href="classdyno_1_1_contacts_union.html#a618db8bb2917366d7f57ab991c9dedff">DEF_ARRAY_IN</a>(<a class="code hl_class" href="classdyno_1_1_t_contact_pair.html">ContactPair</a>, ContactsB, <a class="code hl_enumvalue" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classdyno_1_1_contacts_union.html#a51e88134f7b242a35dc7953d63b5f14b">   40</a></span>        <a class="code hl_function" href="classdyno_1_1_contacts_union.html#a51e88134f7b242a35dc7953d63b5f14b">DEF_ARRAY_OUT</a>(<a class="code hl_class" href="classdyno_1_1_t_contact_pair.html">ContactPair</a>, Contacts, <a class="code hl_enumvalue" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    };</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="classdyno_1_1_contacts_union.html#aaf1827bfab26c2db967d2e3aa3815358">validateInputs</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    };</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 <div class="ttc" id="a_collision_data_8h_html"><div class="ttname"><a href="_collision_data_8h.html">CollisionData.h</a></div></div>
 <div class="ttc" id="a_compute_module_8h_html"><div class="ttname"><a href="_compute_module_8h.html">ComputeModule.h</a></div></div>
 <div class="ttc" id="a_framework_2_object_8h_html_a610e334cf630b9ec038f131226866605"><div class="ttname"><a href="_framework_2_object_8h.html#a610e334cf630b9ec038f131226866605">DECLARE_TCLASS</a></div><div class="ttdeci">#define DECLARE_TCLASS(name, T1)</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8h_source.html#l00087">Object.h:87</a></div></div>
@@ -108,10 +111,11 @@ $(function() {
 <div class="ttc" id="aclassdyno_1_1_contacts_union_html_a51e88134f7b242a35dc7953d63b5f14b"><div class="ttname"><a href="classdyno_1_1_contacts_union.html#a51e88134f7b242a35dc7953d63b5f14b">dyno::ContactsUnion::DEF_ARRAY_OUT</a></div><div class="ttdeci">DEF_ARRAY_OUT(ContactPair, Contacts, DeviceType::GPU, &quot;&quot;)</div></div>
 <div class="ttc" id="aclassdyno_1_1_contacts_union_html_a5609edb0d3ff6183d5b2834bc60e2382"><div class="ttname"><a href="classdyno_1_1_contacts_union.html#a5609edb0d3ff6183d5b2834bc60e2382">dyno::ContactsUnion::DEF_ARRAY_IN</a></div><div class="ttdeci">DEF_ARRAY_IN(ContactPair, ContactsA, DeviceType::GPU, &quot;&quot;)</div></div>
 <div class="ttc" id="aclassdyno_1_1_contacts_union_html_a618db8bb2917366d7f57ab991c9dedff"><div class="ttname"><a href="classdyno_1_1_contacts_union.html#a618db8bb2917366d7f57ab991c9dedff">dyno::ContactsUnion::DEF_ARRAY_IN</a></div><div class="ttdeci">DEF_ARRAY_IN(ContactPair, ContactsB, DeviceType::GPU, &quot;&quot;)</div></div>
+<div class="ttc" id="aclassdyno_1_1_contacts_union_html_aaf1827bfab26c2db967d2e3aa3815358"><div class="ttname"><a href="classdyno_1_1_contacts_union.html#aaf1827bfab26c2db967d2e3aa3815358">dyno::ContactsUnion::validateInputs</a></div><div class="ttdeci">bool validateInputs() override</div><div class="ttdef"><b>Definition:</b> <a href="_contacts_union_8cpp_source.html#l00033">ContactsUnion.cpp:33</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_contacts_union_html_abf230bab94b65b808542ef389c4d0a46"><div class="ttname"><a href="classdyno_1_1_contacts_union.html#abf230bab94b65b808542ef389c4d0a46">dyno::ContactsUnion::ContactPair</a></div><div class="ttdeci">TContactPair&lt; Real &gt; ContactPair</div><div class="ttdef"><b>Definition:</b> <a href="_contacts_union_8h_source.html#l00029">ContactsUnion.h:29</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_contacts_union_html_adffed112cef01233439fd95b18893bb6"><div class="ttname"><a href="classdyno_1_1_contacts_union.html#adffed112cef01233439fd95b18893bb6">dyno::ContactsUnion::~ContactsUnion</a></div><div class="ttdeci">~ContactsUnion() override</div><div class="ttdef"><b>Definition:</b> <a href="_contacts_union_8h_source.html#l00032">ContactsUnion.h:32</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_t_contact_pair_html"><div class="ttname"><a href="classdyno_1_1_t_contact_pair.html">dyno::TContactPair</a></div><div class="ttdef"><b>Definition:</b> <a href="_collision_data_8h_source.html#l00054">CollisionData.h:55</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

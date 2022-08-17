@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afe15f6d9429aec93a38866e4041e9e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51a0648c31842c3e9cc9e129f9380c99"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_enum.html#a51a0648c31842c3e9cc9e129f9380c99">currentKey</a> ()</td></tr>
 <tr class="separator:a51a0648c31842c3e9cc9e129f9380c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd65bdd31fbacfada4109466fa88dbe"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_enum.html#aabd65bdd31fbacfada4109466fa88dbe">currentString</a> ()</td></tr>
+<tr class="separator:aabd65bdd31fbacfada4109466fa88dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf234c00a876f64986e9901aa7da3e17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_enum.html#aaf234c00a876f64986e9901aa7da3e17">setCurrentKey</a> (int index)</td></tr>
+<tr class="separator:aaf234c00a876f64986e9901aa7da3e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42a1c296440b4a7986ed595d7b227e3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_declare_enum_8h.html#a7e0bf3e2120a48394de8d3a46cad4bbb">EnumMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_enum.html#a42a1c296440b4a7986ed595d7b227e3b">enumMap</a> ()</td></tr>
+<tr class="separator:a42a1c296440b4a7986ed595d7b227e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -99,8 +105,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aad0081a46a3aeeee6fa83f4ef459a105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af875e257d6552a9c2ec991ab02c794c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_enum.html#af875e257d6552a9c2ec991ab02c794c5">m_enum_value</a></td></tr>
 <tr class="separator:af875e257d6552a9c2ec991ab02c794c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8642e2c588a55ddc2b88a54b53618b89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_declare_enum_8h.html#aa164b5581c238c19d4d5a287005cac0c">enum_map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_enum.html#a8642e2c588a55ddc2b88a54b53618b89">m_enum_map</a></td></tr>
-<tr class="separator:a8642e2c588a55ddc2b88a54b53618b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5adc4490880ac1b1ea61053f834f42f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_declare_enum_8h.html#a7e0bf3e2120a48394de8d3a46cad4bbb">EnumMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_enum.html#a5adc4490880ac1b1ea61053f834f42f9">m_enum_map</a></td></tr>
+<tr class="separator:a5adc4490880ac1b1ea61053f834f42f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -153,7 +159,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_p_enum_a07b9b3e43b4ce8d174d025ad739a5de0_cgraph.png" border="0" usemap="#aclass_p_enum_a07b9b3e43b4ce8d174d025ad739a5de0_cgraph" alt=""/></div>
 <map name="aclass_p_enum_a07b9b3e43b4ce8d174d025ad739a5de0_cgraph" id="aclass_p_enum_a07b9b3e43b4ce8d174d025ad739a5de0_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,121,32"/>
-<area shape="rect" href="_declare_enum_8cpp.html#add5b32d635a8b1a5087af20f324c7b5f" title=" " alt="" coords="169,5,301,32"/>
+<area shape="rect" href="_declare_enum_8cpp.html#aa6d8532ec926f4a185bb74b1112aa22e" title=" " alt="" coords="169,5,301,32"/>
 <area shape="rect" href="_declare_enum_8cpp.html#aa4566f9116ad9e7c58db648b822bac58" title=" " alt="" coords="349,5,456,32"/>
 </map>
 </div>
@@ -185,6 +191,60 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00052">52</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
+
+</div>
+</div>
+<a id="aabd65bdd31fbacfada4109466fa88dbe" name="aabd65bdd31fbacfada4109466fa88dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd65bdd31fbacfada4109466fa88dbe">&#9670;&nbsp;</a></span>currentString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string PEnum::currentString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00054">54</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
+
+</div>
+</div>
+<a id="a42a1c296440b4a7986ed595d7b227e3b" name="a42a1c296440b4a7986ed595d7b227e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a1c296440b4a7986ed595d7b227e3b">&#9670;&nbsp;</a></span>enumMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_declare_enum_8h.html#a7e0bf3e2120a48394de8d3a46cad4bbb">EnumMap</a> &amp; PEnum::enumMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00060">60</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
 
 </div>
 </div>
@@ -244,9 +304,29 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="aaf234c00a876f64986e9901aa7da3e17" name="aaf234c00a876f64986e9901aa7da3e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf234c00a876f64986e9901aa7da3e17">&#9670;&nbsp;</a></span>setCurrentKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PEnum::setCurrentKey </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_declare_enum_8cpp_source.html#l00081">81</a> of file <a class="el" href="_declare_enum_8cpp_source.html">DeclareEnum.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8642e2c588a55ddc2b88a54b53618b89" name="a8642e2c588a55ddc2b88a54b53618b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8642e2c588a55ddc2b88a54b53618b89">&#9670;&nbsp;</a></span>m_enum_map</h2>
+<a id="a5adc4490880ac1b1ea61053f834f42f9" name="a5adc4490880ac1b1ea61053f834f42f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5adc4490880ac1b1ea61053f834f42f9">&#9670;&nbsp;</a></span>m_enum_map</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +335,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_declare_enum_8h.html#aa164b5581c238c19d4d5a287005cac0c">enum_map</a> PEnum::m_enum_map</td>
+          <td class="memname"><a class="el" href="_declare_enum_8h.html#a7e0bf3e2120a48394de8d3a46cad4bbb">EnumMap</a> PEnum::m_enum_map</td>
         </tr>
       </table>
   </td>
@@ -265,7 +345,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00058">58</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00066">66</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +369,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00055">55</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00063">63</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
 
 </div>
 </div>
@@ -313,12 +393,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00056">56</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00064">64</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>E:/Peridyno/peridyno/src/Framework/<a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a></li>
+<li>E:/Peridyno/peridyno/src/Framework/<a class="el" href="_declare_enum_8cpp_source.html">DeclareEnum.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

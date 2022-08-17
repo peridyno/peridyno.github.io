@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -110,12 +110,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac87a9b88ba7fd16beba76b162a8f67e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95960f7acbf2dfc8a899a7e87039128a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_render_params.html#a95960f7acbf2dfc8a899a7e87039128a">showGround</a> = true</td></tr>
 <tr class="separator:a95960f7acbf2dfc8a899a7e87039128a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c21a9a02c1a1ac206cbd66aebbed21"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_render_params.html#a47c21a9a02c1a1ac206cbd66aebbed21">groudScale</a> = 3.f</td></tr>
-<tr class="separator:a47c21a9a02c1a1ac206cbd66aebbed21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d0c57a6928581645eaf6e2e3e723d6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_render_params.html#a98d0c57a6928581645eaf6e2e3e723d6">planeScale</a> = 3.f</td></tr>
+<tr class="separator:a98d0c57a6928581645eaf6e2e3e723d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b5f1f88734c24b7eeab5eb432bba5d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_render_params.html#a32b5f1f88734c24b7eeab5eb432bba5d">rulerScale</a> = 1.f</td></tr>
+<tr class="separator:a32b5f1f88734c24b7eeab5eb432bba5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3baf5711c7a2114d9fe47d1e81ecdb86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_render_params.html#a3baf5711c7a2114d9fe47d1e81ecdb86">showAxisHelper</a> = true</td></tr>
 <tr class="separator:a3baf5711c7a2114d9fe47d1e81ecdb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ddd0598d4156edf726faafb0e57a794"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_render_params.html#a8ddd0598d4156edf726faafb0e57a794">showSceneBounds</a> = false</td></tr>
 <tr class="separator:a8ddd0598d4156edf726faafb0e57a794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422c5be1cd6df1a9a0afe7ca63cce5ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_render_params.html#a422c5be1cd6df1a9a0afe7ca63cce5ba">viewPortflag</a> = -1</td></tr>
+<tr class="separator:a422c5be1cd6df1a9a0afe7ca63cce5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -133,7 +137,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00047">47</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00053">53</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
 
 </div>
 </div>
@@ -149,23 +153,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00048">48</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
-
-</div>
-</div>
-<a id="a47c21a9a02c1a1ac206cbd66aebbed21" name="a47c21a9a02c1a1ac206cbd66aebbed21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47c21a9a02c1a1ac206cbd66aebbed21">&#9670;&nbsp;</a></span>groudScale</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float dyno::RenderParams::groudScale = 3.f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00052">52</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00054">54</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
 
 </div>
 </div>
@@ -180,6 +168,22 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98d0c57a6928581645eaf6e2e3e723d6" name="a98d0c57a6928581645eaf6e2e3e723d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98d0c57a6928581645eaf6e2e3e723d6">&#9670;&nbsp;</a></span>planeScale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float dyno::RenderParams::planeScale = 3.f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00058">58</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
 
 </div>
 </div>
@@ -199,6 +203,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a32b5f1f88734c24b7eeab5eb432bba5d" name="a32b5f1f88734c24b7eeab5eb432bba5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b5f1f88734c24b7eeab5eb432bba5d">&#9670;&nbsp;</a></span>rulerScale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float dyno::RenderParams::rulerScale = 1.f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00059">59</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
+
+</div>
+</div>
 <a id="a3baf5711c7a2114d9fe47d1e81ecdb86" name="a3baf5711c7a2114d9fe47d1e81ecdb86"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3baf5711c7a2114d9fe47d1e81ecdb86">&#9670;&nbsp;</a></span>showAxisHelper</h2>
 
@@ -211,7 +231,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00054">54</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00061">61</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
 
 </div>
 </div>
@@ -227,7 +247,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00051">51</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00057">57</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
 
 </div>
 </div>
@@ -243,7 +263,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00055">55</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00062">62</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
 
 </div>
 </div>
@@ -274,6 +294,22 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a422c5be1cd6df1a9a0afe7ca63cce5ba" name="a422c5be1cd6df1a9a0afe7ca63cce5ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a422c5be1cd6df1a9a0afe7ca63cce5ba">&#9670;&nbsp;</a></span>viewPortflag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dyno::RenderParams::viewPortflag = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00064">64</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
 
 </div>
 </div>

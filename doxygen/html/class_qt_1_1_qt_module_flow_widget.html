@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -90,12 +90,10 @@ Collaboration diagram for Qt::QtModuleFlowWidget:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_qt_1_1_qt_module_flow_widget__coll__graph.png" border="0" usemap="#a_qt_1_1_qt_module_flow_widget_coll__map" alt="Collaboration graph"/></div>
 <map name="a_qt_1_1_qt_module_flow_widget_coll__map" id="a_qt_1_1_qt_module_flow_widget_coll__map">
-<area shape="rect" title=" " alt="" coords="5,260,173,287"/>
-<area shape="rect" title=" " alt="" coords="6,171,79,197"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html" title="Scene holds connections and nodes." alt="" coords="103,171,267,197"/>
-<area shape="rect" title=" " alt="" coords="90,81,190,108"/>
-<area shape="rect" href="class_qt_1_1_qt_node_widget.html" title="The model dictates the number of inputs and outputs for the Node." alt="" coords="214,81,343,108"/>
-<area shape="rect" title=" " alt="" coords="215,5,343,32"/>
+<area shape="rect" title=" " alt="" coords="5,171,173,197"/>
+<area shape="rect" title=" " alt="" coords="6,81,79,108"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html" title="Scene holds connections and nodes." alt="" coords="103,81,267,108"/>
+<area shape="rect" title=" " alt="" coords="135,5,235,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -110,10 +108,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1f0b37664e0ad51cb207eeee067f0dfc"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_widget.html#a1f0b37664e0ad51cb207eeee067f0dfc">m_MainLayout</a></td></tr>
-<tr class="separator:a1f0b37664e0ad51cb207eeee067f0dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c9ba6eea67604fd49d122d6397c2b76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html">QtModuleFlowScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_widget.html#a4c9ba6eea67604fd49d122d6397c2b76">module_scene</a> = nullptr</td></tr>
-<tr class="separator:a4c9ba6eea67604fd49d122d6397c2b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1fd679ef0b22662ca7effedb7dfa4b"><td class="memItemLeft" align="right" valign="top">QGridLayout *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_widget.html#aaf1fd679ef0b22662ca7effedb7dfa4b">mLayout</a></td></tr>
+<tr class="separator:aaf1fd679ef0b22662ca7effedb7dfa4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c9e3c45bac8094bd7ececf10f37aba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html">QtModuleFlowScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_module_flow_widget.html#ad2c9e3c45bac8094bd7ececf10f37aba">mModuleFlow</a> = nullptr</td></tr>
+<tr class="separator:ad2c9e3c45bac8094bd7ececf10f37aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -154,18 +152,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_qt_module_flow_widget_8cpp_source.html#l00014">14</a> of file <a class="el" href="_qt_module_flow_widget_8cpp_source.html">QtModuleFlowWidget.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_qt_1_1_qt_module_flow_widget_ac219283c69461fac721c7e6314110724_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_widget_ac219283c69461fac721c7e6314110724_cgraph" alt=""/></div>
-<map name="aclass_qt_1_1_qt_module_flow_widget_ac219283c69461fac721c7e6314110724_cgraph" id="aclass_qt_1_1_qt_module_flow_widget_ac219283c69461fac721c7e6314110724_cgraph">
-<area shape="rect" title=" " alt="" coords="5,64,173,105"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a17c904aec4ff16e3aa39d4f50fc87c65" title=" " alt="" coords="221,64,385,105"/>
-<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a11570f009988ee1b54a76d27c46fa9af" title=" " alt="" coords="458,5,599,47"/>
-<area shape="rect" href="class_qt_1_1_qt_node_widget.html#af1350f75e828fab6b9713c6ed0719406" title=" " alt="" coords="436,71,621,98"/>
-<area shape="rect" href="classdyno_1_1_node.html#ae5191762a3921f2ed45b1789bb9baf86" title=" " alt="" coords="433,122,624,149"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -184,7 +170,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_module_flow_widget_8cpp_source.html#l00045">45</a> of file <a class="el" href="_qt_module_flow_widget_8cpp_source.html">QtModuleFlowWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_module_flow_widget_8cpp_source.html#l00041">41</a> of file <a class="el" href="_qt_module_flow_widget_8cpp_source.html">QtModuleFlowWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -213,27 +199,18 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_qt_module_flow_widget_8h_source.html#l00033">33</a> of file <a class="el" href="_qt_module_flow_widget_8h_source.html">QtModuleFlowWidget.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_qt_1_1_qt_module_flow_widget_a5c7c1d156bea49c2349ab890f0ef0750_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_module_flow_widget_a5c7c1d156bea49c2349ab890f0ef0750_icgraph" alt=""/></div>
-<map name="aclass_qt_1_1_qt_module_flow_widget_a5c7c1d156bea49c2349ab890f0ef0750_icgraph" id="aclass_qt_1_1_qt_module_flow_widget_a5c7c1d156bea49c2349ab890f0ef0750_icgraph">
-<area shape="rect" title=" " alt="" coords="196,5,364,47"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,5,148,47"/>
-</map>
-</div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1f0b37664e0ad51cb207eeee067f0dfc" name="a1f0b37664e0ad51cb207eeee067f0dfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f0b37664e0ad51cb207eeee067f0dfc">&#9670;&nbsp;</a></span>m_MainLayout</h2>
+<a id="aaf1fd679ef0b22662ca7effedb7dfa4b" name="aaf1fd679ef0b22662ca7effedb7dfa4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1fd679ef0b22662ca7effedb7dfa4b">&#9670;&nbsp;</a></span>mLayout</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QGridLayout* Qt::QtModuleFlowWidget::m_MainLayout</td>
+          <td class="memname">QGridLayout* Qt::QtModuleFlowWidget::mLayout</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -242,14 +219,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a4c9ba6eea67604fd49d122d6397c2b76" name="a4c9ba6eea67604fd49d122d6397c2b76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c9ba6eea67604fd49d122d6397c2b76">&#9670;&nbsp;</a></span>module_scene</h2>
+<a id="ad2c9e3c45bac8094bd7ececf10f37aba" name="ad2c9e3c45bac8094bd7ececf10f37aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c9e3c45bac8094bd7ececf10f37aba">&#9670;&nbsp;</a></span>mModuleFlow</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html">QtModuleFlowScene</a>* Qt::QtModuleFlowWidget::module_scene = nullptr</td>
+          <td class="memname"><a class="el" href="class_qt_1_1_qt_module_flow_scene.html">QtModuleFlowScene</a>* Qt::QtModuleFlowWidget::mModuleFlow = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -71,7 +71,6 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_elastic_body-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::ElasticBody&lt; TDataType &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -84,7 +83,7 @@ Inheritance diagram for dyno::ElasticBody&lt; TDataType &gt;:</div>
 <div class="center"><img src="classdyno_1_1_elastic_body__inherit__graph.png" border="0" usemap="#adyno_1_1_elastic_body_3_01_t_data_type_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="adyno_1_1_elastic_body_3_01_t_data_type_01_4_inherit__map" id="adyno_1_1_elastic_body_3_01_t_data_type_01_4_inherit__map">
 <area shape="rect" title=" " alt="" coords="11,319,147,360"/>
-<area shape="rect" href="classdyno_1_1_particle_system.html" title="This class represents the base class for more advanced particle&#45;based nodes." alt="" coords="5,229,152,271"/>
+<area shape="rect" href="classdyno_1_1_particle_system.html" title="Position&#45;based fluids." alt="" coords="5,229,152,271"/>
 <area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="35,155,123,181"/>
 <area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="29,80,128,107"/>
 <area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="31,5,127,32"/>
@@ -96,7 +95,7 @@ Collaboration diagram for dyno::ElasticBody&lt; TDataType &gt;:</div>
 <div class="center"><img src="classdyno_1_1_elastic_body__coll__graph.png" border="0" usemap="#adyno_1_1_elastic_body_3_01_t_data_type_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_elastic_body_3_01_t_data_type_01_4_coll__map" id="adyno_1_1_elastic_body_3_01_t_data_type_01_4_coll__map">
 <area shape="rect" title=" " alt="" coords="170,456,306,497"/>
-<area shape="rect" href="classdyno_1_1_particle_system.html" title="This class represents the base class for more advanced particle&#45;based nodes." alt="" coords="165,365,311,407"/>
+<area shape="rect" href="classdyno_1_1_particle_system.html" title="Position&#45;based fluids." alt="" coords="165,365,311,407"/>
 <area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="194,289,282,316"/>
 <area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="189,81,287,108"/>
 <area shape="rect" href="classdyno_1_1_scene_graph.html" title=" " alt="" coords="65,200,195,227"/>
@@ -137,24 +136,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a158bb9f2f8dcf3d7e5b238009e21ad7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c00a95e07bf67885750d62aee91ae12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a0c00a95e07bf67885750d62aee91ae12">updateTopology</a> () override</td></tr>
 <tr class="separator:a0c00a95e07bf67885750d62aee91ae12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98b9dd1e5c07b00437b4c15d91b91682"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a98b9dd1e5c07b00437b4c15d91b91682">translate</a> (<a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a> t) override</td></tr>
-<tr class="separator:a98b9dd1e5c07b00437b4c15d91b91682"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b208cebcb2b5d1519fac520f56675a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a8b208cebcb2b5d1519fac520f56675a2">scale</a> (<a class="el" href="classdyno_1_1_particle_system.html#a1b1bfaf5cab1ee8b043f365dbb29f336">Real</a> s) override</td></tr>
-<tr class="separator:a8b208cebcb2b5d1519fac520f56675a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98573b8f91f5df764e921026d58cb291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a98573b8f91f5df764e921026d58cb291">loadSurface</a> (std::string filename)</td></tr>
-<tr class="separator:a98573b8f91f5df764e921026d58cb291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a490bdd89b00f6d2cf9ae3c79aeda79f6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_point_set_to_point_set.html">PointSetToPointSet</a>&lt; TDataType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a490bdd89b00f6d2cf9ae3c79aeda79f6">getTopologyMapping</a> ()</td></tr>
-<tr class="separator:a490bdd89b00f6d2cf9ae3c79aeda79f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dbdb0f746b55e16038b2cc8386d4217"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a0dbdb0f746b55e16038b2cc8386d4217">getSurfaceNode</a> ()</td></tr>
-<tr class="separator:a0dbdb0f746b55e16038b2cc8386d4217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a564db5e0781bc996ae89ea24bd750c11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a564db5e0781bc996ae89ea24bd750c11">DEF_VAR</a> (<a class="el" href="classdyno_1_1_particle_system.html#a1b1bfaf5cab1ee8b043f365dbb29f336">Real</a>, Horizon, 0.01, &quot;Horizon&quot;)</td></tr>
 <tr class="separator:a564db5e0781bc996ae89ea24bd750c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92fc29f6a877b215ed4ab295c475fa58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a92fc29f6a877b215ed4ab295c475fa58">DEF_EMPTY_CURRENT_ARRAY</a> (ReferencePosition, <a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a>, <a class="el" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, &quot;Reference position&quot;)</td></tr>
-<tr class="separator:a92fc29f6a877b215ed4ab295c475fa58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7551dc952949a10fe67d4bc208049f34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a7551dc952949a10fe67d4bc208049f34">DEF_EMPTY_CURRENT_ARRAYLIST</a> (int, NeighborIds, <a class="el" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, &quot;Storing the ids for neighboring particles&quot;)</td></tr>
-<tr class="separator:a7551dc952949a10fe67d4bc208049f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f0c3db6c3bb8b02a51fcf0477c40548"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a0f0c3db6c3bb8b02a51fcf0477c40548">DEF_EMPTY_CURRENT_ARRAYLIST</a> (<a class="el" href="classdyno_1_1_elastic_body.html#ad19c8cfcd7e299738f14cb10dbe3b551">NPair</a>, RestShape, <a class="el" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, &quot;Storing neighbors&quot;)</td></tr>
-<tr class="separator:a0f0c3db6c3bb8b02a51fcf0477c40548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb56bfeacebee8a6e447b5710719d306"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#afb56bfeacebee8a6e447b5710719d306">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a>, ReferencePosition, <a class="el" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, &quot;Reference position&quot;)</td></tr>
+<tr class="separator:afb56bfeacebee8a6e447b5710719d306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abbd87e2b624f960ae9a4751ba921de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a5abbd87e2b624f960ae9a4751ba921de">DEF_ARRAYLIST_STATE</a> (int, NeighborIds, <a class="el" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, &quot;Storing the ids for neighboring particles&quot;)</td></tr>
+<tr class="separator:a5abbd87e2b624f960ae9a4751ba921de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1b0686a410997ed96aaa987ddb7bad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a4f1b0686a410997ed96aaa987ddb7bad">DEF_ARRAYLIST_STATE</a> (<a class="el" href="classdyno_1_1_elastic_body.html#ad19c8cfcd7e299738f14cb10dbe3b551">NPair</a>, RestShape, <a class="el" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, &quot;Storing neighbors&quot;)</td></tr>
+<tr class="separator:a4f1b0686a410997ed96aaa987ddb7bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_particle_system"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_particle_system')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_particle_system.html">dyno::ParticleSystem&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:a4d12050d5e93f01cfdaaa75d93aff174 inherit pub_methods_classdyno_1_1_particle_system"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#a4d12050d5e93f01cfdaaa75d93aff174">ParticleSystem</a> (std::string name=&quot;default&quot;)</td></tr>
 <tr class="separator:a4d12050d5e93f01cfdaaa75d93aff174 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +159,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6513488abba4e2a869daf30da8326b95 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2257721883c9643965a71f5b9e3b2a5b inherit pub_methods_classdyno_1_1_particle_system"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#a2257721883c9643965a71f5b9e3b2a5b">scale</a> (<a class="el" href="classdyno_1_1_particle_system.html#a1b1bfaf5cab1ee8b043f365dbb29f336">Real</a> s)</td></tr>
 <tr class="separator:a2257721883c9643965a71f5b9e3b2a5b inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45501d05c9933454a27595c7816071b6 inherit pub_methods_classdyno_1_1_particle_system"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#a45501d05c9933454a27595c7816071b6">getNodeType</a> () override</td></tr>
+<tr class="separator:a45501d05c9933454a27595c7816071b6 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2f2fca4116e7b36e480534e38d0308 inherit pub_methods_classdyno_1_1_particle_system"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#acd2f2fca4116e7b36e480534e38d0308">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a>, Position, <a class="el" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, &quot;Particle position&quot;)</td></tr>
 <tr class="memdesc:acd2f2fca4116e7b36e480534e38d0308 inherit pub_methods_classdyno_1_1_particle_system"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle position.  <a href="classdyno_1_1_particle_system.html#acd2f2fca4116e7b36e480534e38d0308">More...</a><br /></td></tr>
 <tr class="separator:acd2f2fca4116e7b36e480534e38d0308 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +170,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abea8d0de5726b230432d497e079fe201 inherit pub_methods_classdyno_1_1_particle_system"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#abea8d0de5726b230432d497e079fe201">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a>, Force, <a class="el" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, &quot;Force on each particle&quot;)</td></tr>
 <tr class="memdesc:abea8d0de5726b230432d497e079fe201 inherit pub_methods_classdyno_1_1_particle_system"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle force.  <a href="classdyno_1_1_particle_system.html#abea8d0de5726b230432d497e079fe201">More...</a><br /></td></tr>
 <tr class="separator:abea8d0de5726b230432d497e079fe201 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3c7a8c5a91c0239fb5917b5f521f83 inherit pub_methods_classdyno_1_1_particle_system"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#a0b3c7a8c5a91c0239fb5917b5f521f83">DEF_INSTANCE_STATE</a> (<a class="el" href="classdyno_1_1_point_set.html">PointSet</a>&lt; TDataType &gt;, <a class="el" href="classdyno_1_1_point_set.html">PointSet</a>, &quot;Topology&quot;)</td></tr>
+<tr class="memdesc:a0b3c7a8c5a91c0239fb5917b5f521f83 inherit pub_methods_classdyno_1_1_particle_system"><td class="mdescLeft">&#160;</td><td class="mdescRight">A topology.  <a href="classdyno_1_1_particle_system.html#a0b3c7a8c5a91c0239fb5917b5f521f83">More...</a><br /></td></tr>
+<tr class="separator:a0b3c7a8c5a91c0239fb5917b5f521f83 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_node.html">dyno::Node</a></td></tr>
 <tr class="memitem:ae3301733887d0545878f60113c4e96da inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#ae3301733887d0545878f60113c4e96da">Node</a> (std::string name=&quot;default&quot;)</td></tr>
 <tr class="separator:ae3301733887d0545878f60113c4e96da inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,6 +182,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa9279d8339403f5108c9306a9d9fd105 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d52498a31543f7b723e85f8b2482b46 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a8d52498a31543f7b723e85f8b2482b46">getName</a> ()</td></tr>
 <tr class="separator:a8d52498a31543f7b723e85f8b2482b46 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62573b87297311901232e5867edeb9e3 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a62573b87297311901232e5867edeb9e3">getNodeType</a> ()</td></tr>
+<tr class="separator:a62573b87297311901232e5867edeb9e3 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b090163952554ef5306d1e18985df8b inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a9b090163952554ef5306d1e18985df8b">isControllable</a> ()</td></tr>
 <tr class="separator:a9b090163952554ef5306d1e18985df8b inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24ed60b69e5415588a66220ca7cc9105 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a24ed60b69e5415588a66220ca7cc9105">setControllable</a> (bool con)</td></tr>
@@ -211,18 +207,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a36955ac601f33994e8e3f3fa65e8391b inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7310cf6c6d77005a975f47d22d458c2a inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a7310cf6c6d77005a975f47d22d458c2a">setSceneGraph</a> (<a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> *scn)</td></tr>
 <tr class="separator:a7310cf6c6d77005a975f47d22d458c2a inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db9ca4f01c5b01850add6b94fd8bcba inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a9db9ca4f01c5b01850add6b94fd8bcba">addAncestor</a> (<a class="el" href="classdyno_1_1_node.html">Node</a> *anc)</td></tr>
-<tr class="memdesc:a9db9ca4f01c5b01850add6b94fd8bcba inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a ancestor.  <a href="classdyno_1_1_node.html#a9db9ca4f01c5b01850add6b94fd8bcba">More...</a><br /></td></tr>
-<tr class="separator:a9db9ca4f01c5b01850add6b94fd8bcba inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32d9a466ca18192e89cf2fe9e69ec981 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a32d9a466ca18192e89cf2fe9e69ec981">hasAncestor</a> (<a class="el" href="classdyno_1_1_node.html">Node</a> *anc)</td></tr>
-<tr class="separator:a32d9a466ca18192e89cf2fe9e69ec981 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f149f932dee37baf98935b242660758 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a7f149f932dee37baf98935b242660758">getSceneGraph</a> ()</td></tr>
+<tr class="separator:a7f149f932dee37baf98935b242660758 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdb83b6808ac89f1993062575d316e35 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_node_port.html">NodePort</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#afdb83b6808ac89f1993062575d316e35">getImportNodes</a> ()</td></tr>
 <tr class="separator:afdb83b6808ac89f1993062575d316e35 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac916b8e66f57d13e7480c7d1459382c4 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_node_port.html">NodePort</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#ac916b8e66f57d13e7480c7d1459382c4">getExportNodes</a> ()</td></tr>
 <tr class="separator:ac916b8e66f57d13e7480c7d1459382c4 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5026918599a8168610d0603bb7b1c9d1 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a5026918599a8168610d0603bb7b1c9d1">getDescendants</a> ()</td></tr>
-<tr class="memdesc:a5026918599a8168610d0603bb7b1c9d1 inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all descendants.  <a href="classdyno_1_1_node.html#a5026918599a8168610d0603bb7b1c9d1">More...</a><br /></td></tr>
-<tr class="separator:a5026918599a8168610d0603bb7b1c9d1 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a257e95e8b7698c95a13089d79ade23d0 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a257e95e8b7698c95a13089d79ade23d0">addModule</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt; module)</td></tr>
 <tr class="memdesc:a257e95e8b7698c95a13089d79ade23d0 inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a module to m_module_list and other special module lists.  <a href="classdyno_1_1_node.html#a257e95e8b7698c95a13089d79ade23d0">More...</a><br /></td></tr>
 <tr class="separator:a257e95e8b7698c95a13089d79ade23d0 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,10 +239,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abbffc5b076aaef1fa5d1cfa0c72457fb inherit pub_methods_classdyno_1_1_node"><td class="memTemplParams" colspan="2">template&lt;class TModule &gt; </td></tr>
 <tr class="memitem:abbffc5b076aaef1fa5d1cfa0c72457fb inherit pub_methods_classdyno_1_1_node"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; TModule &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#abbffc5b076aaef1fa5d1cfa0c72457fb">getModule</a> (std::string name)</td></tr>
 <tr class="separator:abbffc5b076aaef1fa5d1cfa0c72457fb inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d4d33e4f458bc40f6726a67e241e9c0 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classdyno_1_1_animation_pipeline.html">AnimationPipeline</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a3d4d33e4f458bc40f6726a67e241e9c0">animationPipeline</a> ()</td></tr>
-<tr class="separator:a3d4d33e4f458bc40f6726a67e241e9c0 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5191762a3921f2ed45b1789bb9baf86 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classdyno_1_1_graphics_pipeline.html">GraphicsPipeline</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#ae5191762a3921f2ed45b1789bb9baf86">graphicsPipeline</a> ()</td></tr>
-<tr class="separator:ae5191762a3921f2ed45b1789bb9baf86 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba92798b2bb44a2afb84042ff83d753e inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_animation_pipeline.html">AnimationPipeline</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#aba92798b2bb44a2afb84042ff83d753e">animationPipeline</a> ()</td></tr>
+<tr class="separator:aba92798b2bb44a2afb84042ff83d753e inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a775162e9f479bc5b4252fc2afc1226 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_graphics_pipeline.html">GraphicsPipeline</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a> ()</td></tr>
+<tr class="separator:a0a775162e9f479bc5b4252fc2afc1226 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a658a557369febedc26a42fb9f07a0a5d inherit pub_methods_classdyno_1_1_node"><td class="memTemplParams" colspan="2">template&lt;class TModule &gt; </td></tr>
 <tr class="memitem:a658a557369febedc26a42fb9f07a0a5d inherit pub_methods_classdyno_1_1_node"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; TModule &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a658a557369febedc26a42fb9f07a0a5d">addModule</a> (std::string name)</td></tr>
 <tr class="separator:a658a557369febedc26a42fb9f07a0a5d inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,18 +254,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6f4134d96000c896365332f798da5318 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8ae5fafafc2facf6aab7a0f7994438 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#aab8ae5fafafc2facf6aab7a0f7994438">reset</a> ()</td></tr>
 <tr class="separator:aab8ae5fafafc2facf6aab7a0f7994438 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1cc49b9b9df6ca46e35fcb7efd34e92 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#ac1cc49b9b9df6ca46e35fcb7efd34e92">traverseBottomUp</a> (<a class="el" href="classdyno_1_1_action.html">Action</a> *act)</td></tr>
-<tr class="memdesc:ac1cc49b9b9df6ca46e35fcb7efd34e92 inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depth-first tree traversal.  <a href="classdyno_1_1_node.html#ac1cc49b9b9df6ca46e35fcb7efd34e92">More...</a><br /></td></tr>
-<tr class="separator:ac1cc49b9b9df6ca46e35fcb7efd34e92 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44a39ca551bf07aa024332674d0852ea inherit pub_methods_classdyno_1_1_node"><td class="memTemplParams" colspan="2">template&lt;class Act , class ... Args&gt; </td></tr>
-<tr class="memitem:a44a39ca551bf07aa024332674d0852ea inherit pub_methods_classdyno_1_1_node"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a44a39ca551bf07aa024332674d0852ea">traverseBottomUp</a> (Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a44a39ca551bf07aa024332674d0852ea inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a265435f68c772b5b2dc86b338d673304 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a265435f68c772b5b2dc86b338d673304">traverseTopDown</a> (<a class="el" href="classdyno_1_1_action.html">Action</a> *act)</td></tr>
-<tr class="memdesc:a265435f68c772b5b2dc86b338d673304 inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Breadth-first tree traversal.  <a href="classdyno_1_1_node.html#a265435f68c772b5b2dc86b338d673304">More...</a><br /></td></tr>
-<tr class="separator:a265435f68c772b5b2dc86b338d673304 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4af04b4c7ed488e6b03a75a29c9fa901 inherit pub_methods_classdyno_1_1_node"><td class="memTemplParams" colspan="2">template&lt;class Act , class ... Args&gt; </td></tr>
-<tr class="memitem:a4af04b4c7ed488e6b03a75a29c9fa901 inherit pub_methods_classdyno_1_1_node"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a4af04b4c7ed488e6b03a75a29c9fa901">traverseTopDown</a> (Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a4af04b4c7ed488e6b03a75a29c9fa901 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a92b6901fcae6e0ce82b2132b1956cf inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structdyno_1_1_node_1_1_bounding_box.html">BoundingBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a9a92b6901fcae6e0ce82b2132b1956cf">boundingBox</a> ()</td></tr>
+<tr class="separator:a9a92b6901fcae6e0ce82b2132b1956cf inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc54344cd3b2c1f77b3c2df6ece0df4c inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#acc54344cd3b2c1f77b3c2df6ece0df4c">connect</a> (<a class="el" href="classdyno_1_1_node_port.html">NodePort</a> *nPort)</td></tr>
 <tr class="separator:acc54344cd3b2c1f77b3c2df6ece0df4c inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de4fd3b43510ce6aefc9eb73aad51da inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a3de4fd3b43510ce6aefc9eb73aad51da">disconnect</a> (<a class="el" href="classdyno_1_1_node_port.html">NodePort</a> *nPort)</td></tr>
@@ -285,30 +265,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a078cb4723af7fe4b6c33917d77e3f049 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7ac835b761719f95ce97cba40b77ef9 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_node_port.html">NodePort</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#af7ac835b761719f95ce97cba40b77ef9">getAllNodePorts</a> ()</td></tr>
 <tr class="separator:af7ac835b761719f95ce97cba40b77ef9 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ce4a223e88f2c885a4a20ea0869e42a inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a3ce4a223e88f2c885a4a20ea0869e42a">sizeOfNodePorts</a> () const</td></tr>
-<tr class="separator:a3ce4a223e88f2c885a4a20ea0869e42a inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fc7b5c5be1930b385be0d7bceb7ae7a inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a0fc7b5c5be1930b385be0d7bceb7ae7a">sizeOfAncestors</a> () const</td></tr>
-<tr class="separator:a0fc7b5c5be1930b385be0d7bceb7ae7a inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f62162dba5695fae0174154dec2bb61 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a6f62162dba5695fae0174154dec2bb61">sizeofDescendants</a> () const</td></tr>
-<tr class="separator:a6f62162dba5695fae0174154dec2bb61 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa641906480998f45c5edf4dd6aed9e14 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#aa641906480998f45c5edf4dd6aed9e14">DEF_VAR</a> (<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>, TimeStep, 0, &quot;Time step size&quot;)</td></tr>
-<tr class="separator:aa641906480998f45c5edf4dd6aed9e14 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ea7bf3103180a959ff37dc1fc763873 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a9ea7bf3103180a959ff37dc1fc763873">DEF_VAR</a> (<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>, ElapsedTime, 0, &quot;Elapsed Time&quot;)</td></tr>
-<tr class="separator:a9ea7bf3103180a959ff37dc1fc763873 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6a74fa4c2ae80d97e36ae2f586b4e2a inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#ab6a74fa4c2ae80d97e36ae2f586b4e2a">DEF_VAR</a> (<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, Location, 0, &quot;Node location&quot;)</td></tr>
-<tr class="separator:ab6a74fa4c2ae80d97e36ae2f586b4e2a inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe9a96025bca3a2239f81664b5db280 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a8fe9a96025bca3a2239f81664b5db280">DEF_VAR</a> (<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, Rotation, 0, &quot;Node rotation&quot;)</td></tr>
-<tr class="separator:a8fe9a96025bca3a2239f81664b5db280 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a465fa547ef8042deaa5a7a52f5503d inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a2a465fa547ef8042deaa5a7a52f5503d">DEF_VAR</a> (<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, Scale, 0, &quot;Node scale&quot;)</td></tr>
-<tr class="separator:a2a465fa547ef8042deaa5a7a52f5503d inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacc1b5086179280a7bbe7c5ceaf10c75 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#aacc1b5086179280a7bbe7c5ceaf10c75">DEF_VAR</a> (bool, Active, true, &quot;Indicating whether the simulation is on for this node!&quot;)</td></tr>
-<tr class="memdesc:aacc1b5086179280a7bbe7c5ceaf10c75 inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamics indicator true: Dynamics is turn on false: Dynamics is turned off.  <a href="classdyno_1_1_node.html#aacc1b5086179280a7bbe7c5ceaf10c75">More...</a><br /></td></tr>
-<tr class="separator:aacc1b5086179280a7bbe7c5ceaf10c75 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ab955cca89703cba670305d8abf1d6 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a24ab955cca89703cba670305d8abf1d6">DEF_VAR</a> (bool, Visible, true, &quot;Indicating whether the node is visible!&quot;)</td></tr>
-<tr class="memdesc:a24ab955cca89703cba670305d8abf1d6 inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visibility true: the node is visible false: the node is invisible.  <a href="classdyno_1_1_node.html#a24ab955cca89703cba670305d8abf1d6">More...</a><br /></td></tr>
-<tr class="separator:a24ab955cca89703cba670305d8abf1d6 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a1938e0e3505e1bff2015a7acf06e45 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a3a1938e0e3505e1bff2015a7acf06e45">DEF_INSTANCE_STATE</a> (<a class="el" href="classdyno_1_1_topology_module.html">TopologyModule</a>, Topology, &quot;Topology&quot;)</td></tr>
-<tr class="separator:a3a1938e0e3505e1bff2015a7acf06e45 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d02ef87a638460a28c9e3b0d0d98efc inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a6d02ef87a638460a28c9e3b0d0d98efc">sizeOfNodePorts</a> ()</td></tr>
+<tr class="separator:a6d02ef87a638460a28c9e3b0d0d98efc inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01697a853ab2d01571609866096a27ed inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a01697a853ab2d01571609866096a27ed">sizeOfImportNodes</a> () const</td></tr>
+<tr class="separator:a01697a853ab2d01571609866096a27ed inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56142a139ba063c0039a9ff12156eb59 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a56142a139ba063c0039a9ff12156eb59">sizeOfExportNodes</a> () const</td></tr>
+<tr class="separator:a56142a139ba063c0039a9ff12156eb59 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3adc12d53b54dc0d8cb0cb4d7c7ec5 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#aac3adc12d53b54dc0d8cb0cb4d7c7ec5">DEF_VAR_STATE</a> (<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>, ElapsedTime, 0, &quot;Elapsed Time&quot;)</td></tr>
+<tr class="separator:aac3adc12d53b54dc0d8cb0cb4d7c7ec5 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528f9d711fc502404607134deeda85c4 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a528f9d711fc502404607134deeda85c4">DEF_VAR_STATE</a> (<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>, TimeStep, <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>(0.033), &quot;Time step size&quot;)</td></tr>
+<tr class="separator:a528f9d711fc502404607134deeda85c4 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad058a15ceee5e7ccf938df0ca699b266 inherit pub_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#ad058a15ceee5e7ccf938df0ca699b266">DEF_VAR_STATE</a> (<a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>, FrameNumber, 0, &quot;Frame number&quot;)</td></tr>
+<tr class="separator:ad058a15ceee5e7ccf938df0ca699b266 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ab65d583b85bc42e7b2faab3af43d159f">OBase</a> ()</td></tr>
 <tr class="separator:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,8 +345,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0a9735a2942cbc82f430d235e957edc5 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93a9bcaeabeccd666019e718bdde1dd2 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a93a9bcaeabeccd666019e718bdde1dd2">addOutputField</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
 <tr class="separator:a93a9bcaeabeccd666019e718bdde1dd2 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee38400e04dd178e78f32f2f190ea8a inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#afee38400e04dd178e78f32f2f190ea8a">addToOutput</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
+<tr class="separator:afee38400e04dd178e78f32f2f190ea8a inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a30b6e2f693fea4ce9d7703791f0f6f inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a5a30b6e2f693fea4ce9d7703791f0f6f">removeOutputField</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
 <tr class="separator:a5a30b6e2f693fea4ce9d7703791f0f6f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada356355f2102f1a7d3223e1416cd9dc inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ada356355f2102f1a7d3223e1416cd9dc">removeFromOutput</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
+<tr class="separator:ada356355f2102f1a7d3223e1416cd9dc inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e429b5c73bc7ae8ef707cd40ac3a2e5 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5">getOutputFields</a> ()</td></tr>
 <tr class="separator:a3e429b5c73bc7ae8ef707cd40ac3a2e5 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d077168c9c9f7ee0a615d2c5bb2913 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a71d077168c9c9f7ee0a615d2c5bb2913">findParameter</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
@@ -406,10 +378,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a1647be2184acdeb7e7f7e0d5e5980ceb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#a1647be2184acdeb7e7f7e0d5e5980ceb">resetStates</a> () override</td></tr>
 <tr class="separator:a1647be2184acdeb7e7f7e0d5e5980ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classdyno_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdyno_1_1_node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_node.html">dyno::Node</a></td></tr>
-<tr class="memitem:ae7902b6471be24550816663a73c6dc28 inherit pro_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#ae7902b6471be24550816663a73c6dc28">doTraverseBottomUp</a> (<a class="el" href="classdyno_1_1_action.html">Action</a> *act)</td></tr>
-<tr class="separator:ae7902b6471be24550816663a73c6dc28 inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b67abdf986998ed7cf69b82cff4e01d inherit pro_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a0b67abdf986998ed7cf69b82cff4e01d">doTraverseTopDown</a> (<a class="el" href="classdyno_1_1_action.html">Action</a> *act)</td></tr>
-<tr class="separator:a0b67abdf986998ed7cf69b82cff4e01d inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09fffdf7fc240a52ce2a9e010774f1fa inherit pro_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a09fffdf7fc240a52ce2a9e010774f1fa">appendExportNode</a> (<a class="el" href="classdyno_1_1_node_port.html">NodePort</a> *nodePort)</td></tr>
 <tr class="separator:a09fffdf7fc240a52ce2a9e010774f1fa inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a9c5bd47d2feac107561b2769fd5c09 inherit pro_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a6a9c5bd47d2feac107561b2769fd5c09">removeExportNode</a> (<a class="el" href="classdyno_1_1_node_port.html">NodePort</a> *nodePort)</td></tr>
@@ -426,11 +394,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a268d036395a10abc9669a042d35d91cf inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcad5713df037429dd4ee560bd086a86 inherit pro_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#abcad5713df037429dd4ee560bd086a86">validateInputs</a> ()</td></tr>
 <tr class="separator:abcad5713df037429dd4ee560bd086a86 inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a4ed02f25d9bdb2595ed7b517b7b81e53"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_elastic_body.html#a4ed02f25d9bdb2595ed7b517b7b81e53">m_surfaceNode</a></td></tr>
-<tr class="separator:a4ed02f25d9bdb2595ed7b517b7b81e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a88dfdd26c4e4b22e2a4e5a95909058 inherit pro_methods_classdyno_1_1_node"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a7a88dfdd26c4e4b22e2a4e5a95909058">tick</a> ()</td></tr>
+<tr class="separator:a7a88dfdd26c4e4b22e2a4e5a95909058 inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -533,14 +498,14 @@ template&lt;typename TDataType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00014">14</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00016">16</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_elastic_body_a1c015c9b9eaf398b2b7834db71f82a7c_cgraph.png" border="0" usemap="#aclassdyno_1_1_elastic_body_a1c015c9b9eaf398b2b7834db71f82a7c_cgraph" alt=""/></div>
 <map name="aclassdyno_1_1_elastic_body_a1c015c9b9eaf398b2b7834db71f82a7c_cgraph" id="aclassdyno_1_1_elastic_body_a1c015c9b9eaf398b2b7834db71f82a7c_cgraph">
 <area shape="rect" title=" " alt="" coords="5,23,141,65"/>
-<area shape="rect" href="classdyno_1_1_node.html#a3d4d33e4f458bc40f6726a67e241e9c0" title=" " alt="" coords="189,5,388,32"/>
+<area shape="rect" href="classdyno_1_1_node.html#aba92798b2bb44a2afb84042ff83d753e" title=" " alt="" coords="189,5,388,32"/>
 <area shape="rect" href="classdyno_1_1_node.html#acc54344cd3b2c1f77b3c2df6ece0df4c" title=" " alt="" coords="217,56,360,83"/>
 <area shape="rect" href="classdyno_1_1_node.html#a09fffdf7fc240a52ce2a9e010774f1fa" title=" " alt="" coords="436,56,643,83"/>
 <area shape="rect" href="classdyno_1_1_node_port.html#a4f7b8748e6d1a0d5b7e63d4e06ef411c" title=" " alt="" coords="691,56,861,83"/>
@@ -571,13 +536,13 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00042">42</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00044">44</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a92fc29f6a877b215ed4ab295c475fa58" name="a92fc29f6a877b215ed4ab295c475fa58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92fc29f6a877b215ed4ab295c475fa58">&#9670;&nbsp;</a></span>DEF_EMPTY_CURRENT_ARRAY()</h2>
+<a id="afb56bfeacebee8a6e447b5710719d306" name="afb56bfeacebee8a6e447b5710719d306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb56bfeacebee8a6e447b5710719d306">&#9670;&nbsp;</a></span>DEF_ARRAY_STATE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -585,15 +550,15 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::DEF_EMPTY_CURRENT_ARRAY </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::DEF_ARRAY_STATE </td>
           <td>(</td>
-          <td class="paramtype">ReferencePosition&#160;</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a>&#160;</td>
+          <td class="paramtype">ReferencePosition&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -618,8 +583,8 @@ template&lt;typename TDataType &gt; </div>
 
 </div>
 </div>
-<a id="a7551dc952949a10fe67d4bc208049f34" name="a7551dc952949a10fe67d4bc208049f34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7551dc952949a10fe67d4bc208049f34">&#9670;&nbsp;</a></span>DEF_EMPTY_CURRENT_ARRAYLIST() <span class="overload">[1/2]</span></h2>
+<a id="a5abbd87e2b624f960ae9a4751ba921de" name="a5abbd87e2b624f960ae9a4751ba921de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5abbd87e2b624f960ae9a4751ba921de">&#9670;&nbsp;</a></span>DEF_ARRAYLIST_STATE() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -627,7 +592,7 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::DEF_EMPTY_CURRENT_ARRAYLIST </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::DEF_ARRAYLIST_STATE </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname">, </td>
@@ -660,8 +625,8 @@ template&lt;typename TDataType &gt; </div>
 
 </div>
 </div>
-<a id="a0f0c3db6c3bb8b02a51fcf0477c40548" name="a0f0c3db6c3bb8b02a51fcf0477c40548"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f0c3db6c3bb8b02a51fcf0477c40548">&#9670;&nbsp;</a></span>DEF_EMPTY_CURRENT_ARRAYLIST() <span class="overload">[2/2]</span></h2>
+<a id="a4f1b0686a410997ed96aaa987ddb7bad" name="a4f1b0686a410997ed96aaa987ddb7bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f1b0686a410997ed96aaa987ddb7bad">&#9670;&nbsp;</a></span>DEF_ARRAYLIST_STATE() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -669,7 +634,7 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::DEF_EMPTY_CURRENT_ARRAYLIST </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::DEF_ARRAYLIST_STATE </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdyno_1_1_elastic_body.html#ad19c8cfcd7e299738f14cb10dbe3b551">NPair</a>&#160;</td>
           <td class="paramname">, </td>
@@ -744,75 +709,6 @@ template&lt;typename TDataType &gt; </div>
 
 </div>
 </div>
-<a id="a0dbdb0f746b55e16038b2cc8386d4217" name="a0dbdb0f746b55e16038b2cc8386d4217"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dbdb0f746b55e16038b2cc8386d4217">&#9670;&nbsp;</a></span>getSurfaceNode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt; <a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::getSurfaceNode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_elastic_body_8h_source.html#l00035">35</a> of file <a class="el" href="_elastic_body_8h_source.html">ElasticBody.h</a>.</p>
-
-</div>
-</div>
-<a id="a490bdd89b00f6d2cf9ae3c79aeda79f6" name="a490bdd89b00f6d2cf9ae3c79aeda79f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a490bdd89b00f6d2cf9ae3c79aeda79f6">&#9670;&nbsp;</a></span>getTopologyMapping()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_point_set_to_point_set.html">PointSetToPointSet</a>&lt; TDataType &gt; &gt; <a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::getTopologyMapping</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00111">111</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a98573b8f91f5df764e921026d58cb291" name="a98573b8f91f5df764e921026d58cb291"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98573b8f91f5df764e921026d58cb291">&#9670;&nbsp;</a></span>loadSurface()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::loadSurface </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00104">104</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
-
-</div>
-</div>
 <a id="a2f1e50a5ce9aa0e738cfb8b94f14fa11" name="a2f1e50a5ce9aa0e738cfb8b94f14fa11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f1e50a5ce9aa0e738cfb8b94f14fa11">&#9670;&nbsp;</a></span>resetStates()</h2>
 
@@ -837,7 +733,7 @@ template&lt;typename TDataType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_particle_system.html#a1647be2184acdeb7e7f7e0d5e5980ceb">dyno::ParticleSystem&lt; TDataType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00078">78</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00058">58</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -847,90 +743,6 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespacedyno.html#a658dfc0d7c98ccb1006e81d14de58d01" title=" " alt="" coords="189,5,365,32"/>
 <area shape="rect" href="classdyno_1_1_particle_system.html#a1647be2184acdeb7e7f7e0d5e5980ceb" title=" " alt="" coords="204,57,351,98"/>
 <area shape="rect" href="classdyno_1_1_node.html#a268d036395a10abc9669a042d35d91cf" title=" " alt="" coords="413,64,576,91"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a8b208cebcb2b5d1519fac520f56675a2" name="a8b208cebcb2b5d1519fac520f56675a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b208cebcb2b5d1519fac520f56675a2">&#9670;&nbsp;</a></span>scale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::scale </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_particle_system.html#a1b1bfaf5cab1ee8b043f365dbb29f336">Real</a>&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classdyno_1_1_particle_system.html#a2257721883c9643965a71f5b9e3b2a5b">dyno::ParticleSystem&lt; TDataType &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00056">56</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_elastic_body_a8b208cebcb2b5d1519fac520f56675a2_cgraph.png" border="0" usemap="#aclassdyno_1_1_elastic_body_a8b208cebcb2b5d1519fac520f56675a2_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_elastic_body_a8b208cebcb2b5d1519fac520f56675a2_cgraph" id="aclassdyno_1_1_elastic_body_a8b208cebcb2b5d1519fac520f56675a2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,27,141,69"/>
-<area shape="rect" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784" title=" " alt="" coords="221,5,305,32"/>
-<area shape="rect" href="classdyno_1_1_particle_system.html#a2257721883c9643965a71f5b9e3b2a5b" title=" " alt="" coords="189,57,336,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a98b9dd1e5c07b00437b4c15d91b91682" name="a98b9dd1e5c07b00437b4c15d91b91682"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98b9dd1e5c07b00437b4c15d91b91682">&#9670;&nbsp;</a></span>translate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::translate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a>&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classdyno_1_1_particle_system.html#a6513488abba4e2a869daf30da8326b95">dyno::ParticleSystem&lt; TDataType &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00048">48</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_elastic_body_a98b9dd1e5c07b00437b4c15d91b91682_cgraph.png" border="0" usemap="#aclassdyno_1_1_elastic_body_a98b9dd1e5c07b00437b4c15d91b91682_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_elastic_body_a98b9dd1e5c07b00437b4c15d91b91682_cgraph" id="aclassdyno_1_1_elastic_body_a98b9dd1e5c07b00437b4c15d91b91682_cgraph">
-<area shape="rect" title=" " alt="" coords="5,35,141,76"/>
-<area shape="rect" href="classdyno_1_1_particle_system.html#a6513488abba4e2a869daf30da8326b95" title=" " alt="" coords="189,5,336,47"/>
-<area shape="rect" href="namespacevgm.html#a2de7e4c7a17d855ec7a17058852709f5" title=" " alt="" coords="211,71,314,98"/>
 </map>
 </div>
 
@@ -960,34 +772,7 @@ template&lt;typename TDataType &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_particle_system.html#a717333615d2dad814c391d70e2d2edd9">dyno::ParticleSystem&lt; TDataType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00064">64</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4ed02f25d9bdb2595ed7b517b7b81e53" name="a4ed02f25d9bdb2595ed7b517b7b81e53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ed02f25d9bdb2595ed7b517b7b81e53">&#9670;&nbsp;</a></span>m_surfaceNode</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_node.html">Node</a>&gt; <a class="el" href="classdyno_1_1_elastic_body.html">dyno::ElasticBody</a>&lt; TDataType &gt;::m_surfaceNode</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_elastic_body_8h_source.html#l00050">50</a> of file <a class="el" href="_elastic_body_8h_source.html">ElasticBody.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_elastic_body_8cpp_source.html#l00050">50</a> of file <a class="el" href="_elastic_body_8cpp_source.html">ElasticBody.cpp</a>.</p>
 
 </div>
 </div>

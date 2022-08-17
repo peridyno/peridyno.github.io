@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdyno_1_1_camera-members.html">List of all members</a>  </div>
@@ -87,6 +88,13 @@ Inheritance diagram for dyno::Camera:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a6093cf69c4919e5e6444dc35f9c820f9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a> { <a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9a4e5b1907583edb28a7fef2d96f500442">Perspective</a>
+, <a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9aa5174c96f16d13ecab1b84743ded70da">Orthogonal</a>
+ }</td></tr>
+<tr class="separator:a6093cf69c4919e5e6444dc35f9c820f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9af5733452f6605dcfc9aee01ee4b129"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a9af5733452f6605dcfc9aee01ee4b129">Camera</a> ()</td></tr>
@@ -121,26 +129,67 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac909f2033439b5847212968e6cdf870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef0ec4bc2b5a0705744a249c9e0c392a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#aef0ec4bc2b5a0705744a249c9e0c392a">clipFar</a> () const</td></tr>
 <tr class="separator:aef0ec4bc2b5a0705744a249c9e0c392a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcce584f55dd50d9c7c6333ea3fb6343"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#abcce584f55dd50d9c7c6333ea3fb6343">setEyePos</a> (const <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;p)=0</td></tr>
+<tr class="separator:abcce584f55dd50d9c7c6333ea3fb6343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56798396a3daea9dd17f3f084440c3e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a56798396a3daea9dd17f3f084440c3e8">setTargetPos</a> (const <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;p)=0</td></tr>
+<tr class="separator:a56798396a3daea9dd17f3f084440c3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff778aab7397bfe1db30bbc40faa2b31"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#aff778aab7397bfe1db30bbc40faa2b31">getEyePos</a> () const =0</td></tr>
+<tr class="separator:aff778aab7397bfe1db30bbc40faa2b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d47dafb052f58e590852f81b4732df5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a7d47dafb052f58e590852f81b4732df5">getTargetPos</a> () const =0</td></tr>
+<tr class="separator:a7d47dafb052f58e590852f81b4732df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c3629db7ec588e9c6d6f16114e88c3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_t_ray3_d.html">TRay3D</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a0c3629db7ec588e9c6d6f16114e88c3c">castRayInWorldSpace</a> (float x, float y)</td></tr>
 <tr class="separator:a0c3629db7ec588e9c6d6f16114e88c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c27a8c082f8727bceebeb4c9e9e772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#af9c27a8c082f8727bceebeb4c9e9e772">setDistanceUnit</a> (float unit)</td></tr>
+<tr class="separator:af9c27a8c082f8727bceebeb4c9e9e772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef8b8e50479120d21dc3f126bc9c1f5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#aeef8b8e50479120d21dc3f126bc9c1f5">distanceUnit</a> ()</td></tr>
+<tr class="separator:aeef8b8e50479120d21dc3f126bc9c1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a226ba74f4c26669f2e3b6df358c8cc43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a226ba74f4c26669f2e3b6df358c8cc43">setProjectionType</a> (<a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a> type)</td></tr>
+<tr class="separator:a226ba74f4c26669f2e3b6df358c8cc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf971762614950ec17d976fbcf1494d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#aacf971762614950ec17d976fbcf1494d">projectionType</a> ()</td></tr>
+<tr class="separator:aacf971762614950ec17d976fbcf1494d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a34b6617c8109855e8b3e76f92d40aa9d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a34b6617c8109855e8b3e76f92d40aa9d">mNear</a></td></tr>
+<tr class="memitem:a34b6617c8109855e8b3e76f92d40aa9d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a34b6617c8109855e8b3e76f92d40aa9d">mNear</a> = 0.01f</td></tr>
 <tr class="separator:a34b6617c8109855e8b3e76f92d40aa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38c7acaea4e451ffe76b5776053bcdae"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a38c7acaea4e451ffe76b5776053bcdae">mFar</a></td></tr>
+<tr class="memitem:a38c7acaea4e451ffe76b5776053bcdae"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a38c7acaea4e451ffe76b5776053bcdae">mFar</a> = 10.0f</td></tr>
 <tr class="separator:a38c7acaea4e451ffe76b5776053bcdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932d9897d2ee7cf011bd64a83d939e08"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a932d9897d2ee7cf011bd64a83d939e08">mFov</a></td></tr>
+<tr class="memitem:a932d9897d2ee7cf011bd64a83d939e08"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a932d9897d2ee7cf011bd64a83d939e08">mFov</a> = 0.0f</td></tr>
 <tr class="separator:a932d9897d2ee7cf011bd64a83d939e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dd35230d4c9b1ebe4245619ffdfc684"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a5dd35230d4c9b1ebe4245619ffdfc684">mViewportWidth</a></td></tr>
 <tr class="separator:a5dd35230d4c9b1ebe4245619ffdfc684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2515c19562888e023816b89b11bd09b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a2515c19562888e023816b89b11bd09b4">mViewportHeight</a></td></tr>
 <tr class="separator:a2515c19562888e023816b89b11bd09b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f13aa219c2ae508e52d3e5b5a44bc50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#a1f13aa219c2ae508e52d3e5b5a44bc50">mProjectionType</a> = <a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9a4e5b1907583edb28a7fef2d96f500442">Perspective</a></td></tr>
+<tr class="separator:a1f13aa219c2ae508e52d3e5b5a44bc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5940b7052df8e81b7a3c826e945a5fd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_camera.html#ad5940b7052df8e81b7a3c826e945a5fd">mDistanceUnit</a> = 1.0f</td></tr>
+<tr class="separator:ad5940b7052df8e81b7a3c826e945a5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00015">15</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a6093cf69c4919e5e6444dc35f9c820f9" name="a6093cf69c4919e5e6444dc35f9c820f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6093cf69c4919e5e6444dc35f9c820f9">&#9670;&nbsp;</a></span>ProjectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">dyno::Camera::ProjectionType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6093cf69c4919e5e6444dc35f9c820f9a4e5b1907583edb28a7fef2d96f500442" name="a6093cf69c4919e5e6444dc35f9c820f9a4e5b1907583edb28a7fef2d96f500442"></a>Perspective&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6093cf69c4919e5e6444dc35f9c820f9aa5174c96f16d13ecab1b84743ded70da" name="a6093cf69c4919e5e6444dc35f9c820f9aa5174c96f16d13ecab1b84743ded70da"></a>Orthogonal&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00020">20</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9af5733452f6605dcfc9aee01ee4b129" name="a9af5733452f6605dcfc9aee01ee4b129"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9af5733452f6605dcfc9aee01ee4b129">&#9670;&nbsp;</a></span>Camera()</h2>
 
@@ -263,7 +312,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00039">39</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00045">45</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 
 </div>
 </div>
@@ -290,7 +339,61 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00038">38</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00044">44</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="aeef8b8e50479120d21dc3f126bc9c1f5" name="aeef8b8e50479120d21dc3f126bc9c1f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef8b8e50479120d21dc3f126bc9c1f5">&#9670;&nbsp;</a></span>distanceUnit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float dyno::Camera::distanceUnit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00057">57</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="aff778aab7397bfe1db30bbc40faa2b31" name="aff778aab7397bfe1db30bbc40faa2b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff778aab7397bfe1db30bbc40faa2b31">&#9670;&nbsp;</a></span>getEyePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> dyno::Camera::getEyePos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classdyno_1_1_orbit_camera.html#a47964aa8aab1dc1c3f092c7f10d91d52">dyno::OrbitCamera</a>, and <a class="el" href="classdyno_1_1_trackball_camera.html#ab33b6ad5512934d8cde9255dff3008e3">dyno::TrackballCamera</a>.</p>
 
 </div>
 </div>
@@ -330,6 +433,33 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a7d47dafb052f58e590852f81b4732df5" name="a7d47dafb052f58e590852f81b4732df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d47dafb052f58e590852f81b4732df5">&#9670;&nbsp;</a></span>getTargetPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> dyno::Camera::getTargetPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classdyno_1_1_orbit_camera.html#aae7005dcc684337cbaaf8bf9e2a1c42b">dyno::OrbitCamera</a>, and <a class="el" href="classdyno_1_1_trackball_camera.html#a787fd0019b49dafaafc15af96e3dfd4d">dyno::TrackballCamera</a>.</p>
+
+</div>
+</div>
 <a id="ace9efab63c496cb52dbd599883b08f0f" name="ace9efab63c496cb52dbd599883b08f0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace9efab63c496cb52dbd599883b08f0f">&#9670;&nbsp;</a></span>getViewMat()</h2>
 
@@ -363,6 +493,33 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classdyno_1_1_camera.html#a0c3629db7ec588e9c6d6f16114e88c3c" title=" " alt="" coords="5,5,208,47"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aacf971762614950ec17d976fbcf1494d" name="aacf971762614950ec17d976fbcf1494d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf971762614950ec17d976fbcf1494d">&#9670;&nbsp;</a></span>projectionType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a> dyno::Camera::projectionType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00060">60</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 
 </div>
 </div>
@@ -466,7 +623,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00033">33</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00039">39</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_camera_a1c328a15c0336a7f000d1bb939cb33f6_icgraph.png" border="0" usemap="#aclassdyno_1_1_camera_a1c328a15c0336a7f000d1bb939cb33f6_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_camera_a1c328a15c0336a7f000d1bb939cb33f6_icgraph" id="aclassdyno_1_1_camera_a1c328a15c0336a7f000d1bb939cb33f6_icgraph">
+<area shape="rect" title=" " alt="" coords="192,13,363,39"/>
+<area shape="rect" href="classdyno_1_1_orbit_camera.html#a6fb77d797f6e9013b3abb6b085d02ae2" title=" " alt="" coords="5,5,144,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -494,7 +660,63 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00032">32</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00038">38</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="af9c27a8c082f8727bceebeb4c9e9e772" name="af9c27a8c082f8727bceebeb4c9e9e772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c27a8c082f8727bceebeb4c9e9e772">&#9670;&nbsp;</a></span>setDistanceUnit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::Camera::setDistanceUnit </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00055">55</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="abcce584f55dd50d9c7c6333ea3fb6343" name="abcce584f55dd50d9c7c6333ea3fb6343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcce584f55dd50d9c7c6333ea3fb6343">&#9670;&nbsp;</a></span>setEyePos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void dyno::Camera::setEyePos </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classdyno_1_1_orbit_camera.html#aa105e8660681442867fe51449bfd4572">dyno::OrbitCamera</a>, and <a class="el" href="classdyno_1_1_trackball_camera.html#a9dc62b33094dd38e280cf8f602e584b2">dyno::TrackballCamera</a>.</p>
 
 </div>
 </div>
@@ -522,7 +744,63 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00030">30</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00036">36</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a226ba74f4c26669f2e3b6df358c8cc43" name="a226ba74f4c26669f2e3b6df358c8cc43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a226ba74f4c26669f2e3b6df358c8cc43">&#9670;&nbsp;</a></span>setProjectionType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::Camera::setProjectionType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00059">59</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a56798396a3daea9dd17f3f084440c3e8" name="a56798396a3daea9dd17f3f084440c3e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56798396a3daea9dd17f3f084440c3e8">&#9670;&nbsp;</a></span>setTargetPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void dyno::Camera::setTargetPos </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classdyno_1_1_orbit_camera.html#a97ab8665d89ceee9740a68438baa7e43">dyno::OrbitCamera</a>, and <a class="el" href="classdyno_1_1_trackball_camera.html#a81fe56ca21ef1d17a87a02a6bb409749">dyno::TrackballCamera</a>.</p>
 
 </div>
 </div>
@@ -550,7 +828,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00029">29</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00035">35</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 
 </div>
 </div>
@@ -615,7 +893,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00036">36</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00042">42</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -651,7 +929,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00035">35</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00041">41</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -693,6 +971,30 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad5940b7052df8e81b7a3c826e945a5fd" name="ad5940b7052df8e81b7a3c826e945a5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5940b7052df8e81b7a3c826e945a5fd">&#9670;&nbsp;</a></span>mDistanceUnit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float dyno::Camera::mDistanceUnit = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00073">73</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
 <a id="a38c7acaea4e451ffe76b5776053bcdae" name="a38c7acaea4e451ffe76b5776053bcdae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38c7acaea4e451ffe76b5776053bcdae">&#9670;&nbsp;</a></span>mFar</h2>
 
@@ -703,7 +1005,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float dyno::Camera::mFar</td>
+          <td class="memname">float dyno::Camera::mFar = 10.0f</td>
         </tr>
       </table>
   </td>
@@ -713,7 +1015,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00045">45</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00064">64</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 
 </div>
 </div>
@@ -727,7 +1029,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float dyno::Camera::mFov</td>
+          <td class="memname">float dyno::Camera::mFov = 0.0f</td>
         </tr>
       </table>
   </td>
@@ -737,7 +1039,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00046">46</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00065">65</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 
 </div>
 </div>
@@ -751,7 +1053,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float dyno::Camera::mNear</td>
+          <td class="memname">float dyno::Camera::mNear = 0.01f</td>
         </tr>
       </table>
   </td>
@@ -761,7 +1063,31 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00044">44</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00063">63</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+
+</div>
+</div>
+<a id="a1f13aa219c2ae508e52d3e5b5a44bc50" name="a1f13aa219c2ae508e52d3e5b5a44bc50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f13aa219c2ae508e52d3e5b5a44bc50">&#9670;&nbsp;</a></span>mProjectionType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9">ProjectionType</a> dyno::Camera::mProjectionType = <a class="el" href="classdyno_1_1_camera.html#a6093cf69c4919e5e6444dc35f9c820f9a4e5b1907583edb28a7fef2d96f500442">Perspective</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00070">70</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 
 </div>
 </div>
@@ -785,7 +1111,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00049">49</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00068">68</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 
 </div>
 </div>
@@ -809,13 +1135,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00048">48</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_camera_8h_source.html#l00067">67</a> of file <a class="el" href="_camera_8h_source.html">Camera.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>E:/Peridyno/peridyno/src/Rendering/Core/<a class="el" href="_camera_8h_source.html">Camera.h</a></li>
-<li>E:/Peridyno/peridyno/src/Rendering/Core/<a class="el" href="_camera_8cpp_source.html">Camera.cpp</a></li>
+<li>E:/Peridyno/peridyno/src/Framework/<a class="el" href="_camera_8h_source.html">Camera.h</a></li>
+<li>E:/Peridyno/peridyno/src/Framework/<a class="el" href="_camera_8cpp_source.html">Camera.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

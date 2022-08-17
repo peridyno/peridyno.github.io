@@ -21,5 +21,6 @@ var searchData=
   ['rigid_3c_20t_2c_203_20_3e_18',['Rigid&lt; T, 3 &gt;',['../classdyno_1_1_rigid_3_01_t_00_013_01_4.html',1,'dyno']]],
   ['rigidbody_19',['RigidBody',['../classdyno_1_1_rigid_body.html',1,'dyno']]],
   ['rigidbodyinfo_20',['RigidBodyInfo',['../structdyno_1_1_rigid_body_info.html',1,'dyno']]],
-  ['rigidbodysystem_21',['RigidBodySystem',['../classdyno_1_1_rigid_body_system.html',1,'dyno']]]
+  ['rigidbodyinitializer_21',['RigidBodyInitializer',['../classdyno_1_1_rigid_body_initializer.html',1,'dyno']]],
+  ['rigidbodysystem_22',['RigidBodySystem',['../classdyno_1_1_rigid_body_system.html',1,'dyno']]]
 ];

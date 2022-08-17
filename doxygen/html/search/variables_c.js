@@ -11,8 +11,11 @@ var searchData=
   ['normal_8',['normal',['../structdyno_1_1_t_manifold.html#a2e41bc1e05cb756f0fad29a0a1329e1c',1,'dyno::TManifold::normal()'],['../classdyno_1_1_t_plane3_d.html#addce8a181cc499d742a902014319a2cd',1,'dyno::TPlane3D::normal()'],['../classdyno_1_1_t_disk3_d.html#afd1f0d346487cc5cf5cc3dac7343d64c',1,'dyno::TDisk3D::normal()']]],
   ['normal1_9',['normal1',['../classdyno_1_1_t_contact_pair.html#ab5cb8dec0bff1bc44dfd7d12bd4e9b81',1,'dyno::TContactPair']]],
   ['normal2_10',['normal2',['../classdyno_1_1_t_contact_pair.html#a06ca587d9faf98b2b8a34edbd48bcb33',1,'dyno::TContactPair']]],
-  ['num_11',['num',['../classdyno_1_1_grid_hash.html#a84cb353c43e663af14df6ea97d74b8c1',1,'dyno::GridHash']]],
-  ['nx_12',['nx',['../classdyno_1_1_grid_hash.html#af4d2fa400241c8af6df03654cb07f5c4',1,'dyno::GridHash']]],
-  ['ny_13',['ny',['../classdyno_1_1_grid_hash.html#a813f80a7347ced0f00b1e96c737df4f0',1,'dyno::GridHash']]],
-  ['nz_14',['nz',['../classdyno_1_1_grid_hash.html#a46fae352d21fe9af0558e59782ae5bda',1,'dyno::GridHash']]]
+  ['normals_11',['normals',['../classdyno_1_1_rigid_body_system.html#ad7ed501398afce83a44550ef04a6c077',1,'dyno::RigidBodySystem']]],
+  ['num_12',['num',['../classdyno_1_1_grid_hash.html#a84cb353c43e663af14df6ea97d74b8c1',1,'dyno::GridHash']]],
+  ['nx_13',['nx',['../classdyno_1_1_grid_hash.html#af4d2fa400241c8af6df03654cb07f5c4',1,'dyno::GridHash::nx()'],['../classdyno_1_1_poisson_diks_sampling.html#abbf1a2de95f7cee66eee7e24b1e1666c',1,'dyno::PoissonDiksSampling::nx()']]],
+  ['nx_14',['Nx',['../classdyno_1_1_ocean.html#a8d74de7acd42d144545a31f09a8d2225',1,'dyno::Ocean']]],
+  ['ny_15',['ny',['../classdyno_1_1_grid_hash.html#a813f80a7347ced0f00b1e96c737df4f0',1,'dyno::GridHash::ny()'],['../classdyno_1_1_poisson_diks_sampling.html#a0d116017c0292badd5855a6b7ac954c8',1,'dyno::PoissonDiksSampling::ny()']]],
+  ['ny_16',['Ny',['../classdyno_1_1_ocean.html#a3b2c03e3804f4560006aa5fbbd393c3c',1,'dyno::Ocean']]],
+  ['nz_17',['nz',['../classdyno_1_1_grid_hash.html#a46fae352d21fe9af0558e59782ae5bda',1,'dyno::GridHash::nz()'],['../classdyno_1_1_poisson_diks_sampling.html#a3fd87e2d38a74334d7ad9f753c3ab9f8',1,'dyno::PoissonDiksSampling::nz()']]]
 ];

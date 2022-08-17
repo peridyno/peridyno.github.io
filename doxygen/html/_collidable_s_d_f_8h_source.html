@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ $(function() {
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classdyno_1_1_collidable_s_d_f.html#a8a91e4193421122927712f433aa70b87">   30</a></span>        std::shared_ptr&lt;DistanceField3D&lt;TDataType&gt;&gt; <a class="code hl_function" href="classdyno_1_1_collidable_s_d_f.html#a8a91e4193421122927712f433aa70b87">getSDF</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classdyno_1_1_collidable_s_d_f.html#a694791d9fd7b8da4b781fcad8e78f5af">m_sdf</a>; }</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classdyno_1_1_collidable_s_d_f.html#a33dcfddaf5a5cdd49b912d68c6999a8f">   32</a></span>        <a class="code hl_function" href="classdyno_1_1_collidable_s_d_f.html#a33dcfddaf5a5cdd49b912d68c6999a8f">~CollidableSDF</a>() { <a class="code hl_variable" href="classdyno_1_1_collidable_s_d_f.html#a694791d9fd7b8da4b781fcad8e78f5af">m_sdf</a>-&gt;release(); }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classdyno_1_1_collidable_s_d_f.html#a33dcfddaf5a5cdd49b912d68c6999a8f">   32</a></span>        <a class="code hl_function" href="classdyno_1_1_collidable_s_d_f.html#a33dcfddaf5a5cdd49b912d68c6999a8f">~CollidableSDF</a>() { <span class="keywordflow">if</span>(<a class="code hl_variable" href="classdyno_1_1_collidable_s_d_f.html#a694791d9fd7b8da4b781fcad8e78f5af">m_sdf</a> != <span class="keyword">nullptr</span>) <a class="code hl_variable" href="classdyno_1_1_collidable_s_d_f.html#a694791d9fd7b8da4b781fcad8e78f5af">m_sdf</a>-&gt;release(); }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classdyno_1_1_collidable_s_d_f.html#a6672b013a8a0c9a73b94c37b481fa491">   34</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_collidable_s_d_f.html#a6672b013a8a0c9a73b94c37b481fa491">updateCollidableObject</a>()<span class="keyword"> override </span>{};</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classdyno_1_1_collidable_s_d_f.html#aa01d667d24546323503da50c5411ea34">   35</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_collidable_s_d_f.html#aa01d667d24546323503da50c5411ea34">updateMechanicalState</a>()<span class="keyword"> override </span>{};</div>
@@ -146,7 +146,7 @@ $(function() {
 <div class="ttc" id="aclassdyno_1_1_collidable_s_d_f_html_aa01d667d24546323503da50c5411ea34"><div class="ttname"><a href="classdyno_1_1_collidable_s_d_f.html#aa01d667d24546323503da50c5411ea34">dyno::CollidableSDF::updateMechanicalState</a></div><div class="ttdeci">void updateMechanicalState() override</div><div class="ttdef"><b>Definition:</b> <a href="_collidable_s_d_f_8h_source.html#l00035">CollidableSDF.h:35</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_collidable_s_d_f_html_aa46acd8ff2f03286051a17157b88ffa4"><div class="ttname"><a href="classdyno_1_1_collidable_s_d_f.html#aa46acd8ff2f03286051a17157b88ffa4">dyno::CollidableSDF::initializeImpl</a></div><div class="ttdeci">bool initializeImpl() override</div><div class="ttdef"><b>Definition:</b> <a href="_collidable_s_d_f_8cpp_source.html#l00017">CollidableSDF.cpp:17</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_distance_field3_d_html"><div class="ttname"><a href="classdyno_1_1_distance_field3_d.html">dyno::DistanceField3D</a></div><div class="ttdef"><b>Definition:</b> <a href="_distance_field3_d_8h_source.html#l00020">DistanceField3D.h:20</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

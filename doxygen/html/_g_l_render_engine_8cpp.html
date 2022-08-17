@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,6 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_g_l_render_engine_8h_source.html">GLRenderEngine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_g_l_render_helper_8h_source.html">GLRenderHelper.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_g_l_render_target_8h_source.html">GLRenderTarget.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_g_l_visual_module_8h_source.html">GLVisualModule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_utility_8h_source.html">Utility.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_shadow_map_8h_source.html">ShadowMap.h</a>&quot;</code><br />
@@ -92,56 +91,56 @@ Include dependency graph for GLRenderEngine.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="_g_l_render_engine_8cpp__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_rendering_2_engine_2_open_g_l_2_g_l_render_engine_8cpp" alt=""/></div>
 <map name="a_e_1_2_peridyno_2peridyno_2src_2_rendering_2_engine_2_open_g_l_2_g_l_render_engine_8cpp" id="a_e_1_2_peridyno_2peridyno_2src_2_rendering_2_engine_2_open_g_l_2_g_l_render_engine_8cpp">
-<area shape="rect" title=" " alt="" coords="906,5,1107,61"/>
-<area shape="rect" href="_g_l_render_engine_8h.html" title=" " alt="" coords="1145,259,1276,285"/>
-<area shape="rect" href="_g_l_render_helper_8h.html" title=" " alt="" coords="993,109,1121,136"/>
-<area shape="rect" href="_g_l_visual_module_8h.html" title=" " alt="" coords="980,184,1108,211"/>
-<area shape="rect" href="_g_l_render_target_8h.html" title=" " alt="" coords="85,184,211,211"/>
-<area shape="rect" href="_utility_8h.html" title=" " alt="" coords="852,109,919,136"/>
-<area shape="rect" href="_shadow_map_8h.html" title=" " alt="" coords="407,109,511,136"/>
-<area shape="rect" href="_s_s_a_o_8h.html" title=" " alt="" coords="287,184,358,211"/>
-<area shape="rect" href="_scene_graph_8h.html" title=" " alt="" coords="1630,184,1735,211"/>
-<area shape="rect" href="_action_8h.html" title=" " alt="" coords="1738,109,1809,136"/>
-<area shape="rect" title=" " alt="" coords="1196,109,1337,136"/>
-<area shape="rect" title=" " alt="" coords="1362,109,1553,136"/>
-<area shape="rect" title=" " alt="" coords="1577,109,1663,136"/>
-<area shape="rect" href="_orbit_camera_8h.html" title=" " alt="" coords="579,109,685,136"/>
-<area shape="rect" href="_trackball_camera_8h.html" title=" " alt="" coords="689,184,820,211"/>
-<area shape="rect" title=" " alt="" coords="1344,408,1413,435"/>
-<area shape="rect" title=" " alt="" coords="1201,408,1257,435"/>
-<area shape="rect" href="_rendering_8h.html" title=" " alt="" coords="1088,333,1179,360"/>
-<area shape="rect" href="_buffer_8h.html" title=" " alt="" coords="328,333,408,360"/>
-<area shape="rect" title=" " alt="" coords="1457,632,1511,659"/>
-<area shape="rect" title=" " alt="" coords="632,408,725,435"/>
-<area shape="rect" href="_rendering_2_engine_2_open_g_l_2gl_2_object_8h.html" title=" " alt="" coords="333,408,403,435"/>
-<area shape="rect" href="_vector_8h.html" title=" " alt="" coords="889,408,959,435"/>
-<area shape="rect" href="_vector2_d_8h.html" title=" " alt="" coords="1035,483,1165,509"/>
-<area shape="rect" href="_vector3_d_8h.html" title=" " alt="" coords="830,483,959,509"/>
-<area shape="rect" href="_vector4_d_8h.html" title=" " alt="" coords="1189,483,1318,509"/>
-<area shape="rect" href="_vector_n_d_8h.html" title=" " alt="" coords="1444,483,1575,509"/>
-<area shape="rect" title=" " alt="" coords="1232,557,1304,584"/>
-<area shape="rect" title=" " alt="" coords="713,557,812,584"/>
-<area shape="rect" href="_platform_8h.html" title=" " alt="" coords="1571,557,1653,584"/>
-<area shape="rect" href="_visual_module_8h.html" title=" " alt="" coords="913,259,1071,285"/>
-<area shape="rect" href="_module_8h.html" title=" " alt="" coords="1416,333,1491,360"/>
-<area shape="rect" href="_quat_8h.html" title="Implementation of quaternion." alt="" coords="851,333,912,360"/>
-<area shape="rect" href="_o_base_8h.html" title=" " alt="" coords="1814,408,1887,435"/>
-<area shape="rect" href="_f_base_8h.html" title=" " alt="" coords="1802,483,1873,509"/>
-<area shape="rect" href="_framework_2_object_8h.html" title=" " alt="" coords="1897,483,1967,509"/>
-<area shape="rect" href="_framebuffer_8h.html" title=" " alt="" coords="5,259,120,285"/>
-<area shape="rect" href="_texture_8h.html" title=" " alt="" coords="144,259,235,285"/>
-<area shape="rect" title=" " alt="" coords="895,184,956,211"/>
-<area shape="rect" href="_program_8h.html" title=" " alt="" coords="411,259,507,285"/>
-<area shape="rect" href="_mesh_8h.html" title=" " alt="" coords="485,184,563,211"/>
-<area shape="rect" href="_shader_8h.html" title=" " alt="" coords="483,333,557,360"/>
-<area shape="rect" href="_vertex_array_8h.html" title=" " alt="" coords="531,259,634,285"/>
-<area shape="rect" href="_node_8h.html" title=" " alt="" coords="1713,259,1775,285"/>
-<area shape="rect" href="_node_iterator_8h.html" title=" " alt="" coords="1515,333,1618,360"/>
-<area shape="rect" href="_input_mouse_module_8h.html" title=" " alt="" coords="1395,259,1583,285"/>
-<area shape="rect" href="_field_8h.html" title=" " alt="" coords="1649,408,1711,435"/>
-<area shape="rect" href="_declare_port_8h.html" title=" " alt="" coords="1693,333,1795,360"/>
-<area shape="rect" href="_node_port_8h.html" title=" " alt="" coords="1254,333,1341,360"/>
-<area shape="rect" href="_camera_8h.html" title=" " alt="" coords="658,259,737,285"/>
+<area shape="rect" title=" " alt="" coords="1218,5,1419,61"/>
+<area shape="rect" href="_g_l_render_engine_8h.html" title=" " alt="" coords="624,184,754,211"/>
+<area shape="rect" href="_g_l_render_helper_8h.html" title=" " alt="" coords="1054,259,1182,285"/>
+<area shape="rect" href="_g_l_visual_module_8h.html" title=" " alt="" coords="868,109,996,136"/>
+<area shape="rect" href="_utility_8h.html" title=" " alt="" coords="1630,109,1697,136"/>
+<area shape="rect" href="_shadow_map_8h.html" title=" " alt="" coords="1381,109,1485,136"/>
+<area shape="rect" href="_s_s_a_o_8h.html" title=" " alt="" coords="1535,109,1606,136"/>
+<area shape="rect" href="_scene_graph_8h.html" title=" " alt="" coords="203,109,308,136"/>
+<area shape="rect" href="_action_8h.html" title=" " alt="" coords="494,109,564,136"/>
+<area shape="rect" title=" " alt="" coords="1721,109,1862,136"/>
+<area shape="rect" title=" " alt="" coords="1887,109,2078,136"/>
+<area shape="rect" title=" " alt="" coords="2102,109,2188,136"/>
+<area shape="rect" href="_orbit_camera_8h.html" title=" " alt="" coords="1174,109,1281,136"/>
+<area shape="rect" href="_trackball_camera_8h.html" title=" " alt="" coords="1020,109,1150,136"/>
+<area shape="rect" title=" " alt="" coords="481,333,550,360"/>
+<area shape="rect" title=" " alt="" coords="636,333,692,360"/>
+<area shape="rect" href="_rendering_8h.html" title=" " alt="" coords="753,259,844,285"/>
+<area shape="rect" href="_buffer_8h.html" title=" " alt="" coords="1558,333,1638,360"/>
+<area shape="rect" title=" " alt="" coords="394,483,448,509"/>
+<area shape="rect" title=" " alt="" coords="1328,333,1421,360"/>
+<area shape="rect" href="_rendering_2_engine_2_open_g_l_2gl_2_object_8h.html" title=" " alt="" coords="1646,408,1716,435"/>
+<area shape="rect" href="_vector_8h.html" title=" " alt="" coords="879,333,950,360"/>
+<area shape="rect" href="_vector2_d_8h.html" title=" " alt="" coords="816,408,946,435"/>
+<area shape="rect" href="_vector3_d_8h.html" title=" " alt="" coords="1123,408,1252,435"/>
+<area shape="rect" href="_vector4_d_8h.html" title=" " alt="" coords="970,408,1099,435"/>
+<area shape="rect" href="_vector_n_d_8h.html" title=" " alt="" coords="509,408,640,435"/>
+<area shape="rect" title=" " alt="" coords="742,483,814,509"/>
+<area shape="rect" title=" " alt="" coords="1241,483,1340,509"/>
+<area shape="rect" href="_platform_8h.html" title=" " alt="" coords="172,483,254,509"/>
+<area shape="rect" href="_visual_module_8h.html" title=" " alt="" coords="778,184,936,211"/>
+<area shape="rect" href="_module_8h.html" title=" " alt="" coords="553,259,628,285"/>
+<area shape="rect" href="_quat_8h.html" title="Implementation of quaternion." alt="" coords="918,259,980,285"/>
+<area shape="rect" href="_o_base_8h.html" title=" " alt="" coords="222,333,295,360"/>
+<area shape="rect" href="_f_base_8h.html" title=" " alt="" coords="262,408,332,435"/>
+<area shape="rect" href="_framework_2_object_8h.html" title=" " alt="" coords="167,408,238,435"/>
+<area shape="rect" title=" " alt="" coords="1908,184,1969,211"/>
+<area shape="rect" href="_framebuffer_8h.html" title=" " alt="" coords="1718,184,1833,211"/>
+<area shape="rect" href="_texture_8h.html" title=" " alt="" coords="1636,259,1726,285"/>
+<area shape="rect" href="_program_8h.html" title=" " alt="" coords="1548,184,1644,211"/>
+<area shape="rect" href="_mesh_8h.html" title=" " alt="" coords="1343,184,1422,211"/>
+<area shape="rect" href="_shader_8h.html" title=" " alt="" coords="1257,259,1332,285"/>
+<area shape="rect" href="_vertex_array_8h.html" title=" " alt="" coords="1458,259,1560,285"/>
+<area shape="rect" href="_node_8h.html" title=" " alt="" coords="383,184,446,211"/>
+<area shape="rect" href="_node_iterator_8h.html" title=" " alt="" coords="36,259,139,285"/>
+<area shape="rect" href="_mouse_input_module_8h.html" title=" " alt="" coords="87,184,275,211"/>
+<area shape="rect" title=" " alt="" coords="300,184,358,211"/>
+<area shape="rect" href="_field_8h.html" title=" " alt="" coords="322,333,384,360"/>
+<area shape="rect" href="_declare_port_8h.html" title=" " alt="" coords="214,259,316,285"/>
+<area shape="rect" href="_node_port_8h.html" title=" " alt="" coords="391,259,478,285"/>
+<area shape="rect" href="_camera_8h.html" title=" " alt="" coords="1188,184,1267,211"/>
 </map>
 </div>
 </div>
@@ -155,6 +154,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacedyno"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html">dyno</a></td></tr>
+<tr class="memdesc:namespacedyno"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of <a class="el" href="classdyno_1_1_tight_c_c_d.html">TightCCD</a> based on peridyno. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

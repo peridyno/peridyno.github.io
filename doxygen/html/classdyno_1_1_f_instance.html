@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -95,12 +95,13 @@ Collaboration diagram for dyno::FInstance&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_instance__coll__graph.png" border="0" usemap="#adyno_1_1_f_instance_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_f_instance_3_01_t_01_4_coll__map" id="adyno_1_1_f_instance_3_01_t_01_4_coll__map">
-<area shape="rect" title="Pointer of objects." alt="" coords="17,337,163,364"/>
-<area shape="rect" href="classdyno_1_1_instance_base.html" title=" " alt="" coords="21,261,159,288"/>
-<area shape="rect" href="classdyno_1_1_f_base.html" title=" " alt="" coords="42,185,138,212"/>
+<area shape="rect" title="Pointer of objects." alt="" coords="75,337,222,364"/>
+<area shape="rect" href="classdyno_1_1_instance_base.html" title=" " alt="" coords="80,261,217,288"/>
+<area shape="rect" href="classdyno_1_1_f_base.html" title=" " alt="" coords="101,185,197,212"/>
 <area shape="rect" title=" " alt="" coords="5,81,60,108"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="99,81,198,108"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="101,5,197,32"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="91,81,190,108"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="93,5,189,32"/>
+<area shape="rect" href="classdyno_1_1_time_stamp.html" title="Time stamp." alt="" coords="215,81,339,108"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -133,8 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6ff7b36f7dc71995e423de83ec42d24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad92a7464cbeac7038d5d2d88a01c1707"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_instance.html#ad92a7464cbeac7038d5d2d88a01c1707">getData</a> ()</td></tr>
 <tr class="separator:ad92a7464cbeac7038d5d2d88a01c1707"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dbfb77dafcd6f64f72fe97784e8a700"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_instance.html#a6dbfb77dafcd6f64f72fe97784e8a700">getElementCount</a> () override</td></tr>
-<tr class="separator:a6dbfb77dafcd6f64f72fe97784e8a700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a77104c22236fb937a285d6e131bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_instance.html#a89a77104c22236fb937a285d6e131bcd">size</a> () override</td></tr>
+<tr class="separator:a89a77104c22236fb937a285d6e131bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2004b1efec35bdf8368c11c6b01592b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_instance.html#ad2004b1efec35bdf8368c11c6b01592b">objectPointer</a> () final</td></tr>
 <tr class="separator:ad2004b1efec35bdf8368c11c6b01592b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0e6609431b263300ab38e7a2109e855"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_object.html">Object</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_instance.html#ab0e6609431b263300ab38e7a2109e855">standardObjectPointer</a> () final</td></tr>
@@ -163,8 +164,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afcee052dcc84cd6ab97949bf11bf3ba2 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53ac4f814a9e44f432005dc2638b0d76 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a53ac4f814a9e44f432005dc2638b0d76">~FBase</a> ()</td></tr>
 <tr class="separator:a53ac4f814a9e44f432005dc2638b0d76 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af60b1a59fd27b4a52e8ab4515f997aa6 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#af60b1a59fd27b4a52e8ab4515f997aa6">getElementCount</a> ()=0</td></tr>
-<tr class="separator:af60b1a59fd27b4a52e8ab4515f997aa6 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002102a94ea8d375f7548b88c4400b3e inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a002102a94ea8d375f7548b88c4400b3e">size</a> ()=0</td></tr>
+<tr class="separator:a002102a94ea8d375f7548b88c4400b3e inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a751d22e6e218a65ccc35783801d09308 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308">getTemplateName</a> ()</td></tr>
 <tr class="separator:a751d22e6e218a65ccc35783801d09308 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13d7c35a189c2112df3cc36ba4fbea2d inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a13d7c35a189c2112df3cc36ba4fbea2d">getClassName</a> ()</td></tr>
@@ -197,8 +198,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6cf501ab604fdc71db6a7a746455d888 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b60b02ba56ebbc11b4d0c5b0bd2b0b0 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a8b60b02ba56ebbc11b4d0c5b0bd2b0b0">isModified</a> ()</td></tr>
 <tr class="separator:a8b60b02ba56ebbc11b4d0c5b0bd2b0b0 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a157c4c2e4d3b794d6a18ebbbe6c0c4be inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a157c4c2e4d3b794d6a18ebbbe6c0c4be">tagModified</a> (bool modifed)</td></tr>
-<tr class="separator:a157c4c2e4d3b794d6a18ebbbe6c0c4be inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f426738aede3cc8c12e9a1a2d3762b inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a14f426738aede3cc8c12e9a1a2d3762b">tick</a> ()</td></tr>
+<tr class="separator:a14f426738aede3cc8c12e9a1a2d3762b inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4cb70d1dd42ab00f7ba13753cdedd6 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a1a4cb70d1dd42ab00f7ba13753cdedd6">tack</a> ()</td></tr>
+<tr class="separator:a1a4cb70d1dd42ab00f7ba13753cdedd6 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a826c40185fd85749790ffcbf42489c30 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a826c40185fd85749790ffcbf42489c30">isOptional</a> ()</td></tr>
 <tr class="separator:a826c40185fd85749790ffcbf42489c30 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a084156a3073055c5a00880e8f453b551 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a084156a3073055c5a00880e8f453b551">tagOptional</a> (bool optional)</td></tr>
@@ -211,20 +214,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af62b11dd8e69c7ef0e3123542eb6018e inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad36f4e6b77f30544aabdb3a10bfc06ca inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ad36f4e6b77f30544aabdb3a10bfc06ca">setMax</a> (float max_val)</td></tr>
 <tr class="separator:ad36f4e6b77f30544aabdb3a10bfc06ca inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a35992e8a831429e5b74de5b09a865 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#af8a35992e8a831429e5b74de5b09a865">setRange</a> (float min_val, float max_val)</td></tr>
+<tr class="separator:af8a35992e8a831429e5b74de5b09a865 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ec06ffc42b9efe5186ffa584a99ae9 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#ac3362376850a026da08e48efc8032048">FieldTypeEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a06ec06ffc42b9efe5186ffa584a99ae9">getFieldType</a> ()</td></tr>
 <tr class="separator:a06ec06ffc42b9efe5186ffa584a99ae9 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab250579a08a6df9e57074941b3052f53 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ab250579a08a6df9e57074941b3052f53">connect</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *dst)=0</td></tr>
 <tr class="separator:ab250579a08a6df9e57074941b3052f53 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0213120749cbfaa51c1f39a4c5a37078 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a0213120749cbfaa51c1f39a4c5a37078">disconnect</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *dst)</td></tr>
 <tr class="separator:a0213120749cbfaa51c1f39a4c5a37078 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8317dd929349d40e10e0afbf0f54799 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ad8317dd929349d40e10e0afbf0f54799">serialize</a> ()</td></tr>
+<tr class="separator:ad8317dd929349d40e10e0afbf0f54799 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279031c10143801d7fae263a17170776 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a279031c10143801d7fae263a17170776">deserialize</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:a279031c10143801d7fae263a17170776 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2019aff22a4a3a85a1fbc1ef5e03d143 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a2019aff22a4a3a85a1fbc1ef5e03d143">getTopField</a> ()</td></tr>
 <tr class="separator:a2019aff22a4a3a85a1fbc1ef5e03d143 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31ea29dace037c84dbbbd642979c72bd inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a31ea29dace037c84dbbbd642979c72bd">getSource</a> ()</td></tr>
 <tr class="separator:a31ea29dace037c84dbbbd642979c72bd inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95e7275c9758e6fb16701a99447e2ade inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a95e7275c9758e6fb16701a99447e2ade">promoteToOuput</a> ()</td></tr>
-<tr class="separator:a95e7275c9758e6fb16701a99447e2ade inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1bf0a785dd7d745bdb319f0a064df62 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#aa1bf0a785dd7d745bdb319f0a064df62">promoteToInput</a> ()</td></tr>
-<tr class="separator:aa1bf0a785dd7d745bdb319f0a064df62 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7cf3c5b35244831c956ddd77a3eade inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a3e7cf3c5b35244831c956ddd77a3eade">promoteOuput</a> ()</td></tr>
+<tr class="memdesc:a3e7cf3c5b35244831c956ddd77a3eade inherit pub_methods_classdyno_1_1_f_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a state field as an ouput field.  <a href="classdyno_1_1_f_base.html#a3e7cf3c5b35244831c956ddd77a3eade">More...</a><br /></td></tr>
+<tr class="separator:a3e7cf3c5b35244831c956ddd77a3eade inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8937f619a1efe09b3538d2b086ec288 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ab8937f619a1efe09b3538d2b086ec288">promoteInput</a> ()</td></tr>
+<tr class="memdesc:ab8937f619a1efe09b3538d2b086ec288 inherit pub_methods_classdyno_1_1_f_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a state field as an input field.  <a href="classdyno_1_1_f_base.html#ab8937f619a1efe09b3538d2b086ec288">More...</a><br /></td></tr>
+<tr class="separator:ab8937f619a1efe09b3538d2b086ec288 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac77a8b8016d61729e4051ce95b7af4b4 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ac77a8b8016d61729e4051ce95b7af4b4">demoteOuput</a> ()</td></tr>
+<tr class="memdesc:ac77a8b8016d61729e4051ce95b7af4b4 inherit pub_methods_classdyno_1_1_f_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide a state field from outputs.  <a href="classdyno_1_1_f_base.html#ac77a8b8016d61729e4051ce95b7af4b4">More...</a><br /></td></tr>
+<tr class="separator:ac77a8b8016d61729e4051ce95b7af4b4 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886ce4db5a0b96566033348de1c2d506 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a886ce4db5a0b96566033348de1c2d506">demoteInput</a> ()</td></tr>
+<tr class="memdesc:a886ce4db5a0b96566033348de1c2d506 inherit pub_methods_classdyno_1_1_f_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide a state field from inputs.  <a href="classdyno_1_1_f_base.html#a886ce4db5a0b96566033348de1c2d506">More...</a><br /></td></tr>
+<tr class="separator:a886ce4db5a0b96566033348de1c2d506 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78fdf0bf9fdd72fcf85110b17809e107 inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a78fdf0bf9fdd72fcf85110b17809e107">isEmpty</a> ()=0</td></tr>
 <tr class="separator:a78fdf0bf9fdd72fcf85110b17809e107 inherit pub_methods_classdyno_1_1_f_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0e14308899fb0ef61af01ee1dceed2c inherit pub_methods_classdyno_1_1_f_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ae0e14308899fb0ef61af01ee1dceed2c">update</a> ()</td></tr>
@@ -618,37 +635,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a6dbfb77dafcd6f64f72fe97784e8a700" name="a6dbfb77dafcd6f64f72fe97784e8a700"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dbfb77dafcd6f64f72fe97784e8a700">&#9670;&nbsp;</a></span>getElementCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a> <a class="el" href="classdyno_1_1_f_instance.html">dyno::FInstance</a>&lt; <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt;::getElementCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classdyno_1_1_f_base.html#af60b1a59fd27b4a52e8ab4515f997aa6">dyno::FBase</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_f_instance_8h_source.html#l00108">108</a> of file <a class="el" href="_f_instance_8h_source.html">FInstance.h</a>.</p>
-
-</div>
-</div>
 <a id="aead233843b373a4afd3fd5bb5e5fb761" name="aead233843b373a4afd3fd5bb5e5fb761"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aead233843b373a4afd3fd5bb5e5fb761">&#9670;&nbsp;</a></span>getTemplateName()</h2>
 
@@ -822,6 +808,37 @@ template&lt;typename <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918
 <p>Implements <a class="el" href="classdyno_1_1_instance_base.html#a91d450983efe54c8e19e8d0fb301dc9a">dyno::InstanceBase</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_f_instance_8h_source.html#l00119">119</a> of file <a class="el" href="_f_instance_8h_source.html">FInstance.h</a>.</p>
+
+</div>
+</div>
+<a id="a89a77104c22236fb937a285d6e131bcd" name="a89a77104c22236fb937a285d6e131bcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a77104c22236fb937a285d6e131bcd">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a> <a class="el" href="classdyno_1_1_f_instance.html">dyno::FInstance</a>&lt; <a class="el" href="vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classdyno_1_1_f_base.html#a002102a94ea8d375f7548b88c4400b3e">dyno::FBase</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_f_instance_8h_source.html#l00108">108</a> of file <a class="el" href="_f_instance_8h_source.html">FInstance.h</a>.</p>
 
 </div>
 </div>

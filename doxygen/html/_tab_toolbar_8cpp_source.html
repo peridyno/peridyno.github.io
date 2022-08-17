@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -168,7 +168,7 @@ $(function() {
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    cornerLayout-&gt;addWidget(<a class="code hl_variable" href="classtt_1_1_tab_toolbar.html#a8bc06f2047a3b033677893be6d952e54">hideButton</a>);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_variable" href="classtt_1_1_tab_toolbar.html#a4c4cb3863cb447b9c95f6c19c7bf899a">tabBar</a>-&gt;setCornerWidget(<a class="code hl_variable" href="classtt_1_1_tab_toolbar.html#ad37a23d92e579cb31fb83d6e95ac5c24">cornerActions</a>);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_function" href="classtt_1_1_tab_toolbar.html#a04b7d45ad05f1417cb3b5250d3e73a3a">SetStyle</a>(<a class="code hl_function" href="namespacett.html#a53b1ea26340c5d58cf56d38cea08bc7f">GetDefaultStyle</a>());</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">//    SetStyle(GetDefaultStyle());</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classtt_1_1_tab_toolbar.html#a9bc1652dc143fed401a5de67247e3d7e">  102</a></span><a class="code hl_function" href="classtt_1_1_tab_toolbar.html#a9bc1652dc143fed401a5de67247e3d7e">TabToolbar::~TabToolbar</a>()</div>
@@ -177,12 +177,12 @@ $(function() {
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classtt_1_1_tab_toolbar.html#a791fd39cc1d22eab0ec3db157603af8e">  106</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="classtt_1_1_tab_toolbar.html#a791fd39cc1d22eab0ec3db157603af8e">TabToolbar::event</a>(QEvent* event)</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>{</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="classtt_1_1_tab_toolbar.html#a791fd39cc1d22eab0ec3db157603af8e">event</a>-&gt;type() == QEvent::StyleChange &amp;&amp; !<a class="code hl_variable" href="classtt_1_1_tab_toolbar.html#af40513ca126f94b0d2551f487be250f2">ignoreStyleEvent</a>)</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        QTimer::singleShot(0, <span class="keyword">this</span>, [<span class="keyword">this</span>]()</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        { <span class="comment">// on KDE new palette is not ready yet, wait</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keyword">const</span> QString styleName = (<a class="code hl_variable" href="classtt_1_1_tab_toolbar.html#ad7af23416209d3635bdfae6937993f20">style</a> ? <a class="code hl_variable" href="classtt_1_1_tab_toolbar.html#ad7af23416209d3635bdfae6937993f20">style</a>-&gt;objectName() : <a class="code hl_function" href="namespacett.html#a53b1ea26340c5d58cf56d38cea08bc7f">GetDefaultStyle</a>());</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <a class="code hl_function" href="classtt_1_1_tab_toolbar.html#a04b7d45ad05f1417cb3b5250d3e73a3a">SetStyle</a>(styleName);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        });</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">//     if(event-&gt;type() == QEvent::StyleChange &amp;&amp; !ignoreStyleEvent)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">//         QTimer::singleShot(0, this, [this]()</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">//         { // on KDE new palette is not ready yet, wait</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">//             const QString styleName = (style ? style-&gt;objectName() : GetDefaultStyle());</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">//             //SetStyle(styleName);</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">//         });</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">return</span> QToolBar::event(<a class="code hl_function" href="classtt_1_1_tab_toolbar.html#a791fd39cc1d22eab0ec3db157603af8e">event</a>);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
@@ -436,11 +436,10 @@ $(function() {
 <div class="ttc" id="aclasstt_1_1_tab_toolbar_html_af40513ca126f94b0d2551f487be250f2"><div class="ttname"><a href="classtt_1_1_tab_toolbar.html#af40513ca126f94b0d2551f487be250f2">tt::TabToolbar::ignoreStyleEvent</a></div><div class="ttdeci">bool ignoreStyleEvent</div><div class="ttdef"><b>Definition:</b> <a href="_tab_toolbar_8h_source.html#l00086">TabToolbar.h:86</a></div></div>
 <div class="ttc" id="aclasstt_1_1_tab_toolbar_html_af7ff336b7c40a059ae3d14ede66c2516"><div class="ttname"><a href="classtt_1_1_tab_toolbar.html#af7ff336b7c40a059ae3d14ede66c2516">tt::TabToolbar::AddCornerAction</a></div><div class="ttdeci">void AddCornerAction(QAction *action)</div><div class="ttdef"><b>Definition:</b> <a href="_tab_toolbar_8cpp_source.html#l00163">TabToolbar.cpp:163</a></div></div>
 <div class="ttc" id="anamespacett_html"><div class="ttname"><a href="namespacett.html">tt</a></div><div class="ttdef"><b>Definition:</b> <a href="_builder_8h_source.html#l00032">Builder.h:33</a></div></div>
-<div class="ttc" id="anamespacett_html_a53b1ea26340c5d58cf56d38cea08bc7f"><div class="ttname"><a href="namespacett.html#a53b1ea26340c5d58cf56d38cea08bc7f">tt::GetDefaultStyle</a></div><div class="ttdeci">QString GetDefaultStyle()</div><div class="ttdef"><b>Definition:</b> <a href="_style_tools_8cpp_source.html#l00426">StyleTools.cpp:426</a></div></div>
-<div class="ttc" id="anamespacett_html_a7d018065873909d0f22c651a74fcf56c"><div class="ttname"><a href="namespacett.html#a7d018065873909d0f22c651a74fcf56c">tt::GetScaleFactor</a></div><div class="ttdeci">float GetScaleFactor(const QWidget &amp;widget)</div><div class="ttdef"><b>Definition:</b> <a href="_style_tools_8cpp_source.html#l00446">StyleTools.cpp:446</a></div></div>
+<div class="ttc" id="anamespacett_html_a7d018065873909d0f22c651a74fcf56c"><div class="ttname"><a href="namespacett.html#a7d018065873909d0f22c651a74fcf56c">tt::GetScaleFactor</a></div><div class="ttdeci">float GetScaleFactor(const QWidget &amp;widget)</div><div class="ttdef"><b>Definition:</b> <a href="_style_tools_8cpp_source.html#l00448">StyleTools.cpp:448</a></div></div>
 <div class="ttc" id="anamespacett_html_a8482bbdaf889955a2b9dbbcb06556b06"><div class="ttname"><a href="namespacett.html#a8482bbdaf889955a2b9dbbcb06556b06">tt::_FindTabToolbarParent</a></div><div class="ttdeci">TabToolbar * _FindTabToolbarParent(QWidget &amp;startingWidget)</div><div class="ttdef"><b>Definition:</b> <a href="_tab_toolbar_8cpp_source.html#l00307">TabToolbar.cpp:307</a></div></div>
-<div class="ttc" id="anamespacett_html_a9311330de5c0d3750374098e72608f94"><div class="ttname"><a href="namespacett.html#a9311330de5c0d3750374098e72608f94">tt::GetSheetForStyle</a></div><div class="ttdeci">QString GetSheetForStyle(const StyleParams &amp;style)</div><div class="ttdef"><b>Definition:</b> <a href="_style_tools_8cpp_source.html#l00399">StyleTools.cpp:399</a></div></div>
-<div class="ttc" id="anamespacett_html_aa2f4c20ca269e6bdaaedf7ad9fa4b46d"><div class="ttname"><a href="namespacett.html#aa2f4c20ca269e6bdaaedf7ad9fa4b46d">tt::CreateStyle</a></div><div class="ttdeci">std::unique_ptr&lt; StyleParams &gt; CreateStyle(const QString &amp;styleName)</div><div class="ttdef"><b>Definition:</b> <a href="_style_tools_8cpp_source.html#l00124">StyleTools.cpp:124</a></div></div>
+<div class="ttc" id="anamespacett_html_a9311330de5c0d3750374098e72608f94"><div class="ttname"><a href="namespacett.html#a9311330de5c0d3750374098e72608f94">tt::GetSheetForStyle</a></div><div class="ttdeci">QString GetSheetForStyle(const StyleParams &amp;style)</div><div class="ttdef"><b>Definition:</b> <a href="_style_tools_8cpp_source.html#l00401">StyleTools.cpp:401</a></div></div>
+<div class="ttc" id="anamespacett_html_aa2f4c20ca269e6bdaaedf7ad9fa4b46d"><div class="ttname"><a href="namespacett.html#aa2f4c20ca269e6bdaaedf7ad9fa4b46d">tt::CreateStyle</a></div><div class="ttdeci">std::unique_ptr&lt; StyleParams &gt; CreateStyle(const QString &amp;styleName)</div><div class="ttdef"><b>Definition:</b> <a href="_style_tools_8cpp_source.html#l00126">StyleTools.cpp:126</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

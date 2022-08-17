@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -77,7 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for dyno::QRealFieldWidget:</div>
 <div class="dyncontent">
@@ -95,9 +95,10 @@ Collaboration diagram for dyno::QRealFieldWidget:</div>
 <area shape="rect" title=" " alt="" coords="5,275,168,301"/>
 <area shape="rect" title=" " alt="" coords="20,185,111,212"/>
 <area shape="rect" href="classdyno_1_1_f_base.html" title=" " alt="" coords="135,185,231,212"/>
-<area shape="rect" title=" " alt="" coords="98,81,153,108"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="192,81,291,108"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="193,5,289,32"/>
+<area shape="rect" title=" " alt="" coords="39,81,94,108"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="125,81,224,108"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="127,5,223,32"/>
+<area shape="rect" href="classdyno_1_1_time_stamp.html" title="Time stamp." alt="" coords="249,81,373,108"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -120,12 +121,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a472cf09bbc275d0316321b3beaaca895"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_real_field_widget.html#a472cf09bbc275d0316321b3beaaca895">m_field</a> = nullptr</td></tr>
-<tr class="separator:a472cf09bbc275d0316321b3beaaca895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e79cf9313ef01ee3003091bab7fe465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_real_field_widget.html#a8e79cf9313ef01ee3003091bab7fe465">mField</a> = nullptr</td></tr>
+<tr class="separator:a8e79cf9313ef01ee3003091bab7fe465"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00060">60</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_item_8h_source.html#l00083">83</a> of file <a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0fbbd3a6333957099c2652f12c160c48" name="a0fbbd3a6333957099c2652f12c160c48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0fbbd3a6333957099c2652f12c160c48">&#9670;&nbsp;</a></span>QRealFieldWidget()</h2>
@@ -143,24 +144,26 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00126">126</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_item_8cpp_source.html#l00171">171</a> of file <a class="el" href="_p_property_item_8cpp_source.html">PPropertyItem.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_q_real_field_widget_a0fbbd3a6333957099c2652f12c160c48_cgraph.png" border="0" usemap="#aclassdyno_1_1_q_real_field_widget_a0fbbd3a6333957099c2652f12c160c48_cgraph" alt=""/></div>
 <map name="aclassdyno_1_1_q_real_field_widget_a0fbbd3a6333957099c2652f12c160c48_cgraph" id="aclassdyno_1_1_q_real_field_widget_a0fbbd3a6333957099c2652f12c160c48_cgraph">
-<area shape="rect" title=" " alt="" coords="5,165,168,207"/>
-<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a46a1ef5ee01d4f71e409e5424349033c" title=" " alt="" coords="236,56,399,97"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="467,7,676,34"/>
-<area shape="rect" href="namespacedyno.html#a3dbb4b2c87f3ada8178335b6abeb48d7" title=" " alt="" coords="216,122,419,149"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a1142c17b3aa48a8f53280e4a0eb75992" title=" " alt="" coords="220,173,415,199"/>
-<area shape="rect" href="classdyno_1_1_f_var.html#ac571d22a19f4c83e284f7161485f0c49" title=" " alt="" coords="245,223,390,250"/>
-<area shape="rect" href="classdyno_1_1_q_double_slider.html#a6f2849519d57644c3a2ead6fbe17f13d" title=" " alt="" coords="247,275,388,316"/>
-<area shape="rect" href="classdyno_1_1_q_double_slider.html#af1422bfa5a12be8679a2c437582ed627" title=" " alt="" coords="247,340,388,381"/>
-<area shape="rect" href="classdyno_1_1_f_var.html#aca0ac7b81fb36e3d0f2eab3eca01df3d" title=" " alt="" coords="499,62,644,89"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#ae0e14308899fb0ef61af01ee1dceed2c" title=" " alt="" coords="500,113,643,139"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a6cf501ab604fdc71db6a7a746455d888" title=" " alt="" coords="724,87,879,114"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a78fdf0bf9fdd72fcf85110b17809e107" title=" " alt="" coords="725,138,877,165"/>
+<area shape="rect" title=" " alt="" coords="5,221,168,262"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a46a1ef5ee01d4f71e409e5424349033c" title=" " alt="" coords="236,61,399,102"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="467,12,676,39"/>
+<area shape="rect" href="namespacedyno.html#a3dbb4b2c87f3ada8178335b6abeb48d7" title=" " alt="" coords="216,127,419,153"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#af62b11dd8e69c7ef0e3123542eb6018e" title=" " alt="" coords="244,177,391,204"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#adfb50cec7cd362156f458f6f34a21a81" title=" " alt="" coords="246,228,389,255"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a1142c17b3aa48a8f53280e4a0eb75992" title=" " alt="" coords="220,279,415,305"/>
+<area shape="rect" href="classdyno_1_1_f_var.html#ac571d22a19f4c83e284f7161485f0c49" title=" " alt="" coords="245,329,390,356"/>
+<area shape="rect" href="classdyno_1_1_q_double_slider.html#a6f2849519d57644c3a2ead6fbe17f13d" title=" " alt="" coords="247,381,388,422"/>
+<area shape="rect" href="classdyno_1_1_q_double_slider.html#af1422bfa5a12be8679a2c437582ed627" title=" " alt="" coords="247,446,388,487"/>
+<area shape="rect" href="classdyno_1_1_f_var.html#aca0ac7b81fb36e3d0f2eab3eca01df3d" title=" " alt="" coords="499,67,644,93"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#ae0e14308899fb0ef61af01ee1dceed2c" title=" " alt="" coords="500,117,643,144"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a6cf501ab604fdc71db6a7a746455d888" title=" " alt="" coords="724,92,879,119"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a78fdf0bf9fdd72fcf85110b17809e107" title=" " alt="" coords="725,143,877,169"/>
 </map>
 </div>
 
@@ -189,7 +192,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00065">65</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_item_8h_source.html#l00088">88</a> of file <a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>.</p>
 
 </div>
 </div>
@@ -218,7 +221,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8cpp_source.html#l00179">179</a> of file <a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_item_8cpp_source.html#l00220">220</a> of file <a class="el" href="_p_property_item_8cpp_source.html">PPropertyItem.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -280,8 +283,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a472cf09bbc275d0316321b3beaaca895" name="a472cf09bbc275d0316321b3beaaca895"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a472cf09bbc275d0316321b3beaaca895">&#9670;&nbsp;</a></span>m_field</h2>
+<a id="a8e79cf9313ef01ee3003091bab7fe465" name="a8e79cf9313ef01ee3003091bab7fe465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e79cf9313ef01ee3003091bab7fe465">&#9670;&nbsp;</a></span>mField</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +293,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_f_base.html">FBase</a>* dyno::QRealFieldWidget::m_field = nullptr</td>
+          <td class="memname"><a class="el" href="classdyno_1_1_f_base.html">FBase</a>* dyno::QRealFieldWidget::mField = nullptr</td>
         </tr>
       </table>
   </td>
@@ -300,13 +303,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_widget_8h_source.html#l00074">74</a> of file <a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_property_item_8h_source.html#l00097">97</a> of file <a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>E:/Peridyno/peridyno/src/Rendering/GUI/QtGUI/<a class="el" href="_p_property_widget_8h_source.html">PPropertyWidget.h</a></li>
-<li>E:/Peridyno/peridyno/src/Rendering/GUI/QtGUI/<a class="el" href="_p_property_widget_8cpp_source.html">PPropertyWidget.cpp</a></li>
+<li>E:/Peridyno/peridyno/src/Rendering/GUI/QtGUI/<a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a></li>
+<li>E:/Peridyno/peridyno/src/Rendering/GUI/QtGUI/<a class="el" href="_p_property_item_8cpp_source.html">PPropertyItem.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

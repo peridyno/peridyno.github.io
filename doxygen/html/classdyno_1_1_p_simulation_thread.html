@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -68,6 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -98,10 +99,19 @@ Collaboration diagram for dyno::PSimulationThread:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Public Slots</h2></td></tr>
+<tr class="memitem:adaa26e902ad377a74582d4b980e57d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#adaa26e902ad377a74582d4b980e57d18">resetNode</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt; node)</td></tr>
+<tr class="separator:adaa26e902ad377a74582d4b980e57d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
+<tr class="memitem:a4762a73779f4b673d7aa2b27cd668dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a4762a73779f4b673d7aa2b27cd668dcc">sceneGraphChanged</a> ()</td></tr>
+<tr class="separator:a4762a73779f4b673d7aa2b27cd668dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01319a462941ded75b25a0f217388de2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a01319a462941ded75b25a0f217388de2">oneFrameFinished</a> ()</td></tr>
 <tr class="separator:a01319a462941ded75b25a0f217388de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be336ce67f16db5e8565ce02e9399d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a2be336ce67f16db5e8565ce02e9399d1">simulationFinished</a> ()</td></tr>
+<tr class="separator:a2be336ce67f16db5e8565ce02e9399d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -111,16 +121,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a83b6c0ff04614660760860ffb6f6df75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ed29749f879a21871dce594b3318d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a8ed29749f879a21871dce594b3318d72">stop</a> ()</td></tr>
 <tr class="separator:a8ed29749f879a21871dce594b3318d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bc824595ab90bbf275b4a05c57be926"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a8bc824595ab90bbf275b4a05c57be926">createNewScene</a> ()</td></tr>
+<tr class="separator:a8bc824595ab90bbf275b4a05c57be926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8973769a3328b22684d63993c85133f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a8973769a3328b22684d63993c85133f6">createNewScene</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> &gt; scn)</td></tr>
+<tr class="separator:a8973769a3328b22684d63993c85133f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef582603f68487f52bb68fd5b4b85b53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#aef582603f68487f52bb68fd5b4b85b53">closeCurrentScene</a> ()</td></tr>
+<tr class="separator:aef582603f68487f52bb68fd5b4b85b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce234112a71be123c6dfa2586579309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a5ce234112a71be123c6dfa2586579309">closeAllScenes</a> ()</td></tr>
+<tr class="separator:a5ce234112a71be123c6dfa2586579309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa88c5436344c801b44fc2e91bde0c08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#afa88c5436344c801b44fc2e91bde0c08">run</a> () override</td></tr>
 <tr class="separator:afa88c5436344c801b44fc2e91bde0c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b86b8636f9d8ecd85d0d6b7d7a10c1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a1b86b8636f9d8ecd85d0d6b7d7a10c1f">reset</a> ()</td></tr>
-<tr class="separator:a1b86b8636f9d8ecd85d0d6b7d7a10c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8741588a3b20e028845088b41460325c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a8741588a3b20e028845088b41460325c">startRendering</a> ()</td></tr>
-<tr class="separator:a8741588a3b20e028845088b41460325c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0ed9a303bbb5e1ea8e3246f4cc5b0fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#ad0ed9a303bbb5e1ea8e3246f4cc5b0fc">stopRendering</a> ()</td></tr>
-<tr class="separator:ad0ed9a303bbb5e1ea8e3246f4cc5b0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb1f5a6088db96385a6277b77b1d6a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a0cb1f5a6088db96385a6277b77b1d6a7">reset</a> (int num)</td></tr>
+<tr class="separator:a0cb1f5a6088db96385a6277b77b1d6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a67c7f5504f38ef2e9144a5f6a0337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a12a67c7f5504f38ef2e9144a5f6a0337">startUpdatingGraphicsContext</a> ()</td></tr>
+<tr class="separator:a12a67c7f5504f38ef2e9144a5f6a0337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0595f4b53374d3b4418ce8abbeeb57e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#af0595f4b53374d3b4418ce8abbeeb57e">stopUpdatingGraphicsContext</a> ()</td></tr>
+<tr class="separator:af0595f4b53374d3b4418ce8abbeeb57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af403a07a0a6e8bce08edf930c228d3d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#af403a07a0a6e8bce08edf930c228d3d9">setTotalFrames</a> (int num)</td></tr>
 <tr class="separator:af403a07a0a6e8bce08edf930c228d3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98bc4d44046b3564f88cfa50cda025b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#ad98bc4d44046b3564f88cfa50cda025b">getCurrentFrameNum</a> ()</td></tr>
+<tr class="separator:ad98bc4d44046b3564f88cfa50cda025b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -134,22 +154,28 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8eac1244f87775c60142aba24aa35e12"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a8eac1244f87775c60142aba24aa35e12">mFrameNum</a></td></tr>
-<tr class="separator:a8eac1244f87775c60142aba24aa35e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f54a88685f7f02366d27e8af220a57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#ad8f54a88685f7f02366d27e8af220a57">mTotalFrame</a></td></tr>
+<tr class="separator:ad8f54a88685f7f02366d27e8af220a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4bd196e49a3daf695e95743df9102f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#af4bd196e49a3daf695e95743df9102f7">mReset</a> = false</td></tr>
 <tr class="separator:af4bd196e49a3daf695e95743df9102f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d2ef57241a2f2dafd38063f06ab72ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a1d2ef57241a2f2dafd38063f06ab72ac">mPaused</a> = true</td></tr>
 <tr class="separator:a1d2ef57241a2f2dafd38063f06ab72ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9935962c0741abf9dd95c23d1a5ba459"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a9935962c0741abf9dd95c23d1a5ba459">mRendering</a> = false</td></tr>
-<tr class="separator:a9935962c0741abf9dd95c23d1a5ba459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22d0f638e64f2c32cbc977efbdcb02f8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a22d0f638e64f2c32cbc977efbdcb02f8">mRunning</a> = true</td></tr>
 <tr class="separator:a22d0f638e64f2c32cbc977efbdcb02f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627241ddcfac2149012de71c6aee2038"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a627241ddcfac2149012de71c6aee2038">mFinished</a> = false</td></tr>
+<tr class="separator:a627241ddcfac2149012de71c6aee2038"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4bbf81fa2813f73cbe368d67ae07fdd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#aa4bbf81fa2813f73cbe368d67ae07fdd">mUpdatingGraphicsContext</a> = false</td></tr>
+<tr class="separator:aa4bbf81fa2813f73cbe368d67ae07fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452656f52a82428536c70b0d6863e8ca"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a452656f52a82428536c70b0d6863e8ca">mActiveNode</a> = nullptr</td></tr>
+<tr class="separator:a452656f52a82428536c70b0d6863e8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285b30891232b90ee1b9a13471670661"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a285b30891232b90ee1b9a13471670661">mTimeOut</a> = 10000</td></tr>
+<tr class="separator:a285b30891232b90ee1b9a13471670661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2336f8adb2859284991227640382c4cd"><td class="memItemLeft" align="right" valign="top">QMutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_simulation_thread.html#a2336f8adb2859284991227640382c4cd">mMutex</a></td></tr>
 <tr class="separator:a2336f8adb2859284991227640382c4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00010">10</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00013">13</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af8a98174b18d5f7895c5f0f40015f106" name="af8a98174b18d5f7895c5f0f40015f106"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8a98174b18d5f7895c5f0f40015f106">&#9670;&nbsp;</a></span>PSimulationThread()</h2>
@@ -179,6 +205,211 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5ce234112a71be123c6dfa2586579309" name="a5ce234112a71be123c6dfa2586579309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ce234112a71be123c6dfa2586579309">&#9670;&nbsp;</a></span>closeAllScenes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PSimulationThread::closeAllScenes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00087">87</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_a5ce234112a71be123c6dfa2586579309_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a5ce234112a71be123c6dfa2586579309_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_a5ce234112a71be123c6dfa2586579309_cgraph" id="aclassdyno_1_1_p_simulation_thread_a5ce234112a71be123c6dfa2586579309_cgraph">
+<area shape="rect" title=" " alt="" coords="5,83,172,124"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="443,5,617,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#aa15c35c0dfc2557ddf15c67265b532c3" title=" " alt="" coords="220,49,395,91"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a0cb1f5a6088db96385a6277b77b1d6a7" title=" " alt="" coords="224,115,391,156"/>
+<area shape="rect" href="classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28" title="Add a new message to log." alt="" coords="223,181,391,207"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="665,5,840,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="443,100,617,141"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a7dba012537618b2cf001a17714160bf6" title=" " alt="" coords="447,165,613,207"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="665,100,840,141"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_a5ce234112a71be123c6dfa2586579309_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a5ce234112a71be123c6dfa2586579309_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_a5ce234112a71be123c6dfa2586579309_icgraph" id="aclassdyno_1_1_p_simulation_thread_a5ce234112a71be123c6dfa2586579309_icgraph">
+<area shape="rect" title=" " alt="" coords="565,5,732,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a9653baebfcc3e4973fd992ef894dca22" title=" " alt="" coords="379,5,517,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7" title=" " alt="" coords="192,5,331,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="5,5,144,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef582603f68487f52bb68fd5b4b85b53" name="aef582603f68487f52bb68fd5b4b85b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef582603f68487f52bb68fd5b4b85b53">&#9670;&nbsp;</a></span>closeCurrentScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PSimulationThread::closeCurrentScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00070">70</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_aef582603f68487f52bb68fd5b4b85b53_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_aef582603f68487f52bb68fd5b4b85b53_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_aef582603f68487f52bb68fd5b4b85b53_cgraph" id="aclassdyno_1_1_p_simulation_thread_aef582603f68487f52bb68fd5b4b85b53_cgraph">
+<area shape="rect" title=" " alt="" coords="5,83,172,124"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="443,5,617,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a07de05643c7b93b198a9af71f049a799" title=" " alt="" coords="220,49,395,91"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a0cb1f5a6088db96385a6277b77b1d6a7" title=" " alt="" coords="224,115,391,156"/>
+<area shape="rect" href="classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28" title="Add a new message to log." alt="" coords="223,181,391,207"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="665,5,840,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="443,100,617,141"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a7dba012537618b2cf001a17714160bf6" title=" " alt="" coords="447,165,613,207"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="665,100,840,141"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_aef582603f68487f52bb68fd5b4b85b53_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_aef582603f68487f52bb68fd5b4b85b53_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_aef582603f68487f52bb68fd5b4b85b53_icgraph" id="aclassdyno_1_1_p_simulation_thread_aef582603f68487f52bb68fd5b4b85b53_icgraph">
+<area shape="rect" title=" " alt="" coords="565,5,732,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a0751d47406ef49276f2d3bba90f7caa1" title=" " alt="" coords="379,5,517,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7" title=" " alt="" coords="192,5,331,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="5,5,144,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8bc824595ab90bbf275b4a05c57be926" name="a8bc824595ab90bbf275b4a05c57be926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bc824595ab90bbf275b4a05c57be926">&#9670;&nbsp;</a></span>createNewScene() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PSimulationThread::createNewScene </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00036">36</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_a8bc824595ab90bbf275b4a05c57be926_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a8bc824595ab90bbf275b4a05c57be926_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_a8bc824595ab90bbf275b4a05c57be926_cgraph" id="aclassdyno_1_1_p_simulation_thread_a8bc824595ab90bbf275b4a05c57be926_cgraph">
+<area shape="rect" title=" " alt="" coords="5,129,172,171"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="659,5,833,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="436,165,611,207"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a0cb1f5a6088db96385a6277b77b1d6a7" title=" " alt="" coords="221,100,387,141"/>
+<area shape="rect" href="classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28" title="Add a new message to log." alt="" coords="220,217,388,243"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="659,165,833,207"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="436,35,611,76"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a7dba012537618b2cf001a17714160bf6" title=" " alt="" coords="440,100,607,141"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_a8bc824595ab90bbf275b4a05c57be926_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a8bc824595ab90bbf275b4a05c57be926_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_a8bc824595ab90bbf275b4a05c57be926_icgraph" id="aclassdyno_1_1_p_simulation_thread_a8bc824595ab90bbf275b4a05c57be926_icgraph">
+<area shape="rect" title=" " alt="" coords="565,39,732,80"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a3af1c72535cdbd8fdbb014258796056b" title=" " alt="" coords="379,5,517,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a1913f593c59544df8db25c688286751e" title=" " alt="" coords="379,71,517,112"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7" title=" " alt="" coords="192,39,331,80"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="5,39,144,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8973769a3328b22684d63993c85133f6" name="a8973769a3328b22684d63993c85133f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8973769a3328b22684d63993c85133f6">&#9670;&nbsp;</a></span>createNewScene() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PSimulationThread::createNewScene </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> &gt;&#160;</td>
+          <td class="paramname"><em>scn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00053">53</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_a8973769a3328b22684d63993c85133f6_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a8973769a3328b22684d63993c85133f6_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_a8973769a3328b22684d63993c85133f6_cgraph" id="aclassdyno_1_1_p_simulation_thread_a8973769a3328b22684d63993c85133f6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,83,172,124"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="443,5,617,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a8129026dc2fe006fddd812c47a78ba32" title=" " alt="" coords="220,49,395,91"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a0cb1f5a6088db96385a6277b77b1d6a7" title=" " alt="" coords="224,115,391,156"/>
+<area shape="rect" href="classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28" title="Add a new message to log." alt="" coords="223,181,391,207"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="665,5,840,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="443,100,617,141"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a7dba012537618b2cf001a17714160bf6" title=" " alt="" coords="447,165,613,207"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="665,100,840,141"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad98bc4d44046b3564f88cfa50cda025b" name="ad98bc4d44046b3564f88cfa50cda025b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98bc4d44046b3564f88cfa50cda025b">&#9670;&nbsp;</a></span>getCurrentFrameNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dyno::PSimulationThread::getCurrentFrameNum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00190">190</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_ad98bc4d44046b3564f88cfa50cda025b_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_ad98bc4d44046b3564f88cfa50cda025b_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_ad98bc4d44046b3564f88cfa50cda025b_cgraph" id="aclassdyno_1_1_p_simulation_thread_ad98bc4d44046b3564f88cfa50cda025b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,172,80"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="220,5,395,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="220,71,395,112"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="443,5,617,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="443,71,617,112"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="aa6c154b97badd562a3d04e7bf3b736b1" name="aa6c154b97badd562a3d04e7bf3b736b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6c154b97badd562a3d04e7bf3b736b1">&#9670;&nbsp;</a></span>instance()</h2>
 
@@ -202,18 +433,32 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00016">16</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00015">15</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_p_simulation_thread_aa6c154b97badd562a3d04e7bf3b736b1_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_aa6c154b97badd562a3d04e7bf3b736b1_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_p_simulation_thread_aa6c154b97badd562a3d04e7bf3b736b1_icgraph" id="aclassdyno_1_1_p_simulation_thread_aa6c154b97badd562a3d04e7bf3b736b1_icgraph">
-<area shape="rect" title=" " alt="" coords="435,97,601,138"/>
-<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a396e065b7db0d9f7b8a39e4750e973f0" title=" " alt="" coords="5,32,172,73"/>
-<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a50ce622a4fc0b658ea77d40e33cd469a" title=" " alt="" coords="220,32,387,73"/>
-<area shape="rect" href="classdyno_1_1_p_animation_widget.html#ab78c7620de0e1b505970874e94cc03e1" title=" " alt="" coords="220,97,387,138"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#ac9181b1f01391a8ffa0752a1647a4590" title=" " alt="" coords="220,162,387,204"/>
-<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a860f4042f87bbc89443909242aafc71e" title=" " alt="" coords="220,228,387,269"/>
+<area shape="rect" title=" " alt="" coords="632,352,799,393"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a9653baebfcc3e4973fd992ef894dca22" title=" " alt="" coords="431,5,570,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a0751d47406ef49276f2d3bba90f7caa1" title=" " alt="" coords="431,71,570,112"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a3af1c72535cdbd8fdbb014258796056b" title=" " alt="" coords="431,136,570,177"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a1913f593c59544df8db25c688286751e" title=" " alt="" coords="431,201,570,243"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a396e065b7db0d9f7b8a39e4750e973f0" title=" " alt="" coords="203,351,369,392"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6c261b693789b64d7a94da13fb8aa1b" title=" " alt="" coords="211,571,361,612"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a50ce622a4fc0b658ea77d40e33cd469a" title=" " alt="" coords="417,319,584,360"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#ab78c7620de0e1b505970874e94cc03e1" title=" " alt="" coords="417,384,584,425"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a28e1f9015720364115be83ab5ba89d18" title=" " alt="" coords="417,515,584,556"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a158cd5af483e1468ecf82a61df8e3a41" title=" " alt="" coords="417,635,584,676"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a0b8a33b20203d8ff7f1b5898f2a344e3" title=" " alt="" coords="417,449,584,491"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a860f4042f87bbc89443909242aafc71e" title=" " alt="" coords="417,700,584,741"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7" title=" " alt="" coords="217,104,355,145"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="11,104,149,145"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#a1f679cc75f55eef97022452590d38da1" title=" " alt="" coords="211,505,361,547"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,505,155,547"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a80fb558c07b76be2f507393eece06036" title=" " alt="" coords="208,701,364,743"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4c461917d8c70b899d7bbf4450e77e75" title=" " alt="" coords="208,767,364,808"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3125be328aa2698c6b85c9570fff7538" title=" " alt="" coords="208,636,364,677"/>
 </map>
 </div>
 
@@ -246,8 +491,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_p_simulation_thread_a01319a462941ded75b25a0f217388de2_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a01319a462941ded75b25a0f217388de2_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_p_simulation_thread_a01319a462941ded75b25a0f217388de2_icgraph" id="aclassdyno_1_1_p_simulation_thread_a01319a462941ded75b25a0f217388de2_icgraph">
-<area shape="rect" title=" " alt="" coords="247,5,413,47"/>
-<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#afa88c5436344c801b44fc2e91bde0c08" title=" " alt="" coords="5,13,199,39"/>
+<area shape="rect" title=" " alt="" coords="247,35,413,76"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6c261b693789b64d7a94da13fb8aa1b" title=" " alt="" coords="27,5,177,47"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#afa88c5436344c801b44fc2e91bde0c08" title=" " alt="" coords="5,71,199,98"/>
 </map>
 </div>
 
@@ -268,22 +514,33 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00022">22</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00021">21</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_p_simulation_thread_a7dba012537618b2cf001a17714160bf6_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a7dba012537618b2cf001a17714160bf6_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_p_simulation_thread_a7dba012537618b2cf001a17714160bf6_icgraph" id="aclassdyno_1_1_p_simulation_thread_a7dba012537618b2cf001a17714160bf6_icgraph">
-<area shape="rect" title=" " alt="" coords="435,5,601,47"/>
-<area shape="rect" href="classdyno_1_1_p_animation_widget.html#ab78c7620de0e1b505970874e94cc03e1" title=" " alt="" coords="220,5,387,47"/>
-<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a396e065b7db0d9f7b8a39e4750e973f0" title=" " alt="" coords="5,5,172,47"/>
+<area shape="rect" title=" " alt="" coords="1023,200,1189,241"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a0cb1f5a6088db96385a6277b77b1d6a7" title=" " alt="" coords="808,137,975,179"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#ab78c7620de0e1b505970874e94cc03e1" title=" " alt="" coords="808,232,975,273"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a5ce234112a71be123c6dfa2586579309" title=" " alt="" coords="593,7,760,48"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#aef582603f68487f52bb68fd5b4b85b53" title=" " alt="" coords="593,72,760,113"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a8bc824595ab90bbf275b4a05c57be926" title=" " alt="" coords="593,137,760,179"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a50ce622a4fc0b658ea77d40e33cd469a" title=" " alt="" coords="593,204,760,245"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a9653baebfcc3e4973fd992ef894dca22" title=" " alt="" coords="393,5,531,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7" title=" " alt="" coords="192,104,331,145"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="5,104,144,145"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a0751d47406ef49276f2d3bba90f7caa1" title=" " alt="" coords="393,71,531,112"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a3af1c72535cdbd8fdbb014258796056b" title=" " alt="" coords="393,136,531,177"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a1913f593c59544df8db25c688286751e" title=" " alt="" coords="393,201,531,243"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a396e065b7db0d9f7b8a39e4750e973f0" title=" " alt="" coords="379,267,545,308"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a1b86b8636f9d8ecd85d0d6b7d7a10c1f" name="a1b86b8636f9d8ecd85d0d6b7d7a10c1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b86b8636f9d8ecd85d0d6b7d7a10c1f">&#9670;&nbsp;</a></span>reset()</h2>
+<a id="a0cb1f5a6088db96385a6277b77b1d6a7" name="a0cb1f5a6088db96385a6277b77b1d6a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb1f5a6088db96385a6277b77b1d6a7">&#9670;&nbsp;</a></span>reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,21 +548,81 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void dyno::PSimulationThread::reset </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00070">70</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00153">153</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_a0cb1f5a6088db96385a6277b77b1d6a7_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a0cb1f5a6088db96385a6277b77b1d6a7_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_a0cb1f5a6088db96385a6277b77b1d6a7_cgraph" id="aclassdyno_1_1_p_simulation_thread_a0cb1f5a6088db96385a6277b77b1d6a7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,71,172,112"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="220,5,395,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="220,71,395,112"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a7dba012537618b2cf001a17714160bf6" title=" " alt="" coords="224,136,391,177"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="443,5,617,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="443,71,617,112"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_simulation_thread_a1b86b8636f9d8ecd85d0d6b7d7a10c1f_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a1b86b8636f9d8ecd85d0d6b7d7a10c1f_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_simulation_thread_a1b86b8636f9d8ecd85d0d6b7d7a10c1f_icgraph" id="aclassdyno_1_1_p_simulation_thread_a1b86b8636f9d8ecd85d0d6b7d7a10c1f_icgraph">
-<area shape="rect" title=" " alt="" coords="435,5,601,47"/>
-<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a50ce622a4fc0b658ea77d40e33cd469a" title=" " alt="" coords="220,5,387,47"/>
-<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a396e065b7db0d9f7b8a39e4750e973f0" title=" " alt="" coords="5,5,172,47"/>
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_a0cb1f5a6088db96385a6277b77b1d6a7_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a0cb1f5a6088db96385a6277b77b1d6a7_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_a0cb1f5a6088db96385a6277b77b1d6a7_icgraph" id="aclassdyno_1_1_p_simulation_thread_a0cb1f5a6088db96385a6277b77b1d6a7_icgraph">
+<area shape="rect" title=" " alt="" coords="808,104,975,145"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a5ce234112a71be123c6dfa2586579309" title=" " alt="" coords="593,5,760,47"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#aef582603f68487f52bb68fd5b4b85b53" title=" " alt="" coords="593,71,760,112"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a8bc824595ab90bbf275b4a05c57be926" title=" " alt="" coords="593,136,760,177"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a50ce622a4fc0b658ea77d40e33cd469a" title=" " alt="" coords="593,233,760,275"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a9653baebfcc3e4973fd992ef894dca22" title=" " alt="" coords="393,5,531,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7" title=" " alt="" coords="192,104,331,145"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="5,104,144,145"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a0751d47406ef49276f2d3bba90f7caa1" title=" " alt="" coords="393,71,531,112"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a3af1c72535cdbd8fdbb014258796056b" title=" " alt="" coords="393,136,531,177"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a1913f593c59544df8db25c688286751e" title=" " alt="" coords="393,201,531,243"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a396e065b7db0d9f7b8a39e4750e973f0" title=" " alt="" coords="379,267,545,308"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adaa26e902ad377a74582d4b980e57d18" name="adaa26e902ad377a74582d4b980e57d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaa26e902ad377a74582d4b980e57d18">&#9670;&nbsp;</a></span>resetNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PSimulationThread::resetNode </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00168">168</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_adaa26e902ad377a74582d4b980e57d18_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_adaa26e902ad377a74582d4b980e57d18_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_adaa26e902ad377a74582d4b980e57d18_icgraph" id="aclassdyno_1_1_p_simulation_thread_adaa26e902ad377a74582d4b980e57d18_icgraph">
+<area shape="rect" title=" " alt="" coords="203,5,369,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6c261b693789b64d7a94da13fb8aa1b" title=" " alt="" coords="5,5,155,47"/>
 </map>
 </div>
 
@@ -326,7 +643,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00027">27</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00026">26</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -363,18 +680,61 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00037">37</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00104">104</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_p_simulation_thread_afa88c5436344c801b44fc2e91bde0c08_cgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_afa88c5436344c801b44fc2e91bde0c08_cgraph" alt=""/></div>
 <map name="aclassdyno_1_1_p_simulation_thread_afa88c5436344c801b44fc2e91bde0c08_cgraph" id="aclassdyno_1_1_p_simulation_thread_afa88c5436344c801b44fc2e91bde0c08_cgraph">
 <area shape="rect" title=" " alt="" coords="5,78,199,105"/>
-<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="247,5,421,47"/>
-<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="247,71,421,112"/>
-<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a8741588a3b20e028845088b41460325c" title=" " alt="" coords="251,136,417,177"/>
-<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="469,5,644,47"/>
-<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="469,71,644,112"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="261,5,436,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="261,71,436,112"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a12a67c7f5504f38ef2e9144a5f6a0337" title=" " alt="" coords="247,136,451,177"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="499,5,673,47"/>
+<area shape="rect" href="classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="499,71,673,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4762a73779f4b673d7aa2b27cd668dcc" name="a4762a73779f4b673d7aa2b27cd668dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4762a73779f4b673d7aa2b27cd668dcc">&#9670;&nbsp;</a></span>sceneGraphChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PSimulationThread::sceneGraphChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_a4762a73779f4b673d7aa2b27cd668dcc_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a4762a73779f4b673d7aa2b27cd668dcc_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_a4762a73779f4b673d7aa2b27cd668dcc_icgraph" id="aclassdyno_1_1_p_simulation_thread_a4762a73779f4b673d7aa2b27cd668dcc_icgraph">
+<area shape="rect" title=" " alt="" coords="780,104,947,145"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a5ce234112a71be123c6dfa2586579309" title=" " alt="" coords="565,5,732,47"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#aef582603f68487f52bb68fd5b4b85b53" title=" " alt="" coords="565,71,732,112"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#a8bc824595ab90bbf275b4a05c57be926" title=" " alt="" coords="565,136,732,177"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6c261b693789b64d7a94da13fb8aa1b" title=" " alt="" coords="574,201,723,243"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a9653baebfcc3e4973fd992ef894dca22" title=" " alt="" coords="379,5,517,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7" title=" " alt="" coords="192,104,331,145"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="5,104,144,145"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a0751d47406ef49276f2d3bba90f7caa1" title=" " alt="" coords="379,71,517,112"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a3af1c72535cdbd8fdbb014258796056b" title=" " alt="" coords="379,136,517,177"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#a1913f593c59544df8db25c688286751e" title=" " alt="" coords="379,201,517,243"/>
 </map>
 </div>
 
@@ -396,28 +756,52 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00085">85</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00185">185</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2be336ce67f16db5e8565ce02e9399d1" name="a2be336ce67f16db5e8565ce02e9399d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be336ce67f16db5e8565ce02e9399d1">&#9670;&nbsp;</a></span>simulationFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PSimulationThread::simulationFinished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_simulation_thread_af403a07a0a6e8bce08edf930c228d3d9_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_af403a07a0a6e8bce08edf930c228d3d9_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_simulation_thread_af403a07a0a6e8bce08edf930c228d3d9_icgraph" id="aclassdyno_1_1_p_simulation_thread_af403a07a0a6e8bce08edf930c228d3d9_icgraph">
-<area shape="rect" title=" " alt="" coords="435,5,601,47"/>
-<area shape="rect" href="classdyno_1_1_p_animation_widget.html#ab78c7620de0e1b505970874e94cc03e1" title=" " alt="" coords="220,5,387,47"/>
-<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a396e065b7db0d9f7b8a39e4750e973f0" title=" " alt="" coords="5,5,172,47"/>
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_a2be336ce67f16db5e8565ce02e9399d1_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a2be336ce67f16db5e8565ce02e9399d1_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_a2be336ce67f16db5e8565ce02e9399d1_icgraph" id="aclassdyno_1_1_p_simulation_thread_a2be336ce67f16db5e8565ce02e9399d1_icgraph">
+<area shape="rect" title=" " alt="" coords="247,5,413,47"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#afa88c5436344c801b44fc2e91bde0c08" title=" " alt="" coords="5,13,199,39"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a8741588a3b20e028845088b41460325c" name="a8741588a3b20e028845088b41460325c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8741588a3b20e028845088b41460325c">&#9670;&nbsp;</a></span>startRendering()</h2>
+<a id="a12a67c7f5504f38ef2e9144a5f6a0337" name="a12a67c7f5504f38ef2e9144a5f6a0337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a67c7f5504f38ef2e9144a5f6a0337">&#9670;&nbsp;</a></span>startUpdatingGraphicsContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::PSimulationThread::startRendering </td>
+          <td class="memname">void dyno::PSimulationThread::startUpdatingGraphicsContext </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -425,15 +809,22 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00075">75</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00175">175</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_simulation_thread_a8741588a3b20e028845088b41460325c_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a8741588a3b20e028845088b41460325c_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_simulation_thread_a8741588a3b20e028845088b41460325c_icgraph" id="aclassdyno_1_1_p_simulation_thread_a8741588a3b20e028845088b41460325c_icgraph">
-<area shape="rect" title=" " alt="" coords="247,27,413,69"/>
-<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#afa88c5436344c801b44fc2e91bde0c08" title=" " alt="" coords="5,5,199,32"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#ac9181b1f01391a8ffa0752a1647a4590" title=" " alt="" coords="19,57,185,98"/>
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_a12a67c7f5504f38ef2e9144a5f6a0337_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_a12a67c7f5504f38ef2e9144a5f6a0337_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_a12a67c7f5504f38ef2e9144a5f6a0337_icgraph" id="aclassdyno_1_1_p_simulation_thread_a12a67c7f5504f38ef2e9144a5f6a0337_icgraph">
+<area shape="rect" title=" " alt="" coords="648,57,852,98"/>
+<area shape="rect" href="classdyno_1_1_p_simulation_thread.html#afa88c5436344c801b44fc2e91bde0c08" title=" " alt="" coords="407,5,600,32"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a28e1f9015720364115be83ab5ba89d18" title=" " alt="" coords="420,57,587,98"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a158cd5af483e1468ecf82a61df8e3a41" title=" " alt="" coords="420,154,587,195"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#a1f679cc75f55eef97022452590d38da1" title=" " alt="" coords="206,23,355,65"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,23,155,65"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a80fb558c07b76be2f507393eece06036" title=" " alt="" coords="203,89,359,130"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4c461917d8c70b899d7bbf4450e77e75" title=" " alt="" coords="203,154,359,195"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3125be328aa2698c6b85c9570fff7538" title=" " alt="" coords="203,219,359,261"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6c261b693789b64d7a94da13fb8aa1b" title=" " alt="" coords="206,285,355,326"/>
 </map>
 </div>
 
@@ -454,7 +845,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00032">32</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00031">31</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -467,14 +858,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ad0ed9a303bbb5e1ea8e3246f4cc5b0fc" name="ad0ed9a303bbb5e1ea8e3246f4cc5b0fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0ed9a303bbb5e1ea8e3246f4cc5b0fc">&#9670;&nbsp;</a></span>stopRendering()</h2>
+<a id="af0595f4b53374d3b4418ce8abbeeb57e" name="af0595f4b53374d3b4418ce8abbeeb57e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0595f4b53374d3b4418ce8abbeeb57e">&#9670;&nbsp;</a></span>stopUpdatingGraphicsContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::PSimulationThread::stopRendering </td>
+          <td class="memname">void dyno::PSimulationThread::stopUpdatingGraphicsContext </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -482,22 +873,29 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00080">80</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8cpp_source.html#l00180">180</a> of file <a class="el" href="_p_simulation_thread_8cpp_source.html">PSimulationThread.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_p_simulation_thread_ad0ed9a303bbb5e1ea8e3246f4cc5b0fc_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_ad0ed9a303bbb5e1ea8e3246f4cc5b0fc_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_p_simulation_thread_ad0ed9a303bbb5e1ea8e3246f4cc5b0fc_icgraph" id="aclassdyno_1_1_p_simulation_thread_ad0ed9a303bbb5e1ea8e3246f4cc5b0fc_icgraph">
-<area shape="rect" title=" " alt="" coords="220,5,387,47"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#ac9181b1f01391a8ffa0752a1647a4590" title=" " alt="" coords="5,5,172,47"/>
+<div class="center"><img src="classdyno_1_1_p_simulation_thread_af0595f4b53374d3b4418ce8abbeeb57e_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_simulation_thread_af0595f4b53374d3b4418ce8abbeeb57e_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_simulation_thread_af0595f4b53374d3b4418ce8abbeeb57e_icgraph" id="aclassdyno_1_1_p_simulation_thread_af0595f4b53374d3b4418ce8abbeeb57e_icgraph">
+<area shape="rect" title=" " alt="" coords="621,104,824,145"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a28e1f9015720364115be83ab5ba89d18" title=" " alt="" coords="407,39,573,80"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a158cd5af483e1468ecf82a61df8e3a41" title=" " alt="" coords="407,136,573,177"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#a1f679cc75f55eef97022452590d38da1" title=" " alt="" coords="206,5,355,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a80fb558c07b76be2f507393eece06036" title=" " alt="" coords="203,71,359,112"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4c461917d8c70b899d7bbf4450e77e75" title=" " alt="" coords="203,136,359,177"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3125be328aa2698c6b85c9570fff7538" title=" " alt="" coords="203,201,359,243"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6c261b693789b64d7a94da13fb8aa1b" title=" " alt="" coords="206,267,355,308"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8eac1244f87775c60142aba24aa35e12" name="a8eac1244f87775c60142aba24aa35e12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8eac1244f87775c60142aba24aa35e12">&#9670;&nbsp;</a></span>mFrameNum</h2>
+<a id="a452656f52a82428536c70b0d6863e8ca" name="a452656f52a82428536c70b0d6863e8ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a452656f52a82428536c70b0d6863e8ca">&#9670;&nbsp;</a></span>mActiveNode</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +904,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int dyno::PSimulationThread::mFrameNum</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_node.html">Node</a>&gt; dyno::PSimulationThread::mActiveNode = nullptr</td>
         </tr>
       </table>
   </td>
@@ -516,7 +914,31 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00038">38</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00065">65</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
+
+</div>
+</div>
+<a id="a627241ddcfac2149012de71c6aee2038" name="a627241ddcfac2149012de71c6aee2038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a627241ddcfac2149012de71c6aee2038">&#9670;&nbsp;</a></span>mFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::PSimulationThread::mFinished = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00061">61</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +962,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00045">45</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00069">69</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
 
 </div>
 </div>
@@ -564,31 +986,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00041">41</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
-
-</div>
-</div>
-<a id="a9935962c0741abf9dd95c23d1a5ba459" name="a9935962c0741abf9dd95c23d1a5ba459"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9935962c0741abf9dd95c23d1a5ba459">&#9670;&nbsp;</a></span>mRendering</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool dyno::PSimulationThread::mRendering = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00042">42</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00058">58</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
 
 </div>
 </div>
@@ -612,7 +1010,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00040">40</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00057">57</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +1034,79 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00043">43</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00060">60</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
+
+</div>
+</div>
+<a id="a285b30891232b90ee1b9a13471670661" name="a285b30891232b90ee1b9a13471670661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a285b30891232b90ee1b9a13471670661">&#9670;&nbsp;</a></span>mTimeOut</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dyno::PSimulationThread::mTimeOut = 10000</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00067">67</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
+
+</div>
+</div>
+<a id="ad8f54a88685f7f02366d27e8af220a57" name="ad8f54a88685f7f02366d27e8af220a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8f54a88685f7f02366d27e8af220a57">&#9670;&nbsp;</a></span>mTotalFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dyno::PSimulationThread::mTotalFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00055">55</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
+
+</div>
+</div>
+<a id="aa4bbf81fa2813f73cbe368d67ae07fdd" name="aa4bbf81fa2813f73cbe368d67ae07fdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4bbf81fa2813f73cbe368d67ae07fdd">&#9670;&nbsp;</a></span>mUpdatingGraphicsContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::PSimulationThread::mUpdatingGraphicsContext = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_simulation_thread_8h_source.html#l00063">63</a> of file <a class="el" href="_p_simulation_thread_8h_source.html">PSimulationThread.h</a>.</p>
 
 </div>
 </div>

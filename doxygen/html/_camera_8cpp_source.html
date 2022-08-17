@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Rendering/Core/Camera.cpp Source File</title>
+<title>PeriDyno: E:/Peridyno/peridyno/src/Framework/Camera.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_0a5d901ffa28d51286754f85d80379d0.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_26b3e8c08a116b1fbc8a67eb66dd3e41.html">Core</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_c2c045169feb12a9231cac4869e44751.html">Framework</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,52 +74,53 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classdyno_1_1_camera.html#a0c3629db7ec588e9c6d6f16114e88c3c">    5</a></span>    <a class="code hl_class" href="classdyno_1_1_t_ray3_d.html">TRay3D&lt;float&gt;</a> <a class="code hl_function" href="classdyno_1_1_camera.html#a0c3629db7ec588e9c6d6f16114e88c3c">Camera::castRayInWorldSpace</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>        <span class="keywordtype">float</span> width = this-&gt;<a class="code hl_function" href="classdyno_1_1_camera.html#ac07f73b32d2c49ebbd30156eb4ec4868">viewportWidth</a>();</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        <span class="keywordtype">float</span> height = this-&gt;<a class="code hl_function" href="classdyno_1_1_camera.html#a83c21f517887e12fda85c38fdb32fa9c">viewportHeight</a>();</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <a class="code hl_typedef" href="vg_math_8h.html#a698360488e1db6f145fee4b69917724f">glm::mat4</a> projMat = this-&gt;<a class="code hl_function" href="classdyno_1_1_camera.html#aa6846131ec94f632fe0044c005974a21">getProjMat</a>();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <a class="code hl_typedef" href="vg_math_8h.html#a698360488e1db6f145fee4b69917724f">glm::mat4</a> viewMat = this-&gt;<a class="code hl_function" href="classdyno_1_1_camera.html#ace9efab63c496cb52dbd599883b08f0f">getViewMat</a>();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordtype">float</span> dx = (2.0f * x) / width - 1.0f;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">float</span> dy = 1.0f - (2.0f * y) / height;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">float</span> dz = 0.95;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_typedef" href="vg_math_8h.html#a698360488e1db6f145fee4b69917724f">glm::mat4</a> mv = <a class="code hl_function" href="namespacevgm.html#adcc26123cc8aef27e1bcacf7a92f3290">glm::inverse</a>(projMat*viewMat);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a> near = <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a>(dx, dy, -1, 1.0);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a> far = <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a>(dx, dy, 1, 1.0);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a> near_world = mv * near;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a> far_world = mv * far;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">if</span> (near_world.w != 0.0)</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            near_world /= near_world.<a class="code hl_variable" href="classvgm_1_1_vec4.html#a039f6e4ad9632b1a4cfae6b18bcb776f">w</a>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">if</span> (far_world.w != 0.0)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            far_world /= far_world.w;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_class" href="classdyno_1_1_t_ray3_d.html">TRay3D&lt;float&gt;</a> ray;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        ray.<a class="code hl_variable" href="classdyno_1_1_t_ray3_d.html#a5f3691d48fae05e4219a6bbb45b6675e">origin</a> = <a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(near_world.x, near_world.y, near_world.z);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        ray.<a class="code hl_variable" href="classdyno_1_1_t_ray3_d.html#aebf6e57a12aa34fc2c2a7f096b248374">direction</a> = <a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(far_world.x - near_world.x, far_world.y - near_world.y, far_world.z - near_world.z).normalize();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">return</span> ray;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="classdyno_1_1_camera.html#a0c3629db7ec588e9c6d6f16114e88c3c">    5</a></span>    <a class="code hl_class" href="classdyno_1_1_t_ray3_d.html">TRay3D&lt;float&gt;</a> <a class="code hl_function" href="classdyno_1_1_camera.html#a0c3629db7ec588e9c6d6f16114e88c3c">Camera::castRayInWorldSpace</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y) </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        <span class="keywordtype">float</span> width = this-&gt;<a class="code hl_function" href="classdyno_1_1_camera.html#ac07f73b32d2c49ebbd30156eb4ec4868">viewportWidth</a>();</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>        <span class="keywordtype">float</span> height = this-&gt;<a class="code hl_function" href="classdyno_1_1_camera.html#a83c21f517887e12fda85c38fdb32fa9c">viewportHeight</a>();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <a class="code hl_typedef" href="vg_math_8h.html#a698360488e1db6f145fee4b69917724f">glm::mat4</a> projMat = this-&gt;<a class="code hl_function" href="classdyno_1_1_camera.html#aa6846131ec94f632fe0044c005974a21">getProjMat</a>();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <a class="code hl_typedef" href="vg_math_8h.html#a698360488e1db6f145fee4b69917724f">glm::mat4</a> viewMat = this-&gt;<a class="code hl_function" href="classdyno_1_1_camera.html#ace9efab63c496cb52dbd599883b08f0f">getViewMat</a>();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">float</span> dx = (2.0f * x) / width - 1.0f;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">float</span> dy = 1.0f - (2.0f * y) / height;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordtype">float</span> dz = 0.95;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_typedef" href="vg_math_8h.html#a698360488e1db6f145fee4b69917724f">glm::mat4</a> mv = <a class="code hl_function" href="namespacevgm.html#adcc26123cc8aef27e1bcacf7a92f3290">glm::inverse</a>(projMat*viewMat);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a> near = <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a>(dx, dy, -1, 1.0);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a> far = <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a>(dx, dy, 1, 1.0);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a> near_world = mv * near;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_typedef" href="vg_math_8h.html#af5521c901f4ba026b0045a41e67bd4fa">glm::vec4</a> far_world = mv * far;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">if</span> (near_world.w != 0.0)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            near_world /= near_world.<a class="code hl_variable" href="classvgm_1_1_vec4.html#a039f6e4ad9632b1a4cfae6b18bcb776f">w</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">if</span> (far_world.w != 0.0)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            far_world /= far_world.w;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_class" href="classdyno_1_1_t_ray3_d.html">TRay3D&lt;float&gt;</a> ray;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        ray.<a class="code hl_variable" href="classdyno_1_1_t_ray3_d.html#a5f3691d48fae05e4219a6bbb45b6675e">origin</a> = <a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(near_world.x, near_world.y, near_world.z);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        ray.<a class="code hl_variable" href="classdyno_1_1_t_ray3_d.html#aebf6e57a12aa34fc2c2a7f096b248374">direction</a> = <a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(far_world.x - near_world.x, far_world.y - near_world.y, far_world.z - near_world.z).normalize();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">return</span> ray;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 <div class="ttc" id="a_camera_8h_html"><div class="ttname"><a href="_camera_8h.html">Camera.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_camera_html_a0c3629db7ec588e9c6d6f16114e88c3c"><div class="ttname"><a href="classdyno_1_1_camera.html#a0c3629db7ec588e9c6d6f16114e88c3c">dyno::Camera::castRayInWorldSpace</a></div><div class="ttdeci">TRay3D&lt; float &gt; castRayInWorldSpace(float x, float y)</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8cpp_source.html#l00005">Camera.cpp:5</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_camera_html_a83c21f517887e12fda85c38fdb32fa9c"><div class="ttname"><a href="classdyno_1_1_camera.html#a83c21f517887e12fda85c38fdb32fa9c">dyno::Camera::viewportHeight</a></div><div class="ttdeci">int viewportHeight() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00036">Camera.h:36</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_camera_html_a83c21f517887e12fda85c38fdb32fa9c"><div class="ttname"><a href="classdyno_1_1_camera.html#a83c21f517887e12fda85c38fdb32fa9c">dyno::Camera::viewportHeight</a></div><div class="ttdeci">int viewportHeight() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00042">Camera.h:42</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_camera_html_aa6846131ec94f632fe0044c005974a21"><div class="ttname"><a href="classdyno_1_1_camera.html#aa6846131ec94f632fe0044c005974a21">dyno::Camera::getProjMat</a></div><div class="ttdeci">virtual glm::mat4 getProjMat()=0</div></div>
-<div class="ttc" id="aclassdyno_1_1_camera_html_ac07f73b32d2c49ebbd30156eb4ec4868"><div class="ttname"><a href="classdyno_1_1_camera.html#ac07f73b32d2c49ebbd30156eb4ec4868">dyno::Camera::viewportWidth</a></div><div class="ttdeci">int viewportWidth() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00035">Camera.h:35</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_camera_html_ac07f73b32d2c49ebbd30156eb4ec4868"><div class="ttname"><a href="classdyno_1_1_camera.html#ac07f73b32d2c49ebbd30156eb4ec4868">dyno::Camera::viewportWidth</a></div><div class="ttdeci">int viewportWidth() const</div><div class="ttdef"><b>Definition:</b> <a href="_camera_8h_source.html#l00041">Camera.h:41</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_camera_html_ace9efab63c496cb52dbd599883b08f0f"><div class="ttname"><a href="classdyno_1_1_camera.html#ace9efab63c496cb52dbd599883b08f0f">dyno::Camera::getViewMat</a></div><div class="ttdeci">virtual glm::mat4 getViewMat()=0</div></div>
 <div class="ttc" id="aclassdyno_1_1_t_ray3_d_html"><div class="ttname"><a href="classdyno_1_1_t_ray3_d.html">dyno::TRay3D&lt; float &gt;</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_t_ray3_d_html_a5f3691d48fae05e4219a6bbb45b6675e"><div class="ttname"><a href="classdyno_1_1_t_ray3_d.html#a5f3691d48fae05e4219a6bbb45b6675e">dyno::TRay3D::origin</a></div><div class="ttdeci">Coord3D origin</div><div class="ttdef"><b>Definition:</b> <a href="_primitive3_d_8h_source.html#l00350">Primitive3D.h:350</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_t_ray3_d_html_aebf6e57a12aa34fc2c2a7f096b248374"><div class="ttname"><a href="classdyno_1_1_t_ray3_d.html#aebf6e57a12aa34fc2c2a7f096b248374">dyno::TRay3D::direction</a></div><div class="ttdeci">Coord3D direction</div><div class="ttdef"><b>Definition:</b> <a href="_primitive3_d_8h_source.html#l00353">Primitive3D.h:353</a></div></div>
 <div class="ttc" id="aclassvgm_1_1_vec4_html_a039f6e4ad9632b1a4cfae6b18bcb776f"><div class="ttname"><a href="classvgm_1_1_vec4.html#a039f6e4ad9632b1a4cfae6b18bcb776f">vgm::Vec4::w</a></div><div class="ttdeci">T w</div><div class="ttdef"><b>Definition:</b> <a href="vg_math_8h_source.html#l00188">vgMath.h:188</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
 <div class="ttc" id="anamespacedyno_html_aafa7daf71ffcc74fd4e59d36d51ff01f"><div class="ttname"><a href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">dyno::Vec3f</a></div><div class="ttdeci">Vector&lt; float, 3 &gt; Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="_vector3_d_8h_source.html#l00088">Vector3D.h:88</a></div></div>
 <div class="ttc" id="anamespacevgm_html_adcc26123cc8aef27e1bcacf7a92f3290"><div class="ttname"><a href="namespacevgm.html#adcc26123cc8aef27e1bcacf7a92f3290">vgm::inverse</a></div><div class="ttdeci">TEMPLATE_TYPENAME_T QUAT_T inverse(QUAT_T const &amp;q)</div><div class="ttdef"><b>Definition:</b> <a href="vg_math_8h_source.html#l00458">vgMath.h:458</a></div></div>
 <div class="ttc" id="avg_math_8h_html_a698360488e1db6f145fee4b69917724f"><div class="ttname"><a href="vg_math_8h.html#a698360488e1db6f145fee4b69917724f">mat4</a></div><div class="ttdeci">vgm::Mat4 mat4</div><div class="ttdef"><b>Definition:</b> <a href="vg_math_8h_source.html#l00635">vgMath.h:635</a></div></div>

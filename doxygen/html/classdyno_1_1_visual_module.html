@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -70,6 +70,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_visual_module-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::VisualModule Class Reference</div></div>
@@ -105,17 +106,15 @@ Collaboration diagram for dyno::VisualModule:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_visual_module__coll__graph.png" border="0" usemap="#adyno_1_1_visual_module_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_visual_module_coll__map" id="adyno_1_1_visual_module_coll__map">
-<area shape="rect" title=" " alt="" coords="532,485,668,512"/>
-<area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="142,396,242,423"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="5,81,104,108"/>
-<area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="75,305,163,332"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html" title=" " alt="" coords="57,200,188,227"/>
-<area shape="rect" href="classdyno_1_1_f_base.html" title=" " alt="" coords="393,305,489,332"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="7,5,103,32"/>
-<area shape="rect" title=" " alt="" coords="265,200,319,227"/>
-<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="481,81,639,108"/>
-<area shape="rect" href="classdyno_1_1_f_var.html" title=" " alt="" coords="427,396,562,423"/>
-<area shape="rect" href="classdyno_1_1_quat.html" title=" " alt="" coords="657,396,791,423"/>
+<area shape="rect" title=" " alt="" coords="362,471,498,497"/>
+<area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="248,381,348,408"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="173,81,271,108"/>
+<area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="165,291,253,317"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html" title=" " alt="" coords="201,200,331,227"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="174,5,270,32"/>
+<area shape="rect" title=" " alt="" coords="5,200,60,227"/>
+<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="323,81,481,108"/>
+<area shape="rect" href="classdyno_1_1_quat.html" title=" " alt="" coords="468,381,603,408"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -154,19 +153,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a57e0a79232327c7382c6a77dad3a9781 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44ee1b0af4e61e68d804680b27881999 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a44ee1b0af4e61e68d804680b27881999">getName</a> ()</td></tr>
 <tr class="separator:a44ee1b0af4e61e68d804680b27881999 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">setUpdateAlways</a> (bool b)</td></tr>
+<tr class="memdesc:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the update strategy for the module.  <a href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">More...</a><br /></td></tr>
+<tr class="separator:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b50ee66c01dda6a05819eb246266d33 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a2b50ee66c01dda6a05819eb246266d33">getParent</a> ()</td></tr>
 <tr class="separator:a2b50ee66c01dda6a05819eb246266d33 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0882f625db1c53350db482d34a1b90 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a0b0882f625db1c53350db482d34a1b90">isInitialized</a> ()</td></tr>
 <tr class="separator:a0b0882f625db1c53350db482d34a1b90 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bd819b959fd3894fa478167a5d2f190 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a3bd819b959fd3894fa478167a5d2f190">getModuleType</a> ()</td></tr>
 <tr class="separator:a3bd819b959fd3894fa478167a5d2f190 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19355f1b64015ec3f7ead31b90ed3be2 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual std::weak_ptr&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a19355f1b64015ec3f7ead31b90ed3be2">next</a> ()</td></tr>
-<tr class="separator:a19355f1b64015ec3f7ead31b90ed3be2 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1844d7262ff12b44775110324ef239a inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ad1844d7262ff12b44775110324ef239a">setNext</a> (std::weak_ptr&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt; next_module)</td></tr>
-<tr class="separator:ad1844d7262ff12b44775110324ef239a inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5144714bef507ab31afe6d902ab2e65 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65">attachField</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field, std::string name, std::string desc, bool autoDestroy=true) override</td></tr>
 <tr class="memdesc:af5144714bef507ab31afe6d902ab2e65 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach a field to Base.  <a href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65">More...</a><br /></td></tr>
 <tr class="separator:af5144714bef507ab31afe6d902ab2e65 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a73f0c85f66dddc1ab648f2b628fa4fdb">isInputComplete</a> ()</td></tr>
+<tr class="memdesc:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the completeness of input fields.  <a href="classdyno_1_1_module.html#a73f0c85f66dddc1ab648f2b628fa4fdb">More...</a><br /></td></tr>
+<tr class="separator:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a5a53a1ff27547593a8358e6ab5767fa2">isOutputCompete</a> ()</td></tr>
+<tr class="separator:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ab65d583b85bc42e7b2faab3af43d159f">OBase</a> ()</td></tr>
 <tr class="separator:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,8 +238,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0a9735a2942cbc82f430d235e957edc5 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93a9bcaeabeccd666019e718bdde1dd2 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a93a9bcaeabeccd666019e718bdde1dd2">addOutputField</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
 <tr class="separator:a93a9bcaeabeccd666019e718bdde1dd2 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee38400e04dd178e78f32f2f190ea8a inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#afee38400e04dd178e78f32f2f190ea8a">addToOutput</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
+<tr class="separator:afee38400e04dd178e78f32f2f190ea8a inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a30b6e2f693fea4ce9d7703791f0f6f inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a5a30b6e2f693fea4ce9d7703791f0f6f">removeOutputField</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
 <tr class="separator:a5a30b6e2f693fea4ce9d7703791f0f6f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada356355f2102f1a7d3223e1416cd9dc inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ada356355f2102f1a7d3223e1416cd9dc">removeFromOutput</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
+<tr class="separator:ada356355f2102f1a7d3223e1416cd9dc inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e429b5c73bc7ae8ef707cd40ac3a2e5 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5">getOutputFields</a> ()</td></tr>
 <tr class="separator:a3e429b5c73bc7ae8ef707cd40ac3a2e5 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71d077168c9c9f7ee0a615d2c5bb2913 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a71d077168c9c9f7ee0a615d2c5bb2913">findParameter</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
@@ -259,8 +266,6 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:af4d48d4eb7a53967a38ce507c6f61978"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_visual_module.html#af4d48d4eb7a53967a38ce507c6f61978">updateImpl</a> () final</td></tr>
 <tr class="separator:af4d48d4eb7a53967a38ce507c6f61978"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad47e6502111c0bf716776c1194a2deab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_visual_module.html#ad47e6502111c0bf716776c1194a2deab">display</a> ()</td></tr>
-<tr class="separator:ad47e6502111c0bf716776c1194a2deab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classdyno_1_1_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdyno_1_1_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_module.html">dyno::Module</a></td></tr>
 <tr class="memitem:a7084de192d5189f7e4da3be290670d03 inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a7084de192d5189f7e4da3be290670d03">initializeImpl</a> ()</td></tr>
 <tr class="separator:a7084de192d5189f7e4da3be290670d03 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,21 +281,19 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a0b3d99d086effb856d9af1aa27bf5ece inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafed20478d711d12fb46f128addc9bb6 inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#aafed20478d711d12fb46f128addc9bb6">requireUpdate</a> ()</td></tr>
 <tr class="separator:aafed20478d711d12fb46f128addc9bb6 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a73f0c85f66dddc1ab648f2b628fa4fdb">isInputComplete</a> ()</td></tr>
-<tr class="memdesc:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pro_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the completeness of input fields.  <a href="classdyno_1_1_module.html#a73f0c85f66dddc1ab648f2b628fa4fdb">More...</a><br /></td></tr>
-<tr class="separator:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a53a1ff27547593a8358e6ab5767fa2 inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a5a53a1ff27547593a8358e6ab5767fa2">isOutputCompete</a> ()</td></tr>
-<tr class="separator:a5a53a1ff27547593a8358e6ab5767fa2 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7106075edd583ebbc5f5e4fc3a4cbd2d inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a7106075edd583ebbc5f5e4fc3a4cbd2d">updateStarted</a> ()</td></tr>
-<tr class="memdesc:a7106075edd583ebbc5f5e4fc3a4cbd2d inherit pro_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two functions called at the beginning and end of <a class="el" href="classdyno_1_1_module.html#a671334fb99ebe01b59adbfd9980fcfa9">update()</a> used for debug.  <a href="classdyno_1_1_module.html#a7106075edd583ebbc5f5e4fc3a4cbd2d">More...</a><br /></td></tr>
-<tr class="separator:a7106075edd583ebbc5f5e4fc3a4cbd2d inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf25260c1cb9e47adde11a5c2e58146 inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a0bf25260c1cb9e47adde11a5c2e58146">updateEnded</a> ()</td></tr>
-<tr class="separator:a0bf25260c1cb9e47adde11a5c2e58146 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a8cbb0f56e3117ad920133d28e4dc5cc1">updateStarted</a> ()</td></tr>
+<tr class="memdesc:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two functions called at the beginning and end of <a class="el" href="classdyno_1_1_module.html#a671334fb99ebe01b59adbfd9980fcfa9">update()</a> used for debug.  <a href="classdyno_1_1_module.html#a8cbb0f56e3117ad920133d28e4dc5cc1">More...</a><br /></td></tr>
+<tr class="separator:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ba5aec44b13ce53020c7e83a338f4c inherit pro_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ae7ba5aec44b13ce53020c7e83a338f4c">updateEnded</a> ()</td></tr>
+<tr class="separator:ae7ba5aec44b13ce53020c7e83a338f4c inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a62fd118fcb3c87389fb7aad1b32719f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_visual_module.html#a62fd118fcb3c87389fb7aad1b32719f8">DEF_VAR</a> (bool, Visible, true, &quot;A toggle to control the viability&quot;)</td></tr>
+<tr class="separator:a62fd118fcb3c87389fb7aad1b32719f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac6daacc17725d5a57f34235824f82b2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_var.html">FVar</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_visual_module.html#ac6daacc17725d5a57f34235824f82b2d">m_visible</a></td></tr>
-<tr class="separator:ac6daacc17725d5a57f34235824f82b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0050a5929daed516b266e398601f4fdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_quat.html">Quat</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_visual_module.html#a0050a5929daed516b266e398601f4fdd">m_rotation</a></td></tr>
 <tr class="separator:a0050a5929daed516b266e398601f4fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefd67181d2c8a48da9162e0632d88ada"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_visual_module.html#aefd67181d2c8a48da9162e0632d88ada">m_scale</a></td></tr>
@@ -343,30 +346,6 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00006">6</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_visual_module_a725df81f2f1490f6588e79dfa8adaf9f_cgraph.png" border="0" usemap="#aclassdyno_1_1_visual_module_a725df81f2f1490f6588e79dfa8adaf9f_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_visual_module_a725df81f2f1490f6588e79dfa8adaf9f_cgraph" id="aclassdyno_1_1_visual_module_a725df81f2f1490f6588e79dfa8adaf9f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,275,141,317"/>
-<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="189,257,361,284"/>
-<area shape="rect" href="classdyno_1_1_f_var.html#aca0ac7b81fb36e3d0f2eab3eca01df3d" title=" " alt="" coords="203,308,348,335"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#aeb029950eebd2b04ba38992f908d7783" title=" " alt="" coords="415,105,598,132"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a93a9bcaeabeccd666019e718bdde1dd2" title=" " alt="" coords="409,55,604,81"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a3ddbd72e8dda9b52a0306a8489326124" title=" " alt="" coords="413,156,600,183"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a06ec06ffc42b9efe5186ffa584a99ae9" title=" " alt="" coords="417,207,596,233"/>
-<area shape="rect" href="classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28" title="Add a new message to log." alt="" coords="423,257,591,284"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#aa2e1988c7cc038309a14364e321db1c9" title=" " alt="" coords="409,308,604,335"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#ac09dae897d686f9c36b97138f0d24e27" title=" " alt="" coords="413,359,600,385"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a773df39ad8e772daf412437c003f7a57" title=" " alt="" coords="409,409,604,436"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a76fc9ad71c175c28b8b8c391b657f51c" title=" " alt="" coords="427,460,587,487"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47" title="Add a field to Base FieldID will be set to the name of Field by default." alt="" coords="671,80,826,107"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#aa475026ae1094d802e8fe6c1accdd2ed" title=" " alt="" coords="657,131,840,157"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a1142c17b3aa48a8f53280e4a0eb75992" title=" " alt="" coords="893,80,1088,107"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a0a9735a2942cbc82f430d235e957edc5" title=" " alt="" coords="652,5,845,32"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a71d077168c9c9f7ee0a615d2c5bb2913" title=" " alt="" coords="655,181,842,208"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -393,13 +372,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00016">16</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00014">14</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad47e6502111c0bf716776c1194a2deab" name="ad47e6502111c0bf716776c1194a2deab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad47e6502111c0bf716776c1194a2deab">&#9670;&nbsp;</a></span>display()</h2>
+<a id="a62fd118fcb3c87389fb7aad1b32719f8" name="a62fd118fcb3c87389fb7aad1b32719f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62fd118fcb3c87389fb7aad1b32719f8">&#9670;&nbsp;</a></span>DEF_VAR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,22 +387,41 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void dyno::VisualModule::display </td>
+          <td class="memname">dyno::VisualModule::DEF_VAR </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Visible&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">true&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;A toggle to control the viability&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classdyno_1_1_vtk_visual_module.html#a4f77a13007a888fa7cd59c10d6e13839">dyno::VtkVisualModule</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_visual_module_8h_source.html#l00043">43</a> of file <a class="el" href="_visual_module_8h_source.html">VisualModule.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +519,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00025">25</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00023">23</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -580,7 +578,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00035">35</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00033">33</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
 
 </div>
 </div>
@@ -600,16 +598,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00020">20</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_visual_module_a767e45bf320e1cbd8c8c488bd51ccc7c_cgraph.png" border="0" usemap="#aclassdyno_1_1_visual_module_a767e45bf320e1cbd8c8c488bd51ccc7c_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_visual_module_a767e45bf320e1cbd8c8c488bd51ccc7c_cgraph" id="aclassdyno_1_1_visual_module_a767e45bf320e1cbd8c8c488bd51ccc7c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,141,47"/>
-<area shape="rect" href="classdyno_1_1_f_var.html#aca0ac7b81fb36e3d0f2eab3eca01df3d" title=" " alt="" coords="189,13,335,39"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00018">18</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
 
 </div>
 </div>
@@ -645,7 +634,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00030">30</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00028">28</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
 
 </div>
 </div>
@@ -712,7 +701,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_module.html#a0366940af4b266edbd7246cae511683b">dyno::Module</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00040">40</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_visual_module_8cpp_source.html#l00038">38</a> of file <a class="el" href="_visual_module_8cpp_source.html">VisualModule.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -746,7 +735,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_visual_module_8h_source.html#l00048">48</a> of file <a class="el" href="_visual_module_8h_source.html">VisualModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_visual_module_8h_source.html#l00046">46</a> of file <a class="el" href="_visual_module_8h_source.html">VisualModule.h</a>.</p>
 
 </div>
 </div>
@@ -770,7 +759,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_visual_module_8h_source.html#l00049">49</a> of file <a class="el" href="_visual_module_8h_source.html">VisualModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_visual_module_8h_source.html#l00047">47</a> of file <a class="el" href="_visual_module_8h_source.html">VisualModule.h</a>.</p>
 
 </div>
 </div>
@@ -794,31 +783,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_visual_module_8h_source.html#l00050">50</a> of file <a class="el" href="_visual_module_8h_source.html">VisualModule.h</a>.</p>
-
-</div>
-</div>
-<a id="ac6daacc17725d5a57f34235824f82b2d" name="ac6daacc17725d5a57f34235824f82b2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6daacc17725d5a57f34235824f82b2d">&#9670;&nbsp;</a></span>m_visible</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_f_var.html">FVar</a>&lt;bool&gt; dyno::VisualModule::m_visible</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_visual_module_8h_source.html#l00046">46</a> of file <a class="el" href="_visual_module_8h_source.html">VisualModule.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_visual_module_8h_source.html#l00048">48</a> of file <a class="el" href="_visual_module_8h_source.html">VisualModule.h</a>.</p>
 
 </div>
 </div>

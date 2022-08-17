@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -72,37 +72,79 @@ $(function() {
 <div class="contents">
 <a href="initialize_particle_system_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="initialize_particle_system_8h.html">initializeParticleSystem.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_linear_damping_8h.html">LinearDamping.h</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_particle_integrator_8h.html">ParticleIntegrator.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_implicit_viscosity_8h.html">ImplicitViscosity.h</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_summation_density_8h.html">SummationDensity.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_density_p_b_d_8h.html">DensityPBD.h</a>&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_boundary_constraint_8h.html">BoundaryConstraint.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_variational_approximate_projection_8h.html">VariationalApproximateProjection.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_linear_damping_8h.html">Module/LinearDamping.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_particle_integrator_8h.html">Module/ParticleIntegrator.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_implicit_viscosity_8h.html">Module/ImplicitViscosity.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_summation_density_8h.html">Module/SummationDensity.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_density_p_b_d_8h.html">Module/DensityPBD.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_boundary_constraint_8h.html">Module/BoundaryConstraint.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_variational_approximate_projection_8h.html">Module/VariationalApproximateProjection.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classdyno_1_1_particle_system_initializer.html#ac292323a4c8f454ebc6c06de47474e33">   13</a></span>    <a class="code hl_function" href="classdyno_1_1_particle_system_initializer.html#ac292323a4c8f454ebc6c06de47474e33">ParticleSystemInitializer::ParticleSystemInitializer</a>()</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        TypeInfo::New&lt;LinearDamping&lt;DataType3f&gt;&gt;();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        TypeInfo::New&lt;ParticleIntegrator&lt;DataType3f&gt;&gt;();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        TypeInfo::New&lt;ImplicitViscosity&lt;DataType3f&gt;&gt;();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        TypeInfo::New&lt;DensityPBD&lt;DataType3f&gt;&gt;();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        TypeInfo::New&lt;SummationDensity&lt;DataType3f&gt;&gt;();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        TypeInfo::New&lt;VariationalApproximateProjection&lt;DataType3f&gt;&gt;();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="comment">//TypeInfo::New&lt;BoundaryConstraint&lt;DataType3f&gt;&gt;();</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_particle_fluid_8h.html">ParticleFluid.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_static_boundary_8h.html">StaticBoundary.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_node_factory_8h.html">NodeFactory.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classdyno_1_1_particle_system_initializer.html#ac292323a4c8f454ebc6c06de47474e33">   18</a></span>    <a class="code hl_function" href="classdyno_1_1_particle_system_initializer.html#ac292323a4c8f454ebc6c06de47474e33">ParticleSystemInitializer::ParticleSystemInitializer</a>()</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        TypeInfo::New&lt;LinearDamping&lt;DataType3f&gt;&gt;();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        TypeInfo::New&lt;ParticleIntegrator&lt;DataType3f&gt;&gt;();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        TypeInfo::New&lt;ImplicitViscosity&lt;DataType3f&gt;&gt;();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        TypeInfo::New&lt;DensityPBD&lt;DataType3f&gt;&gt;();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        TypeInfo::New&lt;SummationDensity&lt;DataType3f&gt;&gt;();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        TypeInfo::New&lt;VariationalApproximateProjection&lt;DataType3f&gt;&gt;();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="comment">//TypeInfo::New&lt;BoundaryConstraint&lt;DataType3f&gt;&gt;();</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_function" href="classdyno_1_1_particle_system_initializer.html#ad6fdc745d5689ec461beeddfa54c582a">initializeNodeCreators</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classdyno_1_1_particle_system_initializer.html#ad6fdc745d5689ec461beeddfa54c582a">   32</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_particle_system_initializer.html#ad6fdc745d5689ec461beeddfa54c582a">ParticleSystemInitializer::initializeNodeCreators</a>()</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_class" href="classdyno_1_1_node_factory.html">NodeFactory</a>* factory = <a class="code hl_function" href="classdyno_1_1_node_factory.html#a2af35245b77faa975d112f3cab41fd29">NodeFactory::instance</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">auto</span> page = factory-&gt;<a class="code hl_function" href="classdyno_1_1_node_factory.html#a753bd5900b3c52301d13e7b2fc1fc0d5">addPage</a>(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="stringliteral">&quot;Particle System&quot;</span>, </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="stringliteral">&quot;ToolBarIco/ParticleSystem/ParticleSystem.png&quot;</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">auto</span> group = page-&gt;addGroup(<span class="stringliteral">&quot;Particle System&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        group-&gt;addAction(</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="stringliteral">&quot;Particle Fluid&quot;</span>,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="stringliteral">&quot;ToolBarIco/ParticleSystem/ParticleFluid.png&quot;</span>,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            [=]()-&gt;std::shared_ptr&lt;Node&gt; { <span class="keywordflow">return</span> std::make_shared&lt;ParticleFluid&lt;DataType3f&gt;&gt;(); });</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        group-&gt;addAction(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="stringliteral">&quot;Boundary&quot;</span>,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="stringliteral">&quot;ToolBarIco/RigidBody/StaticBoundary.png&quot;</span>,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            [=]()-&gt;std::shared_ptr&lt;<a class="code hl_class" href="classdyno_1_1_node.html">Node</a>&gt; { </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="keyword">auto</span>  boundary = std::make_shared&lt;StaticBoundary&lt;DataType3f&gt;&gt;();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                boundary-&gt;loadCube(<a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(-0.5, 0, -0.5), <a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(0.5, 1, 0.5), 0.02, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <span class="keywordflow">return</span> boundary; });</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 <div class="ttc" id="a_boundary_constraint_8h_html"><div class="ttname"><a href="_boundary_constraint_8h.html">BoundaryConstraint.h</a></div></div>
 <div class="ttc" id="a_density_p_b_d_8h_html"><div class="ttname"><a href="_density_p_b_d_8h.html">DensityPBD.h</a></div></div>
 <div class="ttc" id="a_implicit_viscosity_8h_html"><div class="ttname"><a href="_implicit_viscosity_8h.html">ImplicitViscosity.h</a></div></div>
 <div class="ttc" id="a_linear_damping_8h_html"><div class="ttname"><a href="_linear_damping_8h.html">LinearDamping.h</a></div></div>
+<div class="ttc" id="a_node_factory_8h_html"><div class="ttname"><a href="_node_factory_8h.html">NodeFactory.h</a></div></div>
+<div class="ttc" id="a_particle_fluid_8h_html"><div class="ttname"><a href="_particle_fluid_8h.html">ParticleFluid.h</a></div></div>
 <div class="ttc" id="a_particle_integrator_8h_html"><div class="ttname"><a href="_particle_integrator_8h.html">ParticleIntegrator.h</a></div></div>
+<div class="ttc" id="a_static_boundary_8h_html"><div class="ttname"><a href="_static_boundary_8h.html">StaticBoundary.h</a></div></div>
 <div class="ttc" id="a_summation_density_8h_html"><div class="ttname"><a href="_summation_density_8h.html">SummationDensity.h</a></div></div>
 <div class="ttc" id="a_variational_approximate_projection_8h_html"><div class="ttname"><a href="_variational_approximate_projection_8h.html">VariationalApproximateProjection.h</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_particle_system_initializer_html_ac292323a4c8f454ebc6c06de47474e33"><div class="ttname"><a href="classdyno_1_1_particle_system_initializer.html#ac292323a4c8f454ebc6c06de47474e33">dyno::ParticleSystemInitializer::ParticleSystemInitializer</a></div><div class="ttdeci">ParticleSystemInitializer()</div><div class="ttdef"><b>Definition:</b> <a href="initialize_particle_system_8cpp_source.html#l00013">initializeParticleSystem.cpp:13</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_factory_html"><div class="ttname"><a href="classdyno_1_1_node_factory.html">dyno::NodeFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="_node_factory_8h_source.html#l00097">NodeFactory.h:98</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_factory_html_a2af35245b77faa975d112f3cab41fd29"><div class="ttname"><a href="classdyno_1_1_node_factory.html#a2af35245b77faa975d112f3cab41fd29">dyno::NodeFactory::instance</a></div><div class="ttdeci">static NodeFactory * instance()</div><div class="ttdef"><b>Definition:</b> <a href="_node_factory_8cpp_source.html#l00009">NodeFactory.cpp:9</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_factory_html_a753bd5900b3c52301d13e7b2fc1fc0d5"><div class="ttname"><a href="classdyno_1_1_node_factory.html#a753bd5900b3c52301d13e7b2fc1fc0d5">dyno::NodeFactory::addPage</a></div><div class="ttdeci">std::shared_ptr&lt; NodePage &gt; addPage(std::string name, std::string icon)</div><div class="ttdef"><b>Definition:</b> <a href="_node_factory_8cpp_source.html#l00054">NodeFactory.cpp:54</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html"><div class="ttname"><a href="classdyno_1_1_node.html">dyno::Node</a></div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00035">Node.h:36</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_particle_system_initializer_html_ac292323a4c8f454ebc6c06de47474e33"><div class="ttname"><a href="classdyno_1_1_particle_system_initializer.html#ac292323a4c8f454ebc6c06de47474e33">dyno::ParticleSystemInitializer::ParticleSystemInitializer</a></div><div class="ttdeci">ParticleSystemInitializer()</div><div class="ttdef"><b>Definition:</b> <a href="initialize_particle_system_8cpp_source.html#l00018">initializeParticleSystem.cpp:18</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_particle_system_initializer_html_ad6fdc745d5689ec461beeddfa54c582a"><div class="ttname"><a href="classdyno_1_1_particle_system_initializer.html#ad6fdc745d5689ec461beeddfa54c582a">dyno::ParticleSystemInitializer::initializeNodeCreators</a></div><div class="ttdeci">void initializeNodeCreators()</div><div class="ttdef"><b>Definition:</b> <a href="initialize_particle_system_8cpp_source.html#l00032">initializeParticleSystem.cpp:32</a></div></div>
 <div class="ttc" id="ainitialize_particle_system_8h_html"><div class="ttname"><a href="initialize_particle_system_8h.html">initializeParticleSystem.h</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespacedyno_html_aafa7daf71ffcc74fd4e59d36d51ff01f"><div class="ttname"><a href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">dyno::Vec3f</a></div><div class="ttdeci">Vector&lt; float, 3 &gt; Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="_vector3_d_8h_source.html#l00088">Vector3D.h:88</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

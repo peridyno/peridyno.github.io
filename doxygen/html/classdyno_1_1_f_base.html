@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -103,10 +103,11 @@ Collaboration diagram for dyno::FBase:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base__coll__graph.png" border="0" usemap="#adyno_1_1_f_base_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_f_base_coll__map" id="adyno_1_1_f_base_coll__map">
-<area shape="rect" title=" " alt="" coords="42,185,138,212"/>
+<area shape="rect" title=" " alt="" coords="101,185,197,212"/>
 <area shape="rect" title=" " alt="" coords="5,81,60,108"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="99,81,198,108"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="101,5,197,32"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="91,81,190,108"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="93,5,189,32"/>
+<area shape="rect" href="classdyno_1_1_time_stamp.html" title="Time stamp." alt="" coords="215,81,339,108"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -118,8 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afcee052dcc84cd6ab97949bf11bf3ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53ac4f814a9e44f432005dc2638b0d76"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a53ac4f814a9e44f432005dc2638b0d76">~FBase</a> ()</td></tr>
 <tr class="separator:a53ac4f814a9e44f432005dc2638b0d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af60b1a59fd27b4a52e8ab4515f997aa6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#af60b1a59fd27b4a52e8ab4515f997aa6">getElementCount</a> ()=0</td></tr>
-<tr class="separator:af60b1a59fd27b4a52e8ab4515f997aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002102a94ea8d375f7548b88c4400b3e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a002102a94ea8d375f7548b88c4400b3e">size</a> ()=0</td></tr>
+<tr class="separator:a002102a94ea8d375f7548b88c4400b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a751d22e6e218a65ccc35783801d09308"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308">getTemplateName</a> ()</td></tr>
 <tr class="separator:a751d22e6e218a65ccc35783801d09308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13d7c35a189c2112df3cc36ba4fbea2d"><td class="memItemLeft" align="right" valign="top">virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a13d7c35a189c2112df3cc36ba4fbea2d">getClassName</a> ()</td></tr>
@@ -152,8 +153,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6cf501ab604fdc71db6a7a746455d888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b60b02ba56ebbc11b4d0c5b0bd2b0b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a8b60b02ba56ebbc11b4d0c5b0bd2b0b0">isModified</a> ()</td></tr>
 <tr class="separator:a8b60b02ba56ebbc11b4d0c5b0bd2b0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a157c4c2e4d3b794d6a18ebbbe6c0c4be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a157c4c2e4d3b794d6a18ebbbe6c0c4be">tagModified</a> (bool modifed)</td></tr>
-<tr class="separator:a157c4c2e4d3b794d6a18ebbbe6c0c4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f426738aede3cc8c12e9a1a2d3762b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a14f426738aede3cc8c12e9a1a2d3762b">tick</a> ()</td></tr>
+<tr class="separator:a14f426738aede3cc8c12e9a1a2d3762b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a4cb70d1dd42ab00f7ba13753cdedd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a1a4cb70d1dd42ab00f7ba13753cdedd6">tack</a> ()</td></tr>
+<tr class="separator:a1a4cb70d1dd42ab00f7ba13753cdedd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a826c40185fd85749790ffcbf42489c30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a826c40185fd85749790ffcbf42489c30">isOptional</a> ()</td></tr>
 <tr class="separator:a826c40185fd85749790ffcbf42489c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a084156a3073055c5a00880e8f453b551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a084156a3073055c5a00880e8f453b551">tagOptional</a> (bool optional)</td></tr>
@@ -166,20 +169,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af62b11dd8e69c7ef0e3123542eb6018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad36f4e6b77f30544aabdb3a10bfc06ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ad36f4e6b77f30544aabdb3a10bfc06ca">setMax</a> (float max_val)</td></tr>
 <tr class="separator:ad36f4e6b77f30544aabdb3a10bfc06ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a35992e8a831429e5b74de5b09a865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#af8a35992e8a831429e5b74de5b09a865">setRange</a> (float min_val, float max_val)</td></tr>
+<tr class="separator:af8a35992e8a831429e5b74de5b09a865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ec06ffc42b9efe5186ffa584a99ae9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#ac3362376850a026da08e48efc8032048">FieldTypeEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a06ec06ffc42b9efe5186ffa584a99ae9">getFieldType</a> ()</td></tr>
 <tr class="separator:a06ec06ffc42b9efe5186ffa584a99ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab250579a08a6df9e57074941b3052f53"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ab250579a08a6df9e57074941b3052f53">connect</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *dst)=0</td></tr>
 <tr class="separator:ab250579a08a6df9e57074941b3052f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0213120749cbfaa51c1f39a4c5a37078"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a0213120749cbfaa51c1f39a4c5a37078">disconnect</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *dst)</td></tr>
 <tr class="separator:a0213120749cbfaa51c1f39a4c5a37078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8317dd929349d40e10e0afbf0f54799"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ad8317dd929349d40e10e0afbf0f54799">serialize</a> ()</td></tr>
+<tr class="separator:ad8317dd929349d40e10e0afbf0f54799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279031c10143801d7fae263a17170776"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a279031c10143801d7fae263a17170776">deserialize</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:a279031c10143801d7fae263a17170776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2019aff22a4a3a85a1fbc1ef5e03d143"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a2019aff22a4a3a85a1fbc1ef5e03d143">getTopField</a> ()</td></tr>
 <tr class="separator:a2019aff22a4a3a85a1fbc1ef5e03d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31ea29dace037c84dbbbd642979c72bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a31ea29dace037c84dbbbd642979c72bd">getSource</a> ()</td></tr>
 <tr class="separator:a31ea29dace037c84dbbbd642979c72bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95e7275c9758e6fb16701a99447e2ade"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a95e7275c9758e6fb16701a99447e2ade">promoteToOuput</a> ()</td></tr>
-<tr class="separator:a95e7275c9758e6fb16701a99447e2ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1bf0a785dd7d745bdb319f0a064df62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#aa1bf0a785dd7d745bdb319f0a064df62">promoteToInput</a> ()</td></tr>
-<tr class="separator:aa1bf0a785dd7d745bdb319f0a064df62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7cf3c5b35244831c956ddd77a3eade"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a3e7cf3c5b35244831c956ddd77a3eade">promoteOuput</a> ()</td></tr>
+<tr class="memdesc:a3e7cf3c5b35244831c956ddd77a3eade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a state field as an ouput field.  <a href="classdyno_1_1_f_base.html#a3e7cf3c5b35244831c956ddd77a3eade">More...</a><br /></td></tr>
+<tr class="separator:a3e7cf3c5b35244831c956ddd77a3eade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8937f619a1efe09b3538d2b086ec288"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ab8937f619a1efe09b3538d2b086ec288">promoteInput</a> ()</td></tr>
+<tr class="memdesc:ab8937f619a1efe09b3538d2b086ec288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a state field as an input field.  <a href="classdyno_1_1_f_base.html#ab8937f619a1efe09b3538d2b086ec288">More...</a><br /></td></tr>
+<tr class="separator:ab8937f619a1efe09b3538d2b086ec288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac77a8b8016d61729e4051ce95b7af4b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ac77a8b8016d61729e4051ce95b7af4b4">demoteOuput</a> ()</td></tr>
+<tr class="memdesc:ac77a8b8016d61729e4051ce95b7af4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide a state field from outputs.  <a href="classdyno_1_1_f_base.html#ac77a8b8016d61729e4051ce95b7af4b4">More...</a><br /></td></tr>
+<tr class="separator:ac77a8b8016d61729e4051ce95b7af4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886ce4db5a0b96566033348de1c2d506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a886ce4db5a0b96566033348de1c2d506">demoteInput</a> ()</td></tr>
+<tr class="memdesc:a886ce4db5a0b96566033348de1c2d506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide a state field from inputs.  <a href="classdyno_1_1_f_base.html#a886ce4db5a0b96566033348de1c2d506">More...</a><br /></td></tr>
+<tr class="separator:a886ce4db5a0b96566033348de1c2d506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78fdf0bf9fdd72fcf85110b17809e107"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a78fdf0bf9fdd72fcf85110b17809e107">isEmpty</a> ()=0</td></tr>
 <tr class="separator:a78fdf0bf9fdd72fcf85110b17809e107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0e14308899fb0ef61af01ee1dceed2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#ae0e14308899fb0ef61af01ee1dceed2c">update</a> ()</td></tr>
@@ -221,20 +238,22 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a27e03a235f5351cae775bccfc2f8e25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf90b3cbd20ad2af83440a7f8e960329"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#adf90b3cbd20ad2af83440a7f8e960329">m_max</a> = FLT_MAX</td></tr>
 <tr class="separator:adf90b3cbd20ad2af83440a7f8e960329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a728314fb2d13c97e96b39696e261a0d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a728314fb2d13c97e96b39696e261a0d0">m_modified</a> = false</td></tr>
-<tr class="separator:a728314fb2d13c97e96b39696e261a0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedab5ee3c7afc7bf20a2875b80eb629a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_o_base.html">OBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#aedab5ee3c7afc7bf20a2875b80eb629a">mOwner</a> = nullptr</td></tr>
 <tr class="separator:aedab5ee3c7afc7bf20a2875b80eb629a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa46472f2da15f4b9f8f7c7f334b5e3a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#aa46472f2da15f4b9f8f7c7f334b5e3a6">mSource</a> = nullptr</td></tr>
 <tr class="separator:aa46472f2da15f4b9f8f7c7f334b5e3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d563fed433267c56ed7762a620421d4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a8d563fed433267c56ed7762a620421d4">mSinks</a></td></tr>
 <tr class="separator:a8d563fed433267c56ed7762a620421d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c8c841fe8bb33915083dd30cc93739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_time_stamp.html">TimeStamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a06c8c841fe8bb33915083dd30cc93739">mTickTime</a></td></tr>
+<tr class="separator:a06c8c841fe8bb33915083dd30cc93739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ad2461537ab5826a1757a0966938fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_time_stamp.html">TimeStamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a71ad2461537ab5826a1757a0966938fa">mTackTime</a></td></tr>
+<tr class="separator:a71ad2461537ab5826a1757a0966938fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65b3312241b255c32beb2f73ec8bd0c8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_f_call_back_func.html">FCallBackFunc</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_base.html#a65b3312241b255c32beb2f73ec8bd0c8">mCallbackFunc</a></td></tr>
 <tr class="separator:a65b3312241b255c32beb2f73ec8bd0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00040">40</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00042">42</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9ba626aff354b251c9314b95adc4398e" name="a9ba626aff354b251c9314b95adc4398e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ba626aff354b251c9314b95adc4398e">&#9670;&nbsp;</a></span>FBase() <span class="overload">[1/2]</span></h2>
@@ -259,7 +278,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00043">43</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00045">45</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -301,7 +320,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00179">179</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00212">212</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -345,7 +364,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00189">189</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00222">222</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -386,7 +405,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00054">54</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00078">78</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -425,7 +444,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00151">151</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00175">175</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -491,7 +510,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00103">103</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00127">127</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -513,6 +532,111 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classdyno_1_1_f_instance.html#a6ff7b36f7dc71995e423de83ec42d24a" title=" " alt="" coords="5,5,175,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a886ce4db5a0b96566033348de1c2d506" name="a886ce4db5a0b96566033348de1c2d506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a886ce4db5a0b96566033348de1c2d506">&#9670;&nbsp;</a></span>demoteInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> * dyno::FBase::demoteInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hide a state field from inputs. </p>
+<dl class="section return"><dt>Returns</dt><dd>state field </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00066">66</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_f_base_a886ce4db5a0b96566033348de1c2d506_cgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a886ce4db5a0b96566033348de1c2d506_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_f_base_a886ce4db5a0b96566033348de1c2d506_cgraph" id="aclassdyno_1_1_f_base_a886ce4db5a0b96566033348de1c2d506_cgraph">
+<area shape="rect" title="Hide a state field from inputs." alt="" coords="5,31,180,57"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#aa475026ae1094d802e8fe6c1accdd2ed" title=" " alt="" coords="451,5,633,32"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a32702988587583a71aaea1bd50e5be49" title=" " alt="" coords="228,53,403,94"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#afb86e4658a8e9337a76f97df049801c7" title="Remove a field by its pointer." alt="" coords="455,60,629,87"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac77a8b8016d61729e4051ce95b7af4b4" name="ac77a8b8016d61729e4051ce95b7af4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac77a8b8016d61729e4051ce95b7af4b4">&#9670;&nbsp;</a></span>demoteOuput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> * dyno::FBase::demoteOuput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hide a state field from outputs. </p>
+<dl class="section return"><dt>Returns</dt><dd>state field </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00054">54</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_f_base_ac77a8b8016d61729e4051ce95b7af4b4_cgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_ac77a8b8016d61729e4051ce95b7af4b4_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_f_base_ac77a8b8016d61729e4051ce95b7af4b4_cgraph" id="aclassdyno_1_1_f_base_ac77a8b8016d61729e4051ce95b7af4b4_cgraph">
+<area shape="rect" title="Hide a state field from outputs." alt="" coords="5,5,188,32"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a0a9735a2942cbc82f430d235e957edc5" title=" " alt="" coords="500,5,693,32"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#ada356355f2102f1a7d3223e1416cd9dc" title=" " alt="" coords="236,31,452,57"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_f_base_ac77a8b8016d61729e4051ce95b7af4b4_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_ac77a8b8016d61729e4051ce95b7af4b4_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_f_base_ac77a8b8016d61729e4051ce95b7af4b4_icgraph" id="aclassdyno_1_1_f_base_ac77a8b8016d61729e4051ce95b7af4b4_icgraph">
+<area shape="rect" title="Hide a state field from outputs." alt="" coords="403,13,585,39"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ae706c22e0e9f25428ef70bf3177767f2" title=" " alt="" coords="203,5,355,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,5,155,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a279031c10143801d7fae263a17170776" name="a279031c10143801d7fae263a17170776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a279031c10143801d7fae263a17170776">&#9670;&nbsp;</a></span>deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool dyno::FBase::deserialize </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classdyno_1_1_f_var.html#a388673f5a5532a76bca6d10b20992147">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a388673f5a5532a76bca6d10b20992147">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a388673f5a5532a76bca6d10b20992147">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a388673f5a5532a76bca6d10b20992147">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a01ccdc32fad6f531475909c17f3f05d0">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a01ccdc32fad6f531475909c17f3f05d0">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a01ccdc32fad6f531475909c17f3f05d0">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a01ccdc32fad6f531475909c17f3f05d0">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#aac87f05c8e6855cf536b3e666580316d">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#aac87f05c8e6855cf536b3e666580316d">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#aac87f05c8e6855cf536b3e666580316d">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#aac87f05c8e6855cf536b3e666580316d">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a20d5238678e5b4f67ea0fdd3b73f7dea">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a20d5238678e5b4f67ea0fdd3b73f7dea">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a20d5238678e5b4f67ea0fdd3b73f7dea">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a20d5238678e5b4f67ea0fdd3b73f7dea">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ade8e81e9eed501927ae8c8dcd9945895">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ade8e81e9eed501927ae8c8dcd9945895">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ade8e81e9eed501927ae8c8dcd9945895">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ade8e81e9eed501927ae8c8dcd9945895">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#adad52275e684710de06006156d993926">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#adad52275e684710de06006156d993926">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#adad52275e684710de06006156d993926">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#adad52275e684710de06006156d993926">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a4abab719e97114c749298ee96c1b25b5">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a4abab719e97114c749298ee96c1b25b5">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a4abab719e97114c749298ee96c1b25b5">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a4abab719e97114c749298ee96c1b25b5">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a91519e4943fa453f1e41ee476b3fec8f">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a91519e4943fa453f1e41ee476b3fec8f">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a91519e4943fa453f1e41ee476b3fec8f">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a91519e4943fa453f1e41ee476b3fec8f">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#aa4b48078d1ef1348609296e16a75a9d1">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#aa4b48078d1ef1348609296e16a75a9d1">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#aa4b48078d1ef1348609296e16a75a9d1">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#aa4b48078d1ef1348609296e16a75a9d1">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#af393156e9423a3732fbfdeebc21e183f">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#af393156e9423a3732fbfdeebc21e183f">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#af393156e9423a3732fbfdeebc21e183f">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#af393156e9423a3732fbfdeebc21e183f">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ac4744b5af1040651d74865e4b5f573df">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ac4744b5af1040651d74865e4b5f573df">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ac4744b5af1040651d74865e4b5f573df">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ac4744b5af1040651d74865e4b5f573df">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ab6a1c0bc25f5032ba432bccc004e78a8">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ab6a1c0bc25f5032ba432bccc004e78a8">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ab6a1c0bc25f5032ba432bccc004e78a8">dyno::FVar&lt; bool &gt;</a>, and <a class="el" href="classdyno_1_1_f_var.html#ab6a1c0bc25f5032ba432bccc004e78a8">dyno::FVar&lt; int &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00094">94</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -540,7 +664,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00120">120</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00144">144</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -579,7 +703,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00115">115</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00139">139</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -628,18 +752,18 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_f_instance.html#af695e51e2733798906858312bc863f90">dyno::FInstance&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00049">49</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00051">51</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_a13d7c35a189c2112df3cc36ba4fbea2d_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a13d7c35a189c2112df3cc36ba4fbea2d_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_a13d7c35a189c2112df3cc36ba4fbea2d_icgraph" id="aclassdyno_1_1_f_base_a13d7c35a189c2112df3cc36ba4fbea2d_icgraph">
-<area shape="rect" title=" " alt="" coords="812,46,1001,73"/>
-<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a6dbe32cbb8af0e195c6cac2c1b6571c0" title=" " alt="" coords="615,5,756,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#ab82c51c0aac758be5379478c814ee3ac" title=" " alt="" coords="607,71,764,112"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#aa3278270d05e7ff03fce24889a8d808f" title=" " alt="" coords="401,71,559,112"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a0477d485b3b0ac0953db6a024c5261ab" title=" " alt="" coords="196,71,353,112"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,71,148,112"/>
+<area shape="rect" title=" " alt="" coords="613,46,803,73"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a6dbe32cbb8af0e195c6cac2c1b6571c0" title=" " alt="" coords="416,5,557,47"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="408,71,565,112"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="203,71,360,112"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="9,37,151,79"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,103,155,144"/>
 </map>
 </div>
 
@@ -668,7 +792,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00052">52</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00054">54</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -695,34 +819,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00053">53</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
-
-</div>
-</div>
-<a id="af60b1a59fd27b4a52e8ab4515f997aa6" name="af60b1a59fd27b4a52e8ab4515f997aa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af60b1a59fd27b4a52e8ab4515f997aa6">&#9670;&nbsp;</a></span>getElementCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a> dyno::FBase::getElementCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classdyno_1_1_f_var.html#a7bdd27b78d44dac45cd33cf4d75ec3ce">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a7bdd27b78d44dac45cd33cf4d75ec3ce">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a7bdd27b78d44dac45cd33cf4d75ec3ce">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a7bdd27b78d44dac45cd33cf4d75ec3ce">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_array.html#a0b3a4f710eb7d6ae84230f5b174b39e3">dyno::FArray&lt; T, deviceType &gt;</a>, <a class="el" href="classdyno_1_1_f_array.html#a0b3a4f710eb7d6ae84230f5b174b39e3">dyno::FArray&lt; Coord &gt;</a>, <a class="el" href="classdyno_1_1_f_array.html#a0b3a4f710eb7d6ae84230f5b174b39e3">dyno::FArray&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_array_list.html#a898a75ef22f24d1877a5d874d557814c">dyno::FArrayList&lt; T, deviceType &gt;</a>, and <a class="el" href="classdyno_1_1_f_instance.html#a6dbfb77dafcd6f64f72fe97784e8a700">dyno::FInstance&lt; T &gt;</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00055">55</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -741,16 +838,29 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00207">207</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00240">240</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_a06ec06ffc42b9efe5186ffa584a99ae9_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a06ec06ffc42b9efe5186ffa584a99ae9_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_a06ec06ffc42b9efe5186ffa584a99ae9_icgraph" id="aclassdyno_1_1_f_base_a06ec06ffc42b9efe5186ffa584a99ae9_icgraph">
-<area shape="rect" title=" " alt="" coords="409,38,588,65"/>
-<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="189,13,361,39"/>
-<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="195,63,355,90"/>
-<area shape="rect" href="classdyno_1_1_visual_module.html#a725df81f2f1490f6588e79dfa8adaf9f" title=" " alt="" coords="5,5,141,47"/>
+<area shape="rect" title=" " alt="" coords="964,148,1143,175"/>
+<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="731,5,903,32"/>
+<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="737,56,897,83"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a7606af04c1a300fd4114f71d20fed048" title=" " alt="" coords="719,107,914,149"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a027bf20be8f7a99c5e252e2a85ab5771" title=" " alt="" coords="717,173,916,214"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="738,238,895,279"/>
+<area shape="rect" href="classdyno_1_1_node.html#a7a88dfdd26c4e4b22e2a4e5a95909058" title=" " alt="" coords="758,304,875,331"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="512,238,669,279"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="300,173,443,214"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="297,238,446,279"/>
+<area shape="rect" href="classdyno_1_1_node.html#aab8ae5fafafc2facf6aab7a0f7994438" title=" " alt="" coords="528,304,653,331"/>
+<area shape="rect" href="classdyno_1_1_node.html#a6f4134d96000c896365332f798da5318" title="Called every time interval." alt="" coords="523,355,658,381"/>
+<area shape="rect" href="classdyno_1_1_reset_act.html#a97b422d3c58e1f6511cc937802067ddf" title=" " alt="" coords="288,304,455,331"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html#ae6cb9746dab4baaccb565671f6ab5d5d" title=" " alt="" coords="279,355,464,381"/>
+<area shape="rect" href="namespacedyno.html#aae96e7ab34de45053d5422cd00d7fe12" title=" " alt="" coords="300,429,443,456"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html#a4db59a350803f47b98a3ebdc97b3f882" title=" " alt="" coords="25,347,211,389"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html#a9bc81034081919264da3ee618520d925" title=" " alt="" coords="5,429,231,456"/>
 </map>
 </div>
 
@@ -779,14 +889,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00079">79</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00083">83</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_af62b11dd8e69c7ef0e3123542eb6018e_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_af62b11dd8e69c7ef0e3123542eb6018e_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_af62b11dd8e69c7ef0e3123542eb6018e_icgraph" id="aclassdyno_1_1_f_base_af62b11dd8e69c7ef0e3123542eb6018e_icgraph">
-<area shape="rect" title=" " alt="" coords="236,13,383,39"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="5,5,188,47"/>
+<area shape="rect" title=" " alt="" coords="239,78,385,105"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="17,5,179,47"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="7,71,189,112"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a5ca4fa3bc971b51a5acf5f61765739fe" title=" " alt="" coords="5,136,191,177"/>
 </map>
 </div>
 
@@ -815,14 +927,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00076">76</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00080">80</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_adfb50cec7cd362156f458f6f34a21a81_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_adfb50cec7cd362156f458f6f34a21a81_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_adfb50cec7cd362156f458f6f34a21a81_icgraph" id="aclassdyno_1_1_f_base_adfb50cec7cd362156f458f6f34a21a81_icgraph">
-<area shape="rect" title=" " alt="" coords="236,13,379,39"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="5,5,188,47"/>
+<area shape="rect" title=" " alt="" coords="239,78,381,105"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="17,5,179,47"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="7,71,189,112"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a5ca4fa3bc971b51a5acf5f61765739fe" title=" " alt="" coords="5,136,191,177"/>
 </map>
 </div>
 
@@ -851,30 +965,34 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00051">51</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00053">53</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_a1142c17b3aa48a8f53280e4a0eb75992_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a1142c17b3aa48a8f53280e4a0eb75992_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_a1142c17b3aa48a8f53280e4a0eb75992_icgraph" id="aclassdyno_1_1_f_base_a1142c17b3aa48a8f53280e4a0eb75992_icgraph">
-<area shape="rect" title=" " alt="" coords="911,264,1105,291"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47" title="Add a field to Base FieldID will be set to the name of Field by default." alt="" coords="694,107,849,133"/>
-<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a2c3be336c1cccd60b9d94da0eac1d7e2" title=" " alt="" coords="701,158,842,199"/>
-<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#aefaed6763439cb2d764122ca56c62fbd" title=" " alt="" coords="690,223,853,265"/>
-<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a44513830fb6e9c59ef6afe0302c3bd24" title=" " alt="" coords="683,289,859,330"/>
-<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="690,354,853,395"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="680,419,863,461"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#aeb029950eebd2b04ba38992f908d7783" title=" " alt="" coords="443,5,626,32"/>
-<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="209,107,369,133"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a93a9bcaeabeccd666019e718bdde1dd2" title=" " alt="" coords="437,157,632,184"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a3ddbd72e8dda9b52a0306a8489326124" title=" " alt="" coords="441,56,628,83"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd" title="Attach a field to Base." alt="" coords="449,241,620,268"/>
-<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="203,56,375,83"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#aa1bf0a785dd7d745bdb319f0a064df62" title=" " alt="" coords="193,5,386,32"/>
-<area shape="rect" href="classdyno_1_1_visual_module.html#a725df81f2f1490f6588e79dfa8adaf9f" title=" " alt="" coords="5,49,141,90"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a95e7275c9758e6fb16701a99447e2ade" title=" " alt="" coords="189,157,389,184"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a28db0e7a7c8a2dbff2f201a587a5ff7e" title=" " alt="" coords="207,209,371,250"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#afcee052dcc84cd6ab97949bf11bf3ba2" title=" " alt="" coords="218,275,361,301"/>
+<area shape="rect" title=" " alt="" coords="728,464,923,491"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47" title="Add a field to Base FieldID will be set to the name of Field by default." alt="" coords="510,111,665,137"/>
+<area shape="rect" href="class_qt_1_1_qt_module_widget.html#a2c3be336c1cccd60b9d94da0eac1d7e2" title=" " alt="" coords="517,162,658,203"/>
+<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#aefaed6763439cb2d764122ca56c62fbd" title=" " alt="" coords="506,227,669,269"/>
+<area shape="rect" href="classdyno_1_1_q_enum_field_widget.html#ac541d72e2c51dc5f7ab31454da452bde" title=" " alt="" coords="502,293,673,334"/>
+<area shape="rect" href="classdyno_1_1_q_file_path_widget.html#a277633bbab5f43e85b8c7096400346ac" title=" " alt="" coords="509,358,666,399"/>
+<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a44513830fb6e9c59ef6afe0302c3bd24" title=" " alt="" coords="499,423,675,465"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="506,489,669,530"/>
+<area shape="rect" href="classdyno_1_1_q_state_field_widget.html#a56491a621bb891f8b2f77ec6bef5779b" title=" " alt="" coords="503,554,671,595"/>
+<area shape="rect" href="classdyno_1_1_q_string_field_widget.html#ac2a859eee209cc9f99dcd198d9ad2dcf" title=" " alt="" coords="502,619,673,661"/>
+<area shape="rect" href="classdyno_1_1_q_u_integer_field_widget.html#a7ec4f33986fa2ed4169ff4ce4b320bff" title=" " alt="" coords="495,685,680,726"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="496,750,679,791"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a5ca4fa3bc971b51a5acf5f61765739fe" title=" " alt="" coords="495,815,680,857"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#aeb029950eebd2b04ba38992f908d7783" title=" " alt="" coords="258,9,441,36"/>
+<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="25,107,185,133"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a93a9bcaeabeccd666019e718bdde1dd2" title=" " alt="" coords="252,161,447,188"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3ddbd72e8dda9b52a0306a8489326124" title=" " alt="" coords="256,60,443,87"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd" title="Attach a field to Base." alt="" coords="264,216,435,243"/>
+<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="19,56,191,83"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#ab8937f619a1efe09b3538d2b086ec288" title="Display a state field as an input field." alt="" coords="15,5,194,32"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a027bf20be8f7a99c5e252e2a85ab5771" title=" " alt="" coords="5,158,204,199"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#afcee052dcc84cd6ab97949bf11bf3ba2" title=" " alt="" coords="33,224,176,251"/>
 </map>
 </div>
 
@@ -903,22 +1021,26 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00068">68</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00070">70</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_a6cf501ab604fdc71db6a7a746455d888_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a6cf501ab604fdc71db6a7a746455d888_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_a6cf501ab604fdc71db6a7a746455d888_icgraph" id="aclassdyno_1_1_f_base_a6cf501ab604fdc71db6a7a746455d888_icgraph">
-<area shape="rect" title=" " alt="" coords="657,111,812,138"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#ae0e14308899fb0ef61af01ee1dceed2c" title=" " alt="" coords="467,111,609,138"/>
-<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a46a1ef5ee01d4f71e409e5424349033c" title=" " alt="" coords="246,5,409,47"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691" title=" " alt="" coords="236,71,419,112"/>
-<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#ae9efcdce68496ba9e20e828a6e1e0257" title=" " alt="" coords="246,136,409,177"/>
-<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a079b142de1d05bce41aa342db700e04c" title=" " alt="" coords="239,201,415,243"/>
-<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="15,5,178,47"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="5,71,188,112"/>
-<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#aefaed6763439cb2d764122ca56c62fbd" title=" " alt="" coords="15,136,178,177"/>
-<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a44513830fb6e9c59ef6afe0302c3bd24" title=" " alt="" coords="9,201,185,243"/>
+<area shape="rect" title=" " alt="" coords="663,177,817,203"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#ae0e14308899fb0ef61af01ee1dceed2c" title=" " alt="" coords="472,177,615,203"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a46a1ef5ee01d4f71e409e5424349033c" title=" " alt="" coords="250,5,413,47"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691" title=" " alt="" coords="240,71,423,112"/>
+<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#ae9efcdce68496ba9e20e828a6e1e0257" title=" " alt="" coords="250,136,413,177"/>
+<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a079b142de1d05bce41aa342db700e04c" title=" " alt="" coords="243,201,419,243"/>
+<area shape="rect" href="classdyno_1_1_q_u_integer_field_widget.html#a3765ef4f741ea13b60bc4d505f35a3f7" title=" " alt="" coords="239,267,424,308"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a9b61b1c6e1fe64ac2eb0903770233550" title=" " alt="" coords="239,332,424,373"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="17,5,179,47"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="7,71,189,112"/>
+<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#aefaed6763439cb2d764122ca56c62fbd" title=" " alt="" coords="17,136,179,177"/>
+<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a44513830fb6e9c59ef6afe0302c3bd24" title=" " alt="" coords="10,201,186,243"/>
+<area shape="rect" href="classdyno_1_1_q_u_integer_field_widget.html#a7ec4f33986fa2ed4169ff4ce4b320bff" title=" " alt="" coords="5,267,191,308"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a5ca4fa3bc971b51a5acf5f61765739fe" title=" " alt="" coords="5,332,191,373"/>
 </map>
 </div>
 
@@ -979,22 +1101,24 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_f_instance.html#aead233843b373a4afd3fd5bb5e5fb761">dyno::FInstance&lt; T &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00048">48</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00050">50</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_a751d22e6e218a65ccc35783801d09308_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a751d22e6e218a65ccc35783801d09308_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_a751d22e6e218a65ccc35783801d09308_icgraph" id="aclassdyno_1_1_f_base_a751d22e6e218a65ccc35783801d09308_icgraph">
-<area shape="rect" title=" " alt="" coords="1068,137,1277,163"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#acc601326cf3201d864edb83e4e514c55" title=" " alt="" coords="850,5,1007,47"/>
-<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a46a1ef5ee01d4f71e409e5424349033c" title=" " alt="" coords="847,71,1010,112"/>
-<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="617,113,779,155"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691" title=" " alt="" coords="837,188,1020,229"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="607,204,789,245"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#ab82c51c0aac758be5379478c814ee3ac" title=" " alt="" coords="619,5,777,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#aa3278270d05e7ff03fce24889a8d808f" title=" " alt="" coords="401,5,559,47"/>
-<area shape="rect" href="classdyno_1_1_p_property_widget.html#a0477d485b3b0ac0953db6a024c5261ab" title=" " alt="" coords="196,5,353,47"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="5,5,148,47"/>
+<area shape="rect" title=" " alt="" coords="875,229,1084,255"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#acd088d209386cb84d9a6540507de9228" title=" " alt="" coords="655,39,813,80"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a46a1ef5ee01d4f71e409e5424349033c" title=" " alt="" coords="653,104,815,145"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="419,133,582,175"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691" title=" " alt="" coords="643,221,825,263"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="409,264,592,305"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a9b61b1c6e1fe64ac2eb0903770233550" title=" " alt="" coords="641,339,827,380"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a5ca4fa3bc971b51a5acf5f61765739fe" title=" " alt="" coords="408,355,593,396"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a392d84a97438ecbbe31e2b83feb7e598" title=" " alt="" coords="422,39,579,80"/>
+<area shape="rect" href="classdyno_1_1_p_property_widget.html#a600124b447ddebcc85e9fc47ea8da882" title=" " alt="" coords="203,39,360,80"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="9,5,151,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,71,155,112"/>
 </map>
 </div>
 
@@ -1015,7 +1139,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00125">125</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00149">149</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1029,11 +1153,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_a2019aff22a4a3a85a1fbc1ef5e03d143_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a2019aff22a4a3a85a1fbc1ef5e03d143_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_a2019aff22a4a3a85a1fbc1ef5e03d143_icgraph" id="aclassdyno_1_1_f_base_a2019aff22a4a3a85a1fbc1ef5e03d143_icgraph">
-<area shape="rect" title=" " alt="" coords="457,56,628,83"/>
-<area shape="rect" href="classdyno_1_1_f_instance.html#a0069a00f78f7bcdb08922678dd4e9338" title=" " alt="" coords="224,31,409,57"/>
-<area shape="rect" href="classdyno_1_1_f_instance.html#aa97ad12f4392725d23cd1771d51161da" title=" " alt="" coords="224,81,409,108"/>
-<area shape="rect" href="classdyno_1_1_f_instance.html#ad92a7464cbeac7038d5d2d88a01c1707" title=" " alt="" coords="7,5,175,32"/>
-<area shape="rect" href="classdyno_1_1_f_instance.html#ae0dd116ff17032fdcbda256fbef45216" title=" " alt="" coords="5,56,176,83"/>
+<area shape="rect" title=" " alt="" coords="1147,107,1317,133"/>
+<area shape="rect" href="classdyno_1_1_f_instance.html#a0069a00f78f7bcdb08922678dd4e9338" title=" " alt="" coords="913,31,1099,57"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a8b60b02ba56ebbc11b4d0c5b0bd2b0b0" title=" " alt="" coords="925,81,1087,108"/>
+<area shape="rect" href="classdyno_1_1_f_instance.html#aa97ad12f4392725d23cd1771d51161da" title=" " alt="" coords="913,132,1099,159"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a14f426738aede3cc8c12e9a1a2d3762b" title=" " alt="" coords="943,183,1069,209"/>
+<area shape="rect" href="classdyno_1_1_f_instance.html#ad92a7464cbeac7038d5d2d88a01c1707" title=" " alt="" coords="696,5,864,32"/>
+<area shape="rect" href="classdyno_1_1_f_instance.html#ae0dd116ff17032fdcbda256fbef45216" title=" " alt="" coords="695,56,865,83"/>
+<area shape="rect" href="classdyno_1_1_node.html#a7a88dfdd26c4e4b22e2a4e5a95909058" title=" " alt="" coords="721,183,839,209"/>
+<area shape="rect" href="classdyno_1_1_node.html#aab8ae5fafafc2facf6aab7a0f7994438" title=" " alt="" coords="517,157,642,184"/>
+<area shape="rect" href="classdyno_1_1_node.html#a6f4134d96000c896365332f798da5318" title="Called every time interval." alt="" coords="512,208,647,235"/>
+<area shape="rect" href="classdyno_1_1_reset_act.html#a97b422d3c58e1f6511cc937802067ddf" title=" " alt="" coords="288,157,455,184"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html#ae6cb9746dab4baaccb565671f6ab5d5d" title=" " alt="" coords="279,208,464,235"/>
+<area shape="rect" href="namespacedyno.html#aae96e7ab34de45053d5422cd00d7fe12" title=" " alt="" coords="300,283,443,309"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html#a4db59a350803f47b98a3ebdc97b3f882" title=" " alt="" coords="25,201,211,242"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html#a9bc81034081919264da3ee618520d925" title=" " alt="" coords="5,283,231,309"/>
 </map>
 </div>
 
@@ -1054,7 +1188,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00088">88</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00112">112</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1207,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00083">83</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00107">107</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1100,22 +1234,26 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classdyno_1_1_f_instance.html#ae0dd116ff17032fdcbda256fbef45216">dyno::FInstance&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="classdyno_1_1_f_var.html#a4f6764cc0b2ce2bde19a8c04712b7920">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a4f6764cc0b2ce2bde19a8c04712b7920">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a4f6764cc0b2ce2bde19a8c04712b7920">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a4f6764cc0b2ce2bde19a8c04712b7920">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_array.html#a7709325bb433f5afb71766421808bf7c">dyno::FArray&lt; T, deviceType &gt;</a>, <a class="el" href="classdyno_1_1_f_array.html#a7709325bb433f5afb71766421808bf7c">dyno::FArray&lt; Coord &gt;</a>, <a class="el" href="classdyno_1_1_f_array.html#a7709325bb433f5afb71766421808bf7c">dyno::FArray&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_array2_d.html#a6b4949474f6f0983e4d6552d191ed725">dyno::FArray2D&lt; T, deviceType &gt;</a>, <a class="el" href="classdyno_1_1_f_array3_d.html#ae2996a1fa4b39c1b5ff5e939c6a32bfb">dyno::FArray3D&lt; T, deviceType &gt;</a>, <a class="el" href="classdyno_1_1_f_array_list.html#a423774a5be3e7116b476310dfc3b3b9f">dyno::FArrayList&lt; T, deviceType &gt;</a>, and <a class="el" href="classdyno_1_1_f_instance.html#ae0dd116ff17032fdcbda256fbef45216">dyno::FInstance&lt; T &gt;</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_a78fdf0bf9fdd72fcf85110b17809e107_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a78fdf0bf9fdd72fcf85110b17809e107_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_a78fdf0bf9fdd72fcf85110b17809e107_icgraph" id="aclassdyno_1_1_f_base_a78fdf0bf9fdd72fcf85110b17809e107_icgraph">
-<area shape="rect" title=" " alt="" coords="657,111,809,138"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#ae0e14308899fb0ef61af01ee1dceed2c" title=" " alt="" coords="467,111,609,138"/>
-<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a46a1ef5ee01d4f71e409e5424349033c" title=" " alt="" coords="246,5,409,47"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691" title=" " alt="" coords="236,71,419,112"/>
-<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#ae9efcdce68496ba9e20e828a6e1e0257" title=" " alt="" coords="246,136,409,177"/>
-<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a079b142de1d05bce41aa342db700e04c" title=" " alt="" coords="239,201,415,243"/>
-<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="15,5,178,47"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="5,71,188,112"/>
-<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#aefaed6763439cb2d764122ca56c62fbd" title=" " alt="" coords="15,136,178,177"/>
-<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a44513830fb6e9c59ef6afe0302c3bd24" title=" " alt="" coords="9,201,185,243"/>
+<area shape="rect" title=" " alt="" coords="663,177,815,203"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#ae0e14308899fb0ef61af01ee1dceed2c" title=" " alt="" coords="472,177,615,203"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a46a1ef5ee01d4f71e409e5424349033c" title=" " alt="" coords="250,5,413,47"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691" title=" " alt="" coords="240,71,423,112"/>
+<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#ae9efcdce68496ba9e20e828a6e1e0257" title=" " alt="" coords="250,136,413,177"/>
+<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a079b142de1d05bce41aa342db700e04c" title=" " alt="" coords="243,201,419,243"/>
+<area shape="rect" href="classdyno_1_1_q_u_integer_field_widget.html#a3765ef4f741ea13b60bc4d505f35a3f7" title=" " alt="" coords="239,267,424,308"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a9b61b1c6e1fe64ac2eb0903770233550" title=" " alt="" coords="239,332,424,373"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="17,5,179,47"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="7,71,189,112"/>
+<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#aefaed6763439cb2d764122ca56c62fbd" title=" " alt="" coords="17,136,179,177"/>
+<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a44513830fb6e9c59ef6afe0302c3bd24" title=" " alt="" coords="10,201,186,243"/>
+<area shape="rect" href="classdyno_1_1_q_u_integer_field_widget.html#a7ec4f33986fa2ed4169ff4ce4b320bff" title=" " alt="" coords="5,267,191,308"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a5ca4fa3bc971b51a5acf5f61765739fe" title=" " alt="" coords="5,332,191,373"/>
 </map>
 </div>
 
@@ -1136,7 +1274,16 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00159">159</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00183">183</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_f_base_a8b60b02ba56ebbc11b4d0c5b0bd2b0b0_cgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a8b60b02ba56ebbc11b4d0c5b0bd2b0b0_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_f_base_a8b60b02ba56ebbc11b4d0c5b0bd2b0b0_cgraph" id="aclassdyno_1_1_f_base_a8b60b02ba56ebbc11b4d0c5b0bd2b0b0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,168,56"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a2019aff22a4a3a85a1fbc1ef5e03d143" title=" " alt="" coords="216,29,387,56"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1155,7 +1302,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00169">169</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00202">202</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1180,52 +1327,56 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_a08c738d00eb98bf68af352c6eb7a2d4f_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a08c738d00eb98bf68af352c6eb7a2d4f_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_a08c738d00eb98bf68af352c6eb7a2d4f_icgraph" id="aclassdyno_1_1_f_base_a08c738d00eb98bf68af352c6eb7a2d4f_icgraph">
-<area shape="rect" title=" " alt="" coords="196,5,336,32"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#afcee052dcc84cd6ab97949bf11bf3ba2" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" title=" " alt="" coords="221,35,361,61"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#afcee052dcc84cd6ab97949bf11bf3ba2" title=" " alt="" coords="18,5,161,32"/>
+<area shape="rect" href="classdyno_1_1_q_state_field_widget.html#a56491a621bb891f8b2f77ec6bef5779b" title=" " alt="" coords="5,57,173,98"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aa1bf0a785dd7d745bdb319f0a064df62" name="aa1bf0a785dd7d745bdb319f0a064df62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1bf0a785dd7d745bdb319f0a064df62">&#9670;&nbsp;</a></span>promoteToInput()</h2>
+<a id="ab8937f619a1efe09b3538d2b086ec288" name="ab8937f619a1efe09b3538d2b086ec288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8937f619a1efe09b3538d2b086ec288">&#9670;&nbsp;</a></span>promoteInput()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> * dyno::FBase::promoteToInput </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> * dyno::FBase::promoteInput </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Display a state field as an input field. </p>
+<dl class="section return"><dt>Returns</dt><dd>state field </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00042">42</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_f_base_aa1bf0a785dd7d745bdb319f0a064df62_cgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_aa1bf0a785dd7d745bdb319f0a064df62_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_f_base_aa1bf0a785dd7d745bdb319f0a064df62_cgraph" id="aclassdyno_1_1_f_base_aa1bf0a785dd7d745bdb319f0a064df62_cgraph">
-<area shape="rect" title=" " alt="" coords="5,55,199,81"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#aeb029950eebd2b04ba38992f908d7783" title=" " alt="" coords="247,29,429,56"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#aa475026ae1094d802e8fe6c1accdd2ed" title=" " alt="" coords="477,80,660,107"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47" title="Add a field to Base FieldID will be set to the name of Field by default." alt="" coords="491,29,646,56"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a1142c17b3aa48a8f53280e4a0eb75992" title=" " alt="" coords="708,29,903,56"/>
+<div class="center"><img src="classdyno_1_1_f_base_ab8937f619a1efe09b3538d2b086ec288_cgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_ab8937f619a1efe09b3538d2b086ec288_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_f_base_ab8937f619a1efe09b3538d2b086ec288_cgraph" id="aclassdyno_1_1_f_base_ab8937f619a1efe09b3538d2b086ec288_cgraph">
+<area shape="rect" title="Display a state field as an input field." alt="" coords="5,55,184,81"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#aeb029950eebd2b04ba38992f908d7783" title=" " alt="" coords="232,29,415,56"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#aa475026ae1094d802e8fe6c1accdd2ed" title=" " alt="" coords="463,80,645,107"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47" title="Add a field to Base FieldID will be set to the name of Field by default." alt="" coords="477,29,631,56"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a1142c17b3aa48a8f53280e4a0eb75992" title=" " alt="" coords="693,29,888,56"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a95e7275c9758e6fb16701a99447e2ade" name="a95e7275c9758e6fb16701a99447e2ade"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95e7275c9758e6fb16701a99447e2ade">&#9670;&nbsp;</a></span>promoteToOuput()</h2>
+<a id="a3e7cf3c5b35244831c956ddd77a3eade" name="a3e7cf3c5b35244831c956ddd77a3eade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7cf3c5b35244831c956ddd77a3eade">&#9670;&nbsp;</a></span>promoteOuput()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> * dyno::FBase::promoteToOuput </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> * dyno::FBase::promoteOuput </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1233,17 +1384,28 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Display a state field as an ouput field. </p>
+<dl class="section return"><dt>Returns</dt><dd>state field </dd></dl>
+
 <p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00030">30</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_f_base_a95e7275c9758e6fb16701a99447e2ade_cgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a95e7275c9758e6fb16701a99447e2ade_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_f_base_a95e7275c9758e6fb16701a99447e2ade_cgraph" id="aclassdyno_1_1_f_base_a95e7275c9758e6fb16701a99447e2ade_cgraph">
-<area shape="rect" title=" " alt="" coords="5,55,205,81"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a93a9bcaeabeccd666019e718bdde1dd2" title=" " alt="" coords="253,29,448,56"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a0a9735a2942cbc82f430d235e957edc5" title=" " alt="" coords="496,80,689,107"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47" title="Add a field to Base FieldID will be set to the name of Field by default." alt="" coords="515,29,670,56"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a1142c17b3aa48a8f53280e4a0eb75992" title=" " alt="" coords="737,29,932,56"/>
+<div class="center"><img src="classdyno_1_1_f_base_a3e7cf3c5b35244831c956ddd77a3eade_cgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a3e7cf3c5b35244831c956ddd77a3eade_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_f_base_a3e7cf3c5b35244831c956ddd77a3eade_cgraph" id="aclassdyno_1_1_f_base_a3e7cf3c5b35244831c956ddd77a3eade_cgraph">
+<area shape="rect" title="Display a state field as an ouput field." alt="" coords="5,31,192,57"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#afee38400e04dd178e78f32f2f190ea8a" title=" " alt="" coords="240,5,420,32"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a0a9735a2942cbc82f430d235e957edc5" title=" " alt="" coords="468,31,661,57"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_f_base_a3e7cf3c5b35244831c956ddd77a3eade_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a3e7cf3c5b35244831c956ddd77a3eade_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_f_base_a3e7cf3c5b35244831c956ddd77a3eade_icgraph" id="aclassdyno_1_1_f_base_a3e7cf3c5b35244831c956ddd77a3eade_icgraph">
+<area shape="rect" title="Display a state field as an ouput field." alt="" coords="403,13,589,39"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ae706c22e0e9f25428ef70bf3177767f2" title=" " alt="" coords="203,5,355,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="5,5,155,47"/>
 </map>
 </div>
 
@@ -1273,7 +1435,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00067">67</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00091">91</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1299,6 +1461,35 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="ad8317dd929349d40e10e0afbf0f54799" name="ad8317dd929349d40e10e0afbf0f54799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8317dd929349d40e10e0afbf0f54799">&#9670;&nbsp;</a></span>serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string dyno::FBase::serialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classdyno_1_1_f_var.html#af35d7ad6e1ac7826325a28d25fc7137d">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#af35d7ad6e1ac7826325a28d25fc7137d">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#af35d7ad6e1ac7826325a28d25fc7137d">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#af35d7ad6e1ac7826325a28d25fc7137d">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a5816f2d963ef72894d689cbe4006473f">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a5816f2d963ef72894d689cbe4006473f">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a5816f2d963ef72894d689cbe4006473f">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a5816f2d963ef72894d689cbe4006473f">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a86c72f7880f1b5500e82b65de7c10013">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a86c72f7880f1b5500e82b65de7c10013">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a86c72f7880f1b5500e82b65de7c10013">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a86c72f7880f1b5500e82b65de7c10013">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#acff3e018cbd2019dafdbb39ed068330f">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#acff3e018cbd2019dafdbb39ed068330f">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#acff3e018cbd2019dafdbb39ed068330f">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#acff3e018cbd2019dafdbb39ed068330f">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a469218b1a249ca90f54557b38698e997">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a469218b1a249ca90f54557b38698e997">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a469218b1a249ca90f54557b38698e997">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a469218b1a249ca90f54557b38698e997">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a184e394ccb8d85ff56c43795020adb07">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a184e394ccb8d85ff56c43795020adb07">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a184e394ccb8d85ff56c43795020adb07">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a184e394ccb8d85ff56c43795020adb07">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#acd746d8aea892b38e1b2153b80eb5399">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#acd746d8aea892b38e1b2153b80eb5399">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#acd746d8aea892b38e1b2153b80eb5399">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#acd746d8aea892b38e1b2153b80eb5399">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a9300eb89e489016016ee571b4241d2e9">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a9300eb89e489016016ee571b4241d2e9">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a9300eb89e489016016ee571b4241d2e9">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a9300eb89e489016016ee571b4241d2e9">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#adb642ab7a4ba7d29f27e0472aba058a4">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#adb642ab7a4ba7d29f27e0472aba058a4">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#adb642ab7a4ba7d29f27e0472aba058a4">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#adb642ab7a4ba7d29f27e0472aba058a4">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a8f6936f1dea933f8d2f6912493fe80aa">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a8f6936f1dea933f8d2f6912493fe80aa">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a8f6936f1dea933f8d2f6912493fe80aa">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a8f6936f1dea933f8d2f6912493fe80aa">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ab02f41c3220b517dae7366dd1a0bc613">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ab02f41c3220b517dae7366dd1a0bc613">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ab02f41c3220b517dae7366dd1a0bc613">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#ab02f41c3220b517dae7366dd1a0bc613">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a734f5b5cc8f00b67be0f08ce5f38f7f7">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a734f5b5cc8f00b67be0f08ce5f38f7f7">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a734f5b5cc8f00b67be0f08ce5f38f7f7">dyno::FVar&lt; bool &gt;</a>, and <a class="el" href="classdyno_1_1_f_var.html#a734f5b5cc8f00b67be0f08ce5f38f7f7">dyno::FVar&lt; int &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00093">93</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+
+</div>
+</div>
 <a id="aa2e1988c7cc038309a14364e321db1c9" name="aa2e1988c7cc038309a14364e321db1c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2e1988c7cc038309a14364e321db1c9">&#9670;&nbsp;</a></span>setAutoDestroy()</h2>
 
@@ -1315,18 +1506,17 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00093">93</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00117">117</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_aa2e1988c7cc038309a14364e321db1c9_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_aa2e1988c7cc038309a14364e321db1c9_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_aa2e1988c7cc038309a14364e321db1c9_icgraph" id="aclassdyno_1_1_f_base_aa2e1988c7cc038309a14364e321db1c9_icgraph">
-<area shape="rect" title=" " alt="" coords="416,63,611,89"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd" title="Attach a field to Base." alt="" coords="197,8,367,35"/>
-<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="196,63,368,89"/>
-<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="202,113,362,140"/>
+<area shape="rect" title=" " alt="" coords="416,56,611,83"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd" title="Attach a field to Base." alt="" coords="197,5,367,32"/>
+<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="196,56,368,83"/>
+<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="202,107,362,133"/>
 <area shape="rect" href="classdyno_1_1_f_base.html#afcee052dcc84cd6ab97949bf11bf3ba2" title=" " alt="" coords="5,5,148,32"/>
-<area shape="rect" href="classdyno_1_1_visual_module.html#a725df81f2f1490f6588e79dfa8adaf9f" title=" " alt="" coords="9,57,145,98"/>
 </map>
 </div>
 
@@ -1348,7 +1538,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00098">98</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00122">122</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 
 </div>
 </div>
@@ -1376,18 +1566,17 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00056">56</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00058">58</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_ac09dae897d686f9c36b97138f0d24e27_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_ac09dae897d686f9c36b97138f0d24e27_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_ac09dae897d686f9c36b97138f0d24e27_icgraph" id="aclassdyno_1_1_f_base_ac09dae897d686f9c36b97138f0d24e27_icgraph">
-<area shape="rect" title=" " alt="" coords="416,63,603,89"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd" title="Attach a field to Base." alt="" coords="197,8,367,35"/>
-<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="196,63,368,89"/>
-<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="202,113,362,140"/>
+<area shape="rect" title=" " alt="" coords="416,56,603,83"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd" title="Attach a field to Base." alt="" coords="197,5,367,32"/>
+<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="196,56,368,83"/>
+<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="202,107,362,133"/>
 <area shape="rect" href="classdyno_1_1_f_base.html#afcee052dcc84cd6ab97949bf11bf3ba2" title=" " alt="" coords="5,5,148,32"/>
-<area shape="rect" href="classdyno_1_1_visual_module.html#a725df81f2f1490f6588e79dfa8adaf9f" title=" " alt="" coords="9,57,145,98"/>
 </map>
 </div>
 
@@ -1417,7 +1606,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00080">80</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00084">84</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1445,7 +1634,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00077">77</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00081">81</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1473,18 +1662,17 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00055">55</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00057">57</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_a773df39ad8e772daf412437c003f7a57_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a773df39ad8e772daf412437c003f7a57_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_a773df39ad8e772daf412437c003f7a57_icgraph" id="aclassdyno_1_1_f_base_a773df39ad8e772daf412437c003f7a57_icgraph">
-<area shape="rect" title=" " alt="" coords="416,63,611,89"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd" title="Attach a field to Base." alt="" coords="197,8,367,35"/>
-<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="196,63,368,89"/>
-<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="202,113,362,140"/>
+<area shape="rect" title=" " alt="" coords="416,56,611,83"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd" title="Attach a field to Base." alt="" coords="197,5,367,32"/>
+<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="196,56,368,83"/>
+<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="202,107,362,133"/>
 <area shape="rect" href="classdyno_1_1_f_base.html#afcee052dcc84cd6ab97949bf11bf3ba2" title=" " alt="" coords="5,5,148,32"/>
-<area shape="rect" href="classdyno_1_1_visual_module.html#a725df81f2f1490f6588e79dfa8adaf9f" title=" " alt="" coords="9,57,145,98"/>
 </map>
 </div>
 
@@ -1512,14 +1700,51 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_a76fc9ad71c175c28b8b8c391b657f51c_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a76fc9ad71c175c28b8b8c391b657f51c_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_a76fc9ad71c175c28b8b8c391b657f51c_icgraph" id="aclassdyno_1_1_f_base_a76fc9ad71c175c28b8b8c391b657f51c_icgraph">
-<area shape="rect" title=" " alt="" coords="416,63,576,89"/>
-<area shape="rect" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd" title="Attach a field to Base." alt="" coords="197,8,367,35"/>
-<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="196,63,368,89"/>
-<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="202,113,362,140"/>
+<area shape="rect" title=" " alt="" coords="416,56,576,83"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd" title="Attach a field to Base." alt="" coords="197,5,367,32"/>
+<area shape="rect" href="classdyno_1_1_module.html#af5144714bef507ab31afe6d902ab2e65" title="Attach a field to Base." alt="" coords="196,56,368,83"/>
+<area shape="rect" href="classdyno_1_1_node.html#a078cb4723af7fe4b6c33917d77e3f049" title="Attach a field to Node." alt="" coords="202,107,362,133"/>
 <area shape="rect" href="classdyno_1_1_f_base.html#afcee052dcc84cd6ab97949bf11bf3ba2" title=" " alt="" coords="5,5,148,32"/>
-<area shape="rect" href="classdyno_1_1_visual_module.html#a725df81f2f1490f6588e79dfa8adaf9f" title=" " alt="" coords="9,57,145,98"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="af8a35992e8a831429e5b74de5b09a865" name="af8a35992e8a831429e5b74de5b09a865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a35992e8a831429e5b74de5b09a865">&#9670;&nbsp;</a></span>setRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::FBase::setRange </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>min_val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max_val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00086">86</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1566,6 +1791,33 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a002102a94ea8d375f7548b88c4400b3e" name="a002102a94ea8d375f7548b88c4400b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a002102a94ea8d375f7548b88c4400b3e">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a> dyno::FBase::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classdyno_1_1_f_var.html#a9b843db4c4f44fc5d9d716b96e299c65">dyno::FVar&lt; T &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a9b843db4c4f44fc5d9d716b96e299c65">dyno::FVar&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a9b843db4c4f44fc5d9d716b96e299c65">dyno::FVar&lt; bool &gt;</a>, <a class="el" href="classdyno_1_1_f_var.html#a9b843db4c4f44fc5d9d716b96e299c65">dyno::FVar&lt; int &gt;</a>, <a class="el" href="classdyno_1_1_f_array.html#a90d89fba17dece7512f4d835a90817ec">dyno::FArray&lt; T, deviceType &gt;</a>, <a class="el" href="classdyno_1_1_f_array.html#a90d89fba17dece7512f4d835a90817ec">dyno::FArray&lt; Coord &gt;</a>, <a class="el" href="classdyno_1_1_f_array.html#a90d89fba17dece7512f4d835a90817ec">dyno::FArray&lt; Real &gt;</a>, <a class="el" href="classdyno_1_1_f_array2_d.html#a78a640e368f50625047e7158cec921b4">dyno::FArray2D&lt; T, deviceType &gt;</a>, <a class="el" href="classdyno_1_1_f_array3_d.html#aea9646c1793bab1f957b5bc51de145b4">dyno::FArray3D&lt; T, deviceType &gt;</a>, <a class="el" href="classdyno_1_1_f_array_list.html#aa5e25819a5584103be652540012f1526">dyno::FArrayList&lt; T, deviceType &gt;</a>, and <a class="el" href="classdyno_1_1_f_instance.html#a89a77104c22236fb937a285d6e131bcd">dyno::FInstance&lt; T &gt;</a>.</p>
+
+</div>
+</div>
 <a id="a74a6e3f98cfb7063f0ba728d14dc6efc" name="a74a6e3f98cfb7063f0ba728d14dc6efc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74a6e3f98cfb7063f0ba728d14dc6efc">&#9670;&nbsp;</a></span>sizeOfSinks()</h2>
 
@@ -1589,27 +1841,35 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00067">67</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00069">69</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
-<a id="a157c4c2e4d3b794d6a18ebbbe6c0c4be" name="a157c4c2e4d3b794d6a18ebbbe6c0c4be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a157c4c2e4d3b794d6a18ebbbe6c0c4be">&#9670;&nbsp;</a></span>tagModified()</h2>
+<a id="a1a4cb70d1dd42ab00f7ba13753cdedd6" name="a1a4cb70d1dd42ab00f7ba13753cdedd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a4cb70d1dd42ab00f7ba13753cdedd6">&#9670;&nbsp;</a></span>tack()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::FBase::tagModified </td>
+          <td class="memname">void dyno::FBase::tack </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>modifed</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00164">164</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00197">197</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_f_base_a1a4cb70d1dd42ab00f7ba13753cdedd6_cgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a1a4cb70d1dd42ab00f7ba13753cdedd6_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_f_base_a1a4cb70d1dd42ab00f7ba13753cdedd6_cgraph" id="aclassdyno_1_1_f_base_a1a4cb70d1dd42ab00f7ba13753cdedd6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,135,32"/>
+<area shape="rect" href="classdyno_1_1_time_stamp.html#a15e2c4ae9cfc2ad880bfc28d129d6226" title=" " alt="" coords="183,5,344,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1629,7 +1889,52 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00174">174</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00207">207</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a14f426738aede3cc8c12e9a1a2d3762b" name="a14f426738aede3cc8c12e9a1a2d3762b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f426738aede3cc8c12e9a1a2d3762b">&#9670;&nbsp;</a></span>tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::FBase::tick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00190">190</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_f_base_a14f426738aede3cc8c12e9a1a2d3762b_cgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a14f426738aede3cc8c12e9a1a2d3762b_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_f_base_a14f426738aede3cc8c12e9a1a2d3762b_cgraph" id="aclassdyno_1_1_f_base_a14f426738aede3cc8c12e9a1a2d3762b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,131,81"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a2019aff22a4a3a85a1fbc1ef5e03d143" title=" " alt="" coords="179,29,349,56"/>
+<area shape="rect" href="classdyno_1_1_time_stamp.html#a15e2c4ae9cfc2ad880bfc28d129d6226" title=" " alt="" coords="183,80,345,107"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_f_base_a14f426738aede3cc8c12e9a1a2d3762b_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_a14f426738aede3cc8c12e9a1a2d3762b_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_f_base_a14f426738aede3cc8c12e9a1a2d3762b_icgraph" id="aclassdyno_1_1_f_base_a14f426738aede3cc8c12e9a1a2d3762b_icgraph">
+<area shape="rect" title=" " alt="" coords="860,31,985,57"/>
+<area shape="rect" href="classdyno_1_1_node.html#a7a88dfdd26c4e4b22e2a4e5a95909058" title=" " alt="" coords="695,31,812,57"/>
+<area shape="rect" href="classdyno_1_1_node.html#aab8ae5fafafc2facf6aab7a0f7994438" title=" " alt="" coords="517,5,642,32"/>
+<area shape="rect" href="classdyno_1_1_node.html#a6f4134d96000c896365332f798da5318" title="Called every time interval." alt="" coords="512,56,647,83"/>
+<area shape="rect" href="classdyno_1_1_reset_act.html#a97b422d3c58e1f6511cc937802067ddf" title=" " alt="" coords="288,5,455,32"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html#ae6cb9746dab4baaccb565671f6ab5d5d" title=" " alt="" coords="279,56,464,83"/>
+<area shape="rect" href="namespacedyno.html#aae96e7ab34de45053d5422cd00d7fe12" title=" " alt="" coords="300,131,443,157"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html#a4db59a350803f47b98a3ebdc97b3f882" title=" " alt="" coords="25,49,211,90"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html#a9bc81034081919264da3ee618520d925" title=" " alt="" coords="5,131,231,157"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1656,7 +1961,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00130">130</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8cpp_source.html#l00154">154</a> of file <a class="el" href="_f_base_8cpp_source.html">FBase.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1672,15 +1977,19 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_f_base_ae0e14308899fb0ef61af01ee1dceed2c_icgraph.png" border="0" usemap="#aclassdyno_1_1_f_base_ae0e14308899fb0ef61af01ee1dceed2c_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_f_base_ae0e14308899fb0ef61af01ee1dceed2c_icgraph" id="aclassdyno_1_1_f_base_ae0e14308899fb0ef61af01ee1dceed2c_icgraph">
-<area shape="rect" title=" " alt="" coords="467,111,609,138"/>
-<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a46a1ef5ee01d4f71e409e5424349033c" title=" " alt="" coords="246,5,409,47"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691" title=" " alt="" coords="236,71,419,112"/>
-<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#ae9efcdce68496ba9e20e828a6e1e0257" title=" " alt="" coords="246,136,409,177"/>
-<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a079b142de1d05bce41aa342db700e04c" title=" " alt="" coords="239,201,415,243"/>
-<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="15,5,178,47"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="5,71,188,112"/>
-<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#aefaed6763439cb2d764122ca56c62fbd" title=" " alt="" coords="15,136,178,177"/>
-<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a44513830fb6e9c59ef6afe0302c3bd24" title=" " alt="" coords="9,201,185,243"/>
+<area shape="rect" title=" " alt="" coords="472,177,615,203"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a46a1ef5ee01d4f71e409e5424349033c" title=" " alt="" coords="250,5,413,47"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691" title=" " alt="" coords="240,71,423,112"/>
+<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#ae9efcdce68496ba9e20e828a6e1e0257" title=" " alt="" coords="250,136,413,177"/>
+<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a079b142de1d05bce41aa342db700e04c" title=" " alt="" coords="243,201,419,243"/>
+<area shape="rect" href="classdyno_1_1_q_u_integer_field_widget.html#a3765ef4f741ea13b60bc4d505f35a3f7" title=" " alt="" coords="239,267,424,308"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a9b61b1c6e1fe64ac2eb0903770233550" title=" " alt="" coords="239,332,424,373"/>
+<area shape="rect" href="classdyno_1_1_q_real_field_widget.html#a0fbbd3a6333957099c2652f12c160c48" title=" " alt="" coords="17,5,179,47"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="7,71,189,112"/>
+<area shape="rect" href="classdyno_1_1_q_bool_field_widget.html#aefaed6763439cb2d764122ca56c62fbd" title=" " alt="" coords="17,136,179,177"/>
+<area shape="rect" href="classdyno_1_1_q_integer_field_widget.html#a44513830fb6e9c59ef6afe0302c3bd24" title=" " alt="" coords="10,201,186,243"/>
+<area shape="rect" href="classdyno_1_1_q_u_integer_field_widget.html#a7ec4f33986fa2ed4169ff4ce4b320bff" title=" " alt="" coords="5,267,191,308"/>
+<area shape="rect" href="classdyno_1_1_q_vector3i_field_widget.html#a5ca4fa3bc971b51a5acf5f61765739fe" title=" " alt="" coords="5,332,191,373"/>
 </map>
 </div>
 
@@ -1707,7 +2016,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00115">115</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00150">150</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1731,7 +2040,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00116">116</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00151">151</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1755,7 +2064,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00111">111</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00146">146</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1779,7 +2088,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00107">107</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00142">142</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1803,7 +2112,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00119">119</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00154">154</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1827,31 +2136,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00118">118</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
-
-</div>
-</div>
-<a id="a728314fb2d13c97e96b39696e261a0d0" name="a728314fb2d13c97e96b39696e261a0d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a728314fb2d13c97e96b39696e261a0d0">&#9670;&nbsp;</a></span>m_modified</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool dyno::FBase::m_modified = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00121">121</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00153">153</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1875,7 +2160,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00110">110</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00145">145</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1899,7 +2184,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00113">113</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00148">148</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1923,7 +2208,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00129">129</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00165">165</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1947,7 +2232,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00123">123</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00156">156</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1971,7 +2256,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00127">127</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00160">160</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>
@@ -1995,7 +2280,55 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00125">125</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00158">158</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+
+</div>
+</div>
+<a id="a71ad2461537ab5826a1757a0966938fa" name="a71ad2461537ab5826a1757a0966938fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ad2461537ab5826a1757a0966938fa">&#9670;&nbsp;</a></span>mTackTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_time_stamp.html">TimeStamp</a> dyno::FBase::mTackTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00163">163</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
+
+</div>
+</div>
+<a id="a06c8c841fe8bb33915083dd30cc93739" name="a06c8c841fe8bb33915083dd30cc93739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c8c841fe8bb33915083dd30cc93739">&#9670;&nbsp;</a></span>mTickTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_time_stamp.html">TimeStamp</a> dyno::FBase::mTickTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_f_base_8h_source.html#l00162">162</a> of file <a class="el" href="_f_base_8h_source.html">FBase.h</a>.</p>
 
 </div>
 </div>

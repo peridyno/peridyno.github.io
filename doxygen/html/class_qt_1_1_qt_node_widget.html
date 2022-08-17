@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -72,6 +72,7 @@ $(function() {
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_qt_1_1_qt_node_widget-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Qt::QtNodeWidget Class Reference</div></div>
 </div><!--header-->
@@ -119,6 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e42324733cb8ba2b5e5567c1615912f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_node_widget.html#a9e42324733cb8ba2b5e5567c1615912f">portCaptionVisible</a> (PortType portType, PortIndex portIndex) const override</td></tr>
 <tr class="separator:a9e42324733cb8ba2b5e5567c1615912f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ff37574bbbf4498fd3fbeb2417c5658"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_node_widget.html#a3ff37574bbbf4498fd3fbeb2417c5658">tryInData</a> (PortIndex portIndex, std::shared_ptr&lt; QtNodeData &gt; nodeData) override</td></tr>
+<tr class="memdesc:a3ff37574bbbf4498fd3fbeb2417c5658"><td class="mdescLeft">&#160;</td><td class="mdescRight">To test whether nodaData can be set as the input data for portIndex.  <a href="class_qt_1_1_qt_node_widget.html#a3ff37574bbbf4498fd3fbeb2417c5658">More...</a><br /></td></tr>
 <tr class="separator:a3ff37574bbbf4498fd3fbeb2417c5658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95b756b660d78fe4189cf3bafa82a901"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_node_widget.html#a95b756b660d78fe4189cf3bafa82a901">setInData</a> (std::shared_ptr&lt; QtNodeData &gt; data, PortIndex portIndex) override</td></tr>
 <tr class="separator:a95b756b660d78fe4189cf3bafa82a901"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,6 +140,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa73acc44a32d955ca91773156dbb3f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a7fad441838cc22c5aa5b1a78045aee"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_node_widget.html#a2a7fad441838cc22c5aa5b1a78045aee">getInputFields</a> () const</td></tr>
 <tr class="separator:a2a7fad441838cc22c5aa5b1a78045aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0bc6c8cc337b5e9038eb1e4202cedec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_node_widget.html#ad0bc6c8cc337b5e9038eb1e4202cedec">enableEditing</a> ()</td></tr>
+<tr class="memdesc:ad0bc6c8cc337b5e9038eb1e4202cedec"><td class="mdescLeft">&#160;</td><td class="mdescRight">When enabled, the scenegraph can be updated as long as the corresponding GUI is updated.  <a href="class_qt_1_1_qt_node_widget.html#ad0bc6c8cc337b5e9038eb1e4202cedec">More...</a><br /></td></tr>
+<tr class="separator:ad0bc6c8cc337b5e9038eb1e4202cedec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fad4628e22f202b96313524f996bc2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_node_widget.html#a8fad4628e22f202b96313524f996bc2d">disableEditing</a> ()</td></tr>
+<tr class="memdesc:a8fad4628e22f202b96313524f996bc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">When disabled, the scenegraph can not be affected by the corresponding GUI.  <a href="class_qt_1_1_qt_node_widget.html#a8fad4628e22f202b96313524f996bc2d">More...</a><br /></td></tr>
+<tr class="separator:a8fad4628e22f202b96313524f996bc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -171,6 +179,11 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a79ebaba2ba7e5cedb495875e090c7958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f224f8da12938da8bd496ce8399899e"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_node_widget.html#a6f224f8da12938da8bd496ce8399899e">modelValidationError</a> = QString(&quot;Missing or incorrect inputs&quot;)</td></tr>
 <tr class="separator:a6f224f8da12938da8bd496ce8399899e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a8b521185e143d0dfaa085432e33d0abc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qt_1_1_qt_node_widget.html#a8b521185e143d0dfaa085432e33d0abc">mEditingEnabled</a> = true</td></tr>
+<tr class="separator:a8b521185e143d0dfaa085432e33d0abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The model dictates the number of inputs and outputs for the Node. </p>
@@ -197,7 +210,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00067">67</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00085">85</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +234,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00068">68</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00086">86</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +258,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00074">74</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00092">92</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>
@@ -269,7 +282,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00073">73</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00091">91</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>
@@ -416,6 +429,44 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a8fad4628e22f202b96313524f996bc2d" name="a8fad4628e22f202b96313524f996bc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fad4628e22f202b96313524f996bc2d">&#9670;&nbsp;</a></span>disableEditing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtNodeWidget::disableEditing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When disabled, the scenegraph can not be affected by the corresponding GUI. </p>
+
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00324">324</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_node_widget_a8fad4628e22f202b96313524f996bc2d_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_node_widget_a8fad4628e22f202b96313524f996bc2d_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_node_widget_a8fad4628e22f202b96313524f996bc2d_icgraph" id="aclass_qt_1_1_qt_node_widget_a8fad4628e22f202b96313524f996bc2d_icgraph">
+<area shape="rect" title="When disabled, the scenegraph can not be affected by the corresponding GUI." alt="" coords="816,53,995,95"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#aa26f9a3ae86fe2565a7a50c5274d180c" title=" " alt="" coords="616,53,768,95"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ae706c22e0e9f25428ef70bf3177767f2" title=" " alt="" coords="411,5,563,47"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a5724b716b70d0eda88128b6ad40b3e16" title="Update the view only for the active scene graph, the data model will be changed." alt="" coords="405,85,568,127"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="7,36,156,77"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6c261b693789b64d7a94da13fb8aa1b" title=" " alt="" coords="207,49,356,91"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#af66c8338521e25db6fdbdf31fdb93830" title=" " alt="" coords="205,180,357,221"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#a1f679cc75f55eef97022452590d38da1" title=" " alt="" coords="207,115,356,156"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="12,147,151,188"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ab47298add0fea824f9705563d4ac7511" title=" " alt="" coords="5,212,157,253"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="aab446d275e5f55de4797af8012668fe7" name="aab446d275e5f55de4797af8012668fe7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab446d275e5f55de4797af8012668fe7">&#9670;&nbsp;</a></span>embeddedWidget()</h2>
 
@@ -439,7 +490,45 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00050">50</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00058">58</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+
+</div>
+</div>
+<a id="ad0bc6c8cc337b5e9038eb1e4202cedec" name="ad0bc6c8cc337b5e9038eb1e4202cedec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0bc6c8cc337b5e9038eb1e4202cedec">&#9670;&nbsp;</a></span>enableEditing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Qt::QtNodeWidget::enableEditing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When enabled, the scenegraph can be updated as long as the corresponding GUI is updated. </p>
+
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00319">319</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qt_1_1_qt_node_widget_ad0bc6c8cc337b5e9038eb1e4202cedec_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_node_widget_ad0bc6c8cc337b5e9038eb1e4202cedec_icgraph" alt=""/></div>
+<map name="aclass_qt_1_1_qt_node_widget_ad0bc6c8cc337b5e9038eb1e4202cedec_icgraph" id="aclass_qt_1_1_qt_node_widget_ad0bc6c8cc337b5e9038eb1e4202cedec_icgraph">
+<area shape="rect" title="When enabled, the scenegraph can be updated as long as the corresponding GUI is updated." alt="" coords="816,53,991,95"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#af484b83f48a4bd4585e12ed65f088cea" title=" " alt="" coords="616,53,768,95"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ae706c22e0e9f25428ef70bf3177767f2" title=" " alt="" coords="411,5,563,47"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a5724b716b70d0eda88128b6ad40b3e16" title="Update the view only for the active scene graph, the data model will be changed." alt="" coords="405,85,568,127"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="7,36,156,77"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6c261b693789b64d7a94da13fb8aa1b" title=" " alt="" coords="207,49,356,91"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#af66c8338521e25db6fdbdf31fdb93830" title=" " alt="" coords="205,180,357,221"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#a1f679cc75f55eef97022452590d38da1" title=" " alt="" coords="207,115,356,156"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="12,147,151,188"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ab47298add0fea824f9705563d4ac7511" title=" " alt="" coords="5,212,157,253"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -458,7 +547,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00308">308</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00314">314</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -488,17 +577,20 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00287">287</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00293">293</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_qt_1_1_qt_node_widget_af1350f75e828fab6b9713c6ed0719406_icgraph.png" border="0" usemap="#aclass_qt_1_1_qt_node_widget_af1350f75e828fab6b9713c6ed0719406_icgraph" alt=""/></div>
 <map name="aclass_qt_1_1_qt_node_widget_af1350f75e828fab6b9713c6ed0719406_icgraph" id="aclass_qt_1_1_qt_node_widget_af1350f75e828fab6b9713c6ed0719406_icgraph">
-<area shape="rect" title=" " alt="" coords="433,78,619,105"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a94b4cbbdc5e5845acc38f7433bc474b1" title=" " alt="" coords="232,5,375,47"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a17c904aec4ff16e3aa39d4f50fc87c65" title=" " alt="" coords="221,71,385,112"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a28db0e7a7c8a2dbff2f201a587a5ff7e" title=" " alt="" coords="221,136,385,177"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_widget.html#ac219283c69461fac721c7e6314110724" title=" " alt="" coords="5,71,173,112"/>
+<area shape="rect" title=" " alt="" coords="417,143,603,170"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a4635cb8ab5ea88a54b348c587e430541" title=" " alt="" coords="211,5,363,47"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a39d6c0ef706ea581fb777f6e37a82a5e" title=" " alt="" coords="211,71,363,112"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a767a873187e6174e7d962aefbbd94fd4" title=" " alt="" coords="211,136,363,177"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="205,201,369,243"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#af66c8338521e25db6fdbdf31fdb93830" title=" " alt="" coords="211,267,363,308"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ab47298add0fea824f9705563d4ac7511" title=" " alt="" coords="5,104,157,145"/>
+<area shape="rect" href="classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169" title=" " alt="" coords="12,267,151,308"/>
 </map>
 </div>
 
@@ -519,7 +611,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00303">303</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00309">309</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -720,7 +812,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00273">273</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00279">279</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -805,13 +897,25 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00216">216</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
+<p>To test whether nodaData can be set as the input data for portIndex. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">portIndex</td><td>Input index </td></tr>
+    <tr><td class="paramname">nodeData</td><td>Input data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00219">219</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_qt_1_1_qt_node_widget_a3ff37574bbbf4498fd3fbeb2417c5658_cgraph.png" border="0" usemap="#aclass_qt_1_1_qt_node_widget_a3ff37574bbbf4498fd3fbeb2417c5658_cgraph" alt=""/></div>
 <map name="aclass_qt_1_1_qt_node_widget_a3ff37574bbbf4498fd3fbeb2417c5658_cgraph" id="aclass_qt_1_1_qt_node_widget_a3ff37574bbbf4498fd3fbeb2417c5658_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,195,39"/>
+<area shape="rect" title="To test whether nodaData can be set as the input data for portIndex." alt="" coords="5,13,195,39"/>
 <area shape="rect" href="classdyno_1_1_instance_base.html#ab408c24ce4866027a8377ea39cb0d720" title=" " alt="" coords="243,5,380,47"/>
 </map>
 </div>
@@ -841,7 +945,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00297">297</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00303">303</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -877,7 +981,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00292">292</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00298">298</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -904,11 +1008,35 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00268">268</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8cpp_source.html#l00274">274</a> of file <a class="el" href="_qt_node_widget_8cpp_source.html">QtNodeWidget.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8b521185e143d0dfaa085432e33d0abc" name="a8b521185e143d0dfaa085432e33d0abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b521185e143d0dfaa085432e33d0abc">&#9670;&nbsp;</a></span>mEditingEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Qt::QtNodeWidget::mEditingEnabled = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00103">103</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+
+</div>
+</div>
 <a id="a89f6a31d88a87b7dda60cee69e2ebde7" name="a89f6a31d88a87b7dda60cee69e2ebde7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89f6a31d88a87b7dda60cee69e2ebde7">&#9670;&nbsp;</a></span>mFieldExport</h2>
 
@@ -929,7 +1057,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00077">77</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00095">95</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>
@@ -953,7 +1081,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00076">76</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00094">94</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>
@@ -977,7 +1105,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00079">79</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00097">97</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1129,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00071">71</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00089">89</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1025,7 +1153,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00070">70</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00088">88</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1177,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00082">82</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00100">100</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1201,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00081">81</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_qt_node_widget_8h_source.html#l00099">99</a> of file <a class="el" href="_qt_node_widget_8h_source.html">QtNodeWidget.h</a>.</p>
 
 </div>
 </div>

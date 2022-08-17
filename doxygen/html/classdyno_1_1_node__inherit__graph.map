@@ -1,23 +1,45 @@
 <map id="dyno::Node" name="dyno::Node">
-<area shape="rect" id="node1" title=" " alt="" coords="296,290,384,317"/>
-<area shape="rect" id="node4" href="$classdyno_1_1_ghost_fluid.html" title="Ghost fluid method." alt="" coords="432,49,639,75"/>
-<area shape="rect" id="node5" href="$classdyno_1_1_particle_emitter.html" title=" " alt="" coords="463,100,607,141"/>
-<area shape="rect" id="node8" href="$classdyno_1_1_particle_system.html" title="This class represents the base class for more advanced particle&#45;based nodes." alt="" coords="462,224,609,265"/>
-<area shape="rect" id="node14" href="$classdyno_1_1_rigid_body.html" title="Rigid body dynamics." alt="" coords="434,290,637,317"/>
-<area shape="rect" id="node15" href="$classdyno_1_1_rigid_body_system.html" title="Implementation of a rigid body system containing a variety of rigid bodies with different shapes." alt="" coords="454,341,617,383"/>
-<area shape="rect" id="node16" href="$classdyno_1_1_static_boundary.html" title=" " alt="" coords="462,407,609,448"/>
-<area shape="rect" id="node17" href="$classdyno_1_1_volume.html" title=" " alt="" coords="441,522,629,549"/>
-<area shape="rect" id="node2" href="$classdyno_1_1_o_base.html" title=" " alt="" coords="149,290,248,317"/>
-<area shape="rect" id="node3" href="$classdyno_1_1_object.html" title=" " alt="" coords="5,290,101,317"/>
-<area shape="rect" id="node6" href="$classdyno_1_1_particle_emitter_round.html" title=" " alt="" coords="689,5,870,47"/>
-<area shape="rect" id="node7" href="$classdyno_1_1_particle_emitter_square.html" title=" " alt="" coords="687,71,872,112"/>
-<area shape="rect" id="node9" href="$classdyno_1_1_cloth.html" title="Peridynamics&#45;based cloth." alt="" coords="692,137,867,163"/>
-<area shape="rect" id="node10" href="$classdyno_1_1_elastic_body.html" title=" " alt="" coords="711,188,847,229"/>
-<area shape="rect" id="node11" href="$classdyno_1_1_elastoplastic_body.html" title=" " alt="" coords="698,253,861,295"/>
-<area shape="rect" id="node12" href="$classdyno_1_1_ghost_particles.html" title=" " alt="" coords="707,319,851,360"/>
-<area shape="rect" id="node13" href="$classdyno_1_1_particle_fluid.html" title=" " alt="" coords="714,384,845,425"/>
-<area shape="rect" id="node18" href="$classdyno_1_1_volume_generator.html" title="This is a GPU&#45;based implementation of grid&#45;based signed distance field (level set) generator for tria..." alt="" coords="700,449,859,491"/>
-<area shape="rect" id="node19" href="$classdyno_1_1_volume_intersect.html" title=" " alt="" coords="703,515,855,556"/>
-<area shape="rect" id="node20" href="$classdyno_1_1_volume_minus.html" title=" " alt="" coords="707,580,852,621"/>
-<area shape="rect" id="node21" href="$classdyno_1_1_volume_union.html" title=" " alt="" coords="708,645,851,687"/>
+<area shape="rect" id="node1" title=" " alt="" coords="296,669,384,695"/>
+<area shape="rect" id="node4" href="$classdyno_1_1_capillary_wave.html" title="Peridynamics&#45;based CapillaryWave." alt="" coords="470,5,610,47"/>
+<area shape="rect" id="node5" href="$classdyno_1_1_coupling.html" title=" " alt="" coords="443,71,637,98"/>
+<area shape="rect" id="node6" href="$classdyno_1_1_cube_sampler.html" title=" " alt="" coords="468,123,612,164"/>
+<area shape="rect" id="node7" href="$classdyno_1_1_g_l_common_point_visual_node.html" title=" " alt="" coords="443,188,637,229"/>
+<area shape="rect" id="node8" href="$classdyno_1_1_g_l_point_visual_node.html" title=" " alt="" coords="455,253,625,295"/>
+<area shape="rect" id="node9" href="$classdyno_1_1_g_l_surface_visual_node.html" title=" " alt="" coords="447,319,633,360"/>
+<area shape="rect" id="node10" href="$classdyno_1_1_g_l_wireframe_visual_node.html" title=" " alt="" coords="440,384,640,425"/>
+<area shape="rect" id="node11" href="$classdyno_1_1_geometry_loader.html" title=" " alt="" coords="463,450,617,477"/>
+<area shape="rect" id="node13" href="$classdyno_1_1_ghost_fluid.html" title="Ghost fluid method." alt="" coords="437,501,643,527"/>
+<area shape="rect" id="node14" href="$classdyno_1_1_gmsh_generator.html" title=" " alt="" coords="465,552,615,593"/>
+<area shape="rect" id="node15" href="$classdyno_1_1_ocean.html" title=" " alt="" coords="449,618,631,645"/>
+<area shape="rect" id="node16" href="$classdyno_1_1_ocean_patch.html" title=" " alt="" coords="432,669,648,695"/>
+<area shape="rect" id="node17" href="$classdyno_1_1_parametric_model.html" title=" " alt="" coords="462,720,618,761"/>
+<area shape="rect" id="node20" href="$classdyno_1_1_particle_emitter.html" title=" " alt="" coords="468,785,612,827"/>
+<area shape="rect" id="node25" href="$classdyno_1_1_particle_system.html" title="Position&#45;based fluids." alt="" coords="467,851,613,892"/>
+<area shape="rect" id="node31" href="$classdyno_1_1_picker_node.html" title=" " alt="" coords="435,917,645,943"/>
+<area shape="rect" id="node32" href="$classdyno_1_1_point_set_to_triangle_set.html" title=" " alt="" coords="457,968,623,1009"/>
+<area shape="rect" id="node33" href="$classdyno_1_1_rigid_body.html" title="Rigid body dynamics." alt="" coords="439,1034,641,1061"/>
+<area shape="rect" id="node34" href="$classdyno_1_1_rigid_body_system.html" title="Implementation of a rigid body system containing a variety of rigid bodies with different shapes." alt="" coords="459,1085,621,1127"/>
+<area shape="rect" id="node35" href="$classdyno_1_1_sampling_points.html" title=" " alt="" coords="465,1151,615,1192"/>
+<area shape="rect" id="node37" href="$classdyno_1_1_static_boundary.html" title=" " alt="" coords="467,1216,613,1257"/>
+<area shape="rect" id="node38" href="$classdyno_1_1_static_triangular_mesh.html" title="A node containing a TriangleSet object." alt="" coords="450,1281,630,1323"/>
+<area shape="rect" id="node39" href="$classdyno_1_1_volume.html" title=" " alt="" coords="446,1347,634,1374"/>
+<area shape="rect" id="node2" href="$classdyno_1_1_o_base.html" title=" " alt="" coords="149,669,248,695"/>
+<area shape="rect" id="node3" href="$classdyno_1_1_object.html" title=" " alt="" coords="5,669,101,695"/>
+<area shape="rect" id="node12" href="$classdyno_1_1_surface_mesh_loader.html" title="Load a triangular mesh." alt="" coords="714,413,887,455"/>
+<area shape="rect" id="node18" href="$classdyno_1_1_cube_model.html" title=" " alt="" coords="696,479,905,506"/>
+<area shape="rect" id="node19" href="$classdyno_1_1_sphere_model.html" title=" " alt="" coords="729,531,872,572"/>
+<area shape="rect" id="node21" href="$classdyno_1_1_circular_emitter.html" title=" " alt="" coords="729,596,873,637"/>
+<area shape="rect" id="node22" href="$classdyno_1_1_particle_emitter_round.html" title=" " alt="" coords="710,661,891,703"/>
+<area shape="rect" id="node23" href="$classdyno_1_1_particle_emitter_square.html" title=" " alt="" coords="708,727,893,768"/>
+<area shape="rect" id="node24" href="$classdyno_1_1_square_emitter.html" title=" " alt="" coords="730,792,871,833"/>
+<area shape="rect" id="node26" href="$classdyno_1_1_cloth.html" title="Peridynamics&#45;based cloth." alt="" coords="713,858,888,885"/>
+<area shape="rect" id="node27" href="$classdyno_1_1_elastic_body.html" title=" " alt="" coords="733,909,869,951"/>
+<area shape="rect" id="node28" href="$classdyno_1_1_elastoplastic_body.html" title=" " alt="" coords="719,975,882,1016"/>
+<area shape="rect" id="node29" href="$classdyno_1_1_ghost_particles.html" title=" " alt="" coords="729,1040,873,1081"/>
+<area shape="rect" id="node30" href="$classdyno_1_1_particle_fluid.html" title=" " alt="" coords="735,1105,866,1147"/>
+<area shape="rect" id="node36" href="$classdyno_1_1_poisson_diks_sampling.html" title=" " alt="" coords="708,1171,893,1212"/>
+<area shape="rect" id="node40" href="$classdyno_1_1_volume_generator.html" title="This is a GPU&#45;based implementation of grid&#45;based signed distance field (level set) generator for tria..." alt="" coords="721,1255,880,1296"/>
+<area shape="rect" id="node41" href="$classdyno_1_1_volume_intersect.html" title=" " alt="" coords="725,1320,877,1361"/>
+<area shape="rect" id="node42" href="$classdyno_1_1_volume_minus.html" title=" " alt="" coords="728,1385,873,1427"/>
+<area shape="rect" id="node43" href="$classdyno_1_1_volume_union.html" title=" " alt="" coords="729,1451,872,1492"/>
 </map>

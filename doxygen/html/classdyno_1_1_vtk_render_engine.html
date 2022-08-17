@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -165,29 +165,29 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ad2330bf06a68c0aa4c497fced5ee93d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac61e1279ac0bef97f4609f5132753300"><td class="memItemLeft" align="right" valign="top">vtkNew&lt; vtkActor &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vtk_render_engine.html#ac61e1279ac0bef97f4609f5132753300">mBoxActor</a></td></tr>
 <tr class="separator:ac61e1279ac0bef97f4609f5132753300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7065bd209253cd166eb5094e6f45e906"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a560966681afd6df03df63b3138346b57"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkRenderPassCollection &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#ad0ba88853f678e089887ecbfe7daa360">passes</a></td></tr>
-<tr class="separator:a560966681afd6df03df63b3138346b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2aebe30dde5d23955048bcfbfb0c49a"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkSequencePass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#aeac865c3b7f2872a25c0c39400268067">seq</a></td></tr>
-<tr class="separator:af2aebe30dde5d23955048bcfbfb0c49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af757c8f68a3b52d56143c3ff7a113c7c"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkShadowMapPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#a468241809033a8f461ba9342f7c75db1">shadow</a></td></tr>
-<tr class="separator:af757c8f68a3b52d56143c3ff7a113c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90cf7dfc21ae71ae0fc58fd51aca9db7"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkShadowMapBakerPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#ac1034406d8e53e7c37355ef73de70106">baker</a></td></tr>
-<tr class="separator:a90cf7dfc21ae71ae0fc58fd51aca9db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10619dbc5e05ab7da3504492c77d4fc9"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkLightsPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#a475113e59ca5e9c102a868fed66eec70">light</a></td></tr>
-<tr class="separator:a10619dbc5e05ab7da3504492c77d4fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa11ed7151b65a2a7e894a4632bdec553"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkTranslucentPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#aac30b740071d75b7ee087feed8ea968e">translucent</a></td></tr>
-<tr class="separator:aa11ed7151b65a2a7e894a4632bdec553"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4de77d2a8fc6aa1c9437bc451d1cd57e"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkVolumetricPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#a2c816d9d295f6223c50cc5ee0bbca44c">volume</a></td></tr>
-<tr class="separator:a4de77d2a8fc6aa1c9437bc451d1cd57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa73a8db5c428a98caa97e5449ca39317"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkOverlayPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#a46c1b374a0940b37ba78183c36e4e5f5">overlay</a></td></tr>
-<tr class="separator:aa73a8db5c428a98caa97e5449ca39317"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac293fe95c6e502a2c341cdd84776d498"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkOpaquePass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#ad4b8395c4b5512b701af3f238b9bd23e">opaque</a></td></tr>
-<tr class="separator:ac293fe95c6e502a2c341cdd84776d498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb901333be039e0b19aefbb83fafb840"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkCameraPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#a0320ffefa86b32d8fcefde9956362b24">cameraPass</a></td></tr>
-<tr class="separator:abb901333be039e0b19aefbb83fafb840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7065bd209253cd166eb5094e6f45e906"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vtk_render_engine.html#a7065bd209253cd166eb5094e6f45e906">mRenderPasses</a></td></tr>
-<tr class="separator:a7065bd209253cd166eb5094e6f45e906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1955199e42d912fa05dd5e4a7fab97a1"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a01220e9fc2a839337665868b20cf3aa0"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkRenderPassCollection &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#ad0ba88853f678e089887ecbfe7daa360">passes</a></td></tr>
+<tr class="separator:a01220e9fc2a839337665868b20cf3aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f11d31704ba6d84c6772aecf79c0d8c"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkSequencePass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#aeac865c3b7f2872a25c0c39400268067">seq</a></td></tr>
+<tr class="separator:a9f11d31704ba6d84c6772aecf79c0d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acadfefec00984cfad1c3ec9cba2a90d5"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkShadowMapPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#a468241809033a8f461ba9342f7c75db1">shadow</a></td></tr>
+<tr class="separator:acadfefec00984cfad1c3ec9cba2a90d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b4549d9985b72d826be09261f543c31"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkShadowMapBakerPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#ac1034406d8e53e7c37355ef73de70106">baker</a></td></tr>
+<tr class="separator:a9b4549d9985b72d826be09261f543c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eab9691f060e634dbfa6633e3f03c1c"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkLightsPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#a475113e59ca5e9c102a868fed66eec70">light</a></td></tr>
+<tr class="separator:a3eab9691f060e634dbfa6633e3f03c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f558a29e1943104090bd1470f1bace3"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkTranslucentPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#aac30b740071d75b7ee087feed8ea968e">translucent</a></td></tr>
+<tr class="separator:a5f558a29e1943104090bd1470f1bace3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9853faaf3ca3a330fec6a03f83024041"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkVolumetricPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#a2c816d9d295f6223c50cc5ee0bbca44c">volume</a></td></tr>
+<tr class="separator:a9853faaf3ca3a330fec6a03f83024041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b78f49a8874702ebc05017018416931"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkOverlayPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#a46c1b374a0940b37ba78183c36e4e5f5">overlay</a></td></tr>
+<tr class="separator:a9b78f49a8874702ebc05017018416931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1770de6d6df496b0b3d8677e663eb86"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkOpaquePass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#ad4b8395c4b5512b701af3f238b9bd23e">opaque</a></td></tr>
+<tr class="separator:ae1770de6d6df496b0b3d8677e663eb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4fed565b9f2dad57c1992304f0715f4"><td class="memItemLeft" >&#160;&#160;&#160;vtkNew&lt; vtkCameraPass &gt;&#160;&#160;&#160;<a class="el" href="classdyno_1_1_vtk_render_engine.html#a0320ffefa86b32d8fcefde9956362b24">cameraPass</a></td></tr>
+<tr class="separator:ae4fed565b9f2dad57c1992304f0715f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1955199e42d912fa05dd5e4a7fab97a1"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vtk_render_engine.html#a1955199e42d912fa05dd5e4a7fab97a1">mRenderPasses</a></td></tr>
+<tr class="separator:a1955199e42d912fa05dd5e4a7fab97a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab44841560187689c1bf635b19986c5d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_scene_graph.html">dyno::SceneGraph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_vtk_render_engine.html#ab44841560187689c1bf635b19986c5d8">m_scene</a> = NULL</td></tr>
 <tr class="separator:ab44841560187689c1bf635b19986c5d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -201,8 +201,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classdyno_1_1_render_engine"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classdyno_1_1_render_engine')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdyno_1_1_render_engine.html">dyno::RenderEngine</a></td></tr>
 <tr class="memitem:ac3ad2fcc63dd15812b687af44b7f2d0d inherit pro_attribs_classdyno_1_1_render_engine"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdyno_1_1_render_params.html">RenderParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#ac3ad2fcc63dd15812b687af44b7f2d0d">m_rparams</a></td></tr>
 <tr class="separator:ac3ad2fcc63dd15812b687af44b7f2d0d inherit pro_attribs_classdyno_1_1_render_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86bd8d13b79e81b6789d4975067e29e6 inherit pro_attribs_classdyno_1_1_render_engine"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_camera.html">Camera</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a86bd8d13b79e81b6789d4975067e29e6">m_camera</a></td></tr>
-<tr class="separator:a86bd8d13b79e81b6789d4975067e29e6 inherit pro_attribs_classdyno_1_1_render_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591902af9ffb13d38eee849346cad07f inherit pro_attribs_classdyno_1_1_render_engine"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_camera.html">Camera</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a591902af9ffb13d38eee849346cad07f">mCamera</a></td></tr>
+<tr class="separator:a591902af9ffb13d38eee849346cad07f inherit pro_attribs_classdyno_1_1_render_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -694,8 +694,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a7065bd209253cd166eb5094e6f45e906" name="a7065bd209253cd166eb5094e6f45e906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7065bd209253cd166eb5094e6f45e906">&#9670;&nbsp;</a></span></h2>
+<a id="a1955199e42d912fa05dd5e4a7fab97a1" name="a1955199e42d912fa05dd5e4a7fab97a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1955199e42d912fa05dd5e4a7fab97a1">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
