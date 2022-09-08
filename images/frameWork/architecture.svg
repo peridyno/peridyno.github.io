@@ -489,15 +489,16 @@
 				<text x="7.15" y="582.08" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>光滑粒子动力学</text>			</g>
 			<g id="shape152-160" v:mID="152" v:groupContext="shape" transform="translate(9.53127,-55.6006)">
 				<title>矩形.152</title>
-				<desc>近场动力学</desc>
+				<desc>刚(多)体动力学</desc>
 				<v:userDefs>
 					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
 				</v:userDefs>
 				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
 				<v:textRect cx="45.3923" cy="578.062" width="90.79" height="27.6872"/>
 				<rect x="0" y="564.218" width="90.7846" height="27.6872" rx="9" ry="9" class="st23"/>
-				<text x="15.39" y="582.08" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>近场动力学</text>			</g>
-			<g id="shape153-163" v:mID="153" v:groupContext="shape" transform="translate(119.776,-55.6006)">
+				<text x="5.84" y="582.08" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>刚<tspan
+							class="st14">(</tspan>多<tspan class="st14">)</tspan>体动力学</text>			</g>
+			<g id="shape153-165" v:mID="153" v:groupContext="shape" transform="translate(119.776,-55.6006)">
 				<title>矩形.153</title>
 				<desc>近场动力学</desc>
 				<v:userDefs>
@@ -507,7 +508,7 @@
 				<v:textRect cx="49.1496" cy="578.062" width="98.3" height="27.6872"/>
 				<rect x="0" y="564.218" width="98.2992" height="27.6872" rx="9" ry="9" class="st23"/>
 				<text x="19.15" y="582.08" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>近场动力学</text>			</g>
-			<g id="shape154-166" v:mID="154" v:groupContext="shape" transform="translate(10.2469,-18.4206)">
+			<g id="shape154-168" v:mID="154" v:groupContext="shape" transform="translate(10.2469,-18.4206)">
 				<title>矩形.154</title>
 				<desc>有限体积法</desc>
 				<v:userDefs>
@@ -517,7 +518,7 @@
 				<v:textRect cx="45.3923" cy="578.062" width="90.79" height="27.6872"/>
 				<rect x="0" y="564.218" width="90.7846" height="27.6872" rx="9" ry="9" class="st23"/>
 				<text x="15.39" y="582.08" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>有限体积法</text>			</g>
-			<g id="shape157-169" v:mID="157" v:groupContext="shape" transform="translate(119.776,-18.4206)">
+			<g id="shape157-171" v:mID="157" v:groupContext="shape" transform="translate(119.776,-18.4206)">
 				<title>矩形.157</title>
 				<desc>碰撞接触算法</desc>
 				<v:userDefs>
@@ -528,9 +529,9 @@
 				<rect x="0" y="564.218" width="98.2992" height="27.6872" rx="9" ry="9" class="st23"/>
 				<text x="13.15" y="582.08" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>碰撞接触算法</text>			</g>
 		</g>
-		<g id="group194-172" transform="translate(394.298,-275.158)" v:mID="194" v:groupContext="group">
+		<g id="group194-174" transform="translate(394.298,-275.158)" v:mID="194" v:groupContext="group">
 			<title>工作表.194</title>
-			<g id="shape146-173" v:mID="146" v:groupContext="shape">
+			<g id="shape146-175" v:mID="146" v:groupContext="shape">
 				<title>矩形.146</title>
 				<desc>实时渲染算法库</desc>
 				<v:userDefs>
@@ -540,7 +541,7 @@
 				<v:textRect cx="116.818" cy="513.952" width="233.64" height="155.906"/>
 				<rect x="0" y="436" width="233.637" height="155.906" rx="9" ry="9" class="st22"/>
 				<text x="67.82" y="459.85" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>实时渲染算法库<v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/></text>			</g>
-			<g id="shape158-176" v:mID="158" v:groupContext="shape" transform="translate(5.66929,-11.0065)">
+			<g id="shape158-178" v:mID="158" v:groupContext="shape" transform="translate(5.66929,-11.0065)">
 				<title>矩形.158</title>
 				<desc>内置渲染器</desc>
 				<v:userDefs>
@@ -550,7 +551,7 @@
 				<v:textRect cx="52.4409" cy="537.858" width="104.89" height="108.094"/>
 				<rect x="0" y="483.811" width="104.882" height="108.094" rx="9" ry="9" class="st23"/>
 				<text x="22.44" y="498.68" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>内置渲染器<v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/></text>			</g>
-			<g id="shape159-179" v:mID="159" v:groupContext="shape" transform="translate(123.307,-11.6682)">
+			<g id="shape159-181" v:mID="159" v:groupContext="shape" transform="translate(123.307,-11.6682)">
 				<title>矩形.159</title>
 				<desc>第三方渲染器</desc>
 				<v:userDefs>
@@ -560,7 +561,7 @@
 				<v:textRect cx="52.4409" cy="538.189" width="104.89" height="107.433"/>
 				<rect x="0" y="484.472" width="104.882" height="107.433" rx="9" ry="9" class="st23"/>
 				<text x="16.44" y="499.01" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>第三方渲染器<v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/><v:newlineChar/></text>			</g>
-			<g id="shape171-182" v:mID="171" v:groupContext="shape" transform="translate(12.7559,-65.1128)">
+			<g id="shape171-184" v:mID="171" v:groupContext="shape" transform="translate(12.7559,-65.1128)">
 				<title>矩形.171</title>
 				<desc>点云渲染</desc>
 				<v:userDefs>
@@ -570,7 +571,7 @@
 				<v:textRect cx="45.3543" cy="579.932" width="90.71" height="23.9457"/>
 				<rect x="0" y="567.959" width="90.7087" height="23.9457" rx="9" ry="9" class="st26"/>
 				<text x="21.35" y="583.95" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>点云渲染</text>			</g>
-			<g id="shape172-185" v:mID="172" v:groupContext="shape" transform="translate(12.7559,-43.1999)">
+			<g id="shape172-187" v:mID="172" v:groupContext="shape" transform="translate(12.7559,-43.1999)">
 				<title>矩形.172</title>
 				<desc>网格渲染</desc>
 				<v:userDefs>
@@ -580,7 +581,7 @@
 				<v:textRect cx="45.3543" cy="579.932" width="90.71" height="23.9457"/>
 				<rect x="0" y="567.959" width="90.7087" height="23.9457" rx="9" ry="9" class="st26"/>
 				<text x="21.35" y="583.95" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>网格渲染</text>			</g>
-			<g id="shape173-188" v:mID="173" v:groupContext="shape" transform="translate(12.7559,-19.8884)">
+			<g id="shape173-190" v:mID="173" v:groupContext="shape" transform="translate(12.7559,-19.8884)">
 				<title>矩形.173</title>
 				<desc>体渲染</desc>
 				<v:userDefs>
@@ -590,7 +591,7 @@
 				<v:textRect cx="45.3543" cy="579.932" width="90.71" height="23.9457"/>
 				<rect x="0" y="567.959" width="90.7087" height="23.9457" rx="9" ry="9" class="st26"/>
 				<text x="27.35" y="583.95" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>体渲染</text>			</g>
-			<g id="shape175-191" v:mID="175" v:groupContext="shape" transform="translate(131.811,-65.1128)">
+			<g id="shape175-193" v:mID="175" v:groupContext="shape" transform="translate(131.811,-65.1128)">
 				<title>矩形.175</title>
 				<desc>点云渲染</desc>
 				<v:userDefs>
@@ -600,7 +601,7 @@
 				<v:textRect cx="45.3543" cy="579.932" width="90.71" height="23.9457"/>
 				<rect x="0" y="567.959" width="90.7087" height="23.9457" rx="9" ry="9" class="st26"/>
 				<text x="21.35" y="583.95" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>点云渲染</text>			</g>
-			<g id="shape176-194" v:mID="176" v:groupContext="shape" transform="translate(131.811,-43.1999)">
+			<g id="shape176-196" v:mID="176" v:groupContext="shape" transform="translate(131.811,-43.1999)">
 				<title>矩形.176</title>
 				<desc>网格渲染</desc>
 				<v:userDefs>
@@ -610,7 +611,7 @@
 				<v:textRect cx="45.3543" cy="579.932" width="90.71" height="23.9457"/>
 				<rect x="0" y="567.959" width="90.7087" height="23.9457" rx="9" ry="9" class="st26"/>
 				<text x="21.35" y="583.95" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>网格渲染</text>			</g>
-			<g id="shape177-197" v:mID="177" v:groupContext="shape" transform="translate(131.811,-19.8884)">
+			<g id="shape177-199" v:mID="177" v:groupContext="shape" transform="translate(131.811,-19.8884)">
 				<title>矩形.177</title>
 				<desc>体渲染</desc>
 				<v:userDefs>
@@ -621,7 +622,7 @@
 				<rect x="0" y="567.959" width="90.7087" height="23.9457" rx="9" ry="9" class="st26"/>
 				<text x="27.35" y="583.95" class="st24" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>体渲染</text>			</g>
 		</g>
-		<g id="shape196-200" v:mID="196" v:groupContext="shape" transform="translate(-300.696,331.802) rotate(-90)">
+		<g id="shape196-202" v:mID="196" v:groupContext="shape" transform="translate(-300.696,331.802) rotate(-90)">
 			<title>箭头总汇</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
@@ -630,7 +631,7 @@
 						 A4.5 4.5 -180 0 0 3.58 560.72 L3.58 560.72 A3.58058 3.58058 -180 0 0 0 564.3 L0 588.32 A3.58058 3.58058
 						 -180 0 0 3.58 591.91 Z" class="st27"/>
 		</g>
-		<g id="shape197-202" v:mID="197" v:groupContext="shape" transform="translate(-58.3335,331.802) rotate(-90)">
+		<g id="shape197-204" v:mID="197" v:groupContext="shape" transform="translate(-58.3335,331.802) rotate(-90)">
 			<title>箭头总汇.197</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
@@ -639,7 +640,7 @@
 						 A4.5 4.5 -180 0 0 4.2 560.72 L4.2 560.72 A4.19681 4.19681 -180 0 0 0 564.92 L0 587.71 A4.19681 4.19681 -180
 						 0 0 4.2 591.91 Z" class="st27"/>
 		</g>
-		<g id="shape198-204" v:mID="198" v:groupContext="shape" transform="translate(168.438,332.003) rotate(-90)">
+		<g id="shape198-206" v:mID="198" v:groupContext="shape" transform="translate(168.438,332.003) rotate(-90)">
 			<title>箭头总汇.198</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
@@ -648,7 +649,7 @@
 						 A4.5 4.5 -180 0 0 4.01 560.72 L4.01 560.72 A4.00667 4.00667 -180 0 0 0 564.73 L0 587.9 A4.00667 4.00667
 						 -180 0 0 4.01 591.91 Z" class="st27"/>
 		</g>
-		<g id="shape201-206" v:mID="201" v:groupContext="shape" transform="translate(-39.4122,376.79) rotate(-90)">
+		<g id="shape201-208" v:mID="201" v:groupContext="shape" transform="translate(-39.4122,376.79) rotate(-90)">
 			<title>箭头总汇.201</title>
 			<v:userDefs>
 				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(15):26"/>
@@ -657,7 +658,7 @@
 						 A4.5 4.5 -180 0 0 3.74 524.44 L3.74 524.44 A3.74401 3.74401 -180 0 0 0 528.18 L0 588.16 A3.74401 3.74401
 						 -180 0 0 3.74 591.91 Z" class="st27"/>
 		</g>
-		<g id="shape205-208" v:mID="205" v:groupContext="shape" transform="translate(762.083,-95.1582)">
+		<g id="shape205-210" v:mID="205" v:groupContext="shape" transform="translate(762.083,-95.1582)">
 			<title>矩形.205</title>
 			<desc>碰撞算法库</desc>
 			<v:userDefs>
