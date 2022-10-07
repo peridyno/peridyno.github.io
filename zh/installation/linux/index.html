@@ -12,22 +12,22 @@
     <title>Linux平台安装 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1662609073" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1662609073" rel="stylesheet">
-    <link href="/css/hybrid.css?1662609073" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1662609073" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1662609073" rel="stylesheet">
-    <link href="/css/auto-complete.css?1662609073" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1662609073" rel="stylesheet">
-    <link href="/css/theme.css?1662609073" rel="stylesheet">
-    <link href="/css/tabs.css?1662609073" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1662609073" rel="stylesheet">
+    <link href="/css/nucleus.css?1665122381" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1665122381" rel="stylesheet">
+    <link href="/css/hybrid.css?1665122381" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1665122381" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1665122381" rel="stylesheet">
+    <link href="/css/auto-complete.css?1665122381" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1665122381" rel="stylesheet">
+    <link href="/css/theme.css?1665122381" rel="stylesheet">
+    <link href="/css/tabs.css?1665122381" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1665122381" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1662609073" rel="stylesheet">
+    <link href="/css/theme-blue.css?1665122381" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1662609073"></script>
+    <script src="/js/jquery-3.3.1.min.js?1665122381"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1662609073"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1662609073"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1665122381"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1665122381"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1662609073"></script>
+<script type="text/javascript" src="/js/search.js?1665122381"></script>
 
     
   </div>
@@ -1694,13 +1694,16 @@
 
 <h3 id="2依赖">2、依赖</h3>
 <ul>
-<li>OpenGL version：4.3+</li>
+<li><strong>OpenGL version</strong>：4.3+</li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> glxinfo <span style="color:#f92672">|</span> grep <span style="color:#e6db74">&#34;OpenGL version&#34;</span>
 OpenGL version string: <span style="color:#ae81ff">4.6.0</span> NVIDIA <span style="color:#ae81ff">510.47.03</span>
 </code></pre></div><ul>
-<li>Nvidia Driver Version: 470+</li>
+<li><strong>Nvidia Driver Version</strong>: 470+</li>
 </ul>
+<p>​	安装mesa-utils</p>
+<pre><code>$ sudo apt install mesa-utils
+</code></pre><p>​	查看驱动版本</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> nvidia<span style="color:#f92672">-</span>smi
 Fri Aug <span style="color:#ae81ff">12</span> <span style="color:#ae81ff">14</span><span style="color:#f92672">:</span><span style="color:#ae81ff">51</span><span style="color:#f92672">:</span><span style="color:#ae81ff">28</span> <span style="color:#ae81ff">2022</span>       
 <span style="color:#f92672">+-----------------------------------------------------------------------------+</span>
@@ -1723,7 +1726,11 @@ Fri Aug <span style="color:#ae81ff">12</span> <span style="color:#ae81ff">14</sp
 <span style="color:#f92672">|</span>    <span style="color:#ae81ff">0</span>   N<span style="color:#f92672">/</span>A  N<span style="color:#f92672">/</span>A      <span style="color:#ae81ff">3416</span>      G   <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>lib<span style="color:#f92672">/</span>xorg<span style="color:#f92672">/</span>Xorg                 <span style="color:#ae81ff">35</span>MiB <span style="color:#f92672">|</span>
 <span style="color:#f92672">|</span>    <span style="color:#ae81ff">0</span>   N<span style="color:#f92672">/</span>A  N<span style="color:#f92672">/</span>A      <span style="color:#ae81ff">3546</span>      G   <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>gnome<span style="color:#f92672">-</span>shell               <span style="color:#ae81ff">86</span>MiB <span style="color:#f92672">|</span>
 <span style="color:#f92672">+-----------------------------------------------------------------------------+</span>
-</code></pre></div><ul>
+</code></pre></div>
+<div class="notices note" ><p>调用nvidia-smi指令的时候有可能出现找不到，该原因通常是因为Ubuntu 20.04没有安装最新显卡驱动，最简单的方式可以通过Software &amp; Updates &ndash;&gt;Additional Drivers选取最合适的显卡驱动重新安装，安装之后注意重启。</p>
+</div>
+
+<ul>
 <li>CUDA Version: 11+</li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> nvcc <span style="color:#f92672">--</span>version
@@ -1732,22 +1739,39 @@ Copyright (c) <span style="color:#ae81ff">2005</span><span style="color:#f92672"
 Built on Fri_Dec_17_18:<span style="color:#ae81ff">16</span><span style="color:#f92672">:</span><span style="color:#ae81ff">03</span>_PST_2021
 Cuda compilation tools, release <span style="color:#ae81ff">11.6</span>, V11<span style="color:#ae81ff">.6.55</span>
 Build cuda_11<span style="color:#ae81ff">.6</span>.r11<span style="color:#ae81ff">.6</span><span style="color:#f92672">/</span>compiler<span style="color:#ae81ff">.30794723</span>_0
-</code></pre></div><p>同时推荐安装<a href="https://cmake.org/files/">cmake-gui</a>。PeriDyno项目编译可选参数较多，使用图形化界面可以便捷的选择需要编译的库。</p>
-<ul>
+</code></pre></div><p>CUDA安装参见官网，安装成功后需要配置环境变量，用如下指令打开.bashrc文件：</p>
+<pre><code>$ sudo gedit ~/.bashrc
+</code></pre><p>在文件结尾添加：</p>
+<pre><code>export PATH=/usr/local/cuda-11.6/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-11.6/lib64:$LD_LIBRARY_PATH
+</code></pre><p>最后需要用如下指令激活配置文件</p>
+<pre><code>source ~/.bashrc
+</code></pre><ul>
 <li>Cmake version: 3.10+</li>
 </ul>
+<p>安装CMake</p>
+<pre><code>$ sudo apt install cmake
+</code></pre><p>查看Cmake版本</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> cmake <span style="color:#f92672">--</span>version
 cmake version <span style="color:#ae81ff">3.16.3</span>
 CMake suite maintained and supported by Kitware (kitware.com<span style="color:#f92672">/</span>cmake).
-</code></pre></div><h3 id="3安装项目">3、安装项目</h3>
+</code></pre></div><p>同时推荐安装<a href="https://cmake.org/files/">cmake-gui</a>。PeriDyno项目编译可选参数较多，使用图形化界面可以便捷的选择需要编译的库。</p>
+<p>需要注意的是，默认安装的CMake版本较低，有可能出现与最新版本CUDA不兼容的情况，并报“The CMAKE_CUDA_COMPILER: /usr/local/* is not a full path to an existing compiler tool”的错误，此时推荐如下方式安装最新版本CMake</p>
+<pre><code>$ sudo apt remove cmake
+$ sudo apt autoremove
+$ sudo snap install cmake --classic
+</code></pre><h3 id="3安装项目">3、安装项目</h3>
 <p>（1）更新系统软件环境</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> sudo apt<span style="color:#f92672">-</span>get update
-</code></pre></div><p>（2）安装依赖包</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> sudo apt<span style="color:#f92672">-</span>get install libx11<span style="color:#f92672">-</span>dev libxext<span style="color:#f92672">-</span>dev libxrender<span style="color:#f92672">-</span>dev libxtst<span style="color:#f92672">-</span>dev libxt<span style="color:#f92672">-</span>dev libxrandr<span style="color:#f92672">-</span>dev libxinerama<span style="color:#f92672">-</span>dev libxcursor<span style="color:#f92672">-</span>devmak 
-<span style="color:#960050;background-color:#1e0010">$</span> sudo apt install <span style="color:#f92672">-</span>y mesa<span style="color:#f92672">-</span>common<span style="color:#f92672">-</span>dev  libgl 
-</code></pre></div><p>（3）克隆项目及子模块</p>
+</code></pre></div><p>（2）安装C++编译器</p>
+<pre><code>$ sudo apt install g++
+$ sudo apt install gcc
+</code></pre><p>（3）安装依赖包</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C++" data-lang="C++"><span style="color:#960050;background-color:#1e0010">$</span> sudo apt<span style="color:#f92672">-</span>get install libx11<span style="color:#f92672">-</span>dev libxext<span style="color:#f92672">-</span>dev libxrender<span style="color:#f92672">-</span>dev libxtst<span style="color:#f92672">-</span>dev libxt<span style="color:#f92672">-</span>dev libxrandr<span style="color:#f92672">-</span>dev libxinerama<span style="color:#f92672">-</span>dev libxcursor<span style="color:#f92672">-</span>dev 
+<span style="color:#960050;background-color:#1e0010">$</span> sudo apt install <span style="color:#f92672">-</span>y mesa<span style="color:#f92672">-</span>common<span style="color:#f92672">-</span>dev  libgl<span style="color:#f92672">-</span>dev 
+</code></pre></div><p>（4）克隆项目及子模块</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#960050;background-color:#1e0010">$</span> git clone <span style="color:#f92672">--</span>recursive https:<span style="color:#75715e">//github.com/peridyno/peridyno.git
-</span></code></pre></div><p>（4）创建build文件夹</p>
+</span></code></pre></div><p>（5）创建build文件夹</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#960050;background-color:#1e0010">$</span> mkdir build 
 <span style="color:#960050;background-color:#1e0010">$</span> cd build 
 </code></pre></div><h3 id="4编译项目">4、编译项目</h3>
@@ -2702,16 +2726,16 @@ Scanning dependencies of target GLRenderEngine
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1662609073"></script>
-    <script src="/js/perfect-scrollbar.min.js?1662609073"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1662609073"></script>
-    <script src="/js/jquery.sticky.js?1662609073"></script>
-    <script src="/js/featherlight.min.js?1662609073"></script>
-    <script src="/js/highlight.pack.js?1662609073"></script>
+    <script src="/js/clipboard.min.js?1665122381"></script>
+    <script src="/js/perfect-scrollbar.min.js?1665122381"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1665122381"></script>
+    <script src="/js/jquery.sticky.js?1665122381"></script>
+    <script src="/js/featherlight.min.js?1665122381"></script>
+    <script src="/js/highlight.pack.js?1665122381"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1662609073"></script>
-    <script src="/js/learn.js?1662609073"></script>
-    <script src="/js/hugo-learn.js?1662609073"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1665122381"></script>
+    <script src="/js/learn.js?1665122381"></script>
+    <script src="/js/hugo-learn.js?1665122381"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
