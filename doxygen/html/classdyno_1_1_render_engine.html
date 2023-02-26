@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -69,13 +69,12 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdyno_1_1_render_engine-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::RenderEngine Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_rendering_8h_source.html">Rendering.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_render_engine_8h_source.html">RenderEngine.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for dyno::RenderEngine:</div>
 <div class="dyncontent">
@@ -86,96 +85,26 @@ Inheritance diagram for dyno::RenderEngine:</div>
 <area shape="rect" href="classdyno_1_1_vtk_render_engine.html" title=" " alt="" coords="185,80,344,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for dyno::RenderEngine:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_render_engine__coll__graph.png" border="0" usemap="#adyno_1_1_render_engine_coll__map" alt="Collaboration graph"/></div>
-<map name="adyno_1_1_render_engine_coll__map" id="adyno_1_1_render_engine_coll__map">
-<area shape="rect" title=" " alt="" coords="92,199,231,225"/>
-<area shape="rect" href="structdyno_1_1_render_params.html" title=" " alt="" coords="89,109,233,136"/>
-<area shape="rect" href="structdyno_1_1_render_params_1_1_viewport.html" title=" " alt="" coords="5,5,149,47"/>
-<area shape="rect" href="structdyno_1_1_render_params_1_1_light.html" title=" " alt="" coords="173,5,317,47"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e4add1849718535515179657e8735a1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a5e4add1849718535515179657e8735a1">initialize</a> (int width, int height)=0</td></tr>
-<tr class="separator:a5e4add1849718535515179657e8735a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c6134337866d535fcab6c0af3020a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#ab6c6134337866d535fcab6c0af3020a0">draw</a> (<a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> *scene)=0</td></tr>
-<tr class="separator:ab6c6134337866d535fcab6c0af3020a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b4594ab91bebc5ab30c9b82adf0681c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a7b4594ab91bebc5ab30c9b82adf0681c">resize</a> (int <a class="el" href="_qt_im_gui_8cpp.html#aebcbbf119bd44717e4b96b4fed18e3f8">w</a>, int h)=0</td></tr>
-<tr class="separator:a7b4594ab91bebc5ab30c9b82adf0681c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9421b694a2cc23c2b8e426d31b22fb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdyno_1_1_render_params.html">RenderParams</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#ac9421b694a2cc23c2b8e426d31b22fb6">renderParams</a> ()</td></tr>
-<tr class="separator:ac9421b694a2cc23c2b8e426d31b22fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dfba31b0af17a63ea77b59e5b5116bf"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_camera.html">Camera</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a2dfba31b0af17a63ea77b59e5b5116bf">camera</a> ()</td></tr>
-<tr class="separator:a2dfba31b0af17a63ea77b59e5b5116bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca87eb521081f5f155b8f755493064ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#aca87eb521081f5f155b8f755493064ff">setCamera</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_camera.html">Camera</a> &gt; cam)</td></tr>
-<tr class="separator:aca87eb521081f5f155b8f755493064ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3161c3d3608ce62fc0fa6909afa3a0df"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a3161c3d3608ce62fc0fa6909afa3a0df">name</a> ()=0</td></tr>
-<tr class="separator:a3161c3d3608ce62fc0fa6909afa3a0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ac3ad2fcc63dd15812b687af44b7f2d0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdyno_1_1_render_params.html">RenderParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#ac3ad2fcc63dd15812b687af44b7f2d0d">m_rparams</a></td></tr>
-<tr class="separator:ac3ad2fcc63dd15812b687af44b7f2d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a591902af9ffb13d38eee849346cad07f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_camera.html">Camera</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a591902af9ffb13d38eee849346cad07f">mCamera</a></td></tr>
-<tr class="separator:a591902af9ffb13d38eee849346cad07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530e95abe8f81e7cf87412b52ba920a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a530e95abe8f81e7cf87412b52ba920a3">initialize</a> ()=0</td></tr>
+<tr class="separator:a530e95abe8f81e7cf87412b52ba920a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e870d1721d2189107464a10027c50e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a88e870d1721d2189107464a10027c50e">terminate</a> ()=0</td></tr>
+<tr class="separator:a88e870d1721d2189107464a10027c50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff26b896a7a77463d821b254bb1f582"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#abff26b896a7a77463d821b254bb1f582">draw</a> (<a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> *scene, const <a class="el" href="structdyno_1_1_render_params.html">RenderParams</a> &amp;rparams)=0</td></tr>
+<tr class="separator:abff26b896a7a77463d821b254bb1f582"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1843571b83896dd59025bdfd3721c0ec"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="structdyno_1_1_selection_item.html">SelectionItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a1843571b83896dd59025bdfd3721c0ec">select</a> (int x, int y, int <a class="el" href="_qt_im_gui_8cpp.html#aebcbbf119bd44717e4b96b4fed18e3f8">w</a>, int h)=0</td></tr>
+<tr class="separator:a1843571b83896dd59025bdfd3721c0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfc48af4d0eea281eb8c4128f381642"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a7cfc48af4d0eea281eb8c4128f381642">name</a> () const =0</td></tr>
+<tr class="separator:a7cfc48af4d0eea281eb8c4128f381642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00068">68</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_engine_8h_source.html#l00086">86</a> of file <a class="el" href="_render_engine_8h_source.html">RenderEngine.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2dfba31b0af17a63ea77b59e5b5116bf" name="a2dfba31b0af17a63ea77b59e5b5116bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dfba31b0af17a63ea77b59e5b5116bf">&#9670;&nbsp;</a></span>camera()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_camera.html">Camera</a> &gt; dyno::RenderEngine::camera </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00077">77</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_render_engine_a2dfba31b0af17a63ea77b59e5b5116bf_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_engine_a2dfba31b0af17a63ea77b59e5b5116bf_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_render_engine_a2dfba31b0af17a63ea77b59e5b5116bf_icgraph" id="aclassdyno_1_1_render_engine_a2dfba31b0af17a63ea77b59e5b5116bf_icgraph">
-<area shape="rect" title=" " alt="" coords="888,235,1027,276"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3d8c71e26877939440cffd361a79d9b2" title=" " alt="" coords="683,136,839,177"/>
-<area shape="rect" href="classdyno_1_1_vtk_render_engine.html#af4dc0d0c308de3f790b19815b5c4b961" title=" " alt="" coords="681,201,840,243"/>
-<area shape="rect" href="classdyno_1_1_vtk_render_engine.html#a5770b4b9b72bb1516454b6c07643485c" title=" " alt="" coords="681,267,840,308"/>
-<area shape="rect" href="_im_window_8cpp.html#afb09fef483b75d6e6cc3976aa6cdd898" title=" " alt="" coords="707,333,814,359"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a80fb558c07b76be2f507393eece06036" title=" " alt="" coords="451,5,607,47"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4c461917d8c70b899d7bbf4450e77e75" title=" " alt="" coords="451,71,607,112"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3125be328aa2698c6b85c9570fff7538" title=" " alt="" coords="451,136,607,177"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#aba26a39dd17a2fe85dd996fecb7b7969" title=" " alt="" coords="451,201,607,243"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#afe314e3bdd16cb1176728d5627c6226c" title=" " alt="" coords="451,267,607,308"/>
-<area shape="rect" href="_im_window_8cpp.html#a6e0a97c100708c8cec85a70252121085" title=" " alt="" coords="425,333,633,359"/>
-<area shape="rect" href="classdyno_1_1_im_window.html#a7683d98b2ffa851e090dfd50ccd6f263" title=" " alt="" coords="224,333,377,359"/>
-<area shape="rect" href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62" title=" " alt="" coords="5,303,176,330"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#ac3a49d40cf6bccf88a5b46f18f98ad07" title=" " alt="" coords="13,355,169,396"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ab6c6134337866d535fcab6c0af3020a0" name="ab6c6134337866d535fcab6c0af3020a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6c6134337866d535fcab6c0af3020a0">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="abff26b896a7a77463d821b254bb1f582" name="abff26b896a7a77463d821b254bb1f582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff26b896a7a77463d821b254bb1f582">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,50 +116,13 @@ Here is the caller graph for this function:</div>
           <td class="memname">virtual void dyno::RenderEngine::draw </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> *&#160;</td>
-          <td class="paramname"><em>scene</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a84fb8f11606d4a45921eb7ad92475e9a">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#af4dc0d0c308de3f790b19815b5c4b961">dyno::VtkRenderEngine</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_render_engine_ab6c6134337866d535fcab6c0af3020a0_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_engine_ab6c6134337866d535fcab6c0af3020a0_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_render_engine_ab6c6134337866d535fcab6c0af3020a0_icgraph" id="aclassdyno_1_1_render_engine_ab6c6134337866d535fcab6c0af3020a0_icgraph">
-<area shape="rect" title=" " alt="" coords="209,5,348,47"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#ac3a49d40cf6bccf88a5b46f18f98ad07" title=" " alt="" coords="5,5,161,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a5e4add1849718535515179657e8735a1" name="a5e4add1849718535515179657e8735a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e4add1849718535515179657e8735a1">&#9670;&nbsp;</a></span>initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void dyno::RenderEngine::initialize </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
+          <td class="paramname"><em>scene</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdyno_1_1_render_params.html">RenderParams</a> &amp;&#160;</td>
+          <td class="paramname"><em>rparams</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -245,21 +137,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a970917ced8adec592d08d5eab64d586d">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#aaf67c9f47411cfd1fc5970ae375ba402">dyno::VtkRenderEngine</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_render_engine_a5e4add1849718535515179657e8735a1_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_engine_a5e4add1849718535515179657e8735a1_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_render_engine_a5e4add1849718535515179657e8735a1_icgraph" id="aclassdyno_1_1_render_engine_a5e4add1849718535515179657e8735a1_icgraph">
-<area shape="rect" title=" " alt="" coords="209,5,348,47"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4443931ffdaa4d0751e918e3f1f32ff2" title=" " alt="" coords="5,5,161,47"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a3bedb8696e4f4528d304b1fdf17a4d03">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#a94c9c7952290c637da6e8752d6654981">dyno::VtkRenderEngine</a>.</p>
 
 </div>
 </div>
-<a id="a3161c3d3608ce62fc0fa6909afa3a0df" name="a3161c3d3608ce62fc0fa6909afa3a0df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3161c3d3608ce62fc0fa6909afa3a0df">&#9670;&nbsp;</a></span>name()</h2>
+<a id="a530e95abe8f81e7cf87412b52ba920a3" name="a530e95abe8f81e7cf87412b52ba920a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a530e95abe8f81e7cf87412b52ba920a3">&#9670;&nbsp;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +151,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string dyno::RenderEngine::name </td>
+          <td class="memname">virtual void dyno::RenderEngine::initialize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -281,23 +164,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a07f76bc814723e4f2677bdef5cc56e6b">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#a4ee5780bc9913826358b0eeef5505cc0">dyno::VtkRenderEngine</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_render_engine_a3161c3d3608ce62fc0fa6909afa3a0df_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_engine_a3161c3d3608ce62fc0fa6909afa3a0df_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_render_engine_a3161c3d3608ce62fc0fa6909afa3a0df_icgraph" id="aclassdyno_1_1_render_engine_a3161c3d3608ce62fc0fa6909afa3a0df_icgraph">
-<area shape="rect" title=" " alt="" coords="425,27,564,69"/>
-<area shape="rect" href="classdyno_1_1_im_window.html#a7683d98b2ffa851e090dfd50ccd6f263" title=" " alt="" coords="224,35,377,61"/>
-<area shape="rect" href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62" title=" " alt="" coords="5,5,176,32"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#ac3a49d40cf6bccf88a5b46f18f98ad07" title=" " alt="" coords="13,57,169,98"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a5c750a13a345911de8521f1d6eb2846e">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#a3f24efa68502768ee30a9388a93173c4">dyno::VtkRenderEngine</a>.</p>
 
 </div>
 </div>
-<a id="ac9421b694a2cc23c2b8e426d31b22fb6" name="ac9421b694a2cc23c2b8e426d31b22fb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9421b694a2cc23c2b8e426d31b22fb6">&#9670;&nbsp;</a></span>renderParams()</h2>
+<a id="a7cfc48af4d0eea281eb8c4128f381642" name="a7cfc48af4d0eea281eb8c4128f381642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cfc48af4d0eea281eb8c4128f381642">&#9670;&nbsp;</a></span>name()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -306,38 +178,25 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdyno_1_1_render_params.html">RenderParams</a> * dyno::RenderEngine::renderParams </td>
+          <td class="memname">virtual std::string dyno::RenderEngine::name </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00076">76</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_render_engine_ac9421b694a2cc23c2b8e426d31b22fb6_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_engine_ac9421b694a2cc23c2b8e426d31b22fb6_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_render_engine_ac9421b694a2cc23c2b8e426d31b22fb6_icgraph" id="aclassdyno_1_1_render_engine_ac9421b694a2cc23c2b8e426d31b22fb6_icgraph">
-<area shape="rect" title=" " alt="" coords="836,49,975,90"/>
-<area shape="rect" href="classdyno_1_1_im_window.html#a7683d98b2ffa851e090dfd50ccd6f263" title=" " alt="" coords="224,52,377,79"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#ac3a49d40cf6bccf88a5b46f18f98ad07" title=" " alt="" coords="13,99,169,141"/>
-<area shape="rect" href="_im_window_8cpp.html#afb09fef483b75d6e6cc3976aa6cdd898" title=" " alt="" coords="681,5,788,32"/>
-<area shape="rect" href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62" title=" " alt="" coords="5,48,176,75"/>
-<area shape="rect" href="_im_window_8cpp.html#a6e0a97c100708c8cec85a70252121085" title=" " alt="" coords="425,5,633,32"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#aed2cbce1f49294e1637faf13bf8338f1">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#a1fe5bde97d9863b8b6d80eca98939a61">dyno::VtkRenderEngine</a>.</p>
 
 </div>
 </div>
-<a id="a7b4594ab91bebc5ab30c9b82adf0681c" name="a7b4594ab91bebc5ab30c9b82adf0681c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b4594ab91bebc5ab30c9b82adf0681c">&#9670;&nbsp;</a></span>resize()</h2>
+<a id="a1843571b83896dd59025bdfd3721c0ec" name="a1843571b83896dd59025bdfd3721c0ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1843571b83896dd59025bdfd3721c0ec">&#9670;&nbsp;</a></span>select()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,8 +205,20 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void dyno::RenderEngine::resize </td>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="structdyno_1_1_selection_item.html">SelectionItem</a> &gt; dyno::RenderEngine::select </td>
           <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
@@ -370,21 +241,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a4fc2e0e73e05c5744988622d1f360e43">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#ac5be4fde91078497c21420dc5b926397">dyno::VtkRenderEngine</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_render_engine_a7b4594ab91bebc5ab30c9b82adf0681c_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_engine_a7b4594ab91bebc5ab30c9b82adf0681c_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_render_engine_a7b4594ab91bebc5ab30c9b82adf0681c_icgraph" id="aclassdyno_1_1_render_engine_a7b4594ab91bebc5ab30c9b82adf0681c_icgraph">
-<area shape="rect" title=" " alt="" coords="209,5,348,47"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#aba26a39dd17a2fe85dd996fecb7b7969" title=" " alt="" coords="5,5,161,47"/>
-</map>
-</div>
+<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a73e098431b8af442bc48cbdc84b28919">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#a757910bec6cfae8b14d3968445431626">dyno::VtkRenderEngine</a>.</p>
 
 </div>
 </div>
-<a id="aca87eb521081f5f155b8f755493064ff" name="aca87eb521081f5f155b8f755493064ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca87eb521081f5f155b8f755493064ff">&#9670;&nbsp;</a></span>setCamera()</h2>
+<a id="a88e870d1721d2189107464a10027c50e" name="a88e870d1721d2189107464a10027c50e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e870d1721d2189107464a10027c50e">&#9670;&nbsp;</a></span>terminate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,88 +255,25 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::RenderEngine::setCamera </td>
+          <td class="memname">virtual void dyno::RenderEngine::terminate </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_camera.html">Camera</a> &gt;&#160;</td>
-          <td class="paramname"><em>cam</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00078">78</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_render_engine_aca87eb521081f5f155b8f755493064ff_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_engine_aca87eb521081f5f155b8f755493064ff_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_render_engine_aca87eb521081f5f155b8f755493064ff_icgraph" id="aclassdyno_1_1_render_engine_aca87eb521081f5f155b8f755493064ff_icgraph">
-<area shape="rect" title=" " alt="" coords="836,27,975,69"/>
-<area shape="rect" href="_im_window_8cpp.html#afb09fef483b75d6e6cc3976aa6cdd898" title=" " alt="" coords="681,35,788,61"/>
-<area shape="rect" href="_im_window_8cpp.html#a6e0a97c100708c8cec85a70252121085" title=" " alt="" coords="425,35,633,61"/>
-<area shape="rect" href="classdyno_1_1_im_window.html#a7683d98b2ffa851e090dfd50ccd6f263" title=" " alt="" coords="224,35,377,61"/>
-<area shape="rect" href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62" title=" " alt="" coords="5,5,176,32"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#ac3a49d40cf6bccf88a5b46f18f98ad07" title=" " alt="" coords="13,57,169,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac3ad2fcc63dd15812b687af44b7f2d0d" name="ac3ad2fcc63dd15812b687af44b7f2d0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3ad2fcc63dd15812b687af44b7f2d0d">&#9670;&nbsp;</a></span>m_rparams</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structdyno_1_1_render_params.html">RenderParams</a> dyno::RenderEngine::m_rparams</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00082">82</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
-
-</div>
-</div>
-<a id="a591902af9ffb13d38eee849346cad07f" name="a591902af9ffb13d38eee849346cad07f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a591902af9ffb13d38eee849346cad07f">&#9670;&nbsp;</a></span>mCamera</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_camera.html">Camera</a>&gt; dyno::RenderEngine::mCamera</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_rendering_8h_source.html#l00085">85</a> of file <a class="el" href="_rendering_8h_source.html">Rendering.h</a>.</p>
+<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a6bd9ac474943f8b8334141fa27a13946">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#ae67fd1fd3936372ff72880f4bcf646c8">dyno::VtkRenderEngine</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Peridyno/peridyno/src/Rendering/Core/<a class="el" href="_rendering_8h_source.html">Rendering.h</a></li>
+<li>E:/Peridyno/peridyno/src/Rendering/Core/<a class="el" href="_render_engine_8h_source.html">RenderEngine.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

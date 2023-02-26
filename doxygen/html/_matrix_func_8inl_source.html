@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -125,15 +125,15 @@ $(function() {
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">while</span> (iter &lt; numJacobiIterations) {    <span class="comment">// 3 off diagonal elements</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                                                <span class="comment">// find off diagonal element with maximum modulus</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="keywordtype">int</span> p, q;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_typedef" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> a, max;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            max = fabs(D(0, 1));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_typedef" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> a, <a class="code hl_function" href="namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146">max</a>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_function" href="namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146">max</a> = fabs(D(0, 1));</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            p = 0; q = 1;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            a = fabs(D(0, 2));</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span> (a &gt; max) { p = 0; q = 2; max = a; }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">if</span> (a &gt; <a class="code hl_function" href="namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146">max</a>) { p = 0; q = 2; <a class="code hl_function" href="namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146">max</a> = a; }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            a = fabs(D(1, 2));</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span> (a &gt; max) { p = 1; q = 2; max = a; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">if</span> (a &gt; <a class="code hl_function" href="namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146">max</a>) { p = 1; q = 2; <a class="code hl_function" href="namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146">max</a> = a; }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="comment">// all small enough -&gt; done</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">if</span> (max &lt; epsilon) <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146">max</a> &lt; epsilon) <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="comment">// rotate matrix with respect to that element</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            jacobiRotate&lt;Real&gt;(D, eigenVecs, p, q);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            iter++;</div>
@@ -468,12 +468,13 @@ $(function() {
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>}</div>
 <div class="ttc" id="a_matrix_8h_html"><div class="ttname"><a href="_matrix_8h.html">Matrix.h</a></div></div>
 <div class="ttc" id="a_platform_8h_html_a133889cc03b0aa09fcc78ce53778f454"><div class="ttname"><a href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a></div><div class="ttdeci">#define DYN_FUNC</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00032">Platform.h:32</a></div></div>
-<div class="ttc" id="a_typedef_8inl_html_a445a5f0e2a34c9d97d69a3c2d1957907"><div class="ttname"><a href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00019">Typedef.inl:19</a></div></div>
+<div class="ttc" id="a_typedef_8inl_html_a445a5f0e2a34c9d97d69a3c2d1957907"><div class="ttname"><a href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00021">Typedef.inl:21</a></div></div>
 <div class="ttc" id="a_vector_8h_html"><div class="ttname"><a href="_vector_8h.html">Vector.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_square_matrix_html"><div class="ttname"><a href="classdyno_1_1_square_matrix.html">dyno::SquareMatrix&lt; Real, 3 &gt;</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_vector_html"><div class="ttname"><a href="classdyno_1_1_vector.html">dyno::Vector&lt; Real, 3 &gt;</a></div></div>
 <div class="ttc" id="aim_gu_i_z_m_oquat_8cpp_html_a0372b3ee8076c76ae46501c2ebbb9250"><div class="ttname"><a href="im_gu_i_z_m_oquat_8cpp.html#a0372b3ee8076c76ae46501c2ebbb9250">V</a></div><div class="ttdeci">#define V(a, b, c)</div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespace_im_guizmo_html_a0f74448b3175fca54b42a180c5475146"><div class="ttname"><a href="namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146">ImGuizmo::max</a></div><div class="ttdeci">T max(T x, T y)</div><div class="ttdef"><b>Definition:</b> <a href="_im_guizmo_8cpp_source.html#l00190">ImGuizmo.cpp:190</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a118e7e02871df2495ea6991203ed342a"><div class="ttname"><a href="namespacedyno.html#a118e7e02871df2495ea6991203ed342a">dyno::EigenDecomposition</a></div><div class="ttdeci">DYN_FUNC void EigenDecomposition(const SquareMatrix&lt; Real, 3 &gt; &amp;A, SquareMatrix&lt; Real, 3 &gt; &amp;eigenVecs, Vector&lt; Real, 3 &gt; &amp;eigenVals)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_func_8inl_source.html#l00043">MatrixFunc.inl:43</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a15706b570530cc6cee057d68bf7b1098"><div class="ttname"><a href="namespacedyno.html#a15706b570530cc6cee057d68bf7b1098">dyno::QRDecomposition</a></div><div class="ttdeci">DYN_FUNC void QRDecomposition(SquareMatrix&lt; Real, 3 &gt; &amp;A, SquareMatrix&lt; Real, 3 &gt; &amp;R, int p, int q)</div><div class="ttdef"><b>Definition:</b> <a href="_matrix_func_8inl_source.html#l00075">MatrixFunc.inl:75</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a215efe00a1aa40c32ddb1dfaf249481f"><div class="ttname"><a href="namespacedyno.html#a215efe00a1aa40c32ddb1dfaf249481f">dyno::polarDecomposition</a></div><div class="ttdeci">DYN_FUNC void polarDecomposition(const SquareMatrix&lt; Real, Dim &gt; &amp;A, SquareMatrix&lt; Real, Dim &gt; &amp;R, SquareMatrix&lt; Real, Dim &gt; &amp;U, SquareMatrix&lt; Real, Dim &gt; &amp;D, SquareMatrix&lt; Real, Dim &gt; &amp;V)</div></div>

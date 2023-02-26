@@ -1,4 +1,20 @@
 var searchData=
 [
-  ['frontside_0',['frontSide',['../structimgui_gizmo.html#a2ca44f28b5393e99e831a47aaebb9998ae077586e9b2f50b2ca670b835bbfa706',1,'imguiGizmo']]]
+  ['float_0',['FLOAT',['../structofbx_1_1_i_element_property.html#ad6fe68bfd4124de5be4e5224771740a9ae1dde3fc4df1895f6ce36bca57aa26c7',1,'ofbx::IElementProperty']]],
+  ['framerate_5f100_1',['FrameRate_100',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9ab27afe68ea555d5f50253f65cdcaff7a',1,'ofbx']]],
+  ['framerate_5f1000_2',['FrameRate_1000',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a84892f9697ba444564b5db1958df1a78',1,'ofbx']]],
+  ['framerate_5f120_3',['FrameRate_120',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9add6e6cf020012583a3f3d1bb57e865d7',1,'ofbx']]],
+  ['framerate_5f30_4',['FrameRate_30',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a18389c67ff442a47a304e31dd493ae8d',1,'ofbx']]],
+  ['framerate_5f30_5fdrop_5',['FrameRate_30_DROP',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a3961e188c9a221266c7da2e80c4ea344',1,'ofbx']]],
+  ['framerate_5f48_6',['FrameRate_48',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a409d816a3d1c4c1f1871397357b1b693',1,'ofbx']]],
+  ['framerate_5f50_7',['FrameRate_50',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9af30e5cf668c524efb4ac2aa6a915639b',1,'ofbx']]],
+  ['framerate_5f60_8',['FrameRate_60',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9aff11d5a09f1f2dc2faa4e3f9baf07285',1,'ofbx']]],
+  ['framerate_5fcinema_9',['FrameRate_CINEMA',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a8fd92bab92b80d6650cd99fbe50d3bfe',1,'ofbx']]],
+  ['framerate_5fcinema_5fnd_10',['FrameRate_CINEMA_ND',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a35395d5f361f3e023f3da756b21954ee',1,'ofbx']]],
+  ['framerate_5fcustom_11',['FrameRate_CUSTOM',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a852d4eb6c6f8fc2481f2e3f3758c8b88',1,'ofbx']]],
+  ['framerate_5fdefault_12',['FrameRate_DEFAULT',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a5c2de230347d442dd4902f48fe85c774',1,'ofbx']]],
+  ['framerate_5fntsc_5fdrop_5fframe_13',['FrameRate_NTSC_DROP_FRAME',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a8dc85f88376c569b9b5a1af91a556def',1,'ofbx']]],
+  ['framerate_5fntsc_5ffull_5fframe_14',['FrameRate_NTSC_FULL_FRAME',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a2981948efba8186066c58845a00131c9',1,'ofbx']]],
+  ['framerate_5fpal_15',['FrameRate_PAL',['../namespaceofbx.html#a59f6112b2368f39ba74d84660704b4b9a04796e60d1ad50c274cd8a79264ab793',1,'ofbx']]],
+  ['frontside_16',['frontSide',['../structimgui_gizmo.html#a2ca44f28b5393e99e831a47aaebb9998ae077586e9b2f50b2ca670b835bbfa706',1,'imguiGizmo']]]
 ];

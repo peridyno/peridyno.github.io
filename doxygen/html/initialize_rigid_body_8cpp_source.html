@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classdyno_1_1_rigid_body_initializer.html#a2fe9863f16bcb6b3b4e6107fb0d58472">    7</a></span>    <a class="code hl_function" href="classdyno_1_1_rigid_body_initializer.html#a2fe9863f16bcb6b3b4e6107fb0d58472">RigidBodyInitializer::RigidBodyInitializer</a>()</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <a class="code hl_function" href="classdyno_1_1_rigid_body_initializer.html#afc2b6f4b63041efe831d209bd28c106e">initializeNodeCreators</a>();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        this-&gt;<a class="code hl_function" href="structdyno_1_1_plugin_entry.html#a26bb40479862096d2ea88cdf430d03dc">initialize</a>();</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    }</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classdyno_1_1_rigid_body_initializer.html#afc2b6f4b63041efe831d209bd28c106e">   12</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_rigid_body_initializer.html#afc2b6f4b63041efe831d209bd28c106e">RigidBodyInitializer::initializeNodeCreators</a>()</div>
@@ -108,14 +108,23 @@ $(function() {
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="namespace_rigid_body.html#a262542ae621d0b7fb586c59d39aa01f4">   40</a></span><a class="code hl_define" href="_platform_8h.html#a45736677116acd305e3264b1aa6c7f3c">PERIDYNO_API</a> <a class="code hl_struct" href="structdyno_1_1_plugin_entry.html">dyno::PluginEntry</a>* <a class="code hl_function" href="namespace_rigid_body.html#a262542ae621d0b7fb586c59d39aa01f4">RigidBody::initDynoPlugin</a>()</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="ttc" id="a_node_factory_8h_html"><div class="ttname"><a href="_node_factory_8h.html">NodeFactory.h</a></div></div>
+<div class="ttc" id="a_platform_8h_html_a45736677116acd305e3264b1aa6c7f3c"><div class="ttname"><a href="_platform_8h.html#a45736677116acd305e3264b1aa6c7f3c">PERIDYNO_API</a></div><div class="ttdeci">#define PERIDYNO_API</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00025">Platform.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_factory_html"><div class="ttname"><a href="classdyno_1_1_node_factory.html">dyno::NodeFactory</a></div><div class="ttdef"><b>Definition:</b> <a href="_node_factory_8h_source.html#l00097">NodeFactory.h:98</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_factory_html_a2af35245b77faa975d112f3cab41fd29"><div class="ttname"><a href="classdyno_1_1_node_factory.html#a2af35245b77faa975d112f3cab41fd29">dyno::NodeFactory::instance</a></div><div class="ttdeci">static NodeFactory * instance()</div><div class="ttdef"><b>Definition:</b> <a href="_node_factory_8cpp_source.html#l00009">NodeFactory.cpp:9</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_factory_html_a753bd5900b3c52301d13e7b2fc1fc0d5"><div class="ttname"><a href="classdyno_1_1_node_factory.html#a753bd5900b3c52301d13e7b2fc1fc0d5">dyno::NodeFactory::addPage</a></div><div class="ttdeci">std::shared_ptr&lt; NodePage &gt; addPage(std::string name, std::string icon)</div><div class="ttdef"><b>Definition:</b> <a href="_node_factory_8cpp_source.html#l00054">NodeFactory.cpp:54</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_rigid_body_initializer_html_a2fe9863f16bcb6b3b4e6107fb0d58472"><div class="ttname"><a href="classdyno_1_1_rigid_body_initializer.html#a2fe9863f16bcb6b3b4e6107fb0d58472">dyno::RigidBodyInitializer::RigidBodyInitializer</a></div><div class="ttdeci">RigidBodyInitializer()</div><div class="ttdef"><b>Definition:</b> <a href="initialize_rigid_body_8cpp_source.html#l00007">initializeRigidBody.cpp:7</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_rigid_body_initializer_html_afc2b6f4b63041efe831d209bd28c106e"><div class="ttname"><a href="classdyno_1_1_rigid_body_initializer.html#afc2b6f4b63041efe831d209bd28c106e">dyno::RigidBodyInitializer::initializeNodeCreators</a></div><div class="ttdeci">void initializeNodeCreators()</div><div class="ttdef"><b>Definition:</b> <a href="initialize_rigid_body_8cpp_source.html#l00012">initializeRigidBody.cpp:12</a></div></div>
 <div class="ttc" id="ainitialize_rigid_body_8h_html"><div class="ttname"><a href="initialize_rigid_body_8h.html">initializeRigidBody.h</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespace_rigid_body_html_a262542ae621d0b7fb586c59d39aa01f4"><div class="ttname"><a href="namespace_rigid_body.html#a262542ae621d0b7fb586c59d39aa01f4">RigidBody::initDynoPlugin</a></div><div class="ttdeci">PERIDYNO_API dyno::PluginEntry * initDynoPlugin()</div><div class="ttdef"><b>Definition:</b> <a href="initialize_rigid_body_8cpp_source.html#l00040">initializeRigidBody.cpp:40</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
+<div class="ttc" id="astructdyno_1_1_plugin_entry_html"><div class="ttname"><a href="structdyno_1_1_plugin_entry.html">dyno::PluginEntry</a></div><div class="ttdef"><b>Definition:</b> <a href="_plugin_entry_8h_source.html#l00013">PluginEntry.h:14</a></div></div>
+<div class="ttc" id="astructdyno_1_1_plugin_entry_html_a26bb40479862096d2ea88cdf430d03dc"><div class="ttname"><a href="structdyno_1_1_plugin_entry.html#a26bb40479862096d2ea88cdf430d03dc">dyno::PluginEntry::initialize</a></div><div class="ttdeci">bool initialize()</div><div class="ttdef"><b>Definition:</b> <a href="_plugin_entry_8cpp_source.html#l00041">PluginEntry.cpp:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

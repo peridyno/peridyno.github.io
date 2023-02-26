@@ -19,5 +19,6 @@ var searchData=
   ['fvar_16',['FVar',['../classdyno_1_1_f_var.html',1,'dyno']]],
   ['fvar_3c_20bool_20_3e_17',['FVar&lt; bool &gt;',['../classdyno_1_1_f_var.html',1,'dyno']]],
   ['fvar_3c_20int_20_3e_18',['FVar&lt; int &gt;',['../classdyno_1_1_f_var.html',1,'dyno']]],
-  ['fvar_3c_20real_20_3e_19',['FVar&lt; Real &gt;',['../classdyno_1_1_f_var.html',1,'dyno']]]
+  ['fvar_3c_20real_20_3e_19',['FVar&lt; Real &gt;',['../classdyno_1_1_f_var.html',1,'dyno']]],
+  ['fxaa_20',['FXAA',['../classdyno_1_1_f_x_a_a.html',1,'dyno']]]
 ];

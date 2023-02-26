@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -72,30 +72,180 @@ $(function() {
 <div class="contents">
 <a href="_sphere_model_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_sphere_model_8h.html">SphereModel.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classdyno_1_1_sphere_model.html#a483f6ef9419d31e9f9c394299dc17079">    6</a></span>    <a class="code hl_function" href="classdyno_1_1_sphere_model.html#a483f6ef9419d31e9f9c394299dc17079">SphereModel&lt;TDataType&gt;::SphereModel</a>()</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        : <a class="code hl_class" href="classdyno_1_1_parametric_model.html">ParametricModel</a>&lt;TDataType&gt;()</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    }</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classdyno_1_1_sphere_model.html#a885db9f8ebe0abd74a861e73cd8aca07">   13</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_sphere_model.html#a885db9f8ebe0abd74a861e73cd8aca07">SphereModel&lt;TDataType&gt;::resetStates</a>()</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_g_l_surface_visual_module_8h.html">GLSurfaceVisualModule.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_g_l_wireframe_visual_module_8h.html">GLWireframeVisualModule.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classdyno_1_1_sphere_model.html#a483f6ef9419d31e9f9c394299dc17079">   11</a></span>    <a class="code hl_function" href="classdyno_1_1_sphere_model.html#a483f6ef9419d31e9f9c394299dc17079">SphereModel&lt;TDataType&gt;::SphereModel</a>()</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        : <a class="code hl_class" href="classdyno_1_1_parametric_model.html">ParametricModel</a>&lt;TDataType&gt;()</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        this-&gt;varRadius()-&gt;setRange(0.001f, 10.0f);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        this-&gt;varTheta()-&gt;setRange(0.001f, 1.5f);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespacedyno.html#add89346df2d15caca655e2c803a94002">   18</a></span>    <a class="code hl_function" href="namespacedyno.html#a96ac3770273490437e2b8cced291b1a0">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_sphere_model.html">SphereModel</a>);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        this-&gt;stateTriangleSet()-&gt;setDataPtr(std::make_shared&lt;<a class="code hl_class" href="classdyno_1_1_triangle_set.html">TriangleSet&lt;TDataType&gt;</a>&gt;());</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <a class="code hl_variable" href="classdyno_1_1_sphere_model.html#a80734d99e6cebc3fca87c9d92f307c3f">glModule</a> = std::make_shared&lt;GLSurfaceVisualModule&gt;();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_variable" href="classdyno_1_1_sphere_model.html#a80734d99e6cebc3fca87c9d92f307c3f">glModule</a>-&gt;setColor(<a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(0.8, 0.52, 0.25));</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_variable" href="classdyno_1_1_sphere_model.html#a80734d99e6cebc3fca87c9d92f307c3f">glModule</a>-&gt;setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        this-&gt;stateTriangleSet()-&gt;connect(<a class="code hl_variable" href="classdyno_1_1_sphere_model.html#a80734d99e6cebc3fca87c9d92f307c3f">glModule</a>-&gt;inTriangleSet());</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(<a class="code hl_variable" href="classdyno_1_1_sphere_model.html#a80734d99e6cebc3fca87c9d92f307c3f">glModule</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">auto</span> wireframe = std::make_shared&lt;GLWireframeVisualModule&gt;();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        this-&gt;stateTriangleSet()-&gt;connect(wireframe-&gt;inEdgeSet());</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(wireframe);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classdyno_1_1_sphere_model.html#a885db9f8ebe0abd74a861e73cd8aca07">   37</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_sphere_model.html#a885db9f8ebe0abd74a861e73cd8aca07">SphereModel&lt;TDataType&gt;::resetStates</a>()</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">auto</span> center = this-&gt;varLocation()-&gt;getData();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">auto</span> rot = this-&gt;varRotation()-&gt;getData();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">auto</span> <a class="code hl_function" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784">scale</a> = this-&gt;varScale()-&gt;getData();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">auto</span> radius = this-&gt;varRadius()-&gt;getData();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">auto</span> theta = this-&gt;varTheta()-&gt;getData();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        radius *= (<a class="code hl_function" href="namespacedyno.html#ac2d9bbc99f7fd7afbe6b0889eff86281">sqrt</a>(<a class="code hl_function" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784">scale</a>[0]* <a class="code hl_function" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784">scale</a>[0] + <a class="code hl_function" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784">scale</a>[1]* <a class="code hl_function" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784">scale</a>[1] + <a class="code hl_function" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784">scale</a>[2]* <a class="code hl_function" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784">scale</a>[2]));</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_class" href="classdyno_1_1_t_sphere3_d.html">TSphere3D&lt;Real&gt;</a> ball;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        ball.<a class="code hl_variable" href="classdyno_1_1_t_sphere3_d.html#aa5947534063e033b250ffe5fd78c8d12">center</a> = center;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        ball.<a class="code hl_variable" href="classdyno_1_1_t_sphere3_d.html#a96642e143e502b05ba09dda627574ad6">radius</a> = radius;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        this-&gt;outSphere()-&gt;setValue(ball);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">auto</span> triangleSet = this-&gt;stateTriangleSet()-&gt;getDataPtr();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_typedef" href="classdyno_1_1_parametric_model.html#aa196fe1e969b8ff61b92b686827ae895">Real</a> PI = 3.1415926535;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        std::vector&lt;Coord&gt; vertices;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        std::vector&lt;TopologyModule::Triangle&gt; triangle;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_typedef" href="classdyno_1_1_parametric_model.html#a3ba346c72b521c47baa0377f87514ab5">Coord</a> point(0.0f);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">for</span> (<span class="keywordtype">float</span> d_alpha = -PI/2 + theta/2; d_alpha &lt; PI/2; d_alpha += theta )</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            point[1] = center[1] + radius * <a class="code hl_function" href="namespacedyno.html#a45d70d118bacb800d4011955d52c6d21">sin</a>(d_alpha);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="comment">//std::cout &lt;&lt; &quot;theta &quot; &lt;&lt; da &lt;&lt; std::endl;</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">for</span> (<span class="keywordtype">float</span> d_beta = 0.0f; d_beta &lt; 2 * PI; d_beta += theta )</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                point[0] = center[0] + (<a class="code hl_function" href="namespacedyno.html#a7fffe8a3dc13634202a34f0a8eaadeed">cos</a>(d_alpha) * radius) * <a class="code hl_function" href="namespacedyno.html#a45d70d118bacb800d4011955d52c6d21">sin</a>(d_beta);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                point[2] = center[2] + (<a class="code hl_function" href="namespacedyno.html#a7fffe8a3dc13634202a34f0a8eaadeed">cos</a>(d_alpha) * radius) * <a class="code hl_function" href="namespacedyno.html#a7fffe8a3dc13634202a34f0a8eaadeed">cos</a>(d_beta);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                vertices.push_back(point);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        vertices.push_back(<a class="code hl_typedef" href="classdyno_1_1_parametric_model.html#a3ba346c72b521c47baa0377f87514ab5">Coord</a>(center[0], -radius + center[1], center[2]));</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        vertices.push_back(<a class="code hl_typedef" href="classdyno_1_1_parametric_model.html#a3ba346c72b521c47baa0377f87514ab5">Coord</a>(center[0], radius + center[1], center[2]));</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordtype">int</span> face_id = 0;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">for</span> (<span class="keywordtype">float</span> d_alpha = -PI / 2 + theta/2; d_alpha &lt; PI / 2; d_alpha += theta)</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">for</span> (<span class="keywordtype">float</span> d_beta = 0.0f; d_beta &lt; 2 * PI; d_beta += theta)</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">if</span> ((d_beta + theta - 2 * PI &lt; <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>)&amp;&amp;(d_alpha + theta &lt; PI / 2))</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                    <span class="keywordtype">int</span> cd = 2 * PI / theta;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                    triangle.push_back(<a class="code hl_class" href="classdyno_1_1_vector_n_d.html">TopologyModule::Triangle</a>(face_id, face_id+1, face_id + cd + 1));</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span>((d_beta + theta - 2 * PI &gt;= <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>) &amp;&amp; (d_alpha + theta &lt; PI / 2))</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    <span class="keywordtype">int</span> cd = 2 * PI / theta;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    triangle.push_back(<a class="code hl_class" href="classdyno_1_1_vector_n_d.html">TopologyModule::Triangle</a>(face_id, face_id - cd , face_id + cd + 1));</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((d_beta + theta - 2 * PI &lt; <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>) &amp;&amp; (d_alpha + theta &gt;= PI / 2))</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    triangle.push_back(<a class="code hl_class" href="classdyno_1_1_vector_n_d.html">TopologyModule::Triangle</a>(face_id, face_id + 1, vertices.size() - 1));</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((d_beta + theta - 2 * PI &gt;= <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>) &amp;&amp; (d_alpha + theta &gt;= PI / 2))</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                    <span class="keywordtype">int</span> cd = 2 * PI / theta;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    triangle.push_back(<a class="code hl_class" href="classdyno_1_1_vector_n_d.html">TopologyModule::Triangle</a>(face_id, face_id - cd, vertices.size() - 1));</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                }</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                <span class="keywordflow">if</span> ((d_beta + theta - 2 * PI &lt; <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>) &amp;&amp; (d_alpha - theta + PI / 2 &gt; <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a> ))</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    <span class="keywordtype">int</span> cd = 2 * PI / theta;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    triangle.push_back(<a class="code hl_class" href="classdyno_1_1_vector_n_d.html">TopologyModule::Triangle</a>(face_id, face_id - cd, face_id + 1));</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((d_beta + theta - 2 * PI &gt; <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>) &amp;&amp; (d_alpha - theta + PI / 2 &gt; <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>))</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                    <span class="keywordtype">int</span> cd = 2 * PI / theta;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    triangle.push_back(<a class="code hl_class" href="classdyno_1_1_vector_n_d.html">TopologyModule::Triangle</a>(face_id, face_id - 2 * cd - 1, face_id - cd));</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((d_beta + theta - 2 * PI &lt; <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>) &amp;&amp; (d_alpha - theta + PI / 2 &lt; <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>))</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                    triangle.push_back(<a class="code hl_class" href="classdyno_1_1_vector_n_d.html">TopologyModule::Triangle</a>(face_id, vertices.size() - 2, face_id + 1));</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>                }</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((d_beta + theta - 2 * PI &gt;= <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>) &amp;&amp; (d_alpha - theta + PI / 2 &lt; <a class="code hl_variable" href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">EPSILON</a>))</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                    <span class="keywordtype">int</span> cd = 2 * PI / theta;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                    triangle.push_back(<a class="code hl_class" href="classdyno_1_1_vector_n_d.html">TopologyModule::Triangle</a>(face_id, vertices.size() - 2, face_id - cd));</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                }</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                face_id++;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        triangleSet-&gt;setPoints(vertices);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        triangleSet-&gt;setTriangles(triangle);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        triangleSet-&gt;update();</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        vertices.clear();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        triangle.clear();</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classdyno_1_1_sphere_model.html#aa9e7084f5d9ebb54c4450123e5747428">  146</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_sphere_model.html#aa9e7084f5d9ebb54c4450123e5747428">SphereModel&lt;TDataType&gt;::disableRender</a>() {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        glModule-&gt;setVisible(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    };</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="namespacedyno.html#add89346df2d15caca655e2c803a94002">  150</a></span>    <a class="code hl_function" href="namespacedyno.html#a96ac3770273490437e2b8cced291b1a0">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_sphere_model.html">SphereModel</a>);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
+<div class="ttc" id="a_g_l_surface_visual_module_8h_html"><div class="ttname"><a href="_g_l_surface_visual_module_8h.html">GLSurfaceVisualModule.h</a></div></div>
+<div class="ttc" id="a_g_l_wireframe_visual_module_8h_html"><div class="ttname"><a href="_g_l_wireframe_visual_module_8h.html">GLWireframeVisualModule.h</a></div></div>
 <div class="ttc" id="a_sphere_model_8h_html"><div class="ttname"><a href="_sphere_model_8h.html">SphereModel.h</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition:</b> <a href="_node_8cpp_source.html#l00240">Node.cpp:240</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_parametric_model_html"><div class="ttname"><a href="classdyno_1_1_parametric_model.html">dyno::ParametricModel</a></div><div class="ttdef"><b>Definition:</b> <a href="_parametric_model_8h_source.html#l00028">ParametricModel.h:29</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_sphere_model_html"><div class="ttname"><a href="classdyno_1_1_sphere_model.html">dyno::SphereModel</a></div><div class="ttdef"><b>Definition:</b> <a href="_sphere_model_8h_source.html#l00023">SphereModel.h:24</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_sphere_model_html_a483f6ef9419d31e9f9c394299dc17079"><div class="ttname"><a href="classdyno_1_1_sphere_model.html#a483f6ef9419d31e9f9c394299dc17079">dyno::SphereModel::SphereModel</a></div><div class="ttdeci">SphereModel()</div><div class="ttdef"><b>Definition:</b> <a href="_sphere_model_8cpp_source.html#l00006">SphereModel.cpp:6</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_sphere_model_html_a885db9f8ebe0abd74a861e73cd8aca07"><div class="ttname"><a href="classdyno_1_1_sphere_model.html#a885db9f8ebe0abd74a861e73cd8aca07">dyno::SphereModel::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition:</b> <a href="_sphere_model_8cpp_source.html#l00013">SphereModel.cpp:13</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_parametric_model_html_a3ba346c72b521c47baa0377f87514ab5"><div class="ttname"><a href="classdyno_1_1_parametric_model.html#a3ba346c72b521c47baa0377f87514ab5">dyno::ParametricModel::Coord</a></div><div class="ttdeci">TDataType::Coord Coord</div><div class="ttdef"><b>Definition:</b> <a href="_parametric_model_8h_source.html#l00032">ParametricModel.h:32</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_parametric_model_html_aa196fe1e969b8ff61b92b686827ae895"><div class="ttname"><a href="classdyno_1_1_parametric_model.html#aa196fe1e969b8ff61b92b686827ae895">dyno::ParametricModel::Real</a></div><div class="ttdeci">TDataType::Real Real</div><div class="ttdef"><b>Definition:</b> <a href="_parametric_model_8h_source.html#l00031">ParametricModel.h:31</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_sphere_model_html"><div class="ttname"><a href="classdyno_1_1_sphere_model.html">dyno::SphereModel</a></div><div class="ttdef"><b>Definition:</b> <a href="_sphere_model_8h_source.html#l00025">SphereModel.h:26</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_sphere_model_html_a483f6ef9419d31e9f9c394299dc17079"><div class="ttname"><a href="classdyno_1_1_sphere_model.html#a483f6ef9419d31e9f9c394299dc17079">dyno::SphereModel::SphereModel</a></div><div class="ttdeci">SphereModel()</div><div class="ttdef"><b>Definition:</b> <a href="_sphere_model_8cpp_source.html#l00011">SphereModel.cpp:11</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_sphere_model_html_a80734d99e6cebc3fca87c9d92f307c3f"><div class="ttname"><a href="classdyno_1_1_sphere_model.html#a80734d99e6cebc3fca87c9d92f307c3f">dyno::SphereModel::glModule</a></div><div class="ttdeci">std::shared_ptr&lt; GLSurfaceVisualModule &gt; glModule</div><div class="ttdef"><b>Definition:</b> <a href="_sphere_model_8h_source.html#l00053">SphereModel.h:53</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_sphere_model_html_a885db9f8ebe0abd74a861e73cd8aca07"><div class="ttname"><a href="classdyno_1_1_sphere_model.html#a885db9f8ebe0abd74a861e73cd8aca07">dyno::SphereModel::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition:</b> <a href="_sphere_model_8cpp_source.html#l00037">SphereModel.cpp:37</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_sphere_model_html_aa9e7084f5d9ebb54c4450123e5747428"><div class="ttname"><a href="classdyno_1_1_sphere_model.html#aa9e7084f5d9ebb54c4450123e5747428">dyno::SphereModel::disableRender</a></div><div class="ttdeci">void disableRender()</div><div class="ttdef"><b>Definition:</b> <a href="_sphere_model_8cpp_source.html#l00146">SphereModel.cpp:146</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_sphere3_d_html"><div class="ttname"><a href="classdyno_1_1_t_sphere3_d.html">dyno::TSphere3D</a></div><div class="ttdoc">3D geometric primitives in three-dimensional space</div><div class="ttdef"><b>Definition:</b> <a href="_primitive3_d_8h_source.html#l00514">Primitive3D.h:515</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_sphere3_d_html_a96642e143e502b05ba09dda627574ad6"><div class="ttname"><a href="classdyno_1_1_t_sphere3_d.html#a96642e143e502b05ba09dda627574ad6">dyno::TSphere3D::radius</a></div><div class="ttdeci">Real radius</div><div class="ttdef"><b>Definition:</b> <a href="_primitive3_d_8h_source.html#l00527">Primitive3D.h:527</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_sphere3_d_html_aa5947534063e033b250ffe5fd78c8d12"><div class="ttname"><a href="classdyno_1_1_t_sphere3_d.html#aa5947534063e033b250ffe5fd78c8d12">dyno::TSphere3D::center</a></div><div class="ttdeci">Coord3D center</div><div class="ttdef"><b>Definition:</b> <a href="_primitive3_d_8h_source.html#l00528">Primitive3D.h:528</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_triangle_set_html"><div class="ttname"><a href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a></div><div class="ttdef"><b>Definition:</b> <a href="_triangle_set_8h_source.html#l00082">TriangleSet.h:83</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_vector_n_d_html"><div class="ttname"><a href="classdyno_1_1_vector_n_d.html">dyno::VectorND</a></div><div class="ttdef"><b>Definition:</b> <a href="_vector_n_d_8h_source.html#l00013">VectorND.h:14</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a45d70d118bacb800d4011955d52c6d21"><div class="ttname"><a href="namespacedyno.html#a45d70d118bacb800d4011955d52c6d21">dyno::sin</a></div><div class="ttdeci">DYN_FUNC Complex&lt; Real &gt; sin(const Complex&lt; Real &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_complex_8inl_source.html#l00563">Complex.inl:563</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a7b21bd812ef4fe77fa0715edc2c73818"><div class="ttname"><a href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">dyno::EPSILON</a></div><div class="ttdeci">constexpr Real EPSILON</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00035">Typedef.inl:35</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a7fffe8a3dc13634202a34f0a8eaadeed"><div class="ttname"><a href="namespacedyno.html#a7fffe8a3dc13634202a34f0a8eaadeed">dyno::cos</a></div><div class="ttdeci">DYN_FUNC Complex&lt; Real &gt; cos(const Complex&lt; Real &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_complex_8inl_source.html#l00572">Complex.inl:572</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a96ac3770273490437e2b8cced291b1a0"><div class="ttname"><a href="namespacedyno.html#a96ac3770273490437e2b8cced291b1a0">dyno::DEFINE_CLASS</a></div><div class="ttdeci">DEFINE_CLASS(CircularEmitter)</div></div>
+<div class="ttc" id="anamespacedyno_html_aafa7daf71ffcc74fd4e59d36d51ff01f"><div class="ttname"><a href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">dyno::Vec3f</a></div><div class="ttdeci">Vector&lt; float, 3 &gt; Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="_vector3_d_8h_source.html#l00088">Vector3D.h:88</a></div></div>
+<div class="ttc" id="anamespacedyno_html_ac2d9bbc99f7fd7afbe6b0889eff86281"><div class="ttname"><a href="namespacedyno.html#ac2d9bbc99f7fd7afbe6b0889eff86281">dyno::sqrt</a></div><div class="ttdeci">DYN_FUNC Complex&lt; Real &gt; sqrt(const Complex&lt; Real &gt; &amp;)</div><div class="ttdef"><b>Definition:</b> <a href="_complex_8inl_source.html#l00320">Complex.inl:320</a></div></div>
+<div class="ttc" id="anamespacevgm_html_a6b7aeec984389d14bcfbae8078c31784"><div class="ttname"><a href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784">vgm::scale</a></div><div class="ttdeci">TEMPLATE_TYPENAME_T MAT4_T scale(MAT4_T const &amp;m, VEC3_T const &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="vg_math_8h_source.html#l00506">vgMath.h:506</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -6,5 +6,6 @@ var searchData=
   ['weightrr_3',['WeightRR',['../classdyno_1_1_corrected_kernel.html#aeaa2261782b156b1606f8fd7439c2e6d',1,'dyno::CorrectedKernel']]],
   ['wheel_4',['wheel',['../classvg_1_1virtual_gizmo3_d_class.html#ac168045067fb9e2a4f59be235710b9ff',1,'vg::virtualGizmo3DClass']]],
   ['wheelevent_5',['wheelEvent',['../classdyno_1_1_p_open_g_l_widget.html#afe314e3bdd16cb1176728d5627c6226c',1,'dyno::POpenGLWidget::wheelEvent()'],['../classdyno_1_1m_double_spin_box.html#a695888adbfe303ed62a639a50f8e2497',1,'dyno::mDoubleSpinBox::wheelEvent()']]],
-  ['width_6',['width',['../classdyno_1_1_height_field.html#a17e72d2f2a8867641fc870d3c7d76c58',1,'dyno::HeightField::width()'],['../classdyno_1_1_image.html#a218db27110c4538c072b43d65a7ec3f7',1,'dyno::Image::width()']]]
+  ['width_6',['width',['../classdyno_1_1_height_field.html#a17e72d2f2a8867641fc870d3c7d76c58',1,'dyno::HeightField::width()'],['../classdyno_1_1_image.html#a218db27110c4538c072b43d65a7ec3f7',1,'dyno::Image::width()']]],
+  ['worldtopos_7',['worldToPos',['../namespace_im_guizmo.html#abb3202afd314281c19295b1ba03f9665',1,'ImGuizmo']]]
 ];

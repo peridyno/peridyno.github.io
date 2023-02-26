@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -68,6 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">DeclareEnum.cpp File Reference</div></div>
 </div><!--header-->
@@ -90,6 +91,11 @@ Include dependency graph for DeclareEnum.cpp:</div>
 </div>
 <p><a href="_declare_enum_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a2b101eb2f99494fdb580b18956cc00ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_declare_enum_8cpp.html#a2b101eb2f99494fdb580b18956cc00ff">DEF_ENUM</a>(enum_type,  enum_name,  enum_value,  desc)</td></tr>
+<tr class="separator:a2b101eb2f99494fdb580b18956cc00ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa4566f9116ad9e7c58db648b822bac58"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_declare_enum_8cpp.html#aa4566f9116ad9e7c58db648b822bac58">earse_spacing</a> (const std::string &amp;str)</td></tr>
@@ -97,6 +103,53 @@ Functions</h2></td></tr>
 <tr class="memitem:aa6d8532ec926f4a185bb74b1112aa22e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_declare_enum_8cpp.html#aa6d8532ec926f4a185bb74b1112aa22e">parse_enum_string</a> (const std::string &amp;enum_str, <a class="el" href="_declare_enum_8h.html#a7e0bf3e2120a48394de8d3a46cad4bbb">EnumMap</a> &amp;enumKeyValueList)</td></tr>
 <tr class="separator:aa6d8532ec926f4a185bb74b1112aa22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a2b101eb2f99494fdb580b18956cc00ff" name="a2b101eb2f99494fdb580b18956cc00ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b101eb2f99494fdb580b18956cc00ff">&#9670;&nbsp;</a></span>DEF_ENUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEF_ENUM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">enum_type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">enum_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">enum_value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">desc&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:                                    \</div>
+<div class="line">    FVar&lt;PEnum&gt; var_##enum_name = FVar&lt;PEnum&gt;(<a class="code hl_class" href="class_p_enum.html">PEnum</a>(#enum_type, enum_value, full_name_##enum_type), std::string(#enum_name), desc, <a class="code hl_enumvalue" href="namespacedyno.html#ac3362376850a026da08e48efc8032048ab3fb6e8fce2ae4dd9753e6992aaa51e0">FieldTypeEnum::Param</a>, <span class="keyword">this</span>);         \</div>
+<div class="line">public:                                     \</div>
+<div class="line">    inline FVar&lt;PEnum&gt;* var##enum_name() {<span class="keywordflow">return</span> &amp;var_##enum_name;}</div>
+<div class="ttc" id="aclass_p_enum_html"><div class="ttname"><a href="class_p_enum.html">PEnum</a></div><div class="ttdef"><b>Definition:</b> <a href="_declare_enum_8h_source.html#l00032">DeclareEnum.h:33</a></div></div>
+<div class="ttc" id="anamespacedyno_html_ac3362376850a026da08e48efc8032048ab3fb6e8fce2ae4dd9753e6992aaa51e0"><div class="ttname"><a href="namespacedyno.html#ac3362376850a026da08e48efc8032048ab3fb6e8fce2ae4dd9753e6992aaa51e0">dyno::Param</a></div><div class="ttdeci">@ Param</div><div class="ttdef"><b>Definition:</b> <a href="_f_base_8h_source.html#l00034">FBase.h:34</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aa4566f9116ad9e7c58db648b822bac58" name="aa4566f9116ad9e7c58db648b822bac58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4566f9116ad9e7c58db648b822bac58">&#9670;&nbsp;</a></span>earse_spacing()</h2>

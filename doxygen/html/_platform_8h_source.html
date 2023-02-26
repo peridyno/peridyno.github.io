@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -71,9 +71,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="_platform_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="_platform_8h.html#afcca4bdec38092e934786f049f599881">    2</a></span><span class="preprocessor">#define PERIDYNO_VERSION 0.6.1</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="_platform_8h.html#afcca4bdec38092e934786f049f599881">    2</a></span><span class="preprocessor">#define PERIDYNO_VERSION 0.7.1</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="_platform_8h.html#ad7aabf26de701ac9abfb472b1b69390e">    3</a></span><span class="preprocessor">#define PERIDYNO_VERSION_MAJOR 0</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="_platform_8h.html#aa0edba63cd9878824a2747d7b1788ab6">    4</a></span><span class="preprocessor">#define PERIDYNO_VERSION_MINOR 6</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="_platform_8h.html#aa0edba63cd9878824a2747d7b1788ab6">    4</a></span><span class="preprocessor">#define PERIDYNO_VERSION_MINOR 7</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="_platform_8h.html#a6973030b0fc53ab71a6c62015e57cfff">    5</a></span><span class="preprocessor">#define PERIDYNO_VERSION_PATCH 1</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
@@ -84,17 +84,17 @@ $(function() {
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#if ((defined _WIN32) || (defined(__MINGW32__) || defined(__CYGWIN__))) &amp;&amp; defined(PERIDYNO_DLL)</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define PERIDYNO_EXPORT __declspec(dllexport)</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define PERIDYNO_IMPORT __declspec(dllimport)</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define PERIDYNO_EXPORT extern &quot;C&quot;</span> __declspec(dllexport)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#define PERIDYNO_IMPORT extern &quot;C&quot;</span> __declspec(dllimport)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_platform_8h.html#a6d08f15b80ca5f1ded7f374a172f7d4e">   18</a></span><span class="preprocessor">#define PERIDYNO_EXPORT</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_platform_8h.html#ad4dbb2bf287c5a742ebaa61a076c30bb">   19</a></span><span class="preprocessor">#define PERIDYNO_IMPORT</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#if defined(PERIDYNO_API_COMPILE)</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define PERIDYNOApi PERIDYNO_EXPORT</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#if defined(PERIDYNO_API_EXPORTS)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define PERIDYNO_API PERIDYNO_EXPORT</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_platform_8h.html#a06ce7786f086dc2cfc6c0c80c3c6284f">   25</a></span><span class="preprocessor">#define PERIDYNOAPI PERIDYNO_IMPORT</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_platform_8h.html#a45736677116acd305e3264b1aa6c7f3c">   25</a></span><span class="preprocessor">#define PERIDYNO_API PERIDYNO_IMPORT</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_platform_8h.html#aff10af48eed853e6dbfa3f636bb56a6d">   28</a></span><span class="preprocessor">#define PERIDYNO_COMPILER_CUDA</span></div>
@@ -124,8 +124,13 @@ $(function() {
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> <span class="stringliteral">&quot;E:/Peridyno/peridyno/data/&quot;</span>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">//#define SIMULATION2D</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="_platform_8h.html#a5313c951919bee26fae948a1bbced5a3">   55</a></span><span class="keyword">const</span> <span class="keyword">inline</span> std::string <a class="code hl_function" href="_platform_8h.html#a5313c951919bee26fae948a1bbced5a3">getPluginPath</a>() {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">return</span> <span class="stringliteral">&quot;E:/Peridyno/build-peridyno-master/plugin/&quot;</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">//#define SIMULATION2D</span></div>
 <div class="ttc" id="a_platform_8h_html_a44f975ef0e37b97956e79735c2532420"><div class="ttname"><a href="_platform_8h.html#a44f975ef0e37b97956e79735c2532420">getAssetPath</a></div><div class="ttdeci">const std::string getAssetPath()</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00051">Platform.h:51</a></div></div>
+<div class="ttc" id="a_platform_8h_html_a5313c951919bee26fae948a1bbced5a3"><div class="ttname"><a href="_platform_8h.html#a5313c951919bee26fae948a1bbced5a3">getPluginPath</a></div><div class="ttdeci">const std::string getPluginPath()</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00055">Platform.h:55</a></div></div>
 <div class="ttc" id="a_platform_8h_html_ad258d4c51629346fceac4679b3209ad9"><div class="ttname"><a href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9">DeviceType</a></div><div class="ttdeci">DeviceType</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00041">Platform.h:42</a></div></div>
 <div class="ttc" id="a_platform_8h_html_ad258d4c51629346fceac4679b3209ad9a0035eb0600d18dfc302f6bf7a7cbfa3b"><div class="ttname"><a href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a0035eb0600d18dfc302f6bf7a7cbfa3b">CPU</a></div><div class="ttdeci">@ CPU</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00043">Platform.h:43</a></div></div>
 <div class="ttc" id="a_platform_8h_html_ad258d4c51629346fceac4679b3209ad9a605159e8a4c32319fd69b5d151369d93"><div class="ttname"><a href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a605159e8a4c32319fd69b5d151369d93">UNDEFINED</a></div><div class="ttdeci">@ UNDEFINED</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00046">Platform.h:45</a></div></div>

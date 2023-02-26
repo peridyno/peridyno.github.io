@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -99,55 +99,52 @@ $(function() {
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="comment">//return the index of the first element that is equel to or biger than val</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#a13503254d36f5062cd4b87b4651bcfad">   28</a></span>        <span class="keywordtype">int</span> t = <a class="code hl_function" href="namespacedyno.html#a473693c76505259e7bba01558e6303f0">leftBound</a>(pair, m_pairs, m_size);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="comment">//if the element is equel to the val, return the sum of the old element and the new element</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="comment">//if the key is equel, do not insert</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">if</span> (m_pairs[t] == pair)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            m_pairs[t].second += pair.<a class="code hl_variable" href="classdyno_1_1_pair.html#a13b2b06310d0a25b929cbab0f8db1acc">second</a>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#a30ed559a51cbb543b74fece5fc4683fd">   34</a></span>            <span class="keywordflow">return</span> m_pairs + t;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#ab7bf641a641c33190f06e610cc1af1af">   36</a></span>        <span class="comment">//insert val to t location</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = m_size; j &gt; t; j--)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#a7a9f57bdb3e8f31323981e52b15f0b57">   38</a></span>        {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#aa358ed46825e5652829a7a35449681cd">   39</a></span>            m_pairs[j] = m_pairs[j - 1];</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        m_pairs[t] = pair;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        m_size++;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> m_pairs + t;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> MKey, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#a30ed559a51cbb543b74fece5fc4683fd">   48</a></span>    <a class="code hl_define" href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a> <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_map.html#a30ed559a51cbb543b74fece5fc4683fd">Map&lt;MKey, T&gt;::clear</a>()</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        m_size = 0;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> MKey, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#ab7bf641a641c33190f06e610cc1af1af">   54</a></span>    <a class="code hl_define" href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a> <span class="keywordtype">int</span> <a class="code hl_function" href="classdyno_1_1_map.html#ab7bf641a641c33190f06e610cc1af1af">Map&lt;MKey, T&gt;::size</a>()</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> m_size;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> MKey, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#aa358ed46825e5652829a7a35449681cd">   60</a></span>    <a class="code hl_define" href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="classdyno_1_1_map.html#aa358ed46825e5652829a7a35449681cd">Map&lt;MKey, T&gt;::empty</a>()</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">return</span> m_pairs == <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keywordflow">return</span> m_pairs + t;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#a30ed559a51cbb543b74fece5fc4683fd">   34</a></span>        <span class="comment">//insert val to t location</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = m_size; j &gt; t; j--)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#ab7bf641a641c33190f06e610cc1af1af">   36</a></span>        {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            m_pairs[j] = m_pairs[j - 1];</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#a7a9f57bdb3e8f31323981e52b15f0b57">   38</a></span>        }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#aa358ed46825e5652829a7a35449681cd">   39</a></span>        m_pairs[t] = pair;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        m_size++;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> m_pairs + t;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> MKey, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#a30ed559a51cbb543b74fece5fc4683fd">   46</a></span>    <a class="code hl_define" href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a> <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_map.html#a30ed559a51cbb543b74fece5fc4683fd">Map&lt;MKey, T&gt;::clear</a>()</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        m_size = 0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> MKey, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#ab7bf641a641c33190f06e610cc1af1af">   52</a></span>    <a class="code hl_define" href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a> <span class="keywordtype">int</span> <a class="code hl_function" href="classdyno_1_1_map.html#ab7bf641a641c33190f06e610cc1af1af">Map&lt;MKey, T&gt;::size</a>()</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">return</span> m_size;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> MKey, <span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classdyno_1_1_map.html#aa358ed46825e5652829a7a35449681cd">   58</a></span>    <a class="code hl_define" href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="classdyno_1_1_map.html#aa358ed46825e5652829a7a35449681cd">Map&lt;MKey, T&gt;::empty</a>()</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> m_pairs == <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="ttc" id="a_platform_8h_html_a133889cc03b0aa09fcc78ce53778f454"><div class="ttname"><a href="_platform_8h.html#a133889cc03b0aa09fcc78ce53778f454">DYN_FUNC</a></div><div class="ttdeci">#define DYN_FUNC</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00032">Platform.h:32</a></div></div>
 <div class="ttc" id="a_s_t_l_macro_8h_html"><div class="ttname"><a href="_s_t_l_macro_8h.html">STLMacro.h</a></div></div>
 <div class="ttc" id="a_simple_math_8h_html"><div class="ttname"><a href="_simple_math_8h.html">SimpleMath.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_map_html_a13503254d36f5062cd4b87b4651bcfad"><div class="ttname"><a href="classdyno_1_1_map.html#a13503254d36f5062cd4b87b4651bcfad">dyno::Map::find</a></div><div class="ttdeci">DYN_FUNC iterator find(MKey key)</div><div class="ttdef"><b>Definition:</b> <a href="_map_8inl_source.html#l00014">Map.inl:14</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_map_html_a30ed559a51cbb543b74fece5fc4683fd"><div class="ttname"><a href="classdyno_1_1_map.html#a30ed559a51cbb543b74fece5fc4683fd">dyno::Map::clear</a></div><div class="ttdeci">DYN_FUNC void clear()</div><div class="ttdef"><b>Definition:</b> <a href="_map_8inl_source.html#l00048">Map.inl:48</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_map_html_a30ed559a51cbb543b74fece5fc4683fd"><div class="ttname"><a href="classdyno_1_1_map.html#a30ed559a51cbb543b74fece5fc4683fd">dyno::Map::clear</a></div><div class="ttdeci">DYN_FUNC void clear()</div><div class="ttdef"><b>Definition:</b> <a href="_map_8inl_source.html#l00046">Map.inl:46</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_map_html_a402d54cdf30f5f11ca6bc4c6e6b469ec"><div class="ttname"><a href="classdyno_1_1_map.html#a402d54cdf30f5f11ca6bc4c6e6b469ec">dyno::Map::Map</a></div><div class="ttdeci">DYN_FUNC Map()</div><div class="ttdef"><b>Definition:</b> <a href="_map_8inl_source.html#l00009">Map.inl:9</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_map_html_a7a9f57bdb3e8f31323981e52b15f0b57"><div class="ttname"><a href="classdyno_1_1_map.html#a7a9f57bdb3e8f31323981e52b15f0b57">dyno::Map::insert</a></div><div class="ttdeci">DYN_FUNC iterator insert(Pair&lt; MKey, T &gt; pair)</div><div class="ttdef"><b>Definition:</b> <a href="_map_8inl_source.html#l00022">Map.inl:22</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_map_html_aa358ed46825e5652829a7a35449681cd"><div class="ttname"><a href="classdyno_1_1_map.html#aa358ed46825e5652829a7a35449681cd">dyno::Map::empty</a></div><div class="ttdeci">DYN_FUNC bool empty()</div><div class="ttdef"><b>Definition:</b> <a href="_map_8inl_source.html#l00060">Map.inl:60</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_map_html_ab7bf641a641c33190f06e610cc1af1af"><div class="ttname"><a href="classdyno_1_1_map.html#ab7bf641a641c33190f06e610cc1af1af">dyno::Map::size</a></div><div class="ttdeci">DYN_FUNC int size()</div><div class="ttdef"><b>Definition:</b> <a href="_map_8inl_source.html#l00054">Map.inl:54</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_map_html_aa358ed46825e5652829a7a35449681cd"><div class="ttname"><a href="classdyno_1_1_map.html#aa358ed46825e5652829a7a35449681cd">dyno::Map::empty</a></div><div class="ttdeci">DYN_FUNC bool empty()</div><div class="ttdef"><b>Definition:</b> <a href="_map_8inl_source.html#l00058">Map.inl:58</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_map_html_ab7bf641a641c33190f06e610cc1af1af"><div class="ttname"><a href="classdyno_1_1_map.html#ab7bf641a641c33190f06e610cc1af1af">dyno::Map::size</a></div><div class="ttdeci">DYN_FUNC int size()</div><div class="ttdef"><b>Definition:</b> <a href="_map_8inl_source.html#l00052">Map.inl:52</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_pair_html"><div class="ttname"><a href="classdyno_1_1_pair.html">dyno::Pair&lt; MKey, T &gt;</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_pair_html_a13b2b06310d0a25b929cbab0f8db1acc"><div class="ttname"><a href="classdyno_1_1_pair.html#a13b2b06310d0a25b929cbab0f8db1acc">dyno::Pair::second</a></div><div class="ttdeci">T second</div><div class="ttdef"><b>Definition:</b> <a href="_pair_8h_source.html#l00041">Pair.h:41</a></div></div>
 <div class="ttc" id="aim_gu_i_z_m_oquat_8cpp_html_ae53008cb938e8e14ae47291e41be8bec"><div class="ttname"><a href="im_gu_i_z_m_oquat_8cpp.html#ae53008cb938e8e14ae47291e41be8bec">T</a></div><div class="ttdeci">#define T(t)</div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a473693c76505259e7bba01558e6303f0"><div class="ttname"><a href="namespacedyno.html#a473693c76505259e7bba01558e6303f0">dyno::leftBound</a></div><div class="ttdeci">DYN_FUNC int leftBound(T target, T *startLoc, size_t maxSize)</div><div class="ttdoc">Find the left bound of a target with a binary search algorithm.</div><div class="ttdef"><b>Definition:</b> <a href="_s_t_l_macro_8h_source.html#l00022">STLMacro.h:22</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

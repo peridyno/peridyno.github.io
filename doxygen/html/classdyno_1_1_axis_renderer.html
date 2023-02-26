@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -91,6 +91,8 @@ Collaboration diagram for dyno::AxisRenderer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a084e2c9d438c8aa558d7cc2e2c626583"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_axis_renderer.html#a084e2c9d438c8aa558d7cc2e2c626583">AxisRenderer</a> ()</td></tr>
 <tr class="separator:a084e2c9d438c8aa558d7cc2e2c626583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efab6515e07480c6a497c4a510ba6e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_axis_renderer.html#a2efab6515e07480c6a497c4a510ba6e5">~AxisRenderer</a> ()</td></tr>
+<tr class="separator:a2efab6515e07480c6a497c4a510ba6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f2772b18aed6060ca79e6a5032ae2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_axis_renderer.html#a45f2772b18aed6060ca79e6a5032ae2e">draw</a> (float lineWidth=2.f)</td></tr>
 <tr class="separator:a45f2772b18aed6060ca79e6a5032ae2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -100,8 +102,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a843c87e2f19b5dc32af2f09e0202279a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a492578eb9e3f1511dfeb269859df788c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgl_1_1_buffer.html">gl::Buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_axis_renderer.html#a492578eb9e3f1511dfeb269859df788c">mAxisVBO</a></td></tr>
 <tr class="separator:a492578eb9e3f1511dfeb269859df788c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e7304ee69fa815d09d7cb46a3d06d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgl_1_1_program.html">gl::Program</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_axis_renderer.html#a7e7304ee69fa815d09d7cb46a3d06d5b">mProgram</a></td></tr>
-<tr class="separator:a7e7304ee69fa815d09d7cb46a3d06d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1427171196b04bda125b2697050161e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgl_1_1_program.html">gl::Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_axis_renderer.html#a1427171196b04bda125b2697050161e2">mProgram</a></td></tr>
+<tr class="separator:a1427171196b04bda125b2697050161e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -136,21 +138,60 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_axis_renderer_a084e2c9d438c8aa558d7cc2e2c626583_cgraph.png" border="0" usemap="#aclassdyno_1_1_axis_renderer_a084e2c9d438c8aa558d7cc2e2c626583_cgraph" alt=""/></div>
 <map name="aclassdyno_1_1_axis_renderer_a084e2c9d438c8aa558d7cc2e2c626583_cgraph" id="aclassdyno_1_1_axis_renderer_a084e2c9d438c8aa558d7cc2e2c626583_cgraph">
-<area shape="rect" title=" " alt="" coords="5,201,141,242"/>
-<area shape="rect" href="classgl_1_1_vertex_array.html#ac301784b6127d69314c3bae6bb156c3b" title=" " alt="" coords="189,70,368,111"/>
-<area shape="rect" href="classgl_1_1_vertex_array.html#a3d2ccc3684d82210d7bcd4e312e0cc34" title=" " alt="" coords="202,157,355,184"/>
-<area shape="rect" href="classgl_1_1_buffer.html#afe8be8fb229fb1957f05a6339819dd97" title=" " alt="" coords="220,208,337,235"/>
-<area shape="rect" href="namespacegl.html#a082ff7ef8bf61bf71c65ab6fa172a278" title=" " alt="" coords="195,259,363,285"/>
-<area shape="rect" href="classgl_1_1_buffer.html#a240c2c43be4b2e34755e73ba04a19922" title=" " alt="" coords="226,360,331,387"/>
+<area shape="rect" title=" " alt="" coords="5,222,141,263"/>
+<area shape="rect" href="classgl_1_1_vertex_array.html#ac301784b6127d69314c3bae6bb156c3b" title=" " alt="" coords="189,74,368,115"/>
+<area shape="rect" href="classgl_1_1_vertex_array.html#a4fbfffe0bb8eeba2a801e3f60735e699" title=" " alt="" coords="202,179,355,205"/>
+<area shape="rect" href="classgl_1_1_buffer.html#afe8be8fb229fb1957f05a6339819dd97" title=" " alt="" coords="220,229,337,256"/>
+<area shape="rect" href="classgl_1_1_shader_factory.html#a7a0fa82c84639e96af289dd47727ecb0" title=" " alt="" coords="205,281,353,322"/>
+<area shape="rect" href="classgl_1_1_buffer.html#a240c2c43be4b2e34755e73ba04a19922" title=" " alt="" coords="226,397,331,424"/>
 <area shape="rect" href="classgl_1_1_buffer.html#a26b7e75bd1c412e426046e55a7c48f92" title=" " alt="" coords="461,5,567,32"/>
 <area shape="rect" href="classgl_1_1_vertex_array.html#a25c3d239f6dec86fc96bef73662644e6" title=" " alt="" coords="443,56,585,83"/>
 <area shape="rect" href="classgl_1_1_vertex_array.html#a26f218975ca235df678af89d79871b01" title=" " alt="" coords="437,107,591,133"/>
 <area shape="rect" href="classgl_1_1_program.html#aaca7f63e0af6d77931c5e1e545d42150" title=" " alt="" coords="427,157,601,184"/>
 <area shape="rect" href="classgl_1_1_program.html#ad33ab2c623361c9336466f231a366fe7" title=" " alt="" coords="447,208,581,235"/>
 <area shape="rect" href="classgl_1_1_shader.html#a8fb04c82b985ce59ea24831b35d79d45" title=" " alt="" coords="416,259,612,285"/>
-<area shape="rect" href="classgl_1_1_program.html#a3993abe70dd1093ed2e569319cb56fb4" title=" " alt="" coords="455,309,573,336"/>
-<area shape="rect" href="classgl_1_1_shader.html#a0f6b2fd0aa8556a1b717b66fb195e144" title=" " alt="" coords="449,360,579,387"/>
-<area shape="rect" href="classgl_1_1_buffer.html#a82325422136a4c8b91dbca0d5bdcd276" title=" " alt="" coords="451,411,577,437"/>
+<area shape="rect" href="classgl_1_1_shader_factory.html#a3b5918e3fe704a3e6de108a950b89901" title=" " alt="" coords="447,310,581,351"/>
+<area shape="rect" href="classgl_1_1_program.html#a3993abe70dd1093ed2e569319cb56fb4" title=" " alt="" coords="455,376,573,403"/>
+<area shape="rect" href="classgl_1_1_shader.html#a0f6b2fd0aa8556a1b717b66fb195e144" title=" " alt="" coords="449,427,579,453"/>
+<area shape="rect" href="classgl_1_1_buffer.html#a82325422136a4c8b91dbca0d5bdcd276" title=" " alt="" coords="451,477,577,504"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2efab6515e07480c6a497c4a510ba6e5" name="a2efab6515e07480c6a497c4a510ba6e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2efab6515e07480c6a497c4a510ba6e5">&#9670;&nbsp;</a></span>~AxisRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dyno::AxisRenderer::~AxisRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00106">106</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_axis_renderer_a2efab6515e07480c6a497c4a510ba6e5_cgraph.png" border="0" usemap="#aclassdyno_1_1_axis_renderer_a2efab6515e07480c6a497c4a510ba6e5_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_axis_renderer_a2efab6515e07480c6a497c4a510ba6e5_cgraph" id="aclassdyno_1_1_axis_renderer_a2efab6515e07480c6a497c4a510ba6e5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,49,141,90"/>
+<area shape="rect" href="classgl_1_1_program.html#a7bc710618f4431d5a1d6687ad15f688f" title=" " alt="" coords="199,5,338,32"/>
+<area shape="rect" href="classgl_1_1_buffer.html#a3d760e5daef852f327d91d0fa061af7d" title=" " alt="" coords="207,56,330,83"/>
+<area shape="rect" href="classgl_1_1_vertex_array.html#afaf36cb9403bed1013abbc66d2c8dd8f" title=" " alt="" coords="189,107,348,133"/>
 </map>
 </div>
 
@@ -181,7 +222,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00106">106</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00115">115</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -200,7 +241,7 @@ Here is the caller graph for this function:</div>
 <map name="aclassdyno_1_1_axis_renderer_a45f2772b18aed6060ca79e6a5032ae2e_icgraph" id="aclassdyno_1_1_axis_renderer_a45f2772b18aed6060ca79e6a5032ae2e_icgraph">
 <area shape="rect" title=" " alt="" coords="411,5,547,47"/>
 <area shape="rect" href="classdyno_1_1_g_l_render_helper.html#a758786d930cf45812df9f37763bb7828" title=" " alt="" coords="209,5,363,47"/>
-<area shape="rect" href="classdyno_1_1_g_l_render_engine.html#a84fb8f11606d4a45921eb7ad92475e9a" title=" " alt="" coords="5,5,161,47"/>
+<area shape="rect" href="classdyno_1_1_g_l_render_engine.html#a3bedb8696e4f4528d304b1fdf17a4d03" title=" " alt="" coords="5,5,161,47"/>
 </map>
 </div>
 
@@ -227,7 +268,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00119">119</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00128">128</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
 
 </div>
 </div>
@@ -251,12 +292,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00120">120</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00129">129</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a7e7304ee69fa815d09d7cb46a3d06d5b" name="a7e7304ee69fa815d09d7cb46a3d06d5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e7304ee69fa815d09d7cb46a3d06d5b">&#9670;&nbsp;</a></span>mProgram</h2>
+<a id="a1427171196b04bda125b2697050161e2" name="a1427171196b04bda125b2697050161e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1427171196b04bda125b2697050161e2">&#9670;&nbsp;</a></span>mProgram</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +306,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgl_1_1_program.html">gl::Program</a> dyno::AxisRenderer::mProgram</td>
+          <td class="memname"><a class="el" href="classgl_1_1_program.html">gl::Program</a>* dyno::AxisRenderer::mProgram</td>
         </tr>
       </table>
   </td>
@@ -275,7 +316,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00121">121</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_g_l_render_helper_8cpp_source.html#l00130">130</a> of file <a class="el" href="_g_l_render_helper_8cpp_source.html">GLRenderHelper.cpp</a>.</p>
 
 </div>
 </div>

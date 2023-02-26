@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -92,50 +92,49 @@ $(function() {
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">auto</span> ptRender = std::make_shared&lt;GLPointVisualModule&gt;();</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        this-&gt;varColor()-&gt;connect(ptRender-&gt;varBaseColor());</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        ptRender-&gt;setColorMapMode(<a class="code hl_enumvalue" href="classdyno_1_1_g_l_point_visual_module.html#ace491a47be6266014b4fa1b0e38707d5ad051fb4560f4d59e8c3118d3eb847ecb">GLPointVisualModule::PER_VERTEX_SHADER</a>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        ptRender-&gt;setColorMapRange(0, 5);</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        this-&gt;inPoints()-&gt;connect(ptRender-&gt;inPointSet());</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        colorMapper-&gt;outColor()-&gt;connect(ptRender-&gt;inColor());</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(calculateNorm);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(colorMapper);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(ptRender);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classdyno_1_1_g_l_point_visual_node.html#af4736418daf51c20c0856f12f7e5fba3">   34</a></span>    <a class="code hl_function" href="classdyno_1_1_g_l_point_visual_node.html#af4736418daf51c20c0856f12f7e5fba3">GLPointVisualNode&lt;TDataType&gt;::~GLPointVisualNode</a>()</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        printf(<span class="stringliteral">&quot;GLPointVisualNode released \n&quot;</span>);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classdyno_1_1_g_l_point_visual_node.html#a16da28c81b7f4e30f5cfd4e68fa6965d">   40</a></span>    std::string <a class="code hl_function" href="classdyno_1_1_g_l_point_visual_node.html#a16da28c81b7f4e30f5cfd4e68fa6965d">GLPointVisualNode&lt;TDataType&gt;::getNodeType</a>()</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Visualization&quot;</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classdyno_1_1_g_l_point_visual_node.html#a76ceb1170597e8a09d935ac76ed2db9b">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_g_l_point_visual_node.html#a76ceb1170597e8a09d935ac76ed2db9b">GLPointVisualNode&lt;TDataType&gt;::resetStates</a>()</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        this-&gt;animationPipeline()-&gt;update();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespacedyno.html#abe524b5f8d482f62fb2221c3b1e380aa">   51</a></span>    <a class="code hl_function" href="namespacedyno.html#a96ac3770273490437e2b8cced291b1a0">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_g_l_point_visual_node.html">GLPointVisualNode</a>);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        this-&gt;inPoints()-&gt;connect(ptRender-&gt;inPointSet());</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        colorMapper-&gt;outColor()-&gt;connect(ptRender-&gt;inColor());</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(calculateNorm);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(colorMapper);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(ptRender);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classdyno_1_1_g_l_point_visual_node.html#af4736418daf51c20c0856f12f7e5fba3">   33</a></span>    <a class="code hl_function" href="classdyno_1_1_g_l_point_visual_node.html#af4736418daf51c20c0856f12f7e5fba3">GLPointVisualNode&lt;TDataType&gt;::~GLPointVisualNode</a>()</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        printf(<span class="stringliteral">&quot;GLPointVisualNode released \n&quot;</span>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classdyno_1_1_g_l_point_visual_node.html#a16da28c81b7f4e30f5cfd4e68fa6965d">   39</a></span>    std::string <a class="code hl_function" href="classdyno_1_1_g_l_point_visual_node.html#a16da28c81b7f4e30f5cfd4e68fa6965d">GLPointVisualNode&lt;TDataType&gt;::getNodeType</a>()</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">return</span> <span class="stringliteral">&quot;Visualization&quot;</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classdyno_1_1_g_l_point_visual_node.html#a76ceb1170597e8a09d935ac76ed2db9b">   45</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_g_l_point_visual_node.html#a76ceb1170597e8a09d935ac76ed2db9b">GLPointVisualNode&lt;TDataType&gt;::resetStates</a>()</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        this-&gt;animationPipeline()-&gt;update();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="namespacedyno.html#abe524b5f8d482f62fb2221c3b1e380aa">   50</a></span>    <a class="code hl_function" href="namespacedyno.html#a96ac3770273490437e2b8cced291b1a0">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_g_l_point_visual_node.html">GLPointVisualNode</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 <div class="ttc" id="a_calculate_norm_8h_html"><div class="ttname"><a href="_calculate_norm_8h.html">CalculateNorm.h</a></div></div>
 <div class="ttc" id="a_color_mapping_8h_html"><div class="ttname"><a href="_color_mapping_8h.html">ColorMapping.h</a></div></div>
 <div class="ttc" id="a_g_l_point_visual_module_8h_html"><div class="ttname"><a href="_g_l_point_visual_module_8h.html">GLPointVisualModule.h</a></div></div>
 <div class="ttc" id="a_g_l_point_visual_node_8h_html"><div class="ttname"><a href="_g_l_point_visual_node_8h.html">GLPointVisualNode.h</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_g_l_point_visual_module_html_ace491a47be6266014b4fa1b0e38707d5ad051fb4560f4d59e8c3118d3eb847ecb"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_module.html#ace491a47be6266014b4fa1b0e38707d5ad051fb4560f4d59e8c3118d3eb847ecb">dyno::GLPointVisualModule::PER_VERTEX_SHADER</a></div><div class="ttdeci">@ PER_VERTEX_SHADER</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_module_8h_source.html#l00036">GLPointVisualModule.h:35</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_g_l_point_visual_module_html_ace491a47be6266014b4fa1b0e38707d5ad051fb4560f4d59e8c3118d3eb847ecb"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_module.html#ace491a47be6266014b4fa1b0e38707d5ad051fb4560f4d59e8c3118d3eb847ecb">dyno::GLPointVisualModule::PER_VERTEX_SHADER</a></div><div class="ttdeci">@ PER_VERTEX_SHADER</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_module_8h_source.html#l00037">GLPointVisualModule.h:36</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html">dyno::GLPointVisualNode</a></div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8h_source.html#l00025">GLPointVisualNode.h:26</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_a16da28c81b7f4e30f5cfd4e68fa6965d"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#a16da28c81b7f4e30f5cfd4e68fa6965d">dyno::GLPointVisualNode::getNodeType</a></div><div class="ttdeci">std::string getNodeType() override</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00040">GLPointVisualNode.cpp:40</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_a16da28c81b7f4e30f5cfd4e68fa6965d"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#a16da28c81b7f4e30f5cfd4e68fa6965d">dyno::GLPointVisualNode::getNodeType</a></div><div class="ttdeci">std::string getNodeType() override</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00039">GLPointVisualNode.cpp:39</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_a748765478d58ba474a77ad4f6bde5de0"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#a748765478d58ba474a77ad4f6bde5de0">dyno::GLPointVisualNode::GLPointVisualNode</a></div><div class="ttdeci">GLPointVisualNode()</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00010">GLPointVisualNode.cpp:10</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_a76ceb1170597e8a09d935ac76ed2db9b"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#a76ceb1170597e8a09d935ac76ed2db9b">dyno::GLPointVisualNode::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00046">GLPointVisualNode.cpp:46</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_af4736418daf51c20c0856f12f7e5fba3"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#af4736418daf51c20c0856f12f7e5fba3">dyno::GLPointVisualNode::~GLPointVisualNode</a></div><div class="ttdeci">~GLPointVisualNode() override</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00034">GLPointVisualNode.cpp:34</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html"><div class="ttname"><a href="classdyno_1_1_node.html">dyno::Node</a></div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00035">Node.h:36</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_a76ceb1170597e8a09d935ac76ed2db9b"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#a76ceb1170597e8a09d935ac76ed2db9b">dyno::GLPointVisualNode::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00045">GLPointVisualNode.cpp:45</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_af4736418daf51c20c0856f12f7e5fba3"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#af4736418daf51c20c0856f12f7e5fba3">dyno::GLPointVisualNode::~GLPointVisualNode</a></div><div class="ttdeci">~GLPointVisualNode() override</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00033">GLPointVisualNode.cpp:33</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html"><div class="ttname"><a href="classdyno_1_1_node.html">dyno::Node</a></div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00069">Node.h:70</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition:</b> <a href="_node_8cpp_source.html#l00240">Node.cpp:240</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_acc54344cd3b2c1f77b3c2df6ece0df4c"><div class="ttname"><a href="classdyno_1_1_node.html#acc54344cd3b2c1f77b3c2df6ece0df4c">dyno::Node::connect</a></div><div class="ttdeci">bool connect(NodePort *nPort)</div><div class="ttdef"><b>Definition:</b> <a href="_node_8cpp_source.html#l00401">Node.cpp:401</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_acc54344cd3b2c1f77b3c2df6ece0df4c"><div class="ttname"><a href="classdyno_1_1_node.html#acc54344cd3b2c1f77b3c2df6ece0df4c">dyno::Node::connect</a></div><div class="ttdeci">bool connect(NodePort *nPort)</div><div class="ttdef"><b>Definition:</b> <a href="_node_8cpp_source.html#l00400">Node.cpp:400</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a96ac3770273490437e2b8cced291b1a0"><div class="ttname"><a href="namespacedyno.html#a96ac3770273490437e2b8cced291b1a0">dyno::DEFINE_CLASS</a></div><div class="ttdeci">DEFINE_CLASS(CircularEmitter)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

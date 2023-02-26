@@ -1,18 +1,14 @@
 var searchData=
 [
-  ['shadow_0',['SHADOW',['../classdyno_1_1_g_l_visual_module.html#a43ba72c20d5bd1aef756ddb1be35553ea166ba8e3835f4c90150515a0b9432a4c',1,'dyno::GLVisualModule']]],
-  ['signed_5fdistance_5ftype_1',['SIGNED_DISTANCE_TYPE',['../classdyno_1_1_collidable_object.html#a0513c887d5ffc972a5baad1eded7b6b0a9a65fd80ef9902be663a9f916bf8aa2f',1,'dyno::CollidableObject']]],
-  ['single_2',['Single',['../namespacedyno.html#ac442c932556622589199e830a385bb34afe7e69cee76be8471ba78d1d72323245',1,'dyno']]],
-  ['sphere_5ftype_3',['SPHERE_TYPE',['../classdyno_1_1_collidable_object.html#a0513c887d5ffc972a5baad1eded7b6b0aff79ab4cb82fd9f8fe39a521b21d1458',1,'dyno::CollidableObject']]],
-  ['sphereatorigin_4',['sphereAtOrigin',['../structimgui_gizmo.html#aa88b06675b9f9f1da98090fc405c3d14ac55519358a6acb2c98fffc3e816f29b9',1,'imguiGizmo']]],
-  ['spheretess16_5',['sphereTess16',['../structimgui_gizmo.html#acb5fc0e5ba72cfd73e089a5b27c7840caecd80122666fadd37ae430a28d15c7df',1,'imguiGizmo']]],
-  ['spheretess2_6',['sphereTess2',['../structimgui_gizmo.html#acb5fc0e5ba72cfd73e089a5b27c7840cac689fcc2222f0efb9f8a09b154ddd61b',1,'imguiGizmo']]],
-  ['spheretess4_7',['sphereTess4',['../structimgui_gizmo.html#acb5fc0e5ba72cfd73e089a5b27c7840ca6edbbd583836ce9672bbdb7ac53ffdb7',1,'imguiGizmo']]],
-  ['spheretess8_8',['sphereTess8',['../structimgui_gizmo.html#acb5fc0e5ba72cfd73e089a5b27c7840cae3fa47627c17c902d54d37ead768b7b3',1,'imguiGizmo']]],
-  ['state_9',['State',['../namespacedyno.html#ac3362376850a026da08e48efc8032048ad1475e14ca630fc9f9cf6b42a6b522a3',1,'dyno']]],
-  ['stbi_5fdefault_10',['STBI_default',['../stb__image_8h.html#a1fb9092bcdeada2d206bdc74afbbe122a0177ac2c5002f4f251bb766d41752029',1,'stb_image.h']]],
-  ['stbi_5fgrey_11',['STBI_grey',['../stb__image_8h.html#a1fb9092bcdeada2d206bdc74afbbe122ad1eb95ca1fa7706bf732bf35a0ed40aa',1,'stb_image.h']]],
-  ['stbi_5fgrey_5falpha_12',['STBI_grey_alpha',['../stb__image_8h.html#a1fb9092bcdeada2d206bdc74afbbe122af5829d16d4cca6077465c5abd346e2f8',1,'stb_image.h']]],
-  ['stbi_5frgb_13',['STBI_rgb',['../stb__image_8h.html#a1fb9092bcdeada2d206bdc74afbbe122aa59123e5d0af25f9b1539f5cf1facddf',1,'stb_image.h']]],
-  ['stbi_5frgb_5falpha_14',['STBI_rgb_alpha',['../stb__image_8h.html#a1fb9092bcdeada2d206bdc74afbbe122aa7b1af0c9f0310c3ada2aa29a32de293',1,'stb_image.h']]]
+  ['real_0',['REAL',['../classdyno_1_1_particle_type.html#a7eac3ef2c0dd206ab68d39d0897da4aca8d04325647eb756e05c81da75392515b',1,'dyno::ParticleType']]],
+  ['reflection_1',['REFLECTION',['../structofbx_1_1_texture.html#a69ce52c37fa759a784c983c13b35a928a6f7cfbd4312bd2f7c90c2195e53b5935',1,'ofbx::Texture']]],
+  ['rgb_2',['RGB',['../classdyno_1_1_image.html#a59de937cd0384af4c14b6846e1b98e85ad768789e4b9a202fd1ec41da9a8bb5c1',1,'dyno::Image']]],
+  ['rgba_3',['RGBA',['../classdyno_1_1_image.html#a59de937cd0384af4c14b6846e1b98e85a700efe049846c1bccd32c2be469defc1',1,'dyno::Image']]],
+  ['root_4',['ROOT',['../structofbx_1_1_object.html#a97a0620e9e5df23dcb848b63f2a471f5aea2adde5c377cb5e09d14b71935c6f32',1,'ofbx::Object']]],
+  ['rotate_5',['ROTATE',['../namespace_im_guizmo.html#a3559e88fd6409ce121ee4d9847867cd1a002a0a905af7f2fd542df7d6e34c1d1f',1,'ImGuizmo']]],
+  ['rotate_5fscreen_6',['ROTATE_SCREEN',['../namespace_im_guizmo.html#a3559e88fd6409ce121ee4d9847867cd1a52e1fb4f61b900cacdc6145235c462d8',1,'ImGuizmo']]],
+  ['rotate_5fx_7',['ROTATE_X',['../namespace_im_guizmo.html#a3559e88fd6409ce121ee4d9847867cd1a3d971dad8e28ec81e7ff50aa3f70f32d',1,'ImGuizmo']]],
+  ['rotate_5fy_8',['ROTATE_Y',['../namespace_im_guizmo.html#a3559e88fd6409ce121ee4d9847867cd1a45f86279266250509866326a2c7bc9ab',1,'ImGuizmo']]],
+  ['rotate_5fz_9',['ROTATE_Z',['../namespace_im_guizmo.html#a3559e88fd6409ce121ee4d9847867cd1a3dae3e2e96aaab5671c40ede6e3a80d1',1,'ImGuizmo']]],
+  ['rotation_10',['ROTATION',['../structofbx_1_1_animation_curve_node_impl.html#aad381d25136f9b6a19c9e9a59408829ca328719d3839e4b8128871d59557454d6',1,'ofbx::AnimationCurveNodeImpl']]]
 ];

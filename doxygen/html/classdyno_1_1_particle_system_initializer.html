@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -68,7 +68,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classdyno_1_1_particle_system_initializer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::ParticleSystemInitializer Class Reference</div></div>
 </div><!--header-->
@@ -81,7 +84,7 @@ Inheritance diagram for dyno::ParticleSystemInitializer:</div>
 <div class="center"><img src="classdyno_1_1_particle_system_initializer__inherit__graph.png" border="0" usemap="#adyno_1_1_particle_system_initializer_inherit__map" alt="Inheritance graph"/></div>
 <map name="adyno_1_1_particle_system_initializer_inherit__map" id="adyno_1_1_particle_system_initializer_inherit__map">
 <area shape="rect" title=" " alt="" coords="5,80,204,107"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="57,5,153,32"/>
+<area shape="rect" href="structdyno_1_1_plugin_entry.html" title=" " alt="" coords="42,5,167,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -89,37 +92,58 @@ Collaboration diagram for dyno::ParticleSystemInitializer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_particle_system_initializer__coll__graph.png" border="0" usemap="#adyno_1_1_particle_system_initializer_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_particle_system_initializer_coll__map" id="adyno_1_1_particle_system_initializer_coll__map">
-<area shape="rect" title=" " alt="" coords="5,80,204,107"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="57,5,153,32"/>
+<area shape="rect" title=" " alt="" coords="5,200,204,227"/>
+<area shape="rect" href="structdyno_1_1_plugin_entry.html" title=" " alt="" coords="42,124,167,151"/>
+<area shape="rect" title=" " alt="" coords="77,5,132,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab62620c19d0c24535a4b96a89c57fd4a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structdyno_1_1_plugin_entry.html">PluginEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system_initializer.html#ab62620c19d0c24535a4b96a89c57fd4a">instance</a> ()</td></tr>
+<tr class="separator:ab62620c19d0c24535a4b96a89c57fd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a61ba2631d54a946644720d0b8dfdaaf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system_initializer.html#a61ba2631d54a946644720d0b8dfdaaf0">initializeActions</a> () override</td></tr>
+<tr class="separator:a61ba2631d54a946644720d0b8dfdaaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_structdyno_1_1_plugin_entry"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_structdyno_1_1_plugin_entry')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="structdyno_1_1_plugin_entry.html">dyno::PluginEntry</a></td></tr>
+<tr class="memitem:ab9a82851bb45085e4b6f4fe7b3a8eb0c inherit pro_methods_structdyno_1_1_plugin_entry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_plugin_entry.html#ab9a82851bb45085e4b6f4fe7b3a8eb0c">initializeNodeCreators</a> ()</td></tr>
+<tr class="separator:ab9a82851bb45085e4b6f4fe7b3a8eb0c inherit pro_methods_structdyno_1_1_plugin_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4363f5ecd8fcce3d4dc92562737f2f1 inherit pro_methods_structdyno_1_1_plugin_entry"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_plugin_entry.html#aa4363f5ecd8fcce3d4dc92562737f2f1">initializeActions</a> ()</td></tr>
+<tr class="separator:aa4363f5ecd8fcce3d4dc92562737f2f1 inherit pro_methods_structdyno_1_1_plugin_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
 <tr class="memitem:ac292323a4c8f454ebc6c06de47474e33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system_initializer.html#ac292323a4c8f454ebc6c06de47474e33">ParticleSystemInitializer</a> ()</td></tr>
 <tr class="separator:ac292323a4c8f454ebc6c06de47474e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6fdc745d5689ec461beeddfa54c582a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system_initializer.html#ad6fdc745d5689ec461beeddfa54c582a">initializeNodeCreators</a> ()</td></tr>
-<tr class="separator:ad6fdc745d5689ec461beeddfa54c582a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classdyno_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_object.html">dyno::Object</a></td></tr>
-<tr class="memitem:a7cd85508bee007243ca06e356b284250 inherit pub_methods_classdyno_1_1_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a7cd85508bee007243ca06e356b284250">Object</a> ()</td></tr>
-<tr class="separator:a7cd85508bee007243ca06e356b284250 inherit pub_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65557eb441d1c0273b0d8d62c05dabe0 inherit pub_methods_classdyno_1_1_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a65557eb441d1c0273b0d8d62c05dabe0">~Object</a> ()</td></tr>
-<tr class="separator:a65557eb441d1c0273b0d8d62c05dabe0 inherit pub_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8">objectId</a> ()</td></tr>
-<tr class="separator:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a61b0ac250a8ff69ca1fbfa3acfac025d"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; <a class="el" href="classdyno_1_1_particle_system_initializer.html">ParticleSystemInitializer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system_initializer.html#a61b0ac250a8ff69ca1fbfa3acfac025d">gInstance</a></td></tr>
+<tr class="separator:a61b0ac250a8ff69ca1fbfa3acfac025d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a92af9937a80aae57daea15579a081a"><td class="memItemLeft" align="right" valign="top">static std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system_initializer.html#a1a92af9937a80aae57daea15579a081a">gMutex</a></td></tr>
+<tr class="separator:a1a92af9937a80aae57daea15579a081a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classdyno_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classdyno_1_1_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classdyno_1_1_object.html">dyno::Object</a></td></tr>
-<tr class="memitem:a819ad107273ddc0b12b7c286ec8f120f inherit pub_static_methods_classdyno_1_1_object"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a819ad107273ddc0b12b7c286ec8f120f">registerClass</a> (<a class="el" href="classdyno_1_1_class_info.html">ClassInfo</a> *ci)</td></tr>
-<tr class="separator:a819ad107273ddc0b12b7c286ec8f120f inherit pub_static_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465a0dcfc83098c1b702a690e4db91ec inherit pub_static_methods_classdyno_1_1_object"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classdyno_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a465a0dcfc83098c1b702a690e4db91ec">createObject</a> (std::string name)</td></tr>
-<tr class="separator:a465a0dcfc83098c1b702a690e4db91ec inherit pub_static_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082440458df8b634b7cd3d8d7fb0cc33 inherit pub_static_methods_classdyno_1_1_object"><td class="memItemLeft" align="right" valign="top">static std::map&lt; std::string, <a class="el" href="classdyno_1_1_class_info.html">ClassInfo</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a082440458df8b634b7cd3d8d7fb0cc33">getClassMap</a> ()</td></tr>
-<tr class="separator:a082440458df8b634b7cd3d8d7fb0cc33 inherit pub_static_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a1c74670edfee2018cfa434a0a6380ed5">baseId</a> ()</td></tr>
-<tr class="memdesc:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base Id.  <a href="classdyno_1_1_object.html#a1c74670edfee2018cfa434a0a6380ed5">More...</a><br /></td></tr>
-<tr class="separator:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structdyno_1_1_plugin_entry"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structdyno_1_1_plugin_entry')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structdyno_1_1_plugin_entry.html">dyno::PluginEntry</a></td></tr>
+<tr class="memitem:a6c61373136bab9657f4958507c3ac2d1 inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_plugin_entry.html#a6c61373136bab9657f4958507c3ac2d1">PluginEntry</a> ()</td></tr>
+<tr class="separator:a6c61373136bab9657f4958507c3ac2d1 inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfcd015ebe13b6f9e0d5306ad70287ed inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_plugin_entry.html#acfcd015ebe13b6f9e0d5306ad70287ed">name</a> () const</td></tr>
+<tr class="separator:acfcd015ebe13b6f9e0d5306ad70287ed inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace0414e7874a5a568f1908994cf640d inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_plugin_entry.html#aace0414e7874a5a568f1908994cf640d">version</a> () const</td></tr>
+<tr class="separator:aace0414e7874a5a568f1908994cf640d inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0873a4f8aaba4a36bc063499bcb90d inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_plugin_entry.html#a6a0873a4f8aaba4a36bc063499bcb90d">description</a> () const</td></tr>
+<tr class="separator:a6a0873a4f8aaba4a36bc063499bcb90d inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1d0b5e1603d95c6b56a9012d4a6abc inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_plugin_entry.html#afa1d0b5e1603d95c6b56a9012d4a6abc">setName</a> (std::string pluginName)</td></tr>
+<tr class="separator:afa1d0b5e1603d95c6b56a9012d4a6abc inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf68aad8bf0c43404a6ef855304173fc inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_plugin_entry.html#adf68aad8bf0c43404a6ef855304173fc">setVersion</a> (std::string pluginVersion)</td></tr>
+<tr class="separator:adf68aad8bf0c43404a6ef855304173fc inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dee75b1e72cfabdb1e39b0e33374e7f inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_plugin_entry.html#a4dee75b1e72cfabdb1e39b0e33374e7f">setDescription</a> (std::string desc)</td></tr>
+<tr class="separator:a4dee75b1e72cfabdb1e39b0e33374e7f inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26bb40479862096d2ea88cdf430d03dc inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdyno_1_1_plugin_entry.html#a26bb40479862096d2ea88cdf430d03dc">initialize</a> ()</td></tr>
+<tr class="separator:a26bb40479862096d2ea88cdf430d03dc inherit pub_methods_structdyno_1_1_plugin_entry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -130,6 +154,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">dyno::ParticleSystemInitializer::ParticleSystemInitializer </td>
@@ -138,61 +165,164 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="initialize_particle_system_8cpp_source.html#l00018">18</a> of file <a class="el" href="initialize_particle_system_8cpp_source.html">initializeParticleSystem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="initialize_particle_system_8cpp_source.html#l00045">45</a> of file <a class="el" href="initialize_particle_system_8cpp_source.html">initializeParticleSystem.cpp</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_particle_system_initializer_ac292323a4c8f454ebc6c06de47474e33_cgraph.png" border="0" usemap="#aclassdyno_1_1_particle_system_initializer_ac292323a4c8f454ebc6c06de47474e33_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_particle_system_initializer_ac292323a4c8f454ebc6c06de47474e33_cgraph" id="aclassdyno_1_1_particle_system_initializer_ac292323a4c8f454ebc6c06de47474e33_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,204,80"/>
-<area shape="rect" href="classdyno_1_1_particle_system_initializer.html#ad6fdc745d5689ec461beeddfa54c582a" title=" " alt="" coords="252,39,451,80"/>
-<area shape="rect" href="classdyno_1_1_node_factory.html#a753bd5900b3c52301d13e7b2fc1fc0d5" title=" " alt="" coords="499,5,639,47"/>
-<area shape="rect" href="classdyno_1_1_node_factory.html#a2af35245b77faa975d112f3cab41fd29" title=" " alt="" coords="499,71,639,112"/>
-<area shape="rect" href="classdyno_1_1_node_factory.html#a15939f28f204fd9a4c099a59a2ca24c8" title=" " alt="" coords="687,71,827,112"/>
+<div class="center"><img src="classdyno_1_1_particle_system_initializer_ac292323a4c8f454ebc6c06de47474e33_icgraph.png" border="0" usemap="#aclassdyno_1_1_particle_system_initializer_ac292323a4c8f454ebc6c06de47474e33_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_particle_system_initializer_ac292323a4c8f454ebc6c06de47474e33_icgraph" id="aclassdyno_1_1_particle_system_initializer_ac292323a4c8f454ebc6c06de47474e33_icgraph">
+<area shape="rect" title=" " alt="" coords="499,27,697,69"/>
+<area shape="rect" href="classdyno_1_1_particle_system_initializer.html#ab62620c19d0c24535a4b96a89c57fd4a" title=" " alt="" coords="252,27,451,69"/>
+<area shape="rect" href="namespace_paticle_system.html#ae6895c6d2a1e1b366e990feb4231e24c" title=" " alt="" coords="5,5,204,32"/>
+<area shape="rect" href="namespace_paticle_system.html#a412ac77b7f2521409889185599abac9a" title=" " alt="" coords="21,57,188,98"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad6fdc745d5689ec461beeddfa54c582a" name="ad6fdc745d5689ec461beeddfa54c582a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6fdc745d5689ec461beeddfa54c582a">&#9670;&nbsp;</a></span>initializeNodeCreators()</h2>
+<a id="a61ba2631d54a946644720d0b8dfdaaf0" name="a61ba2631d54a946644720d0b8dfdaaf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ba2631d54a946644720d0b8dfdaaf0">&#9670;&nbsp;</a></span>initializeActions()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::ParticleSystemInitializer::initializeNodeCreators </td>
+          <td class="memname">void dyno::ParticleSystemInitializer::initializeActions </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="initialize_particle_system_8cpp_source.html#l00032">32</a> of file <a class="el" href="initialize_particle_system_8cpp_source.html">initializeParticleSystem.cpp</a>.</p>
+<p>Reimplemented from <a class="el" href="structdyno_1_1_plugin_entry.html#aa4363f5ecd8fcce3d4dc92562737f2f1">dyno::PluginEntry</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="initialize_particle_system_8cpp_source.html#l00050">50</a> of file <a class="el" href="initialize_particle_system_8cpp_source.html">initializeParticleSystem.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_particle_system_initializer_ad6fdc745d5689ec461beeddfa54c582a_cgraph.png" border="0" usemap="#aclassdyno_1_1_particle_system_initializer_ad6fdc745d5689ec461beeddfa54c582a_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_particle_system_initializer_ad6fdc745d5689ec461beeddfa54c582a_cgraph" id="aclassdyno_1_1_particle_system_initializer_ad6fdc745d5689ec461beeddfa54c582a_cgraph">
+<div class="center"><img src="classdyno_1_1_particle_system_initializer_a61ba2631d54a946644720d0b8dfdaaf0_cgraph.png" border="0" usemap="#aclassdyno_1_1_particle_system_initializer_a61ba2631d54a946644720d0b8dfdaaf0_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_particle_system_initializer_a61ba2631d54a946644720d0b8dfdaaf0_cgraph" id="aclassdyno_1_1_particle_system_initializer_a61ba2631d54a946644720d0b8dfdaaf0_cgraph">
 <area shape="rect" title=" " alt="" coords="5,39,204,80"/>
 <area shape="rect" href="classdyno_1_1_node_factory.html#a753bd5900b3c52301d13e7b2fc1fc0d5" title=" " alt="" coords="252,5,392,47"/>
 <area shape="rect" href="classdyno_1_1_node_factory.html#a2af35245b77faa975d112f3cab41fd29" title=" " alt="" coords="252,71,392,112"/>
 <area shape="rect" href="classdyno_1_1_node_factory.html#a15939f28f204fd9a4c099a59a2ca24c8" title=" " alt="" coords="440,71,580,112"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ab62620c19d0c24535a4b96a89c57fd4a" name="ab62620c19d0c24535a4b96a89c57fd4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62620c19d0c24535a4b96a89c57fd4a">&#9670;&nbsp;</a></span>instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdyno_1_1_plugin_entry.html">PluginEntry</a> * dyno::ParticleSystemInitializer::instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="initialize_particle_system_8cpp_source.html#l00026">26</a> of file <a class="el" href="initialize_particle_system_8cpp_source.html">initializeParticleSystem.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_particle_system_initializer_ab62620c19d0c24535a4b96a89c57fd4a_cgraph.png" border="0" usemap="#aclassdyno_1_1_particle_system_initializer_ab62620c19d0c24535a4b96a89c57fd4a_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_particle_system_initializer_ab62620c19d0c24535a4b96a89c57fd4a_cgraph" id="aclassdyno_1_1_particle_system_initializer_ab62620c19d0c24535a4b96a89c57fd4a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,204,145"/>
+<area shape="rect" href="classdyno_1_1_particle_system_initializer.html#ac292323a4c8f454ebc6c06de47474e33" title=" " alt="" coords="252,5,451,47"/>
+<area shape="rect" href="structdyno_1_1_plugin_entry.html#a4dee75b1e72cfabdb1e39b0e33374e7f" title=" " alt="" coords="285,71,418,112"/>
+<area shape="rect" href="structdyno_1_1_plugin_entry.html#afa1d0b5e1603d95c6b56a9012d4a6abc" title=" " alt="" coords="285,136,418,177"/>
+<area shape="rect" href="structdyno_1_1_plugin_entry.html#adf68aad8bf0c43404a6ef855304173fc" title=" " alt="" coords="285,201,418,243"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_particle_system_initializer_ad6fdc745d5689ec461beeddfa54c582a_icgraph.png" border="0" usemap="#aclassdyno_1_1_particle_system_initializer_ad6fdc745d5689ec461beeddfa54c582a_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_particle_system_initializer_ad6fdc745d5689ec461beeddfa54c582a_icgraph" id="aclassdyno_1_1_particle_system_initializer_ad6fdc745d5689ec461beeddfa54c582a_icgraph">
-<area shape="rect" title=" " alt="" coords="252,5,451,47"/>
-<area shape="rect" href="classdyno_1_1_particle_system_initializer.html#ac292323a4c8f454ebc6c06de47474e33" title=" " alt="" coords="5,5,204,47"/>
+<div class="center"><img src="classdyno_1_1_particle_system_initializer_ab62620c19d0c24535a4b96a89c57fd4a_icgraph.png" border="0" usemap="#aclassdyno_1_1_particle_system_initializer_ab62620c19d0c24535a4b96a89c57fd4a_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_particle_system_initializer_ab62620c19d0c24535a4b96a89c57fd4a_icgraph" id="aclassdyno_1_1_particle_system_initializer_ab62620c19d0c24535a4b96a89c57fd4a_icgraph">
+<area shape="rect" title=" " alt="" coords="252,27,451,69"/>
+<area shape="rect" href="namespace_paticle_system.html#ae6895c6d2a1e1b366e990feb4231e24c" title=" " alt="" coords="5,5,204,32"/>
+<area shape="rect" href="namespace_paticle_system.html#a412ac77b7f2521409889185599abac9a" title=" " alt="" coords="21,57,188,98"/>
 </map>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a61b0ac250a8ff69ca1fbfa3acfac025d" name="a61b0ac250a8ff69ca1fbfa3acfac025d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b0ac250a8ff69ca1fbfa3acfac025d">&#9670;&nbsp;</a></span>gInstance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt; <a class="el" href="classdyno_1_1_particle_system_initializer.html">ParticleSystemInitializer</a> * &gt; dyno::ParticleSystemInitializer::gInstance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="initialize_particle_system_8h_source.html#l00017">17</a> of file <a class="el" href="initialize_particle_system_8h_source.html">initializeParticleSystem.h</a>.</p>
+
+</div>
+</div>
+<a id="a1a92af9937a80aae57daea15579a081a" name="a1a92af9937a80aae57daea15579a081a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a92af9937a80aae57daea15579a081a">&#9670;&nbsp;</a></span>gMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex dyno::ParticleSystemInitializer::gMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="initialize_particle_system_8h_source.html#l00018">18</a> of file <a class="el" href="initialize_particle_system_8h_source.html">initializeParticleSystem.h</a>.</p>
 
 </div>
 </div>

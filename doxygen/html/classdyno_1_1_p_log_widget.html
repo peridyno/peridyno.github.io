@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -73,6 +73,7 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_p_log_widget-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::PLogWidget Class Reference</div></div>
 </div><!--header-->
@@ -115,6 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a46583f5073271753bb8b85ecc08c4c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eb5eb301a910b8a4c3f3dcd50c0f01b"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_log_widget.html#a1eb5eb301a910b8a4c3f3dcd50c0f01b">sizeHint</a> () const override</td></tr>
 <tr class="separator:a1eb5eb301a910b8a4c3f3dcd50c0f01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b369a54c67c8c97de8dcfe421d899d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_log_widget.html#a11b369a54c67c8c97de8dcfe421d899d">toggleLogging</a> ()</td></tr>
+<tr class="separator:a11b369a54c67c8c97de8dcfe421d899d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -134,6 +137,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a018a70ac58208de6ece36b19ea04e410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73d6ad6b3d07d98fc65bc65c4f44c687"><td class="memItemLeft" align="right" valign="top">QIcon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_log_widget.html#a73d6ad6b3d07d98fc65bc65c4f44c687">getIcon</a> (const QString &amp;name)</td></tr>
 <tr class="separator:a73d6ad6b3d07d98fc65bc65c4f44c687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af318760a1c67a5f94d9b2763432f5fac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_log_widget.html#af318760a1c67a5f94d9b2763432f5fac">mEnableLogging</a> = false</td></tr>
+<tr class="separator:af318760a1c67a5f94d9b2763432f5fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -165,7 +173,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classdyno_1_1_p_log_widget.html#af1e06188ad2139339ff85efa39c39601" title=" " alt="" coords="265,5,440,32"/>
 <area shape="rect" href="classdyno_1_1_p_log_widget.html#a0ef6ffa1ef438632c0471daa1f79448c" title=" " alt="" coords="261,57,444,98"/>
 <area shape="rect" href="classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28" title="Add a new message to log." alt="" coords="269,123,437,149"/>
-<area shape="rect" href="classdyno_1_1_log.html#a3a27f609098698ba13d42dc62017767d" title="Set user function to receive newly sent messages to logger." alt="" coords="262,173,443,200"/>
+<area shape="rect" href="classdyno_1_1_log.html#ac76ac00c869db3400cdfeda5eba5d230" title="Set user function to receive newly sent messages to logger." alt="" coords="262,173,443,200"/>
 <area shape="rect" href="classdyno_1_1_p_log_widget.html#a73d6ad6b3d07d98fc65bc65c4f44c687" title=" " alt="" coords="504,5,683,32"/>
 <area shape="rect" href="_platform_8h.html#a44f975ef0e37b97956e79735c2532420" title=" " alt="" coords="743,5,844,32"/>
 <area shape="rect" href="classdyno_1_1_p_log_signal.html#affcf7f768259164c0143ed1abbdb4622" title=" " alt="" coords="492,64,695,91"/>
@@ -199,7 +207,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00203">203</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00211">211</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -227,7 +235,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00215">215</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00223">223</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -274,7 +282,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00184">184</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00192">192</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -302,7 +310,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00192">192</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00200">200</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +338,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00114">114</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00119">119</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -377,7 +385,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00198">198</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00206">206</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -461,7 +469,36 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00220">220</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00228">228</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a11b369a54c67c8c97de8dcfe421d899d" name="a11b369a54c67c8c97de8dcfe421d899d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b369a54c67c8c97de8dcfe421d899d">&#9670;&nbsp;</a></span>toggleLogging()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::PLogWidget::toggleLogging </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_log_widget_8cpp_source.html#l00114">114</a> of file <a class="el" href="_p_log_widget_8cpp_source.html">PLogWidget.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_p_log_widget_a11b369a54c67c8c97de8dcfe421d899d_icgraph.png" border="0" usemap="#aclassdyno_1_1_p_log_widget_a11b369a54c67c8c97de8dcfe421d899d_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_p_log_widget_a11b369a54c67c8c97de8dcfe421d899d_icgraph" id="aclassdyno_1_1_p_log_widget_a11b369a54c67c8c97de8dcfe421d899d_icgraph">
+<area shape="rect" title=" " alt="" coords="401,5,573,47"/>
+<area shape="rect" href="classdyno_1_1_p_i_o_dock_widget.html#ae133de94059c3d763b74285742237065" title=" " alt="" coords="203,5,353,47"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#abce9ef2ee806b6450c4967b717ab137b" title=" " alt="" coords="5,5,155,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -487,6 +524,30 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_p_log_widget_8h_source.html#l00063">63</a> of file <a class="el" href="_p_log_widget_8h_source.html">PLogWidget.h</a>.</p>
+
+</div>
+</div>
+<a id="af318760a1c67a5f94d9b2763432f5fac" name="af318760a1c67a5f94d9b2763432f5fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af318760a1c67a5f94d9b2763432f5fac">&#9670;&nbsp;</a></span>mEnableLogging</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::PLogWidget::mEnableLogging = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_p_log_widget_8h_source.html#l00085">85</a> of file <a class="el" href="_p_log_widget_8h_source.html">PLogWidget.h</a>.</p>
 
 </div>
 </div>

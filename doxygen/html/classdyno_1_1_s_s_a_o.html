@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -81,13 +81,12 @@ Collaboration diagram for dyno::SSAO:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_s_s_a_o__coll__graph.png" border="0" usemap="#adyno_1_1_s_s_a_o_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_s_s_a_o_coll__map" id="adyno_1_1_s_s_a_o_coll__map">
-<area shape="rect" title=" " alt="" coords="187,316,281,343"/>
-<area shape="rect" href="classgl_1_1_buffer.html" title=" " alt="" coords="5,132,79,159"/>
-<area shape="rect" href="classgl_1_1_object.html" title=" " alt="" coords="228,5,307,32"/>
-<area shape="rect" href="classgl_1_1_texture.html" title=" " alt="" coords="163,81,246,108"/>
-<area shape="rect" href="classgl_1_1_program.html" title=" " alt="" coords="249,132,339,159"/>
-<area shape="rect" href="classgl_1_1_framebuffer.html" title=" " alt="" coords="421,183,529,209"/>
-<area shape="rect" href="classgl_1_1_texture2_d.html" title=" " alt="" coords="149,183,247,209"/>
+<area shape="rect" title=" " alt="" coords="189,215,284,241"/>
+<area shape="rect" href="classgl_1_1_program.html" title=" " alt="" coords="5,81,95,108"/>
+<area shape="rect" href="classgl_1_1_object.html" title=" " alt="" coords="173,5,252,32"/>
+<area shape="rect" href="classgl_1_1_buffer.html" title=" " alt="" coords="132,81,205,108"/>
+<area shape="rect" href="classgl_1_1_texture2_d.html" title=" " alt="" coords="249,81,347,108"/>
+<area shape="rect" href="classgl_1_1_framebuffer.html" title=" " alt="" coords="384,81,492,108"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -97,19 +96,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab7b9a49826fb8271e6a08652f79f83ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08c26d038202459729139154d0fac161"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_s_s_a_o.html#a08c26d038202459729139154d0fac161">~SSAO</a> ()</td></tr>
 <tr class="separator:a08c26d038202459729139154d0fac161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448abd6c22926bb4d09481e45d929717"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_s_s_a_o.html#a448abd6c22926bb4d09481e45d929717">initialize</a> ()</td></tr>
-<tr class="separator:a448abd6c22926bb4d09481e45d929717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30a9d01e5185b1b94fadd569483f0387"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_s_s_a_o.html#a30a9d01e5185b1b94fadd569483f0387">resize</a> (unsigned int <a class="el" href="_qt_im_gui_8cpp.html#aebcbbf119bd44717e4b96b4fed18e3f8">w</a>, unsigned int h)</td></tr>
 <tr class="separator:a30a9d01e5185b1b94fadd569483f0387"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a31b6606bcad84350d59fcdf14e56c32c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgl_1_1_program.html">gl::Program</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_s_s_a_o.html#a31b6606bcad84350d59fcdf14e56c32c">mSSAOProgram</a></td></tr>
+<tr class="separator:a31b6606bcad84350d59fcdf14e56c32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3090d13af16b9ef497743e3d551fb8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgl_1_1_buffer.html">gl::Buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_s_s_a_o.html#ac3090d13af16b9ef497743e3d551fb8e">mSSAOKernelUBO</a></td></tr>
 <tr class="separator:ac3090d13af16b9ef497743e3d551fb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c500fc09f9305892d9c85cbe224b98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgl_1_1_texture2_d.html">gl::Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_s_s_a_o.html#ae9c500fc09f9305892d9c85cbe224b98">mSSAONoiseTex</a></td></tr>
 <tr class="separator:ae9c500fc09f9305892d9c85cbe224b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae264431b543efb872dd0e6f66102aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgl_1_1_program.html">gl::Program</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_s_s_a_o.html#aeae264431b543efb872dd0e6f66102aa">mSSAOProgram</a></td></tr>
-<tr class="separator:aeae264431b543efb872dd0e6f66102aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac362e8b168f8b39f2677e2e78da912aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgl_1_1_framebuffer.html">gl::Framebuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_s_s_a_o.html#ac362e8b168f8b39f2677e2e78da912aa">mDepthFramebuffer</a></td></tr>
 <tr class="separator:ac362e8b168f8b39f2677e2e78da912aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a650526b061115f43356b5aca5c060338"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgl_1_1_texture2_d.html">gl::Texture2D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_s_s_a_o.html#a650526b061115f43356b5aca5c060338">mDepthTex</a></td></tr>
@@ -147,6 +144,42 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_s_s_a_o_8cpp_source.html#l00008">8</a> of file <a class="el" href="_s_s_a_o_8cpp_source.html">SSAO.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_s_s_a_o_ab7b9a49826fb8271e6a08652f79f83ec_cgraph.png" border="0" usemap="#aclassdyno_1_1_s_s_a_o_ab7b9a49826fb8271e6a08652f79f83ec_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_s_s_a_o_ab7b9a49826fb8271e6a08652f79f83ec_cgraph" id="aclassdyno_1_1_s_s_a_o_ab7b9a49826fb8271e6a08652f79f83ec_cgraph">
+<area shape="rect" title=" " alt="" coords="5,257,145,284"/>
+<area shape="rect" href="classgl_1_1_buffer.html#a6279e21315e4ac04be2fb7bb59f96c43" title=" " alt="" coords="193,68,361,95"/>
+<area shape="rect" href="classgl_1_1_texture2_d.html#accd0ca36475474778d66af4ed1cd3a5c" title=" " alt="" coords="206,119,349,145"/>
+<area shape="rect" href="classgl_1_1_buffer.html#afe8be8fb229fb1957f05a6339819dd97" title=" " alt="" coords="219,169,336,196"/>
+<area shape="rect" href="classgl_1_1_shader_factory.html#a7a0fa82c84639e96af289dd47727ecb0" title=" " alt="" coords="203,221,351,262"/>
+<area shape="rect" href="classgl_1_1_texture2_d.html#a4868ec43ec3a40061a4fc4cefc353689" title=" " alt="" coords="212,287,343,313"/>
+<area shape="rect" href="classgl_1_1_buffer.html#a240c2c43be4b2e34755e73ba04a19922" title=" " alt="" coords="225,337,330,364"/>
+<area shape="rect" href="namespacevgm.html#a9e01535a47e715a94ccd8c8336920c4e" title=" " alt="" coords="223,388,332,415"/>
+<area shape="rect" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784" title=" " alt="" coords="235,439,319,465"/>
+<area shape="rect" href="classgl_1_1_program.html#aaca7f63e0af6d77931c5e1e545d42150" title=" " alt="" coords="420,257,595,284"/>
+<area shape="rect" href="classgl_1_1_program.html#ad33ab2c623361c9336466f231a366fe7" title=" " alt="" coords="441,308,574,335"/>
+<area shape="rect" href="classgl_1_1_shader.html#a8fb04c82b985ce59ea24831b35d79d45" title=" " alt="" coords="409,39,605,65"/>
+<area shape="rect" href="classgl_1_1_shader_factory.html#a3b5918e3fe704a3e6de108a950b89901" title=" " alt="" coords="441,90,574,131"/>
+<area shape="rect" href="classgl_1_1_program.html#a3993abe70dd1093ed2e569319cb56fb4" title=" " alt="" coords="449,156,566,183"/>
+<area shape="rect" href="classgl_1_1_shader.html#a0f6b2fd0aa8556a1b717b66fb195e144" title=" " alt="" coords="442,207,573,233"/>
+<area shape="rect" href="classgl_1_1_buffer.html#a82325422136a4c8b91dbca0d5bdcd276" title=" " alt="" coords="444,359,571,385"/>
+<area shape="rect" href="namespacevgm.html#af5bfc8b3f1a44713d342b5caee51906e" title=" " alt="" coords="463,409,551,436"/>
+<area shape="rect" href="namespacevgm.html#a74219de8d7167b3dbf6467fe7c10097e" title=" " alt="" coords="658,372,729,399"/>
+<area shape="rect" href="namespacedyno.html#ac2d9bbc99f7fd7afbe6b0889eff86281" title=" " alt="" coords="653,447,733,473"/>
+<area shape="rect" href="namespacedyno.html#a04befed6e1a89e4c84fbc7009f951d26" title=" " alt="" coords="1368,320,1444,347"/>
+<area shape="rect" href="classdyno_1_1_complex.html#ac27c15f0b204f54a8d087b3ca2424371" title=" " alt="" coords="1492,181,1661,208"/>
+<area shape="rect" href="classdyno_1_1_complex.html#a39594d0d244d10ad92ff9c7934f27685" title=" " alt="" coords="1495,396,1658,423"/>
+<area shape="rect" href="classdyno_1_1_complex.html#a5442492a59f72a71da02081dcdf44b0f" title=" " alt="" coords="781,573,928,600"/>
+<area shape="rect" href="namespacedyno.html#ac5d2551b7bf3e82e743324ebf79c203d" title=" " alt="" coords="811,269,898,296"/>
+<area shape="rect" href="namespacedyno.html#a7fffe8a3dc13634202a34f0a8eaadeed" title=" " alt="" coords="976,269,1055,296"/>
+<area shape="rect" href="namespacedyno.html#a45d70d118bacb800d4011955d52c6d21" title=" " alt="" coords="1369,219,1443,245"/>
+<area shape="rect" href="namespacedyno.html#a037afbb50b4ec5903f29b70db629d8cd" title=" " alt="" coords="1103,269,1189,296"/>
+<area shape="rect" href="namespacedyno.html#a611f1e43a5ee147f9c3f11d256378bbe" title=" " alt="" coords="1239,195,1318,221"/>
+<area shape="rect" href="namespacedyno.html#ad630ac9bb92289c2552bc043e1f0e4d5" title=" " alt="" coords="1237,320,1320,347"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -165,76 +198,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8cpp_source.html#l00013">13</a> of file <a class="el" href="_s_s_a_o_8cpp_source.html">SSAO.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8cpp_source.html#l00058">58</a> of file <a class="el" href="_s_s_a_o_8cpp_source.html">SSAO.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a448abd6c22926bb4d09481e45d929717" name="a448abd6c22926bb4d09481e45d929717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a448abd6c22926bb4d09481e45d929717">&#9670;&nbsp;</a></span>initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dyno::SSAO::initialize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8cpp_source.html#l00018">18</a> of file <a class="el" href="_s_s_a_o_8cpp_source.html">SSAO.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_s_s_a_o_a448abd6c22926bb4d09481e45d929717_cgraph.png" border="0" usemap="#aclassdyno_1_1_s_s_a_o_a448abd6c22926bb4d09481e45d929717_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_s_s_a_o_a448abd6c22926bb4d09481e45d929717_cgraph" id="aclassdyno_1_1_s_s_a_o_a448abd6c22926bb4d09481e45d929717_cgraph">
-<area shape="rect" title=" " alt="" coords="5,233,156,260"/>
-<area shape="rect" href="classgl_1_1_buffer.html#a6279e21315e4ac04be2fb7bb59f96c43" title=" " alt="" coords="204,31,372,57"/>
-<area shape="rect" href="classgl_1_1_texture2_d.html#ad65219556020ee66e63cceca006655b8" title=" " alt="" coords="217,81,359,108"/>
-<area shape="rect" href="classgl_1_1_buffer.html#afe8be8fb229fb1957f05a6339819dd97" title=" " alt="" coords="229,157,347,184"/>
-<area shape="rect" href="namespacegl.html#a082ff7ef8bf61bf71c65ab6fa172a278" title=" " alt="" coords="204,208,372,235"/>
-<area shape="rect" href="classgl_1_1_texture2_d.html#a4868ec43ec3a40061a4fc4cefc353689" title=" " alt="" coords="223,259,353,285"/>
-<area shape="rect" href="classgl_1_1_buffer.html#a240c2c43be4b2e34755e73ba04a19922" title=" " alt="" coords="235,309,341,336"/>
-<area shape="rect" href="namespacevgm.html#a9e01535a47e715a94ccd8c8336920c4e" title=" " alt="" coords="233,360,343,387"/>
-<area shape="rect" href="namespacevgm.html#a6b7aeec984389d14bcfbae8078c31784" title=" " alt="" coords="246,411,330,437"/>
-<area shape="rect" href="classgl_1_1_texture.html#a58cb44e26e6a81ecbf89b632916cbe25" title=" " alt="" coords="455,5,581,32"/>
-<area shape="rect" href="namespacevgm.html#aaf8d099b07abb9092ac7662b8025dc4e" title=" " alt="" coords="466,56,570,83"/>
-<area shape="rect" href="classgl_1_1_program.html#aaca7f63e0af6d77931c5e1e545d42150" title=" " alt="" coords="431,259,605,285"/>
-<area shape="rect" href="classgl_1_1_program.html#ad33ab2c623361c9336466f231a366fe7" title=" " alt="" coords="451,309,585,336"/>
-<area shape="rect" href="classgl_1_1_shader.html#a8fb04c82b985ce59ea24831b35d79d45" title=" " alt="" coords="420,107,616,133"/>
-<area shape="rect" href="classgl_1_1_program.html#a3993abe70dd1093ed2e569319cb56fb4" title=" " alt="" coords="459,157,577,184"/>
-<area shape="rect" href="classgl_1_1_shader.html#a0f6b2fd0aa8556a1b717b66fb195e144" title=" " alt="" coords="453,208,583,235"/>
-<area shape="rect" href="classgl_1_1_buffer.html#a82325422136a4c8b91dbca0d5bdcd276" title=" " alt="" coords="455,360,581,387"/>
-<area shape="rect" href="namespacevgm.html#af5bfc8b3f1a44713d342b5caee51906e" title=" " alt="" coords="474,411,562,437"/>
-<area shape="rect" href="namespacevgm.html#a74219de8d7167b3dbf6467fe7c10097e" title=" " alt="" coords="669,373,739,400"/>
-<area shape="rect" href="namespacedyno.html#ac2d9bbc99f7fd7afbe6b0889eff86281" title=" " alt="" coords="664,448,744,475"/>
-<area shape="rect" href="namespacedyno.html#a04befed6e1a89e4c84fbc7009f951d26" title=" " alt="" coords="1379,321,1455,348"/>
-<area shape="rect" href="classdyno_1_1_complex.html#ac27c15f0b204f54a8d087b3ca2424371" title=" " alt="" coords="1503,183,1672,209"/>
-<area shape="rect" href="classdyno_1_1_complex.html#a39594d0d244d10ad92ff9c7934f27685" title=" " alt="" coords="1506,397,1669,424"/>
-<area shape="rect" href="classdyno_1_1_complex.html#a5442492a59f72a71da02081dcdf44b0f" title=" " alt="" coords="792,575,939,601"/>
-<area shape="rect" href="namespacedyno.html#ac5d2551b7bf3e82e743324ebf79c203d" title=" " alt="" coords="822,271,909,297"/>
-<area shape="rect" href="namespacedyno.html#a7fffe8a3dc13634202a34f0a8eaadeed" title=" " alt="" coords="987,271,1065,297"/>
-<area shape="rect" href="namespacedyno.html#a45d70d118bacb800d4011955d52c6d21" title=" " alt="" coords="1379,220,1454,247"/>
-<area shape="rect" href="namespacedyno.html#a037afbb50b4ec5903f29b70db629d8cd" title=" " alt="" coords="1113,271,1200,297"/>
-<area shape="rect" href="namespacedyno.html#a611f1e43a5ee147f9c3f11d256378bbe" title=" " alt="" coords="1250,196,1329,223"/>
-<area shape="rect" href="namespacedyno.html#ad630ac9bb92289c2552bc043e1f0e4d5" title=" " alt="" coords="1248,321,1331,348"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_s_s_a_o_a448abd6c22926bb4d09481e45d929717_icgraph.png" border="0" usemap="#aclassdyno_1_1_s_s_a_o_a448abd6c22926bb4d09481e45d929717_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_s_s_a_o_a448abd6c22926bb4d09481e45d929717_icgraph" id="aclassdyno_1_1_s_s_a_o_a448abd6c22926bb4d09481e45d929717_icgraph">
-<area shape="rect" title=" " alt="" coords="209,13,360,39"/>
-<area shape="rect" href="classdyno_1_1_g_l_render_engine.html#a970917ced8adec592d08d5eab64d586d" title=" " alt="" coords="5,5,161,47"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a30a9d01e5185b1b94fadd569483f0387" name="a30a9d01e5185b1b94fadd569483f0387"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30a9d01e5185b1b94fadd569483f0387">&#9670;&nbsp;</a></span>resize()</h2>
 
@@ -261,7 +229,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8cpp_source.html#l00068">68</a> of file <a class="el" href="_s_s_a_o_8cpp_source.html">SSAO.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8cpp_source.html#l00063">63</a> of file <a class="el" href="_s_s_a_o_8cpp_source.html">SSAO.cpp</a>.</p>
 
 </div>
 </div>
@@ -286,7 +254,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00043">43</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00042">42</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +278,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00044">44</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00043">43</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
 
 </div>
 </div>
@@ -334,7 +302,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00053">53</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00052">52</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
 
 </div>
 </div>
@@ -358,7 +326,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00049">49</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00048">48</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +350,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00050">50</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00049">49</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +374,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00046">46</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00045">45</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
 
 </div>
 </div>
@@ -458,8 +426,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aeae264431b543efb872dd0e6f66102aa" name="aeae264431b543efb872dd0e6f66102aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeae264431b543efb872dd0e6f66102aa">&#9670;&nbsp;</a></span>mSSAOProgram</h2>
+<a id="a31b6606bcad84350d59fcdf14e56c32c" name="a31b6606bcad84350d59fcdf14e56c32c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b6606bcad84350d59fcdf14e56c32c">&#9670;&nbsp;</a></span>mSSAOProgram</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -468,7 +436,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classgl_1_1_program.html">gl::Program</a> dyno::SSAO::mSSAOProgram</td>
+          <td class="memname"><a class="el" href="classgl_1_1_program.html">gl::Program</a>* dyno::SSAO::mSSAOProgram</td>
         </tr>
       </table>
   </td>
@@ -478,7 +446,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00041">41</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00037">37</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
 
 </div>
 </div>
@@ -502,7 +470,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00047">47</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00046">46</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
 
 </div>
 </div>
@@ -526,7 +494,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00052">52</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_s_s_a_o_8h_source.html#l00051">51</a> of file <a class="el" href="_s_s_a_o_8h_source.html">SSAO.h</a>.</p>
 
 </div>
 </div>

@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -134,11 +134,11 @@ $(function() {
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">if</span> (pos_list.size() &gt; 0)</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            mPosition.resize(pos_list.size());</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            mVelocity.resize(pos_list.size());</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            this-&gt;mPosition.resize(pos_list.size());</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            this-&gt;mVelocity.resize(pos_list.size());</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            mPosition.assign(pos_list);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            mVelocity.assign(vel_list);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            this-&gt;mPosition.assign(pos_list);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            this-&gt;mVelocity.assign(vel_list);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
@@ -186,7 +186,7 @@ $(function() {
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
 <div class="ttc" id="a_qt_im_gui_8cpp_html_aebcbbf119bd44717e4b96b4fed18e3f8"><div class="ttname"><a href="_qt_im_gui_8cpp.html#aebcbbf119bd44717e4b96b4fed18e3f8">w</a></div><div class="ttdeci">QWindow * w</div><div class="ttdef"><b>Definition:</b> <a href="_qt_im_gui_8cpp_source.html#l00152">QtImGui.cpp:152</a></div></div>
 <div class="ttc" id="a_square_emitter_8h_html"><div class="ttname"><a href="_square_emitter_8h.html">SquareEmitter.h</a></div></div>
-<div class="ttc" id="a_typedef_8inl_html_a445a5f0e2a34c9d97d69a3c2d1957907"><div class="ttname"><a href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00019">Typedef.inl:19</a></div></div>
+<div class="ttc" id="a_typedef_8inl_html_a445a5f0e2a34c9d97d69a3c2d1957907"><div class="ttname"><a href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00021">Typedef.inl:21</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_edge_set_html"><div class="ttname"><a href="classdyno_1_1_edge_set.html">dyno::EdgeSet</a></div><div class="ttdef"><b>Definition:</b> <a href="_edge_set_8h_source.html#l00078">EdgeSet.h:79</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_particle_emitter_html"><div class="ttname"><a href="classdyno_1_1_particle_emitter.html">dyno::ParticleEmitter</a></div><div class="ttdef"><b>Definition:</b> <a href="_particle_emitter_8h_source.html#l00026">ParticleEmitter.h:27</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_particle_emitter_html_a3fd618a8f18a6f664181cf6ba1b73de2"><div class="ttname"><a href="classdyno_1_1_particle_emitter.html#a3fd618a8f18a6f664181cf6ba1b73de2">dyno::ParticleEmitter::Real</a></div><div class="ttdeci">TDataType::Real Real</div><div class="ttdef"><b>Definition:</b> <a href="_particle_emitter_8h_source.html#l00029">ParticleEmitter.h:29</a></div></div>
@@ -197,8 +197,8 @@ $(function() {
 <div class="ttc" id="aclassdyno_1_1_square_emitter_html_a6f166358c334aa1ff5a1bd2820c50369"><div class="ttname"><a href="classdyno_1_1_square_emitter.html#a6f166358c334aa1ff5a1bd2820c50369">dyno::SquareEmitter::generateParticles</a></div><div class="ttdeci">void generateParticles() override</div><div class="ttdef"><b>Definition:</b> <a href="_square_emitter_8cpp_source.html#l00029">SquareEmitter.cpp:29</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_square_emitter_html_a82ccbab69ff65db5d9543102fd548a6d"><div class="ttname"><a href="classdyno_1_1_square_emitter.html#a82ccbab69ff65db5d9543102fd548a6d">dyno::SquareEmitter::~SquareEmitter</a></div><div class="ttdeci">virtual ~SquareEmitter()</div><div class="ttdef"><b>Definition:</b> <a href="_square_emitter_8cpp_source.html#l00024">SquareEmitter.cpp:24</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_vector_n_d_html"><div class="ttname"><a href="classdyno_1_1_vector_n_d.html">dyno::VectorND</a></div><div class="ttdef"><b>Definition:</b> <a href="_vector_n_d_8h_source.html#l00013">VectorND.h:14</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a7b21bd812ef4fe77fa0715edc2c73818"><div class="ttname"><a href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">dyno::EPSILON</a></div><div class="ttdeci">constexpr Real EPSILON</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00033">Typedef.inl:33</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a7b21bd812ef4fe77fa0715edc2c73818"><div class="ttname"><a href="namespacedyno.html#a7b21bd812ef4fe77fa0715edc2c73818">dyno::EPSILON</a></div><div class="ttdeci">constexpr Real EPSILON</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00035">Typedef.inl:35</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a96ac3770273490437e2b8cced291b1a0"><div class="ttname"><a href="namespacedyno.html#a96ac3770273490437e2b8cced291b1a0">dyno::DEFINE_CLASS</a></div><div class="ttdeci">DEFINE_CLASS(CircularEmitter)</div></div>
 <div class="ttc" id="anamespacedyno_html_aafa7daf71ffcc74fd4e59d36d51ff01f"><div class="ttname"><a href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">dyno::Vec3f</a></div><div class="ttdeci">Vector&lt; float, 3 &gt; Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="_vector3_d_8h_source.html#l00088">Vector3D.h:88</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

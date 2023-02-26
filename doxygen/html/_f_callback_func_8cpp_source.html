@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">PeriDyno
    </div>
   </td>
  </tr>
@@ -84,7 +84,7 @@ $(function() {
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classdyno_1_1_f_call_back_func.html#a5cdcda7b0d59d775592eecf09edf4491">   13</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_f_call_back_func.html#a5cdcda7b0d59d775592eecf09edf4491">FCallBackFunc::update</a>()</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordflow">for each</span> (<span class="keyword">auto</span> f <span class="keywordflow">in</span> <a class="code hl_variable" href="classdyno_1_1_f_call_back_func.html#a0f19b2fc4dd056b7df4ae5cfdab9ccee">mInputs</a>)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span> f : <a class="code hl_variable" href="classdyno_1_1_f_call_back_func.html#a0f19b2fc4dd056b7df4ae5cfdab9ccee">mInputs</a>)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            <span class="keywordflow">if</span> (f-&gt;isEmpty())</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                <span class="keywordflow">return</span>;</div>
@@ -101,13 +101,13 @@ $(function() {
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 <div class="ttc" id="a_f_base_8h_html"><div class="ttname"><a href="_f_base_8h.html">FBase.h</a></div></div>
 <div class="ttc" id="a_f_callback_func_8h_html"><div class="ttname"><a href="_f_callback_func_8h.html">FCallbackFunc.h</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_f_base_html"><div class="ttname"><a href="classdyno_1_1_f_base.html">dyno::FBase</a></div><div class="ttdef"><b>Definition:</b> <a href="_f_base_8h_source.html#l00042">FBase.h:43</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_f_base_html"><div class="ttname"><a href="classdyno_1_1_f_base.html">dyno::FBase</a></div><div class="ttdef"><b>Definition:</b> <a href="_f_base_8h_source.html#l00043">FBase.h:44</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_call_back_func_html_a0f19b2fc4dd056b7df4ae5cfdab9ccee"><div class="ttname"><a href="classdyno_1_1_f_call_back_func.html#a0f19b2fc4dd056b7df4ae5cfdab9ccee">dyno::FCallBackFunc::mInputs</a></div><div class="ttdeci">std::vector&lt; FBase * &gt; mInputs</div><div class="ttdef"><b>Definition:</b> <a href="_f_callback_func_8h_source.html#l00038">FCallbackFunc.h:38</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_call_back_func_html_a5cdcda7b0d59d775592eecf09edf4491"><div class="ttname"><a href="classdyno_1_1_f_call_back_func.html#a5cdcda7b0d59d775592eecf09edf4491">dyno::FCallBackFunc::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> <a href="_f_callback_func_8cpp_source.html#l00013">FCallbackFunc.cpp:13</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_call_back_func_html_a9c7a918212a881cbbc1c0af6d5d9cdd9"><div class="ttname"><a href="classdyno_1_1_f_call_back_func.html#a9c7a918212a881cbbc1c0af6d5d9cdd9">dyno::FCallBackFunc::mCallback</a></div><div class="ttdeci">std::function&lt; void()&gt; mCallback</div><div class="ttdef"><b>Definition:</b> <a href="_f_callback_func_8h_source.html#l00036">FCallbackFunc.h:36</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_call_back_func_html_aae73c434b15ad81a851c4d78ff4311f5"><div class="ttname"><a href="classdyno_1_1_f_call_back_func.html#aae73c434b15ad81a851c4d78ff4311f5">dyno::FCallBackFunc::addInput</a></div><div class="ttdeci">void addInput(FBase *f)</div><div class="ttdef"><b>Definition:</b> <a href="_f_callback_func_8cpp_source.html#l00024">FCallbackFunc.cpp:24</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_call_back_func_html_acf64c7c1efb06dc2d195306aa6f24e0f"><div class="ttname"><a href="classdyno_1_1_f_call_back_func.html#acf64c7c1efb06dc2d195306aa6f24e0f">dyno::FCallBackFunc::FCallBackFunc</a></div><div class="ttdeci">FCallBackFunc(std::function&lt; void()&gt; func)</div><div class="ttdef"><b>Definition:</b> <a href="_f_callback_func_8cpp_source.html#l00008">FCallbackFunc.cpp:8</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_particle_writer_a_b_c_8cpp_source.html#l00014">ParticleWriterABC.cpp:15</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
