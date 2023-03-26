@@ -21,71 +21,29 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/qt/qt_glvisualmodule/",
-	"title": "Bricks",
+	"uri": "https://peridyno.github.io/en/examples/sph/gl_ghostsph/",
+	"title": "SPH",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/qt/qt_gui_empty/",
-	"title": "Bricks",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/qt/qt_gui_plugin/",
-	"title": "Bricks",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/qt/qt_marchingcubes/",
-	"title": "Bricks",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/qt/qt_mouseinteractioningraphicspipeline/",
-	"title": "Bricks",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/qt/qt_pickers/",
-	"title": "Bricks",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/qt/qt_resetnode/",
-	"title": "Bricks",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/qt/qt_showchinese/",
-	"title": "Bricks",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/qt/qt_viewtest/",
-	"title": "Bricks",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_cloth/",
+	"uri": "https://peridyno.github.io/en/examples/peridynamics/gl_cloth/",
 	"title": "Cloth",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_glfwgui/",
+	"title": "Cloth",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/installation/window/",
+	"title": "Window",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -127,14 +85,7 @@
 	"content": "The scene graph mainly includes two functions: node management and node operation logic management.\n1、Node management Node management functions include:\n add node  template\u0026lt;class TNode, class ...Args\u0026gt; std::shared_ptr\u0026lt;TNode\u0026gt; addNode(Args\u0026amp;\u0026amp; ... args) template\u0026lt;class TNode\u0026gt; std::shared_ptr\u0026lt;TNode\u0026gt; addNode(std::shared_ptr\u0026lt;TNode\u0026gt; tNode) Where TNode represents the derived type of the node, and Args is the parameter required by the node construction process\n delete node  void deleteNode(std::shared_ptr\u0026lt;Node\u0026gt; node); 2、Node operation logic management   Update run queue   void updateExecutionQueue(); The timing of the update mainly depends on whether the nodes in the scene graph and the connection relationship have changed. Once any item is changed, the node execution queue of the scene will update the run queue first the next time the node function is executed.\n update node status  void propagateNode(std::shared_ptr\u0026lt;Node\u0026gt; node); When the running state of a specific node changes, for example, the configuration parameters of the node are changed, the scene graph can update the state of all subsequent nodes that depend on the node by calling the propagateNode() function.\n3、Function expansion To be added\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/rigidbody/gl_collisionmask/",
-	"title": "Collision Mask",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/rigidbody/gl_collision/",
+	"uri": "https://peridyno.github.io/en/examples/rigidbody/gl_collisiondetectionin3d/",
 	"title": "Two Boxes",
 	"tags": [],
 	"description": "",
@@ -148,8 +99,15 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/qt/",
-	"title": "SPH",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_connection/",
+	"title": "Connection",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_instancevisualizer/",
+	"title": "Instance Visualizer",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -163,8 +121,22 @@
 	"content": "Tutorials on how to set up Peridyno.\nPlatforms Windows 10: fully tested\nLinux: should work as well, yet not guranteed.\nPrerequisites IDE:\n Visual studio 2017+  CUDA:\n Latest tests were done based on CUDA Toolkit 11.4, should be compatible will other old version.  Graphics:\n glad: https://github.com/Dav1dde/glad.git glfw: https://github.com/glfw/glfw imgui: https://github.com/ocornut/imgui  Optional:\n Qt: https://download.qt.io/ VTK: https://github.com/Kitware/VTK Alembic: https://github.com/alembic/alembic Imath: https://github.com/AcademySoftwareFoundation/Imath  Installation Aside from those optional, other libraries are integrated inside the project to simplify the installation. Use the following git command to down the project as well as other dependences.\ngit clone --recursive https://github.com/peridyno/peridyno.git\rBuild the project Check whether CMake has been installed on your system, if not, visit https://cmake.org/download/ to download the lastest version.\nPreferred: Run cmake-gui.exe, set the top two entries with the source code and binary directories. Configure the libararies you want to build, then click the Generate button to build the project.\nA more convient way to build the project with a default setting is as follows\ncd peridyo/build cmake ..\rExamples Optional library QT and VTK installation QT installation: Recommended downloadQT5.13.0 or above\n1、Register account：\n2、Components to be selected：\n3、Cmake project, and check the QT related options：\nVTK installation: Recommended downloadVTK8.2.0 or above\n1、Download VTK source code\n2.勾选Moduel中QT相关的这些选项：\n3.设置OpenGL相关选项： 4.然后点Generate再打开VS项目进行生成\n5.打开VTK的VS工程。生成-\u0026gt;批生成 ALL_BUILD Release x64 栏 勾选 √\u0026mdash;-\u0026gt;点击【生成】 6.把刚刚勾选的ALL_BUILD Release后面的√去掉，下拉，在INSTALL Release后面勾选\n7.将VTK路径加入到Path中 License Peridyno\u0026rsquo;s default license is the Apache 2.0 (See LICENSE).\nExternal libraries are distributed under their own terms.\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_elasticity/",
+	"uri": "https://peridyno.github.io/en/examples/peridynamics/gl_elasticity/",
 	"title": "Particle-based Elastic Objects",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/installation/linux/",
+	"title": "Linux",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/peridynamics/",
+	"title": "peridynamics",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -198,21 +170,35 @@
 	"content": "1、Function introduction A node is a collection of algorithms with relatively independent functions that encapsulate specific function modules. It is mainly composed of input node, input data, output node, output data, state variable and function module.\n2、How to implement a custom function node Creating a complete node consists of the following steps:\n  define input nodes (optional)\nDEF_NODE_PORT(T, name, desc)\rThis macro defines a single node input, where T represents the node type, name represents the name, desc represents the input node description information, and the access method is import+data name.\nDEF_NODE_PORTS(T, name, desc)\rThis macro definition can define an array of input nodes, which can access 0 to any number of nodes of type T as input. The access method is import+data name+s.\n  define input data (optional)\nDEF_VAR_IN(T, name, desc)\rDefine a single data type with input type T and name name as input.\nDEF_ARRAY_IN(T, name, device, desc)\rDefine a one-dimensional array of type T and name name as input on the device (CPU/GPU) device.\nDEF_ARRAY2D_IN(T, name, device, desc)\rDefine a two-dimensional array of type T and name as input on the device (CPU/GPU) device.\nDEF_ARRAY3D_IN(T, name, device, desc)\rDefine a three-dimensional array of type T and name name as input on the device (CPU/GPU) device.\nDEF_INSTANCE_IN(T, name, desc)\rDefine an instance of input type T and name name as input.\nDEF_ARRAYLIST_IN(T, name, device, desc)\rDefine a one-dimensional dynamic list array of type T and name name as input on the device (CPU/GPU) device.\n  define output data (optional)\nDEF_VAR_OUT(T, name, desc)\rDefine a single data type with input type T and name name as output.\nDEF_ARRAY_OUT(T, name, device, desc)\rDefine a one-dimensional array of type T and name name as output on the device (CPU/GPU) device.\nDEF_ARRAY2D_OUT(T, name, device, desc)\rDefine a two-dimensional array of type T and name name as output on the device (CPU/GPU) device.\nDEF_ARRAY3D_OUT(T, name, device, desc)\rDefine a three-dimensional array of type T and name name as output on the device (CPU/GPU) device.\nDEF_INSTANCE_OUT(T, name, desc)\rDefine an instance of input type T and name name as output.\nDEF_ARRAYLIST_OUT(T, name, device, desc)\rDefine a one-dimensional dynamic list array with type T and name name as output on the device (CPU/GPU) device.\n  define state variables\nDEF_VAR(T, name, value, desc)\rDefine a single data type with type T, name as name, and initial value type as value as a state variable.\nDEF_ARRAY_STATE(T, name, device, desc)\rDefine a one-dimensional array of type T and name name as a state variable on the device (CPU/GPU) device.\nDEF_ARRAY2D_STATE(T, name, device, desc)\rDefine a two-dimensional array of type T and name as a state variable on the device (CPU/GPU) device.\nDEF_ARRAY3D_STATE(T, name, device, desc)\rDefine a three-dimensional array of type T and name as a state variable on the device (CPU/GPU) device.\nDEF_INSTANCE_STATE(T, name, desc)\rDefine an instance of input type T and name name as a state variable.\nDEF_ARRAYLIST_STATE(T, name, device, desc)\rDefine a one-dimensional dynamic list array of type T and name name as a state variable on the device (CPU/GPU) device.\n  Create function modules\nTaking RigidBodySystem as an example, the function modules created in the constructor are as follows:\n//Create a self-collision detection module auto elementQuery = std::make_shared\u0026lt;NeighborElementQuery\u0026lt;TDataType\u0026gt;\u0026gt;(); this-\u0026gt;currentTopology()-\u0026gt;connect(elementQuery-\u0026gt;inDiscreteElements()); this-\u0026gt;stateCollisionMask()-\u0026gt;connect(elementQuery-\u0026gt;inCollisionMask()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(elementQuery); //Create a Bounding Box Collision Detection Function Module auto cdBV = std::make_shared\u0026lt;CollistionDetectionBoundingBox\u0026lt;TDataType\u0026gt;\u0026gt;(); this-\u0026gt;currentTopology()-\u0026gt;connect(cdBV-\u0026gt;inDiscreteElements()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(cdBV); //Create a combined contact function block auto merge = std::make_shared\u0026lt;ContactsUnion\u0026lt;TDataType\u0026gt;\u0026gt;(); elementQuery-\u0026gt;outContacts()-\u0026gt;connect(merge-\u0026gt;inContactsA()); cdBV-\u0026gt;outContacts()-\u0026gt;connect(merge-\u0026gt;inContactsB()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(merge); //Create a Rigid Body Dynamics Solver Module auto iterSolver = std::make_shared\u0026lt;IterativeConstraintSolver\u0026lt;TDataType\u0026gt;\u0026gt;(); this-\u0026gt;varTimeStep()-\u0026gt;connect(iterSolver-\u0026gt;inTimeStep()); this-\u0026gt;varFrictionEnabled()-\u0026gt;connect(iterSolver-\u0026gt;varFrictionEnabled()); this-\u0026gt;stateMass()-\u0026gt;connect(iterSolver-\u0026gt;inMass()); this-\u0026gt;stateCenter()-\u0026gt;connect(iterSolver-\u0026gt;inCenter()); this-\u0026gt;stateVelocity()-\u0026gt;connect(iterSolver-\u0026gt;inVelocity()); this-\u0026gt;stateAngularVelocity()-\u0026gt;connect(iterSolver-\u0026gt;inAngularVelocity()); this-\u0026gt;stateRotationMatrix()-\u0026gt;connect(iterSolver-\u0026gt;inRotationMatrix()); this-\u0026gt;stateInertia()-\u0026gt;connect(iterSolver-\u0026gt;inInertia()); this-\u0026gt;stateQuaternion()-\u0026gt;connect(iterSolver-\u0026gt;inQuaternion()); this-\u0026gt;stateInitialInertia()-\u0026gt;connect(iterSolver-\u0026gt;inInitialInertia()); merge-\u0026gt;outContacts()-\u0026gt;connect(iterSolver-\u0026gt;inContacts()); this-\u0026gt;animationPipeline()-\u0026gt;pushModule(iterSolver);   Overload virtual function\nvirtual void preUpdateStates(); Status update pre-processing function\nvirtual void updateStates(); The state update function, the default is to call the pipeline to execute the default algorithm process\nvirtual void postUpdateStates(); Status update post-processing function\n  "
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_glfwgui/",
-	"title": "GlfwGUI",
+	"uri": "https://peridyno.github.io/en/examples/sph/gl_particleemitter/",
+	"title": "Particle Fluid Emitter",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_fields/",
+	"title": "Connection",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/rigidbody/gl_collisionmask/",
+	"title": "Collision Mask",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/sph/gl_particlefluid/",
+	"title": "Particle Fluid",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
 	"uri": "https://peridyno.github.io/en/examples/rigidbody/gl_bricks/",
-	"title": "Rigid Body Dynamics",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/rigidbody/",
 	"title": "Rigid Body Dynamics",
 	"tags": [],
 	"description": "",
@@ -226,8 +212,22 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/qt/qt_glvisualnode/",
-	"title": "Bricks",
+	"uri": "https://peridyno.github.io/en/examples/peridynamics/gl_plasticity/",
+	"title": "plasticity",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/qt/",
+	"title": "SPH",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_mouseinteraction/",
+	"title": "mouseInteraction",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -248,6 +248,13 @@
 	"content": "1、Function introduction The module is a function-independent algorithm unit for internal calling of the node, which consists of input data, output data and control variables. The biggest difference between it and the node is that the input and output types only accept the Field type.\n2、How to implement a functional module It includes the following steps:\n  Define input data (usually at least one is required)\nSimilar to the definition in the node, the macro definition of DEF_{*}_IN is used to complete.\n  define output data (optional)\nSimilar to the definition in the node, the macro definition of DEF_{*}_OUT is used to complete.\n  Define control variables\nDEF_VAR(T, name, value, desc)\r\rControl variables must be initialized before module execution.\n\r  3、Module example /** * @brief The standard summation density * * @tparam TDataType */ template\u0026lt;typename TDataType\u0026gt; class SummationDensity : public virtual ParticleApproximation\u0026lt;TDataType\u0026gt; { DECLARE_TCLASS(SummationDensity, TDataType) public: typedef typename TDataType::Real Real; typedef typename TDataType::Coord Coord; SummationDensity(); ~SummationDensity() override {}; void compute() override; public: void compute( DArray\u0026lt;Real\u0026gt;\u0026amp; rho, DArray\u0026lt;Coord\u0026gt;\u0026amp; pos, DArrayList\u0026lt;int\u0026gt;\u0026amp; neighbors, Real smoothingLength, Real mass); void compute( DArray\u0026lt;Real\u0026gt;\u0026amp; rho, DArray\u0026lt;Coord\u0026gt;\u0026amp; pos, DArray\u0026lt;Coord\u0026gt;\u0026amp; posQueried, DArrayList\u0026lt;int\u0026gt;\u0026amp; neighbors, Real smoothingLength, Real mass); public: DEF_VAR(Real, RestDensity, 1000, \u0026#34;Rest Density\u0026#34;); ///Define inputs \t/** * @brief Particle positions */ DEF_ARRAY_IN(Coord, Position, DeviceType::GPU, \u0026#34;Particle position\u0026#34;); /** * @brief Particle positions */ DEF_ARRAY_IN(Coord, Other, DeviceType::GPU, \u0026#34;Particle position\u0026#34;); /** * @brief Neighboring particles * */ DEF_ARRAYLIST_IN(int, NeighborIds, DeviceType::GPU, \u0026#34;Neighboring particles\u0026#39; ids\u0026#34;); ///Define outputs \t/** * @brief Particle densities */ DEF_ARRAY_OUT(Real, Density, DeviceType::GPU, \u0026#34;Return the particle density\u0026#34;); private: void calculateParticleMass(); Real m_particle_mass; Real m_factor; }; IMPLEMENT_TCLASS(SummationDensity, TDataType) "
 },
 {
+	"uri": "https://peridyno.github.io/en/examples/rigidbody/",
+	"title": "Rigid Body Dynamics",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
 	"uri": "https://peridyno.github.io/en/examples/heightfield/qt_buoyancy/",
 	"title": "Buoyancy",
 	"tags": [],
@@ -255,22 +262,15 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_instancevisualizer/",
-	"title": "Instance Visualizer",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_glvisualmodule/",
+	"title": "Bricks",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/sph/",
-	"title": "SPH",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/sph/gl_ghostsph/",
-	"title": "SPH",
+	"uri": "https://peridyno.github.io/en/examples/rigidbody/gl_timing/",
+	"title": "Timing",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -281,6 +281,13 @@
 	"tags": [],
 	"description": "A set of examples guiding users on how to set up different cases.
 ",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_mouseinteractioningraphicspipeline/",
+	"title": "mouseInteractionInGraphicsPipeline",
+	"tags": [],
+	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
@@ -298,8 +305,29 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/",
-	"title": "Tutorials",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_glvisualnode/",
+	"title": "Bricks",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_segmentvisualizer/",
+	"title": "SegmentVisualizer",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/rigidbody/gl_wireframe/",
+	"title": "Wireframe",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/sph/",
+	"title": "SPH",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -313,13 +341,6 @@
 	"content": "Tutorials are complete worked examples made up of multiple tasks that guide the user through a relatively simple but realistic scenario: building an application that uses some of your project’s features, for example. If you have already created some Examples for your project you can base Tutorials on them. This section is optional. However, remember that although you may not need this section at first, having tutorials can be useful to help your users engage with your example code, especially if there are aspects that need more explanation than you can easily provide in code comments.\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_mouseinteraction/",
-	"title": "mouseInteraction",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
 	"uri": "https://peridyno.github.io/en/reference/reflection/",
 	"title": "Reflection",
 	"tags": [],
@@ -327,8 +348,22 @@
 	"content": "1、what is reflection Assuming we know the name of a class, how can we dynamically generate an object of a class from the class name string?\nIn Java programming, this is not a problem. However, the language characteristics of C++ determine that it does not support generating objects through the class name string \u0026ldquo;ClassXX\u0026rdquo;, that is to say, in C++ we can use ClassXX* object =new ClassXX to generate objects, but not through ClassXX* object= new \u0026ldquo;ClassXX\u0026rdquo; to generate the object. This makes it impossible to achieve adaptive expansion when we expand the functions of nodes and modules, that is, if we introduce a new function module, the simulation engine cannot dynamically perceive its existence.\nThe reflection mechanism is introduced to solve the problem of adaptive expansion of simulation nodes and functional modules, thereby avoiding deep coupling between codes.\n2、C++ reflection principle Reference code src/Framework/Object.h.\n\r3、How extension modules support reflection All classes that need to support reflection need to inherit from Object. Taking the class implemented in src/Dynamics/ParticleSystem/SummationDensity.h as an example, the process of supporting reflection consists of two steps\n  Derived from Object or a subclass of Object\ntemplate\u0026lt;typename TDataType\u0026gt; class SummationDensity : public virtual ParticleApproximation\u0026lt;TDataType\u0026gt;   interface declaration\nDECLARE_CLASS(SummationDensity)\r//or\rDECLARE_TCLASS(SummationDensity, TDataType)\rAmong them, SummationDensity corresponds to the name of the class, and TDataType corresponds to the template parameter\n  interface implementation\nIMPLEMENT_TCLASS(SummationDensity)\r//or\rIMPLEMENT_TCLASS(SummationDensity, TDataType)\rAmong them, the registration of SummationDensity is completed by defining static variables through DECLARE_CLASS/DECLARE_TCLASS.\n  DECLARE_TCLASS and IMPLEMENT_TCLASS are required to be defined in the same header file. This method is valid for classes whose implementation files are cpp suffixes. However, there are still some problems with the current NVCC compiler. If the implementation file has a .cu suffix, the defined static variable cannot be initialized, and it needs to be done through an additional class.\n\rA feasible solution is to introduce an additional class for each static link library to complete the initialization, which is introduced in initializeParticleSystem.h\nclass ParticleSystemInitializer : public Object { public: ParticleSystemInitializer(); }; const static ParticleSystemInitializer particleSystemInitializer; At the same time, define and implement the following constructor in initializeParticleSystem.cpp to complete the explicit call to the class defined in the .cu file.\nParticleSystemInitializer::ParticleSystemInitializer() { TypeInfo::New\u0026lt;LinearDamping\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;ParticleIntegrator\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;ImplicitViscosity\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;DensityPBD\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;SummationDensity\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;VariationalApproximateProjection\u0026lt;DataType3f\u0026gt;\u0026gt;(); } Finally, add WHOLEARCHIVE to the CMakeLists.txt ({peridyno_Code_path}/examples/Qt_VtkVisualModule/CMakeLists.txt) of the Qt project: "
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_mouseinteractioningraphicspipeline/",
-	"title": "mouseInteractionInGraphicsPipeline",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_gui_empty/",
+	"title": "Bricks",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_topology/",
+	"title": "Topology",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/tutorials/",
+	"title": "Tutorials",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -348,6 +383,13 @@
 	"content": "2、Node operation logic management   Update run queue   void updateExecutionQueue(); The timing of the update mainly depends on whether the nodes in the scene graph and the connection relationship have changed. Once any item is changed, the node execution queue of the scene will update the run queue first the next time the node function is executed.\n update node status  void propagateNode(std::shared_ptr\u0026lt;Node\u0026gt; node); When the running state of a specific node changes, for example, the configuration parameters of the node are changed, the scene graph can update the state of all subsequent nodes that depend on the node by calling the propagateNode() function.\n3、Function expansion To be added\u0026hellip;\n"
 },
 {
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_gui_plugin/",
+	"title": "GUI Plugin",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
 	"uri": "https://peridyno.github.io/en/reference/",
 	"title": "Reference",
 	"tags": [],
@@ -356,15 +398,8 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_particleemitter/",
-	"title": "Particle Fluid Emitter",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_particlefluid/",
-	"title": "Particle Fluid",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_marchingcubes/",
+	"title": "MarchingCubes",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -386,50 +421,43 @@
 	"content": "Prerequisites and installation Install Hugo You need a recent extended version (we recommend version 0.53 or later) of Hugo to do local builds and previews of sites (like this one) that use Docsy. If you install from the release page, make sure to get the extended Hugo version, which supports SCSS.\nFor comprehensive Hugo documentation, see gohugo.io.\nTo see if you already have hugo installed and check the installed version, run the following commands:\nhugo version\rwindows 1.Download hugo executable file\nClick Here to download hugo executable file, you must download an extended version. For example, an 64bit windows OS should download hugo_extended_0.75.1_Windows-64bit.zip.\n2.Config the path\nConfig the path where .exe file exist to environment variables. The path should not have spaces, which may cause some unexpected problems.\nFor example, the path of D:\\Hugo\\bin is ok. The path of D:\\Program Files (x86)\\Hugo\\bin may cause some unexpected problems.\nLinux Do not use sudo apt-get install hugo, as it currently doesn\u0026rsquo;t get you the extended version.\nIf you\u0026rsquo;ve already installed Hugo, check your version:\nhugo version\rIf the result is v0.52 or earlier, or if you don\u0026rsquo;t see Extended, you\u0026rsquo;ll need to install the latest version.\n  Go to the Hugo releases page.\n  In the most recent release, scroll down until you find a list of Extended versions.\n  Download the latest extended version (hugo_extended_0.5X_Linux-64bit.tar.gz).\n  Create a new directory:\nmkdir hugo\r   Extract the files you downloaded to hugo.\n  Switch to your new directory:\ncd hugo\r   Install Hugo:\nsudo install hugo /usr/bin    macOS Install Hugo using Brew.\nInstall Node.js and npm To see if you already have Node.js and npm installed and check the installed version, run the following commands:\nnode -v\rnpm -v\rClick Here to download Node.js and install it.\nInstall PostCSS To build or update your site\u0026rsquo;s CSS resources, you also need PostCSS to create the final assets. If you need to install it, you must have a recent version of NodeJS installed on your machine so you can use npm, the Node package manager. By default npm installs tools under the directory where you run npm install:\nnpm install postcss --save-dev\rnpm install -D --save autoprefixer\rnpm install -D --save postcss-cli\rNote that versions of PostCSS later than 5.0.1 will not load autoprefixer if installed globally, you must use a local install.\nClone Peridyno webset code and run   Make a local working copy of the Peridyno webset directly using git clone:\ngit clone https://github.com/peridyno/peri-docs.git\r   Switch to the root of the cloned project, for example:\n cd peri-docs\r   Build your site:\n hugo server\r   Preview your site in your browser at: http://localhost:1313/. You can use Ctrl + c to stop the Hugo server whenever you like.\n  In the cmd of windows, enter into current folder, and input hugo server to launch the local server.\nPull requests Finally, you should make an \u0026ldquo;Pull requests\u0026rdquo; at our github repository. Thanks for your contribution to Peridyno opensource project!\nPublishing website   Generate public folder\n cd peridyno-doc\rhugo\r   Push files(If you have permission)\n cd public git init\rgit add -A\rgit commit -am \u0026quot;init\u0026quot;\rgit remote add origin https://github.com/peridyno/peri-docs.github.io\rgit push -f origin master\r   Modify Custom domain(If you have permission)\nEnter the settings of the peridynoTeam.github.io project(https://github.com/peridyno/peri-docs.github.io/settings). Add www.peridyno.com in Custom domain. Wait a few minutes, you can see Peridyno website on www.peridyno.com.\n  If our project is helpful to you, give a star and watch us!!! "
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_plasticity/",
-	"title": "plasticity",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_mouseinteractioningraphicspipeline/",
+	"title": "Bricks",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_segmentvisualizer/",
-	"title": "SegmentVisualizer",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_pickers/",
+	"title": "Pickers",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_timing/",
-	"title": "Timing",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_resetnode/",
+	"title": "ResetNodes",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_topology/",
-	"title": "Topology",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_selectnode/",
+	"title": "ResetNodes",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/gl_wireframe/",
-	"title": "Wireframe",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_showchinese/",
+	"title": "ShowChinese",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/installation/window/",
-	"title": "Window",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/installation/linux/",
-	"title": "Linux",
+	"uri": "https://peridyno.github.io/en/examples/qt/qt_viewtest/",
+	"title": "View Test",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
