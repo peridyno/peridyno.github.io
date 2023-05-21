@@ -92,19 +92,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a530e95abe8f81e7cf87412b52ba920a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88e870d1721d2189107464a10027c50e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a88e870d1721d2189107464a10027c50e">terminate</a> ()=0</td></tr>
 <tr class="separator:a88e870d1721d2189107464a10027c50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff26b896a7a77463d821b254bb1f582"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#abff26b896a7a77463d821b254bb1f582">draw</a> (<a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> *scene, const <a class="el" href="structdyno_1_1_render_params.html">RenderParams</a> &amp;rparams)=0</td></tr>
-<tr class="separator:abff26b896a7a77463d821b254bb1f582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1843571b83896dd59025bdfd3721c0ec"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="structdyno_1_1_selection_item.html">SelectionItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a1843571b83896dd59025bdfd3721c0ec">select</a> (int x, int y, int <a class="el" href="_qt_im_gui_8cpp.html#aebcbbf119bd44717e4b96b4fed18e3f8">w</a>, int h)=0</td></tr>
-<tr class="separator:a1843571b83896dd59025bdfd3721c0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f7d78d3a310fa0debb36dce3e69455"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a15f7d78d3a310fa0debb36dce3e69455">draw</a> (<a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> *scene, <a class="el" href="classdyno_1_1_camera.html">Camera</a> *camera, const <a class="el" href="structdyno_1_1_render_params.html">RenderParams</a> &amp;rparams)=0</td></tr>
+<tr class="separator:a15f7d78d3a310fa0debb36dce3e69455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec4fb947f9a9e1fa5dd75eebfcab1a8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structdyno_1_1_selection.html">Selection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a0ec4fb947f9a9e1fa5dd75eebfcab1a8">select</a> (int x, int y, int <a class="el" href="_qt_im_gui_8cpp.html#aebcbbf119bd44717e4b96b4fed18e3f8">w</a>, int h)=0</td></tr>
+<tr class="separator:a0ec4fb947f9a9e1fa5dd75eebfcab1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cfc48af4d0eea281eb8c4128f381642"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_render_engine.html#a7cfc48af4d0eea281eb8c4128f381642">name</a> () const =0</td></tr>
 <tr class="separator:a7cfc48af4d0eea281eb8c4128f381642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_render_engine_8h_source.html#l00086">86</a> of file <a class="el" href="_render_engine_8h_source.html">RenderEngine.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_engine_8h_source.html#l00081">81</a> of file <a class="el" href="_render_engine_8h_source.html">RenderEngine.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="abff26b896a7a77463d821b254bb1f582" name="abff26b896a7a77463d821b254bb1f582"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abff26b896a7a77463d821b254bb1f582">&#9670;&nbsp;</a></span>draw()</h2>
+<a id="a15f7d78d3a310fa0debb36dce3e69455" name="a15f7d78d3a310fa0debb36dce3e69455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f7d78d3a310fa0debb36dce3e69455">&#9670;&nbsp;</a></span>draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,6 +117,12 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> *&#160;</td>
           <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_camera.html">Camera</a> *&#160;</td>
+          <td class="paramname"><em>camera</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -137,7 +143,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a3bedb8696e4f4528d304b1fdf17a4d03">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#a94c9c7952290c637da6e8752d6654981">dyno::VtkRenderEngine</a>.</p>
+<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a3ff0ad2f46fb0666f13218274ef5e918">dyno::GLRenderEngine</a>.</p>
 
 </div>
 </div>
@@ -195,8 +201,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1843571b83896dd59025bdfd3721c0ec" name="a1843571b83896dd59025bdfd3721c0ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1843571b83896dd59025bdfd3721c0ec">&#9670;&nbsp;</a></span>select()</h2>
+<a id="a0ec4fb947f9a9e1fa5dd75eebfcab1a8" name="a0ec4fb947f9a9e1fa5dd75eebfcab1a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec4fb947f9a9e1fa5dd75eebfcab1a8">&#9670;&nbsp;</a></span>select()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +211,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::vector&lt; <a class="el" href="structdyno_1_1_selection_item.html">SelectionItem</a> &gt; dyno::RenderEngine::select </td>
+          <td class="memname">virtual <a class="el" href="structdyno_1_1_selection.html">Selection</a> dyno::RenderEngine::select </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -241,7 +247,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#a73e098431b8af442bc48cbdc84b28919">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#a757910bec6cfae8b14d3968445431626">dyno::VtkRenderEngine</a>.</p>
+<p>Implemented in <a class="el" href="classdyno_1_1_g_l_render_engine.html#acdbdc4446cce27c1bdcb64e358fd278b">dyno::GLRenderEngine</a>, and <a class="el" href="classdyno_1_1_vtk_render_engine.html#a757910bec6cfae8b14d3968445431626">dyno::VtkRenderEngine</a>.</p>
 
 </div>
 </div>

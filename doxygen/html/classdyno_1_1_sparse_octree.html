@@ -83,10 +83,14 @@ Collaboration diagram for dyno::SparseOctree&lt; TDataType &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_sparse_octree__coll__graph.png" border="0" usemap="#adyno_1_1_sparse_octree_3_01_t_data_type_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_sparse_octree_3_01_t_data_type_01_4_coll__map" id="adyno_1_1_sparse_octree_3_01_t_data_type_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="597,95,736,137"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="223,59,421,101"/>
-<area shape="rect" href="classdyno_1_1_octree_node.html" title=" " alt="" coords="5,67,132,93"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="231,125,413,166"/>
+<area shape="rect" title=" " alt="" coords="981,97,1120,138"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="607,59,805,101"/>
+<area shape="rect" href="classdyno_1_1_octree_node.html" title=" " alt="" coords="377,17,504,44"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="365,69,516,110"/>
+<area shape="rect" href="classdyno_1_1_vk_variable.html" title=" " alt="" coords="195,109,316,136"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="369,134,512,175"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html" title=" " alt="" coords="5,109,124,136"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="615,134,797,175"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -171,6 +175,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a52aa0f7097f2f7877554dc4f47ef2dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20014ea0da7f18042daba03286f1b69d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_octree_node.html">OctreeNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_sparse_octree.html#a20014ea0da7f18042daba03286f1b69d">m_post_ordered_nodes</a></td></tr>
 <tr class="separator:a20014ea0da7f18042daba03286f1b69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa108319560b36363cbdafc37a29d7f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_sparse_octree.html#afa108319560b36363cbdafc37a29d7f8">data_count</a></td></tr>
+<tr class="separator:afa108319560b36363cbdafc37a29d7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03fecc8d7e26e9e97f281df505190275"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_sparse_octree.html#a03fecc8d7e26e9e97f281df505190275">duplicates_count</a></td></tr>
 <tr class="separator:a03fecc8d7e26e9e97f281df505190275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7d39328ec684e8bfc6d183436dc09e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_sparse_octree.html#ad7d39328ec684e8bfc6d183436dc09e4">node_count</a></td></tr>
@@ -1052,7 +1058,33 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00182">182</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00183">183</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
+
+</div>
+</div>
+<a id="afa108319560b36363cbdafc37a29d7f8" name="afa108319560b36363cbdafc37a29d7f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa108319560b36363cbdafc37a29d7f8">&#9670;&nbsp;</a></span>data_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt;int&gt; <a class="el" href="classdyno_1_1_sparse_octree.html">dyno::SparseOctree</a>&lt; TDataType &gt;::data_count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00180">180</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
 
 </div>
 </div>
@@ -1078,7 +1110,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00180">180</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00181">181</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
 
 </div>
 </div>
@@ -1262,7 +1294,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00183">183</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00184">184</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
 
 </div>
 </div>
@@ -1288,7 +1320,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00181">181</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00182">182</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
 
 </div>
 </div>
@@ -1314,12 +1346,12 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00184">184</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sparse_octree_8h_source.html#l00185">185</a> of file <a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Peridyno/peridyno/src/Framework/Topology/<a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a></li>
+<li>E:/Peridyno/peridyno/src/Topology/Cuda/Topology/<a class="el" href="_sparse_octree_8h_source.html">SparseOctree.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

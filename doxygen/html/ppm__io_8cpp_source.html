@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/IO/Image_IO/ppm_io.cpp Source File</title>
+<title>PeriDyno: E:/Peridyno/peridyno/src/IO/Cuda/Image_IO/ppm_io.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_cd3c1637d5000b6cab1d48c02b7c8cab.html">IO</a></li><li class="navelem"><a class="el" href="dir_8a5fca9821932366f119fa73da6e951e.html">Image_IO</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_cd3c1637d5000b6cab1d48c02b7c8cab.html">IO</a></li><li class="navelem"><a class="el" href="dir_f1dce8a7f41c3f5d10ea8de2106b2934.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_efe9bb067cd3a429fee7d25fa9edaa39.html">Image_IO</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -90,7 +90,7 @@ $(function() {
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="image__io_8h.html">Image_IO/image_io.h</a>&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="ppm__io_8h.html">Image_IO/ppm_io.h</a>&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="_algorithm_8h.html">Algorithm.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;Algorithm.h&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="file__content__utilities_8h.html">File_Utilities/file_content_utilities.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="file__path__utilities_8h.html">File_Utilities/file_path_utilities.h</a>&quot;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">using </span>std::string;</div>
@@ -237,7 +237,6 @@ $(function() {
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>} <span class="comment">//end of namespace dyno</span></div>
-<div class="ttc" id="a_algorithm_8h_html"><div class="ttname"><a href="_algorithm_8h.html">Algorithm.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_image_html"><div class="ttname"><a href="classdyno_1_1_image.html">dyno::Image</a></div><div class="ttdef"><b>Definition:</b> <a href="image_8h_source.html#l00022">image.h:23</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_image_html_a218db27110c4538c072b43d65a7ec3f7"><div class="ttname"><a href="classdyno_1_1_image.html#a218db27110c4538c072b43d65a7ec3f7">dyno::Image::width</a></div><div class="ttdeci">unsigned int width() const</div><div class="ttdef"><b>Definition:</b> <a href="image_8cpp_source.html#l00055">image.cpp:55</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_image_html_a38fac01b7a12a532de1c159151af12b2"><div class="ttname"><a href="classdyno_1_1_image.html#a38fac01b7a12a532de1c159151af12b2">dyno::Image::setRawData</a></div><div class="ttdeci">void setRawData(unsigned int width, unsigned int height, DataFormat data_format, const unsigned char *raw_data)</div><div class="ttdef"><b>Definition:</b> <a href="image_8cpp_source.html#l00080">image.cpp:80</a></div></div>
@@ -254,7 +253,7 @@ $(function() {
 <div class="ttc" id="afile__path__utilities_8h_html"><div class="ttname"><a href="file__path__utilities_8h.html">file_path_utilities.h</a></div></div>
 <div class="ttc" id="aimage__io_8h_html"><div class="ttname"><a href="image__io_8h.html">image_io.h</a></div></div>
 <div class="ttc" id="anamespacedyno_1_1_file_utilities_html_a6848ac356da742dbe9a93aa1d01531f6"><div class="ttname"><a href="namespacedyno_1_1_file_utilities.html#a6848ac356da742dbe9a93aa1d01531f6">dyno::FileUtilities::removeWhitespaces</a></div><div class="ttdeci">string removeWhitespaces(const string &amp;line, unsigned int num_retained_spaces)</div><div class="ttdef"><b>Definition:</b> <a href="file__content__utilities_8cpp_source.html#l00024">file_content_utilities.cpp:24</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
 <div class="ttc" id="appm__io_8h_html"><div class="ttname"><a href="ppm__io_8h.html">ppm_io.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

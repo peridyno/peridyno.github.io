@@ -106,9 +106,9 @@ Macros</h2></td></tr>
 <tr class="separator:aaf81690ad26c92c85a6acdd7f1d3a3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ac1869ab11654688bc0ea77bf224fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imgui__impl__glfw_8cpp.html#a58ac1869ab11654688bc0ea77bf224fe">GLFW_HAS_NEW_CURSORS</a>&#160;&#160;&#160;(0)</td></tr>
 <tr class="separator:a58ac1869ab11654688bc0ea77bf224fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0720760ecc7d8768f926a5b2ba4af07d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imgui__impl__glfw_8cpp.html#a0720760ecc7d8768f926a5b2ba4af07d">MAP_BUTTON</a>(NAV_NO,  BUTTON_NO)&#160;&#160;&#160;{ if (buttons_count &gt; BUTTON_NO &amp;&amp; buttons[BUTTON_NO] == GLFW_PRESS) io.NavInputs[NAV_NO] = 1.0f; }</td></tr>
+<tr class="memitem:a0720760ecc7d8768f926a5b2ba4af07d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imgui__impl__glfw_8cpp.html#a0720760ecc7d8768f926a5b2ba4af07d">MAP_BUTTON</a>(NAV_NO,  BUTTON_NO)&#160;&#160;&#160;{ <a class="el" href="_vulkan_swap_chain_8cpp.html#ade3526cbb4989356b9c7d049c9f51ac7">if</a> (buttons_count &gt; BUTTON_NO &amp;&amp; buttons[BUTTON_NO] == GLFW_PRESS) io.NavInputs[NAV_NO] = 1.0f; }</td></tr>
 <tr class="separator:a0720760ecc7d8768f926a5b2ba4af07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad181101ed89f4155bbc97eccffea135b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imgui__impl__glfw_8cpp.html#ad181101ed89f4155bbc97eccffea135b">MAP_ANALOG</a>(NAV_NO,  AXIS_NO,  V0,  V1)&#160;&#160;&#160;{ float v = (axes_count &gt; AXIS_NO) ? axes[AXIS_NO] : V0; v = (v - V0) / (V1 - V0); if (v &gt; 1.0f) v = 1.0f; if (io.NavInputs[NAV_NO] &lt; v) io.NavInputs[NAV_NO] = v; }</td></tr>
+<tr class="memitem:ad181101ed89f4155bbc97eccffea135b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imgui__impl__glfw_8cpp.html#ad181101ed89f4155bbc97eccffea135b">MAP_ANALOG</a>(NAV_NO,  AXIS_NO,  V0,  V1)&#160;&#160;&#160;{ float v = (axes_count &gt; AXIS_NO) ? axes[AXIS_NO] : V0; v = (v - V0) / (V1 - V0); <a class="el" href="_vulkan_swap_chain_8cpp.html#ade3526cbb4989356b9c7d049c9f51ac7">if</a> (v &gt; 1.0f) v = 1.0f; <a class="el" href="_vulkan_swap_chain_8cpp.html#ade3526cbb4989356b9c7d049c9f51ac7">if</a> (io.NavInputs[NAV_NO] &lt; v) io.NavInputs[NAV_NO] = v; }</td></tr>
 <tr class="separator:ad181101ed89f4155bbc97eccffea135b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -305,7 +305,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ float v = (axes_count &gt; AXIS_NO) ? axes[AXIS_NO] : V0; v = (v - V0) / (V1 - V0); if (v &gt; 1.0f) v = 1.0f; if (io.NavInputs[NAV_NO] &lt; v) io.NavInputs[NAV_NO] = v; }</td>
+          <td></td><td>&#160;&#160;&#160;{ float v = (axes_count &gt; AXIS_NO) ? axes[AXIS_NO] : V0; v = (v - V0) / (V1 - V0); <a class="el" href="_vulkan_swap_chain_8cpp.html#ade3526cbb4989356b9c7d049c9f51ac7">if</a> (v &gt; 1.0f) v = 1.0f; <a class="el" href="_vulkan_swap_chain_8cpp.html#ade3526cbb4989356b9c7d049c9f51ac7">if</a> (io.NavInputs[NAV_NO] &lt; v) io.NavInputs[NAV_NO] = v; }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -333,7 +333,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ if (buttons_count &gt; BUTTON_NO &amp;&amp; buttons[BUTTON_NO] == GLFW_PRESS) io.NavInputs[NAV_NO] = 1.0f; }</td>
+          <td></td><td>&#160;&#160;&#160;{ <a class="el" href="_vulkan_swap_chain_8cpp.html#ade3526cbb4989356b9c7d049c9f51ac7">if</a> (buttons_count &gt; BUTTON_NO &amp;&amp; buttons[BUTTON_NO] == GLFW_PRESS) io.NavInputs[NAV_NO] = 1.0f; }</td>
         </tr>
       </table>
 </div><div class="memdoc">

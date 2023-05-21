@@ -71,12 +71,13 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_discrete_elements-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::DiscreteElements&lt; TDataType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for dyno::DiscreteElements&lt; TDataType &gt;:</div>
 <div class="dyncontent">
@@ -94,30 +95,43 @@ Collaboration diagram for dyno::DiscreteElements&lt; TDataType &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_discrete_elements__coll__graph.png" border="0" usemap="#adyno_1_1_discrete_elements_3_01_t_data_type_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_discrete_elements_3_01_t_data_type_01_4_coll__map" id="adyno_1_1_discrete_elements_3_01_t_data_type_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="1637,410,1799,451"/>
-<area shape="rect" href="classdyno_1_1_topology_module.html" title=" " alt="" coords="1271,119,1423,145"/>
-<area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="1005,92,1105,119"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="181,117,279,144"/>
-<area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="743,76,831,103"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html" title=" " alt="" coords="440,67,571,93"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="5,117,101,144"/>
-<area shape="rect" title=" " alt="" coords="478,5,533,32"/>
-<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="151,40,309,67"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1250,410,1445,451"/>
-<area shape="rect" href="classdyno_1_1_t_sphere3_d.html" title="3D geometric primitives in three&#45;dimensional space" alt="" coords="969,413,1141,440"/>
-<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="708,329,867,356"/>
-<area shape="rect" href="classdyno_1_1_t_oriented_box3_d.html" title=" " alt="" coords="978,221,1131,262"/>
-<area shape="rect" href="classdyno_1_1_t_tet3_d.html" title="vertices are ordered so that the normal vectors for the triangular faces point outwards" alt="" coords="980,291,1129,317"/>
-<area shape="rect" href="classdyno_1_1_t_triangle3_d.html" title=" " alt="" coords="987,345,1122,386"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1235,214,1460,255"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1256,279,1439,321"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1247,475,1447,517"/>
-<area shape="rect" href="classdyno_1_1_t_capsule3_d.html" title=" " alt="" coords="965,483,1144,509"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1248,345,1447,386"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1256,541,1439,582"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1256,606,1439,647"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1254,671,1441,713"/>
-<area shape="rect" href="classdyno_1_1_vector_n_d.html" title=" " alt="" coords="973,679,1136,705"/>
+<area shape="rect" title=" " alt="" coords="1740,577,1901,618"/>
+<area shape="rect" href="classdyno_1_1_topology_module.html" title=" " alt="" coords="1374,231,1526,257"/>
+<area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="1007,29,1107,56"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="181,104,279,131"/>
+<area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="745,95,833,121"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html" title=" " alt="" coords="440,155,571,181"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="5,104,101,131"/>
+<area shape="rect" title=" " alt="" coords="478,39,533,65"/>
+<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="151,201,309,228"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1353,359,1547,401"/>
+<area shape="rect" href="classdyno_1_1_t_sphere3_d.html" title="3D geometric primitives in three&#45;dimensional space" alt="" coords="971,151,1143,177"/>
+<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="708,203,869,229"/>
+<area shape="rect" href="classdyno_1_1_t_oriented_box3_d.html" title=" " alt="" coords="981,202,1134,243"/>
+<area shape="rect" href="classdyno_1_1_t_tet3_d.html" title="vertices are ordered so that the normal vectors for the triangular faces point outwards" alt="" coords="983,333,1132,360"/>
+<area shape="rect" href="classdyno_1_1_t_triangle3_d.html" title=" " alt="" coords="990,85,1125,126"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="984,385,1131,426"/>
+<area shape="rect" href="classdyno_1_1_vk_variable.html" title=" " alt="" coords="728,653,849,680"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="969,515,1146,557"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="986,581,1129,622"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="981,881,1133,922"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="982,267,1133,309"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="986,450,1129,491"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="986,646,1129,687"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="986,763,1129,805"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="1171,817,1313,858"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="1171,990,1313,1031"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="1171,1039,1313,1081"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html" title=" " alt="" coords="446,653,565,680"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1337,511,1563,553"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1359,577,1541,618"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1350,881,1550,922"/>
+<area shape="rect" href="classdyno_1_1_t_capsule3_d.html" title=" " alt="" coords="968,947,1147,973"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1351,282,1549,323"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1359,446,1541,487"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1359,642,1541,683"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1357,707,1543,749"/>
+<area shape="rect" href="classdyno_1_1_vector_n_d.html" title=" " alt="" coords="976,712,1139,739"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -140,8 +154,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a78c6b51a4d44e2de93a9f7443a6e59ac inherit pub_types_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c1dbdb7e9374ee1958795e7ac7c6ecc inherit pub_types_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_vector_n_d.html">VectorND</a>&lt; <a class="el" href="namespacedyno.html#a86353868bf27620fd033c5bb23d14b5a">PointType</a>, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#a0c1dbdb7e9374ee1958795e7ac7c6ecc">Edge</a></td></tr>
 <tr class="separator:a0c1dbdb7e9374ee1958795e7ac7c6ecc inherit pub_types_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a670a4ffe09ce3155e7b3a1c7b730a6e0 inherit pub_types_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_vector_n_d.html">VectorND</a>&lt; <a class="el" href="namespacedyno.html#a86353868bf27620fd033c5bb23d14b5a">PointType</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">Triangle</a></td></tr>
-<tr class="separator:a670a4ffe09ce3155e7b3a1c7b730a6e0 inherit pub_types_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700e457d98aa4fa9d48a74053599f91a inherit pub_types_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_vector.html">Vector</a>&lt; <a class="el" href="namespacedyno.html#a86353868bf27620fd033c5bb23d14b5a">PointType</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">Triangle</a></td></tr>
+<tr class="separator:a700e457d98aa4fa9d48a74053599f91a inherit pub_types_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a9c2628de090b95668cc9f9ab7fa336 inherit pub_types_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_vector_n_d.html">VectorND</a>&lt; <a class="el" href="namespacedyno.html#a86353868bf27620fd033c5bb23d14b5a">PointType</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#a6a9c2628de090b95668cc9f9ab7fa336">Quad</a></td></tr>
 <tr class="separator:a6a9c2628de090b95668cc9f9ab7fa336 inherit pub_types_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e86742c8d66228d1b500a775bd0b333 inherit pub_types_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_vector_n_d.html">VectorND</a>&lt; <a class="el" href="namespacedyno.html#a86353868bf27620fd033c5bb23d14b5a">PointType</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#a6e86742c8d66228d1b500a775bd0b333">Tetrahedron</a></td></tr>
@@ -184,17 +198,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afdff599a2a68d386b211f3e745d091f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a840f3e15e13273843eccaf19d74215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a2a840f3e15e13273843eccaf19d74215">scale</a> (<a class="el" href="classdyno_1_1_discrete_elements.html#ad856777d940caba7ba101c2710bc5f13">Real</a> s)</td></tr>
 <tr class="separator:a2a840f3e15e13273843eccaf19d74215"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb4010f663c98a4b3acba23cd9a204e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#acb4010f663c98a4b3acba23cd9a204e9">totalSize</a> ()</td></tr>
+<tr class="memitem:acb4010f663c98a4b3acba23cd9a204e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#acb4010f663c98a4b3acba23cd9a204e9">totalSize</a> ()</td></tr>
 <tr class="separator:acb4010f663c98a4b3acba23cd9a204e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a416fb69071001fcbdca4188b94383d0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a416fb69071001fcbdca4188b94383d0c">sphereIndex</a> ()</td></tr>
+<tr class="memitem:a416fb69071001fcbdca4188b94383d0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a416fb69071001fcbdca4188b94383d0c">sphereIndex</a> ()</td></tr>
 <tr class="separator:a416fb69071001fcbdca4188b94383d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcff1f73d0b7ce57675b0ba7085ccbf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#adcff1f73d0b7ce57675b0ba7085ccbf7">boxIndex</a> ()</td></tr>
+<tr class="memitem:adcff1f73d0b7ce57675b0ba7085ccbf7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#adcff1f73d0b7ce57675b0ba7085ccbf7">boxIndex</a> ()</td></tr>
 <tr class="separator:adcff1f73d0b7ce57675b0ba7085ccbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45cfe355091ae1e05270ed2a30df94f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a45cfe355091ae1e05270ed2a30df94f2">capsuleIndex</a> ()</td></tr>
+<tr class="memitem:a45cfe355091ae1e05270ed2a30df94f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a45cfe355091ae1e05270ed2a30df94f2">capsuleIndex</a> ()</td></tr>
 <tr class="separator:a45cfe355091ae1e05270ed2a30df94f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce72c00badef8e6cd3d8011453bde18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a7ce72c00badef8e6cd3d8011453bde18">tetIndex</a> ()</td></tr>
+<tr class="memitem:a7ce72c00badef8e6cd3d8011453bde18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a7ce72c00badef8e6cd3d8011453bde18">tetIndex</a> ()</td></tr>
 <tr class="separator:a7ce72c00badef8e6cd3d8011453bde18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9ac38221b9389baf838cdfa634c72b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#ab9ac38221b9389baf838cdfa634c72b6">triangleIndex</a> ()</td></tr>
+<tr class="memitem:ab9ac38221b9389baf838cdfa634c72b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#ab9ac38221b9389baf838cdfa634c72b6">triangleIndex</a> ()</td></tr>
 <tr class="separator:ab9ac38221b9389baf838cdfa634c72b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cca92cd837a28c75579fafd4b536353"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdyno_1_1_element_offset.html">ElementOffset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a5cca92cd837a28c75579fafd4b536353">calculateElementOffset</a> ()</td></tr>
 <tr class="separator:a5cca92cd837a28c75579fafd4b536353"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +244,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aae587582af6d6c02922fb5c68029f0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f3343e13f688835ed448f3b3ebf4e56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a6e86742c8d66228d1b500a775bd0b333">TopologyModule::Tetrahedron</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a8f3343e13f688835ed448f3b3ebf4e56">getTetElementMapping</a> ()</td></tr>
 <tr class="separator:a8f3343e13f688835ed448f3b3ebf4e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8807c05bd83b8a8d0ac23e4a3a6d54d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a8807c05bd83b8a8d0ac23e4a3a6d54d2">DiscreteElements</a> ()</td></tr>
+<tr class="separator:a8807c05bd83b8a8d0ac23e4a3a6d54d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdff599a2a68d386b211f3e745d091f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#afdff599a2a68d386b211f3e745d091f7">~DiscreteElements</a> () override</td></tr>
+<tr class="separator:afdff599a2a68d386b211f3e745d091f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c32cb8a4783396f127c3109f481168"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#ad6c32cb8a4783396f127c3109f481168">setBoxes</a> (std::vector&lt; <a class="el" href="structpx_1_1_box.html">px::Box</a> &gt; boxes)</td></tr>
+<tr class="separator:ad6c32cb8a4783396f127c3109f481168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0de44792d1cb8f8c577c5d432863ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#acf0de44792d1cb8f8c577c5d432863ea">setSpheres</a> (std::vector&lt; <a class="el" href="structpx_1_1_sphere.html">px::Sphere</a> &gt; spheres)</td></tr>
+<tr class="separator:acf0de44792d1cb8f8c577c5d432863ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559316b056c72c62c87db6ce6cb1effa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a559316b056c72c62c87db6ce6cb1effa">setCapsules</a> (std::vector&lt; <a class="el" href="structpx_1_1_capsule.html">px::Capsule</a> &gt; capsules)</td></tr>
+<tr class="separator:a559316b056c72c62c87db6ce6cb1effa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a95c6fddf2dc3df9d9e953491bc408"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt; <a class="el" href="structpx_1_1_box.html">px::Box</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a15a95c6fddf2dc3df9d9e953491bc408">getBoxes</a> ()</td></tr>
+<tr class="separator:a15a95c6fddf2dc3df9d9e953491bc408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6859c7e02f11326da5043a371e0e0495"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt; <a class="el" href="structpx_1_1_sphere.html">px::Sphere</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a6859c7e02f11326da5043a371e0e0495">getSpheres</a> ()</td></tr>
+<tr class="separator:a6859c7e02f11326da5043a371e0e0495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a0c602cbab3dc6d51709ac2e378fcbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt; <a class="el" href="structpx_1_1_capsule.html">px::Capsule</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a1a0c602cbab3dc6d51709ac2e378fcbc">getCapsules</a> ()</td></tr>
+<tr class="separator:a1a0c602cbab3dc6d51709ac2e378fcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8075ae4e22a20bc9cbbe3c8d9ae978b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdyno_1_1_element_offset.html">ElementOffset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a8075ae4e22a20bc9cbbe3c8d9ae978b3">getElementOffset</a> ()</td></tr>
+<tr class="separator:a8075ae4e22a20bc9cbbe3c8d9ae978b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8044b6434a0ad421de8a8918ff1d3c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a2c8044b6434a0ad421de8a8918ff1d3c">getTotalElementSize</a> ()</td></tr>
+<tr class="separator:a2c8044b6434a0ad421de8a8918ff1d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_topology_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_topology_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_topology_module.html">dyno::TopologyModule</a></td></tr>
 <tr class="memitem:af25ade16762059f06ca9a2143ac34ebc inherit pub_methods_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#af25ade16762059f06ca9a2143ac34ebc">TopologyModule</a> ()</td></tr>
 <tr class="separator:af25ade16762059f06ca9a2143ac34ebc inherit pub_methods_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,11 +292,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0972542b013c9ea7ae169cddf5fff0b5 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e0a79232327c7382c6a77dad3a9781 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a57e0a79232327c7382c6a77dad3a9781">setParent</a> (<a class="el" href="classdyno_1_1_node.html">Node</a> *node)</td></tr>
 <tr class="separator:a57e0a79232327c7382c6a77dad3a9781 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44ee1b0af4e61e68d804680b27881999 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a44ee1b0af4e61e68d804680b27881999">getName</a> ()</td></tr>
-<tr class="separator:a44ee1b0af4e61e68d804680b27881999 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">setUpdateAlways</a> (bool b)</td></tr>
-<tr class="memdesc:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the update strategy for the module.  <a href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">More...</a><br /></td></tr>
-<tr class="separator:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ee7630d700f8c249b9e4447cd6f87a inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a85ee7630d700f8c249b9e4447cd6f87a">getName</a> () override</td></tr>
+<tr class="separator:a85ee7630d700f8c249b9e4447cd6f87a inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b50ee66c01dda6a05819eb246266d33 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a2b50ee66c01dda6a05819eb246266d33">getParent</a> ()</td></tr>
 <tr class="separator:a2b50ee66c01dda6a05819eb246266d33 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0882f625db1c53350db482d34a1b90 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a0b0882f625db1c53350db482d34a1b90">isInitialized</a> ()</td></tr>
@@ -277,6 +308,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a5a53a1ff27547593a8358e6ab5767fa2">isOutputCompete</a> ()</td></tr>
 <tr class="separator:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8074a810611d1408b5b3c6c5b210f94 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ac8074a810611d1408b5b3c6c5b210f94">DEF_VAR</a> (bool, ForceUpdate, false, &quot;&quot;)</td></tr>
+<tr class="separator:ac8074a810611d1408b5b3c6c5b210f94 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">setUpdateAlways</a> (bool b)</td></tr>
+<tr class="memdesc:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the update strategy for the module.  <a href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">More...</a><br /></td></tr>
+<tr class="separator:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ab65d583b85bc42e7b2faab3af43d159f">OBase</a> ()</td></tr>
 <tr class="separator:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,9 +321,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b2ae20076770c8e1c85f718bafcf9c7 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a3b2ae20076770c8e1c85f718bafcf9c7">caption</a> ()</td></tr>
 <tr class="memdesc:a3b2ae20076770c8e1c85f718bafcf9c7 inherit pub_methods_classdyno_1_1_o_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the caption.  <a href="classdyno_1_1_o_base.html#a3b2ae20076770c8e1c85f718bafcf9c7">More...</a><br /></td></tr>
 <tr class="separator:a3b2ae20076770c8e1c85f718bafcf9c7 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3240798a9150986ba10defba8241f6fc inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a3240798a9150986ba10defba8241f6fc">captionVisible</a> ()</td></tr>
+<tr class="memdesc:a3240798a9150986ba10defba8241f6fc inherit pub_methods_classdyno_1_1_o_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to hide the caption in the GUI.  <a href="classdyno_1_1_o_base.html#a3240798a9150986ba10defba8241f6fc">More...</a><br /></td></tr>
+<tr class="separator:a3240798a9150986ba10defba8241f6fc inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72c4d5a554baee9145be82fd97ee78f6 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a72c4d5a554baee9145be82fd97ee78f6">description</a> ()</td></tr>
 <tr class="memdesc:a72c4d5a554baee9145be82fd97ee78f6 inherit pub_methods_classdyno_1_1_o_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a description for the node or module, override this function to support user-defined description.  <a href="classdyno_1_1_o_base.html#a72c4d5a554baee9145be82fd97ee78f6">More...</a><br /></td></tr>
 <tr class="separator:a72c4d5a554baee9145be82fd97ee78f6 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3de3b2c6f081b2b9423640d5e354d2 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a5a3de3b2c6f081b2b9423640d5e354d2">getName</a> ()</td></tr>
+<tr class="separator:a5a3de3b2c6f081b2b9423640d5e354d2 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3871130579a7ee2089206d13d4fe9e47 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47">addField</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *data)</td></tr>
 <tr class="memdesc:a3871130579a7ee2089206d13d4fe9e47 inherit pub_methods_classdyno_1_1_o_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a field to Base FieldID will be set to the name of Field by default.  <a href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47">More...</a><br /></td></tr>
 <tr class="separator:a3871130579a7ee2089206d13d4fe9e47 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -401,6 +442,15 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a28d0264ff869bacb49574624275c089b inherit pro_attribs_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a28d0264ff869bacb49574624275c089b">fields_param</a></td></tr>
 <tr class="separator:a28d0264ff869bacb49574624275c089b inherit pro_attribs_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a4e147f2ac90e6acf82267b32429b9a89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt; <a class="el" href="structpx_1_1_box.html">px::Box</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a4e147f2ac90e6acf82267b32429b9a89">mBoxes</a></td></tr>
+<tr class="separator:a4e147f2ac90e6acf82267b32429b9a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e04e933db7c60f5318b7e0dfc0eaf42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt; <a class="el" href="structpx_1_1_capsule.html">px::Capsule</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#a4e04e933db7c60f5318b7e0dfc0eaf42">mCapsules</a></td></tr>
+<tr class="separator:a4e04e933db7c60f5318b7e0dfc0eaf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace433dfb58ee62fde3b487076fab2c97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt; <a class="el" href="structpx_1_1_sphere.html">px::Sphere</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_discrete_elements.html#ace433dfb58ee62fde3b487076fab2c97">mSpheres</a></td></tr>
+<tr class="separator:ace433dfb58ee62fde3b487076fab2c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classdyno_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classdyno_1_1_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classdyno_1_1_object.html">dyno::Object</a></td></tr>
@@ -442,7 +492,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename TDataType&gt;<br />
 class dyno::DiscreteElements&lt; TDataType &gt;</div>
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00083">83</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html#l00015">15</a> of file <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3017afd9b06d33cdbbe1032a68ce1807" name="a3017afd9b06d33cdbbe1032a68ce1807"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3017afd9b06d33cdbbe1032a68ce1807">&#9670;&nbsp;</a></span>Box3D</h2>
@@ -458,7 +508,7 @@ template&lt;typename TDataType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00092">92</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00092">92</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -476,7 +526,7 @@ template&lt;typename TDataType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00088">88</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00088">88</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -494,7 +544,7 @@ template&lt;typename TDataType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00089">89</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00089">89</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +562,7 @@ template&lt;typename TDataType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00087">87</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00087">87</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -530,7 +580,7 @@ template&lt;typename TDataType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00091">91</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00091">91</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -548,13 +598,63 @@ template&lt;typename TDataType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00093">93</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00093">93</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8807c05bd83b8a8d0ac23e4a3a6d54d2" name="a8807c05bd83b8a8d0ac23e4a3a6d54d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8807c05bd83b8a8d0ac23e4a3a6d54d2">&#9670;&nbsp;</a></span>DiscreteElements()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8807c05bd83b8a8d0ac23e4a3a6d54d2">&#9670;&nbsp;</a></span>DiscreteElements() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::DiscreteElements </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_discrete_elements_8cpp_source.html#l00006">6</a> of file <a class="el" href="_discrete_elements_8cpp_source.html">DiscreteElements.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afdff599a2a68d386b211f3e745d091f7" name="afdff599a2a68d386b211f3e745d091f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdff599a2a68d386b211f3e745d091f7">&#9670;&nbsp;</a></span>~DiscreteElements() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::~<a class="el" href="classdyno_1_1_discrete_elements.html">DiscreteElements</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_discrete_elements_8cpp_source.html#l00011">11</a> of file <a class="el" href="_discrete_elements_8cpp_source.html">DiscreteElements.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8807c05bd83b8a8d0ac23e4a3a6d54d2" name="a8807c05bd83b8a8d0ac23e4a3a6d54d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8807c05bd83b8a8d0ac23e4a3a6d54d2">&#9670;&nbsp;</a></span>DiscreteElements() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -573,7 +673,7 @@ template&lt;typename TDataType &gt; </div>
 </div>
 </div>
 <a id="afdff599a2a68d386b211f3e745d091f7" name="afdff599a2a68d386b211f3e745d091f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdff599a2a68d386b211f3e745d091f7">&#9670;&nbsp;</a></span>~DiscreteElements()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afdff599a2a68d386b211f3e745d091f7">&#9670;&nbsp;</a></span>~DiscreteElements() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,7 +709,7 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::boxIndex </td>
+          <td class="memname"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::boxIndex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -647,7 +747,7 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::capsuleIndex </td>
+          <td class="memname"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::capsuleIndex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -658,7 +758,7 @@ template&lt;typename TDataType &gt; </div>
 </div>
 </div>
 <a id="aa3ec2f4dfff0dbb586737bf1a0b9aa58" name="aa3ec2f4dfff0dbb586737bf1a0b9aa58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3ec2f4dfff0dbb586737bf1a0b9aa58">&#9670;&nbsp;</a></span>getBoxes()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ec2f4dfff0dbb586737bf1a0b9aa58">&#9670;&nbsp;</a></span>getBoxes() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,7 +782,36 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00117">117</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00117">117</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+
+</div>
+</div>
+<a id="a15a95c6fddf2dc3df9d9e953491bc408" name="a15a95c6fddf2dc3df9d9e953491bc408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15a95c6fddf2dc3df9d9e953491bc408">&#9670;&nbsp;</a></span>getBoxes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt; <a class="el" href="structpx_1_1_box.html">px::Box</a> &gt; &amp; <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::getBoxes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html#l00025">25</a> of file <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -711,12 +840,71 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00120">120</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00120">120</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+
+</div>
+</div>
+<a id="a1a0c602cbab3dc6d51709ac2e378fcbc" name="a1a0c602cbab3dc6d51709ac2e378fcbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a0c602cbab3dc6d51709ac2e378fcbc">&#9670;&nbsp;</a></span>getCapsules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt; <a class="el" href="structpx_1_1_capsule.html">px::Capsule</a> &gt; &amp; <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::getCapsules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html#l00027">27</a> of file <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+
+</div>
+</div>
+<a id="a8075ae4e22a20bc9cbbe3c8d9ae978b3" name="a8075ae4e22a20bc9cbbe3c8d9ae978b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8075ae4e22a20bc9cbbe3c8d9ae978b3">&#9670;&nbsp;</a></span>getElementOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdyno_1_1_element_offset.html">ElementOffset</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::getElementOffset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_discrete_elements_8cpp_source.html#l00042">42</a> of file <a class="el" href="_discrete_elements_8cpp_source.html">DiscreteElements.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_discrete_elements_a8075ae4e22a20bc9cbbe3c8d9ae978b3_cgraph.png" border="0" usemap="#aclassdyno_1_1_discrete_elements_a8075ae4e22a20bc9cbbe3c8d9ae978b3_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_discrete_elements_a8075ae4e22a20bc9cbbe3c8d9ae978b3_cgraph" id="aclassdyno_1_1_discrete_elements_a8075ae4e22a20bc9cbbe3c8d9ae978b3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html#af606afaf735b0c6bdc501fc2d7379efb" title=" " alt="" coords="215,5,357,47"/>
+</map>
+</div>
 
 </div>
 </div>
 <a id="af30696cbdbd55ed25f4ae9b6a995140f" name="af30696cbdbd55ed25f4ae9b6a995140f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af30696cbdbd55ed25f4ae9b6a995140f">&#9670;&nbsp;</a></span>getSpheres()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af30696cbdbd55ed25f4ae9b6a995140f">&#9670;&nbsp;</a></span>getSpheres() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -740,7 +928,36 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00118">118</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00118">118</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+
+</div>
+</div>
+<a id="a6859c7e02f11326da5043a371e0e0495" name="a6859c7e02f11326da5043a371e0e0495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6859c7e02f11326da5043a371e0e0495">&#9670;&nbsp;</a></span>getSpheres() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt; <a class="el" href="structpx_1_1_sphere.html">px::Sphere</a> &gt; &amp; <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::getSpheres </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html#l00026">26</a> of file <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -769,7 +986,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00127">127</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00127">127</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -798,7 +1015,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00128">128</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00128">128</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +1044,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00119">119</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00119">119</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -856,7 +1073,37 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00126">126</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00126">126</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+
+</div>
+</div>
+<a id="a2c8044b6434a0ad421de8a8918ff1d3c" name="a2c8044b6434a0ad421de8a8918ff1d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c8044b6434a0ad421de8a8918ff1d3c">&#9670;&nbsp;</a></span>getTotalElementSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::getTotalElementSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_discrete_elements_8cpp_source.html#l00052">52</a> of file <a class="el" href="_discrete_elements_8cpp_source.html">DiscreteElements.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_discrete_elements_a2c8044b6434a0ad421de8a8918ff1d3c_cgraph.png" border="0" usemap="#aclassdyno_1_1_discrete_elements_a2c8044b6434a0ad421de8a8918ff1d3c_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_discrete_elements_a2c8044b6434a0ad421de8a8918ff1d3c_cgraph" id="aclassdyno_1_1_discrete_elements_a2c8044b6434a0ad421de8a8918ff1d3c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html#af606afaf735b0c6bdc501fc2d7379efb" title=" " alt="" coords="215,5,357,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -885,7 +1132,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00121">121</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00121">121</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -910,7 +1157,7 @@ template&lt;typename TDataType &gt; </div>
 </div>
 </div>
 <a id="a853cc46fbab7cdd7a833c849114be2e9" name="a853cc46fbab7cdd7a833c849114be2e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a853cc46fbab7cdd7a833c849114be2e9">&#9670;&nbsp;</a></span>setBoxes()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a853cc46fbab7cdd7a833c849114be2e9">&#9670;&nbsp;</a></span>setBoxes() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -929,8 +1176,52 @@ template&lt;typename TDataType &gt; </div>
 
 </div>
 </div>
+<a id="ad6c32cb8a4783396f127c3109f481168" name="ad6c32cb8a4783396f127c3109f481168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c32cb8a4783396f127c3109f481168">&#9670;&nbsp;</a></span>setBoxes() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::setBoxes </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structpx_1_1_box.html">px::Box</a> &gt;&#160;</td>
+          <td class="paramname"><em>boxes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_discrete_elements_8cpp_source.html#l00015">15</a> of file <a class="el" href="_discrete_elements_8cpp_source.html">DiscreteElements.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_discrete_elements_ad6c32cb8a4783396f127c3109f481168_cgraph.png" border="0" usemap="#aclassdyno_1_1_discrete_elements_ad6c32cb8a4783396f127c3109f481168_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_discrete_elements_ad6c32cb8a4783396f127c3109f481168_cgraph" id="aclassdyno_1_1_discrete_elements_ad6c32cb8a4783396f127c3109f481168_cgraph">
+<area shape="rect" title=" " alt="" coords="5,191,167,233"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html#a5311eff5d0addba9193604ff592805f2" title=" " alt="" coords="215,162,357,203"/>
+<area shape="rect" href="namespacedyno.html#adc5f45c2a361d9e356051f6aa6b13a5f" title=" " alt="" coords="228,228,344,255"/>
+<area shape="rect" href="_vulkan_swap_chain_8cpp.html#a21b5a77bb7dd2ff2a93f6c086da96d46" title=" " alt="" coords="487,5,546,32"/>
+<area shape="rect" href="classdyno_1_1_vk_variable.html#a067d8f2b1f058e7a68df71bc4c495e4b" title=" " alt="" coords="437,57,597,98"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html#a4614d8aa521f10227d44141087f0303e" title=" " alt="" coords="405,122,628,163"/>
+<area shape="rect" href="classdyno_1_1_vk_variable.html#ac35097a1ce799555b5d5c144679338b1" title=" " alt="" coords="432,187,601,229"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html#a39316064ab15d3d465bd13a5637f43e0" title=" " alt="" coords="410,253,623,294"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html#ad6404255ba055cbe9873651fffb4266e" title=" " alt="" coords="429,318,605,359"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html#af606afaf735b0c6bdc501fc2d7379efb" title=" " alt="" coords="445,383,588,425"/>
+<area shape="rect" href="classdyno_1_1_vk_host_array.html#ae1bae1be19f52b5e96c1e021583557dd" title=" " alt="" coords="435,449,599,476"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#a56e8b0b74504c6870b752df0ec9052be" title=" " alt="" coords="676,67,855,109"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#ab43b98c7cf767b67fd3501fedb4a8348" title=" " alt="" coords="683,133,848,174"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#a8f324a3a5be6b9e9b8111f72dacf2a45" title=" " alt="" coords="708,242,823,283"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#ae769e7c8d84108ff45a861482b0322ab" title=" " alt="" coords="708,331,823,373"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a72927a6233616e6c1b52f7fde10f8a3f" name="a72927a6233616e6c1b52f7fde10f8a3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72927a6233616e6c1b52f7fde10f8a3f">&#9670;&nbsp;</a></span>setCapsules()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a72927a6233616e6c1b52f7fde10f8a3f">&#9670;&nbsp;</a></span>setCapsules() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -949,8 +1240,52 @@ template&lt;typename TDataType &gt; </div>
 
 </div>
 </div>
+<a id="a559316b056c72c62c87db6ce6cb1effa" name="a559316b056c72c62c87db6ce6cb1effa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a559316b056c72c62c87db6ce6cb1effa">&#9670;&nbsp;</a></span>setCapsules() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::setCapsules </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structpx_1_1_capsule.html">px::Capsule</a> &gt;&#160;</td>
+          <td class="paramname"><em>capsules</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_discrete_elements_8cpp_source.html#l00033">33</a> of file <a class="el" href="_discrete_elements_8cpp_source.html">DiscreteElements.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_discrete_elements_a559316b056c72c62c87db6ce6cb1effa_cgraph.png" border="0" usemap="#aclassdyno_1_1_discrete_elements_a559316b056c72c62c87db6ce6cb1effa_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_discrete_elements_a559316b056c72c62c87db6ce6cb1effa_cgraph" id="aclassdyno_1_1_discrete_elements_a559316b056c72c62c87db6ce6cb1effa_cgraph">
+<area shape="rect" title=" " alt="" coords="5,191,167,233"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html#a5311eff5d0addba9193604ff592805f2" title=" " alt="" coords="215,162,357,203"/>
+<area shape="rect" href="namespacedyno.html#adc5f45c2a361d9e356051f6aa6b13a5f" title=" " alt="" coords="228,228,344,255"/>
+<area shape="rect" href="_vulkan_swap_chain_8cpp.html#a21b5a77bb7dd2ff2a93f6c086da96d46" title=" " alt="" coords="487,5,546,32"/>
+<area shape="rect" href="classdyno_1_1_vk_variable.html#a067d8f2b1f058e7a68df71bc4c495e4b" title=" " alt="" coords="437,57,597,98"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html#a4614d8aa521f10227d44141087f0303e" title=" " alt="" coords="405,122,628,163"/>
+<area shape="rect" href="classdyno_1_1_vk_variable.html#ac35097a1ce799555b5d5c144679338b1" title=" " alt="" coords="432,187,601,229"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html#a39316064ab15d3d465bd13a5637f43e0" title=" " alt="" coords="410,253,623,294"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html#ad6404255ba055cbe9873651fffb4266e" title=" " alt="" coords="429,318,605,359"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html#af606afaf735b0c6bdc501fc2d7379efb" title=" " alt="" coords="445,383,588,425"/>
+<area shape="rect" href="classdyno_1_1_vk_host_array.html#ae1bae1be19f52b5e96c1e021583557dd" title=" " alt="" coords="435,449,599,476"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#a56e8b0b74504c6870b752df0ec9052be" title=" " alt="" coords="676,67,855,109"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#ab43b98c7cf767b67fd3501fedb4a8348" title=" " alt="" coords="683,133,848,174"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#a8f324a3a5be6b9e9b8111f72dacf2a45" title=" " alt="" coords="708,242,823,283"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#ae769e7c8d84108ff45a861482b0322ab" title=" " alt="" coords="708,331,823,373"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ae5c458e39e716e66937143c85a66e837" name="ae5c458e39e716e66937143c85a66e837"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5c458e39e716e66937143c85a66e837">&#9670;&nbsp;</a></span>setSpheres()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c458e39e716e66937143c85a66e837">&#9670;&nbsp;</a></span>setSpheres() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -966,6 +1301,50 @@ template&lt;typename TDataType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf0de44792d1cb8f8c577c5d432863ea" name="acf0de44792d1cb8f8c577c5d432863ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0de44792d1cb8f8c577c5d432863ea">&#9670;&nbsp;</a></span>setSpheres() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::setSpheres </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structpx_1_1_sphere.html">px::Sphere</a> &gt;&#160;</td>
+          <td class="paramname"><em>spheres</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_discrete_elements_8cpp_source.html#l00024">24</a> of file <a class="el" href="_discrete_elements_8cpp_source.html">DiscreteElements.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_discrete_elements_acf0de44792d1cb8f8c577c5d432863ea_cgraph.png" border="0" usemap="#aclassdyno_1_1_discrete_elements_acf0de44792d1cb8f8c577c5d432863ea_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_discrete_elements_acf0de44792d1cb8f8c577c5d432863ea_cgraph" id="aclassdyno_1_1_discrete_elements_acf0de44792d1cb8f8c577c5d432863ea_cgraph">
+<area shape="rect" title=" " alt="" coords="5,191,167,233"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html#a5311eff5d0addba9193604ff592805f2" title=" " alt="" coords="215,162,357,203"/>
+<area shape="rect" href="namespacedyno.html#adc5f45c2a361d9e356051f6aa6b13a5f" title=" " alt="" coords="228,228,344,255"/>
+<area shape="rect" href="_vulkan_swap_chain_8cpp.html#a21b5a77bb7dd2ff2a93f6c086da96d46" title=" " alt="" coords="487,5,546,32"/>
+<area shape="rect" href="classdyno_1_1_vk_variable.html#a067d8f2b1f058e7a68df71bc4c495e4b" title=" " alt="" coords="437,57,597,98"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html#a4614d8aa521f10227d44141087f0303e" title=" " alt="" coords="405,122,628,163"/>
+<area shape="rect" href="classdyno_1_1_vk_variable.html#ac35097a1ce799555b5d5c144679338b1" title=" " alt="" coords="432,187,601,229"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html#a39316064ab15d3d465bd13a5637f43e0" title=" " alt="" coords="410,253,623,294"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html#ad6404255ba055cbe9873651fffb4266e" title=" " alt="" coords="429,318,605,359"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html#af606afaf735b0c6bdc501fc2d7379efb" title=" " alt="" coords="445,383,588,425"/>
+<area shape="rect" href="classdyno_1_1_vk_host_array.html#ae1bae1be19f52b5e96c1e021583557dd" title=" " alt="" coords="435,449,599,476"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#a56e8b0b74504c6870b752df0ec9052be" title=" " alt="" coords="676,67,855,109"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#ab43b98c7cf767b67fd3501fedb4a8348" title=" " alt="" coords="683,133,848,174"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#a8f324a3a5be6b9e9b8111f72dacf2a45" title=" " alt="" coords="708,242,823,283"/>
+<area shape="rect" href="namespacevks_1_1initializers.html#ae769e7c8d84108ff45a861482b0322ab" title=" " alt="" coords="708,331,823,373"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1078,7 +1457,7 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::sphereIndex </td>
+          <td class="memname"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::sphereIndex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1097,7 +1476,7 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::tetIndex </td>
+          <td class="memname"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::tetIndex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1116,7 +1495,7 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::totalSize </td>
+          <td class="memname"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::totalSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1135,7 +1514,7 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a949fcc083a1d23120be39f88ccfd8565">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::triangleIndex </td>
+          <td class="memname"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a> <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::triangleIndex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1168,7 +1547,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00132">132</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00132">132</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1573,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00134">134</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00134">134</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -1220,7 +1599,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00131">131</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00131">131</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -1246,7 +1625,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00138">138</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00138">138</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -1272,7 +1651,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00139">139</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00139">139</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -1298,7 +1677,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00137">137</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00137">137</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1703,7 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00133">133</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00133">133</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
@@ -1350,12 +1729,93 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_discrete_elements_8h_source.html#l00135">135</a> of file <a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html#l00135">135</a> of file <a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Peridyno/peridyno/src/Framework/Topology/<a class="el" href="_discrete_elements_8h_source.html">DiscreteElements.h</a></li>
+<a id="a4e147f2ac90e6acf82267b32429b9a89" name="a4e147f2ac90e6acf82267b32429b9a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e147f2ac90e6acf82267b32429b9a89">&#9670;&nbsp;</a></span>mBoxes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt;<a class="el" href="structpx_1_1_box.html">px::Box</a>&gt; <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::mBoxes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html#l00034">34</a> of file <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+
+</div>
+</div>
+<a id="a4e04e933db7c60f5318b7e0dfc0eaf42" name="a4e04e933db7c60f5318b7e0dfc0eaf42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e04e933db7c60f5318b7e0dfc0eaf42">&#9670;&nbsp;</a></span>mCapsules</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt;<a class="el" href="structpx_1_1_capsule.html">px::Capsule</a>&gt; <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::mCapsules</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html#l00035">35</a> of file <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+
+</div>
+</div>
+<a id="ace433dfb58ee62fde3b487076fab2c97" name="ace433dfb58ee62fde3b487076fab2c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace433dfb58ee62fde3b487076fab2c97">&#9670;&nbsp;</a></span>mSpheres</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_vk_device_array.html">VkDeviceArray</a>&lt;<a class="el" href="structpx_1_1_sphere.html">px::Sphere</a>&gt; <a class="el" href="classdyno_1_1_discrete_elements.html">dyno::DiscreteElements</a>&lt; TDataType &gt;::mSpheres</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html#l00036">36</a> of file <a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>E:/Peridyno/peridyno/src/Rendering/Engine/OpenGL/Backend/Cuda/Module/<a class="el" href="_g_l_element_visual_module_8h_source.html">GLElementVisualModule.h</a></li>
+<li>E:/Peridyno/peridyno/src/Topology/Cuda/Topology/<a class="el" href="_cuda_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a></li>
+<li>E:/Peridyno/peridyno/src/Topology/Vulkan/Topology/<a class="el" href="_vulkan_2_topology_2_discrete_elements_8h_source.html">DiscreteElements.h</a></li>
+<li>E:/Peridyno/peridyno/src/Topology/Vulkan/Topology/<a class="el" href="_discrete_elements_8cpp_source.html">DiscreteElements.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

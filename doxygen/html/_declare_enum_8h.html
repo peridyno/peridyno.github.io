@@ -69,6 +69,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -77,14 +78,38 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;map&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="_field_8h_source.html">Field.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for DeclareEnum.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="_declare_enum_8h__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_framework_2_declare_enum_8h" alt=""/></div>
 <map name="a_e_1_2_peridyno_2peridyno_2src_2_framework_2_declare_enum_8h" id="a_e_1_2_peridyno_2peridyno_2src_2_framework_2_declare_enum_8h">
 <area shape="rect" title=" " alt="" coords="5,5,211,47"/>
-<area shape="rect" title=" " alt="" coords="47,95,94,121"/>
-<area shape="rect" title=" " alt="" coords="118,95,173,121"/>
+<area shape="rect" title=" " alt="" coords="10,468,57,495"/>
+<area shape="rect" title=" " alt="" coords="81,468,135,495"/>
+<area shape="rect" href="_field_8h.html" title=" " alt="" coords="628,95,689,121"/>
+<area shape="rect" title=" " alt="" coords="856,468,928,495"/>
+<area shape="rect" title=" " alt="" coords="929,169,993,196"/>
+<area shape="rect" title=" " alt="" coords="588,169,657,196"/>
+<area shape="rect" href="_f_base_8h.html" title=" " alt="" coords="385,169,455,196"/>
+<area shape="rect" href="_array_8h.html" title=" " alt="" coords="645,244,744,271"/>
+<area shape="rect" href="_platform_8h.html" title=" " alt="" coords="445,319,526,345"/>
+<area shape="rect" href="_time_stamp_8h.html" title=" " alt="" coords="521,244,620,271"/>
+<area shape="rect" title=" " alt="" coords="201,244,268,271"/>
+<area shape="rect" title=" " alt="" coords="292,244,369,271"/>
+<area shape="rect" title=" " alt="" coords="393,244,447,271"/>
+<area shape="rect" title=" " alt="" coords="309,393,419,420"/>
+<area shape="rect" href="_typedef_8inl.html" title=" " alt="" coords="443,393,527,420"/>
+<area shape="rect" title=" " alt="" coords="427,468,466,495"/>
+<area shape="rect" title=" " alt="" coords="683,468,739,495"/>
+<area shape="rect" title=" " alt="" coords="763,468,832,495"/>
+<area shape="rect" title=" " alt="" coords="491,468,565,495"/>
+<area shape="rect" title=" " alt="" coords="589,468,659,495"/>
+<area shape="rect" title=" " alt="" coords="160,468,221,495"/>
+<area shape="rect" title=" " alt="" coords="246,468,325,495"/>
+<area shape="rect" title=" " alt="" coords="349,468,403,495"/>
+<area shape="rect" title=" " alt="" coords="738,319,803,345"/>
+<area shape="rect" title=" " alt="" coords="553,319,612,345"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -92,56 +117,56 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="_declare_enum_8h__dep__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_framework_2_declare_enum_8hdep" alt=""/></div>
 <map name="a_e_1_2_peridyno_2peridyno_2src_2_framework_2_declare_enum_8hdep" id="a_e_1_2_peridyno_2peridyno_2src_2_framework_2_declare_enum_8hdep">
-<area shape="rect" title=" " alt="" coords="2993,5,3198,47"/>
-<area shape="rect" href="_kernel_8h.html" title=" " alt="" coords="3799,184,3997,240"/>
-<area shape="rect" href="_declare_enum_8cpp.html" title=" " alt="" coords="3059,95,3278,136"/>
-<area shape="rect" href="_f_serialization_8cpp.html" title=" " alt="" coords="3303,95,3523,136"/>
-<area shape="rect" href="_module_8h.html" title=" " alt="" coords="1940,95,2109,136"/>
-<area shape="rect" href="_density_p_b_d_8h.html" title=" " alt="" coords="3596,288,3795,344"/>
-<area shape="rect" href="_particle_approximation_8h.html" title=" " alt="" coords="3819,288,4030,344"/>
-<area shape="rect" href="_position_based_fluid_model_8cpp.html" title=" " alt="" coords="3827,496,4071,552"/>
-<area shape="rect" href="initialize_particle_system_8cpp.html" title=" " alt="" coords="3604,496,3803,552"/>
-<area shape="rect" href="_elastoplastic_body_8cpp.html" title=" " alt="" coords="3390,496,3579,552"/>
-<area shape="rect" href="_elastoplasticity_module_8h.html" title="This is an implementation of elastoplasticity based on projective peridynamics. For more details,..." alt="" coords="3381,392,3596,448"/>
-<area shape="rect" href="_particle_approximation_8cpp.html" title=" " alt="" coords="4038,392,4262,448"/>
-<area shape="rect" href="_summation_density_8h.html" title=" " alt="" coords="3815,392,4013,448"/>
-<area shape="rect" href="_debug_info_8h.html" title=" " alt="" coords="3425,184,3592,240"/>
-<area shape="rect" href="_f_base_8cpp.html" title=" " alt="" coords="467,191,646,233"/>
-<area shape="rect" href="_module_8cpp.html" title=" " alt="" coords="671,191,853,233"/>
-<area shape="rect" href="_collidable_object_8h.html" title=" " alt="" coords="929,184,1088,240"/>
-<area shape="rect" href="_collision_model_8h.html" title=" " alt="" coords="1539,288,1697,344"/>
-<area shape="rect" href="_compute_module_8h.html" title=" " alt="" coords="4060,184,4219,240"/>
-<area shape="rect" href="_constraint_module_8h.html" title=" " alt="" coords="3616,184,3775,240"/>
-<area shape="rect" href="_custom_module_8h.html" title=" " alt="" coords="1215,184,1373,240"/>
-<area shape="rect" href="_device_context_8h.html" title=" " alt="" coords="1397,184,1556,240"/>
-<area shape="rect" href="_force_module_8h.html" title=" " alt="" coords="1580,184,1739,240"/>
-<area shape="rect" href="_group_module_8h.html" title=" " alt="" coords="1763,184,1921,240"/>
-<area shape="rect" href="_input_module_8h.html" title=" " alt="" coords="1945,184,2104,240"/>
-<area shape="rect" href="_numerical_integrator_8h.html" title=" " alt="" coords="2128,184,2287,240"/>
-<area shape="rect" href="_output_module_8h.html" title=" " alt="" coords="5,288,164,344"/>
-<area shape="rect" href="_pipeline_8h.html" title=" " alt="" coords="188,288,347,344"/>
-<area shape="rect" href="_topology_mapping_8h.html" title=" " alt="" coords="2311,184,2469,240"/>
-<area shape="rect" href="_topology_module_8h.html" title=" " alt="" coords="371,288,529,344"/>
-<area shape="rect" href="_virtual_module_8h.html" title=" " alt="" coords="2493,184,2652,240"/>
-<area shape="rect" href="_visual_module_8h.html" title=" " alt="" coords="1356,288,1515,344"/>
-<area shape="rect" href="imgui__extend_8h.html" title=" " alt="" coords="2676,184,2875,240"/>
-<area shape="rect" href="_qt_module_widget_8cpp.html" title=" " alt="" coords="2846,288,3062,344"/>
-<area shape="rect" href="_qt_module_widget_8h.html" title=" " alt="" coords="2950,184,3153,240"/>
-<area shape="rect" href="_p_property_widget_8cpp.html" title=" " alt="" coords="3168,288,3340,344"/>
-<area shape="rect" href="_p_property_item_8cpp.html" title=" " alt="" coords="3177,184,3349,240"/>
-<area shape="rect" href="_debug_info_8cpp.html" title=" " alt="" coords="3405,288,3572,344"/>
-<area shape="rect" href="_collidable_points_8h.html" title=" " alt="" coords="737,288,902,344"/>
-<area shape="rect" href="_collidable_s_d_f_8h.html" title=" " alt="" coords="1115,288,1281,344"/>
-<area shape="rect" href="_collidable_shape_8h.html" title=" " alt="" coords="926,288,1091,344"/>
-<area shape="rect" href="_collidable_object_8cpp.html" title=" " alt="" coords="553,288,712,344"/>
-<area shape="rect" href="_module_types_8h.html" title=" " alt="" coords="600,399,804,441"/>
-<area shape="rect" href="_collision_detection_broad_phase_8h.html" title=" " alt="" coords="1189,392,1401,448"/>
-<area shape="rect" href="_collision_s_d_f_8h.html" title=" " alt="" coords="1426,392,1591,448"/>
-<area shape="rect" href="_collistion_detection_bounding_box_8h.html" title=" " alt="" coords="1616,392,1839,448"/>
-<area shape="rect" href="_collision_model_8cpp.html" title=" " alt="" coords="1863,392,2021,448"/>
-<area shape="rect" href="_contacts_union_8h.html" title=" " alt="" coords="4055,288,4224,344"/>
-<area shape="rect" href="_neighbor_element_query_8h.html" title=" " alt="" coords="4249,288,4419,344"/>
-<area shape="rect" href="_calculate_maximum_8h.html" title=" " alt="" coords="4444,288,4603,344"/>
+<area shape="rect" title=" " alt="" coords="3003,5,3208,47"/>
+<area shape="rect" href="_kernel_8h.html" title=" " alt="" coords="967,199,1155,255"/>
+<area shape="rect" href="_declare_enum_8cpp.html" title=" " alt="" coords="2996,102,3215,143"/>
+<area shape="rect" href="_f_serialization_8inl.html" title=" " alt="" coords="3239,102,3451,143"/>
+<area shape="rect" href="_module_8h.html" title=" " alt="" coords="2802,102,2971,143"/>
+<area shape="rect" href="_q_enum_field_widget_8cpp.html" title=" " alt="" coords="3476,95,3719,151"/>
+<area shape="rect" href="_density_p_b_d_8h.html" title=" " alt="" coords="1407,407,1606,463"/>
+<area shape="rect" href="_particle_approximation_8h.html" title=" " alt="" coords="767,303,1022,359"/>
+<area shape="rect" href="_position_based_fluid_model_8cpp.html" title=" " alt="" coords="49,511,279,581"/>
+<area shape="rect" href="_particle_fluid_8cpp.html" title=" " alt="" coords="1750,518,1938,574"/>
+<area shape="rect" href="initialize_particle_system_8cpp.html" title=" " alt="" coords="303,518,535,574"/>
+<area shape="rect" href="_elastoplastic_body_8cpp.html" title=" " alt="" coords="1206,629,1429,685"/>
+<area shape="rect" href="_elastoplasticity_module_8h.html" title="This is an implementation of elastoplasticity based on projective peridynamics. For more details,..." alt="" coords="1206,518,1429,574"/>
+<area shape="rect" href="_semi_analytical_position_based_fluid_model_8cpp.html" title=" " alt="" coords="1453,511,1726,581"/>
+<area shape="rect" href="_semi_analytical_surface_tension_model_8cpp.html" title=" " alt="" coords="559,518,870,574"/>
+<area shape="rect" href="_particle_approximation_8cpp.html" title=" " alt="" coords="5,407,275,463"/>
+<area shape="rect" href="_summation_density_8h.html" title=" " alt="" coords="299,407,538,463"/>
+<area shape="rect" href="_semi_analytical_p_b_d_8h.html" title=" " alt="" coords="1153,407,1383,463"/>
+<area shape="rect" href="_semi_analytical_particle_shifting_8h.html" title=" " alt="" coords="563,407,821,463"/>
+<area shape="rect" href="_semi_analytical_summation_density_8h.html" title=" " alt="" coords="845,407,1128,463"/>
+<area shape="rect" href="_semi_analytical_s_f_i_node_8cpp.html" title=" " alt="" coords="894,518,1130,574"/>
+<area shape="rect" href="_contact_rule_8h.html" title=" " alt="" coords="3710,407,3933,463"/>
+<area shape="rect" href="_data_source_8h.html" title=" " alt="" coords="1861,407,2027,463"/>
+<area shape="rect" href="_debug_info_8h.html" title=" " alt="" coords="1515,199,1682,255"/>
+<area shape="rect" href="_f_base_8cpp.html" title=" " alt="" coords="1707,206,1885,247"/>
+<area shape="rect" href="_module_8cpp.html" title=" " alt="" coords="1910,206,2093,247"/>
+<area shape="rect" href="_collidable_object_8h.html" title=" " alt="" coords="2117,199,2275,255"/>
+<area shape="rect" href="_collision_model_8h.html" title=" " alt="" coords="2175,303,2334,359"/>
+<area shape="rect" href="_compute_module_8h.html" title=" " alt="" coords="1179,199,1338,255"/>
+<area shape="rect" href="_constraint_module_8h.html" title=" " alt="" coords="1281,303,1439,359"/>
+<area shape="rect" href="_custom_module_8h.html" title=" " alt="" coords="2351,199,2510,255"/>
+<area shape="rect" href="_force_module_8h.html" title=" " alt="" coords="2534,199,2693,255"/>
+<area shape="rect" href="_group_module_8h.html" title=" " alt="" coords="2717,199,2875,255"/>
+<area shape="rect" href="_input_module_8h.html" title=" " alt="" coords="2899,199,3058,255"/>
+<area shape="rect" href="_numerical_integrator_8h.html" title=" " alt="" coords="3082,199,3241,255"/>
+<area shape="rect" href="_output_module_8h.html" title=" " alt="" coords="3265,199,3423,255"/>
+<area shape="rect" href="_pipeline_8h.html" title=" " alt="" coords="3447,199,3606,255"/>
+<area shape="rect" href="_topology_mapping_8h.html" title=" " alt="" coords="3630,199,3789,255"/>
+<area shape="rect" href="_topology_module_8h.html" title=" " alt="" coords="1046,303,1205,359"/>
+<area shape="rect" href="_virtual_module_8h.html" title=" " alt="" coords="3813,199,3971,255"/>
+<area shape="rect" href="_visual_module_8h.html" title=" " alt="" coords="3995,199,4154,255"/>
+<area shape="rect" href="imgui__extend_8h.html" title=" " alt="" coords="4178,199,4377,255"/>
+<area shape="rect" href="_qt_module_widget_8cpp.html" title=" " alt="" coords="4321,303,4537,359"/>
+<area shape="rect" href="_qt_module_widget_8h.html" title=" " alt="" coords="4452,199,4655,255"/>
+<area shape="rect" href="_p_property_widget_8cpp.html" title=" " alt="" coords="4577,303,4749,359"/>
+<area shape="rect" href="_q_field_widget_8cpp.html" title=" " alt="" coords="4729,199,4937,255"/>
+<area shape="rect" href="_co_semi_implicit_hyperelasticity_solver_8h.html" title=" " alt="" coords="3699,511,3944,581"/>
+<area shape="rect" href="_cloth_8cpp.html" title=" " alt="" coords="2205,518,2427,574"/>
+<area shape="rect" href="_data_source_8cpp.html" title=" " alt="" coords="1962,518,2129,574"/>
+<area shape="rect" href="_debug_info_8cpp.html" title=" " alt="" coords="1515,303,1682,359"/>
 </map>
 </div>
 </div>
@@ -149,7 +174,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_p_enum.html">PEnum</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_p_enum.html">dyno::PEnum</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_f_var_3_01_p_enum_01_4.html">dyno::FVar&lt; PEnum &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization for the field type of <a class="el" href="classdyno_1_1_p_enum.html">PEnum</a>.  <a href="classdyno_1_1_f_var_3_01_p_enum_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacedyno"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html">dyno</a></td></tr>
+<tr class="memdesc:namespacedyno"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of <a class="el" href="classdyno_1_1_additive_c_c_d.html">AdditiveCCD</a> based on peridyno. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -161,13 +195,13 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a7e0bf3e2120a48394de8d3a46cad4bbb"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_declare_enum_8h.html#a7e0bf3e2120a48394de8d3a46cad4bbb">EnumMap</a></td></tr>
-<tr class="separator:a7e0bf3e2120a48394de8d3a46cad4bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad25f41ea3fe7bccffddbf3c370785bc8"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; int, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#ad25f41ea3fe7bccffddbf3c370785bc8">dyno::EnumMap</a></td></tr>
+<tr class="separator:ad25f41ea3fe7bccffddbf3c370785bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa6d8532ec926f4a185bb74b1112aa22e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_declare_enum_8h.html#aa6d8532ec926f4a185bb74b1112aa22e">parse_enum_string</a> (const std::string &amp;enum_str, <a class="el" href="_declare_enum_8h.html#a7e0bf3e2120a48394de8d3a46cad4bbb">EnumMap</a> &amp;enumKeyValueList)</td></tr>
-<tr class="separator:aa6d8532ec926f4a185bb74b1112aa22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0391d3883a0ec41ee15da2415773ba11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#a0391d3883a0ec41ee15da2415773ba11">dyno::parse_enum_string</a> (const std::string &amp;enum_str, EnumMap &amp;enumKeyValueList)</td></tr>
+<tr class="separator:a0391d3883a0ec41ee15da2415773ba11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ac16ac4c9d7850c54b3d5aac7c3184852" name="ac16ac4c9d7850c54b3d5aac7c3184852"></a>
@@ -195,12 +229,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">enum</span> enum_type{                                     \</div>
-<div class="line">    __VA_ARGS__                                     \</div>
-<div class="line">};                                                  \</div>
-<div class="line">const std::string full_name_##enum_type = #__VA_ARGS__;</div>
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">enum</span> enum_type{                                     \</div>
+<div class="line">            __VA_ARGS__                                     \</div>
+<div class="line">        };                                                  \</div>
+<div class="line">    const std::string full_name_##enum_type = #__VA_ARGS__;</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00023">23</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00028">28</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
 
 </div>
 </div>
@@ -242,82 +276,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:                                    \</div>
-<div class="line">    FVar&lt;PEnum&gt; var_##enum_name = FVar&lt;PEnum&gt;(<a class="code hl_class" href="class_p_enum.html">PEnum</a>(#enum_type, enum_value, full_name_##enum_type), std::string(#enum_name), desc, <a class="code hl_enumvalue" href="namespacedyno.html#ac3362376850a026da08e48efc8032048ab3fb6e8fce2ae4dd9753e6992aaa51e0">FieldTypeEnum::Param</a>, <span class="keyword">this</span>);         \</div>
+<div class="line">    FVar&lt;PEnum&gt; var_##enum_name = FVar&lt;PEnum&gt;(PEnum(#enum_type, enum_value, full_name_##enum_type), std::string(#enum_name), desc, <a class="code hl_enumvalue" href="namespacedyno.html#ac3362376850a026da08e48efc8032048ab3fb6e8fce2ae4dd9753e6992aaa51e0">FieldTypeEnum::Param</a>, <span class="keyword">this</span>);         \</div>
 <div class="line">public:                                     \</div>
 <div class="line">    inline FVar&lt;PEnum&gt;* var##enum_name() {<span class="keywordflow">return</span> &amp;var_##enum_name;}</div>
-<div class="ttc" id="aclass_p_enum_html"><div class="ttname"><a href="class_p_enum.html">PEnum</a></div><div class="ttdef"><b>Definition:</b> <a href="_declare_enum_8h_source.html#l00032">DeclareEnum.h:33</a></div></div>
 <div class="ttc" id="anamespacedyno_html_ac3362376850a026da08e48efc8032048ab3fb6e8fce2ae4dd9753e6992aaa51e0"><div class="ttname"><a href="namespacedyno.html#ac3362376850a026da08e48efc8032048ab3fb6e8fce2ae4dd9753e6992aaa51e0">dyno::Param</a></div><div class="ttdeci">@ Param</div><div class="ttdef"><b>Definition:</b> <a href="_f_base_8h_source.html#l00034">FBase.h:34</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00069">69</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a7e0bf3e2120a48394de8d3a46cad4bbb" name="a7e0bf3e2120a48394de8d3a46cad4bbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e0bf3e2120a48394de8d3a46cad4bbb">&#9670;&nbsp;</a></span>EnumMap</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::map&lt;int, std::string&gt; <a class="el" href="_declare_enum_8h.html#a7e0bf3e2120a48394de8d3a46cad4bbb">EnumMap</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Copyright 2021 Xiaowei He</p>
-<p >Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at </p><pre class="fragment"> https://www.apache.org/licenses/LICENSE-2.0
-</pre><p> Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. </p>
-
-<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00020">20</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="aa6d8532ec926f4a185bb74b1112aa22e" name="aa6d8532ec926f4a185bb74b1112aa22e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6d8532ec926f4a185bb74b1112aa22e">&#9670;&nbsp;</a></span>parse_enum_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool parse_enum_string </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>enum_str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_declare_enum_8h.html#a7e0bf3e2120a48394de8d3a46cad4bbb">EnumMap</a> &amp;&#160;</td>
-          <td class="paramname"><em>enumKeyValueList</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_declare_enum_8cpp_source.html#l00018">18</a> of file <a class="el" href="_declare_enum_8cpp_source.html">DeclareEnum.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_declare_enum_8h_aa6d8532ec926f4a185bb74b1112aa22e_cgraph.png" border="0" usemap="#a_declare_enum_8h_aa6d8532ec926f4a185bb74b1112aa22e_cgraph" alt=""/></div>
-<map name="a_declare_enum_8h_aa6d8532ec926f4a185bb74b1112aa22e_cgraph" id="a_declare_enum_8h_aa6d8532ec926f4a185bb74b1112aa22e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,137,32"/>
-<area shape="rect" href="_declare_enum_8cpp.html#aa4566f9116ad9e7c58db648b822bac58" title=" " alt="" coords="185,5,292,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_declare_enum_8h_aa6d8532ec926f4a185bb74b1112aa22e_icgraph.png" border="0" usemap="#a_declare_enum_8h_aa6d8532ec926f4a185bb74b1112aa22e_icgraph" alt=""/></div>
-<map name="a_declare_enum_8h_aa6d8532ec926f4a185bb74b1112aa22e_icgraph" id="a_declare_enum_8h_aa6d8532ec926f4a185bb74b1112aa22e_icgraph">
-<area shape="rect" title=" " alt="" coords="169,5,301,32"/>
-<area shape="rect" href="class_p_enum.html#a07b9b3e43b4ce8d174d025ad739a5de0" title=" " alt="" coords="5,5,121,32"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="_declare_enum_8h_source.html#l00174">174</a> of file <a class="el" href="_declare_enum_8h_source.html">DeclareEnum.h</a>.</p>
 
 </div>
 </div>

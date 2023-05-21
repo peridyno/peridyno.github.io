@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/HeightField/initializeHeightField.cpp Source File</title>
+<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/Cuda/HeightField/initializeHeightField.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_3edef94e82a71b5101a487d95f40d5eb.html">HeightField</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_fcf8d9b41703035e4148e841d5c3507a.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_57f515059cc150fe14bc893da0ef0661.html">HeightField</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,7 +77,7 @@ $(function() {
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_ocean_patch_8h.html">OceanPatch.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_height_field_to_triangle_set_8h.html">Mapping/HeightFieldToTriangleSet.h</a>&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_g_l_surface_visual_module_8h.html">GLSurfaceVisualModule.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;GLSurfaceVisualModule.h&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_node_factory_8h.html">NodeFactory.h</a>&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
@@ -130,7 +130,7 @@ $(function() {
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                patch-&gt;graphicsPipeline()-&gt;pushModule(mapper);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keyword">auto</span> sRender = std::make_shared&lt;GLSurfaceVisualModule&gt;();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                sRender-&gt;setColor(<a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(0, 0.2, 1.0));</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                sRender-&gt;setColor(<a class="code hl_class" href="classdyno_1_1_color.html">Color</a>(0, 0.2, 1.0));</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                sRender-&gt;varUseVertexNormal()-&gt;setValue(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                mapper-&gt;outTriangleSet()-&gt;connect(sRender-&gt;inTriangleSet());</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                patch-&gt;graphicsPipeline()-&gt;pushModule(sRender);</div>
@@ -151,7 +151,7 @@ $(function() {
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                ocean-&gt;graphicsPipeline()-&gt;pushModule(mapper);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                <span class="keyword">auto</span> sRender = std::make_shared&lt;GLSurfaceVisualModule&gt;();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                sRender-&gt;setColor(<a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(0, 0.2, 1.0));</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                sRender-&gt;setColor(<a class="code hl_class" href="classdyno_1_1_color.html">Color</a>(0, 0.2, 1.0));</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                mapper-&gt;outTriangleSet()-&gt;connect(sRender-&gt;inTriangleSet());</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                ocean-&gt;graphicsPipeline()-&gt;pushModule(sRender);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
@@ -182,12 +182,12 @@ $(function() {
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
 <div class="ttc" id="a_capillary_wave_8h_html"><div class="ttname"><a href="_capillary_wave_8h.html">CapillaryWave.h</a></div></div>
-<div class="ttc" id="a_g_l_surface_visual_module_8h_html"><div class="ttname"><a href="_g_l_surface_visual_module_8h.html">GLSurfaceVisualModule.h</a></div></div>
 <div class="ttc" id="a_height_field_to_triangle_set_8h_html"><div class="ttname"><a href="_height_field_to_triangle_set_8h.html">HeightFieldToTriangleSet.h</a></div></div>
 <div class="ttc" id="a_node_factory_8h_html"><div class="ttname"><a href="_node_factory_8h.html">NodeFactory.h</a></div></div>
 <div class="ttc" id="a_ocean_8h_html"><div class="ttname"><a href="_ocean_8h.html">Ocean.h</a></div></div>
 <div class="ttc" id="a_ocean_patch_8h_html"><div class="ttname"><a href="_ocean_patch_8h.html">OceanPatch.h</a></div></div>
 <div class="ttc" id="a_platform_8h_html_a45736677116acd305e3264b1aa6c7f3c"><div class="ttname"><a href="_platform_8h.html#a45736677116acd305e3264b1aa6c7f3c">PERIDYNO_API</a></div><div class="ttdeci">#define PERIDYNO_API</div><div class="ttdef"><b>Definition:</b> <a href="_platform_8h_source.html#l00025">Platform.h:25</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_color_html"><div class="ttname"><a href="classdyno_1_1_color.html">dyno::Color</a></div><div class="ttdef"><b>Definition:</b> <a href="_core_2_color_8h_source.html#l00007">Color.h:8</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_height_field_initializer_html"><div class="ttname"><a href="classdyno_1_1_height_field_initializer.html">dyno::HeightFieldInitializer</a></div><div class="ttdef"><b>Definition:</b> <a href="initialize_height_field_8h_source.html#l00006">initializeHeightField.h:7</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_height_field_initializer_html_a1584b94e32901db03885cf48971a82bb"><div class="ttname"><a href="classdyno_1_1_height_field_initializer.html#a1584b94e32901db03885cf48971a82bb">dyno::HeightFieldInitializer::HeightFieldInitializer</a></div><div class="ttdeci">HeightFieldInitializer()</div><div class="ttdef"><b>Definition:</b> <a href="initialize_height_field_8cpp_source.html#l00017">initializeHeightField.cpp:17</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_height_field_initializer_html_a32ff4a25465dd24c2293ae16922f0353"><div class="ttname"><a href="classdyno_1_1_height_field_initializer.html#a32ff4a25465dd24c2293ae16922f0353">dyno::HeightFieldInitializer::initializeNodeCreators</a></div><div class="ttdeci">void initializeNodeCreators() override</div><div class="ttdef"><b>Definition:</b> <a href="initialize_height_field_8cpp_source.html#l00040">initializeHeightField.cpp:40</a></div></div>
@@ -198,13 +198,12 @@ $(function() {
 <div class="ttc" id="aclassdyno_1_1_node_factory_html_a2af35245b77faa975d112f3cab41fd29"><div class="ttname"><a href="classdyno_1_1_node_factory.html#a2af35245b77faa975d112f3cab41fd29">dyno::NodeFactory::instance</a></div><div class="ttdeci">static NodeFactory * instance()</div><div class="ttdef"><b>Definition:</b> <a href="_node_factory_8cpp_source.html#l00009">NodeFactory.cpp:9</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_factory_html_a753bd5900b3c52301d13e7b2fc1fc0d5"><div class="ttname"><a href="classdyno_1_1_node_factory.html#a753bd5900b3c52301d13e7b2fc1fc0d5">dyno::NodeFactory::addPage</a></div><div class="ttdeci">std::shared_ptr&lt; NodePage &gt; addPage(std::string name, std::string icon)</div><div class="ttdef"><b>Definition:</b> <a href="_node_factory_8cpp_source.html#l00054">NodeFactory.cpp:54</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_html"><div class="ttname"><a href="classdyno_1_1_node.html">dyno::Node</a></div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00069">Node.h:70</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_acc54344cd3b2c1f77b3c2df6ece0df4c"><div class="ttname"><a href="classdyno_1_1_node.html#acc54344cd3b2c1f77b3c2df6ece0df4c">dyno::Node::connect</a></div><div class="ttdeci">bool connect(NodePort *nPort)</div><div class="ttdef"><b>Definition:</b> <a href="_node_8cpp_source.html#l00400">Node.cpp:400</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_acc54344cd3b2c1f77b3c2df6ece0df4c"><div class="ttname"><a href="classdyno_1_1_node.html#acc54344cd3b2c1f77b3c2df6ece0df4c">dyno::Node::connect</a></div><div class="ttdeci">bool connect(NodePort *nPort)</div><div class="ttdef"><b>Definition:</b> <a href="_node_8cpp_source.html#l00454">Node.cpp:454</a></div></div>
 <div class="ttc" id="ainitialize_height_field_8h_html"><div class="ttname"><a href="initialize_height_field_8h.html">initializeHeightField.h</a></div></div>
 <div class="ttc" id="anamespace_height_field_library_html_a1407485f0722d123adad52fa41dfa7e5"><div class="ttname"><a href="namespace_height_field_library.html#a1407485f0722d123adad52fa41dfa7e5">HeightFieldLibrary::initDynoPlugin</a></div><div class="ttdeci">PERIDYNO_API dyno::PluginEntry * initDynoPlugin()</div><div class="ttdef"><b>Definition:</b> <a href="initialize_height_field_8cpp_source.html#l00105">initializeHeightField.cpp:105</a></div></div>
 <div class="ttc" id="anamespace_height_field_library_html_a577c0ef7209803c8ad6073cb7589db8f"><div class="ttname"><a href="namespace_height_field_library.html#a577c0ef7209803c8ad6073cb7589db8f">HeightFieldLibrary::initStaticPlugin</a></div><div class="ttdeci">dyno::PluginEntry * initStaticPlugin()</div><div class="ttdef"><b>Definition:</b> <a href="initialize_height_field_8cpp_source.html#l00097">initializeHeightField.cpp:97</a></div></div>
 <div class="ttc" id="anamespace_qt_im_gui_html_a88ab5f6c27a24d6fe22ac704ef31f91e"><div class="ttname"><a href="namespace_qt_im_gui.html#a88ab5f6c27a24d6fe22ac704ef31f91e">QtImGui::initialize</a></div><div class="ttdeci">RenderRef initialize(QWindow *window, bool defaultRender)</div><div class="ttdef"><b>Definition:</b> <a href="_qt_im_gui_8cpp_source.html#l00157">QtImGui.cpp:157</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
-<div class="ttc" id="anamespacedyno_html_aafa7daf71ffcc74fd4e59d36d51ff01f"><div class="ttname"><a href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">dyno::Vec3f</a></div><div class="ttdeci">Vector&lt; float, 3 &gt; Vec3f</div><div class="ttdef"><b>Definition:</b> <a href="_vector3_d_8h_source.html#l00088">Vector3D.h:88</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
 <div class="ttc" id="astructdyno_1_1_plugin_entry_html"><div class="ttname"><a href="structdyno_1_1_plugin_entry.html">dyno::PluginEntry</a></div><div class="ttdef"><b>Definition:</b> <a href="_plugin_entry_8h_source.html#l00013">PluginEntry.h:14</a></div></div>
 <div class="ttc" id="astructdyno_1_1_plugin_entry_html_a4dee75b1e72cfabdb1e39b0e33374e7f"><div class="ttname"><a href="structdyno_1_1_plugin_entry.html#a4dee75b1e72cfabdb1e39b0e33374e7f">dyno::PluginEntry::setDescription</a></div><div class="ttdeci">void setDescription(std::string desc)</div><div class="ttdef"><b>Definition:</b> <a href="_plugin_entry_8cpp_source.html#l00036">PluginEntry.cpp:36</a></div></div>
 <div class="ttc" id="astructdyno_1_1_plugin_entry_html_adf68aad8bf0c43404a6ef855304173fc"><div class="ttname"><a href="structdyno_1_1_plugin_entry.html#adf68aad8bf0c43404a6ef855304173fc">dyno::PluginEntry::setVersion</a></div><div class="ttdeci">void setVersion(std::string pluginVersion)</div><div class="ttdef"><b>Definition:</b> <a href="_plugin_entry_8cpp_source.html#l00031">PluginEntry.cpp:31</a></div></div>

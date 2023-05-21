@@ -70,6 +70,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_triangle_set-members.html">List of all members</a>  </div>
@@ -77,22 +78,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for dyno::TriangleSet&lt; TDataType &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_triangle_set__inherit__graph.png" border="0" usemap="#adyno_1_1_triangle_set_3_01_t_data_type_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="adyno_1_1_triangle_set_3_01_t_data_type_01_4_inherit__map" id="adyno_1_1_triangle_set_3_01_t_data_type_01_4_inherit__map">
-<area shape="rect" title=" " alt="" coords="135,453,265,495"/>
-<area shape="rect" href="classdyno_1_1_quad_set.html" title=" " alt="" coords="5,550,200,577"/>
-<area shape="rect" href="classdyno_1_1_tetrahedron_set.html" title=" " alt="" coords="224,543,371,584"/>
-<area shape="rect" href="classdyno_1_1_edge_set.html" title=" " alt="" coords="103,379,297,405"/>
-<area shape="rect" href="classdyno_1_1_point_set.html" title=" " alt="" coords="103,304,297,331"/>
-<area shape="rect" href="classdyno_1_1_topology_module.html" title=" " alt="" coords="124,229,276,256"/>
-<area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="150,155,250,181"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="151,80,249,107"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="152,5,248,32"/>
-<area shape="rect" href="classdyno_1_1_hexahedron_set.html" title=" " alt="" coords="29,632,176,673"/>
+<area shape="rect" title=" " alt="" coords="1129,64,1260,105"/>
+<area shape="rect" href="classdyno_1_1_quad_set.html" title=" " alt="" coords="1308,13,1503,39"/>
+<area shape="rect" href="classdyno_1_1_tetrahedron_set.html" title=" " alt="" coords="1332,64,1479,105"/>
+<area shape="rect" href="classdyno_1_1_tetrahedron_set.html" title=" " alt="" coords="1332,129,1479,171"/>
+<area shape="rect" href="classdyno_1_1_edge_set.html" title=" " alt="" coords="887,46,1081,73"/>
+<area shape="rect" href="classdyno_1_1_point_set.html" title=" " alt="" coords="644,46,839,73"/>
+<area shape="rect" href="classdyno_1_1_edge_set.html" title=" " alt="" coords="887,97,1081,123"/>
+<area shape="rect" href="classdyno_1_1_topology_module.html" title=" " alt="" coords="444,71,596,98"/>
+<area shape="rect" href="classdyno_1_1_point_set.html" title=" " alt="" coords="644,97,839,123"/>
+<area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="296,71,396,98"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="149,71,248,98"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="5,71,101,98"/>
+<area shape="rect" href="classdyno_1_1_hexahedron_set.html" title=" " alt="" coords="1551,5,1697,47"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -100,21 +104,40 @@ Collaboration diagram for dyno::TriangleSet&lt; TDataType &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_triangle_set__coll__graph.png" border="0" usemap="#adyno_1_1_triangle_set_3_01_t_data_type_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_triangle_set_3_01_t_data_type_01_4_coll__map" id="adyno_1_1_triangle_set_3_01_t_data_type_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="1947,71,2077,113"/>
-<area shape="rect" href="classdyno_1_1_edge_set.html" title=" " alt="" coords="1703,79,1897,105"/>
-<area shape="rect" href="classdyno_1_1_point_set.html" title=" " alt="" coords="1400,89,1595,116"/>
-<area shape="rect" href="classdyno_1_1_topology_module.html" title=" " alt="" coords="1075,73,1227,100"/>
-<area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="911,73,1011,100"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="181,117,279,144"/>
-<area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="716,73,804,100"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html" title=" " alt="" coords="440,67,571,93"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="5,117,101,144"/>
-<area shape="rect" title=" " alt="" coords="478,5,533,32"/>
-<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="151,40,309,67"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1060,125,1243,166"/>
-<area shape="rect" href="classdyno_1_1_array_list.html" title=" " alt="" coords="1077,19,1225,45"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1404,150,1591,191"/>
-<area shape="rect" href="classdyno_1_1_vector_n_d.html" title=" " alt="" coords="1070,191,1233,217"/>
+<area shape="rect" title=" " alt="" coords="2403,499,2533,541"/>
+<area shape="rect" href="classdyno_1_1_edge_set.html" title=" " alt="" coords="2159,348,2353,375"/>
+<area shape="rect" href="classdyno_1_1_point_set.html" title=" " alt="" coords="1823,245,2017,272"/>
+<area shape="rect" href="classdyno_1_1_edge_set.html" title=" " alt="" coords="2159,188,2353,215"/>
+<area shape="rect" href="classdyno_1_1_topology_module.html" title=" " alt="" coords="1498,245,1650,272"/>
+<area shape="rect" href="classdyno_1_1_point_set.html" title=" " alt="" coords="1823,348,2017,375"/>
+<area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="1107,203,1207,229"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="181,107,279,133"/>
+<area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="757,120,845,147"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html" title=" " alt="" coords="451,56,581,83"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="5,107,101,133"/>
+<area shape="rect" title=" " alt="" coords="489,171,543,197"/>
+<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="151,29,309,56"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1483,622,1665,663"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="896,631,1039,673"/>
+<area shape="rect" href="classdyno_1_1_vk_variable.html" title=" " alt="" coords="455,495,577,521"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="729,363,872,405"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="729,429,872,470"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="729,298,872,339"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="896,577,1039,618"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="1296,487,1439,529"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="729,685,872,726"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html" title=" " alt="" coords="171,495,289,521"/>
+<area shape="rect" href="classdyno_1_1_array_list_3_01_element_type_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1489,153,1659,209"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1066,281,1249,322"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1066,355,1249,397"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1063,89,1252,130"/>
+<area shape="rect" href="classdyno_1_1_list.html" title=" " alt="" coords="742,17,859,44"/>
+<area shape="rect" href="classdyno_1_1_s_t_l_buffer.html" title=" " alt="" coords="440,5,592,32"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1483,557,1665,598"/>
+<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="1078,545,1237,572"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1827,499,2013,541"/>
+<area shape="rect" href="classdyno_1_1_vector_n_d.html" title=" " alt="" coords="1493,688,1655,715"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="1276,723,1459,765"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -124,7 +147,7 @@ Public Types</h2></td></tr>
 <tr class="separator:aa8c9f74faeb762ddeb47423d8ed5cdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadcf04ee94c83e01cd981a74e7504bd4"><td class="memItemLeft" align="right" valign="top">typedef TDataType::Coord&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a></td></tr>
 <tr class="separator:aadcf04ee94c83e01cd981a74e7504bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6adbbcf9ab084e1299925cebfc4516b9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">TopologyModule::Triangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a6adbbcf9ab084e1299925cebfc4516b9">Triangle</a></td></tr>
+<tr class="memitem:a6adbbcf9ab084e1299925cebfc4516b9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">TopologyModule::Triangle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a6adbbcf9ab084e1299925cebfc4516b9">Triangle</a></td></tr>
 <tr class="separator:a6adbbcf9ab084e1299925cebfc4516b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classdyno_1_1_edge_set"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classdyno_1_1_edge_set')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classdyno_1_1_edge_set.html">dyno::EdgeSet&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:a5128584b3353c4cc584755f84e2a44ab inherit pub_types_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">typedef TDataType::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a5128584b3353c4cc584755f84e2a44ab">Real</a></td></tr>
@@ -143,8 +166,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a78c6b51a4d44e2de93a9f7443a6e59ac inherit pub_types_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c1dbdb7e9374ee1958795e7ac7c6ecc inherit pub_types_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_vector_n_d.html">VectorND</a>&lt; <a class="el" href="namespacedyno.html#a86353868bf27620fd033c5bb23d14b5a">PointType</a>, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#a0c1dbdb7e9374ee1958795e7ac7c6ecc">Edge</a></td></tr>
 <tr class="separator:a0c1dbdb7e9374ee1958795e7ac7c6ecc inherit pub_types_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a670a4ffe09ce3155e7b3a1c7b730a6e0 inherit pub_types_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_vector_n_d.html">VectorND</a>&lt; <a class="el" href="namespacedyno.html#a86353868bf27620fd033c5bb23d14b5a">PointType</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">Triangle</a></td></tr>
-<tr class="separator:a670a4ffe09ce3155e7b3a1c7b730a6e0 inherit pub_types_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700e457d98aa4fa9d48a74053599f91a inherit pub_types_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_vector.html">Vector</a>&lt; <a class="el" href="namespacedyno.html#a86353868bf27620fd033c5bb23d14b5a">PointType</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">Triangle</a></td></tr>
+<tr class="separator:a700e457d98aa4fa9d48a74053599f91a inherit pub_types_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a9c2628de090b95668cc9f9ab7fa336 inherit pub_types_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_vector_n_d.html">VectorND</a>&lt; <a class="el" href="namespacedyno.html#a86353868bf27620fd033c5bb23d14b5a">PointType</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#a6a9c2628de090b95668cc9f9ab7fa336">Quad</a></td></tr>
 <tr class="separator:a6a9c2628de090b95668cc9f9ab7fa336 inherit pub_types_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e86742c8d66228d1b500a775bd0b333 inherit pub_types_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdyno_1_1_vector_n_d.html">VectorND</a>&lt; <a class="el" href="namespacedyno.html#a86353868bf27620fd033c5bb23d14b5a">PointType</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#a6e86742c8d66228d1b500a775bd0b333">Tetrahedron</a></td></tr>
@@ -185,27 +208,47 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa198b69007e8a0712ab4fe8d0bf7bac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee0933b9a9887472dd5c311be1d608e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a3ee0933b9a9887472dd5c311be1d608e">~TriangleSet</a> ()</td></tr>
 <tr class="separator:a3ee0933b9a9887472dd5c311be1d608e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adddc7763f09012762f7dc502f0e72488"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">Triangle</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#adddc7763f09012762f7dc502f0e72488">getTriangles</a> ()</td></tr>
-<tr class="separator:adddc7763f09012762f7dc502f0e72488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dfdcda963ab0ff40055d30ac385b964"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a0dfdcda963ab0ff40055d30ac385b964">setTriangles</a> (std::vector&lt; <a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">Triangle</a> &gt; &amp;triangles)</td></tr>
+<tr class="memitem:a0dfdcda963ab0ff40055d30ac385b964"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a0dfdcda963ab0ff40055d30ac385b964">setTriangles</a> (std::vector&lt; <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">Triangle</a> &gt; &amp;triangles)</td></tr>
 <tr class="separator:a0dfdcda963ab0ff40055d30ac385b964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f30fb846b7a961c1d20202b82f34e77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a5f30fb846b7a961c1d20202b82f34e77">setTriangles</a> (<a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">Triangle</a> &gt; &amp;triangles)</td></tr>
+<tr class="memitem:a5f30fb846b7a961c1d20202b82f34e77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a5f30fb846b7a961c1d20202b82f34e77">setTriangles</a> (<a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">Triangle</a> &gt; &amp;triangles)</td></tr>
 <tr class="separator:a5f30fb846b7a961c1d20202b82f34e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddc7763f09012762f7dc502f0e72488"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">Triangle</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#adddc7763f09012762f7dc502f0e72488">getTriangles</a> ()</td></tr>
+<tr class="memdesc:adddc7763f09012762f7dc502f0e72488"><td class="mdescLeft">&#160;</td><td class="mdescRight">return all triangle indices  <a href="classdyno_1_1_triangle_set.html#adddc7763f09012762f7dc502f0e72488">More...</a><br /></td></tr>
+<tr class="separator:adddc7763f09012762f7dc502f0e72488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad32d188c7e7f74c45987380e55046fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a4e18343b6fedcdc0f72bcbb020a46fb5">DArrayList</a>&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#aad32d188c7e7f74c45987380e55046fd">getVertex2Triangles</a> ()</td></tr>
 <tr class="separator:aad32d188c7e7f74c45987380e55046fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671590a6f1b29d46d2f656e475404af5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#aaea7d2640dc652f4d75a5dadb7709948">Tri2Edg</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a671590a6f1b29d46d2f656e475404af5">getTriangle2Edge</a> ()</td></tr>
+<tr class="separator:a671590a6f1b29d46d2f656e475404af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7aa285f092a4630aafb210cf6b7ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a4f7aa285f092a4630aafb210cf6b7ac4">updateTriangle2Edge</a> ()</td></tr>
+<tr class="memdesc:a4f7aa285f092a4630aafb210cf6b7ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">update the index from triangle id to edges ids  <a href="classdyno_1_1_triangle_set.html#a4f7aa285f092a4630aafb210cf6b7ac4">More...</a><br /></td></tr>
+<tr class="separator:a4f7aa285f092a4630aafb210cf6b7ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a376e8c1e17d5d7e0a4c401ab1e0bb552"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a376e8c1e17d5d7e0a4c401ab1e0bb552">updateEdgeNormal</a> (<a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a> &gt; &amp;edgeNormal)</td></tr>
+<tr class="separator:a376e8c1e17d5d7e0a4c401ab1e0bb552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f4e3891bcc8fb30cea9888106d0a454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a0f4e3891bcc8fb30cea9888106d0a454">updateAngleWeightedVertexNormal</a> (<a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a> &gt; &amp;vertexNormal)</td></tr>
+<tr class="separator:a0f4e3891bcc8fb30cea9888106d0a454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628da350254393a5f6a4b4c762ec1b40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a628da350254393a5f6a4b4c762ec1b40">getEdgeNormal</a> ()</td></tr>
+<tr class="separator:a628da350254393a5f6a4b4c762ec1b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57bc2053c8598780a491774d5d68425d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a57bc2053c8598780a491774d5d68425d">getVertexNormal</a> ()</td></tr>
+<tr class="separator:a57bc2053c8598780a491774d5d68425d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a311c9e1b2408d48a63ee99bdc5a9d37e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a311c9e1b2408d48a63ee99bdc5a9d37e">loadObjFile</a> (std::string filename)</td></tr>
 <tr class="separator:a311c9e1b2408d48a63ee99bdc5a9d37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad04d4bbccd1b5e04c70e69ef47f55f41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#ad04d4bbccd1b5e04c70e69ef47f55f41">copyFrom</a> (<a class="el" href="classdyno_1_1_triangle_set.html">TriangleSet</a>&lt; TDataType &gt; &amp;triangleSet)</td></tr>
 <tr class="separator:ad04d4bbccd1b5e04c70e69ef47f55f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b904de64e4a2023f0ddee44ce14ee14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a3b904de64e4a2023f0ddee44ce14ee14">DEF_ARRAY_OUT</a> (<a class="el" href="classdyno_1_1_edge_set.html#a3034f560befe8133abb3c466fac6a6af">Coord</a>, VertexNormal, <a class="el" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, &quot;&quot;)</td></tr>
+<tr class="memitem:a456d194c7cac1061672f56518594cfc4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_triangle_set.html">TriangleSet</a>&lt; TDataType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a456d194c7cac1061672f56518594cfc4">merge</a> (<a class="el" href="classdyno_1_1_triangle_set.html">TriangleSet</a>&lt; TDataType &gt; &amp;ts)</td></tr>
+<tr class="separator:a456d194c7cac1061672f56518594cfc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a158f84d1ffc74e0ba212c1a0d12739"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a9a158f84d1ffc74e0ba212c1a0d12739">isEmpty</a> () override</td></tr>
+<tr class="separator:a9a158f84d1ffc74e0ba212c1a0d12739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b904de64e4a2023f0ddee44ce14ee14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a3b904de64e4a2023f0ddee44ce14ee14">DEF_ARRAY_OUT</a> (<a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a>, VertexNormal, <a class="el" href="_platform_8h.html#ad258d4c51629346fceac4679b3209ad9a90768d506a26e2fd926bc5920b63daad">DeviceType::GPU</a>, &quot;&quot;)</td></tr>
 <tr class="separator:a3b904de64e4a2023f0ddee44ce14ee14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa198b69007e8a0712ab4fe8d0bf7bac3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#aa198b69007e8a0712ab4fe8d0bf7bac3">TriangleSet</a> ()</td></tr>
+<tr class="separator:aa198b69007e8a0712ab4fe8d0bf7bac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483172a885b5b9e402d58337eda8a372"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a483172a885b5b9e402d58337eda8a372">~TriangleSet</a> () override</td></tr>
+<tr class="separator:a483172a885b5b9e402d58337eda8a372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_edge_set"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_edge_set')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_edge_set.html">dyno::EdgeSet&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:a18fd5763c509270a25fd6b38eb3046fe inherit pub_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a18fd5763c509270a25fd6b38eb3046fe">EdgeSet</a> ()</td></tr>
 <tr class="separator:a18fd5763c509270a25fd6b38eb3046fe inherit pub_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93fb9388e57b0a6a58d15274a57c7c51 inherit pub_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a93fb9388e57b0a6a58d15274a57c7c51">~EdgeSet</a> () override</td></tr>
 <tr class="separator:a93fb9388e57b0a6a58d15274a57c7c51 inherit pub_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f1ec4fc816fab0aaa79b68870acc1ee inherit pub_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a4f1ec4fc816fab0aaa79b68870acc1ee">updatePointNeighbors</a> () override</td></tr>
-<tr class="separator:a4f1ec4fc816fab0aaa79b68870acc1ee inherit pub_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7632092ddc5b444b9fad00147bbec97e inherit pub_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a7632092ddc5b444b9fad00147bbec97e">loadSmeshFile</a> (std::string filename)</td></tr>
 <tr class="separator:a7632092ddc5b444b9fad00147bbec97e inherit pub_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a093e63375cf63be117c3db2ac4d8cc9a inherit pub_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a0c1dbdb7e9374ee1958795e7ac7c6ecc">Edge</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a093e63375cf63be117c3db2ac4d8cc9a">getEdges</a> ()</td></tr>
@@ -218,6 +261,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a586cb46c3ee33ecac000363c6a5311f8 inherit pub_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe378250e01c5b480b4cab871990af33 inherit pub_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a4e18343b6fedcdc0f72bcbb020a46fb5">DArrayList</a>&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#afe378250e01c5b480b4cab871990af33">getVer2Edge</a> ()</td></tr>
 <tr class="separator:afe378250e01c5b480b4cab871990af33 inherit pub_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d11f699dde16baa24374f78551bedae inherit pub_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a2d11f699dde16baa24374f78551bedae">isEmpty</a> () override</td></tr>
+<tr class="separator:a2d11f699dde16baa24374f78551bedae inherit pub_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18fd5763c509270a25fd6b38eb3046fe inherit pub_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a18fd5763c509270a25fd6b38eb3046fe">EdgeSet</a> ()</td></tr>
+<tr class="separator:a18fd5763c509270a25fd6b38eb3046fe inherit pub_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93fb9388e57b0a6a58d15274a57c7c51 inherit pub_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a93fb9388e57b0a6a58d15274a57c7c51">~EdgeSet</a> () override</td></tr>
+<tr class="separator:a93fb9388e57b0a6a58d15274a57c7c51 inherit pub_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_point_set"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_point_set')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_point_set.html">dyno::PointSet&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:af11b1e23b45ecadf3105b36097b9623e inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#af11b1e23b45ecadf3105b36097b9623e">PointSet</a> ()</td></tr>
 <tr class="separator:af11b1e23b45ecadf3105b36097b9623e inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,10 +286,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a23b33679d4c346aa23ec0ab4754ff4ee inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53a6d5dd0780ad174add6ca3f817632b inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a53a6d5dd0780ad174add6ca3f817632b">getPointSize</a> ()</td></tr>
 <tr class="separator:a53a6d5dd0780ad174add6ca3f817632b inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cc9bc13e3e18621e55c77eb0fc84a26 inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a4e18343b6fedcdc0f72bcbb020a46fb5">DArrayList</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a0cc9bc13e3e18621e55c77eb0fc84a26">getPointNeighbors</a> ()</td></tr>
-<tr class="separator:a0cc9bc13e3e18621e55c77eb0fc84a26 inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d2168f4bcb86a5979bf30d4999a9e9 inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a15d2168f4bcb86a5979bf30d4999a9e9">updatePointNeighbors</a> ()</td></tr>
-<tr class="separator:a15d2168f4bcb86a5979bf30d4999a9e9 inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6748d2665bff704fb26d20d5a7e42a90 inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a4e18343b6fedcdc0f72bcbb020a46fb5">DArrayList</a>&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a6748d2665bff704fb26d20d5a7e42a90">getPointNeighbors</a> ()</td></tr>
+<tr class="separator:a6748d2665bff704fb26d20d5a7e42a90 inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc5281441e682b29d044f98d46c261c inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a4bc5281441e682b29d044f98d46c261c">scale</a> (<a class="el" href="classdyno_1_1_point_set.html#ac4c090039ace225e40ca2f37f9f02950">Real</a> s)</td></tr>
 <tr class="separator:a4bc5281441e682b29d044f98d46c261c inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46db2dfb039e64e53907f788088f4ff1 inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a46db2dfb039e64e53907f788088f4ff1">scale</a> (<a class="el" href="classdyno_1_1_point_set.html#ad887feaea689f16525c2b286ce4b84e7">Coord</a> s)</td></tr>
@@ -251,6 +298,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5d7c87c904fb097c5bb15aa64c3eb5fe inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a497d8867bda218aa4088eede896dd243 inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a497d8867bda218aa4088eede896dd243">loadObjFile</a> (std::string filename)</td></tr>
 <tr class="separator:a497d8867bda218aa4088eede896dd243 inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f78f20cdf3a7875de29d2d3b01a109 inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#ae5f78f20cdf3a7875de29d2d3b01a109">isEmpty</a> ()</td></tr>
+<tr class="separator:ae5f78f20cdf3a7875de29d2d3b01a109 inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db5efe53019b921d7fff248445e2a23 inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a0db5efe53019b921d7fff248445e2a23">clear</a> ()</td></tr>
+<tr class="separator:a0db5efe53019b921d7fff248445e2a23 inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11b1e23b45ecadf3105b36097b9623e inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#af11b1e23b45ecadf3105b36097b9623e">PointSet</a> ()</td></tr>
+<tr class="separator:af11b1e23b45ecadf3105b36097b9623e inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20619c10f03e088187f7b3a69976bfee inherit pub_methods_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a20619c10f03e088187f7b3a69976bfee">~PointSet</a> () override</td></tr>
+<tr class="separator:a20619c10f03e088187f7b3a69976bfee inherit pub_methods_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_topology_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_topology_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_topology_module.html">dyno::TopologyModule</a></td></tr>
 <tr class="memitem:af25ade16762059f06ca9a2143ac34ebc inherit pub_methods_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#af25ade16762059f06ca9a2143ac34ebc">TopologyModule</a> ()</td></tr>
 <tr class="separator:af25ade16762059f06ca9a2143ac34ebc inherit pub_methods_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,11 +334,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0972542b013c9ea7ae169cddf5fff0b5 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e0a79232327c7382c6a77dad3a9781 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a57e0a79232327c7382c6a77dad3a9781">setParent</a> (<a class="el" href="classdyno_1_1_node.html">Node</a> *node)</td></tr>
 <tr class="separator:a57e0a79232327c7382c6a77dad3a9781 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44ee1b0af4e61e68d804680b27881999 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a44ee1b0af4e61e68d804680b27881999">getName</a> ()</td></tr>
-<tr class="separator:a44ee1b0af4e61e68d804680b27881999 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">setUpdateAlways</a> (bool b)</td></tr>
-<tr class="memdesc:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the update strategy for the module.  <a href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">More...</a><br /></td></tr>
-<tr class="separator:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ee7630d700f8c249b9e4447cd6f87a inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a85ee7630d700f8c249b9e4447cd6f87a">getName</a> () override</td></tr>
+<tr class="separator:a85ee7630d700f8c249b9e4447cd6f87a inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b50ee66c01dda6a05819eb246266d33 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a2b50ee66c01dda6a05819eb246266d33">getParent</a> ()</td></tr>
 <tr class="separator:a2b50ee66c01dda6a05819eb246266d33 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b0882f625db1c53350db482d34a1b90 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a0b0882f625db1c53350db482d34a1b90">isInitialized</a> ()</td></tr>
@@ -298,6 +350,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a5a53a1ff27547593a8358e6ab5767fa2">isOutputCompete</a> ()</td></tr>
 <tr class="separator:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8074a810611d1408b5b3c6c5b210f94 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ac8074a810611d1408b5b3c6c5b210f94">DEF_VAR</a> (bool, ForceUpdate, false, &quot;&quot;)</td></tr>
+<tr class="separator:ac8074a810611d1408b5b3c6c5b210f94 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">setUpdateAlways</a> (bool b)</td></tr>
+<tr class="memdesc:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the update strategy for the module.  <a href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">More...</a><br /></td></tr>
+<tr class="separator:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ab65d583b85bc42e7b2faab3af43d159f">OBase</a> ()</td></tr>
 <tr class="separator:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,9 +363,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b2ae20076770c8e1c85f718bafcf9c7 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a3b2ae20076770c8e1c85f718bafcf9c7">caption</a> ()</td></tr>
 <tr class="memdesc:a3b2ae20076770c8e1c85f718bafcf9c7 inherit pub_methods_classdyno_1_1_o_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the caption.  <a href="classdyno_1_1_o_base.html#a3b2ae20076770c8e1c85f718bafcf9c7">More...</a><br /></td></tr>
 <tr class="separator:a3b2ae20076770c8e1c85f718bafcf9c7 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3240798a9150986ba10defba8241f6fc inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a3240798a9150986ba10defba8241f6fc">captionVisible</a> ()</td></tr>
+<tr class="memdesc:a3240798a9150986ba10defba8241f6fc inherit pub_methods_classdyno_1_1_o_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to hide the caption in the GUI.  <a href="classdyno_1_1_o_base.html#a3240798a9150986ba10defba8241f6fc">More...</a><br /></td></tr>
+<tr class="separator:a3240798a9150986ba10defba8241f6fc inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72c4d5a554baee9145be82fd97ee78f6 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a72c4d5a554baee9145be82fd97ee78f6">description</a> ()</td></tr>
 <tr class="memdesc:a72c4d5a554baee9145be82fd97ee78f6 inherit pub_methods_classdyno_1_1_o_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a description for the node or module, override this function to support user-defined description.  <a href="classdyno_1_1_o_base.html#a72c4d5a554baee9145be82fd97ee78f6">More...</a><br /></td></tr>
 <tr class="separator:a72c4d5a554baee9145be82fd97ee78f6 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3de3b2c6f081b2b9423640d5e354d2 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a5a3de3b2c6f081b2b9423640d5e354d2">getName</a> ()</td></tr>
+<tr class="separator:a5a3de3b2c6f081b2b9423640d5e354d2 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3871130579a7ee2089206d13d4fe9e47 inherit pub_methods_classdyno_1_1_o_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47">addField</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *data)</td></tr>
 <tr class="memdesc:a3871130579a7ee2089206d13d4fe9e47 inherit pub_methods_classdyno_1_1_o_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a field to Base FieldID will be set to the name of Field by default.  <a href="classdyno_1_1_o_base.html#a3871130579a7ee2089206d13d4fe9e47">More...</a><br /></td></tr>
 <tr class="separator:a3871130579a7ee2089206d13d4fe9e47 inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -396,20 +458,46 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8">objectId</a> ()</td></tr>
 <tr class="separator:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad0a4e4508a98e3a0dd55cbfefeaad75a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#ad0a4e4508a98e3a0dd55cbfefeaad75a">mIndex</a></td></tr>
+<tr class="separator:ad0a4e4508a98e3a0dd55cbfefeaad75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classdyno_1_1_edge_set"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdyno_1_1_edge_set')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdyno_1_1_edge_set.html">dyno::EdgeSet&lt; TDataType &gt;</a></td></tr>
+<tr class="memitem:a8c14f823e863f64b8124b93fcd8861b1 inherit pub_attribs_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a0c1dbdb7e9374ee1958795e7ac7c6ecc">Edge</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a8c14f823e863f64b8124b93fcd8861b1">mEdgeIndex</a></td></tr>
+<tr class="separator:a8c14f823e863f64b8124b93fcd8861b1 inherit pub_attribs_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classdyno_1_1_point_set"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdyno_1_1_point_set')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdyno_1_1_point_set.html">dyno::PointSet&lt; TDataType &gt;</a></td></tr>
+<tr class="memitem:a8dda24cc494cf07e457d27761354a366 inherit pub_attribs_classdyno_1_1_point_set"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a8dda24cc494cf07e457d27761354a366">mPoints</a></td></tr>
+<tr class="separator:a8dda24cc494cf07e457d27761354a366 inherit pub_attribs_classdyno_1_1_point_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a06ba32bf9e0f4ecfe9ae1c3807d238b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a06ba32bf9e0f4ecfe9ae1c3807d238b4">updateTopology</a> () override</td></tr>
 <tr class="separator:a06ba32bf9e0f4ecfe9ae1c3807d238b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3850c0e34f7239e334cab3c4462e619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#ae3850c0e34f7239e334cab3c4462e619">updateEdges</a> () override</td></tr>
 <tr class="separator:ae3850c0e34f7239e334cab3c4462e619"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ad10992552cd936ae1dd73f56015b2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a1ad10992552cd936ae1dd73f56015b2c">updateTriangles</a> ()</td></tr>
-<tr class="separator:a1ad10992552cd936ae1dd73f56015b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0495f15801f0be340edb2d3f6bff4fe2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a0495f15801f0be340edb2d3f6bff4fe2">updateTriangles</a> ()</td></tr>
+<tr class="separator:a0495f15801f0be340edb2d3f6bff4fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f4f54e5b8ccb3e1bdd1816a5662579"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a61f4f54e5b8ccb3e1bdd1816a5662579">updateVertexNormal</a> ()</td></tr>
 <tr class="separator:a61f4f54e5b8ccb3e1bdd1816a5662579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e1cd9f9634f70189e9a74a4b99e1438"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a6e1cd9f9634f70189e9a74a4b99e1438">updateEdges</a> ()</td></tr>
-<tr class="separator:a6e1cd9f9634f70189e9a74a4b99e1438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86cb1a7208089b686e2545a28eee1b85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a86cb1a7208089b686e2545a28eee1b85">updateTopology</a> () override</td></tr>
-<tr class="separator:a86cb1a7208089b686e2545a28eee1b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ba32bf9e0f4ecfe9ae1c3807d238b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a06ba32bf9e0f4ecfe9ae1c3807d238b4">updateTopology</a> () override</td></tr>
+<tr class="separator:a06ba32bf9e0f4ecfe9ae1c3807d238b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ad10992552cd936ae1dd73f56015b2c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a1ad10992552cd936ae1dd73f56015b2c">updateTriangles</a> ()</td></tr>
+<tr class="separator:a1ad10992552cd936ae1dd73f56015b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classdyno_1_1_edge_set"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdyno_1_1_edge_set')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_edge_set.html">dyno::EdgeSet&lt; TDataType &gt;</a></td></tr>
+<tr class="memitem:a6e1cd9f9634f70189e9a74a4b99e1438 inherit pro_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a6e1cd9f9634f70189e9a74a4b99e1438">updateEdges</a> ()</td></tr>
+<tr class="separator:a6e1cd9f9634f70189e9a74a4b99e1438 inherit pro_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cb1a7208089b686e2545a28eee1b85 inherit pro_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a86cb1a7208089b686e2545a28eee1b85">updateTopology</a> () override</td></tr>
+<tr class="separator:a86cb1a7208089b686e2545a28eee1b85 inherit pro_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1ec4fc816fab0aaa79b68870acc1ee inherit pro_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a4f1ec4fc816fab0aaa79b68870acc1ee">updatePointNeighbors</a> () override</td></tr>
+<tr class="separator:a4f1ec4fc816fab0aaa79b68870acc1ee inherit pro_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1cd9f9634f70189e9a74a4b99e1438 inherit pro_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a6e1cd9f9634f70189e9a74a4b99e1438">updateEdges</a> ()</td></tr>
+<tr class="separator:a6e1cd9f9634f70189e9a74a4b99e1438 inherit pro_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86cb1a7208089b686e2545a28eee1b85 inherit pro_methods_classdyno_1_1_edge_set"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_edge_set.html#a86cb1a7208089b686e2545a28eee1b85">updateTopology</a> () override</td></tr>
+<tr class="separator:a86cb1a7208089b686e2545a28eee1b85 inherit pro_methods_classdyno_1_1_edge_set"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3115b0480291c667f9753dc1b1915b29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a3115b0480291c667f9753dc1b1915b29">updateTopology</a> () override</td></tr>
+<tr class="separator:a3115b0480291c667f9753dc1b1915b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d2168f4bcb86a5979bf30d4999a9e9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_point_set.html#a15d2168f4bcb86a5979bf30d4999a9e9">updatePointNeighbors</a> ()</td></tr>
+<tr class="separator:a15d2168f4bcb86a5979bf30d4999a9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classdyno_1_1_topology_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdyno_1_1_topology_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_topology_module.html">dyno::TopologyModule</a></td></tr>
 <tr class="memitem:ace51202d644024e7cb776180803a5d0a inherit pro_methods_classdyno_1_1_topology_module"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#ace51202d644024e7cb776180803a5d0a">updateImpl</a> () override</td></tr>
 <tr class="separator:ace51202d644024e7cb776180803a5d0a inherit pro_methods_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -438,12 +526,18 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8226fffdad505bd78d52cfed0689ffdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">Triangle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a8226fffdad505bd78d52cfed0689ffdc">m_triangles</a></td></tr>
-<tr class="separator:a8226fffdad505bd78d52cfed0689ffdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dff39749b0beee128494f426e9d98d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a4e18343b6fedcdc0f72bcbb020a46fb5">DArrayList</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a5dff39749b0beee128494f426e9d98d0">m_ver2Tri</a></td></tr>
-<tr class="separator:a5dff39749b0beee128494f426e9d98d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a7dbe820ab043bfcd5840ce79e984b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">Triangle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a43a7dbe820ab043bfcd5840ce79e984b">mTriangleIndex</a></td></tr>
+<tr class="separator:a43a7dbe820ab043bfcd5840ce79e984b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72488dd0b7ac2ae20eebd851c5da866"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a4e18343b6fedcdc0f72bcbb020a46fb5">DArrayList</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#ae72488dd0b7ac2ae20eebd851c5da866">mVer2Tri</a></td></tr>
+<tr class="separator:ae72488dd0b7ac2ae20eebd851c5da866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55b7eceaa170422480e860753aca1146"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt;<a class="el" href="classdyno_1_1_topology_module.html#aa8d38acbdb92129e5d36d8a002c9fd52">::dyno::TopologyModule::Edg2Tri</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a55b7eceaa170422480e860753aca1146">edg2Tri</a></td></tr>
 <tr class="separator:a55b7eceaa170422480e860753aca1146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce8f35fd6ca137644f438bf0fe7468f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt;<a class="el" href="classdyno_1_1_topology_module.html#aaea7d2640dc652f4d75a5dadb7709948">::dyno::TopologyModule::Tri2Edg</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a1ce8f35fd6ca137644f438bf0fe7468f">tri2Edg</a></td></tr>
+<tr class="separator:a1ce8f35fd6ca137644f438bf0fe7468f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b28e6a5907f54ae32c1f68d037ac17b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a9b28e6a5907f54ae32c1f68d037ac17b">m_edgeNormal</a></td></tr>
+<tr class="separator:a9b28e6a5907f54ae32c1f68d037ac17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79183be1891fd80cd7ff3685ad7f333e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_triangle_set.html#a79183be1891fd80cd7ff3685ad7f333e">m_vertexNormal</a></td></tr>
+<tr class="separator:a79183be1891fd80cd7ff3685ad7f333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -478,7 +572,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename TDataType&gt;<br />
 class dyno::TriangleSet&lt; TDataType &gt;</div>
-<p class="definition">Definition at line <a class="el" href="_triangle_set_8h_source.html#l00082">82</a> of file <a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_vulkan_2_topology_2_triangle_set_8h_source.html#l00006">6</a> of file <a class="el" href="_vulkan_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aadcf04ee94c83e01cd981a74e7504bd4" name="aadcf04ee94c83e01cd981a74e7504bd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aadcf04ee94c83e01cd981a74e7504bd4">&#9670;&nbsp;</a></span>Coord</h2>
@@ -494,7 +588,7 @@ template&lt;typename TDataType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_triangle_set_8h_source.html#l00086">86</a> of file <a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00086">86</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +606,7 @@ template&lt;typename TDataType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_triangle_set_8h_source.html#l00085">85</a> of file <a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00085">85</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
 
 </div>
 </div>
@@ -525,18 +619,60 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">TopologyModule::Triangle</a> <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::Triangle</td>
+          <td class="memname">typedef <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">TopologyModule::Triangle</a> <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::Triangle</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_triangle_set_8h_source.html#l00087">87</a> of file <a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00087">87</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa198b69007e8a0712ab4fe8d0bf7bac3" name="aa198b69007e8a0712ab4fe8d0bf7bac3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa198b69007e8a0712ab4fe8d0bf7bac3">&#9670;&nbsp;</a></span>TriangleSet()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa198b69007e8a0712ab4fe8d0bf7bac3">&#9670;&nbsp;</a></span>TriangleSet() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::TriangleSet </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_triangle_set_8cpp_source.html#l00007">7</a> of file <a class="el" href="_triangle_set_8cpp_source.html">TriangleSet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3ee0933b9a9887472dd5c311be1d608e" name="a3ee0933b9a9887472dd5c311be1d608e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ee0933b9a9887472dd5c311be1d608e">&#9670;&nbsp;</a></span>~TriangleSet() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::~<a class="el" href="classdyno_1_1_triangle_set.html">TriangleSet</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_triangle_set_8cpp_source.html#l00012">12</a> of file <a class="el" href="_triangle_set_8cpp_source.html">TriangleSet.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa198b69007e8a0712ab4fe8d0bf7bac3" name="aa198b69007e8a0712ab4fe8d0bf7bac3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa198b69007e8a0712ab4fe8d0bf7bac3">&#9670;&nbsp;</a></span>TriangleSet() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -554,13 +690,16 @@ template&lt;typename TDataType &gt; </div>
 
 </div>
 </div>
-<a id="a3ee0933b9a9887472dd5c311be1d608e" name="a3ee0933b9a9887472dd5c311be1d608e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ee0933b9a9887472dd5c311be1d608e">&#9670;&nbsp;</a></span>~TriangleSet()</h2>
+<a id="a483172a885b5b9e402d58337eda8a372" name="a483172a885b5b9e402d58337eda8a372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483172a885b5b9e402d58337eda8a372">&#9670;&nbsp;</a></span>~TriangleSet() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::~<a class="el" href="classdyno_1_1_triangle_set.html">TriangleSet</a> </td>
@@ -569,6 +708,11 @@ template&lt;typename TDataType &gt; </div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -591,6 +735,15 @@ template&lt;typename TDataType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_triangle_set_ad04d4bbccd1b5e04c70e69ef47f55f41_icgraph.png" border="0" usemap="#aclassdyno_1_1_triangle_set_ad04d4bbccd1b5e04c70e69ef47f55f41_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_triangle_set_ad04d4bbccd1b5e04c70e69ef47f55f41_icgraph" id="aclassdyno_1_1_triangle_set_ad04d4bbccd1b5e04c70e69ef47f55f41_icgraph">
+<area shape="rect" title=" " alt="" coords="188,5,319,47"/>
+<area shape="rect" href="classdyno_1_1_ply_exporter.html#a7fd35ba06d2784f11fc0b019176bc8fc" title=" " alt="" coords="5,5,140,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -605,7 +758,7 @@ template&lt;typename TDataType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::DEF_ARRAY_OUT </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_edge_set.html#a3034f560befe8133abb3c466fac6a6af">Coord</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -636,8 +789,8 @@ template&lt;typename TDataType &gt; </div>
 
 </div>
 </div>
-<a id="adddc7763f09012762f7dc502f0e72488" name="adddc7763f09012762f7dc502f0e72488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adddc7763f09012762f7dc502f0e72488">&#9670;&nbsp;</a></span>getTriangles()</h2>
+<a id="a628da350254393a5f6a4b4c762ec1b40" name="a628da350254393a5f6a4b4c762ec1b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628da350254393a5f6a4b4c762ec1b40">&#9670;&nbsp;</a></span>getEdgeNormal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -648,7 +801,7 @@ template&lt;typename TDataType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">Triangle</a> &gt; &amp; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::getTriangles </td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a> &gt; &amp; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::getEdgeNormal </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -661,14 +814,75 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_triangle_set_8h_source.html#l00092">92</a> of file <a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00109">109</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+
+</div>
+</div>
+<a id="a671590a6f1b29d46d2f656e475404af5" name="a671590a6f1b29d46d2f656e475404af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671590a6f1b29d46d2f656e475404af5">&#9670;&nbsp;</a></span>getTriangle2Edge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#aaea7d2640dc652f4d75a5dadb7709948">Tri2Edg</a> &gt; &amp; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::getTriangle2Edge </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00100">100</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+
+</div>
+</div>
+<a id="adddc7763f09012762f7dc502f0e72488" name="adddc7763f09012762f7dc502f0e72488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adddc7763f09012762f7dc502f0e72488">&#9670;&nbsp;</a></span>getTriangles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">Triangle</a> &gt; &amp; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::getTriangles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return all triangle indices </p>
+
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00098">98</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_triangle_set_adddc7763f09012762f7dc502f0e72488_icgraph.png" border="0" usemap="#aclassdyno_1_1_triangle_set_adddc7763f09012762f7dc502f0e72488_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_triangle_set_adddc7763f09012762f7dc502f0e72488_icgraph" id="aclassdyno_1_1_triangle_set_adddc7763f09012762f7dc502f0e72488_icgraph">
-<area shape="rect" title=" " alt="" coords="224,5,355,47"/>
+<area shape="rect" title="return all triangle indices" alt="" coords="224,39,355,80"/>
 <area shape="rect" href="classdyno_1_1_triangle_mesh_writer.html#a2aaa86e9777c32ecd0049d86e76b0d69" title=" " alt="" coords="5,5,176,47"/>
+<area shape="rect" href="classdyno_1_1_ply_exporter.html#a7fd35ba06d2784f11fc0b019176bc8fc" title=" " alt="" coords="23,71,158,112"/>
 </map>
 </div>
 
@@ -690,6 +904,73 @@ template&lt;typename TDataType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_triangle_set_aad32d188c7e7f74c45987380e55046fd_icgraph.png" border="0" usemap="#aclassdyno_1_1_triangle_set_aad32d188c7e7f74c45987380e55046fd_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_triangle_set_aad32d188c7e7f74c45987380e55046fd_icgraph" id="aclassdyno_1_1_triangle_set_aad32d188c7e7f74c45987380e55046fd_icgraph">
+<area shape="rect" title=" " alt="" coords="188,5,325,47"/>
+<area shape="rect" href="classdyno_1_1_ply_exporter.html#a7fd35ba06d2784f11fc0b019176bc8fc" title=" " alt="" coords="5,5,140,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a57bc2053c8598780a491774d5d68425d" name="a57bc2053c8598780a491774d5d68425d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57bc2053c8598780a491774d5d68425d">&#9670;&nbsp;</a></span>getVertexNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a> &gt; &amp; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::getVertexNormal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00110">110</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+
+</div>
+</div>
+<a id="a9a158f84d1ffc74e0ba212c1a0d12739" name="a9a158f84d1ffc74e0ba212c1a0d12739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a158f84d1ffc74e0ba212c1a0d12739">&#9670;&nbsp;</a></span>isEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::isEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classdyno_1_1_edge_set.html#a2d11f699dde16baa24374f78551bedae">dyno::EdgeSet&lt; TDataType &gt;</a>.</p>
 
 </div>
 </div>
@@ -713,6 +994,26 @@ template&lt;typename TDataType &gt; </div>
 
 </div>
 </div>
+<a id="a456d194c7cac1061672f56518594cfc4" name="a456d194c7cac1061672f56518594cfc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a456d194c7cac1061672f56518594cfc4">&#9670;&nbsp;</a></span>merge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_triangle_set.html">TriangleSet</a>&lt; TDataType &gt; &gt; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::merge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_triangle_set.html">TriangleSet</a>&lt; TDataType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5f30fb846b7a961c1d20202b82f34e77" name="a5f30fb846b7a961c1d20202b82f34e77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f30fb846b7a961c1d20202b82f34e77">&#9670;&nbsp;</a></span>setTriangles() <span class="overload">[1/2]</span></h2>
 
@@ -724,7 +1025,7 @@ template&lt;typename TDataType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::setTriangles </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">Triangle</a> &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">Triangle</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>triangles</em></td><td>)</td>
           <td></td>
         </tr>
@@ -744,8 +1045,57 @@ template&lt;typename TDataType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::setTriangles </td>
           <td>(</td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">Triangle</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">Triangle</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>triangles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_triangle_set_a0dfdcda963ab0ff40055d30ac385b964_icgraph.png" border="0" usemap="#aclassdyno_1_1_triangle_set_a0dfdcda963ab0ff40055d30ac385b964_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_triangle_set_a0dfdcda963ab0ff40055d30ac385b964_icgraph" id="aclassdyno_1_1_triangle_set_a0dfdcda963ab0ff40055d30ac385b964_icgraph">
+<area shape="rect" title=" " alt="" coords="252,5,383,47"/>
+<area shape="rect" href="classdyno_1_1_cube_model.html#a31bde98ff9f5f3a4a33789e87967a003" title=" " alt="" coords="5,13,204,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0f4e3891bcc8fb30cea9888106d0a454" name="a0f4e3891bcc8fb30cea9888106d0a454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f4e3891bcc8fb30cea9888106d0a454">&#9670;&nbsp;</a></span>updateAngleWeightedVertexNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::updateAngleWeightedVertexNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vertexNormal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a376e8c1e17d5d7e0a4c401ab1e0bb552" name="a376e8c1e17d5d7e0a4c401ab1e0bb552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a376e8c1e17d5d7e0a4c401ab1e0bb552">&#9670;&nbsp;</a></span>updateEdgeNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::updateEdgeNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edgeNormal</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -784,7 +1134,51 @@ template&lt;typename TDataType &gt; </div>
 </div>
 </div>
 <a id="a06ba32bf9e0f4ecfe9ae1c3807d238b4" name="a06ba32bf9e0f4ecfe9ae1c3807d238b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06ba32bf9e0f4ecfe9ae1c3807d238b4">&#9670;&nbsp;</a></span>updateTopology()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ba32bf9e0f4ecfe9ae1c3807d238b4">&#9670;&nbsp;</a></span>updateTopology() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::updateTopology </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classdyno_1_1_edge_set.html#a86cb1a7208089b686e2545a28eee1b85">dyno::EdgeSet&lt; TDataType &gt;</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classdyno_1_1_tetrahedron_set.html#a24fea3108002b8176f28dad847fce8a7">dyno::TetrahedronSet&lt; TDataType &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_triangle_set_8cpp_source.html#l00017">17</a> of file <a class="el" href="_triangle_set_8cpp_source.html">TriangleSet.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_triangle_set_a06ba32bf9e0f4ecfe9ae1c3807d238b4_cgraph.png" border="0" usemap="#aclassdyno_1_1_triangle_set_a06ba32bf9e0f4ecfe9ae1c3807d238b4_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_triangle_set_a06ba32bf9e0f4ecfe9ae1c3807d238b4_cgraph" id="aclassdyno_1_1_triangle_set_a06ba32bf9e0f4ecfe9ae1c3807d238b4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,136,69"/>
+<area shape="rect" href="classdyno_1_1_edge_set.html#a86cb1a7208089b686e2545a28eee1b85" title=" " alt="" coords="184,5,391,32"/>
+<area shape="rect" href="classdyno_1_1_triangle_set.html#a0495f15801f0be340edb2d3f6bff4fe2" title=" " alt="" coords="222,57,353,98"/>
+<area shape="rect" href="classdyno_1_1_edge_set.html#a6e1cd9f9634f70189e9a74a4b99e1438" title=" " alt="" coords="439,5,631,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a06ba32bf9e0f4ecfe9ae1c3807d238b4" name="a06ba32bf9e0f4ecfe9ae1c3807d238b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ba32bf9e0f4ecfe9ae1c3807d238b4">&#9670;&nbsp;</a></span>updateTopology() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -812,8 +1206,69 @@ template&lt;typename TDataType &gt; </div>
 
 </div>
 </div>
+<a id="a4f7aa285f092a4630aafb210cf6b7ac4" name="a4f7aa285f092a4630aafb210cf6b7ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7aa285f092a4630aafb210cf6b7ac4">&#9670;&nbsp;</a></span>updateTriangle2Edge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::updateTriangle2Edge </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>update the index from triangle id to edges ids </p>
+
+</div>
+</div>
+<a id="a0495f15801f0be340edb2d3f6bff4fe2" name="a0495f15801f0be340edb2d3f6bff4fe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0495f15801f0be340edb2d3f6bff4fe2">&#9670;&nbsp;</a></span>updateTriangles() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::updateTriangles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classdyno_1_1_quad_set.html#ae33bb737ead5eff4ac50c94a9cdb5c7d">dyno::QuadSet&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_tetrahedron_set.html#a69dd1b5d92e2d6ab45837f7eeaf3d293">dyno::TetrahedronSet&lt; TDataType &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00130">130</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_triangle_set_a0495f15801f0be340edb2d3f6bff4fe2_icgraph.png" border="0" usemap="#aclassdyno_1_1_triangle_set_a0495f15801f0be340edb2d3f6bff4fe2_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_triangle_set_a0495f15801f0be340edb2d3f6bff4fe2_icgraph" id="aclassdyno_1_1_triangle_set_a0495f15801f0be340edb2d3f6bff4fe2_icgraph">
+<area shape="rect" title=" " alt="" coords="184,5,315,47"/>
+<area shape="rect" href="classdyno_1_1_triangle_set.html#a06ba32bf9e0f4ecfe9ae1c3807d238b4" title=" " alt="" coords="5,5,136,47"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a1ad10992552cd936ae1dd73f56015b2c" name="a1ad10992552cd936ae1dd73f56015b2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ad10992552cd936ae1dd73f56015b2c">&#9670;&nbsp;</a></span>updateTriangles()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ad10992552cd936ae1dd73f56015b2c">&#9670;&nbsp;</a></span>updateTriangles() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -832,14 +1287,12 @@ template&lt;typename TDataType &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_quad_set.html#ae33bb737ead5eff4ac50c94a9cdb5c7d">dyno::QuadSet&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_tetrahedron_set.html#a69dd1b5d92e2d6ab45837f7eeaf3d293">dyno::TetrahedronSet&lt; TDataType &gt;</a>.</p>
-
-<p class="definition">Definition at line <a class="el" href="_triangle_set_8h_source.html#l00109">109</a> of file <a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
 
 </div>
 </div>
@@ -895,12 +1348,12 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_triangle_set_8h_source.html#l00116">116</a> of file <a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00137">137</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
 
 </div>
 </div>
-<a id="a8226fffdad505bd78d52cfed0689ffdc" name="a8226fffdad505bd78d52cfed0689ffdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8226fffdad505bd78d52cfed0689ffdc">&#9670;&nbsp;</a></span>m_triangles</h2>
+<a id="a9b28e6a5907f54ae32c1f68d037ac17b" name="a9b28e6a5907f54ae32c1f68d037ac17b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b28e6a5907f54ae32c1f68d037ac17b">&#9670;&nbsp;</a></span>m_edgeNormal</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -911,7 +1364,7 @@ template&lt;typename TDataType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt;<a class="el" href="classdyno_1_1_topology_module.html#a670a4ffe09ce3155e7b3a1c7b730a6e0">Triangle</a>&gt; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::m_triangles</td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt;<a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a>&gt; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::m_edgeNormal</td>
         </tr>
       </table>
   </td>
@@ -921,12 +1374,12 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_triangle_set_8h_source.html#l00113">113</a> of file <a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00140">140</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
 
 </div>
 </div>
-<a id="a5dff39749b0beee128494f426e9d98d0" name="a5dff39749b0beee128494f426e9d98d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dff39749b0beee128494f426e9d98d0">&#9670;&nbsp;</a></span>m_ver2Tri</h2>
+<a id="a79183be1891fd80cd7ff3685ad7f333e" name="a79183be1891fd80cd7ff3685ad7f333e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79183be1891fd80cd7ff3685ad7f333e">&#9670;&nbsp;</a></span>m_vertexNormal</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -937,7 +1390,7 @@ template&lt;typename TDataType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a4e18343b6fedcdc0f72bcbb020a46fb5">DArrayList</a>&lt;int&gt; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::m_ver2Tri</td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt;<a class="el" href="classdyno_1_1_triangle_set.html#aadcf04ee94c83e01cd981a74e7504bd4">Coord</a>&gt; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::m_vertexNormal</td>
         </tr>
       </table>
   </td>
@@ -947,12 +1400,111 @@ template&lt;typename TDataType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_triangle_set_8h_source.html#l00114">114</a> of file <a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00141">141</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Peridyno/peridyno/src/Framework/Topology/<a class="el" href="_triangle_set_8h_source.html">TriangleSet.h</a></li>
+<a id="ad0a4e4508a98e3a0dd55cbfefeaad75a" name="ad0a4e4508a98e3a0dd55cbfefeaad75a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0a4e4508a98e3a0dd55cbfefeaad75a">&#9670;&nbsp;</a></span>mIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt;uint32_t&gt; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::mIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_vulkan_2_topology_2_triangle_set_8h_source.html#l00019">19</a> of file <a class="el" href="_vulkan_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+
+</div>
+</div>
+<a id="a43a7dbe820ab043bfcd5840ce79e984b" name="a43a7dbe820ab043bfcd5840ce79e984b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a7dbe820ab043bfcd5840ce79e984b">&#9670;&nbsp;</a></span>mTriangleIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">Triangle</a> &gt; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::mTriangleIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00134">134</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+
+</div>
+</div>
+<a id="ae72488dd0b7ac2ae20eebd851c5da866" name="ae72488dd0b7ac2ae20eebd851c5da866"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae72488dd0b7ac2ae20eebd851c5da866">&#9670;&nbsp;</a></span>mVer2Tri</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a4e18343b6fedcdc0f72bcbb020a46fb5">DArrayList</a>&lt;int&gt; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::mVer2Tri</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00135">135</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+
+</div>
+</div>
+<a id="a1ce8f35fd6ca137644f438bf0fe7468f" name="a1ce8f35fd6ca137644f438bf0fe7468f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ce8f35fd6ca137644f438bf0fe7468f">&#9670;&nbsp;</a></span>tri2Edg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt;<a class="el" href="classdyno_1_1_topology_module.html#aaea7d2640dc652f4d75a5dadb7709948">::dyno::TopologyModule::Tri2Edg</a>&gt; <a class="el" href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a>&lt; TDataType &gt;::tri2Edg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html#l00138">138</a> of file <a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>E:/Peridyno/peridyno/src/Dynamics/Cuda/SemiAnalyticalScheme/<a class="el" href="_semi_analytical_incompressibility_module_8h_source.html">SemiAnalyticalIncompressibilityModule.h</a></li>
+<li>E:/Peridyno/peridyno/src/Topology/Cuda/Topology/<a class="el" href="_cuda_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a></li>
+<li>E:/Peridyno/peridyno/src/Topology/Vulkan/Topology/<a class="el" href="_vulkan_2_topology_2_triangle_set_8h_source.html">TriangleSet.h</a></li>
+<li>E:/Peridyno/peridyno/src/Topology/Vulkan/Topology/<a class="el" href="_triangle_set_8cpp_source.html">TriangleSet.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

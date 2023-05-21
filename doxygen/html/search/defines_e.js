@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['radian_0',['radian',['../_joint_tree_8cpp.html#ac944a616773d2c2139ac750494bd1662',1,'JointTree.cpp']]],
-  ['real_5fequal_1',['REAL_EQUAL',['../_tight_c_c_d_8inl.html#a2a9232dec46b8f19d5d02567aa792f0a',1,'TightCCD.inl']]],
-  ['real_5finfinity_2',['REAL_infinity',['../_tight_c_c_d_8inl.html#a209e626b87f213543e54118bfb8fcfbc',1,'TightCCD.inl']]]
+  ['quat_5fprecision_0',['QUAT_PRECISION',['../vg_math_8h.html#ab986c04199e01e2219cec3ec257e2fd9',1,'vgMath.h']]],
+  ['quat_5ft_1',['QUAT_T',['../vg_math_8h.html#ae740ae8d7475f648d72add8db6948bc2',1,'vgMath.h']]]
 ];

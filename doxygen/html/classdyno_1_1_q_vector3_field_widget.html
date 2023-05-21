@@ -69,7 +69,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Public Slots</a> &#124;
-<a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_q_vector3_field_widget-members.html">List of all members</a>  </div>
@@ -77,13 +76,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_q_vector3_field_widget_8h_source.html">QVector3FieldWidget.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for dyno::QVector3FieldWidget:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_q_vector3_field_widget__inherit__graph.png" border="0" usemap="#adyno_1_1_q_vector3_field_widget_inherit__map" alt="Inheritance graph"/></div>
 <map name="adyno_1_1_q_vector3_field_widget_inherit__map" id="adyno_1_1_q_vector3_field_widget_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,80,188,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,188,181"/>
+<area shape="rect" href="classdyno_1_1_q_field_widget.html" title=" " alt="" coords="28,80,165,107"/>
 <area shape="rect" title=" " alt="" coords="51,5,142,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -92,49 +92,62 @@ Collaboration diagram for dyno::QVector3FieldWidget:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_q_vector3_field_widget__coll__graph.png" border="0" usemap="#adyno_1_1_q_vector3_field_widget_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_q_vector3_field_widget_coll__map" id="adyno_1_1_q_vector3_field_widget_coll__map">
-<area shape="rect" title=" " alt="" coords="77,304,259,331"/>
-<area shape="rect" title=" " alt="" coords="5,185,96,212"/>
-<area shape="rect" href="classdyno_1_1_f_base.html" title=" " alt="" coords="120,185,216,212"/>
-<area shape="rect" title=" " alt="" coords="11,81,66,108"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="91,81,189,108"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="92,5,188,32"/>
-<area shape="rect" href="classdyno_1_1_time_stamp.html" title="Time stamp." alt="" coords="214,81,338,108"/>
-<area shape="rect" href="classdyno_1_1m_double_spin_box.html" title=" " alt="" coords="339,185,498,212"/>
-<area shape="rect" title=" " alt="" coords="362,81,483,108"/>
+<area shape="rect" title=" " alt="" coords="337,409,519,436"/>
+<area shape="rect" href="classdyno_1_1_q_field_widget.html" title=" " alt="" coords="274,291,411,317"/>
+<area shape="rect" title=" " alt="" coords="305,201,396,228"/>
+<area shape="rect" href="classdyno_1_1_f_base.html" title=" " alt="" coords="104,201,200,228"/>
+<area shape="rect" title=" " alt="" coords="283,5,338,32"/>
+<area shape="rect" href="classdyno_1_1_value_button.html" title=" " alt="" coords="502,96,631,123"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="5,96,104,123"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="7,5,103,32"/>
+<area shape="rect" href="classdyno_1_1_time_stamp.html" title="Time stamp." alt="" coords="262,96,386,123"/>
+<area shape="rect" href="classdyno_1_1m_double_spin_box.html" title=" " alt="" coords="435,291,594,317"/>
+<area shape="rect" title=" " alt="" coords="578,201,699,228"/>
+<area shape="rect" href="classdyno_1_1_value_dialog.html" title=" " alt="" coords="427,201,554,228"/>
+<area shape="rect" title=" " alt="" coords="410,96,478,123"/>
+<area shape="rect" title=" " alt="" coords="517,5,617,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
-<tr class="memitem:a99a440f40e167b3a5c932792f944d691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691">changeValue</a> (double)</td></tr>
-<tr class="separator:a99a440f40e167b3a5c932792f944d691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
-Signals</h2></td></tr>
-<tr class="memitem:a4257fa43ed03c12ecf7be39f2bb29faf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#a4257fa43ed03c12ecf7be39f2bb29faf">fieldChanged</a> ()</td></tr>
-<tr class="separator:a4257fa43ed03c12ecf7be39f2bb29faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abecbc393022b1758cdb7756e4313a8ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#abecbc393022b1758cdb7756e4313a8ca">updateField</a> (double)</td></tr>
+<tr class="separator:abecbc393022b1758cdb7756e4313a8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac363130830ce245eadaf681c367aa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#afac363130830ce245eadaf681c367aa1">updateWidget</a> ()</td></tr>
+<tr class="separator:afac363130830ce245eadaf681c367aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aed0fab389bc557f48e4f318020ffd1d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9">QVector3FieldWidget</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *field)</td></tr>
+<tr class="memitem:aed0fab389bc557f48e4f318020ffd1d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9">QVector3FieldWidget</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *<a class="el" href="classdyno_1_1_q_field_widget.html#a782d02aac0902a3ac4813a19e9952499">field</a>)</td></tr>
 <tr class="separator:aed0fab389bc557f48e4f318020ffd1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a415152fe621fba71e45947256a7afad9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#a415152fe621fba71e45947256a7afad9">~QVector3FieldWidget</a> ()</td></tr>
-<tr class="separator:a415152fe621fba71e45947256a7afad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c2be237e0e8584677ab21e1a375100"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#a90c2be237e0e8584677ab21e1a375100">~QVector3FieldWidget</a> () override</td></tr>
+<tr class="separator:a90c2be237e0e8584677ab21e1a375100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classdyno_1_1_q_field_widget"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_q_field_widget')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_q_field_widget.html">dyno::QFieldWidget</a></td></tr>
+<tr class="memitem:ada09fd8d5468822bc75edf3e99143d3b inherit pub_methods_classdyno_1_1_q_field_widget"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_field_widget.html#ada09fd8d5468822bc75edf3e99143d3b">QFieldWidget</a> (<a class="el" href="classdyno_1_1_f_base.html">FBase</a> *<a class="el" href="classdyno_1_1_q_field_widget.html#a782d02aac0902a3ac4813a19e9952499">field</a>)</td></tr>
+<tr class="separator:ada09fd8d5468822bc75edf3e99143d3b inherit pub_methods_classdyno_1_1_q_field_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a62565fd4adaa8fdb8a274c133b2cc inherit pub_methods_classdyno_1_1_q_field_widget"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_field_widget.html#a56a62565fd4adaa8fdb8a274c133b2cc">~QFieldWidget</a> ()</td></tr>
+<tr class="separator:a56a62565fd4adaa8fdb8a274c133b2cc inherit pub_methods_classdyno_1_1_q_field_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782d02aac0902a3ac4813a19e9952499 inherit pub_methods_classdyno_1_1_q_field_widget"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_field_widget.html#a782d02aac0902a3ac4813a19e9952499">field</a> ()</td></tr>
+<tr class="separator:a782d02aac0902a3ac4813a19e9952499 inherit pub_methods_classdyno_1_1_q_field_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ab2df2fc5270c656cc4907a9f8c3ac6d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_f_base.html">FBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#ab2df2fc5270c656cc4907a9f8c3ac6d0">mField</a> = nullptr</td></tr>
-<tr class="separator:ab2df2fc5270c656cc4907a9f8c3ac6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa73ddc5340824ec35041a684b827552d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1m_double_spin_box.html">mDoubleSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#aa73ddc5340824ec35041a684b827552d">spinner1</a></td></tr>
 <tr class="separator:aa73ddc5340824ec35041a684b827552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a815bf6ed180ca207393d0eb6e9ebc89b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1m_double_spin_box.html">mDoubleSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#a815bf6ed180ca207393d0eb6e9ebc89b">spinner2</a></td></tr>
 <tr class="separator:a815bf6ed180ca207393d0eb6e9ebc89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06b523fc34a0c65d70969d18eb61fadc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1m_double_spin_box.html">mDoubleSpinBox</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_vector3_field_widget.html#a06b523fc34a0c65d70969d18eb61fadc">spinner3</a></td></tr>
 <tr class="separator:a06b523fc34a0c65d70969d18eb61fadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header signals_classdyno_1_1_q_field_widget"><td colspan="2" onclick="javascript:toggleInherit('signals_classdyno_1_1_q_field_widget')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="classdyno_1_1_q_field_widget.html">dyno::QFieldWidget</a></td></tr>
+<tr class="memitem:a9adabca8f0506d375afc8ba760ba7525 inherit signals_classdyno_1_1_q_field_widget"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_q_field_widget.html#a9adabca8f0506d375afc8ba760ba7525">fieldChanged</a> ()</td></tr>
+<tr class="separator:a9adabca8f0506d375afc8ba760ba7525 inherit signals_classdyno_1_1_q_field_widget"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_p_property_item_8h_source.html#l00113">113</a> of file <a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_q_vector3_field_widget_8h_source.html#l00024">24</a> of file <a class="el" href="_q_vector3_field_widget_8h_source.html">QVector3FieldWidget.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aed0fab389bc557f48e4f318020ffd1d9" name="aed0fab389bc557f48e4f318020ffd1d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed0fab389bc557f48e4f318020ffd1d9">&#9670;&nbsp;</a></span>QVector3FieldWidget()</h2>
@@ -152,30 +165,33 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_item_8cpp_source.html#l00250">250</a> of file <a class="el" href="_p_property_item_8cpp_source.html">PPropertyItem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_q_vector3_field_widget_8cpp_source.html#l00007">7</a> of file <a class="el" href="_q_vector3_field_widget_8cpp_source.html">QVector3FieldWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_q_vector3_field_widget_aed0fab389bc557f48e4f318020ffd1d9_cgraph.png" border="0" usemap="#aclassdyno_1_1_q_vector3_field_widget_aed0fab389bc557f48e4f318020ffd1d9_cgraph" alt=""/></div>
 <map name="aclassdyno_1_1_q_vector3_field_widget_aed0fab389bc557f48e4f318020ffd1d9_cgraph" id="aclassdyno_1_1_q_vector3_field_widget_aed0fab389bc557f48e4f318020ffd1d9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,138,188,179"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691" title=" " alt="" coords="246,54,429,95"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="487,5,696,32"/>
-<area shape="rect" href="namespacedyno.html#a3dbb4b2c87f3ada8178335b6abeb48d7" title=" " alt="" coords="236,120,439,147"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#af62b11dd8e69c7ef0e3123542eb6018e" title=" " alt="" coords="264,171,411,197"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#adfb50cec7cd362156f458f6f34a21a81" title=" " alt="" coords="266,221,409,248"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a1142c17b3aa48a8f53280e4a0eb75992" title=" " alt="" coords="240,272,435,299"/>
-<area shape="rect" href="classdyno_1_1_f_var.html#aca0ac7b81fb36e3d0f2eab3eca01df3d" title=" " alt="" coords="519,60,664,87"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#ae0e14308899fb0ef61af01ee1dceed2c" title=" " alt="" coords="520,111,663,137"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a6cf501ab604fdc71db6a7a746455d888" title=" " alt="" coords="744,85,899,112"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a78fdf0bf9fdd72fcf85110b17809e107" title=" " alt="" coords="745,136,897,163"/>
+<area shape="rect" title=" " alt="" coords="5,232,188,273"/>
+<area shape="rect" href="classdyno_1_1_q_field_widget.html#a782d02aac0902a3ac4813a19e9952499" title=" " alt="" coords="523,64,660,105"/>
+<area shape="rect" href="namespacedyno.html#a3dbb4b2c87f3ada8178335b6abeb48d7" title=" " alt="" coords="236,290,439,317"/>
+<area shape="rect" href="classdyno_1_1_f_var.html#a721f78a590ec880db9013c3bf12980cc" title=" " alt="" coords="522,210,661,237"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#af62b11dd8e69c7ef0e3123542eb6018e" title=" " alt="" coords="264,341,411,367"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#adfb50cec7cd362156f458f6f34a21a81" title=" " alt="" coords="266,391,409,418"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a1142c17b3aa48a8f53280e4a0eb75992" title=" " alt="" coords="240,442,435,469"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="487,130,696,157"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#abecbc393022b1758cdb7756e4313a8ca" title=" " alt="" coords="246,5,429,47"/>
+<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#afac363130830ce245eadaf681c367aa1" title=" " alt="" coords="246,173,429,215"/>
+<area shape="rect" href="_vulkan_swap_chain_8cpp.html#a21b5a77bb7dd2ff2a93f6c086da96d46" title=" " alt="" coords="793,185,851,211"/>
+<area shape="rect" href="classdyno_1_1_f_var.html#a4ae31a3065763b8911cb7d933adfd641" title=" " alt="" coords="744,235,900,262"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a2019aff22a4a3a85a1fbc1ef5e03d143" title=" " alt="" coords="948,235,1119,262"/>
+<area shape="rect" href="classdyno_1_1_f_var.html#aca0ac7b81fb36e3d0f2eab3eca01df3d" title=" " alt="" coords="519,13,664,39"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a415152fe621fba71e45947256a7afad9" name="a415152fe621fba71e45947256a7afad9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a415152fe621fba71e45947256a7afad9">&#9670;&nbsp;</a></span>~QVector3FieldWidget()</h2>
+<a id="a90c2be237e0e8584677ab21e1a375100" name="a90c2be237e0e8584677ab21e1a375100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c2be237e0e8584677ab21e1a375100">&#9670;&nbsp;</a></span>~QVector3FieldWidget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,18 +208,18 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_item_8h_source.html#l00118">118</a> of file <a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_q_vector3_field_widget_8cpp_source.html#l00088">88</a> of file <a class="el" href="_q_vector3_field_widget_8cpp_source.html">QVector3FieldWidget.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a99a440f40e167b3a5c932792f944d691" name="a99a440f40e167b3a5c932792f944d691"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99a440f40e167b3a5c932792f944d691">&#9670;&nbsp;</a></span>changeValue</h2>
+<a id="abecbc393022b1758cdb7756e4313a8ca" name="abecbc393022b1758cdb7756e4313a8ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abecbc393022b1758cdb7756e4313a8ca">&#9670;&nbsp;</a></span>updateField</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +228,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::QVector3FieldWidget::changeValue </td>
+          <td class="memname">void dyno::QVector3FieldWidget::updateField </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -226,25 +242,23 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_item_8cpp_source.html#l00317">317</a> of file <a class="el" href="_p_property_item_8cpp_source.html">PPropertyItem.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_q_vector3_field_widget_8cpp_source.html#l00092">92</a> of file <a class="el" href="_q_vector3_field_widget_8cpp_source.html">QVector3FieldWidget.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_q_vector3_field_widget_a99a440f40e167b3a5c932792f944d691_cgraph.png" border="0" usemap="#aclassdyno_1_1_q_vector3_field_widget_a99a440f40e167b3a5c932792f944d691_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_q_vector3_field_widget_a99a440f40e167b3a5c932792f944d691_cgraph" id="aclassdyno_1_1_q_vector3_field_widget_a99a440f40e167b3a5c932792f944d691_cgraph">
-<area shape="rect" title=" " alt="" coords="5,49,188,90"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="236,5,445,32"/>
-<area shape="rect" href="classdyno_1_1_f_var.html#aca0ac7b81fb36e3d0f2eab3eca01df3d" title=" " alt="" coords="268,56,413,83"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#ae0e14308899fb0ef61af01ee1dceed2c" title=" " alt="" coords="269,107,412,133"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a6cf501ab604fdc71db6a7a746455d888" title=" " alt="" coords="493,81,648,108"/>
-<area shape="rect" href="classdyno_1_1_f_base.html#a78fdf0bf9fdd72fcf85110b17809e107" title=" " alt="" coords="495,132,647,159"/>
+<div class="center"><img src="classdyno_1_1_q_vector3_field_widget_abecbc393022b1758cdb7756e4313a8ca_cgraph.png" border="0" usemap="#aclassdyno_1_1_q_vector3_field_widget_abecbc393022b1758cdb7756e4313a8ca_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_q_vector3_field_widget_abecbc393022b1758cdb7756e4313a8ca_cgraph" id="aclassdyno_1_1_q_vector3_field_widget_abecbc393022b1758cdb7756e4313a8ca_cgraph">
+<area shape="rect" title=" " alt="" coords="5,64,188,105"/>
+<area shape="rect" href="classdyno_1_1_q_field_widget.html#a782d02aac0902a3ac4813a19e9952499" title=" " alt="" coords="272,5,409,47"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="236,71,445,98"/>
+<area shape="rect" href="classdyno_1_1_f_var.html#aca0ac7b81fb36e3d0f2eab3eca01df3d" title=" " alt="" coords="268,122,413,149"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_q_vector3_field_widget_a99a440f40e167b3a5c932792f944d691_icgraph.png" border="0" usemap="#aclassdyno_1_1_q_vector3_field_widget_a99a440f40e167b3a5c932792f944d691_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_q_vector3_field_widget_a99a440f40e167b3a5c932792f944d691_icgraph" id="aclassdyno_1_1_q_vector3_field_widget_a99a440f40e167b3a5c932792f944d691_icgraph">
+<div class="center"><img src="classdyno_1_1_q_vector3_field_widget_abecbc393022b1758cdb7756e4313a8ca_icgraph.png" border="0" usemap="#aclassdyno_1_1_q_vector3_field_widget_abecbc393022b1758cdb7756e4313a8ca_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_q_vector3_field_widget_abecbc393022b1758cdb7756e4313a8ca_icgraph" id="aclassdyno_1_1_q_vector3_field_widget_abecbc393022b1758cdb7756e4313a8ca_icgraph">
 <area shape="rect" title=" " alt="" coords="236,5,419,47"/>
 <area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="5,5,188,47"/>
 </map>
@@ -252,8 +266,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a4257fa43ed03c12ecf7be39f2bb29faf" name="a4257fa43ed03c12ecf7be39f2bb29faf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4257fa43ed03c12ecf7be39f2bb29faf">&#9670;&nbsp;</a></span>fieldChanged</h2>
+<a id="afac363130830ce245eadaf681c367aa1" name="afac363130830ce245eadaf681c367aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afac363130830ce245eadaf681c367aa1">&#9670;&nbsp;</a></span>updateWidget</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +276,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::QVector3FieldWidget::fieldChanged </td>
+          <td class="memname">void dyno::QVector3FieldWidget::updateWidget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -270,17 +284,32 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_q_vector3_field_widget_8cpp_source.html#l00112">112</a> of file <a class="el" href="_q_vector3_field_widget_8cpp_source.html">QVector3FieldWidget.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_q_vector3_field_widget_afac363130830ce245eadaf681c367aa1_cgraph.png" border="0" usemap="#aclassdyno_1_1_q_vector3_field_widget_afac363130830ce245eadaf681c367aa1_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_q_vector3_field_widget_afac363130830ce245eadaf681c367aa1_cgraph" id="aclassdyno_1_1_q_vector3_field_widget_afac363130830ce245eadaf681c367aa1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,64,188,105"/>
+<area shape="rect" href="classdyno_1_1_q_field_widget.html#a782d02aac0902a3ac4813a19e9952499" title=" " alt="" coords="272,5,409,47"/>
+<area shape="rect" href="classdyno_1_1_f_var.html#a721f78a590ec880db9013c3bf12980cc" title=" " alt="" coords="271,71,410,98"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308" title=" " alt="" coords="236,122,445,149"/>
+<area shape="rect" href="_vulkan_swap_chain_8cpp.html#a21b5a77bb7dd2ff2a93f6c086da96d46" title=" " alt="" coords="542,46,601,73"/>
+<area shape="rect" href="classdyno_1_1_f_var.html#a4ae31a3065763b8911cb7d933adfd641" title=" " alt="" coords="493,97,649,123"/>
+<area shape="rect" href="classdyno_1_1_f_base.html#a2019aff22a4a3a85a1fbc1ef5e03d143" title=" " alt="" coords="697,97,868,123"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_q_vector3_field_widget_a4257fa43ed03c12ecf7be39f2bb29faf_icgraph.png" border="0" usemap="#aclassdyno_1_1_q_vector3_field_widget_a4257fa43ed03c12ecf7be39f2bb29faf_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_q_vector3_field_widget_a4257fa43ed03c12ecf7be39f2bb29faf_icgraph" id="aclassdyno_1_1_q_vector3_field_widget_a4257fa43ed03c12ecf7be39f2bb29faf_icgraph">
-<area shape="rect" title=" " alt="" coords="467,5,649,47"/>
-<area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#a99a440f40e167b3a5c932792f944d691" title=" " alt="" coords="236,5,419,47"/>
+<div class="center"><img src="classdyno_1_1_q_vector3_field_widget_afac363130830ce245eadaf681c367aa1_icgraph.png" border="0" usemap="#aclassdyno_1_1_q_vector3_field_widget_afac363130830ce245eadaf681c367aa1_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_q_vector3_field_widget_afac363130830ce245eadaf681c367aa1_icgraph" id="aclassdyno_1_1_q_vector3_field_widget_afac363130830ce245eadaf681c367aa1_icgraph">
+<area shape="rect" title=" " alt="" coords="236,5,419,47"/>
 <area shape="rect" href="classdyno_1_1_q_vector3_field_widget.html#aed0fab389bc557f48e4f318020ffd1d9" title=" " alt="" coords="5,5,188,47"/>
 </map>
 </div>
@@ -288,30 +317,6 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab2df2fc5270c656cc4907a9f8c3ac6d0" name="ab2df2fc5270c656cc4907a9f8c3ac6d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2df2fc5270c656cc4907a9f8c3ac6d0">&#9670;&nbsp;</a></span>mField</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_f_base.html">FBase</a>* dyno::QVector3FieldWidget::mField = nullptr</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_p_property_item_8h_source.html#l00127">127</a> of file <a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>.</p>
-
-</div>
-</div>
 <a id="aa73ddc5340824ec35041a684b827552d" name="aa73ddc5340824ec35041a684b827552d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa73ddc5340824ec35041a684b827552d">&#9670;&nbsp;</a></span>spinner1</h2>
 
@@ -332,7 +337,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_item_8h_source.html#l00129">129</a> of file <a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_q_vector3_field_widget_8h_source.html#l00039">39</a> of file <a class="el" href="_q_vector3_field_widget_8h_source.html">QVector3FieldWidget.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +361,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_item_8h_source.html#l00130">130</a> of file <a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_q_vector3_field_widget_8h_source.html#l00040">40</a> of file <a class="el" href="_q_vector3_field_widget_8h_source.html">QVector3FieldWidget.h</a>.</p>
 
 </div>
 </div>
@@ -380,13 +385,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_p_property_item_8h_source.html#l00131">131</a> of file <a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_q_vector3_field_widget_8h_source.html#l00041">41</a> of file <a class="el" href="_q_vector3_field_widget_8h_source.html">QVector3FieldWidget.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>E:/Peridyno/peridyno/src/Rendering/GUI/QtGUI/<a class="el" href="_p_property_item_8h_source.html">PPropertyItem.h</a></li>
-<li>E:/Peridyno/peridyno/src/Rendering/GUI/QtGUI/<a class="el" href="_p_property_item_8cpp_source.html">PPropertyItem.cpp</a></li>
+<li>E:/Peridyno/peridyno/src/Rendering/GUI/QtGUI/PropertyItem/<a class="el" href="_q_vector3_field_widget_8h_source.html">QVector3FieldWidget.h</a></li>
+<li>E:/Peridyno/peridyno/src/Rendering/GUI/QtGUI/PropertyItem/<a class="el" href="_q_vector3_field_widget_8cpp_source.html">QVector3FieldWidget.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

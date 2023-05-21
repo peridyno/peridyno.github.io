@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zoom_0',['zoom',['../classdyno_1_1_camera.html#ac6220aa388d57ccdfb30874bb49739b6',1,'dyno::Camera::zoom()'],['../classdyno_1_1_orbit_camera.html#a80838d2b6c9117258d9fec80d8e7fb3d',1,'dyno::OrbitCamera::zoom()'],['../classdyno_1_1_trackball_camera.html#a5b67b23c87aedc999c5b60eeb107a648',1,'dyno::TrackballCamera::zoom()']]]
+  ['yeohmodel_0',['YeohModel',['../classdyno_1_1_yeoh_model.html#a000207306e6569f6f50cf57d6fd6cb7d',1,'dyno::YeohModel::YeohModel()'],['../classdyno_1_1_yeoh_model.html#a341046a77c7aa0a235f714687e907857',1,'dyno::YeohModel::YeohModel(Real _s0, Real _s1, Real _s2)']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/ParticleSystem/Module/Kernel.h File Reference</title>
+<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/Cuda/ParticleSystem/Module/Kernel.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_828dcf639244be5fafbb30c4fb8312a6.html">ParticleSystem</a></li><li class="navelem"><a class="el" href="dir_15944242ab7cbb137b7f1d7635c8b030.html">Module</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_fcf8d9b41703035e4148e841d5c3507a.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_65fb2e8a253d28dcb68ae0b7ae7bc9d9.html">ParticleSystem</a></li><li class="navelem"><a class="el" href="dir_45df0e3be0547201d0c8aa0bbfb1e2be.html">Module</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -78,48 +78,63 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Kernel.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="_kernel_8h__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_particle_system_2_module_2_kernel_8h" alt=""/></div>
-<map name="a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_particle_system_2_module_2_kernel_8h" id="a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_particle_system_2_module_2_kernel_8h">
-<area shape="rect" title=" " alt="" coords="871,5,1069,61"/>
-<area shape="rect" href="_platform_8h.html" title=" " alt="" coords="891,109,972,136"/>
-<area shape="rect" href="_declare_enum_8h.html" title=" " alt="" coords="1399,184,1509,211"/>
-<area shape="rect" title=" " alt="" coords="5,259,116,285"/>
-<area shape="rect" href="_typedef_8inl.html" title=" " alt="" coords="889,184,973,211"/>
-<area shape="rect" title=" " alt="" coords="912,259,951,285"/>
-<area shape="rect" title=" " alt="" coords="975,259,1031,285"/>
-<area shape="rect" title=" " alt="" coords="1505,259,1552,285"/>
-<area shape="rect" title=" " alt="" coords="1055,259,1125,285"/>
-<area shape="rect" title=" " alt="" coords="1427,259,1481,285"/>
-<area shape="rect" title=" " alt="" coords="1149,259,1223,285"/>
-<area shape="rect" title=" " alt="" coords="1247,259,1317,285"/>
-<area shape="rect" title=" " alt="" coords="1341,259,1402,285"/>
-<area shape="rect" title=" " alt="" coords="141,259,327,285"/>
-<area shape="rect" title=" " alt="" coords="351,259,458,285"/>
-<area shape="rect" title=" " alt="" coords="483,259,609,285"/>
-<area shape="rect" title=" " alt="" coords="634,259,706,285"/>
-<area shape="rect" title=" " alt="" coords="731,259,809,285"/>
-<area shape="rect" title=" " alt="" coords="834,259,887,285"/>
+<div class="center"><img src="_kernel_8h__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_particle_system_2_module_2_kernel_8h" alt=""/></div>
+<map name="a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_particle_system_2_module_2_kernel_8h" id="a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_particle_system_2_module_2_kernel_8h">
+<area shape="rect" title=" " alt="" coords="5,5,193,61"/>
+<area shape="rect" href="_platform_8h.html" title=" " alt="" coords="480,408,561,435"/>
+<area shape="rect" href="_declare_enum_8h.html" title=" " alt="" coords="95,109,205,136"/>
+<area shape="rect" title=" " alt="" coords="560,483,671,509"/>
+<area shape="rect" href="_typedef_8inl.html" title=" " alt="" coords="452,483,536,509"/>
+<area shape="rect" title=" " alt="" coords="651,557,689,584"/>
+<area shape="rect" title=" " alt="" coords="714,557,770,584"/>
+<area shape="rect" title=" " alt="" coords="41,557,88,584"/>
+<area shape="rect" title=" " alt="" coords="794,557,863,584"/>
+<area shape="rect" title=" " alt="" coords="112,557,167,584"/>
+<area shape="rect" title=" " alt="" coords="191,557,266,584"/>
+<area shape="rect" title=" " alt="" coords="290,557,359,584"/>
+<area shape="rect" title=" " alt="" coords="383,557,445,584"/>
+<area shape="rect" title=" " alt="" coords="887,557,959,584"/>
+<area shape="rect" title=" " alt="" coords="469,557,548,584"/>
+<area shape="rect" title=" " alt="" coords="573,557,626,584"/>
+<area shape="rect" href="_field_8h.html" title=" " alt="" coords="567,184,629,211"/>
+<area shape="rect" title=" " alt="" coords="1071,259,1135,285"/>
+<area shape="rect" title=" " alt="" coords="375,259,445,285"/>
+<area shape="rect" href="_f_base_8h.html" title=" " alt="" coords="469,259,540,285"/>
+<area shape="rect" href="_array_8h.html" title=" " alt="" coords="713,333,811,360"/>
+<area shape="rect" href="_time_stamp_8h.html" title=" " alt="" coords="499,333,598,360"/>
+<area shape="rect" title=" " alt="" coords="622,333,689,360"/>
+<area shape="rect" title=" " alt="" coords="219,333,297,360"/>
+<area shape="rect" title=" " alt="" coords="321,333,374,360"/>
+<area shape="rect" title=" " alt="" coords="848,408,913,435"/>
+<area shape="rect" title=" " alt="" coords="938,408,997,435"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="_kernel_8h__dep__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_particle_system_2_module_2_kernel_8hdep" alt=""/></div>
-<map name="a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_particle_system_2_module_2_kernel_8hdep" id="a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_particle_system_2_module_2_kernel_8hdep">
-<area shape="rect" title=" " alt="" coords="403,5,602,61"/>
-<area shape="rect" href="_density_p_b_d_8h.html" title=" " alt="" coords="286,213,485,269"/>
-<area shape="rect" href="_particle_approximation_8h.html" title=" " alt="" coords="516,109,727,165"/>
-<area shape="rect" href="_position_based_fluid_model_8cpp.html" title=" " alt="" coords="377,317,621,373"/>
-<area shape="rect" href="initialize_particle_system_8cpp.html" title=" " alt="" coords="645,317,843,373"/>
-<area shape="rect" href="_elastoplastic_body_8cpp.html" title=" " alt="" coords="5,421,195,477"/>
-<area shape="rect" href="_elastoplasticity_module_8h.html" title="This is an implementation of elastoplasticity based on projective peridynamics. For more details,..." alt="" coords="138,317,353,373"/>
-<area shape="rect" href="_fracture_module_8h.html" title=" " alt="" coords="269,421,459,477"/>
-<area shape="rect" href="initialize_peridynamics_8cpp.html" title=" " alt="" coords="269,525,459,581"/>
-<area shape="rect" href="_granular_module_8h.html" title=" " alt="" coords="483,421,672,477"/>
-<area shape="rect" href="_particle_approximation_8cpp.html" title=" " alt="" coords="509,213,733,269"/>
-<area shape="rect" href="_summation_density_8h.html" title=" " alt="" coords="758,213,957,269"/>
-<area shape="rect" href="_projection_based_fluid_model_8cpp.html" title=" " alt="" coords="867,317,1122,373"/>
-<area shape="rect" href="_particle_fluid_8cpp.html" title=" " alt="" coords="1146,317,1345,373"/>
+<div class="center"><img src="_kernel_8h__dep__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_particle_system_2_module_2_kernel_8hdep" alt=""/></div>
+<map name="a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_particle_system_2_module_2_kernel_8hdep" id="a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_particle_system_2_module_2_kernel_8hdep">
+<area shape="rect" title=" " alt="" coords="1219,5,1407,61"/>
+<area shape="rect" href="_density_p_b_d_8h.html" title=" " alt="" coords="637,213,836,269"/>
+<area shape="rect" href="_particle_approximation_8h.html" title=" " alt="" coords="1495,109,1749,165"/>
+<area shape="rect" href="_position_based_fluid_model_8cpp.html" title=" " alt="" coords="994,317,1223,388"/>
+<area shape="rect" href="_particle_fluid_8cpp.html" title=" " alt="" coords="525,325,713,381"/>
+<area shape="rect" href="initialize_particle_system_8cpp.html" title=" " alt="" coords="738,325,970,381"/>
+<area shape="rect" href="_elastoplastic_body_8cpp.html" title=" " alt="" coords="5,443,228,499"/>
+<area shape="rect" href="_elastoplasticity_module_8h.html" title="This is an implementation of elastoplasticity based on projective peridynamics. For more details,..." alt="" coords="227,325,449,381"/>
+<area shape="rect" href="_semi_analytical_position_based_fluid_model_8cpp.html" title=" " alt="" coords="1183,436,1456,507"/>
+<area shape="rect" href="_semi_analytical_surface_tension_model_8cpp.html" title=" " alt="" coords="1248,325,1559,381"/>
+<area shape="rect" href="_fracture_module_8h.html" title=" " alt="" coords="252,443,475,499"/>
+<area shape="rect" href="_granular_module_8h.html" title=" " alt="" coords="499,443,721,499"/>
+<area shape="rect" href="_particle_approximation_8cpp.html" title=" " alt="" coords="1631,213,1901,269"/>
+<area shape="rect" href="_summation_density_8h.html" title=" " alt="" coords="1085,213,1324,269"/>
+<area shape="rect" href="_semi_analytical_p_b_d_8h.html" title=" " alt="" coords="1925,213,2156,269"/>
+<area shape="rect" href="_semi_analytical_particle_shifting_8h.html" title=" " alt="" coords="1349,213,1607,269"/>
+<area shape="rect" href="_semi_analytical_summation_density_8h.html" title=" " alt="" coords="2190,213,2473,269"/>
+<area shape="rect" href="_projection_based_fluid_model_8cpp.html" title=" " alt="" coords="1583,317,1823,388"/>
+<area shape="rect" href="_semi_analytical_position_based_fluid_model_8h.html" title=" " alt="" coords="1899,317,2172,388"/>
+<area shape="rect" href="initialize_semi_analytical_scheme_8cpp.html" title=" " alt="" coords="2196,325,2477,381"/>
+<area shape="rect" href="_semi_analytical_s_f_i_node_8cpp.html" title=" " alt="" coords="1829,443,2065,499"/>
 </map>
 </div>
 </div>
@@ -145,7 +160,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacedyno"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html">dyno</a></td></tr>
-<tr class="memdesc:namespacedyno"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of <a class="el" href="classdyno_1_1_tight_c_c_d.html">TightCCD</a> based on peridyno. <br /></td></tr>
+<tr class="memdesc:namespacedyno"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of <a class="el" href="classdyno_1_1_additive_c_c_d.html">AdditiveCCD</a> based on peridyno. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

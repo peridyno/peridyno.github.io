@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/IO/SurfaceMeshLoader.h Source File</title>
+<title>PeriDyno: E:/Peridyno/peridyno/src/IO/Cuda/SurfaceMeshLoader.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_cd3c1637d5000b6cab1d48c02b7c8cab.html">IO</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_cd3c1637d5000b6cab1d48c02b7c8cab.html">IO</a></li><li class="navelem"><a class="el" href="dir_f1dce8a7f41c3f5d10ea8de2106b2934.html">Cuda</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -74,7 +74,7 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_geometry_loader_8h.html">GeometryLoader.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//Output</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_triangle_set_8h.html">Topology/TriangleSet.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Topology/TriangleSet.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
@@ -98,8 +98,7 @@ $(function() {
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
 <div class="ttc" id="a_framework_2_object_8h_html_a610e334cf630b9ec038f131226866605"><div class="ttname"><a href="_framework_2_object_8h.html#a610e334cf630b9ec038f131226866605">DECLARE_TCLASS</a></div><div class="ttdeci">#define DECLARE_TCLASS(name, T1)</div><div class="ttdef"><b>Definition:</b> <a href="_framework_2_object_8h_source.html#l00087">Object.h:87</a></div></div>
 <div class="ttc" id="a_geometry_loader_8h_html"><div class="ttname"><a href="_geometry_loader_8h.html">GeometryLoader.h</a></div></div>
-<div class="ttc" id="a_triangle_set_8h_html"><div class="ttname"><a href="_triangle_set_8h.html">TriangleSet.h</a></div></div>
-<div class="ttc" id="a_typedef_8inl_html_a445a5f0e2a34c9d97d69a3c2d1957907"><div class="ttname"><a href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00021">Typedef.inl:21</a></div></div>
+<div class="ttc" id="a_typedef_8inl_html_a445a5f0e2a34c9d97d69a3c2d1957907"><div class="ttname"><a href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00023">Typedef.inl:23</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_geometry_loader_html"><div class="ttname"><a href="classdyno_1_1_geometry_loader.html">dyno::GeometryLoader</a></div><div class="ttdef"><b>Definition:</b> <a href="_geometry_loader_8h_source.html#l00012">GeometryLoader.h:13</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_surface_mesh_loader_html"><div class="ttname"><a href="classdyno_1_1_surface_mesh_loader.html">dyno::SurfaceMeshLoader</a></div><div class="ttdoc">Load a triangular mesh.</div><div class="ttdef"><b>Definition:</b> <a href="_surface_mesh_loader_8h_source.html#l00014">SurfaceMeshLoader.h:15</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_surface_mesh_loader_html_a1aa0dace7d9a36388e604815d5b35338"><div class="ttname"><a href="classdyno_1_1_surface_mesh_loader.html#a1aa0dace7d9a36388e604815d5b35338">dyno::SurfaceMeshLoader::DEF_INSTANCE_OUT</a></div><div class="ttdeci">DEF_INSTANCE_OUT(TriangleSet&lt; TDataType &gt;, TriangleSet, &quot;&quot;)</div></div>
@@ -108,8 +107,8 @@ $(function() {
 <div class="ttc" id="aclassdyno_1_1_surface_mesh_loader_html_a671ae580ae0f00129eafb945ed1bbb1b"><div class="ttname"><a href="classdyno_1_1_surface_mesh_loader.html#a671ae580ae0f00129eafb945ed1bbb1b">dyno::SurfaceMeshLoader::~SurfaceMeshLoader</a></div><div class="ttdeci">virtual ~SurfaceMeshLoader()</div><div class="ttdef"><b>Definition:</b> <a href="_surface_mesh_loader_8cpp_source.html#l00014">SurfaceMeshLoader.cpp:14</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_surface_mesh_loader_html_a6c8ca8a77fcdca1a1fab0a8aa5e4c6c6"><div class="ttname"><a href="classdyno_1_1_surface_mesh_loader.html#a6c8ca8a77fcdca1a1fab0a8aa5e4c6c6">dyno::SurfaceMeshLoader::Coord</a></div><div class="ttdeci">TDataType::Coord Coord</div><div class="ttdef"><b>Definition:</b> <a href="_surface_mesh_loader_8h_source.html#l00019">SurfaceMeshLoader.h:19</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_surface_mesh_loader_html_a6cfdf250545e14160514dff21e1efad2"><div class="ttname"><a href="classdyno_1_1_surface_mesh_loader.html#a6cfdf250545e14160514dff21e1efad2">dyno::SurfaceMeshLoader::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition:</b> <a href="_surface_mesh_loader_8cpp_source.html#l00020">SurfaceMeshLoader.cpp:20</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_triangle_set_html"><div class="ttname"><a href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a></div><div class="ttdef"><b>Definition:</b> <a href="_triangle_set_8h_source.html#l00082">TriangleSet.h:83</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_triangle_set_html"><div class="ttname"><a href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a></div><div class="ttdef"><b>Definition:</b> <a href="_vulkan_2_topology_2_triangle_set_8h_source.html#l00006">TriangleSet.h:7</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

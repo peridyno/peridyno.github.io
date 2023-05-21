@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Rendering/Engine/OpenGL/Node/GLPointVisualNode.cpp Source File</title>
+<title>PeriDyno: E:/Peridyno/peridyno/src/Rendering/Engine/OpenGL/Backend/Cuda/Node/GLPointVisualNode.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_0a5d901ffa28d51286754f85d80379d0.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_fd99e55d6b411c0ce18a6e0623a054ed.html">Engine</a></li><li class="navelem"><a class="el" href="dir_8f00b289ec22a6911ee498329ec88e1b.html">OpenGL</a></li><li class="navelem"><a class="el" href="dir_f051c9e207ff968b4f63c4b1edc879bf.html">Node</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_0a5d901ffa28d51286754f85d80379d0.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_fd99e55d6b411c0ce18a6e0623a054ed.html">Engine</a></li><li class="navelem"><a class="el" href="dir_8f00b289ec22a6911ee498329ec88e1b.html">OpenGL</a></li><li class="navelem"><a class="el" href="dir_df753e6386a8162b4f56f178fb8be397.html">Backend</a></li><li class="navelem"><a class="el" href="dir_c80ddc90d89158365f5c9c649e2c3031.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_378d09a2e3f04538b99197c8eed94fb8.html">Node</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -91,7 +91,7 @@ $(function() {
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">auto</span> ptRender = std::make_shared&lt;GLPointVisualModule&gt;();</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        this-&gt;varColor()-&gt;connect(ptRender-&gt;varBaseColor());</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        ptRender-&gt;setColorMapMode(<a class="code hl_enumvalue" href="classdyno_1_1_g_l_point_visual_module.html#ace491a47be6266014b4fa1b0e38707d5ad051fb4560f4d59e8c3118d3eb847ecb">GLPointVisualModule::PER_VERTEX_SHADER</a>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        ptRender-&gt;setColorMapMode(GLPointVisualModule::PER_VERTEX_SHADER);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        this-&gt;inPoints()-&gt;connect(ptRender-&gt;inPointSet());</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        colorMapper-&gt;outColor()-&gt;connect(ptRender-&gt;inColor());</div>
@@ -125,16 +125,15 @@ $(function() {
 <div class="ttc" id="a_color_mapping_8h_html"><div class="ttname"><a href="_color_mapping_8h.html">ColorMapping.h</a></div></div>
 <div class="ttc" id="a_g_l_point_visual_module_8h_html"><div class="ttname"><a href="_g_l_point_visual_module_8h.html">GLPointVisualModule.h</a></div></div>
 <div class="ttc" id="a_g_l_point_visual_node_8h_html"><div class="ttname"><a href="_g_l_point_visual_node_8h.html">GLPointVisualNode.h</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_g_l_point_visual_module_html_ace491a47be6266014b4fa1b0e38707d5ad051fb4560f4d59e8c3118d3eb847ecb"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_module.html#ace491a47be6266014b4fa1b0e38707d5ad051fb4560f4d59e8c3118d3eb847ecb">dyno::GLPointVisualModule::PER_VERTEX_SHADER</a></div><div class="ttdeci">@ PER_VERTEX_SHADER</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_module_8h_source.html#l00037">GLPointVisualModule.h:36</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html">dyno::GLPointVisualNode</a></div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8h_source.html#l00025">GLPointVisualNode.h:26</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_a16da28c81b7f4e30f5cfd4e68fa6965d"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#a16da28c81b7f4e30f5cfd4e68fa6965d">dyno::GLPointVisualNode::getNodeType</a></div><div class="ttdeci">std::string getNodeType() override</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00039">GLPointVisualNode.cpp:39</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_a748765478d58ba474a77ad4f6bde5de0"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#a748765478d58ba474a77ad4f6bde5de0">dyno::GLPointVisualNode::GLPointVisualNode</a></div><div class="ttdeci">GLPointVisualNode()</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00010">GLPointVisualNode.cpp:10</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_a76ceb1170597e8a09d935ac76ed2db9b"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#a76ceb1170597e8a09d935ac76ed2db9b">dyno::GLPointVisualNode::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00045">GLPointVisualNode.cpp:45</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_g_l_point_visual_node_html_af4736418daf51c20c0856f12f7e5fba3"><div class="ttname"><a href="classdyno_1_1_g_l_point_visual_node.html#af4736418daf51c20c0856f12f7e5fba3">dyno::GLPointVisualNode::~GLPointVisualNode</a></div><div class="ttdeci">~GLPointVisualNode() override</div><div class="ttdef"><b>Definition:</b> <a href="_g_l_point_visual_node_8cpp_source.html#l00033">GLPointVisualNode.cpp:33</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_html"><div class="ttname"><a href="classdyno_1_1_node.html">dyno::Node</a></div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00069">Node.h:70</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition:</b> <a href="_node_8cpp_source.html#l00240">Node.cpp:240</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_acc54344cd3b2c1f77b3c2df6ece0df4c"><div class="ttname"><a href="classdyno_1_1_node.html#acc54344cd3b2c1f77b3c2df6ece0df4c">dyno::Node::connect</a></div><div class="ttdeci">bool connect(NodePort *nPort)</div><div class="ttdef"><b>Definition:</b> <a href="_node_8cpp_source.html#l00400">Node.cpp:400</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition:</b> <a href="_node_8cpp_source.html#l00260">Node.cpp:260</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_acc54344cd3b2c1f77b3c2df6ece0df4c"><div class="ttname"><a href="classdyno_1_1_node.html#acc54344cd3b2c1f77b3c2df6ece0df4c">dyno::Node::connect</a></div><div class="ttdeci">bool connect(NodePort *nPort)</div><div class="ttdef"><b>Definition:</b> <a href="_node_8cpp_source.html#l00454">Node.cpp:454</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a96ac3770273490437e2b8cced291b1a0"><div class="ttname"><a href="namespacedyno.html#a96ac3770273490437e2b8cced291b1a0">dyno::DEFINE_CLASS</a></div><div class="ttdeci">DEFINE_CLASS(CircularEmitter)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

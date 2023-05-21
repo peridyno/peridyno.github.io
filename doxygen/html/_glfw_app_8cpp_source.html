@@ -78,32 +78,41 @@ $(function() {
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="classdyno_1_1_glfw_app.html#aa277a4c5a2ecfe24f725c7bd46865723">    7</a></span>    <a class="code hl_function" href="classdyno_1_1_glfw_app.html#aa277a4c5a2ecfe24f725c7bd46865723">GlfwApp::GlfwApp</a>(<span class="keywordtype">int</span> argc <span class="comment">/*= 0*/</span>, <span class="keywordtype">char</span> **argv <span class="comment">/*= NULL*/</span>)</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    }</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classdyno_1_1_glfw_app.html#a11ca81fd8654ca8aa95c28c90749ca45">   11</a></span>    <a class="code hl_function" href="classdyno_1_1_glfw_app.html#a11ca81fd8654ca8aa95c28c90749ca45">GlfwApp::~GlfwApp</a>()</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classdyno_1_1_glfw_app.html#a918b8ab8df27a9570b2568c2d27402f8">   15</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_glfw_app.html#a918b8ab8df27a9570b2568c2d27402f8">GlfwApp::initialize</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">bool</span> usePlugin)</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_variable" href="classdyno_1_1_glfw_app.html#a742bd2c8870c4697f39667f15ad80716">mRenderWindow</a> = std::make_shared&lt;GlfwRenderWindow&gt;();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_variable" href="classdyno_1_1_glfw_app.html#a742bd2c8870c4697f39667f15ad80716">mRenderWindow</a>-&gt;initialize(width, height);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62">   22</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62">GlfwApp::mainLoop</a>()</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_variable" href="classdyno_1_1_glfw_app.html#a742bd2c8870c4697f39667f15ad80716">mRenderWindow</a>-&gt;mainLoop();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="comment">//A hack to address the slow launching problem</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifdef CUDA_BACKEND</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keyword">auto</span> status = cudaSetDevice(0);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">if</span> (status != cudaSuccess) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>            fprintf(stderr, <span class="stringliteral">&quot;CUDA initialization failed!  Do you have a CUDA-capable GPU installed?&quot;</span>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            exit(0);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        cudaFree(0);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif </span><span class="comment">// CUDA_BACKEND</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classdyno_1_1_glfw_app.html#a11ca81fd8654ca8aa95c28c90749ca45">   20</a></span>    <a class="code hl_function" href="classdyno_1_1_glfw_app.html#a11ca81fd8654ca8aa95c28c90749ca45">GlfwApp::~GlfwApp</a>()</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classdyno_1_1_glfw_app.html#a918b8ab8df27a9570b2568c2d27402f8">   24</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_glfw_app.html#a918b8ab8df27a9570b2568c2d27402f8">GlfwApp::initialize</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">bool</span> usePlugin)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_variable" href="classdyno_1_1_glfw_app.html#a742bd2c8870c4697f39667f15ad80716">mRenderWindow</a> = std::make_shared&lt;GlfwRenderWindow&gt;();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_variable" href="classdyno_1_1_glfw_app.html#a742bd2c8870c4697f39667f15ad80716">mRenderWindow</a>-&gt;initialize(width, height);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62">   31</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62">GlfwApp::mainLoop</a>()</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_variable" href="classdyno_1_1_glfw_app.html#a742bd2c8870c4697f39667f15ad80716">mRenderWindow</a>-&gt;mainLoop();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
 <div class="ttc" id="a_glfw_app_8h_html"><div class="ttname"><a href="_glfw_app_8h.html">GlfwApp.h</a></div></div>
 <div class="ttc" id="a_glfw_render_window_8h_html"><div class="ttname"><a href="_glfw_render_window_8h.html">GlfwRenderWindow.h</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a11ca81fd8654ca8aa95c28c90749ca45"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a11ca81fd8654ca8aa95c28c90749ca45">dyno::GlfwApp::~GlfwApp</a></div><div class="ttdeci">~GlfwApp()</div><div class="ttdef"><b>Definition:</b> <a href="_glfw_app_8cpp_source.html#l00011">GlfwApp.cpp:11</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a11ca81fd8654ca8aa95c28c90749ca45"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a11ca81fd8654ca8aa95c28c90749ca45">dyno::GlfwApp::~GlfwApp</a></div><div class="ttdeci">~GlfwApp()</div><div class="ttdef"><b>Definition:</b> <a href="_glfw_app_8cpp_source.html#l00020">GlfwApp.cpp:20</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_glfw_app_html_a742bd2c8870c4697f39667f15ad80716"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a742bd2c8870c4697f39667f15ad80716">dyno::GlfwApp::mRenderWindow</a></div><div class="ttdeci">std::shared_ptr&lt; RenderWindow &gt; mRenderWindow</div><div class="ttdef"><b>Definition:</b> <a href="_glfw_app_8h_source.html#l00024">GlfwApp.h:24</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a918b8ab8df27a9570b2568c2d27402f8"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a918b8ab8df27a9570b2568c2d27402f8">dyno::GlfwApp::initialize</a></div><div class="ttdeci">void initialize(int width, int height, bool usePlugin=false) override</div><div class="ttdef"><b>Definition:</b> <a href="_glfw_app_8cpp_source.html#l00015">GlfwApp.cpp:15</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a9bcfcc85f524122ef6f409965373ba62"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62">dyno::GlfwApp::mainLoop</a></div><div class="ttdeci">void mainLoop() override</div><div class="ttdef"><b>Definition:</b> <a href="_glfw_app_8cpp_source.html#l00022">GlfwApp.cpp:22</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a918b8ab8df27a9570b2568c2d27402f8"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a918b8ab8df27a9570b2568c2d27402f8">dyno::GlfwApp::initialize</a></div><div class="ttdeci">void initialize(int width, int height, bool usePlugin=false) override</div><div class="ttdef"><b>Definition:</b> <a href="_glfw_app_8cpp_source.html#l00024">GlfwApp.cpp:24</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a9bcfcc85f524122ef6f409965373ba62"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62">dyno::GlfwApp::mainLoop</a></div><div class="ttdeci">void mainLoop() override</div><div class="ttdef"><b>Definition:</b> <a href="_glfw_app_8cpp_source.html#l00031">GlfwApp.cpp:31</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_glfw_app_html_aa277a4c5a2ecfe24f725c7bd46865723"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#aa277a4c5a2ecfe24f725c7bd46865723">dyno::GlfwApp::GlfwApp</a></div><div class="ttdeci">GlfwApp(int argc=0, char **argv=NULL)</div><div class="ttdef"><b>Definition:</b> <a href="_glfw_app_8cpp_source.html#l00007">GlfwApp.cpp:7</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

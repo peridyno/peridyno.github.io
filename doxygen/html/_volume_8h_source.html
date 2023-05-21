@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/Volume/Volume.h Source File</title>
+<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/Cuda/Volume/Volume.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_2a5c01289729a6581ef67b091952f7c0.html">Volume</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_fcf8d9b41703035e4148e841d5c3507a.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_ff678a16f4f087f6b3e489e7f5a6ac5e.html">Volume</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -87,28 +87,29 @@ $(function() {
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_function" href="classdyno_1_1_volume.html#a62b976985069cabcd70e26af02523838">Volume</a>();</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_function" href="classdyno_1_1_volume.html#a7760e0edd8831f73e51ae30e2e07db72">~Volume</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classdyno_1_1_volume.html#aea27a74d2b57982cb992c41765c364d6">   18</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_volume.html#aea27a74d2b57982cb992c41765c364d6">updateVolume</a>() = 0;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classdyno_1_1_volume.html#a6b56ed58f93ca08440912303948256b6">   20</a></span>        <a class="code hl_function" href="classdyno_1_1_volume.html#a6b56ed58f93ca08440912303948256b6">DEF_INSTANCE_STATE</a>(<a class="code hl_class" href="classdyno_1_1_signed_distance_field.html">SignedDistanceField&lt;TDataType&gt;</a>, SDF, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classdyno_1_1_volume.html#a0e7111b14bbb84070b8334aa7ea438f2">   22</a></span>        <a class="code hl_function" href="classdyno_1_1_volume.html#a0e7111b14bbb84070b8334aa7ea438f2">DEF_INSTANCE_STATE</a>(<a class="code hl_class" href="classdyno_1_1_topology_module.html">TopologyModule</a>, Topology, <span class="stringliteral">&quot;Topology&quot;</span>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    };</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classdyno_1_1_volume.html#a144205da4dded9a0f32c5d1a05d5dee0">   18</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_volume.html#a144205da4dded9a0f32c5d1a05d5dee0">updateVolume</a>() {};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classdyno_1_1_volume.html#a6b56ed58f93ca08440912303948256b6">   21</a></span>        <a class="code hl_function" href="classdyno_1_1_volume.html#a6b56ed58f93ca08440912303948256b6">DEF_INSTANCE_STATE</a>(<a class="code hl_class" href="classdyno_1_1_signed_distance_field.html">SignedDistanceField&lt;TDataType&gt;</a>, SDF, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classdyno_1_1_volume.html#a0e7111b14bbb84070b8334aa7ea438f2">   23</a></span>        <a class="code hl_function" href="classdyno_1_1_volume.html#a0e7111b14bbb84070b8334aa7ea438f2">DEF_INSTANCE_STATE</a>(<a class="code hl_class" href="classdyno_1_1_topology_module.html">TopologyModule</a>, Topology, <span class="stringliteral">&quot;Topology&quot;</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    };</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 <div class="ttc" id="a_node_8h_html"><div class="ttname"><a href="_node_8h.html">Node.h</a></div></div>
 <div class="ttc" id="a_signed_distance_field_8h_html"><div class="ttname"><a href="_signed_distance_field_8h.html">SignedDistanceField.h</a></div></div>
-<div class="ttc" id="a_typedef_8inl_html_a445a5f0e2a34c9d97d69a3c2d1957907"><div class="ttname"><a href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00021">Typedef.inl:21</a></div></div>
+<div class="ttc" id="a_typedef_8inl_html_a445a5f0e2a34c9d97d69a3c2d1957907"><div class="ttname"><a href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></div><div class="ttdeci">double Real</div><div class="ttdef"><b>Definition:</b> <a href="_typedef_8inl_source.html#l00023">Typedef.inl:23</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_html"><div class="ttname"><a href="classdyno_1_1_node.html">dyno::Node</a></div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00069">Node.h:70</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_signed_distance_field_html"><div class="ttname"><a href="classdyno_1_1_signed_distance_field.html">dyno::SignedDistanceField</a></div><div class="ttdef"><b>Definition:</b> <a href="_signed_distance_field_8h_source.html#l00020">SignedDistanceField.h:20</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_topology_module_html"><div class="ttname"><a href="classdyno_1_1_topology_module.html">dyno::TopologyModule</a></div><div class="ttdef"><b>Definition:</b> <a href="_topology_module_8h_source.html#l00024">TopologyModule.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_html_a0e7111b14bbb84070b8334aa7ea438f2"><div class="ttname"><a href="classdyno_1_1_volume.html#a0e7111b14bbb84070b8334aa7ea438f2">dyno::Volume::DEF_INSTANCE_STATE</a></div><div class="ttdeci">DEF_INSTANCE_STATE(TopologyModule, Topology, &quot;Topology&quot;)</div></div>
+<div class="ttc" id="aclassdyno_1_1_volume_html_a144205da4dded9a0f32c5d1a05d5dee0"><div class="ttname"><a href="classdyno_1_1_volume.html#a144205da4dded9a0f32c5d1a05d5dee0">dyno::Volume::updateVolume</a></div><div class="ttdeci">virtual void updateVolume()</div><div class="ttdef"><b>Definition:</b> <a href="_volume_8h_source.html#l00018">Volume.h:18</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_html_a62b976985069cabcd70e26af02523838"><div class="ttname"><a href="classdyno_1_1_volume.html#a62b976985069cabcd70e26af02523838">dyno::Volume::Volume</a></div><div class="ttdeci">Volume()</div><div class="ttdef"><b>Definition:</b> <a href="_volume_8cpp_source.html#l00007">Volume.cpp:7</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_html_a6b56ed58f93ca08440912303948256b6"><div class="ttname"><a href="classdyno_1_1_volume.html#a6b56ed58f93ca08440912303948256b6">dyno::Volume::DEF_INSTANCE_STATE</a></div><div class="ttdeci">DEF_INSTANCE_STATE(SignedDistanceField&lt; TDataType &gt;, SDF, &quot;&quot;)</div></div>
-<div class="ttc" id="aclassdyno_1_1_volume_html_a7760e0edd8831f73e51ae30e2e07db72"><div class="ttname"><a href="classdyno_1_1_volume.html#a7760e0edd8831f73e51ae30e2e07db72">dyno::Volume::~Volume</a></div><div class="ttdeci">~Volume() override</div><div class="ttdef"><b>Definition:</b> <a href="_volume_8cpp_source.html#l00016">Volume.cpp:16</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_volume_html_a7760e0edd8831f73e51ae30e2e07db72"><div class="ttname"><a href="classdyno_1_1_volume.html#a7760e0edd8831f73e51ae30e2e07db72">dyno::Volume::~Volume</a></div><div class="ttdeci">~Volume() override</div><div class="ttdef"><b>Definition:</b> <a href="_volume_8cpp_source.html#l00017">Volume.cpp:17</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_html_a8598f4e32e0c15940c4a5ad7b80c51bd"><div class="ttname"><a href="classdyno_1_1_volume.html#a8598f4e32e0c15940c4a5ad7b80c51bd">dyno::Volume::Real</a></div><div class="ttdeci">TDataType::Real Real</div><div class="ttdef"><b>Definition:</b> <a href="_volume_8h_source.html#l00012">Volume.h:12</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_html_ad0ec519539bda5badca5cab0c13a204a"><div class="ttname"><a href="classdyno_1_1_volume.html#ad0ec519539bda5badca5cab0c13a204a">dyno::Volume::Coord</a></div><div class="ttdeci">TDataType::Coord Coord</div><div class="ttdef"><b>Definition:</b> <a href="_volume_8h_source.html#l00013">Volume.h:13</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_volume_html_aea27a74d2b57982cb992c41765c364d6"><div class="ttname"><a href="classdyno_1_1_volume.html#aea27a74d2b57982cb992c41765c364d6">dyno::Volume::updateVolume</a></div><div class="ttdeci">virtual void updateVolume()=0</div></div>
-<div class="ttc" id="anamespace_volume_html"><div class="ttname"><a href="namespace_volume.html">Volume</a></div><div class="ttdef"><b>Definition:</b> <a href="initialize_volume_8h_source.html#l00004">initializeVolume.h:5</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of TightCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_arithmetic_8h_source.html#l00005">Arithmetic.h:6</a></div></div>
+<div class="ttc" id="anamespace_volume_html"><div class="ttname"><a href="namespace_volume.html">Volume</a></div><div class="ttdef"><b>Definition:</b> <a href="initialize_volume_8h_source.html#l00023">initializeVolume.h:24</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition:</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

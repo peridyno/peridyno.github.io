@@ -82,10 +82,13 @@ Collaboration diagram for dyno::GridHash&lt; TDataType &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_grid_hash__coll__graph.png" border="0" usemap="#adyno_1_1_grid_hash_3_01_t_data_type_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_grid_hash_3_01_t_data_type_01_4_coll__map" id="adyno_1_1_grid_hash_3_01_t_data_type_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="101,228,300,255"/>
-<area shape="rect" href="classdyno_1_1_scan.html" title=" " alt="" coords="53,139,141,165"/>
-<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="5,5,188,47"/>
-<area shape="rect" href="classdyno_1_1_reduction.html" title=" " alt="" coords="165,139,319,165"/>
+<area shape="rect" title=" " alt="" coords="80,497,279,524"/>
+<area shape="rect" href="classdyno_1_1_scan.html" title=" " alt="" coords="33,408,160,435"/>
+<area shape="rect" href="classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html" title=" " alt="" coords="5,275,188,316"/>
+<area shape="rect" href="classdyno_1_1_vk_device_array.html" title=" " alt="" coords="25,171,168,212"/>
+<area shape="rect" href="classdyno_1_1_vk_variable.html" title=" " alt="" coords="36,95,157,121"/>
+<area shape="rect" href="classdyno_1_1_vk_context.html" title=" " alt="" coords="37,5,156,32"/>
+<area shape="rect" href="classdyno_1_1_reduction.html" title=" " alt="" coords="185,408,339,435"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -145,8 +148,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1b52b06f82b53887cf9df98620fff794"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4204227020c353983c048f8f275f48ce"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_grid_hash.html#a4204227020c353983c048f8f275f48ce">index</a> = nullptr</td></tr>
 <tr class="separator:a4204227020c353983c048f8f275f48ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99a46235402b171f43b82b269feb3153"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_scan.html">Scan</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_grid_hash.html#a99a46235402b171f43b82b269feb3153">m_scan</a> = nullptr</td></tr>
-<tr class="separator:a99a46235402b171f43b82b269feb3153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac476e29a549cbd2322931e4a6d8a46ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_scan.html">Scan</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_grid_hash.html#ac476e29a549cbd2322931e4a6d8a46ee">m_scan</a> = nullptr</td></tr>
+<tr class="separator:ac476e29a549cbd2322931e4a6d8a46ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43b2b60a8d4e7b0dc1bb93b0c465f722"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_reduction.html">Reduction</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_grid_hash.html#a43b2b60a8d4e7b0dc1bb93b0c465f722">m_reduce</a> = nullptr</td></tr>
 <tr class="separator:a43b2b60a8d4e7b0dc1bb93b0c465f722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -646,8 +649,8 @@ template&lt;typename TDataType &gt; </div>
 
 </div>
 </div>
-<a id="a99a46235402b171f43b82b269feb3153" name="a99a46235402b171f43b82b269feb3153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99a46235402b171f43b82b269feb3153">&#9670;&nbsp;</a></span>m_scan</h2>
+<a id="ac476e29a549cbd2322931e4a6d8a46ee" name="ac476e29a549cbd2322931e4a6d8a46ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac476e29a549cbd2322931e4a6d8a46ee">&#9670;&nbsp;</a></span>m_scan</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -655,7 +658,7 @@ template&lt;typename TDataType &gt; </div>
 template&lt;typename TDataType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_scan.html">Scan</a>* <a class="el" href="classdyno_1_1_grid_hash.html">dyno::GridHash</a>&lt; TDataType &gt;::m_scan = nullptr</td>
+          <td class="memname"><a class="el" href="classdyno_1_1_scan.html">Scan</a>&lt;int&gt;* <a class="el" href="classdyno_1_1_grid_hash.html">dyno::GridHash</a>&lt; TDataType &gt;::m_scan = nullptr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -755,7 +758,7 @@ template&lt;typename TDataType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Peridyno/peridyno/src/Framework/Topology/<a class="el" href="_grid_hash_8h_source.html">GridHash.h</a></li>
+<li>E:/Peridyno/peridyno/src/Topology/Cuda/Topology/<a class="el" href="_grid_hash_8h_source.html">GridHash.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
