@@ -1,7 +1,14 @@
 [
 {
-	"uri": "https://peridyno.github.io/en/examples/heightfield/",
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/",
 	"title": "HeightFiled",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/cpd_clothdrop/",
+	"title": "CapillaryWave",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -85,8 +92,22 @@
 	"content": "The scene graph mainly includes two functions: node management and node operation logic management.\n1、Node management Node management functions include:\n add node  template\u0026lt;class TNode, class ...Args\u0026gt; std::shared_ptr\u0026lt;TNode\u0026gt; addNode(Args\u0026amp;\u0026amp; ... args) template\u0026lt;class TNode\u0026gt; std::shared_ptr\u0026lt;TNode\u0026gt; addNode(std::shared_ptr\u0026lt;TNode\u0026gt; tNode) Where TNode represents the derived type of the node, and Args is the parameter required by the node construction process\n delete node  void deleteNode(std::shared_ptr\u0026lt;Node\u0026gt; node); 2、Node operation logic management   Update run queue   void updateExecutionQueue(); The timing of the update mainly depends on whether the nodes in the scene graph and the connection relationship have changed. Once any item is changed, the node execution queue of the scene will update the run queue first the next time the node function is executed.\n update node status  void propagateNode(std::shared_ptr\u0026lt;Node\u0026gt; node); When the running state of a specific node changes, for example, the configuration parameters of the node are changed, the scene graph can update the state of all subsequent nodes that depend on the node by calling the propagateNode() function.\n3、Function expansion To be added\u0026hellip;\n"
 },
 {
+	"uri": "https://peridyno.github.io/en/examples/heightfield/",
+	"title": "HeightFiled",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
 	"uri": "https://peridyno.github.io/en/examples/rigidbody/gl_collisiondetectionin3d/",
 	"title": "Two Boxes",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/cpd_clothontable/",
+	"title": "Ocean",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -130,13 +151,6 @@
 {
 	"uri": "https://peridyno.github.io/en/installation/linux/",
 	"title": "Linux",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/examples/peridynamics/",
-	"title": "peridynamics",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -205,6 +219,13 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/cpd_clothoverball_1/",
+	"title": "OceanPatch",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
 	"uri": "https://peridyno.github.io/en/examples/heightfield/gl_oceanpatch/",
 	"title": "OceanPatch",
 	"tags": [],
@@ -219,8 +240,8 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/qt/",
-	"title": "SPH",
+	"uri": "https://peridyno.github.io/en/examples/peridynamics/",
+	"title": "peridynamics",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -248,8 +269,8 @@
 	"content": "1、Function introduction The module is a function-independent algorithm unit for internal calling of the node, which consists of input data, output data and control variables. The biggest difference between it and the node is that the input and output types only accept the Field type.\n2、How to implement a functional module It includes the following steps:\n  Define input data (usually at least one is required)\nSimilar to the definition in the node, the macro definition of DEF_{*}_IN is used to complete.\n  define output data (optional)\nSimilar to the definition in the node, the macro definition of DEF_{*}_OUT is used to complete.\n  Define control variables\nDEF_VAR(T, name, value, desc)\r\rControl variables must be initialized before module execution.\n\r  3、Module example /** * @brief The standard summation density * * @tparam TDataType */ template\u0026lt;typename TDataType\u0026gt; class SummationDensity : public virtual ParticleApproximation\u0026lt;TDataType\u0026gt; { DECLARE_TCLASS(SummationDensity, TDataType) public: typedef typename TDataType::Real Real; typedef typename TDataType::Coord Coord; SummationDensity(); ~SummationDensity() override {}; void compute() override; public: void compute( DArray\u0026lt;Real\u0026gt;\u0026amp; rho, DArray\u0026lt;Coord\u0026gt;\u0026amp; pos, DArrayList\u0026lt;int\u0026gt;\u0026amp; neighbors, Real smoothingLength, Real mass); void compute( DArray\u0026lt;Real\u0026gt;\u0026amp; rho, DArray\u0026lt;Coord\u0026gt;\u0026amp; pos, DArray\u0026lt;Coord\u0026gt;\u0026amp; posQueried, DArrayList\u0026lt;int\u0026gt;\u0026amp; neighbors, Real smoothingLength, Real mass); public: DEF_VAR(Real, RestDensity, 1000, \u0026#34;Rest Density\u0026#34;); ///Define inputs \t/** * @brief Particle positions */ DEF_ARRAY_IN(Coord, Position, DeviceType::GPU, \u0026#34;Particle position\u0026#34;); /** * @brief Particle positions */ DEF_ARRAY_IN(Coord, Other, DeviceType::GPU, \u0026#34;Particle position\u0026#34;); /** * @brief Neighboring particles * */ DEF_ARRAYLIST_IN(int, NeighborIds, DeviceType::GPU, \u0026#34;Neighboring particles\u0026#39; ids\u0026#34;); ///Define outputs \t/** * @brief Particle densities */ DEF_ARRAY_OUT(Real, Density, DeviceType::GPU, \u0026#34;Return the particle density\u0026#34;); private: void calculateParticleMass(); Real m_particle_mass; Real m_factor; }; IMPLEMENT_TCLASS(SummationDensity, TDataType) "
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/rigidbody/",
-	"title": "Rigid Body Dynamics",
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/cpd_clothoverball_3/",
+	"title": "Buoyancy",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -276,6 +297,13 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
+	"uri": "https://peridyno.github.io/en/examples/qt/",
+	"title": "SPH",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
 	"uri": "https://peridyno.github.io/en/examples/",
 	"title": "Examples",
 	"tags": [],
@@ -296,6 +324,20 @@
 	"tags": [],
 	"description": "",
 	"content": "1、Field function introduction Field mainly realizes data transfer between nodes and modules by encapsulating typical data types. As shown in the figure below, GLPointVisualNode passes point cloud data to InputFieldTest for use by defining Field of type FInstance.\nThe connection and disconnection between fields mainly depend on the implementation of the following two functions:\nvirtual bool connect(FBase* dst) = 0; virtual bool disconnect(FBase* dst); As the base class of all Fields, FBase mainly manages the connection status of Fields in a unified manner.\nconnect(FBase* dst) is a pure virtual function defined in FBase, so its specific implementation depends on a specific Field. The design is mainly to ensure the validity of the data connection, and to simulate connecting the data to the wrong type.\n\rAssuming that there are three Field types of data A, B, and C, their connection relationship is set to A-\u0026gt;B-\u0026gt;C. At this time, in order to reduce the data conversion and storage overhead, when we operate the data of C, it will return the data pointer at the top (corresponding to A) according to the connection relationship.\n2. Field type   FVar: Inherited from FBase, it is a package for a single data type, including scalar data, such as int, float, double; vector data, such as Vec3f; and second-order tensors, such as Mat3f. Nodes and modules can be defined by using macro definitions such as DEF_VAR/DEF_VAR_IN\nDEF_VAR(Real, RestDensity, 1000, \u0026#34;Rest Density\u0026#34;); 其中Real代表数据类型，RestDesntiy代表数据名称，1000代表初值，\u0026ldquo;Rest Density\u0026quot;则表示数据的说明。通过DEF_VAR定义的数据实际使用过程中可以通var+数据名称的方式对数据进行操作，假设我们需要将上述Field连接到另一个功能模块，则可以调用如下接口进行\nthis-\u0026gt;varRestDensity()-\u0026gt;connect(...);\r  FArray：The encapsulation of the one-dimensional array defined in Core/Array.h, similar to the vector in STL. According to its different functions in nodes/modules, we adopt the following three definitions:\nDEF_ARRAY_IN(Coord, Position, DeviceType::GPU, \u0026#34;Output\u0026#34;);\t//input The access method of input data is in+data name, that is, inPosition()\nDEF_ARRAY_OUT(Coord, Position, DeviceType::GPU, \u0026#34;Output\u0026#34;);\t//ouput The access method of input data is out+data name, namely outPosition()\nDEF_ARRAY_STATE(Coord, Position, DeviceType::GPU, \u0026#34;Internal state\u0026#34;);\t//internal state variable The access method of the state variable is state+data name, statePosition()\n  FArrayList：Encapsulation of Core/ArrayList.h data to support CPU/GPU compatible dynamic data types. It is defined in a similar way to FArray, i.e.\nDEF_ARRAYLIST_IN(Coord, Position, DeviceType::GPU, \u0026#34;Input\u0026#34;);\t//input The access method of input data is in+data name, that is, inPosition()\nDEF_ARRAYLIST_OUT(Coord, Position, DeviceType::GPU, \u0026#34;Output\u0026#34;);\t//ouput The access method of input data is out+data name, namely outPosition()\nDEF_ARRAYLIST_STATE(Coord, Position, DeviceType::GPU, \u0026#34;Internal state\u0026#34;);\t//internal state variable The access method of the state variable is state+data name, statePosition()\n  FInstance：Mainly to support the connection between data with inheritance relationship, the typical application is to use FInstance to define different topology data\nDEF_INSTANCE_IN(PointSet\u0026lt;TDataType\u0026gt;, PointSet, \u0026#34;PointSet is derived from TopologyModule\u0026#34;);\t//input The access method of input data is in+data name, and any correspondence inherited from PointSetcan be connected to this data.\nDEF_INSTANCE_OUT(PointSet\u0026lt;TDataType\u0026gt;, PointSet, \u0026#34;Output\u0026#34;);\t//output The access method of input data is out+data name\nDEF_INSTANCE_STATE(PointSet\u0026lt;TDataType\u0026gt;, PointSet, \u0026#34;Internal state\u0026#34;);\t//internal state variable The access method of the state variable is state+data name\n  Reference code src/Framework/FBase.h.\n\r"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/rigidbody/",
+	"title": "Rigid Body Dynamics",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/cpd_clothoverball_6/",
+	"title": "Qt_HeightField",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
 },
 {
 	"uri": "https://peridyno.github.io/en/examples/heightfield/qt_heightfild/",
@@ -326,13 +368,6 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/sph/",
-	"title": "SPH",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
 	"uri": "https://peridyno.github.io/en/topics/",
 	"title": "Advanced Topics",
 	"tags": [],
@@ -346,6 +381,13 @@
 	"tags": [],
 	"description": "",
 	"content": "1、what is reflection Assuming we know the name of a class, how can we dynamically generate an object of a class from the class name string?\nIn Java programming, this is not a problem. However, the language characteristics of C++ determine that it does not support generating objects through the class name string \u0026ldquo;ClassXX\u0026rdquo;, that is to say, in C++ we can use ClassXX* object =new ClassXX to generate objects, but not through ClassXX* object= new \u0026ldquo;ClassXX\u0026rdquo; to generate the object. This makes it impossible to achieve adaptive expansion when we expand the functions of nodes and modules, that is, if we introduce a new function module, the simulation engine cannot dynamically perceive its existence.\nThe reflection mechanism is introduced to solve the problem of adaptive expansion of simulation nodes and functional modules, thereby avoiding deep coupling between codes.\n2、C++ reflection principle Reference code src/Framework/Object.h.\n\r3、How extension modules support reflection All classes that need to support reflection need to inherit from Object. Taking the class implemented in src/Dynamics/ParticleSystem/SummationDensity.h as an example, the process of supporting reflection consists of two steps\n  Derived from Object or a subclass of Object\ntemplate\u0026lt;typename TDataType\u0026gt; class SummationDensity : public virtual ParticleApproximation\u0026lt;TDataType\u0026gt;   interface declaration\nDECLARE_CLASS(SummationDensity)\r//or\rDECLARE_TCLASS(SummationDensity, TDataType)\rAmong them, SummationDensity corresponds to the name of the class, and TDataType corresponds to the template parameter\n  interface implementation\nIMPLEMENT_TCLASS(SummationDensity)\r//or\rIMPLEMENT_TCLASS(SummationDensity, TDataType)\rAmong them, the registration of SummationDensity is completed by defining static variables through DECLARE_CLASS/DECLARE_TCLASS.\n  DECLARE_TCLASS and IMPLEMENT_TCLASS are required to be defined in the same header file. This method is valid for classes whose implementation files are cpp suffixes. However, there are still some problems with the current NVCC compiler. If the implementation file has a .cu suffix, the defined static variable cannot be initialized, and it needs to be done through an additional class.\n\rA feasible solution is to introduce an additional class for each static link library to complete the initialization, which is introduced in initializeParticleSystem.h\nclass ParticleSystemInitializer : public Object { public: ParticleSystemInitializer(); }; const static ParticleSystemInitializer particleSystemInitializer; At the same time, define and implement the following constructor in initializeParticleSystem.cpp to complete the explicit call to the class defined in the .cu file.\nParticleSystemInitializer::ParticleSystemInitializer() { TypeInfo::New\u0026lt;LinearDamping\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;ParticleIntegrator\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;ImplicitViscosity\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;DensityPBD\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;SummationDensity\u0026lt;DataType3f\u0026gt;\u0026gt;(); TypeInfo::New\u0026lt;VariationalApproximateProjection\u0026lt;DataType3f\u0026gt;\u0026gt;(); } Finally, add WHOLEARCHIVE to the CMakeLists.txt ({peridyno_Code_path}/examples/Qt_VtkVisualModule/CMakeLists.txt) of the Qt project: "
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/cpd_realtimecloth_v1/",
+	"title": "Qt_HeightField",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
 },
 {
 	"uri": "https://peridyno.github.io/en/examples/qt/qt_gui_empty/",
@@ -362,8 +404,8 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/examples/tutorials/",
-	"title": "Tutorials",
+	"uri": "https://peridyno.github.io/en/examples/sph/",
+	"title": "SPH",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -383,8 +425,22 @@
 	"content": "2、Node operation logic management   Update run queue   void updateExecutionQueue(); The timing of the update mainly depends on whether the nodes in the scene graph and the connection relationship have changed. Once any item is changed, the node execution queue of the scene will update the run queue first the next time the node function is executed.\n update node status  void propagateNode(std::shared_ptr\u0026lt;Node\u0026gt; node); When the running state of a specific node changes, for example, the configuration parameters of the node are changed, the scene graph can update the state of all subsequent nodes that depend on the node by calling the propagateNode() function.\n3、Function expansion To be added\u0026hellip;\n"
 },
 {
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/cpd_realtimecloth_v2/",
+	"title": "Qt_HeightField",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
 	"uri": "https://peridyno.github.io/en/examples/qt/qt_gui_plugin/",
 	"title": "GUI Plugin",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/tutorials/",
+	"title": "Tutorials",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
@@ -395,6 +451,13 @@
 	"tags": [],
 	"description": "External resources related to physical-based simulations.
 ",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/cpd_rotatecylinder/",
+	"title": "Qt_HeightField",
+	"tags": [],
+	"description": "",
 	"content": "To be continued\u0026hellip;\n"
 },
 {
@@ -421,6 +484,13 @@
 	"content": "Prerequisites and installation Install Hugo You need a recent extended version (we recommend version 0.53 or later) of Hugo to do local builds and previews of sites (like this one) that use Docsy. If you install from the release page, make sure to get the extended Hugo version, which supports SCSS.\nFor comprehensive Hugo documentation, see gohugo.io.\nTo see if you already have hugo installed and check the installed version, run the following commands:\nhugo version\rwindows 1.Download hugo executable file\nClick Here to download hugo executable file, you must download an extended version. For example, an 64bit windows OS should download hugo_extended_0.75.1_Windows-64bit.zip.\n2.Config the path\nConfig the path where .exe file exist to environment variables. The path should not have spaces, which may cause some unexpected problems.\nFor example, the path of D:\\Hugo\\bin is ok. The path of D:\\Program Files (x86)\\Hugo\\bin may cause some unexpected problems.\nLinux Do not use sudo apt-get install hugo, as it currently doesn\u0026rsquo;t get you the extended version.\nIf you\u0026rsquo;ve already installed Hugo, check your version:\nhugo version\rIf the result is v0.52 or earlier, or if you don\u0026rsquo;t see Extended, you\u0026rsquo;ll need to install the latest version.\n  Go to the Hugo releases page.\n  In the most recent release, scroll down until you find a list of Extended versions.\n  Download the latest extended version (hugo_extended_0.5X_Linux-64bit.tar.gz).\n  Create a new directory:\nmkdir hugo\r   Extract the files you downloaded to hugo.\n  Switch to your new directory:\ncd hugo\r   Install Hugo:\nsudo install hugo /usr/bin    macOS Install Hugo using Brew.\nInstall Node.js and npm To see if you already have Node.js and npm installed and check the installed version, run the following commands:\nnode -v\rnpm -v\rClick Here to download Node.js and install it.\nInstall PostCSS To build or update your site\u0026rsquo;s CSS resources, you also need PostCSS to create the final assets. If you need to install it, you must have a recent version of NodeJS installed on your machine so you can use npm, the Node package manager. By default npm installs tools under the directory where you run npm install:\nnpm install postcss --save-dev\rnpm install -D --save autoprefixer\rnpm install -D --save postcss-cli\rNote that versions of PostCSS later than 5.0.1 will not load autoprefixer if installed globally, you must use a local install.\nClone Peridyno webset code and run   Make a local working copy of the Peridyno webset directly using git clone:\ngit clone https://github.com/peridyno/peri-docs.git\r   Switch to the root of the cloned project, for example:\n cd peri-docs\r   Build your site:\n hugo server\r   Preview your site in your browser at: http://localhost:1313/. You can use Ctrl + c to stop the Hugo server whenever you like.\n  In the cmd of windows, enter into current folder, and input hugo server to launch the local server.\nPull requests Finally, you should make an \u0026ldquo;Pull requests\u0026rdquo; at our github repository. Thanks for your contribution to Peridyno opensource project!\nPublishing website   Generate public folder\n cd peridyno-doc\rhugo\r   Push files(If you have permission)\n cd public git init\rgit add -A\rgit commit -am \u0026quot;init\u0026quot;\rgit remote add origin https://github.com/peridyno/peri-docs.github.io\rgit push -f origin master\r   Modify Custom domain(If you have permission)\nEnter the settings of the peridynoTeam.github.io project(https://github.com/peridyno/peri-docs.github.io/settings). Add www.peridyno.com in Custom domain. Wait a few minutes, you can see Peridyno website on www.peridyno.com.\n  If our project is helpful to you, give a star and watch us!!! "
 },
 {
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/cpd_shootingcloth/",
+	"title": "Qt_HeightField",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
 	"uri": "https://peridyno.github.io/en/examples/qt/qt_mouseinteractioningraphicspipeline/",
 	"title": "Bricks",
 	"tags": [],
@@ -428,8 +498,22 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/gl_clothwithcollision/",
+	"title": "Qt_HeightField",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
 	"uri": "https://peridyno.github.io/en/examples/qt/qt_pickers/",
 	"title": "Pickers",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/qt_clothstudio/",
+	"title": "Qt_HeightField",
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
