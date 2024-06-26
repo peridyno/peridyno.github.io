@@ -1,0 +1,35 @@
+digraph "VkApp::buildCustomCommandBuffer"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="VkApp::buildCustomCommand\lBuffer",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="VkApp::buildCommandBuffers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vk_app.html#a38047afc15c4ecf19d652c4b8c62c544",tooltip="(Virtual) Called when resources have been recreated that require a rebuild of the command buffers (e...."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="VkApp::prepare",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vk_app.html#aa232b32eb5b90698500190d0fe004cdb",tooltip="Prepares all Vulkan resources and functions required to run the sample."];
+  Node3 -> Node3 [id="edge3_Node000003_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node4 [id="edge4_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="VkApp::updateOverlay",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vk_app.html#aca66237cd22fe6e242aab6bd2c3b2cdc",tooltip=" "];
+  Node4 -> Node5 [id="edge5_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="VkApp::nextFrame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vk_app.html#a271496c24fa0c1d5685741d5161be134",tooltip=" "];
+  Node5 -> Node6 [id="edge6_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="VkApp::renderLoop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vk_app.html#a8c9b49184fcb89a73a6ea6c1ed2b7f54",tooltip="Entry point for the main render loop."];
+  Node4 -> Node6 [id="edge7_Node000004_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node7 [id="edge8_Node000002_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="VkApp::windowResize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vk_app.html#a7cd16d7aa5e59f3320f4db4203d9c6c2",tooltip=" "];
+  Node7 -> Node8 [id="edge9_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="VkApp::prepareFrame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vk_app.html#a0162143259d08706c042d08fbebe4706",tooltip=" "];
+  Node8 -> Node9 [id="edge10_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="VkApp::render",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vk_app.html#ab63b7933ea35df31039ed96b36d75e75",tooltip="(Pure virtual) Render function to be implemented by the sample application"];
+  Node9 -> Node5 [id="edge11_Node000009_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 -> Node6 [id="edge12_Node000009_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 -> Node10 [id="edge13_Node000008_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="VkApp::renderFrame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vk_app.html#a5d8fd30fd675c69715d49be5469896ba",tooltip="(Virtual) Default image acquire + submission and command buffer submission function"];
+  Node7 -> Node11 [id="edge14_Node000007_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="VkApp::submitFrame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_vk_app.html#a77aa2460391395eadb236bd13826b56e",tooltip="Presents the current image to the swap chain."];
+  Node11 -> Node9 [id="edge15_Node000011_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 -> Node10 [id="edge16_Node000011_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

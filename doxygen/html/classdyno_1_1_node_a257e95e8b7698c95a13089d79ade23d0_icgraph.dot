@@ -1,0 +1,19 @@
+digraph "dyno::Node::addModule"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="dyno::Node::addModule",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Add a module to m_module_list and other special module lists."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="dyno::Node::addModule",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#a46721b14b8b347a5880e9d3410a7bcd2",tooltip="Add a speical kind of module."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::Node::addModule",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#a658a557369febedc26a42fb9f07a0a5d",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::Pipeline::pushModule",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_pipeline.html#a289e913b1d58ca1de4be1fb04e3d9aac",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::Pipeline::createModule",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_pipeline.html#a9d3c4cf3bd0ac17dbc37d72516c5ab22",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="dyno::Pipeline::pushPersistent\lModule",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_pipeline.html#a48a48914caa0a4eae1e694918a8415c0",tooltip=" "];
+}

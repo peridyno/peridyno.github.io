@@ -1,0 +1,14 @@
+digraph "E:/Peridyno/peridyno/src/Topology/Vulkan/Module"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_9377033dc361d6da9de409e95e39796a {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="Vulkan", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_9377033dc361d6da9de409e95e39796a.html",tooltip=""]
+  dir_9ba8e7de195a9cf5d9a457acc4fb1813 [label="Module", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_9ba8e7de195a9cf5d9a457acc4fb1813.html",tooltip=""];
+  }
+  dir_c2c045169feb12a9231cac4869e44751 [label="Framework", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_c2c045169feb12a9231cac4869e44751.html",tooltip=""];
+  dir_9ba8e7de195a9cf5d9a457acc4fb1813->dir_c2c045169feb12a9231cac4869e44751 [headlabel="1", labeldistance=1.5 headhref="dir_000050_000022.html" href="dir_000050_000022.html" color="steelblue1" fontcolor="steelblue1"];
+}

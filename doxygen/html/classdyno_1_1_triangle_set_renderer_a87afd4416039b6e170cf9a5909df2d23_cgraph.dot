@@ -1,0 +1,21 @@
+digraph "dyno::TriangleSetRenderer::buildCommandBuffers"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="dyno::TriangleSetRenderer\l::buildCommandBuffers",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="dyno::TriangleSetRenderer\l::addComputeToGraphicsBarriers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_triangle_set_renderer.html#a3a36c76ebd1e960a821f5895850fd0cf",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="vks::initializers::\lbufferMemoryBarrier",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacevks_1_1initializers.html#ad63fa7d4dd0db58c4a398079c34c19d8",tooltip="Initialize a buffer memory barrier with no image transfer ownership."];
+  Node3 -> Node3 [id="edge3_Node000003_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node4 [id="edge4_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::TriangleSetRenderer\l::addGraphicsToComputeBarriers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_triangle_set_renderer.html#adf0799cd0533fe412b98b0dd9cd6d2b2",tooltip=" "];
+  Node4 -> Node3 [id="edge5_Node000004_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge6_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::VkVariable::buffer\lHandle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_variable.html#a067d8f2b1f058e7a68df71bc4c495e4b",tooltip=" "];
+  Node1 -> Node6 [id="edge7_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="dyno::VkDeviceArray\l::size",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_device_array.html#af606afaf735b0c6bdc501fc2d7379efb",tooltip=" "];
+}

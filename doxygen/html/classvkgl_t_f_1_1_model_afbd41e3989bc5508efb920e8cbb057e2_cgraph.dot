@@ -1,0 +1,13 @@
+digraph "vkglTF::Model::Model"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="vkglTF::Model::Model",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="vks::tools::exitFatal",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacevks_1_1tools.html#af75a924b4fa375017dd275374aebd3e2",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::VkSystem::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_system.html#ae9dfacd8ffcaa69bd39faec9ab24c66e",tooltip=" "];
+}

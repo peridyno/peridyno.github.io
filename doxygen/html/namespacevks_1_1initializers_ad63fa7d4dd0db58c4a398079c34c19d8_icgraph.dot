@@ -1,0 +1,29 @@
+digraph "vks::initializers::bufferMemoryBarrier"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="vks::initializers::\lbufferMemoryBarrier",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Initialize a buffer memory barrier with no image transfer ownership."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="dyno::VkProgram::addCompute\lToComputeBarriers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_program.html#ab926df79f9dc07800800e08cab8d9787",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::VkProgram::dispatch",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_program.html#ae80546236f47ef2f24b4c2b0d71f3701",tooltip=" "];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::VkProgram::enqueue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_program.html#aef5be692f04bae205304bb245a2a521c",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::VkProgram::flush",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_program.html#aed163102f5ad9fe1a9caede6efa52b4d",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="dyno::VkProgram::addCompute\lToGraphicsBarriers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_program.html#ac7a94c7a401cb086f377b3a1257d5d5e",tooltip=" "];
+  Node1 -> Node7 [id="edge6_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="dyno::TriangleSetRenderer\l::addComputeToGraphicsBarriers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_triangle_set_renderer.html#a3a36c76ebd1e960a821f5895850fd0cf",tooltip=" "];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="dyno::TriangleSetRenderer\l::buildCommandBuffers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_triangle_set_renderer.html#a87afd4416039b6e170cf9a5909df2d23",tooltip=" "];
+  Node1 -> Node9 [id="edge8_Node000001_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="dyno::VkProgram::addGraphics\lToComputeBarriers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_program.html#a92485e94782e6de386c9bebc511d691c",tooltip=" "];
+  Node1 -> Node10 [id="edge9_Node000001_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="dyno::TriangleSetRenderer\l::addGraphicsToComputeBarriers",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_triangle_set_renderer.html#adf0799cd0533fe412b98b0dd9cd6d2b2",tooltip=" "];
+  Node10 -> Node8 [id="edge10_Node000010_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node1 [id="edge11_Node000001_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

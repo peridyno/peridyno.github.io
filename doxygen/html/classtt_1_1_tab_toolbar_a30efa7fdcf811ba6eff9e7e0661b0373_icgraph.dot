@@ -1,0 +1,21 @@
+digraph "tt::TabToolbar::HideTab"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="tt::TabToolbar::HideTab",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="tt::TabToolbar::AddPage",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtt_1_1_tab_toolbar.html#a837ea7deaba4779f0d11a6a473c855ee",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="tt::TabToolbar::AddPage",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtt_1_1_tab_toolbar.html#a8921574120d95c3f4830405a349d13a8",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::PMainToolBar\l::PMainToolBar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_main_tool_bar.html#adee3023c68d27dd51b618ce77de2e169",tooltip=" "];
+  Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::PMainToolBar\l::setupEditMenu",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_main_tool_bar.html#aecfcac7d60e793402f40687371224ed4",tooltip=" "];
+  Node5 -> Node4 [id="edge5_Node000005_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node6 [id="edge6_Node000003_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="dyno::PMainToolBar\l::setupFileMenu",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_main_tool_bar.html#a6b53ba64787d2d933c003265365b6fe7",tooltip=" "];
+  Node6 -> Node4 [id="edge7_Node000006_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

@@ -1,0 +1,17 @@
+digraph "tt::TabToolbar::HideAt"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="tt::TabToolbar::HideAt",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="tt::TabToolbar::FocusChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtt_1_1_tab_toolbar.html#aa069ca299eca3b42158a568efee28d3d",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="tt::TabToolbar::TabToolbar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtt_1_1_tab_toolbar.html#a10fe2d83acc3bea14ffcef1ca3d581e9",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="tt::TabToolbar::TabClicked",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtt_1_1_tab_toolbar.html#a3d185f5c176ad8129420a913f42d27ea",tooltip=" "];
+  Node4 -> Node3 [id="edge4_Node000004_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node3 [id="edge5_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

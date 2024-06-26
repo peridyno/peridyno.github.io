@@ -1,0 +1,16 @@
+digraph "E:/Peridyno/peridyno/src/Topology/Cuda/Module"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_6f4d3ced59ce45929d63492ccc6fea56 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="Cuda", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_6f4d3ced59ce45929d63492ccc6fea56.html",tooltip=""]
+  dir_885d018218dabc0ef0ff0e552a97f6b1 [label="Module", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_885d018218dabc0ef0ff0e552a97f6b1.html",tooltip=""];
+  }
+  dir_3e9476288c0c22cbcea08ca5b8b8c190 [label="Core", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_3e9476288c0c22cbcea08ca5b8b8c190.html",tooltip=""];
+  dir_c2c045169feb12a9231cac4869e44751 [label="Framework", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_c2c045169feb12a9231cac4869e44751.html",tooltip=""];
+  dir_885d018218dabc0ef0ff0e552a97f6b1->dir_3e9476288c0c22cbcea08ca5b8b8c190 [headlabel="2", labeldistance=1.5 headhref="dir_000049_000012.html" href="dir_000049_000012.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_885d018218dabc0ef0ff0e552a97f6b1->dir_c2c045169feb12a9231cac4869e44751 [headlabel="3", labeldistance=1.5 headhref="dir_000049_000022.html" href="dir_000049_000022.html" color="steelblue1" fontcolor="steelblue1"];
+}

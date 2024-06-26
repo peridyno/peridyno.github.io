@@ -1,0 +1,17 @@
+digraph "dyno::QColorWidget::updateColorWidget"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="dyno::QColorWidget\l::updateColorWidget",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="dyno::QColorWidget\l::updateField",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_color_widget.html#a860a3b84d0fc7b9499c0d3cbba4fda20",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::QFieldWidget\l::field",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_field_widget.html#a782d02aac0902a3ac4813a19e9952499",tooltip=" "];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::FBase::getTemplateName",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308",tooltip=" "];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::QColorButton\l::setColor",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_color_button.html#a2da1ed00ddcc767c096ca756db248600",tooltip=" "];
+}

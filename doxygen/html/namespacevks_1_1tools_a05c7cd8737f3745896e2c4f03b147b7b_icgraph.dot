@@ -1,0 +1,21 @@
+digraph "vks::tools::fileExists"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="vks::tools::fileExists",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Checks if a file exists."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="vkglTF::Texture::fromglTf\lImage",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvkgl_t_f_1_1_texture.html#a2d056838f0b713f47bcd3b7f74ee1833",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="vkglTF::Model::loadImages",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvkgl_t_f_1_1_model.html#adc2c3fa91f8d71a806bd82168ec7a7d7",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="vks::Texture::loadKTXFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvks_1_1_texture.html#a1fdffeb762d9aa6620cb215185dd7de2",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="vks::Texture2DArray\l::loadFromFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvks_1_1_texture2_d_array.html#ab04d9b5892e3f346bfc0a56b7a3b04d0",tooltip=" "];
+  Node4 -> Node6 [id="edge5_Node000004_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="vks::TextureCubeMap\l::loadFromFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvks_1_1_texture_cube_map.html#ae31eb15998c8b0283547153a375a24f9",tooltip=" "];
+  Node4 -> Node7 [id="edge6_Node000004_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="vks::Texture2D::loadFromFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvks_1_1_texture2_d.html#a84a769810d68c2bda48de43088513292",tooltip=" "];
+}
