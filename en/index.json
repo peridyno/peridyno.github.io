@@ -1,5 +1,26 @@
 [
 {
+	"uri": "https://peridyno.github.io/en/installation/window/",
+	"title": "Windows Platform Installation",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/installation/window/source/",
+	"title": "Windows Platform Installation",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/installation/window/binary/",
+	"title": "Window",
+	"tags": [],
+	"description": "",
+	"content": "To be continued\u0026hellip;\n"
+},
+{
 	"uri": "https://peridyno.github.io/en/examples/codimensionalpd/",
 	"title": "HeightFiled",
 	"tags": [],
@@ -49,13 +70,6 @@
 	"content": "To be continued\u0026hellip;\n"
 },
 {
-	"uri": "https://peridyno.github.io/en/installation/window/",
-	"title": "Window",
-	"tags": [],
-	"description": "",
-	"content": "To be continued\u0026hellip;\n"
-},
-{
 	"uri": "https://peridyno.github.io/en/overview/",
 	"title": "Overview",
 	"tags": [],
@@ -90,6 +104,14 @@
 	"tags": [],
 	"description": "",
 	"content": "The scene graph mainly includes two functions: node management and node operation logic management.\n1、Node management Node management functions include:\n add node  template\u0026lt;class TNode, class ...Args\u0026gt; std::shared_ptr\u0026lt;TNode\u0026gt; addNode(Args\u0026amp;\u0026amp; ... args) template\u0026lt;class TNode\u0026gt; std::shared_ptr\u0026lt;TNode\u0026gt; addNode(std::shared_ptr\u0026lt;TNode\u0026gt; tNode) Where TNode represents the derived type of the node, and Args is the parameter required by the node construction process\n delete node  void deleteNode(std::shared_ptr\u0026lt;Node\u0026gt; node); 2、Node operation logic management   Update run queue   void updateExecutionQueue(); The timing of the update mainly depends on whether the nodes in the scene graph and the connection relationship have changed. Once any item is changed, the node execution queue of the scene will update the run queue first the next time the node function is executed.\n update node status  void propagateNode(std::shared_ptr\u0026lt;Node\u0026gt; node); When the running state of a specific node changes, for example, the configuration parameters of the node are changed, the scene graph can update the state of all subsequent nodes that depend on the node by calling the propagateNode() function.\n3、Function expansion To be added\u0026hellip;\n"
+},
+{
+	"uri": "https://peridyno.github.io/en/installation/",
+	"title": "Installation",
+	"tags": [],
+	"description": "Tutorials on how to set up Peridyno and run examples on both Windows and Linux.
+",
+	"content": "Tutorials on how to set up Peridyno.\nPlatforms Windows 10: fully tested\nLinux: should work as well, yet not guranteed.\nPrerequisites IDE:\n Visual studio 2017+  CUDA:\n Latest tests were done based on CUDA Toolkit 11.4, should be compatible will other old version.  Graphics:\n glad: https://github.com/Dav1dde/glad.git glfw: https://github.com/glfw/glfw imgui: https://github.com/ocornut/imgui  Optional:\n Qt: https://download.qt.io/ VTK: https://github.com/Kitware/VTK Alembic: https://github.com/alembic/alembic Imath: https://github.com/AcademySoftwareFoundation/Imath  Installation Aside from those optional, other libraries are integrated inside the project to simplify the installation. Use the following git command to down the project as well as other dependences.\ngit clone --recursive https://github.com/peridyno/peridyno.git\rBuild the project Check whether CMake has been installed on your system, if not, visit https://cmake.org/download/ to download the lastest version.\nPreferred: Run cmake-gui.exe, set the top two entries with the source code and binary directories. Configure the libararies you want to build, then click the Generate button to build the project.\nA more convient way to build the project with a default setting is as follows\ncd peridyo/build cmake ..\rExamples Optional library QT and VTK installation QT installation: Recommended downloadQT5.13.0 or above\n1、Register account：\n2、Components to be selected：\n3、Cmake project, and check the QT related options：\nVTK installation: Recommended downloadVTK8.2.0 or above\n1、Download VTK source code\n2.勾选Moduel中QT相关的这些选项：\n3.设置OpenGL相关选项： 4.然后点Generate再打开VS项目进行生成\n5.打开VTK的VS工程。生成-\u0026gt;批生成 ALL_BUILD Release x64 栏 勾选 √\u0026mdash;-\u0026gt;点击【生成】 6.把刚刚勾选的ALL_BUILD Release后面的√去掉，下拉，在INSTALL Release后面勾选\n7.将VTK路径加入到Path中 License Peridyno\u0026rsquo;s default license is the Apache 2.0 (See LICENSE).\nExternal libraries are distributed under their own terms.\n"
 },
 {
 	"uri": "https://peridyno.github.io/en/examples/heightfield/",
@@ -132,14 +154,6 @@
 	"tags": [],
 	"description": "",
 	"content": "To be continued\u0026hellip;\n"
-},
-{
-	"uri": "https://peridyno.github.io/en/installation/",
-	"title": "Installation",
-	"tags": [],
-	"description": "Tutorials on how to set up Peridyno and run examples on both Windows and Linux.
-",
-	"content": "Tutorials on how to set up Peridyno.\nPlatforms Windows 10: fully tested\nLinux: should work as well, yet not guranteed.\nPrerequisites IDE:\n Visual studio 2017+  CUDA:\n Latest tests were done based on CUDA Toolkit 11.4, should be compatible will other old version.  Graphics:\n glad: https://github.com/Dav1dde/glad.git glfw: https://github.com/glfw/glfw imgui: https://github.com/ocornut/imgui  Optional:\n Qt: https://download.qt.io/ VTK: https://github.com/Kitware/VTK Alembic: https://github.com/alembic/alembic Imath: https://github.com/AcademySoftwareFoundation/Imath  Installation Aside from those optional, other libraries are integrated inside the project to simplify the installation. Use the following git command to down the project as well as other dependences.\ngit clone --recursive https://github.com/peridyno/peridyno.git\rBuild the project Check whether CMake has been installed on your system, if not, visit https://cmake.org/download/ to download the lastest version.\nPreferred: Run cmake-gui.exe, set the top two entries with the source code and binary directories. Configure the libararies you want to build, then click the Generate button to build the project.\nA more convient way to build the project with a default setting is as follows\ncd peridyo/build cmake ..\rExamples Optional library QT and VTK installation QT installation: Recommended downloadQT5.13.0 or above\n1、Register account：\n2、Components to be selected：\n3、Cmake project, and check the QT related options：\nVTK installation: Recommended downloadVTK8.2.0 or above\n1、Download VTK source code\n2.勾选Moduel中QT相关的这些选项：\n3.设置OpenGL相关选项： 4.然后点Generate再打开VS项目进行生成\n5.打开VTK的VS工程。生成-\u0026gt;批生成 ALL_BUILD Release x64 栏 勾选 √\u0026mdash;-\u0026gt;点击【生成】 6.把刚刚勾选的ALL_BUILD Release后面的√去掉，下拉，在INSTALL Release后面勾选\n7.将VTK路径加入到Path中 License Peridyno\u0026rsquo;s default license is the Apache 2.0 (See LICENSE).\nExternal libraries are distributed under their own terms.\n"
 },
 {
 	"uri": "https://peridyno.github.io/en/examples/peridynamics/gl_elasticity/",

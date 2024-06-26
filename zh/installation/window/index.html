@@ -12,22 +12,22 @@
     <title>Windows平台安装 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1694446248" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1694446248" rel="stylesheet">
-    <link href="/css/hybrid.css?1694446248" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1694446248" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1694446248" rel="stylesheet">
-    <link href="/css/auto-complete.css?1694446248" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1694446248" rel="stylesheet">
-    <link href="/css/theme.css?1694446248" rel="stylesheet">
-    <link href="/css/tabs.css?1694446248" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1694446248" rel="stylesheet">
+    <link href="/css/nucleus.css?1719408426" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1719408426" rel="stylesheet">
+    <link href="/css/hybrid.css?1719408426" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1719408426" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1719408426" rel="stylesheet">
+    <link href="/css/auto-complete.css?1719408426" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1719408426" rel="stylesheet">
+    <link href="/css/theme.css?1719408426" rel="stylesheet">
+    <link href="/css/tabs.css?1719408426" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1719408426" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1694446248" rel="stylesheet">
+    <link href="/css/theme-blue.css?1719408426" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1694446248"></script>
+    <script src="/js/jquery-3.3.1.min.js?1719408426"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1694446248"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1694446248"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1719408426"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1719408426"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1694446248"></script>
+<script type="text/javascript" src="/js/search.js?1719408426"></script>
 
     
   </div>
@@ -168,6 +168,74 @@
           
       </a>
       
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/zh/installation/window/source/" title="Windows平台源码安装" class="dd-item
+        
+        
+        
+        ">
+      <a href="/zh/installation/window/source/">
+          - 源码安装
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/zh/installation/window/binary/" title="Windows平台二进制安装" class="dd-item
+        
+        
+        
+        ">
+      <a href="/zh/installation/window/binary/">
+          - 二进制安装
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
       
     </li>
   
@@ -2998,15 +3066,8 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1安装环境">1、安装环境</a></li>
-        <li><a href="#2运行依赖">2、运行依赖</a></li>
-        <li><a href="#3安装">3、安装</a></li>
-        <li><a href="#4编译项目">4、编译项目</a></li>
-        <li><a href="#5运行项目glfw平台">5、运行项目（GLFW平台）</a></li>
-        <li><a href="#6安装交互式qt平台可选">6、安装交互式Qt平台（可选）</a></li>
-        <li><a href="#7vulkan安装可选">7、Vulkan安装（可选）</a></li>
-        <li><a href="#8peridyno插件安装可选">8、Peridyno插件安装（可选）</a></li>
-        <li><a href="#9windows平台安装常见问题">9、Windows平台安装常见问题</a></li>
+        <li><a href="#1源码安装source">1、<a href="./source/">源码安装</a></a></li>
+        <li><a href="#2二进制安装binary">2、<a href="./binary/">二进制安装</a></a></li>
       </ul>
     </li>
   </ul>
@@ -3038,99 +3099,10 @@
 
 
 
-	<h3 id="1安装环境">1、安装环境</h3>
-<ul>
-<li><strong>Windows 平台</strong>：支持Windows10、 Windows11系统；</li>
-<li><strong>显卡</strong>：<strong>推荐</strong>使用Nvidia类型的显卡（大多数示例需要Nvidia显卡支持）；</li>
-<li><strong>CPU</strong>：Intel i7+；</li>
-<li><strong>OpenGL</strong>：4.6+；</li>
-<li><strong>内存</strong>：8G+。</li>
-</ul>
-<h3 id="2运行依赖">2、运行依赖</h3>
-<ul>
-<li>IDE: Visual studio 2017+（推荐<a href="https://visualstudio.microsoft.com/zh-hans/vs/older-downloads/">Visual studio 2019</a>）</li>
-<li>CUDA: CUDA Toolkit 11.0+（推荐<a href="https://developer.nvidia.com/cuda-11-4-0-download-archive?target_os=Windows&amp;target_arch=x86_64&amp;target_version=10">CUDA Toolkit 11.4</a>）</li>
-<li>cmake：<a href="https://cmake.org/download/">3.17+</a></li>
-</ul>
-<p>可选依赖：</p>
-<ul>
-<li>Qt: <a href="https://download.qt.io/archive/qt/">5.0版本以上</a>（推荐5.14.2）</li>
-<li>VulkanSDK：(<a href="https://vulkan.lunarg.com/">https://vulkan.lunarg.com/</a>)</li>
-</ul>
-<h3 id="3安装">3、安装</h3>
-<p>使用 git 命令克隆项目及子模块：</p>
-<pre><code>git clone --recursive https://gitee.com/peridyno/peridyno.git
-</code></pre><h3 id="4编译项目">4、编译项目</h3>
-<p>使用cmake软件对项目进行编译：</p>
-<ul>
-<li>设置文件源码路径和编译路径；</li>
-<li>点击Configure；</li>
-<li>点击Generate。</li>
-</ul>
-<p><img src="/images/installation/windows/cmake.jpg?width=30pc" alt=""></p>
-<h3 id="5运行项目glfw平台">5、运行项目（GLFW平台）</h3>
-<p>使用Visual studio打开编译好的项目，选择Examples的中示例作为启动项，运行。下图是GL_ParticleFluid示例的运行效果图：</p>
-<p><img src="/images/installation/windows/fluid.jpg?width=50pc" alt=""></p>
-<h3 id="6安装交互式qt平台可选">6、安装交互式Qt平台（可选）</h3>
-<p>PeriDyno引擎有三种交互式平台，详情请见<a href="../../framework/platform/"><strong>3.6节</strong></a>。Qt框架主要是面向工程研发人员设计的交互式框架。该框架可以通过场景图的形式将仿真任务依次连接起来，开发人员可对每个节点属性进行编辑。推荐安装<a href="https://download.qt.io/archive/qt/">Qt5.12以上版本</a>。</p>
-<p>运行Qt安装包，注册Qt账号登录安装：
-
-<div class="notices info" ><p>Qt高版本必须联网注册才能安装。低版本(以Qt5.14.2为例)断网后，安装可以免注册。</p>
-</div>
-
-<img src="/images/installation/windows/Qt_log.jpg?width=20pc" alt=""></p>
-<p>设置安装路径：
-<img src="/images/installation/windows/Qt_path.jpg?width=20pc" alt=""></p>
-<p>勾选以下几项：
-<img src="/images/installation/windows/Qt_install.png?width=20pc" alt=""></p>
-<p>将Qt加入环境变量：
-<img src="/images/installation/windows/path.jpg?width=20pc" alt=""></p>
-<p>打开cmake软件，查找qt，勾选PERIDYNO_Qt5_GUI选项。接着依次点击Configure和Generate:
-<img src="/images/installation/windows/cmake_qt.jpg?width=20pc" alt=""></p>
-<p>重新打开Visual studio，此时可以发现解决方案资源管理器中多出Qt目录及相关示例程序：
-<img src="/images/installation/windows/Qt_dir.jpg?width=20pc" alt=""></p>
-<p>运行Qt_Bricks项目，可看到Qt框架界面：
-<img src="/images/installation/windows/Qt_Bricks.jpg?width=40pc" alt=""></p>
-<h5 id="基于qt6的安装">基于Qt6的安装</h5>
-<p>Qt 6已不再提供编译之后的安装包，需要先下载<a href="https://download.qt.io/official_releases/online_installers/">online installer</a>完成安装。考虑到国内安装下载速度非常缓慢，建议用清华镜像下载安装</p>
-<pre><code>./qt-unified-linux-x64-online.exe --mirror https://mirrors.tuna.tsinghua.edu.cn/qt
-</code></pre><p>其余安装流程可参见官方教程。</p>
-<p>安装过程中注意选择MSVC 2019 64-bit以及Qt 5 Compatibility Module两个包（以VS 2019为例，其他请选择相应选项）</p>
-<p><img src="/images/installation/windows/qt6.png?width=40pc" alt=""></p>
-<h3 id="7vulkan安装可选">7、Vulkan安装（可选）</h3>
-<p>PeriDyno在cmake阶段支持三种模式，分别是CUDA、Vulkan和NoGPU。Vulkan模式支持其它类型的显卡，但是Vulkan模式中示例较少。安装请确保您的显卡支持Vulkan API。</p>
-<p>下载<a href="https://vulkan.lunarg.com/sdk/home#windows">VulkanSDK</a>:
-<img src="/images/installation/windows/VulkanDownLoad.png?width=30pc" alt=""></p>
-<p>安装：
-<img src="/images/installation/windows/VulkanInstall.jpg?width=30pc" alt=""></p>
-<p>将Vulkan加入环境变量：
-<img src="/images/installation/windows/VulkanPath.jpg?width=30pc" alt=""></p>
-<h3 id="8peridyno插件安装可选">8、Peridyno插件安装（可选）</h3>
-<p>PeriDyno支持<a href="https://gitee.com/peridyno/peridyno/tree/master/plugins">插件</a>导入。在正常情况下，为了提高编译速度，默认插件是不启用的。如需要使用插件，在cmake阶段勾选<strong>PERIDYNO_LIBRARY_PLUGIN</strong>选项：
-<img src="/images/installation/windows/Plugin.jpg?width=30pc" alt=""></p>
-<p>重新Configure和Generate后将会出现可选的插件：
-<img src="/images/installation/windows/Plugin2.jpg?width=30pc" alt=""></p>
-<p>勾选后再次Configure和Generate，此时Visual Studio软件解决方案中将出现Plugin文件夹：
-<img src="/images/installation/windows/Plugin3.jpg?width=20pc" alt=""></p>
-<h3 id="9windows平台安装常见问题">9、Windows平台安装常见问题</h3>
-<p>问题1：软件安装有顺序要求吗？</p>
-<blockquote>
-<p>答：优先安装Visual studio。其它软件无顺序要求。CUDA和Qt会自动查找Visual studio路径安装。</p>
-</blockquote>
-<p>问题2：PeriDyno引擎对显卡有什么要求？</p>
-<blockquote>
-<p>答：PeriDyno在cmake阶段支持三种模式，分别是CUDA、Vulkan和NoGPU。CUDA模式只支持Nvidia类型的显卡。用户尽可能的选择高性能的显卡，<strong>显卡
-显存不低于4G</strong>。Vulkan模式支持其它类型的显卡。NoGPU模式不需要显卡支持。目前PeriDyno引擎绝大多数示例都是用CUDA模式开发的。Vulkan和
-NoGPU模式示例较少，<strong>推荐用户使用CUDA模式进行学习</strong>。</p>
-</blockquote>
-<p><img src="/images/installation/windows/GPUBackend.jpg?width=40pc" alt=""></p>
-<p>问题3：QT程序运行过程中报错：qt.qpa.plugin: Could not find the Qt platform plugin &ldquo;windows&rdquo; in</p>
-<blockquote>
-<p>答：可尝试在Windows系统中添加如下系统变量名</p>
-<p>变量名：QT_QPA_PLATFORM_PLUGIN_PATH</p>
-<p>变量值：C:\Qt\Qt5.15.2\5.15.2\msvc2019_64\plugins（以VS 2019为例，其他注意替换相应目录）</p>
-<p>如仍然有问题可尝试将C:\Qt\Qt{Qt版本号}{Qt版本号}\msvc{VS平台}\plugins的platforms目录完整拷贝到生成的bin目录下。</p>
-</blockquote>
+	<h3 id="1源码安装source">1、<a href="./source/">源码安装</a></h3>
+<p>源码安装使用Visual Studio进行编译，使用C++语言，可对源代码进行修改。</p>
+<h3 id="2二进制安装binary">2、<a href="./binary/">二进制安装</a></h3>
+<p>二进制安装使用pip安装，使用python语言，可以创建自己的场景，无法对源代码进行修改。</p>
 
 
 
@@ -3212,6 +3184,24 @@ NoGPU模式示例较少，<strong>推荐用户使用CUDA模式进行学习</stro
 
                     
                     
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
                     
 
                     
@@ -3223,8 +3213,24 @@ NoGPU模式示例较少，<strong>推荐用户使用CUDA模式进行学习</stro
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -4678,7 +4684,7 @@ NoGPU模式示例较少，<strong>推荐用户使用CUDA模式进行学习</stro
 			<a class="nav nav-prev" href="/zh/installation/" title="安装指引"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/zh/installation/linux/" title="Linux平台安装" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/zh/installation/window/source/" title="Windows平台源码安装" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -4688,16 +4694,16 @@ NoGPU模式示例较少，<strong>推荐用户使用CUDA模式进行学习</stro
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1694446248"></script>
-    <script src="/js/perfect-scrollbar.min.js?1694446248"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1694446248"></script>
-    <script src="/js/jquery.sticky.js?1694446248"></script>
-    <script src="/js/featherlight.min.js?1694446248"></script>
-    <script src="/js/highlight.pack.js?1694446248"></script>
+    <script src="/js/clipboard.min.js?1719408426"></script>
+    <script src="/js/perfect-scrollbar.min.js?1719408426"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1719408426"></script>
+    <script src="/js/jquery.sticky.js?1719408426"></script>
+    <script src="/js/featherlight.min.js?1719408426"></script>
+    <script src="/js/highlight.pack.js?1719408426"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1694446248"></script>
-    <script src="/js/learn.js?1694446248"></script>
-    <script src="/js/hugo-learn.js?1694446248"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1719408426"></script>
+    <script src="/js/learn.js?1719408426"></script>
+    <script src="/js/hugo-learn.js?1719408426"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
