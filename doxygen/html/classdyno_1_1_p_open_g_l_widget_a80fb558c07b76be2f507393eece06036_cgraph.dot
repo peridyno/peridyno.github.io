@@ -29,4 +29,6 @@ digraph "dyno::POpenGLWidget::mouseMoveEvent"
   Node11 -> Node6 [id="edge11_Node000011_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node11 -> Node12 [id="edge12_Node000011_Node000012",color="steelblue1",style="solid",tooltip=" "];
   Node12 [id="Node000012",label="dyno::PSimulationThread\l::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1",tooltip=" "];
+  Node12 -> Node13 [id="edge13_Node000012_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="dyno::PSimulationThread\l::PSimulationThread",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#af8a98174b18d5f7895c5f0f40015f106",tooltip=" "];
 }

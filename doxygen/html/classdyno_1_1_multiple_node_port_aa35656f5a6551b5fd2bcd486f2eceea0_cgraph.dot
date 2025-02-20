@@ -16,4 +16,6 @@ digraph "dyno::MultipleNodePort::~MultipleNodePort"
   Node5 [id="Node000005",label="dyno::FormatConnectionInfo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#ab0875130926015cab38080dde55df03b",tooltip=" "];
   Node4 -> Node6 [id="edge5_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="dyno::Log::sendMessage",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28",tooltip="Add a new message to log."];
+  Node4 -> Node7 [id="edge6_Node000004_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="dyno::Node::setVisible",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#ac8d11214a0508e24421095c5f9067421",tooltip="Set the visibility of context."];
 }

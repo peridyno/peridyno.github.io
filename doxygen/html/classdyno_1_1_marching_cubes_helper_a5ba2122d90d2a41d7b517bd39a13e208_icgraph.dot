@@ -7,5 +7,7 @@ digraph "dyno::MarchingCubesHelper::reconstructSDF"
   rankdir="RL";
   Node1 [id="Node000001",label="dyno::MarchingCubesHelper\l::reconstructSDF",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="dyno::MarchingCubes\l::constructSurfaceMesh",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_marching_cubes.html#aa84e838e1a86c7621ce4157206b96787",tooltip=" "];
+  Node2 [id="Node000002",label="dyno::VolumeToTriangleSet\l::apply",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_volume_to_triangle_set.html#affecf8b33f2354ca7f7609f88c6f6ec9",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::MarchingCubes\l::constructSurfaceMesh",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_marching_cubes.html#aa84e838e1a86c7621ce4157206b96787",tooltip=" "];
 }

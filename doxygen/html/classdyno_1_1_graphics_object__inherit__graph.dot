@@ -11,9 +11,9 @@ digraph "dyno::GraphicsObject"
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="dyno::Buffer",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_buffer.html",tooltip=" "];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="dyno::XBuffer\< dyno\l::Vector \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_x_buffer.html",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::XBuffer\< dyno\l::Transform \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_x_buffer.html",tooltip=" "];
   Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="dyno::XBuffer\< dyno\l::Transform \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_x_buffer.html",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::XBuffer\< dyno\l::Vector \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_x_buffer.html",tooltip=" "];
   Node3 -> Node6 [id="edge5_Node000003_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="dyno::XBuffer\< dyno\l::VectorND \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_x_buffer.html",tooltip=" "];
   Node3 -> Node7 [id="edge6_Node000003_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];

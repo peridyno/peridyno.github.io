@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/PropertyItem/WRealFieldWidget.cpp Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/PropertyItem/WRealFieldWidget.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_0a5d901ffa28d51286754f85d80379d0.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_7c8c8fba1a70356d35ffd4eeee2587ef.html">GUI</a></li><li class="navelem"><a class="el" href="dir_9d4ed144c0d47ef8c339425ff50f3c87.html">WtGUI</a></li><li class="navelem"><a class="el" href="dir_098755c934bd19d784a126bfc5285f32.html">PropertyItem</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_764a12c72bc3d9052d5e3ebe390f3c27.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_1142aa39e27f489476c1eb847f941055.html">GUI</a></li><li class="navelem"><a class="el" href="dir_d454f63ba1ea8efc3be97506fd960495.html">WtGUI</a></li><li class="navelem"><a class="el" href="dir_5c0ecdc67b3ba983bad112128dea3efe.html">PropertyItem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -142,25 +142,28 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">dyno::FVar&lt;float&gt;</a>* f = TypeInfo::cast&lt;dyno::FVar&lt;float&gt;&gt;(<a class="code hl_variable" href="class_w_real_field_widget.html#a5456ca540f67b6c6c916bf5ab1200493">mfield</a>);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        f-&gt;setValue((<span class="keywordtype">float</span>)v);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        f-&gt;update();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (template_name == std::string(<span class="keyword">typeid</span>(<span class="keywordtype">double</span>).name()))</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">dyno::FVar&lt;double&gt;</a>* f = TypeInfo::cast&lt;dyno::FVar&lt;double&gt;&gt;(<a class="code hl_variable" href="class_w_real_field_widget.html#a5456ca540f67b6c6c916bf5ab1200493">mfield</a>);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        f-&gt;setValue(v);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        f-&gt;update();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    };</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_variable" href="class_w_real_field_widget.html#a2e5b476f5e39c5d89711a1a5a7f365c1">changeValue_</a>.emit(1);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (template_name == std::string(<span class="keyword">typeid</span>(<span class="keywordtype">double</span>).name()))</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">dyno::FVar&lt;double&gt;</a>* f = TypeInfo::cast&lt;dyno::FVar&lt;double&gt;&gt;(<a class="code hl_variable" href="class_w_real_field_widget.html#a5456ca540f67b6c6c916bf5ab1200493">mfield</a>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        f-&gt;setValue(v);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        f-&gt;update();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_variable" href="class_w_real_field_widget.html#a2e5b476f5e39c5d89711a1a5a7f365c1">changeValue_</a>.emit(1);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    };</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 </div>
 <div class="ttc" id="a_w_real_field_widget_8h_html"><div class="ttname"><a href="_w_real_field_widget_8h.html">WRealFieldWidget.h</a></div></div>
 <div class="ttc" id="aclass_w_real_field_widget_html_a251a5cec9273466aea2905b070af4c34"><div class="ttname"><a href="class_w_real_field_widget.html#a251a5cec9273466aea2905b070af4c34">WRealFieldWidget::setValue</a></div><div class="ttdeci">void setValue(dyno::FBase *field)</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8cpp_source.html#l00020">WRealFieldWidget.cpp:20</a></div></div>
-<div class="ttc" id="aclass_w_real_field_widget_html_a5456ca540f67b6c6c916bf5ab1200493"><div class="ttname"><a href="class_w_real_field_widget.html#a5456ca540f67b6c6c916bf5ab1200493">WRealFieldWidget::mfield</a></div><div class="ttdeci">dyno::FBase * mfield</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00036">WRealFieldWidget.h:36</a></div></div>
+<div class="ttc" id="aclass_w_real_field_widget_html_a2e5b476f5e39c5d89711a1a5a7f365c1"><div class="ttname"><a href="class_w_real_field_widget.html#a2e5b476f5e39c5d89711a1a5a7f365c1">WRealFieldWidget::changeValue_</a></div><div class="ttdeci">Wt::Signal&lt; int &gt; changeValue_</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00046">WRealFieldWidget.h:46</a></div></div>
+<div class="ttc" id="aclass_w_real_field_widget_html_a5456ca540f67b6c6c916bf5ab1200493"><div class="ttname"><a href="class_w_real_field_widget.html#a5456ca540f67b6c6c916bf5ab1200493">WRealFieldWidget::mfield</a></div><div class="ttdeci">dyno::FBase * mfield</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00041">WRealFieldWidget.h:41</a></div></div>
 <div class="ttc" id="aclass_w_real_field_widget_html_a54c9c7545f1b48d8ae8730bd4df4d029"><div class="ttname"><a href="class_w_real_field_widget.html#a54c9c7545f1b48d8ae8730bd4df4d029">WRealFieldWidget::~WRealFieldWidget</a></div><div class="ttdeci">~WRealFieldWidget()</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8cpp_source.html#l00016">WRealFieldWidget.cpp:16</a></div></div>
-<div class="ttc" id="aclass_w_real_field_widget_html_a84dba103f5f1e7d4d8b303e08a1200f8"><div class="ttname"><a href="class_w_real_field_widget.html#a84dba103f5f1e7d4d8b303e08a1200f8">WRealFieldWidget::mFloatField</a></div><div class="ttdeci">dyno::FVar&lt; float &gt; * mFloatField</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00039">WRealFieldWidget.h:39</a></div></div>
+<div class="ttc" id="aclass_w_real_field_widget_html_a84dba103f5f1e7d4d8b303e08a1200f8"><div class="ttname"><a href="class_w_real_field_widget.html#a84dba103f5f1e7d4d8b303e08a1200f8">WRealFieldWidget::mFloatField</a></div><div class="ttdeci">dyno::FVar&lt; float &gt; * mFloatField</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00044">WRealFieldWidget.h:44</a></div></div>
 <div class="ttc" id="aclass_w_real_field_widget_html_a97466e83a9fbe8095c77e79f1b933b7c"><div class="ttname"><a href="class_w_real_field_widget.html#a97466e83a9fbe8095c77e79f1b933b7c">WRealFieldWidget::updateField</a></div><div class="ttdeci">void updateField()</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8cpp_source.html#l00045">WRealFieldWidget.cpp:45</a></div></div>
-<div class="ttc" id="aclass_w_real_field_widget_html_a982efa15e1d55d65e4446e548d95c6bc"><div class="ttname"><a href="class_w_real_field_widget.html#a982efa15e1d55d65e4446e548d95c6bc">WRealFieldWidget::mData</a></div><div class="ttdeci">Wt::WDoubleSpinBox * mData</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00038">WRealFieldWidget.h:38</a></div></div>
-<div class="ttc" id="aclass_w_real_field_widget_html_abf704e2c93f6afdb168dcfe2bd7282db"><div class="ttname"><a href="class_w_real_field_widget.html#abf704e2c93f6afdb168dcfe2bd7282db">WRealFieldWidget::mDoubleField</a></div><div class="ttdeci">dyno::FVar&lt; double &gt; * mDoubleField</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00040">WRealFieldWidget.h:40</a></div></div>
+<div class="ttc" id="aclass_w_real_field_widget_html_a982efa15e1d55d65e4446e548d95c6bc"><div class="ttname"><a href="class_w_real_field_widget.html#a982efa15e1d55d65e4446e548d95c6bc">WRealFieldWidget::mData</a></div><div class="ttdeci">Wt::WDoubleSpinBox * mData</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00043">WRealFieldWidget.h:43</a></div></div>
+<div class="ttc" id="aclass_w_real_field_widget_html_abf704e2c93f6afdb168dcfe2bd7282db"><div class="ttname"><a href="class_w_real_field_widget.html#abf704e2c93f6afdb168dcfe2bd7282db">WRealFieldWidget::mDoubleField</a></div><div class="ttdeci">dyno::FVar&lt; double &gt; * mDoubleField</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00045">WRealFieldWidget.h:45</a></div></div>
 <div class="ttc" id="aclass_w_real_field_widget_html_aea177f631ea3fdca2289f3fc283342e9"><div class="ttname"><a href="class_w_real_field_widget.html#aea177f631ea3fdca2289f3fc283342e9">WRealFieldWidget::WRealFieldWidget</a></div><div class="ttdeci">WRealFieldWidget(dyno::FBase *)</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8cpp_source.html#l00003">WRealFieldWidget.cpp:3</a></div></div>
-<div class="ttc" id="aclass_w_real_field_widget_html_af3dc7633b274682d070de78769dbbf78"><div class="ttname"><a href="class_w_real_field_widget.html#af3dc7633b274682d070de78769dbbf78">WRealFieldWidget::layout</a></div><div class="ttdeci">Wt::WHBoxLayout * layout</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00037">WRealFieldWidget.h:37</a></div></div>
+<div class="ttc" id="aclass_w_real_field_widget_html_af3dc7633b274682d070de78769dbbf78"><div class="ttname"><a href="class_w_real_field_widget.html#af3dc7633b274682d070de78769dbbf78">WRealFieldWidget::layout</a></div><div class="ttdeci">Wt::WHBoxLayout * layout</div><div class="ttdef"><b>Definition</b> <a href="_w_real_field_widget_8h_source.html#l00042">WRealFieldWidget.h:42</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_map_html"><div class="ttname"><a href="classdyno_1_1_array_map.html">dyno::ArrayMap</a></div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00025">ArrayMap.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_base_html"><div class="ttname"><a href="classdyno_1_1_f_base.html">dyno::FBase</a></div><div class="ttdef"><b>Definition</b> <a href="_f_base_8h_source.html#l00043">FBase.h:44</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_base_html_a751d22e6e218a65ccc35783801d09308"><div class="ttname"><a href="classdyno_1_1_f_base.html#a751d22e6e218a65ccc35783801d09308">dyno::FBase::getTemplateName</a></div><div class="ttdeci">virtual const std::string getTemplateName()</div><div class="ttdef"><b>Definition</b> <a href="_f_base_8h_source.html#l00051">FBase.h:51</a></div></div>

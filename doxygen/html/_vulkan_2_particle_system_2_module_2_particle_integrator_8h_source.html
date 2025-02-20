@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/Vulkan/ParticleSystem/Module/ParticleIntegrator.h Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Dynamics/Vulkan/ParticleSystem/Module/ParticleIntegrator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_b1dd8262fb528f038dc3255082207646.html">Vulkan</a></li><li class="navelem"><a class="el" href="dir_8d7f25e4c9ff9e8d07cd13e1127a464e.html">ParticleSystem</a></li><li class="navelem"><a class="el" href="dir_2810ef5b2006a2a7fcf58808ed396893.html">Module</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_fd8f3ed6aa4978ca948e4e53f2ea17ff.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_d72a75ea03dac58a84081306d01c8920.html">Vulkan</a></li><li class="navelem"><a class="el" href="dir_78c312e7126f77af8bcd46d42b566ca0.html">ParticleSystem</a></li><li class="navelem"><a class="el" href="dir_0dcf028596c00175f46c0b912a99c6bc.html">Module</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -83,7 +83,7 @@ $(document).ready(function() { init_codefold(0); });
 </div><!--header-->
 <div class="contents">
 <a href="_vulkan_2_particle_system_2_module_2_particle_integrator_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_numerical_integrator_8h.html">Module/NumericalIntegrator.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;Module/NumericalIntegrator.h&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
@@ -104,22 +104,21 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classdyno_1_1_particle_integrator.html#af1de16c9401f10c07423678dba44ceb5">   28</a></span>        <a class="code hl_function" href="classdyno_1_1_particle_integrator.html#af1de16c9401f10c07423678dba44ceb5">DEF_ARRAY_IN</a>(<a class="code hl_class" href="classdyno_1_1_vector.html">Vec3f</a>, <a class="code hl_class" href="classdyno_1_1_array_map.html">Velocity</a>, DeviceType::GPU, <span class="stringliteral">&quot;Particle velocity&quot;</span>);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classdyno_1_1_particle_integrator.html#a4d5711ee89cdc824a4eca0890a47edfa">   31</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_particle_integrator.html#a4d5711ee89cdc824a4eca0890a47edfa">updateImpl</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_particle_integrator.html#a4d5711ee89cdc824a4eca0890a47edfa">updateImpl</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    };</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
-<div class="ttc" id="a_numerical_integrator_8h_html"><div class="ttname"><a href="_numerical_integrator_8h.html">NumericalIntegrator.h</a></div></div>
 <div class="ttc" id="a_object_8h_html_a3b131c7f347617d57ae845e1a94e7db0"><div class="ttname"><a href="_object_8h.html#a3b131c7f347617d57ae845e1a94e7db0">DECLARE_CLASS</a></div><div class="ttdeci">#define DECLARE_CLASS(name)</div><div class="ttdef"><b>Definition</b> <a href="_object_8h_source.html#l00065">Object.h:65</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_map_html"><div class="ttname"><a href="classdyno_1_1_array_map.html">dyno::ArrayMap</a></div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00025">ArrayMap.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_particle_integrator_html_a00d4c22c7d26e326ed6e745ce096f543"><div class="ttname"><a href="classdyno_1_1_particle_integrator.html#a00d4c22c7d26e326ed6e745ce096f543">dyno::ParticleIntegrator::~ParticleIntegrator</a></div><div class="ttdeci">~ParticleIntegrator() override</div><div class="ttdef"><b>Definition</b> <a href="_vulkan_2_particle_system_2_module_2_particle_integrator_8h_source.html#l00012">ParticleIntegrator.h:12</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_particle_integrator_html_a16ca0eea04843fe5b5a881288fec983c"><div class="ttname"><a href="classdyno_1_1_particle_integrator.html#a16ca0eea04843fe5b5a881288fec983c">dyno::ParticleIntegrator::ParticleIntegrator</a></div><div class="ttdeci">ParticleIntegrator()</div><div class="ttdef"><b>Definition</b> <a href="_particle_integrator_8cpp_source.html#l00014">ParticleIntegrator.cpp:14</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_particle_integrator_html_a4d5711ee89cdc824a4eca0890a47edfa"><div class="ttname"><a href="classdyno_1_1_particle_integrator.html#a4d5711ee89cdc824a4eca0890a47edfa">dyno::ParticleIntegrator::updateImpl</a></div><div class="ttdeci">void updateImpl() override</div></div>
+<div class="ttc" id="aclassdyno_1_1_particle_integrator_html_a4d5711ee89cdc824a4eca0890a47edfa"><div class="ttname"><a href="classdyno_1_1_particle_integrator.html#a4d5711ee89cdc824a4eca0890a47edfa">dyno::ParticleIntegrator::updateImpl</a></div><div class="ttdeci">void updateImpl() override</div><div class="ttdef"><b>Definition</b> <a href="_particle_integrator_8cpp_source.html#l00029">ParticleIntegrator.cpp:29</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_particle_integrator_html_a8200df658d92014634a08a4b3440301f"><div class="ttname"><a href="classdyno_1_1_particle_integrator.html#a8200df658d92014634a08a4b3440301f">dyno::ParticleIntegrator::DEF_VAR_IN</a></div><div class="ttdeci">DEF_VAR_IN(float, TimeStep, &quot;Time step size&quot;)</div></div>
 <div class="ttc" id="aclassdyno_1_1_particle_integrator_html_af1de16c9401f10c07423678dba44ceb5"><div class="ttname"><a href="classdyno_1_1_particle_integrator.html#af1de16c9401f10c07423678dba44ceb5">dyno::ParticleIntegrator::DEF_ARRAY_IN</a></div><div class="ttdeci">DEF_ARRAY_IN(Vec3f, Velocity, DeviceType::GPU, &quot;Particle velocity&quot;)</div><div class="ttdoc">Velocity Particle velocity.</div></div>
 <div class="ttc" id="aclassdyno_1_1_particle_integrator_html_afe29095cdbc8341c362b37fcd72f87d5"><div class="ttname"><a href="classdyno_1_1_particle_integrator.html#afe29095cdbc8341c362b37fcd72f87d5">dyno::ParticleIntegrator::DEF_ARRAY_IN</a></div><div class="ttdeci">DEF_ARRAY_IN(Vec3f, Position, DeviceType::GPU, &quot;Particle position&quot;)</div><div class="ttdoc">Position Particle position.</div></div>
 <div class="ttc" id="aclassdyno_1_1_vector_html"><div class="ttname"><a href="classdyno_1_1_vector.html">dyno::Vector&lt; float, 3 &gt;</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

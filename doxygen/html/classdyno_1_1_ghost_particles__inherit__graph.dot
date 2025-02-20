@@ -14,4 +14,6 @@ digraph "dyno::GhostParticles&lt; TDataType &gt;"
   Node5 -> Node4 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node5 [id="Node000005",label="dyno::Object",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_object.html",tooltip=" "];
   Node3 -> Node2 [id="edge5_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge6_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="dyno::MakeGhostParticles\l\< TDataType \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_make_ghost_particles.html",tooltip=" "];
 }

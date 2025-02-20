@@ -12,4 +12,6 @@ digraph "dyno::PAnimationWidget::totalFrameChanged"
   Node3 [id="Node000003",label="dyno::SceneGraphFactory\l::SceneGraphFactory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad",tooltip=" "];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="dyno::PSimulationThread\l::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1",tooltip=" "];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::PSimulationThread\l::PSimulationThread",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#af8a98174b18d5f7895c5f0f40015f106",tooltip=" "];
 }

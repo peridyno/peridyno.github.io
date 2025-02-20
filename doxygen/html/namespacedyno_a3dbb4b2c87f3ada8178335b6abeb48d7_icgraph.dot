@@ -38,4 +38,8 @@ digraph "dyno::FormatFieldWidgetName"
   Node16 [id="Node000016",label="dyno::QVector3iFieldWidget\l::QVector3iFieldWidget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vector3i_field_widget.html#a5ca4fa3bc971b51a5acf5f61765739fe",tooltip=" "];
   Node1 -> Node17 [id="edge16_Node000001_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node17 [id="Node000017",label="dyno::QVectorIntFieldWidget\l::QVectorIntFieldWidget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vector_int_field_widget.html#a141c032aac0571dd390f904f7166002e",tooltip=" "];
+  Node1 -> Node18 [id="edge17_Node000001_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="dyno::QVectorTransform3Field\lWidget::QVectorTransform3FieldWidget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vector_transform3_field_widget.html#a618541b4be8818da33ac1767f3243bb6",tooltip=" "];
+  Node1 -> Node19 [id="edge18_Node000001_Node000019",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="dyno::QVehicleInfoWidget\l::QVehicleInfoWidget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vehicle_info_widget.html#af9b2883fa34da0961ef1fd2f794c5b1a",tooltip=" "];
 }

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/Cuda/ParticleSystem/GhostParticles.cpp Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Dynamics/Cuda/ParticleSystem/GhostParticles.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_fcf8d9b41703035e4148e841d5c3507a.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_65fb2e8a253d28dcb68ae0b7ae7bc9d9.html">ParticleSystem</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_fd8f3ed6aa4978ca948e4e53f2ea17ff.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_5b6078a30aa2f816f8ccd07bd3a8bd2d.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_5112e9c65d410148830e991585b68117.html">ParticleSystem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,44 +84,58 @@ $(document).ready(function() { init_codefold(0); });
 <div class="contents">
 <a href="_ghost_particles_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_ghost_particles_8h.html">GhostParticles.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>{</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>    <span class="comment">//IMPLEMENT_TCLASS(GhostParticles, TDataType)</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classdyno_1_1_ghost_particles.html#a534bc03d77ae1adf8aca02b4a266f26f">    8</a></span>    <a class="code hl_function" href="classdyno_1_1_ghost_particles.html#a534bc03d77ae1adf8aca02b4a266f26f">GhostParticles&lt;TDataType&gt;::GhostParticles</a>()</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        : <a class="code hl_class" href="classdyno_1_1_particle_system.html">ParticleSystem</a>&lt;<a class="code hl_class" href="classdyno_1_1_array_map.html">TDataType</a>&gt;()</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    }</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_g_l_point_visual_module_8h.html">GLPointVisualModule.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">//IMPLEMENT_TCLASS(GhostParticles, TDataType)</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classdyno_1_1_ghost_particles.html#a534bc03d77ae1adf8aca02b4a266f26f">   10</a></span>    <a class="code hl_function" href="classdyno_1_1_ghost_particles.html#a534bc03d77ae1adf8aca02b4a266f26f">GhostParticles&lt;TDataType&gt;::GhostParticles</a>()</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        : <a class="code hl_class" href="classdyno_1_1_particle_system.html">ParticleSystem</a>&lt;<a class="code hl_class" href="classdyno_1_1_array_map.html">TDataType</a>&gt;()</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">auto</span> <a class="code hl_class" href="classdyno_1_1_array_map.html">ghostRender</a> = std::make_shared&lt;GLPointVisualModule&gt;();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">ghostRender</a>-&gt;setColor(<a class="code hl_class" href="classdyno_1_1_color.html">Color</a>(1, 0.5, 0));</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">ghostRender</a>-&gt;setColorMapMode(GLPointVisualModule::PER_OBJECT_SHADER);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">statePointSet</a>()-&gt;connect(<a class="code hl_class" href="classdyno_1_1_array_map.html">ghostRender</a>-&gt;inPointSet());</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(<a class="code hl_class" href="classdyno_1_1_array_map.html">ghostRender</a>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
 </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classdyno_1_1_ghost_particles.html#ae25dae74c140818cfd3e2a8c637be5a4">   14</a></span>    <a class="code hl_function" href="classdyno_1_1_ghost_particles.html#ae25dae74c140818cfd3e2a8c637be5a4">GhostParticles&lt;TDataType&gt;::~GhostParticles</a>()</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classdyno_1_1_ghost_particles.html#ae25dae74c140818cfd3e2a8c637be5a4">   23</a></span>    <a class="code hl_function" href="classdyno_1_1_ghost_particles.html#ae25dae74c140818cfd3e2a8c637be5a4">GhostParticles&lt;TDataType&gt;::~GhostParticles</a>()</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
 </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classdyno_1_1_ghost_particles.html#a43b170d08a7d2c20963122527f72fb20">   19</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_ghost_particles.html#a43b170d08a7d2c20963122527f72fb20">GhostParticles&lt;TDataType&gt;::resetStates</a>()</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        this-&gt;updateTopology();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classdyno_1_1_ghost_particles.html#a43b170d08a7d2c20963122527f72fb20">   28</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_ghost_particles.html#a43b170d08a7d2c20963122527f72fb20">GhostParticles&lt;TDataType&gt;::resetStates</a>()</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_function" href="classdyno_1_1_particle_system.html#a1647be2184acdeb7e7f7e0d5e5980ceb">ParticleSystem&lt;TDataType&gt;::resetStates</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespacedyno.html#a9c7f526afd0c141efbf87071fd27a2d0">   24</a></span>    <a class="code hl_define" href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_ghost_particles.html">GhostParticles</a>);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespacedyno.html#a9c7f526afd0c141efbf87071fd27a2d0">   33</a></span>    <a class="code hl_define" href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_ghost_particles.html">GhostParticles</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
+<div class="ttc" id="a_g_l_point_visual_module_8h_html"><div class="ttname"><a href="_g_l_point_visual_module_8h.html">GLPointVisualModule.h</a></div></div>
 <div class="ttc" id="a_ghost_particles_8h_html"><div class="ttname"><a href="_ghost_particles_8h.html">GhostParticles.h</a></div></div>
 <div class="ttc" id="a_object_8h_html_a71c43943296af027d72de263f0f40d27"><div class="ttname"><a href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a></div><div class="ttdeci">#define DEFINE_CLASS(name)</div><div class="ttdef"><b>Definition</b> <a href="_object_8h_source.html#l00140">Object.h:140</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_map_html"><div class="ttname"><a href="classdyno_1_1_array_map.html">dyno::ArrayMap</a></div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00025">ArrayMap.h:25</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_color_html"><div class="ttname"><a href="classdyno_1_1_color.html">dyno::Color</a></div><div class="ttdef"><b>Definition</b> <a href="_core_2_color_8h_source.html#l00006">Color.h:7</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_ghost_particles_html"><div class="ttname"><a href="classdyno_1_1_ghost_particles.html">dyno::GhostParticles</a></div><div class="ttdef"><b>Definition</b> <a href="_ghost_particles_8h_source.html#l00008">GhostParticles.h:9</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_ghost_particles_html_a43b170d08a7d2c20963122527f72fb20"><div class="ttname"><a href="classdyno_1_1_ghost_particles.html#a43b170d08a7d2c20963122527f72fb20">dyno::GhostParticles::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition</b> <a href="_ghost_particles_8cpp_source.html#l00019">GhostParticles.cpp:19</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_ghost_particles_html_a534bc03d77ae1adf8aca02b4a266f26f"><div class="ttname"><a href="classdyno_1_1_ghost_particles.html#a534bc03d77ae1adf8aca02b4a266f26f">dyno::GhostParticles::GhostParticles</a></div><div class="ttdeci">GhostParticles()</div><div class="ttdef"><b>Definition</b> <a href="_ghost_particles_8cpp_source.html#l00008">GhostParticles.cpp:8</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_ghost_particles_html_ae25dae74c140818cfd3e2a8c637be5a4"><div class="ttname"><a href="classdyno_1_1_ghost_particles.html#ae25dae74c140818cfd3e2a8c637be5a4">dyno::GhostParticles::~GhostParticles</a></div><div class="ttdeci">~GhostParticles() override</div><div class="ttdef"><b>Definition</b> <a href="_ghost_particles_8cpp_source.html#l00014">GhostParticles.cpp:14</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_ghost_particles_html_a43b170d08a7d2c20963122527f72fb20"><div class="ttname"><a href="classdyno_1_1_ghost_particles.html#a43b170d08a7d2c20963122527f72fb20">dyno::GhostParticles::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition</b> <a href="_ghost_particles_8cpp_source.html#l00028">GhostParticles.cpp:28</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_ghost_particles_html_a534bc03d77ae1adf8aca02b4a266f26f"><div class="ttname"><a href="classdyno_1_1_ghost_particles.html#a534bc03d77ae1adf8aca02b4a266f26f">dyno::GhostParticles::GhostParticles</a></div><div class="ttdeci">GhostParticles()</div><div class="ttdef"><b>Definition</b> <a href="_ghost_particles_8cpp_source.html#l00010">GhostParticles.cpp:10</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_ghost_particles_html_ae25dae74c140818cfd3e2a8c637be5a4"><div class="ttname"><a href="classdyno_1_1_ghost_particles.html#ae25dae74c140818cfd3e2a8c637be5a4">dyno::GhostParticles::~GhostParticles</a></div><div class="ttdeci">~GhostParticles() override</div><div class="ttdef"><b>Definition</b> <a href="_ghost_particles_8cpp_source.html#l00023">GhostParticles.cpp:23</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00320">Node.cpp:320</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_particle_system_html"><div class="ttname"><a href="classdyno_1_1_particle_system.html">dyno::ParticleSystem</a></div><div class="ttdoc">This class represents the base class for more advanced particle-based nodes.</div><div class="ttdef"><b>Definition</b> <a href="_cuda_2_particle_system_2_particle_system_8h_source.html#l00013">ParticleSystem.h:14</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_particle_system_html_a1647be2184acdeb7e7f7e0d5e5980ceb"><div class="ttname"><a href="classdyno_1_1_particle_system.html#a1647be2184acdeb7e7f7e0d5e5980ceb">dyno::ParticleSystem::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition</b> <a href="_cuda_2_particle_system_2_particle_system_8cpp_source.html#l00027">ParticleSystem.cpp:27</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00082">ArrayMap.inl:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

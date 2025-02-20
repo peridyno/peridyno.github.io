@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Rendering/GUI/QtGUI/PropertyItem/QFieldWidget.cpp Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Rendering/GUI/QtGUI/PropertyItem/QFieldWidget.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_0a5d901ffa28d51286754f85d80379d0.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_7c8c8fba1a70356d35ffd4eeee2587ef.html">GUI</a></li><li class="navelem"><a class="el" href="dir_af00aece75277a420b018e3962e11baa.html">QtGUI</a></li><li class="navelem"><a class="el" href="dir_f39f7b9db6741c79299a30b4a5971539.html">PropertyItem</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_764a12c72bc3d9052d5e3ebe390f3c27.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_1142aa39e27f489476c1eb847f941055.html">GUI</a></li><li class="navelem"><a class="el" href="dir_3eee2bdbe428b00776105791c453f4fc.html">QtGUI</a></li><li class="navelem"><a class="el" href="dir_1f1f937206032e64d73d51ecf3cda198.html">PropertyItem</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -112,48 +112,55 @@ $(document).ready(function() { init_codefold(0); });
 <div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classdyno_1_1_q_field_widget.html#a56a62565fd4adaa8fdb8a274c133b2cc">   26</a></span>    <a class="code hl_function" href="classdyno_1_1_q_field_widget.html#a56a62565fd4adaa8fdb8a274c133b2cc">QFieldWidget::~QFieldWidget</a>()</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classdyno_1_1_q_field_widget.html#a580eba37724ad566cb2c212388b48811">mField</a> != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_variable" href="classdyno_1_1_q_field_widget.html#a580eba37724ad566cb2c212388b48811">mField</a>-&gt;<a class="code hl_function" href="classdyno_1_1_f_base.html#a73f47c9cf6ec0adad790ff02b0c66f44">detach</a>(<a class="code hl_variable" href="classdyno_1_1_q_field_widget.html#a6f321650a7e6c790bcfdbb5551aeaa03">callback</a>);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_q_field_widget.html#a8def9f2552945535898acfd81136fbc7">clearCallBackFunc</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classdyno_1_1_q_field_widget.html#afdb856055f193465195c387d6161ac52">   33</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_q_field_widget.html#afdb856055f193465195c387d6161ac52">QFieldWidget::syncValueFromField</a>()</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">auto</span> node = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classdyno_1_1_node.html">Node</a>*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classdyno_1_1_q_field_widget.html#a580eba37724ad566cb2c212388b48811">mField</a>-&gt;<a class="code hl_function" href="classdyno_1_1_f_base.html#a08c738d00eb98bf68af352c6eb7a2d4f">parent</a>());</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">if</span> (node != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            node-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a7a74700d644f14ebc0f155add4619830">updateGraphicsContext</a>();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">emit</a> <a class="code hl_signal" href="classdyno_1_1_q_field_widget.html#a9adabca8f0506d375afc8ba760ba7525">fieldChanged</a>();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classdyno_1_1_q_field_widget.html#a8def9f2552945535898acfd81136fbc7">   31</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_q_field_widget.html#a8def9f2552945535898acfd81136fbc7">QFieldWidget::clearCallBackFunc</a>()</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="classdyno_1_1_q_field_widget.html#a580eba37724ad566cb2c212388b48811">mField</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_variable" href="classdyno_1_1_q_field_widget.html#a580eba37724ad566cb2c212388b48811">mField</a>-&gt;<a class="code hl_function" href="classdyno_1_1_f_base.html#a73f47c9cf6ec0adad790ff02b0c66f44">detach</a>(<a class="code hl_variable" href="classdyno_1_1_q_field_widget.html#a6f321650a7e6c790bcfdbb5551aeaa03">callback</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classdyno_1_1_q_field_widget.html#afdb856055f193465195c387d6161ac52">   38</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_q_field_widget.html#afdb856055f193465195c387d6161ac52">QFieldWidget::syncValueFromField</a>()</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">auto</span> node = <span class="keyword">dynamic_cast&lt;</span><a class="code hl_class" href="classdyno_1_1_node.html">Node</a>*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="classdyno_1_1_q_field_widget.html#a580eba37724ad566cb2c212388b48811">mField</a>-&gt;<a class="code hl_function" href="classdyno_1_1_f_base.html#a08c738d00eb98bf68af352c6eb7a2d4f">parent</a>());</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">if</span> (node != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            node-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a7a74700d644f14ebc0f155add4619830">updateGraphicsContext</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        emit <a class="code hl_signal" href="classdyno_1_1_q_field_widget.html#a9adabca8f0506d375afc8ba760ba7525">fieldChanged</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="ttc" id="a_field_8h_html"><div class="ttname"><a href="_field_8h.html">Field.h</a></div></div>
 <div class="ttc" id="a_module_8h_html"><div class="ttname"><a href="_module_8h.html">Module.h</a></div></div>
 <div class="ttc" id="a_node_8h_html"><div class="ttname"><a href="_node_8h.html">Node.h</a></div></div>
 <div class="ttc" id="a_q_field_widget_8h_html"><div class="ttname"><a href="_q_field_widget_8h.html">QFieldWidget.h</a></div></div>
 <div class="ttc" id="a_scene_graph_factory_8h_html"><div class="ttname"><a href="_scene_graph_factory_8h.html">SceneGraphFactory.h</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_array_map_html"><div class="ttname"><a href="classdyno_1_1_array_map.html">dyno::ArrayMap</a></div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00025">ArrayMap.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_base_html"><div class="ttname"><a href="classdyno_1_1_f_base.html">dyno::FBase</a></div><div class="ttdef"><b>Definition</b> <a href="_f_base_8h_source.html#l00043">FBase.h:44</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_base_html_a08c738d00eb98bf68af352c6eb7a2d4f"><div class="ttname"><a href="classdyno_1_1_f_base.html#a08c738d00eb98bf68af352c6eb7a2d4f">dyno::FBase::parent</a></div><div class="ttdeci">OBase * parent()</div><div class="ttdef"><b>Definition</b> <a href="_f_base_8cpp_source.html#l00041">FBase.cpp:41</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_base_html_a3cd76c7e14b6f771e1c615970207c22c"><div class="ttname"><a href="classdyno_1_1_f_base.html#a3cd76c7e14b6f771e1c615970207c22c">dyno::FBase::attach</a></div><div class="ttdeci">void attach(std::shared_ptr&lt; FCallBackFunc &gt; func)</div><div class="ttdef"><b>Definition</b> <a href="_f_base_8cpp_source.html#l00222">FBase.cpp:222</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_f_base_html_a73f47c9cf6ec0adad790ff02b0c66f44"><div class="ttname"><a href="classdyno_1_1_f_base.html#a73f47c9cf6ec0adad790ff02b0c66f44">dyno::FBase::detach</a></div><div class="ttdeci">void detach(std::shared_ptr&lt; FCallBackFunc &gt; func)</div><div class="ttdef"><b>Definition</b> <a href="_f_base_8cpp_source.html#l00230">FBase.cpp:230</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_html"><div class="ttname"><a href="classdyno_1_1_node.html">dyno::Node</a></div><div class="ttdef"><b>Definition</b> <a href="_node_8h_source.html#l00067">Node.h:68</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_a7a74700d644f14ebc0f155add4619830"><div class="ttname"><a href="classdyno_1_1_node.html#a7a74700d644f14ebc0f155add4619830">dyno::Node::updateGraphicsContext</a></div><div class="ttdeci">void updateGraphicsContext()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00201">Node.cpp:201</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a7a74700d644f14ebc0f155add4619830"><div class="ttname"><a href="classdyno_1_1_node.html#a7a74700d644f14ebc0f155add4619830">dyno::Node::updateGraphicsContext</a></div><div class="ttdeci">void updateGraphicsContext()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00206">Node.cpp:206</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_q_field_widget_html_a2db73767566140e042a2294605b5b7bb"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#a2db73767566140e042a2294605b5b7bb">dyno::QFieldWidget::QFieldWidget</a></div><div class="ttdeci">QFieldWidget()</div><div class="ttdef"><b>Definition</b> <a href="_q_field_widget_8h_source.html#l00070">QFieldWidget.h:70</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_q_field_widget_html_a56a62565fd4adaa8fdb8a274c133b2cc"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#a56a62565fd4adaa8fdb8a274c133b2cc">dyno::QFieldWidget::~QFieldWidget</a></div><div class="ttdeci">virtual ~QFieldWidget()</div><div class="ttdef"><b>Definition</b> <a href="_q_field_widget_8cpp_source.html#l00026">QFieldWidget.cpp:26</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_q_field_widget_html_a580eba37724ad566cb2c212388b48811"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#a580eba37724ad566cb2c212388b48811">dyno::QFieldWidget::mField</a></div><div class="ttdeci">FBase * mField</div><div class="ttdef"><b>Definition</b> <a href="_q_field_widget_8h_source.html#l00082">QFieldWidget.h:82</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_q_field_widget_html_a6f321650a7e6c790bcfdbb5551aeaa03"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#a6f321650a7e6c790bcfdbb5551aeaa03">dyno::QFieldWidget::callback</a></div><div class="ttdeci">std::shared_ptr&lt; FCallBackFunc &gt; callback</div><div class="ttdef"><b>Definition</b> <a href="_q_field_widget_8h_source.html#l00087">QFieldWidget.h:87</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_q_field_widget_html_a580eba37724ad566cb2c212388b48811"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#a580eba37724ad566cb2c212388b48811">dyno::QFieldWidget::mField</a></div><div class="ttdeci">FBase * mField</div><div class="ttdef"><b>Definition</b> <a href="_q_field_widget_8h_source.html#l00085">QFieldWidget.h:85</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_q_field_widget_html_a6f321650a7e6c790bcfdbb5551aeaa03"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#a6f321650a7e6c790bcfdbb5551aeaa03">dyno::QFieldWidget::callback</a></div><div class="ttdeci">std::shared_ptr&lt; FCallBackFunc &gt; callback</div><div class="ttdef"><b>Definition</b> <a href="_q_field_widget_8h_source.html#l00090">QFieldWidget.h:90</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_q_field_widget_html_a782d02aac0902a3ac4813a19e9952499"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#a782d02aac0902a3ac4813a19e9952499">dyno::QFieldWidget::field</a></div><div class="ttdeci">FBase * field()</div><div class="ttdef"><b>Definition</b> <a href="_q_field_widget_8h_source.html#l00074">QFieldWidget.h:74</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_q_field_widget_html_a8def9f2552945535898acfd81136fbc7"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#a8def9f2552945535898acfd81136fbc7">dyno::QFieldWidget::clearCallBackFunc</a></div><div class="ttdeci">void clearCallBackFunc()</div><div class="ttdef"><b>Definition</b> <a href="_q_field_widget_8cpp_source.html#l00031">QFieldWidget.cpp:31</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_q_field_widget_html_a9adabca8f0506d375afc8ba760ba7525"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#a9adabca8f0506d375afc8ba760ba7525">dyno::QFieldWidget::fieldChanged</a></div><div class="ttdeci">void fieldChanged()</div></div>
-<div class="ttc" id="aclassdyno_1_1_q_field_widget_html_afdb856055f193465195c387d6161ac52"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#afdb856055f193465195c387d6161ac52">dyno::QFieldWidget::syncValueFromField</a></div><div class="ttdeci">void syncValueFromField()</div><div class="ttdef"><b>Definition</b> <a href="_q_field_widget_8cpp_source.html#l00033">QFieldWidget.cpp:33</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_q_field_widget_html_afdb856055f193465195c387d6161ac52"><div class="ttname"><a href="classdyno_1_1_q_field_widget.html#afdb856055f193465195c387d6161ac52">dyno::QFieldWidget::syncValueFromField</a></div><div class="ttdeci">void syncValueFromField()</div><div class="ttdef"><b>Definition</b> <a href="_q_field_widget_8cpp_source.html#l00038">QFieldWidget.cpp:38</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

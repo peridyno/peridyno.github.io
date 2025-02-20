@@ -25,6 +25,8 @@ digraph "dyno::calculateIntersectionArea"
   Node8 -> Node9 [id="edge10_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
   Node9 [id="Node000009",label="dyno::polar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#ac5d2551b7bf3e82e743324ebf79c203d",tooltip=" "];
   Node1 -> Node10 [id="edge11_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
-  Node10 [id="Node000010",label="dyno::maximum",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#ace5ae4adfa4b4997bc8604ad790d8f58",tooltip=" "];
-  Node1 -> Node8 [id="edge12_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="dyno::dot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#a4507df9ee65a41a57037f78bebad27eb",tooltip=" "];
+  Node1 -> Node11 [id="edge12_Node000001_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="dyno::maximum",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#ace5ae4adfa4b4997bc8604ad790d8f58",tooltip=" "];
+  Node1 -> Node8 [id="edge13_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
 }

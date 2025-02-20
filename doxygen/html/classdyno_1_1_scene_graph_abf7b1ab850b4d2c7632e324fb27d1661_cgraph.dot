@@ -19,16 +19,11 @@ digraph "dyno::SceneGraph::onKeyboardEvent"
   Node6 -> Node7 [id="edge6_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
   Node7 [id="Node000007",label="dyno::SceneGraph::update\lExecutionQueue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_scene_graph.html#a6b8432d4021b78626b2310004c57a30b",tooltip=" "];
   Node7 -> Node8 [id="edge7_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
-  Node8 [id="Node000008",label="dyno::DFS",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#ab66005c94c46c3177cae0d9732ef91d2",tooltip=" "];
-  Node8 -> Node8 [id="edge8_Node000008_Node000008",color="steelblue1",style="solid",tooltip=" "];
-  Node8 -> Node9 [id="edge9_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
-  Node9 [id="Node000009",label="dyno::Node::getExportNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#ac916b8e66f57d13e7480c7d1459382c4",tooltip=" "];
-  Node8 -> Node10 [id="edge10_Node000008_Node000010",color="steelblue1",style="solid",tooltip=" "];
-  Node10 [id="Node000010",label="dyno::Node::getImportNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#afdb83b6808ac89f1993062575d316e35",tooltip=" "];
-  Node8 -> Node11 [id="edge11_Node000008_Node000011",color="steelblue1",style="solid",tooltip=" "];
-  Node11 [id="Node000011",label="dyno::OBase::getInputFields",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_o_base.html#a67b5d4f1a17f5ccb3d196bc6515243a2",tooltip=" "];
-  Node8 -> Node12 [id="edge12_Node000008_Node000012",color="steelblue1",style="solid",tooltip=" "];
-  Node12 [id="Node000012",label="dyno::OBase::getOutputFields",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5",tooltip=" "];
-  Node8 -> Node13 [id="edge13_Node000008_Node000013",color="steelblue1",style="solid",tooltip=" "];
-  Node13 [id="Node000013",label="dyno::Object::objectId",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8",tooltip=" "];
+  Node8 [id="Node000008",label="dyno::Object::baseId",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_object.html#a1c74670edfee2018cfa434a0a6380ed5",tooltip="Base Id."];
+  Node7 -> Node9 [id="edge8_Node000007_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="dyno::Node::getImportNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#afdb83b6808ac89f1993062575d316e35",tooltip=" "];
+  Node7 -> Node10 [id="edge9_Node000007_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="dyno::OBase::getInputFields",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_o_base.html#a67b5d4f1a17f5ccb3d196bc6515243a2",tooltip=" "];
+  Node7 -> Node11 [id="edge10_Node000007_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="dyno::Object::objectId",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8",tooltip=" "];
 }

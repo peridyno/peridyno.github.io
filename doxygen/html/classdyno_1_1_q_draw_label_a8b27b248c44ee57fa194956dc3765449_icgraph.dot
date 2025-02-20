@@ -9,10 +9,8 @@ digraph "dyno::QDrawLabel::CoordtoField"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="dyno::QDrawLabel::change\lValue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_draw_label.html#a9be2a7cab68e5392d9845b82a92c05ee",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="dyno::QDrawLabel::update\lDataToField",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_draw_label.html#adabb882507f0faa73bfaf0d4e026116e",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::QDrawLabel::update\lDataToField",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_draw_label.html#a270d00de5aff8eafaeff2a215f13d15f",tooltip=" "];
   Node3 -> Node2 [id="edge3_Node000003_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 -> Node4 [id="edge4_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="dyno::QDrawLabel::mouseRelease\lEvent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_draw_label.html#a49659861f4f62ef066de68df944ab31b",tooltip=" "];
-  Node3 -> Node5 [id="edge5_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="dyno::QDrawLabel::paintEvent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_draw_label.html#aa5e948de0da038ae81bd255cd317b893",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::QDrawLabel::paintEvent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_draw_label.html#aa5e948de0da038ae81bd255cd317b893",tooltip=" "];
 }

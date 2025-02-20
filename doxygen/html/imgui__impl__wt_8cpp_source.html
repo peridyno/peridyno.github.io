@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/imgui_impl_wt.cpp Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/imgui_impl_wt.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_0a5d901ffa28d51286754f85d80379d0.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_7c8c8fba1a70356d35ffd4eeee2587ef.html">GUI</a></li><li class="navelem"><a class="el" href="dir_9d4ed144c0d47ef8c339425ff50f3c87.html">WtGUI</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_764a12c72bc3d9052d5e3ebe390f3c27.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_1142aa39e27f489476c1eb847f941055.html">GUI</a></li><li class="navelem"><a class="el" href="dir_d454f63ba1ea8efc3be97506fd960495.html">WtGUI</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -86,62 +86,60 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;imgui_internal.h&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="imgui__impl__wt_8h.html">imgui_impl_wt.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Wt/WEvent.h&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#aedbfeca84e396db252e99f46af6e0155">    8</a></span><a class="code hl_function" href="class_im_gui_backend_wt.html#aedbfeca84e396db252e99f46af6e0155">ImGuiBackendWt::ImGuiBackendWt</a>(Wt::WContainerWidget* parent)</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    IMGUI_CHECKVERSION();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a> = ImGui::CreateContext();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    ImGui::SetCurrentContext(<a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
-</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;imgui_impl_opengl3.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Wt/WEvent.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#aedbfeca84e396db252e99f46af6e0155">    9</a></span><a class="code hl_function" href="class_im_gui_backend_wt.html#aedbfeca84e396db252e99f46af6e0155">ImGuiBackendWt::ImGuiBackendWt</a>(Wt::WContainerWidget* parent)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    IMGUI_CHECKVERSION();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a> = ImGui::CreateContext();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    ImGui::SetCurrentContext(<a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#aead83d5e38edc418d047bbcccef4f0f5">   15</a></span><a class="code hl_function" href="class_im_gui_backend_wt.html#aead83d5e38edc418d047bbcccef4f0f5">ImGuiBackendWt::~ImGuiBackendWt</a>()</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//ImGui::DestroyContext(ctx);</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* glsl_version = <span class="stringliteral">&quot;#version 130&quot;</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    ImGui_ImplOpenGL3_Init(glsl_version);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
 </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#af5493f75cd96c3a530c23a58594a7770">   20</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_im_gui_backend_wt.html#af5493f75cd96c3a530c23a58594a7770">ImGuiBackendWt::NewFrame</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    ImGui::SetCurrentContext(<a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span>&amp; io = ImGui::GetIO();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    io.DisplaySize.x = width;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    io.DisplaySize.y = height;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#aead83d5e38edc418d047bbcccef4f0f5">   19</a></span><a class="code hl_function" href="class_im_gui_backend_wt.html#aead83d5e38edc418d047bbcccef4f0f5">ImGuiBackendWt::~ImGuiBackendWt</a>()</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    ImGui::SetCurrentContext(<a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    ImGui_ImplOpenGL3_Shutdown();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    ImGui::DestroyContext(<a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#a3d51ce0a37c7b6135a6d1823a1f29c8b">   29</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_im_gui_backend_wt.html#a3d51ce0a37c7b6135a6d1823a1f29c8b">ImGuiBackendWt::handleMousePressed</a>(<span class="keyword">const</span> Wt::WMouseEvent&amp; evt)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span>&amp; io = <a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>-&gt;IO;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">int</span> button = -1;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span> (evt.button() == Wt::MouseButton::Left) button = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">if</span> (evt.button() == Wt::MouseButton::Right) button = 1;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">if</span> (evt.button() == Wt::MouseButton::Middle) button = 2;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">//io.AddMousePosEvent(evt.widget().x, evt.widget().y);</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    io.MousePos = ImVec2(evt.widget().x, evt.widget().y);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    io.AddMouseButtonEvent(button, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> io.WantCaptureMouse;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#af5493f75cd96c3a530c23a58594a7770">   26</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_im_gui_backend_wt.html#af5493f75cd96c3a530c23a58594a7770">ImGuiBackendWt::NewFrame</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ImGui::SetCurrentContext(<a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">auto</span>&amp; io = ImGui::GetIO();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    io.DisplaySize.x = width;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    io.DisplaySize.y = height;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    ImGui_ImplOpenGL3_NewFrame();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    ImGui::NewFrame();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">//while (ctx-&gt;InputEventsQueue.Size &gt; 0)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//{</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">//  ImGui::EndFrame();</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">//  ImGui::NewFrame();</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">//}</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#a9f1280998cc47c07f2bfa17ec97a9247">   42</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_im_gui_backend_wt.html#a9f1280998cc47c07f2bfa17ec97a9247">ImGuiBackendWt::handleMouseDrag</a>(<span class="keyword">const</span> Wt::WMouseEvent&amp; evt)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">auto</span>&amp; io = <a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>-&gt;IO;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    io.AddMousePosEvent(evt.widget().x, evt.widget().y);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> io.WantCaptureMouse;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#a00832a5ac0d74cc9470d867e711411a3">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_im_gui_backend_wt.html#a00832a5ac0d74cc9470d867e711411a3">ImGuiBackendWt::Render</a>()</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ImGui::Render();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#a4283d397f6ec6650e216e03e50f8535a">   49</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_im_gui_backend_wt.html#a4283d397f6ec6650e216e03e50f8535a">ImGuiBackendWt::handleMouseReleased</a>(<span class="keyword">const</span> Wt::WMouseEvent&amp; evt)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#a3d51ce0a37c7b6135a6d1823a1f29c8b">   49</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_im_gui_backend_wt.html#a3d51ce0a37c7b6135a6d1823a1f29c8b">ImGuiBackendWt::handleMousePressed</a>(<span class="keyword">const</span> Wt::WMouseEvent&amp; evt)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">auto</span>&amp; io = <a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>-&gt;IO;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">int</span> button = -1;</div>
@@ -150,18 +148,43 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">if</span> (evt.button() == Wt::MouseButton::Middle) button = 2;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">//io.AddMousePosEvent(evt.widget().x, evt.widget().y);</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    io.MousePos = ImVec2(evt.widget().x, evt.widget().y);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    io.AddMouseButtonEvent(button, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    io.AddMouseButtonEvent(button, <span class="keyword">true</span>);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> io.WantCaptureMouse;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="ttc" id="aclass_im_gui_backend_wt_html_a3d51ce0a37c7b6135a6d1823a1f29c8b"><div class="ttname"><a href="class_im_gui_backend_wt.html#a3d51ce0a37c7b6135a6d1823a1f29c8b">ImGuiBackendWt::handleMousePressed</a></div><div class="ttdeci">bool handleMousePressed(const Wt::WMouseEvent &amp;evt)</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00029">imgui_impl_wt.cpp:29</a></div></div>
-<div class="ttc" id="aclass_im_gui_backend_wt_html_a4283d397f6ec6650e216e03e50f8535a"><div class="ttname"><a href="class_im_gui_backend_wt.html#a4283d397f6ec6650e216e03e50f8535a">ImGuiBackendWt::handleMouseReleased</a></div><div class="ttdeci">bool handleMouseReleased(const Wt::WMouseEvent &amp;evt)</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00049">imgui_impl_wt.cpp:49</a></div></div>
-<div class="ttc" id="aclass_im_gui_backend_wt_html_a9f1280998cc47c07f2bfa17ec97a9247"><div class="ttname"><a href="class_im_gui_backend_wt.html#a9f1280998cc47c07f2bfa17ec97a9247">ImGuiBackendWt::handleMouseDrag</a></div><div class="ttdeci">bool handleMouseDrag(const Wt::WMouseEvent &amp;evt)</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00042">imgui_impl_wt.cpp:42</a></div></div>
-<div class="ttc" id="aclass_im_gui_backend_wt_html_add94d8a67dbd4dab57a208c5bb874a14"><div class="ttname"><a href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ImGuiBackendWt::ctx</a></div><div class="ttdeci">ImGuiContext * ctx</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8h_source.html#l00020">imgui_impl_wt.h:20</a></div></div>
-<div class="ttc" id="aclass_im_gui_backend_wt_html_aead83d5e38edc418d047bbcccef4f0f5"><div class="ttname"><a href="class_im_gui_backend_wt.html#aead83d5e38edc418d047bbcccef4f0f5">ImGuiBackendWt::~ImGuiBackendWt</a></div><div class="ttdeci">~ImGuiBackendWt()</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00015">imgui_impl_wt.cpp:15</a></div></div>
-<div class="ttc" id="aclass_im_gui_backend_wt_html_aedbfeca84e396db252e99f46af6e0155"><div class="ttname"><a href="class_im_gui_backend_wt.html#aedbfeca84e396db252e99f46af6e0155">ImGuiBackendWt::ImGuiBackendWt</a></div><div class="ttdeci">ImGuiBackendWt(Wt::WContainerWidget *parent)</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00008">imgui_impl_wt.cpp:8</a></div></div>
-<div class="ttc" id="aclass_im_gui_backend_wt_html_af5493f75cd96c3a530c23a58594a7770"><div class="ttname"><a href="class_im_gui_backend_wt.html#af5493f75cd96c3a530c23a58594a7770">ImGuiBackendWt::NewFrame</a></div><div class="ttdeci">void NewFrame(int width, int height)</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00020">imgui_impl_wt.cpp:20</a></div></div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#a9f1280998cc47c07f2bfa17ec97a9247">   62</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_im_gui_backend_wt.html#a9f1280998cc47c07f2bfa17ec97a9247">ImGuiBackendWt::handleMouseDrag</a>(<span class="keyword">const</span> Wt::WMouseEvent&amp; evt)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">auto</span>&amp; io = <a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>-&gt;IO;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    io.AddMousePosEvent(evt.widget().x, evt.widget().y);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> io.WantCaptureMouse;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_im_gui_backend_wt.html#a4283d397f6ec6650e216e03e50f8535a">   69</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_im_gui_backend_wt.html#a4283d397f6ec6650e216e03e50f8535a">ImGuiBackendWt::handleMouseReleased</a>(<span class="keyword">const</span> Wt::WMouseEvent&amp; evt)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">auto</span>&amp; io = <a class="code hl_variable" href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ctx</a>-&gt;IO;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">int</span> button = -1;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordflow">if</span> (evt.button() == Wt::MouseButton::Left) button = 0;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">if</span> (evt.button() == Wt::MouseButton::Right) button = 1;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">if</span> (evt.button() == Wt::MouseButton::Middle) button = 2;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">//io.AddMousePosEvent(evt.widget().x, evt.widget().y);</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    io.MousePos = ImVec2(evt.widget().x, evt.widget().y);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    io.AddMouseButtonEvent(button, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> io.WantCaptureMouse;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="ttc" id="aclass_im_gui_backend_wt_html_a00832a5ac0d74cc9470d867e711411a3"><div class="ttname"><a href="class_im_gui_backend_wt.html#a00832a5ac0d74cc9470d867e711411a3">ImGuiBackendWt::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00043">imgui_impl_wt.cpp:43</a></div></div>
+<div class="ttc" id="aclass_im_gui_backend_wt_html_a3d51ce0a37c7b6135a6d1823a1f29c8b"><div class="ttname"><a href="class_im_gui_backend_wt.html#a3d51ce0a37c7b6135a6d1823a1f29c8b">ImGuiBackendWt::handleMousePressed</a></div><div class="ttdeci">bool handleMousePressed(const Wt::WMouseEvent &amp;evt)</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00049">imgui_impl_wt.cpp:49</a></div></div>
+<div class="ttc" id="aclass_im_gui_backend_wt_html_a4283d397f6ec6650e216e03e50f8535a"><div class="ttname"><a href="class_im_gui_backend_wt.html#a4283d397f6ec6650e216e03e50f8535a">ImGuiBackendWt::handleMouseReleased</a></div><div class="ttdeci">bool handleMouseReleased(const Wt::WMouseEvent &amp;evt)</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00069">imgui_impl_wt.cpp:69</a></div></div>
+<div class="ttc" id="aclass_im_gui_backend_wt_html_a9f1280998cc47c07f2bfa17ec97a9247"><div class="ttname"><a href="class_im_gui_backend_wt.html#a9f1280998cc47c07f2bfa17ec97a9247">ImGuiBackendWt::handleMouseDrag</a></div><div class="ttdeci">bool handleMouseDrag(const Wt::WMouseEvent &amp;evt)</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00062">imgui_impl_wt.cpp:62</a></div></div>
+<div class="ttc" id="aclass_im_gui_backend_wt_html_add94d8a67dbd4dab57a208c5bb874a14"><div class="ttname"><a href="class_im_gui_backend_wt.html#add94d8a67dbd4dab57a208c5bb874a14">ImGuiBackendWt::ctx</a></div><div class="ttdeci">ImGuiContext * ctx</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8h_source.html#l00021">imgui_impl_wt.h:21</a></div></div>
+<div class="ttc" id="aclass_im_gui_backend_wt_html_aead83d5e38edc418d047bbcccef4f0f5"><div class="ttname"><a href="class_im_gui_backend_wt.html#aead83d5e38edc418d047bbcccef4f0f5">ImGuiBackendWt::~ImGuiBackendWt</a></div><div class="ttdeci">~ImGuiBackendWt()</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00019">imgui_impl_wt.cpp:19</a></div></div>
+<div class="ttc" id="aclass_im_gui_backend_wt_html_aedbfeca84e396db252e99f46af6e0155"><div class="ttname"><a href="class_im_gui_backend_wt.html#aedbfeca84e396db252e99f46af6e0155">ImGuiBackendWt::ImGuiBackendWt</a></div><div class="ttdeci">ImGuiBackendWt(Wt::WContainerWidget *parent)</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00009">imgui_impl_wt.cpp:9</a></div></div>
+<div class="ttc" id="aclass_im_gui_backend_wt_html_af5493f75cd96c3a530c23a58594a7770"><div class="ttname"><a href="class_im_gui_backend_wt.html#af5493f75cd96c3a530c23a58594a7770">ImGuiBackendWt::NewFrame</a></div><div class="ttdeci">void NewFrame(int width, int height)</div><div class="ttdef"><b>Definition</b> <a href="imgui__impl__wt_8cpp_source.html#l00026">imgui_impl_wt.cpp:26</a></div></div>
 <div class="ttc" id="aimgui__impl__wt_8h_html"><div class="ttname"><a href="imgui__impl__wt_8h.html">imgui_impl_wt.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -7,11 +7,9 @@ digraph "dyno::QVector3FieldWidget::QVector3FieldWidget"
   rankdir="LR";
   Node1 [id="Node000001",label="dyno::QVector3FieldWidget\l::QVector3FieldWidget",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="dyno::QPiecewiseDoubleSpin\lBox::setRealValue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_piecewise_double_spin_box.html#ac0550509657e594a1d528d789fb1f0b8",tooltip=" "];
-  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="dyno::QVector3FieldWidget\l::vec3fValueChange",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vector3_field_widget.html#a60e3b9992fb4de0cafddd0d81e114274",tooltip=" "];
-  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
-  Node4 [id="Node000004",label="dyno::QPiecewiseDoubleSpin\lBox::getRealValue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_piecewise_double_spin_box.html#a6ce843c113424ba58964a41a14c4cfa3",tooltip=" "];
-  Node3 -> Node5 [id="edge4_Node000003_Node000005",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="dyno::QVector3FieldWidget\l::vec3fChange",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vector3_field_widget.html#a69e2ccd256a28240bf7299a0594edb3a",tooltip=" "];
+  Node2 [id="Node000002",label="dyno::QVector3FieldWidget\l::vec3fValueChange",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vector3_field_widget.html#a60e3b9992fb4de0cafddd0d81e114274",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::QPiecewiseDoubleSpin\lBox::getRealValue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_piecewise_double_spin_box.html#a6ce843c113424ba58964a41a14c4cfa3",tooltip=" "];
+  Node2 -> Node4 [id="edge3_Node000002_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::QVector3FieldWidget\l::vec3fChange",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vector3_field_widget.html#a69e2ccd256a28240bf7299a0594edb3a",tooltip=" "];
 }

@@ -23,4 +23,7 @@ digraph "Qt::QtModuleWidget::getModule"
   Node6 -> Node8 [id="edge9_Node000006_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node8 [id="Node000008",label="Qt::QtModuleFlowScene\l::showGraphicsPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624",tooltip=" "];
   Node8 -> Node7 [id="edge10_Node000008_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 -> Node9 [id="edge11_Node000006_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="Qt::QtModuleFlowScene\l::showResetPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#af7703705ba566378630cc46198ad6ed8",tooltip=" "];
+  Node9 -> Node7 [id="edge12_Node000009_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

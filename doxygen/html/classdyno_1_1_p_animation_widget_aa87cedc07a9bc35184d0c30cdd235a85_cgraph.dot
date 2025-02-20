@@ -16,12 +16,16 @@ digraph "dyno::PAnimationWidget::runForever"
   Node5 [id="Node000005",label="dyno::FormatConnectionInfo",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#ab0875130926015cab38080dde55df03b",tooltip=" "];
   Node4 -> Node6 [id="edge5_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="dyno::Log::sendMessage",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28",tooltip="Add a new message to log."];
-  Node1 -> Node7 [id="edge6_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="dyno::PSimulationThread\l::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1",tooltip=" "];
+  Node4 -> Node7 [id="edge6_Node000004_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="dyno::Node::setVisible",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#ac8d11214a0508e24421095c5f9067421",tooltip="Set the visibility of context."];
   Node1 -> Node8 [id="edge7_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
-  Node8 [id="Node000008",label="dyno::PAnimationWidget\l::simulationStarted",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_animation_widget.html#a448681f74762ed6febb79976c7befc2f",tooltip=" "];
-  Node1 -> Node9 [id="edge8_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
-  Node9 [id="Node000009",label="dyno::PAnimationWidget\l::simulationStopped",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_animation_widget.html#a7d6c0b70c472f6d4cb956f93230268ef",tooltip=" "];
+  Node8 [id="Node000008",label="dyno::PSimulationThread\l::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1",tooltip=" "];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="dyno::PSimulationThread\l::PSimulationThread",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#af8a98174b18d5f7895c5f0f40015f106",tooltip=" "];
   Node1 -> Node10 [id="edge9_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
-  Node10 [id="Node000010",label="dyno::PAnimationWidget\l::updateSlider",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_animation_widget.html#a18aabd1f0748650cf2aa1bce432d9df2",tooltip=" "];
+  Node10 [id="Node000010",label="dyno::PAnimationWidget\l::simulationStarted",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_animation_widget.html#a448681f74762ed6febb79976c7befc2f",tooltip=" "];
+  Node1 -> Node11 [id="edge10_Node000001_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="dyno::PAnimationWidget\l::simulationStopped",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_animation_widget.html#a7d6c0b70c472f6d4cb956f93230268ef",tooltip=" "];
+  Node1 -> Node12 [id="edge11_Node000001_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="dyno::PAnimationWidget\l::updateSlider",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_animation_widget.html#a18aabd1f0748650cf2aa1bce432d9df2",tooltip=" "];
 }

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/Cuda/Volume/VolumeGenerator.cpp File Reference</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Dynamics/Cuda/Volume/VolumeGenerator.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -70,27 +70,24 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_fcf8d9b41703035e4148e841d5c3507a.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_ff678a16f4f087f6b3e489e7f5a6ac5e.html">Volume</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_fd8f3ed6aa4978ca948e4e53f2ea17ff.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_5b6078a30aa2f816f8ccd07bd3a8bd2d.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_01625feeab4c9893ca9dd3ab5c49c54f.html">Volume</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">VolumeGenerator.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>&quot;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
+<code>#include &quot;<a class="el" href="_fast_sweeping_method_8h_source.html">Module/FastSweepingMethod.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_fast_sweeping_method_g_p_u_8h_source.html">Module/FastSweepingMethodGPU.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for VolumeGenerator.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="_volume_generator_8cpp__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_volume_2_volume_generator_8cpp" alt=""/></div>
-<map name="a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_volume_2_volume_generator_8cpp" id="a_e_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_volume_2_volume_generator_8cpp">
+<div class="center"><img src="_volume_generator_8cpp__incl.png" border="0" usemap="#a_d_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_volume_2_volume_generator_8cpp" alt=""/></div>
+<map name="a_d_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_volume_2_volume_generator_8cpp" id="a_d_1_2_peridyno_2peridyno_2src_2_dynamics_2_cuda_2_volume_2_volume_generator_8cpp">
 <area shape="rect" title=" " alt="" coords="1359,5,1547,61"/>
 <area shape="rect" href="_volume_generator_8h.html" title=" " alt="" coords="1386,109,1521,136"/>
 <area shape="rect" title=" " alt="" coords="355,931,427,957"/>
@@ -152,103 +149,11 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespacedyno"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of <a class="el" href="classdyno_1_1_additive_c_c_d.html">AdditiveCCD</a> based on peridyno. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:af4094a0dd3e5df67ccc8958b24801845" id="r_af4094a0dd3e5df67ccc8958b24801845"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_volume_generator_8cpp.html#af4094a0dd3e5df67ccc8958b24801845">TRI_MIN</a>(x,  y,  z)&#160;&#160;&#160;std::min(x, std::min(y, z))</td></tr>
-<tr class="separator:af4094a0dd3e5df67ccc8958b24801845"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a505aa700668aa74298b6652739e87428" id="r_a505aa700668aa74298b6652739e87428"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_volume_generator_8cpp.html#a505aa700668aa74298b6652739e87428">TRI_MAX</a>(x,  y,  z)&#160;&#160;&#160;<a class="el" href="svd3__cuda_8h.html#ac39d9cef6a5e030ba8d9e11121054268">std::max</a>(x, <a class="el" href="svd3__cuda_8h.html#ac39d9cef6a5e030ba8d9e11121054268">std::max</a>(y, z))</td></tr>
-<tr class="separator:a505aa700668aa74298b6652739e87428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3a3dcf75e9cb466e5b3d18c1372b8a57" id="r_a3a3dcf75e9cb466e5b3d18c1372b8a57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">static</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#a3a3dcf75e9cb466e5b3d18c1372b8a57">dyno::point_segment_distance</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">x0</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;x1, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;x2)</td></tr>
-<tr class="separator:a3a3dcf75e9cb466e5b3d18c1372b8a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89e43b7baee781bd78bd62d0f89b5249" id="r_a89e43b7baee781bd78bd62d0f89b5249"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">static</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#a89e43b7baee781bd78bd62d0f89b5249">dyno::point_triangle_distance</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">x0</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;x1, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;x2, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">x3</a>)</td></tr>
-<tr class="separator:a89e43b7baee781bd78bd62d0f89b5249"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb97b1c79e707e4e317243bcdba764b2" id="r_abb97b1c79e707e4e317243bcdba764b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">static</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#abb97b1c79e707e4e317243bcdba764b2">dyno::check_neighbour</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#a601e64d42b4a3b105db6d6ae57f625fa">CArray</a>&lt; <a class="el" href="namespacedyno.html#ad9ce92e90ca9acbd16ed6e8bdfd0ec47">Vec3ui</a> &gt; &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">tri</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#a601e64d42b4a3b105db6d6ae57f625fa">CArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">vert</a>, <a class="el" href="namespacedyno.html#aa71b21e34f0e4d1ab5b6834038426f01">CArray3f</a> &amp;phi, <a class="el" href="namespacedyno.html#a234140750c0e2d19bf508fae1bbd160b">CArray3i</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">closest_tri</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">gx</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">i0</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">j0</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">k0</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">i1</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">j1</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">k1</a>)</td></tr>
-<tr class="separator:abb97b1c79e707e4e317243bcdba764b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa644342b8277f75165ed61b14b803107" id="r_aa644342b8277f75165ed61b14b803107"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">static</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#aa644342b8277f75165ed61b14b803107">dyno::sweep</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#a601e64d42b4a3b105db6d6ae57f625fa">CArray</a>&lt; <a class="el" href="namespacedyno.html#ad9ce92e90ca9acbd16ed6e8bdfd0ec47">Vec3ui</a> &gt; &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">tri</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#a601e64d42b4a3b105db6d6ae57f625fa">CArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;x, <a class="el" href="namespacedyno.html#aa71b21e34f0e4d1ab5b6834038426f01">CArray3f</a> &amp;phi, <a class="el" href="namespacedyno.html#a234140750c0e2d19bf508fae1bbd160b">CArray3i</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">closest_tri</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;origin, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">float</a> dx, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">di</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dj</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dk</a>)</td></tr>
-<tr class="separator:aa644342b8277f75165ed61b14b803107"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87255d64a4b1c4d8e8caa1299076b5e7" id="r_a87255d64a4b1c4d8e8caa1299076b5e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">static</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#a87255d64a4b1c4d8e8caa1299076b5e7">dyno::orientation</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> x1, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> y1, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> x2, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> y2, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">twice_signed_area</a>)</td></tr>
-<tr class="separator:a87255d64a4b1c4d8e8caa1299076b5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3819361c7504d9037e21419bd3fa7658" id="r_a3819361c7504d9037e21419bd3fa7658"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">static</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#a3819361c7504d9037e21419bd3fa7658">dyno::point_in_triangle_2d</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">x0</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">y0</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> x1, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> y1, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> x2, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> y2, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">x3</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">y3</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> &amp;a, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> &amp;b, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">double</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">c</a>)</td></tr>
-<tr class="separator:a3819361c7504d9037e21419bd3fa7658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d8ba7c258dc52dfbd59fd773f95eab9" id="r_a3d8ba7c258dc52dfbd59fd773f95eab9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#a3d8ba7c258dc52dfbd59fd773f95eab9">dyno::DEFINE_CLASS</a> (<a class="el" href="classdyno_1_1_volume_generator.html">VolumeGenerator</a>)</td></tr>
 <tr class="separator:a3d8ba7c258dc52dfbd59fd773f95eab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a505aa700668aa74298b6652739e87428" name="a505aa700668aa74298b6652739e87428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a505aa700668aa74298b6652739e87428">&#9670;&#160;</a></span>TRI_MAX</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TRI_MAX</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">y, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">z&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="svd3__cuda_8h.html#ac39d9cef6a5e030ba8d9e11121054268">std::max</a>(x, <a class="el" href="svd3__cuda_8h.html#ac39d9cef6a5e030ba8d9e11121054268">std::max</a>(y, z))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00240">240</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
-
-</div>
-</div>
-<a id="af4094a0dd3e5df67ccc8958b24801845" name="af4094a0dd3e5df67ccc8958b24801845"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4094a0dd3e5df67ccc8958b24801845">&#9670;&#160;</a></span>TRI_MIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TRI_MIN</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">y, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">z&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;std::min(x, std::min(y, z))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00239">239</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

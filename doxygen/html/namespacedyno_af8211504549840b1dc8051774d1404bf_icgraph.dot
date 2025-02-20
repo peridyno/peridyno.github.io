@@ -12,6 +12,4 @@ digraph "dyno::clip"
   Node3 [id="Node000003",label="dyno::TLine3D::intersect",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_t_line3_d.html#a543067648844b0c62a23bb5801fee027",tooltip=" "];
   Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="dyno::CollisionDetection\l::request",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_collision_detection.html#a3e06d669be455854051442ce9a83cd0e",tooltip=" "];
-  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="dyno::CollisionDetector\l::resetStates",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_collision_detector.html#a5da0262341622b8235d12d3835646f9f",tooltip=" "];
 }

@@ -94,10 +94,16 @@ digraph "dyno::GLRenderEngine::initialize"
   Node32 -> Node12 [id="edge55_Node000032_Node000012",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node31 [id="edge56_Node000001_Node000031",color="steelblue1",style="solid",tooltip=" "];
   Node1 -> Node33 [id="edge57_Node000001_Node000033",color="steelblue1",style="solid",tooltip=" "];
-  Node33 [id="Node000033",label="dyno::GLRenderEngine\l::setupTransparencyPass",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_g_l_render_engine.html#a113df887f94fdd2ba6c2f68514ddd6f8",tooltip=" "];
-  Node33 -> Node29 [id="edge58_Node000033_Node000029",color="steelblue1",style="solid",tooltip=" "];
-  Node33 -> Node6 [id="edge59_Node000033_Node000006",color="steelblue1",style="solid",tooltip=" "];
-  Node33 -> Node15 [id="edge60_Node000033_Node000015",color="steelblue1",style="solid",tooltip=" "];
-  Node33 -> Node16 [id="edge61_Node000033_Node000016",color="steelblue1",style="solid",tooltip=" "];
-  Node33 -> Node10 [id="edge62_Node000033_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node33 [id="Node000033",label="dyno::GLRenderEngine\l::setDefaultEnvmap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_g_l_render_engine.html#a697c3563d517256d6ae74b4d346e501c",tooltip=" "];
+  Node33 -> Node34 [id="edge58_Node000033_Node000034",color="steelblue1",style="solid",tooltip=" "];
+  Node34 [id="Node000034",label="dyno::GLRenderEngine\l::setEnvmap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_g_l_render_engine.html#ad485112ff4568dd837a5159fd1d8958b",tooltip=" "];
+  Node34 -> Node35 [id="edge59_Node000034_Node000035",color="steelblue1",style="solid",tooltip=" "];
+  Node35 [id="Node000035",label="dyno::Envmap::load",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_envmap.html#a7bcba35d948189759f1e6dea0d3309d7",tooltip=" "];
+  Node1 -> Node36 [id="edge60_Node000001_Node000036",color="steelblue1",style="solid",tooltip=" "];
+  Node36 [id="Node000036",label="dyno::GLRenderEngine\l::setupTransparencyPass",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_g_l_render_engine.html#a113df887f94fdd2ba6c2f68514ddd6f8",tooltip=" "];
+  Node36 -> Node29 [id="edge61_Node000036_Node000029",color="steelblue1",style="solid",tooltip=" "];
+  Node36 -> Node6 [id="edge62_Node000036_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node36 -> Node15 [id="edge63_Node000036_Node000015",color="steelblue1",style="solid",tooltip=" "];
+  Node36 -> Node16 [id="edge64_Node000036_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node36 -> Node10 [id="edge65_Node000036_Node000010",color="steelblue1",style="solid",tooltip=" "];
 }

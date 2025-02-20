@@ -32,4 +32,6 @@ digraph "dyno::PSimulationThread::notify"
   Node13 [id="Node000013",label="dyno::PSimulationThread\l::syncNode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#aa8e50b7106fcc35a36d360b3f793087c",tooltip=" "];
   Node13 -> Node14 [id="edge13_Node000013_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node14 [id="Node000014",label="dyno::PMainWindow::\lPMainWindow",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_main_window.html#a55a1afe7cc3865eb78d59d769ac2d13a",tooltip=" "];
+  Node1 -> Node15 [id="edge14_Node000001_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="dyno::PSimulationThread\l::takeOneStep",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#ab646d1aa64d1db1c983c6d8978da2fae",tooltip=" "];
 }

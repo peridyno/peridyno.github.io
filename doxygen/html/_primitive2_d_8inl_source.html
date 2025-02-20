@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Core/Primitive/Primitive2D.inl Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Core/Primitive/Primitive2D.inl Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_3e9476288c0c22cbcea08ca5b8b8c190.html">Core</a></li><li class="navelem"><a class="el" href="dir_637b56146cb817f21cac96d04f395010.html">Primitive</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_18ab09de471ddf4a6c726bf6f36eb1c9.html">Core</a></li><li class="navelem"><a class="el" href="dir_d2622adff8e3d36258059e7c6c6734b0.html">Primitive</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -180,11 +180,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <a class="code hl_typedef" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> t = <a class="code hl_class" href="classdyno_1_1_array_map.html">l</a>.dot(dir) / dir.normSquared();</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a> <a class="code hl_class" href="classdyno_1_1_array_map.html">q</a> = segment.v0 + t * dir;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">q</a> = t &lt; 0 ? segment.v0 : <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">q</a>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">q</a> = t &gt; 1 ? segment.v1 : <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">q</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a> q = segment.v0 + t * dir;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        q = t &lt; 0 ? segment.v0 : q;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        q = t &gt; 1 ? segment.v1 : q;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="comment">//printf(&quot;T: %.3lf\n&quot;, t);</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TPoint2D&lt;Real&gt;</a>(<a class="code hl_class" href="classdyno_1_1_array_map.html">q</a>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TPoint2D&lt;Real&gt;</a>(q);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
 </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
@@ -193,9 +193,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classdyno_1_1_t_point2_d.html#a48096707710e6b120a9b73cfcfa826b7">   90</a></span>    <a class="code hl_class" href="classdyno_1_1_array_map.html">DYN_FUNC</a> <a class="code hl_class" href="classdyno_1_1_array_map.html">TPoint2D&lt;Real&gt;</a> <a class="code hl_function" href="classdyno_1_1_t_point2_d.html#a4a25d79ed18ab79606f9b4f4809b4e62">TPoint2D&lt;Real&gt;::project</a>(<span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_array_map.html">TCircle2D&lt;Real&gt;</a>&amp; <a class="code hl_class" href="classdyno_1_1_array_map.html">circle</a>)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a> <a class="code hl_class" href="classdyno_1_1_array_map.html">cp</a> = origin - <a class="code hl_class" href="classdyno_1_1_array_map.html">circle</a>.center;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a> <a class="code hl_class" href="classdyno_1_1_array_map.html">q</a> = <a class="code hl_class" href="classdyno_1_1_array_map.html">circle</a>.center + <a class="code hl_class" href="classdyno_1_1_array_map.html">circle</a>.radius * <a class="code hl_class" href="classdyno_1_1_array_map.html">cp</a>.normalize();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a> q = <a class="code hl_class" href="classdyno_1_1_array_map.html">circle</a>.center + <a class="code hl_class" href="classdyno_1_1_array_map.html">circle</a>.radius * <a class="code hl_class" href="classdyno_1_1_array_map.html">cp</a>.normalize();</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TPoint2D&lt;Real&gt;</a>(<a class="code hl_class" href="classdyno_1_1_array_map.html">q</a>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TPoint2D&lt;Real&gt;</a>(q);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
 </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
@@ -861,8 +861,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="foldopen" id="foldopen00669" data-start="{" data-end="}">
 <div class="line"><a id="l00669" name="l00669"></a><span class="lineno"><a class="line" href="classdyno_1_1_t_segment2_d.html#a858b83039bef02ea3534055c5ce14d98">  669</a></span>    <a class="code hl_class" href="classdyno_1_1_array_map.html">DYN_FUNC</a> <a class="code hl_function" href="classdyno_1_1_t_segment2_d.html#a858b83039bef02ea3534055c5ce14d98">TSegment2D&lt;Real&gt;::TSegment2D</a>()</div>
 <div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>    {</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        v0 = <a class="code hl_typedef" href="namespacedyno.html#a08f50649d3e2e4cb518cd505982d3197">Coord3D</a>(0, 0);</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>        v1 = <a class="code hl_typedef" href="namespacedyno.html#a08f50649d3e2e4cb518cd505982d3197">Coord3D</a>(1, 0);</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        v0 = <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>(0, 0);</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>        v1 = <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>(1, 0);</div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    }</div>
 </div>
 <div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
@@ -1180,13 +1180,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span> </div>
 <div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Real&gt;</div>
 <div class="foldopen" id="foldopen00948" data-start="{" data-end="}">
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno"><a class="line" href="classdyno_1_1_t_polygon2_d.html#ad40d7674a9f2dd52fd6f320206c8272d">  948</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_t_polygon2_d.html#ad40d7674a9f2dd52fd6f320206c8272d">TPolygon2D&lt;Real&gt;::setAsPentagon</a>(<span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; v0, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; v1, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; <a class="code hl_class" href="classdyno_1_1_array_map.html">v2</a>, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; <a class="code hl_class" href="classdyno_1_1_array_map.html">v3</a>, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; <a class="code hl_class" href="classdyno_1_1_array_map.html">v4</a>)</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno"><a class="line" href="classdyno_1_1_t_polygon2_d.html#ad40d7674a9f2dd52fd6f320206c8272d">  948</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_t_polygon2_d.html#ad40d7674a9f2dd52fd6f320206c8272d">TPolygon2D&lt;Real&gt;::setAsPentagon</a>(<span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; v0, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; v1, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; v2, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; <a class="code hl_class" href="classdyno_1_1_array_map.html">v3</a>, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; <a class="code hl_class" href="classdyno_1_1_array_map.html">v4</a>)</div>
 <div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>    {</div>
 <div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>        size = 5;</div>
 <div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span> </div>
 <div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>        _vertices[0] = v0;</div>
 <div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>        _vertices[1] = v1;</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>        _vertices[2] = <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">v2</a>;</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>        _vertices[2] = v2;</div>
 <div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>        _vertices[3] = <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">v3</a>;</div>
 <div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>        _vertices[4] = <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">v4</a>;</div>
 <div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span> </div>
@@ -1196,13 +1196,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
 <div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Real&gt;</div>
 <div class="foldopen" id="foldopen00962" data-start="{" data-end="}">
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno"><a class="line" href="classdyno_1_1_t_polygon2_d.html#aa8b8833d6493822f65153b481c1f8878">  962</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_t_polygon2_d.html#aa8b8833d6493822f65153b481c1f8878">TPolygon2D&lt;Real&gt;::setAsTriangle</a>(<span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; v0, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; v1, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; <a class="code hl_class" href="classdyno_1_1_array_map.html">v2</a>)</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno"><a class="line" href="classdyno_1_1_t_polygon2_d.html#aa8b8833d6493822f65153b481c1f8878">  962</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_t_polygon2_d.html#aa8b8833d6493822f65153b481c1f8878">TPolygon2D&lt;Real&gt;::setAsTriangle</a>(<span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; v0, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; v1, <span class="keyword">const</span> <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>&amp; v2)</div>
 <div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>    {</div>
 <div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>        size = 3;</div>
 <div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span> </div>
 <div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        _vertices[0] = v0;</div>
 <div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        _vertices[1] = v1;</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>        _vertices[2] = <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">v2</a>;</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>        _vertices[2] = v2;</div>
 <div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span> </div>
 <div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>        _center = <a class="code hl_class" href="classdyno_1_1_vector.html">Coord2D</a>(0);</div>
 <div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>    }</div>
@@ -1284,14 +1284,13 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclassdyno_1_1_t_segment2_d_html_ad919544fb1adf7c9b1f20cf59988e3ec"><div class="ttname"><a href="classdyno_1_1_t_segment2_d.html#ad919544fb1adf7c9b1f20cf59988e3ec">dyno::TSegment2D::operator-</a></div><div class="ttdeci">DYN_FUNC TSegment2D&lt; Real &gt; operator-(void) const</div><div class="ttdef"><b>Definition</b> <a href="_primitive2_d_8inl_source.html#l00862">Primitive2D.inl:862</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_t_segment2_d_html_aef7c5f23fee906b72fc954fc651d2550"><div class="ttname"><a href="classdyno_1_1_t_segment2_d.html#aef7c5f23fee906b72fc954fc651d2550">dyno::TSegment2D::distance</a></div><div class="ttdeci">DYN_FUNC Real distance(const TSegment2D&lt; Real &gt; &amp;segment) const</div><div class="ttdef"><b>Definition</b> <a href="_primitive2_d_8inl_source.html#l00775">Primitive2D.inl:775</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_vector_html"><div class="ttname"><a href="classdyno_1_1_vector.html">dyno::Vector&lt; Real, 2 &gt;</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a08f50649d3e2e4cb518cd505982d3197"><div class="ttname"><a href="namespacedyno.html#a08f50649d3e2e4cb518cd505982d3197">dyno::Coord3D</a></div><div class="ttdeci">Vector&lt; float, 3 &gt; Coord3D</div><div class="ttdef"><b>Definition</b> <a href="_g_l_element_visual_module_8h_source.html#l00017">GLElementVisualModule.h:17</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a0aa7c6c36c7ab9f59f4342e109ed70b2"><div class="ttname"><a href="namespacedyno.html#a0aa7c6c36c7ab9f59f4342e109ed70b2">dyno::REAL_EPSILON_SQUARED</a></div><div class="ttdeci">constexpr Real REAL_EPSILON_SQUARED</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00080">Primitive3D.h:80</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a13aeda0094278a56bb38eecbe1a22e1c"><div class="ttname"><a href="namespacedyno.html#a13aeda0094278a56bb38eecbe1a22e1c">dyno::REAL_MAX</a></div><div class="ttdeci">constexpr Real REAL_MAX</div><div class="ttdef"><b>Definition</b> <a href="_typedef_8inl_source.html#l00039">Typedef.inl:39</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00080">ArrayMap.inl:80</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a91f6eb791bd70afce29e83daebadbd26"><div class="ttname"><a href="namespacedyno.html#a91f6eb791bd70afce29e83daebadbd26">dyno::minimum</a></div><div class="ttdeci">DYN_FUNC T minimum(const T &amp;v0, const T &amp;v1)</div><div class="ttdef"><b>Definition</b> <a href="_simple_math_8h_source.html#l00090">SimpleMath.h:90</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a96b244d68db4c08f6e4c7b3622c08888"><div class="ttname"><a href="namespacedyno.html#a96b244d68db4c08f6e4c7b3622c08888">dyno::REAL_EPSILON</a></div><div class="ttdeci">constexpr Real REAL_EPSILON</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00079">Primitive3D.h:79</a></div></div>
-<div class="ttc" id="anamespacedyno_html_ace5ae4adfa4b4997bc8604ad790d8f58"><div class="ttname"><a href="namespacedyno.html#ace5ae4adfa4b4997bc8604ad790d8f58">dyno::maximum</a></div><div class="ttdeci">DYN_FUNC T maximum(const T &amp;v0, const T &amp;v1)</div><div class="ttdef"><b>Definition</b> <a href="_simple_math_8h_source.html#l00130">SimpleMath.h:130</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a0aa7c6c36c7ab9f59f4342e109ed70b2"><div class="ttname"><a href="namespacedyno.html#a0aa7c6c36c7ab9f59f4342e109ed70b2">dyno::REAL_EPSILON_SQUARED</a></div><div class="ttdeci">constexpr Real REAL_EPSILON_SQUARED</div><div class="ttdef"><b>Definition</b> <a href="_typedef_8inl_source.html#l00044">Typedef.inl:44</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a13aeda0094278a56bb38eecbe1a22e1c"><div class="ttname"><a href="namespacedyno.html#a13aeda0094278a56bb38eecbe1a22e1c">dyno::REAL_MAX</a></div><div class="ttdeci">constexpr Real REAL_MAX</div><div class="ttdef"><b>Definition</b> <a href="_typedef_8inl_source.html#l00045">Typedef.inl:45</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00082">ArrayMap.inl:82</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a91f6eb791bd70afce29e83daebadbd26"><div class="ttname"><a href="namespacedyno.html#a91f6eb791bd70afce29e83daebadbd26">dyno::minimum</a></div><div class="ttdeci">DYN_FUNC T minimum(const T &amp;v0, const T &amp;v1)</div><div class="ttdef"><b>Definition</b> <a href="_simple_math_8h_source.html#l00120">SimpleMath.h:120</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a96b244d68db4c08f6e4c7b3622c08888"><div class="ttname"><a href="namespacedyno.html#a96b244d68db4c08f6e4c7b3622c08888">dyno::REAL_EPSILON</a></div><div class="ttdeci">constexpr Real REAL_EPSILON</div><div class="ttdef"><b>Definition</b> <a href="_typedef_8inl_source.html#l00043">Typedef.inl:43</a></div></div>
+<div class="ttc" id="anamespacedyno_html_ace5ae4adfa4b4997bc8604ad790d8f58"><div class="ttname"><a href="namespacedyno.html#ace5ae4adfa4b4997bc8604ad790d8f58">dyno::maximum</a></div><div class="ttdeci">DYN_FUNC T maximum(const T &amp;v0, const T &amp;v1)</div><div class="ttdef"><b>Definition</b> <a href="_simple_math_8h_source.html#l00160">SimpleMath.h:160</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -31,4 +31,6 @@ digraph "dyno::POpenGLWidget::mouseReleaseEvent"
   Node12 -> Node5 [id="edge12_Node000012_Node000005",color="steelblue1",style="solid",tooltip=" "];
   Node12 -> Node13 [id="edge13_Node000012_Node000013",color="steelblue1",style="solid",tooltip=" "];
   Node13 [id="Node000013",label="dyno::PSimulationThread\l::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1",tooltip=" "];
+  Node13 -> Node14 [id="edge14_Node000013_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="dyno::PSimulationThread\l::PSimulationThread",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#af8a98174b18d5f7895c5f0f40015f106",tooltip=" "];
 }

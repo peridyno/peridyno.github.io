@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="WParameterDataNode\l::FieldWidgetMeta",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$struct_w_parameter_data_node_1_1_field_widget_meta.html",tooltip=" "];
+  Node0 [id="Node000000",label="vks::Buffer",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvks_1_1_buffer.html",tooltip="Encapsulates access to a Vulkan buffer backed up by device memory."];
 }

@@ -17,4 +17,7 @@ digraph "WMainWindow::stop"
   Node5 -> Node3 [id="edge5_Node000005_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 -> Node6 [id="edge6_Node000004_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="WMainApp::WMainApp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_w_main_app.html#a63f4fc69566a49e7412ca5602b19946b",tooltip=" "];
+  Node1 -> Node7 [id="edge7_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="WMainWindow::step",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_w_main_window.html#ae5389adf709fa3230dcf7aa43bf74a01",tooltip=" "];
+  Node7 -> Node2 [id="edge8_Node000007_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

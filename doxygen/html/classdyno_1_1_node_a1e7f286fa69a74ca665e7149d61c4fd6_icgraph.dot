@@ -12,4 +12,7 @@ digraph "dyno::Node::updateTopology"
   Node3 [id="Node000003",label="dyno::SceneGraph::advance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_scene_graph.html#ae6cb9746dab4baaccb565671f6ab5d5d",tooltip=" "];
   Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="dyno::SceneGraph::takeOne\lFrame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_scene_graph.html#a4db59a350803f47b98a3ebdc97b3f882",tooltip=" "];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::SceneGraph::advance\lInAsync",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_scene_graph.html#a80eaedf11c84e1e0f3096b8d15368f40",tooltip=" "];
+  Node5 -> Node4 [id="edge5_Node000005_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

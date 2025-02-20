@@ -1,0 +1,14 @@
+digraph "D:/Peridyno/peridyno/src/Core/STL"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_18ab09de471ddf4a6c726bf6f36eb1c9 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="Core", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_18ab09de471ddf4a6c726bf6f36eb1c9.html",tooltip=""]
+  dir_0c289b5efaf379e85d053a692295b146 [label="Math", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_0c289b5efaf379e85d053a692295b146.html",tooltip=""];
+  dir_018f73c70ab2e56d4f2ef961e1c9fe3e [label="STL", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_018f73c70ab2e56d4f2ef961e1c9fe3e.html",tooltip=""];
+  }
+  dir_018f73c70ab2e56d4f2ef961e1c9fe3e->dir_0c289b5efaf379e85d053a692295b146 [headlabel="6", labeldistance=1.5 headhref="dir_000079_000040.html" href="dir_000079_000040.html" color="steelblue1" fontcolor="steelblue1"];
+}

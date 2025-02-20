@@ -13,7 +13,8 @@ digraph "dyno::QPiecewiseDoubleSpinBox::setRealValue"
   Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="dyno::QPiecewiseDoubleSpin\lBox::QPiecewiseDoubleSpinBox",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_piecewise_double_spin_box.html#a20f6a404c89a4ab27cfe72e4c3fbaffd",tooltip=" "];
   Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node5 [id="Node000005",label="dyno::QVector3FieldWidget\l::updateWidget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vector3_field_widget.html#afac363130830ce245eadaf681c367aa1",tooltip=" "];
-  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="dyno::QVector3FieldWidget\l::QVector3FieldWidget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vector3_field_widget.html#a0f53d53dddeeb90ba6441a57cc6b8338",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::QPiecewiseDoubleSpin\lBox::QPiecewiseDoubleSpinBox",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_piecewise_double_spin_box.html#a715c7e25edf51c8f55908db35a92b740",tooltip=" "];
+  Node3 -> Node6 [id="edge5_Node000003_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="dyno::QVector3FieldWidget\l::updateWidget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_vector3_field_widget.html#afac363130830ce245eadaf681c367aa1",tooltip=" "];
+  Node1 -> Node5 [id="edge6_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

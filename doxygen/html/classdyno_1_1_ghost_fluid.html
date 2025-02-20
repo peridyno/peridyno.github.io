@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -78,6 +78,7 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classdyno_1_1_ghost_fluid-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::GhostFluid&lt; TDataType &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -119,6 +120,11 @@ Public Types</h2></td></tr>
 <tr class="separator:a92f5a053a61436015c840d163d5d6680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66ea6b2e42de9ba726c21b4f7c28d1e2" id="r_a66ea6b2e42de9ba726c21b4f7c28d1e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> TDataType::Coord&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a66ea6b2e42de9ba726c21b4f7c28d1e2">Coord</a></td></tr>
 <tr class="separator:a66ea6b2e42de9ba726c21b4f7c28d1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classdyno_1_1_particle_fluid"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classdyno_1_1_particle_fluid')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classdyno_1_1_particle_fluid.html">dyno::ParticleFluid&lt; TDataType &gt;</a></td></tr>
+<tr class="memitem:ae3b6014fcaf8e7b8c26e20405a341c77 inherit pub_types_classdyno_1_1_particle_fluid" id="r_ae3b6014fcaf8e7b8c26e20405a341c77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> TDataType::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#ae3b6014fcaf8e7b8c26e20405a341c77">Real</a></td></tr>
+<tr class="separator:ae3b6014fcaf8e7b8c26e20405a341c77 inherit pub_types_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553b992860f0076a03d09411c5c14b7c inherit pub_types_classdyno_1_1_particle_fluid" id="r_a553b992860f0076a03d09411c5c14b7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> TDataType::Coord&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#a553b992860f0076a03d09411c5c14b7c">Coord</a></td></tr>
+<tr class="separator:a553b992860f0076a03d09411c5c14b7c inherit pub_types_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classdyno_1_1_particle_system"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classdyno_1_1_particle_system')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classdyno_1_1_particle_system.html">dyno::ParticleSystem&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:a1b1bfaf5cab1ee8b043f365dbb29f336 inherit pub_types_classdyno_1_1_particle_system" id="r_a1b1bfaf5cab1ee8b043f365dbb29f336"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> TDataType::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#a1b1bfaf5cab1ee8b043f365dbb29f336">Real</a></td></tr>
 <tr class="separator:a1b1bfaf5cab1ee8b043f365dbb29f336 inherit pub_types_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,24 +144,45 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1930ebfe60f55ced6787553f9f883e62" id="r_a1930ebfe60f55ced6787553f9f883e62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a1930ebfe60f55ced6787553f9f883e62">GhostFluid</a> ()</td></tr>
 <tr class="separator:a1930ebfe60f55ced6787553f9f883e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa56af646a524385f724f47283b4a676d" id="r_aa56af646a524385f724f47283b4a676d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#aa56af646a524385f724f47283b4a676d">~GhostFluid</a> ()</td></tr>
-<tr class="separator:aa56af646a524385f724f47283b4a676d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd743e0d558fee0e5f560351c548115a" id="r_acd743e0d558fee0e5f560351c548115a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#acd743e0d558fee0e5f560351c548115a">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_attribute.html">Attribute</a>, <a class="el" href="classdyno_1_1_attribute.html">Attribute</a>, DeviceType::GPU, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">attribute&quot;</a>)</td></tr>
-<tr class="memdesc:acd743e0d558fee0e5f560351c548115a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle force.  <br /></td></tr>
-<tr class="separator:acd743e0d558fee0e5f560351c548115a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6138b0e71259a217333c9bb4f1e2d2e4" id="r_a6138b0e71259a217333c9bb4f1e2d2e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a6138b0e71259a217333c9bb4f1e2d2e4">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_ghost_fluid.html#a66ea6b2e42de9ba726c21b4f7c28d1e2">Coord</a>, <a class="el" href="classdyno_1_1_normal.html">Normal</a>, DeviceType::GPU, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">normal&quot;</a>)</td></tr>
-<tr class="separator:a6138b0e71259a217333c9bb4f1e2d2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef6d0bc4c96924499ccba19a8585bd9f" id="r_aef6d0bc4c96924499ccba19a8585bd9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#aef6d0bc4c96924499ccba19a8585bd9f">DEF_NODE_PORT</a> (<a class="el" href="classdyno_1_1_particle_system.html">ParticleSystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">FluidParticles</a>, &quot;Fluid <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">particles&quot;</a>)</td></tr>
-<tr class="separator:aef6d0bc4c96924499ccba19a8585bd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab730a3d0c8f56345b14170c9337373" id="r_a6ab730a3d0c8f56345b14170c9337373"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a6ab730a3d0c8f56345b14170c9337373">DEF_NODE_PORT</a> (<a class="el" href="classdyno_1_1_ghost_particles.html">GhostParticles</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">BoundaryParticles</a>, &quot;Boundary <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">particles&quot;</a>)</td></tr>
-<tr class="separator:a6ab730a3d0c8f56345b14170c9337373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a612806b05be82bcd3c04ea0ceedc8978" id="r_a612806b05be82bcd3c04ea0ceedc8978"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a612806b05be82bcd3c04ea0ceedc8978">~GhostFluid</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a612806b05be82bcd3c04ea0ceedc8978"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea633925b0786024d3e34555bf45a875" id="r_aea633925b0786024d3e34555bf45a875"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#aea633925b0786024d3e34555bf45a875">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_ghost_fluid.html#a66ea6b2e42de9ba726c21b4f7c28d1e2">Coord</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">PositionMerged</a>, DeviceType::GPU, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">position&quot;</a>)</td></tr>
+<tr class="memdesc:aea633925b0786024d3e34555bf45a875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle position for both the fluid and solid.  <br /></td></tr>
+<tr class="separator:aea633925b0786024d3e34555bf45a875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a9c7dda62cd9e8e944b2649422bf80" id="r_a97a9c7dda62cd9e8e944b2649422bf80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a97a9c7dda62cd9e8e944b2649422bf80">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_ghost_fluid.html#a66ea6b2e42de9ba726c21b4f7c28d1e2">Coord</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">VelocityMerged</a>, DeviceType::GPU, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">velocity&quot;</a>)</td></tr>
+<tr class="memdesc:a97a9c7dda62cd9e8e944b2649422bf80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle velocity.  <br /></td></tr>
+<tr class="separator:a97a9c7dda62cd9e8e944b2649422bf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aa7ff4f87056ebc43945faaa13d97ef" id="r_a7aa7ff4f87056ebc43945faaa13d97ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a7aa7ff4f87056ebc43945faaa13d97ef">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_attribute.html">Attribute</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">AttributeMerged</a>, DeviceType::GPU, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">attribute&quot;</a>)</td></tr>
+<tr class="memdesc:a7aa7ff4f87056ebc43945faaa13d97ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle force.  <br /></td></tr>
+<tr class="separator:a7aa7ff4f87056ebc43945faaa13d97ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616c5ed1268527f2c152e8da108cfea1" id="r_a616c5ed1268527f2c152e8da108cfea1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a616c5ed1268527f2c152e8da108cfea1">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_ghost_fluid.html#a66ea6b2e42de9ba726c21b4f7c28d1e2">Coord</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">NormalMerged</a>, DeviceType::GPU, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">normal&quot;</a>)</td></tr>
+<tr class="separator:a616c5ed1268527f2c152e8da108cfea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa511329b8f465f2c1ad0fa94ce2077a1" id="r_aa511329b8f465f2c1ad0fa94ce2077a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#aa511329b8f465f2c1ad0fa94ce2077a1">DEF_NODE_PORT</a> (<a class="el" href="classdyno_1_1_ghost_particles.html">GhostParticles</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">BoundaryParticles</a>, &quot;Initial <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">boundary</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">ghost</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">particles&quot;</a>)</td></tr>
+<tr class="separator:aa511329b8f465f2c1ad0fa94ce2077a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classdyno_1_1_particle_fluid"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_particle_fluid')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_particle_fluid.html">dyno::ParticleFluid&lt; TDataType &gt;</a></td></tr>
+<tr class="memitem:afa48f9370686aea2745ebd826397357f inherit pub_methods_classdyno_1_1_particle_fluid" id="r_afa48f9370686aea2745ebd826397357f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#afa48f9370686aea2745ebd826397357f">ParticleFluid</a> ()</td></tr>
+<tr class="separator:afa48f9370686aea2745ebd826397357f inherit pub_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b90e97c72e7ed3995ba4d05be8f2db3 inherit pub_methods_classdyno_1_1_particle_fluid" id="r_a7b90e97c72e7ed3995ba4d05be8f2db3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#a7b90e97c72e7ed3995ba4d05be8f2db3">~ParticleFluid</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a7b90e97c72e7ed3995ba4d05be8f2db3 inherit pub_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2287e3ccaaf54f5ad535629959b56f28 inherit pub_methods_classdyno_1_1_particle_fluid" id="r_a2287e3ccaaf54f5ad535629959b56f28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#a2287e3ccaaf54f5ad535629959b56f28">DEF_VAR</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">ReshuffleParticles</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">false</a>, &quot;&quot;)</td></tr>
+<tr class="separator:a2287e3ccaaf54f5ad535629959b56f28 inherit pub_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4b5c90e1fa3207b34757ba5afead5e inherit pub_methods_classdyno_1_1_particle_fluid" id="r_adc4b5c90e1fa3207b34757ba5afead5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#adc4b5c90e1fa3207b34757ba5afead5e">DEF_NODE_PORTS</a> (<a class="el" href="classdyno_1_1_particle_emitter.html">ParticleEmitter</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="classdyno_1_1_particle_emitter.html">ParticleEmitter</a>, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Emitters&quot;</a>)</td></tr>
+<tr class="separator:adc4b5c90e1fa3207b34757ba5afead5e inherit pub_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ba36ccc2dfc56738140328cce5ae00 inherit pub_methods_classdyno_1_1_particle_fluid" id="r_aa6ba36ccc2dfc56738140328cce5ae00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#aa6ba36ccc2dfc56738140328cce5ae00">DEF_NODE_PORTS</a> (<a class="el" href="classdyno_1_1_particle_system.html">ParticleSystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">InitialState</a>, &quot;Initial <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Fluid</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Particles&quot;</a>)</td></tr>
+<tr class="separator:aa6ba36ccc2dfc56738140328cce5ae00 inherit pub_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa48f9370686aea2745ebd826397357f inherit pub_methods_classdyno_1_1_particle_fluid" id="r_afa48f9370686aea2745ebd826397357f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#afa48f9370686aea2745ebd826397357f">ParticleFluid</a> ()</td></tr>
+<tr class="separator:afa48f9370686aea2745ebd826397357f inherit pub_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b90e97c72e7ed3995ba4d05be8f2db3 inherit pub_methods_classdyno_1_1_particle_fluid" id="r_a7b90e97c72e7ed3995ba4d05be8f2db3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#a7b90e97c72e7ed3995ba4d05be8f2db3">~ParticleFluid</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a7b90e97c72e7ed3995ba4d05be8f2db3 inherit pub_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ff611ec29820b0d0a635ee459c4270 inherit pub_methods_classdyno_1_1_particle_fluid" id="r_ad1ff611ec29820b0d0a635ee459c4270"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#ad1ff611ec29820b0d0a635ee459c4270">DEF_NODE_PORTS</a> (<a class="el" href="classdyno_1_1_particle_emitter.html">ParticleEmitter</a>, <a class="el" href="classdyno_1_1_particle_emitter.html">ParticleEmitter</a>, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Emitters&quot;</a>)</td></tr>
+<tr class="separator:ad1ff611ec29820b0d0a635ee459c4270 inherit pub_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf99c4ed1ef1aeecdfeca69082f92c13 inherit pub_methods_classdyno_1_1_particle_fluid" id="r_acf99c4ed1ef1aeecdfeca69082f92c13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#acf99c4ed1ef1aeecdfeca69082f92c13">DEF_NODE_PORTS</a> (<a class="el" href="classdyno_1_1_particle_system.html">ParticleSystem</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">InitialState</a>, &quot;Initial <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Fluid</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Particles&quot;</a>)</td></tr>
+<tr class="separator:acf99c4ed1ef1aeecdfeca69082f92c13 inherit pub_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_particle_system"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_particle_system')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_particle_system.html">dyno::ParticleSystem&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:aab4e04787072b5befe767834734c5e69 inherit pub_methods_classdyno_1_1_particle_system" id="r_aab4e04787072b5befe767834734c5e69"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#aab4e04787072b5befe767834734c5e69">ParticleSystem</a> ()</td></tr>
 <tr class="separator:aab4e04787072b5befe767834734c5e69 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adda67f01a7964e01e697489d2e6db86a inherit pub_methods_classdyno_1_1_particle_system" id="r_adda67f01a7964e01e697489d2e6db86a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#adda67f01a7964e01e697489d2e6db86a">~ParticleSystem</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:adda67f01a7964e01e697489d2e6db86a inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4793ad6bc4057d7ddd5e79704dbfb0d0 inherit pub_methods_classdyno_1_1_particle_system" id="r_a4793ad6bc4057d7ddd5e79704dbfb0d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#a4793ad6bc4057d7ddd5e79704dbfb0d0">loadParticles</a> (<a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a> lo, <a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a> hi, <a class="el" href="classdyno_1_1_particle_system.html#a1b1bfaf5cab1ee8b043f365dbb29f336">Real</a> distance)</td></tr>
-<tr class="separator:a4793ad6bc4057d7ddd5e79704dbfb0d0 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45501d05c9933454a27595c7816071b6 inherit pub_methods_classdyno_1_1_particle_system" id="r_a45501d05c9933454a27595c7816071b6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#a45501d05c9933454a27595c7816071b6">getNodeType</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:a45501d05c9933454a27595c7816071b6 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2f2fca4116e7b36e480534e38d0308 inherit pub_methods_classdyno_1_1_particle_system" id="r_acd2f2fca4116e7b36e480534e38d0308"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#acd2f2fca4116e7b36e480534e38d0308">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a>, Position, DeviceType::GPU, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">position&quot;</a>)</td></tr>
@@ -164,9 +191,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca426a7e26c0d19d7006c2016a9b546f inherit pub_methods_classdyno_1_1_particle_system" id="r_aca426a7e26c0d19d7006c2016a9b546f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#aca426a7e26c0d19d7006c2016a9b546f">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Velocity</a>, DeviceType::GPU, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">velocity&quot;</a>)</td></tr>
 <tr class="memdesc:aca426a7e26c0d19d7006c2016a9b546f inherit pub_methods_classdyno_1_1_particle_system"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle velocity.  <br /></td></tr>
 <tr class="separator:aca426a7e26c0d19d7006c2016a9b546f inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abea8d0de5726b230432d497e079fe201 inherit pub_methods_classdyno_1_1_particle_system" id="r_abea8d0de5726b230432d497e079fe201"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#abea8d0de5726b230432d497e079fe201">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_particle_system.html#a7438b29700a8a2c8762d82d575e03e01">Coord</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Force</a>, DeviceType::GPU, &quot;Force <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">on</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">each</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">particle&quot;</a>)</td></tr>
-<tr class="memdesc:abea8d0de5726b230432d497e079fe201 inherit pub_methods_classdyno_1_1_particle_system"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle force.  <br /></td></tr>
-<tr class="separator:abea8d0de5726b230432d497e079fe201 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b3c7a8c5a91c0239fb5917b5f521f83 inherit pub_methods_classdyno_1_1_particle_system" id="r_a0b3c7a8c5a91c0239fb5917b5f521f83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#a0b3c7a8c5a91c0239fb5917b5f521f83">DEF_INSTANCE_STATE</a> (<a class="el" href="classdyno_1_1_point_set.html">PointSet</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="classdyno_1_1_point_set.html">PointSet</a>, &quot;Topology&quot;)</td></tr>
 <tr class="memdesc:a0b3c7a8c5a91c0239fb5917b5f521f83 inherit pub_methods_classdyno_1_1_particle_system"><td class="mdescLeft">&#160;</td><td class="mdescRight">A topology.  <br /></td></tr>
 <tr class="separator:a0b3c7a8c5a91c0239fb5917b5f521f83 inherit pub_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,9 +226,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abe51e6101f5cd330b19315c136ad2cc3 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44daf82dfe3ccecf2d07be6b8ff34ffa inherit pub_methods_classdyno_1_1_node" id="r_a44daf82dfe3ccecf2d07be6b8ff34ffa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a44daf82dfe3ccecf2d07be6b8ff34ffa">isAutoSync</a> ()</td></tr>
 <tr class="separator:a44daf82dfe3ccecf2d07be6b8ff34ffa inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c34274bf9622f91b5d342b31ee48dd6 inherit pub_methods_classdyno_1_1_node" id="r_a9c34274bf9622f91b5d342b31ee48dd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a9c34274bf9622f91b5d342b31ee48dd6">isAutoHidden</a> ()</td></tr>
+<tr class="separator:a9c34274bf9622f91b5d342b31ee48dd6 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a302ff1cc36838b400066e194d0230c3c inherit pub_methods_classdyno_1_1_node" id="r_a302ff1cc36838b400066e194d0230c3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a302ff1cc36838b400066e194d0230c3c">setAutoSync</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">con</a>)</td></tr>
 <tr class="memdesc:a302ff1cc36838b400066e194d0230c3c inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the node can be automatically synchronized when its ancestor is updated.  <br /></td></tr>
 <tr class="separator:a302ff1cc36838b400066e194d0230c3c inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce66b8565da4e39b72864b0bb90b72c inherit pub_methods_classdyno_1_1_node" id="r_acce66b8565da4e39b72864b0bb90b72c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#acce66b8565da4e39b72864b0bb90b72c">setAutoHidden</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">con</a>)</td></tr>
+<tr class="separator:acce66b8565da4e39b72864b0bb90b72c inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af563c470551277606c8eb62a4b6b05 inherit pub_methods_classdyno_1_1_node" id="r_a2af563c470551277606c8eb62a4b6b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a2af563c470551277606c8eb62a4b6b05">isActive</a> ()</td></tr>
 <tr class="memdesc:a2af563c470551277606c8eb62a4b6b05 inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the state of dynamics.  <br /></td></tr>
 <tr class="separator:a2af563c470551277606c8eb62a4b6b05 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -394,10 +422,23 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a17a7f0c1a817e6174efa36fa9c62fc83" id="r_a17a7f0c1a817e6174efa36fa9c62fc83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a17a7f0c1a817e6174efa36fa9c62fc83">resetStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a17a7f0c1a817e6174efa36fa9c62fc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06b58c9b3e441d01911c97d92af72ec3" id="r_a06b58c9b3e441d01911c97d92af72ec3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a06b58c9b3e441d01911c97d92af72ec3">preUpdateStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:a06b58c9b3e441d01911c97d92af72ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82635af40759a73305bfaae1e65213aa" id="r_a82635af40759a73305bfaae1e65213aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a82635af40759a73305bfaae1e65213aa">postUpdateStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:a82635af40759a73305bfaae1e65213aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classdyno_1_1_particle_fluid"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdyno_1_1_particle_fluid')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_particle_fluid.html">dyno::ParticleFluid&lt; TDataType &gt;</a></td></tr>
+<tr class="memitem:a87135641e513f2f869b24d4c6ff988ad inherit pro_methods_classdyno_1_1_particle_fluid" id="r_a87135641e513f2f869b24d4c6ff988ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#a87135641e513f2f869b24d4c6ff988ad">resetStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a87135641e513f2f869b24d4c6ff988ad inherit pro_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756aaaf6ab26850b16bece67c1efb6fd inherit pro_methods_classdyno_1_1_particle_fluid" id="r_a756aaaf6ab26850b16bece67c1efb6fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#a756aaaf6ab26850b16bece67c1efb6fd">preUpdateStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a756aaaf6ab26850b16bece67c1efb6fd inherit pro_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87135641e513f2f869b24d4c6ff988ad inherit pro_methods_classdyno_1_1_particle_fluid" id="r_a87135641e513f2f869b24d4c6ff988ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#a87135641e513f2f869b24d4c6ff988ad">resetStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a87135641e513f2f869b24d4c6ff988ad inherit pro_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756aaaf6ab26850b16bece67c1efb6fd inherit pro_methods_classdyno_1_1_particle_fluid" id="r_a756aaaf6ab26850b16bece67c1efb6fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#a756aaaf6ab26850b16bece67c1efb6fd">preUpdateStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a756aaaf6ab26850b16bece67c1efb6fd inherit pro_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6250ec9cb576fa30f70484880555851d inherit pro_methods_classdyno_1_1_particle_fluid" id="r_a6250ec9cb576fa30f70484880555851d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_fluid.html#a6250ec9cb576fa30f70484880555851d">postUpdateStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a6250ec9cb576fa30f70484880555851d inherit pro_methods_classdyno_1_1_particle_fluid"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classdyno_1_1_particle_system"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdyno_1_1_particle_system')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_particle_system.html">dyno::ParticleSystem&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:a1647be2184acdeb7e7f7e0d5e5980ceb inherit pro_methods_classdyno_1_1_particle_system" id="r_a1647be2184acdeb7e7f7e0d5e5980ceb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_system.html#a1647be2184acdeb7e7f7e0d5e5980ceb">resetStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:a1647be2184acdeb7e7f7e0d5e5980ceb inherit pro_methods_classdyno_1_1_particle_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,6 +462,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7a88dfdd26c4e4b22e2a4e5a95909058 inherit pro_methods_classdyno_1_1_node" id="r_a7a88dfdd26c4e4b22e2a4e5a95909058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a7a88dfdd26c4e4b22e2a4e5a95909058">tick</a> ()</td></tr>
 <tr class="memdesc:a7a88dfdd26c4e4b22e2a4e5a95909058 inherit pro_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">notify all state and output fields are updated  <br /></td></tr>
 <tr class="separator:a7a88dfdd26c4e4b22e2a4e5a95909058 inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6d0b5dcfd89897430f2783e6d5630c6f" id="r_a6d0b5dcfd89897430f2783e6d5630c6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_ghost_fluid.html#a6d0b5dcfd89897430f2783e6d5630c6f">constructMergedArrays</a> ()</td></tr>
+<tr class="separator:a6d0b5dcfd89897430f2783e6d5630c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -508,8 +554,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="aa56af646a524385f724f47283b4a676d" name="aa56af646a524385f724f47283b4a676d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa56af646a524385f724f47283b4a676d">&#9670;&#160;</a></span>~GhostFluid()</h2>
+<a id="a612806b05be82bcd3c04ea0ceedc8978" name="a612806b05be82bcd3c04ea0ceedc8978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a612806b05be82bcd3c04ea0ceedc8978">&#9670;&#160;</a></span>~GhostFluid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -520,7 +566,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="classdyno_1_1_ghost_fluid.html">dyno::GhostFluid</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::~<a class="el" href="classdyno_1_1_ghost_fluid.html">GhostFluid</a> </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_ghost_fluid.html">dyno::GhostFluid</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::~<a class="el" href="classdyno_1_1_ghost_fluid.html">GhostFluid</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -528,7 +574,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -538,8 +584,35 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="acd743e0d558fee0e5f560351c548115a" name="acd743e0d558fee0e5f560351c548115a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd743e0d558fee0e5f560351c548115a">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[1/2]</span></h2>
+<a id="a6d0b5dcfd89897430f2783e6d5630c6f" name="a6d0b5dcfd89897430f2783e6d5630c6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d0b5dcfd89897430f2783e6d5630c6f">&#9670;&#160;</a></span>constructMergedArrays()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_ghost_fluid.html">dyno::GhostFluid</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::constructMergedArrays </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7aa7ff4f87056ebc43945faaa13d97ef" name="a7aa7ff4f87056ebc43945faaa13d97ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aa7ff4f87056ebc43945faaa13d97ef">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,7 +628,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_attribute.html">Attribute</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">AttributeMerged</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -582,8 +655,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="a6138b0e71259a217333c9bb4f1e2d2e4" name="a6138b0e71259a217333c9bb4f1e2d2e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6138b0e71259a217333c9bb4f1e2d2e4">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[2/2]</span></h2>
+<a id="a616c5ed1268527f2c152e8da108cfea1" name="a616c5ed1268527f2c152e8da108cfea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a616c5ed1268527f2c152e8da108cfea1">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -599,7 +672,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_normal.html">Normal</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">NormalMerged</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -624,8 +697,96 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="a6ab730a3d0c8f56345b14170c9337373" name="a6ab730a3d0c8f56345b14170c9337373"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab730a3d0c8f56345b14170c9337373">&#9670;&#160;</a></span>DEF_NODE_PORT() <span class="overload">[1/2]</span></h2>
+<a id="aea633925b0786024d3e34555bf45a875" name="aea633925b0786024d3e34555bf45a875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea633925b0786024d3e34555bf45a875">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_ghost_fluid.html">dyno::GhostFluid</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_ARRAY_STATE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_ghost_fluid.html#a66ea6b2e42de9ba726c21b4f7c28d1e2">Coord</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">PositionMerged</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DeviceType::GPU&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">position&quot;</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Particle position for both the fluid and solid. </p>
+
+</div>
+</div>
+<a id="a97a9c7dda62cd9e8e944b2649422bf80" name="a97a9c7dda62cd9e8e944b2649422bf80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a9c7dda62cd9e8e944b2649422bf80">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_ghost_fluid.html">dyno::GhostFluid</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_ARRAY_STATE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_ghost_fluid.html#a66ea6b2e42de9ba726c21b4f7c28d1e2">Coord</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">VelocityMerged</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DeviceType::GPU&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">velocity&quot;</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Particle velocity. </p>
+
+</div>
+</div>
+<a id="aa511329b8f465f2c1ad0fa94ce2077a1" name="aa511329b8f465f2c1ad0fa94ce2077a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa511329b8f465f2c1ad0fa94ce2077a1">&#9670;&#160;</a></span>DEF_NODE_PORT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -647,43 +808,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;Boundary <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">particles&quot;</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aef6d0bc4c96924499ccba19a8585bd9f" name="aef6d0bc4c96924499ccba19a8585bd9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6d0bc4c96924499ccba19a8585bd9f">&#9670;&#160;</a></span>DEF_NODE_PORT() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_ghost_fluid.html">dyno::GhostFluid</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_NODE_PORT </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_particle_system.html">ParticleSystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">FluidParticles</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;Fluid <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">particles&quot;</a>&#160;</td>
+          <td class="paramtype">&quot;Initial <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">boundary</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">ghost</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">particles&quot;</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -754,8 +879,37 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
+<a id="a17a7f0c1a817e6174efa36fa9c62fc83" name="a17a7f0c1a817e6174efa36fa9c62fc83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a7f0c1a817e6174efa36fa9c62fc83">&#9670;&#160;</a></span>resetStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_ghost_fluid.html">dyno::GhostFluid</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::resetStates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classdyno_1_1_node.html#a268d036395a10abc9669a042d35d91cf">dyno::Node</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Peridyno/peridyno/src/Dynamics/Cuda/ParticleSystem/<a class="el" href="_ghost_fluid_8h_source.html">GhostFluid.h</a></li>
+<li>D:/Peridyno/peridyno/src/Dynamics/Cuda/ParticleSystem/<a class="el" href="_ghost_fluid_8h_source.html">GhostFluid.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

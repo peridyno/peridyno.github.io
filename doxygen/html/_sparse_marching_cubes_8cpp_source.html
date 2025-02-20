@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/Cuda/Volume/SparseMarchingCubes.cpp Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Dynamics/Cuda/Volume/SparseMarchingCubes.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_fcf8d9b41703035e4148e841d5c3507a.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_ff678a16f4f087f6b3e489e7f5a6ac5e.html">Volume</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_fd8f3ed6aa4978ca948e4e53f2ea17ff.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_5b6078a30aa2f816f8ccd07bd3a8bd2d.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_01625feeab4c9893ca9dd3ab5c49c54f.html">Volume</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,7 +84,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="contents">
 <a href="_sparse_marching_cubes_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_sparse_marching_cubes_8h.html">SparseMarchingCubes.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_marching_cubes_helper_8h.html">Mapping/MarchingCubesHelper.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_marching_cubes_helper_8h.html">Module/MarchingCubesHelper.h</a>&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_g_l_surface_visual_module_8h.html">GLSurfaceVisualModule.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
@@ -156,11 +156,11 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">DArray&lt;Coord&gt;</a> <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">triangleVertices</a>(<a class="code hl_class" href="classdyno_1_1_array_map.html">totalVNum</a>);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">DArray&lt;TopologyModule::Triangle&gt;</a> triangles(<a class="code hl_class" href="classdyno_1_1_array_map.html">totalVNum</a> / 3);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">DArray&lt;TopologyModule::Triangle&gt;</a> <a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">triangles</a>(<a class="code hl_class" href="classdyno_1_1_array_map.html">totalVNum</a> / 3);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <a class="code hl_function" href="classdyno_1_1_marching_cubes_helper.html#a82ab1eeab52cb3f6d920b9d5a2b42fcb">MarchingCubesHelper&lt;TDataType&gt;::constructTrianglesForOctree</a>(</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_class" href="classdyno_1_1_array_map.html">triangleVertices</a>,</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            triangles,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_class" href="classdyno_1_1_array_map.html">triangles</a>,</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_class" href="classdyno_1_1_array_map.html">voxelVertNum</a>,</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <a class="code hl_class" href="classdyno_1_1_array_map.html">ceilVertices</a>,</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_class" href="classdyno_1_1_array_map.html">sdfs</a>,</div>
@@ -172,14 +172,14 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keyword">auto</span> <a class="code hl_class" href="classdyno_1_1_array_map.html">triSet</a> = this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">stateTriangleSet</a>()-&gt;getDataPtr();</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">triSet</a>-&gt;setPoints(<a class="code hl_class" href="classdyno_1_1_array_map.html">triangleVertices</a>);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">triSet</a>-&gt;setTriangles(triangles);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">triSet</a>-&gt;setTriangles(<a class="code hl_class" href="classdyno_1_1_array_map.html">triangles</a>);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">sdfs</a>.clear();</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        normals.clear();</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">voxelVertNum</a>.clear();</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">ceilVertices</a>.clear();</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">triangleVertices</a>.clear();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        triangles.clear();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">triangles</a>.clear();</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
 </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
@@ -210,7 +210,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclassdyno_1_1_marching_cubes_helper_html_a5e5212c3407e80ce03bc140844296739"><div class="ttname"><a href="classdyno_1_1_marching_cubes_helper.html#a5e5212c3407e80ce03bc140844296739">dyno::MarchingCubesHelper::countVerticeNumberForOctree</a></div><div class="ttdeci">static void countVerticeNumberForOctree(DArray&lt; uint &gt; &amp;num, DArray&lt; Coord &gt; &amp;vertices, DArray&lt; Real &gt; &amp;sdfs, Real isoValue)</div></div>
 <div class="ttc" id="aclassdyno_1_1_marching_cubes_helper_html_a82ab1eeab52cb3f6d920b9d5a2b42fcb"><div class="ttname"><a href="classdyno_1_1_marching_cubes_helper.html#a82ab1eeab52cb3f6d920b9d5a2b42fcb">dyno::MarchingCubesHelper::constructTrianglesForOctree</a></div><div class="ttdeci">static void constructTrianglesForOctree(DArray&lt; Coord &gt; &amp;triangleVertices, DArray&lt; TopologyModule::Triangle &gt; &amp;triangles, DArray&lt; uint &gt; &amp;num, DArray&lt; Coord &gt; &amp;cellVertices, DArray&lt; Real &gt; &amp;sdfs, Real isoValue)</div></div>
 <div class="ttc" id="aclassdyno_1_1_node_html"><div class="ttname"><a href="classdyno_1_1_node.html">dyno::Node</a></div><div class="ttdef"><b>Definition</b> <a href="_node_8h_source.html#l00067">Node.h:68</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00312">Node.cpp:312</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00320">Node.cpp:320</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_sparse_marching_cubes_html"><div class="ttname"><a href="classdyno_1_1_sparse_marching_cubes.html">dyno::SparseMarchingCubes</a></div><div class="ttdef"><b>Definition</b> <a href="_sparse_marching_cubes_8h_source.html#l00022">SparseMarchingCubes.h:23</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_sparse_marching_cubes_html_a1b29fb16ce12a8d0f4b862f225fe82e6"><div class="ttname"><a href="classdyno_1_1_sparse_marching_cubes.html#a1b29fb16ce12a8d0f4b862f225fe82e6">dyno::SparseMarchingCubes::validateInputs</a></div><div class="ttdeci">bool validateInputs() override</div><div class="ttdef"><b>Definition</b> <a href="_sparse_marching_cubes_8cpp_source.html#l00103">SparseMarchingCubes.cpp:103</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_sparse_marching_cubes_html_a281acbe6ac2fa6dda3d1beefe5a3ae98"><div class="ttname"><a href="classdyno_1_1_sparse_marching_cubes.html#a281acbe6ac2fa6dda3d1beefe5a3ae98">dyno::SparseMarchingCubes::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition</b> <a href="_sparse_marching_cubes_8cpp_source.html#l00026">SparseMarchingCubes.cpp:26</a></div></div>
@@ -218,8 +218,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclassdyno_1_1_sparse_marching_cubes_html_a5caf09ef96aecd48a4e4881a7ed2669b"><div class="ttname"><a href="classdyno_1_1_sparse_marching_cubes.html#a5caf09ef96aecd48a4e4881a7ed2669b">dyno::SparseMarchingCubes::Real</a></div><div class="ttdeci">TDataType::Real Real</div><div class="ttdef"><b>Definition</b> <a href="_sparse_marching_cubes_8h_source.html#l00026">SparseMarchingCubes.h:26</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_sparse_marching_cubes_html_a9a2c164e63a1e00d0073df667cbe15d9"><div class="ttname"><a href="classdyno_1_1_sparse_marching_cubes.html#a9a2c164e63a1e00d0073df667cbe15d9">dyno::SparseMarchingCubes::updateStates</a></div><div class="ttdeci">void updateStates() override</div><div class="ttdef"><b>Definition</b> <a href="_sparse_marching_cubes_8cpp_source.html#l00097">SparseMarchingCubes.cpp:97</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_sparse_marching_cubes_html_af6be4d4d71c01db1136092e43bce58b2"><div class="ttname"><a href="classdyno_1_1_sparse_marching_cubes.html#af6be4d4d71c01db1136092e43bce58b2">dyno::SparseMarchingCubes::SparseMarchingCubes</a></div><div class="ttdeci">SparseMarchingCubes()</div><div class="ttdef"><b>Definition</b> <a href="_sparse_marching_cubes_8cpp_source.html#l00012">SparseMarchingCubes.cpp:12</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00080">ArrayMap.inl:80</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00082">ArrayMap.inl:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab0d63a6728e9330ffbdf18acdb7ad08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8053a1dedb250abd4e9a87dca2f3e9c" id="r_ad8053a1dedb250abd4e9a87dca2f3e9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_main_window.html#ad8053a1dedb250abd4e9a87dca2f3e9c">setScene</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_scene_graph.html">dyno::SceneGraph</a> &gt; scene)</td></tr>
 <tr class="separator:ad8053a1dedb250abd4e9a87dca2f3e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fc62eeac6d89b87401b62d29b20b5f" id="r_a43fc62eeac6d89b87401b62d29b20b5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_w_simulation_canvas.html">WSimulationCanvas</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_main_window.html#a43fc62eeac6d89b87401b62d29b20b5f">simCanvas</a> ()</td></tr>
+<tr class="separator:a43fc62eeac6d89b87401b62d29b20b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -114,6 +116,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ae5389adf709fa3230dcf7aa43bf74a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb94556b68df6a356fd6998665c82bbc" id="r_afb94556b68df6a356fd6998665c82bbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_main_window.html#afb94556b68df6a356fd6998665c82bbc">reset</a> ()</td></tr>
 <tr class="separator:afb94556b68df6a356fd6998665c82bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e995652908583d59f639405372af006" id="r_a3e995652908583d59f639405372af006"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_main_window.html#a3e995652908583d59f639405372af006">updateCanvas</a> ()</td></tr>
+<tr class="separator:a3e995652908583d59f639405372af006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -133,10 +137,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a61b5b972ece04a73a743d3431037cfd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96df06f09095448bd8294316dfa6187c" id="r_a96df06f09095448bd8294316dfa6187c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">dyno::Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_main_window.html#a96df06f09095448bd8294316dfa6187c">mActiveNode</a></td></tr>
 <tr class="separator:a96df06f09095448bd8294316dfa6187c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55bd842a37900038553e7606452b4b83" id="r_a55bd842a37900038553e7606452b4b83"><td class="memItemLeft" align="right" valign="top">Wt::WPushButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_main_window.html#a55bd842a37900038553e7606452b4b83">startButton</a></td></tr>
+<tr class="separator:a55bd842a37900038553e7606452b4b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00017">17</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00018">18</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad9432332a2d47efa21104a03bcd1c5fe" name="ad9432332a2d47efa21104a03bcd1c5fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9432332a2d47efa21104a03bcd1c5fe">&#9670;&#160;</a></span>WMainWindow()</h2>
@@ -206,7 +212,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00118">118</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00120">120</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -281,7 +287,12 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00245">245</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00283">283</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_w_main_window_afb94556b68df6a356fd6998665c82bbc_cgraph.png" border="0" usemap="#aclass_w_main_window_afb94556b68df6a356fd6998665c82bbc_cgraph" alt=""/></div>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -306,7 +317,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00260">260</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00311">311</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -316,6 +327,38 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_w_main_window_ad8053a1dedb250abd4e9a87dca2f3e9c_icgraph.png" border="0" usemap="#aclass_w_main_window_ad8053a1dedb250abd4e9a87dca2f3e9c_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a43fc62eeac6d89b87401b62d29b20b5f" name="a43fc62eeac6d89b87401b62d29b20b5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43fc62eeac6d89b87401b62d29b20b5f">&#9670;&#160;</a></span>simCanvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_w_simulation_canvas.html">WSimulationCanvas</a> * WMainWindow::simCanvas </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00026">26</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_w_main_window_a43fc62eeac6d89b87401b62d29b20b5f_icgraph.png" border="0" usemap="#aclass_w_main_window_a43fc62eeac6d89b87401b62d29b20b5f_icgraph" alt=""/></div>
 </div>
 
 </div>
@@ -343,7 +386,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00209">209</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00239">239</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -380,7 +423,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00233">233</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00270">270</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -417,11 +460,48 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00228">228</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00264">264</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_w_main_window_add2c55f7c6135bbdb771cd64a57ab624_icgraph.png" border="0" usemap="#aclass_w_main_window_add2c55f7c6135bbdb771cd64a57ab624_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a3e995652908583d59f639405372af006" name="a3e995652908583d59f639405372af006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e995652908583d59f639405372af006">&#9670;&#160;</a></span>updateCanvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WMainWindow::updateCanvas </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8cpp_source.html#l00301">301</a> of file <a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_w_main_window_a3e995652908583d59f639405372af006_cgraph.png" border="0" usemap="#aclass_w_main_window_a3e995652908583d59f639405372af006_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_w_main_window_a3e995652908583d59f639405372af006_icgraph.png" border="0" usemap="#aclass_w_main_window_a3e995652908583d59f639405372af006_icgraph" alt=""/></div>
 </div>
 
 </div>
@@ -447,7 +527,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00043">43</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00047">47</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -471,7 +551,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00047">47</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00051">51</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -495,7 +575,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00040">40</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00044">44</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +599,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00039">39</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00043">43</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -543,7 +623,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00041">41</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00045">45</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -567,7 +647,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00044">44</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00048">48</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -591,7 +671,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00046">46</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00050">50</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
 
 </div>
 </div>
@@ -615,13 +695,37 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00036">36</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00040">40</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a55bd842a37900038553e7606452b4b83" name="a55bd842a37900038553e7606452b4b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55bd842a37900038553e7606452b4b83">&#9670;&#160;</a></span>startButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Wt::WPushButton* WMainWindow::startButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_main_window_8h_source.html#l00053">53</a> of file <a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>E:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/<a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a></li>
-<li>E:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/<a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a></li>
+<li>D:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/<a class="el" href="_w_main_window_8h_source.html">WMainWindow.h</a></li>
+<li>D:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/<a class="el" href="_w_main_window_8cpp_source.html">WMainWindow.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

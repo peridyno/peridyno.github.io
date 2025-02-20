@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Modeling/EarClipper.h Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Modeling/Commands/EarClipper.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_fc0f6501aa20ea1b5a86082ca8079383.html">Modeling</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_7098558150fb41b4059e7cec4fdfe2bf.html">Modeling</a></li><li class="navelem"><a class="el" href="dir_19e475df6b9256e8501e1ff3e008b9b9.html">Commands</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -84,7 +84,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="contents">
 <a href="_ear_clipper_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="_parametric_model_8h.html">Node/ParametricModel.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="_model_editing_8h.html">ModelEditing.h</a>&quot;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="_g_l_surface_visual_module_8h.html">GLSurfaceVisualModule.h</a>&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="_g_l_wireframe_visual_module_8h.html">GLWireframeVisualModule.h</a>&quot;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
@@ -92,7 +92,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
 <div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classdyno_1_1_ear_clipper.html">   25</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classdyno_1_1_ear_clipper.html">EarClipper</a> : <span class="keyword">public</span> <a class="code hl_class" href="classdyno_1_1_node.html">Node</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classdyno_1_1_ear_clipper.html">   25</a></span>    <span class="keyword">class </span><a class="code hl_class" href="classdyno_1_1_ear_clipper.html">EarClipper</a> : <span class="keyword">public</span> <a class="code hl_class" href="classdyno_1_1_model_editing.html">ModelEditing</a>&lt;TDataType&gt;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classdyno_1_1_ear_clipper.html#aaef139d3c6bf2e0f69334e4eae2f29e7">   28</a></span>        <a class="code hl_function" href="classdyno_1_1_ear_clipper.html#aaef139d3c6bf2e0f69334e4eae2f29e7">DECLARE_TCLASS</a>(<a class="code hl_class" href="classdyno_1_1_ear_clipper.html">EarClipper</a>, <a class="code hl_class" href="classdyno_1_1_array_map.html">TDataType</a>);</div>
@@ -163,8 +163,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 <div class="ttc" id="a_g_l_surface_visual_module_8h_html"><div class="ttname"><a href="_g_l_surface_visual_module_8h.html">GLSurfaceVisualModule.h</a></div></div>
 <div class="ttc" id="a_g_l_wireframe_visual_module_8h_html"><div class="ttname"><a href="_g_l_wireframe_visual_module_8h.html">GLWireframeVisualModule.h</a></div></div>
+<div class="ttc" id="a_model_editing_8h_html"><div class="ttname"><a href="_model_editing_8h.html">ModelEditing.h</a></div></div>
 <div class="ttc" id="a_object_8h_html_ad04bb7da7189939ce1eeba05386dfdb8"><div class="ttname"><a href="_object_8h.html#ad04bb7da7189939ce1eeba05386dfdb8">IMPLEMENT_TCLASS</a></div><div class="ttdeci">#define IMPLEMENT_TCLASS(name, T1)</div><div class="ttdef"><b>Definition</b> <a href="_object_8h_source.html#l00103">Object.h:103</a></div></div>
-<div class="ttc" id="a_parametric_model_8h_html"><div class="ttname"><a href="_parametric_model_8h.html">ParametricModel.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_map_html"><div class="ttname"><a href="classdyno_1_1_array_map.html">dyno::ArrayMap</a></div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00025">ArrayMap.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_ear_clipper_html"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html">dyno::EarClipper</a></div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8h_source.html#l00025">EarClipper.h:26</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_ear_clipper_html_a29eeb7fcb66f9f4218d68cb15d309c2a"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#a29eeb7fcb66f9f4218d68cb15d309c2a">dyno::EarClipper::~EarClipper</a></div><div class="ttdeci">~EarClipper()</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8h_source.html#l00054">EarClipper.h:54</a></div></div>
@@ -174,18 +174,18 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclassdyno_1_1_ear_clipper_html_a66b11f028bc373a0fc2180ee8ce7a273"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#a66b11f028bc373a0fc2180ee8ce7a273">dyno::EarClipper::Real</a></div><div class="ttdeci">TDataType::Real Real</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8h_source.html#l00031">EarClipper.h:31</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_ear_clipper_html_a6a4aa8005194976722be2503fcc75f4e"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#a6a4aa8005194976722be2503fcc75f4e">dyno::EarClipper::EarClipper</a></div><div class="ttdeci">EarClipper(std::vector&lt; DataType3f::Coord &gt; vts, std::vector&lt; TopologyModule::Triangle &gt; &amp;outTriangles)</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8h_source.html#l00052">EarClipper.h:52</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_ear_clipper_html_a9e25e5a172b4038c89a6bd60758cdd57"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#a9e25e5a172b4038c89a6bd60758cdd57">dyno::EarClipper::DEF_INSTANCE_IN</a></div><div class="ttdeci">DEF_INSTANCE_IN(PointSet&lt; TDataType &gt;, PointSet, &quot;&quot;)</div></div>
-<div class="ttc" id="aclassdyno_1_1_ear_clipper_html_aa3b9ac2226b68bfdf7fd44511a6b34b7"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#aa3b9ac2226b68bfdf7fd44511a6b34b7">dyno::EarClipper::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8cpp_source.html#l00018">EarClipper.cpp:18</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_ear_clipper_html_aa3b9ac2226b68bfdf7fd44511a6b34b7"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#aa3b9ac2226b68bfdf7fd44511a6b34b7">dyno::EarClipper::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8cpp_source.html#l00019">EarClipper.cpp:19</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_ear_clipper_html_aaef139d3c6bf2e0f69334e4eae2f29e7"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#aaef139d3c6bf2e0f69334e4eae2f29e7">dyno::EarClipper::DECLARE_TCLASS</a></div><div class="ttdeci">DECLARE_TCLASS(EarClipper, TDataType)</div></div>
-<div class="ttc" id="aclassdyno_1_1_ear_clipper_html_abd5631dffa5e33a77fafa2331f162943"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#abd5631dffa5e33a77fafa2331f162943">dyno::EarClipper::EarClipper</a></div><div class="ttdeci">EarClipper()</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8cpp_source.html#l00011">EarClipper.cpp:11</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_ear_clipper_html_ace41115514ab2b441e97acd875a74408"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#ace41115514ab2b441e97acd875a74408">dyno::EarClipper::polyClip</a></div><div class="ttdeci">void polyClip(std::vector&lt; DataType3f::Coord &gt; vts, std::vector&lt; TopologyModule::Triangle &gt; &amp;outTriangles)</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8cpp_source.html#l00041">EarClipper.cpp:41</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_ear_clipper_html_acf822631ac7f8035566894011abb76ac"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#acf822631ac7f8035566894011abb76ac">dyno::EarClipper::varChanged</a></div><div class="ttdeci">void varChanged()</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8cpp_source.html#l00024">EarClipper.cpp:24</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_ear_clipper_html_abd5631dffa5e33a77fafa2331f162943"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#abd5631dffa5e33a77fafa2331f162943">dyno::EarClipper::EarClipper</a></div><div class="ttdeci">EarClipper()</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8cpp_source.html#l00012">EarClipper.cpp:12</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_ear_clipper_html_ace41115514ab2b441e97acd875a74408"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#ace41115514ab2b441e97acd875a74408">dyno::EarClipper::polyClip</a></div><div class="ttdeci">void polyClip(std::vector&lt; DataType3f::Coord &gt; vts, std::vector&lt; TopologyModule::Triangle &gt; &amp;outTriangles)</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8cpp_source.html#l00152">EarClipper.cpp:152</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_ear_clipper_html_acf822631ac7f8035566894011abb76ac"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#acf822631ac7f8035566894011abb76ac">dyno::EarClipper::varChanged</a></div><div class="ttdeci">void varChanged()</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8cpp_source.html#l00025">EarClipper.cpp:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_ear_clipper_html_acff7c8a3f689f81d9b0361ab62bda10f"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#acff7c8a3f689f81d9b0361ab62bda10f">dyno::EarClipper::Coord</a></div><div class="ttdeci">TDataType::Coord Coord</div><div class="ttdef"><b>Definition</b> <a href="_ear_clipper_8h_source.html#l00032">EarClipper.h:32</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_ear_clipper_html_af232c9e77002bbda1ad84822a4abdeb6"><div class="ttname"><a href="classdyno_1_1_ear_clipper.html#af232c9e77002bbda1ad84822a4abdeb6">dyno::EarClipper::DEF_INSTANCE_STATE</a></div><div class="ttdeci">DEF_INSTANCE_STATE(TriangleSet&lt; TDataType &gt;, TriangleSet, &quot;&quot;)</div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html"><div class="ttname"><a href="classdyno_1_1_node.html">dyno::Node</a></div><div class="ttdef"><b>Definition</b> <a href="_node_8h_source.html#l00067">Node.h:68</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_model_editing_html"><div class="ttname"><a href="classdyno_1_1_model_editing.html">dyno::ModelEditing</a></div><div class="ttdef"><b>Definition</b> <a href="_model_editing_8h_source.html#l00024">ModelEditing.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_point_set_html"><div class="ttname"><a href="classdyno_1_1_point_set.html">dyno::PointSet</a></div><div class="ttdoc">A PointSet stores the coordinates for a set of independent points.</div><div class="ttdef"><b>Definition</b> <a href="_vulkan_2_topology_2_point_set_8h_source.html#l00007">PointSet.h:8</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_triangle_set_html"><div class="ttname"><a href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a></div><div class="ttdef"><b>Definition</b> <a href="_vulkan_2_topology_2_triangle_set_8h_source.html#l00006">TriangleSet.h:7</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00080">ArrayMap.inl:80</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00082">ArrayMap.inl:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

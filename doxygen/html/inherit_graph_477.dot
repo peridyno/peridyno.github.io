@@ -5,7 +5,11 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="Wt::WAbstractItemModel",height=0.2,width=0.4,color="grey60", fillcolor="#E0E0E0", style="filled",tooltip=" "];
-  Node0 -> Node1 [id="edge562_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 [id="Node000001",label="WNodeDataModel",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_w_node_data_model.html",tooltip=" "];
+  Node0 [id="Node000000",label="vks::Texture",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvks_1_1_texture.html",tooltip=" "];
+  Node0 -> Node1 [id="edge599_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="vks::Texture2D",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvks_1_1_texture2_d.html",tooltip=" "];
+  Node0 -> Node2 [id="edge600_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="vks::Texture2DArray",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvks_1_1_texture2_d_array.html",tooltip=" "];
+  Node0 -> Node3 [id="edge601_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="vks::TextureCubeMap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classvks_1_1_texture_cube_map.html",tooltip=" "];
 }

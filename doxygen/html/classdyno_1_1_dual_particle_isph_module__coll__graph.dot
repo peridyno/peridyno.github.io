@@ -42,7 +42,7 @@ digraph "dyno::DualParticleIsphModule&lt; TDataType &gt;"
   Node11 -> Node16 [id="edge19_Node000016_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node17 -> Node1 [id="edge20_Node000001_Node000017",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_reduce",fontcolor="grey" ];
   Node17 [id="Node000017",label="dyno::Reduction\< Real \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_reduction.html",tooltip=" "];
-  Node18 -> Node1 [id="edge21_Node000001_Node000018",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_arithmetic\nm_arithmetic_r",fontcolor="grey" ];
+  Node18 -> Node1 [id="edge21_Node000001_Node000018",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_arithmetic",fontcolor="grey" ];
   Node18 [id="Node000018",label="dyno::Arithmetic\< Real \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_arithmetic.html",tooltip=" "];
   Node17 -> Node18 [id="edge22_Node000018_Node000017",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_reduce",fontcolor="grey" ];
   Node15 -> Node18 [id="edge23_Node000018_Node000015",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_buf",fontcolor="grey" ];

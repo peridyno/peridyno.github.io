@@ -29,9 +29,11 @@ digraph "WSimulationCanvas::initializeGL"
   Node1 -> Node12 [id="edge11_Node000001_Node000012",color="steelblue1",style="solid",tooltip=" "];
   Node12 [id="Node000012",label="dyno::Texture2D::resize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_texture2_d.html#a4f581d15b30e3343c37c31aa39aa6b81",tooltip=" "];
   Node1 -> Node13 [id="edge12_Node000001_Node000013",color="steelblue1",style="solid",tooltip=" "];
-  Node13 [id="Node000013",label="dyno::Framebuffer::\lsetTexture",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_framebuffer.html#a407cb23b107450a7b6a78e0720eb0138",tooltip=" "];
+  Node13 [id="Node000013",label="dyno::ImWindow::setEnable\lViewManipulate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_im_window.html#a33f3f369099bba981cd5016baa014ac0",tooltip=" "];
   Node1 -> Node14 [id="edge13_Node000001_Node000014",color="steelblue1",style="solid",tooltip=" "];
-  Node14 [id="Node000014",label="dyno::RenderWindow\l::showImGUI",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_render_window.html#a23234e53446a811d0489fdb44e91cefa",tooltip=" "];
+  Node14 [id="Node000014",label="dyno::Framebuffer::\lsetTexture",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_framebuffer.html#a407cb23b107450a7b6a78e0720eb0138",tooltip=" "];
   Node1 -> Node15 [id="edge14_Node000001_Node000015",color="steelblue1",style="solid",tooltip=" "];
-  Node15 [id="Node000015",label="dyno::Framebuffer::\lunbind",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_framebuffer.html#ab911f29ea93b3e219c4c076851a42827",tooltip=" "];
+  Node15 [id="Node000015",label="dyno::RenderWindow\l::showImGUI",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_render_window.html#a23234e53446a811d0489fdb44e91cefa",tooltip=" "];
+  Node1 -> Node16 [id="edge15_Node000001_Node000016",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="dyno::Framebuffer::\lunbind",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_framebuffer.html#ab911f29ea93b3e219c4c076851a42827",tooltip=" "];
 }

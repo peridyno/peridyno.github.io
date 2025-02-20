@@ -1,0 +1,15 @@
+digraph "dyno::cgeo::DotCross"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="dyno::cgeo::DotCross",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="dyno::cgeo::getBarycentric",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno_1_1cgeo.html#af46bba79ae69399e9f6906de1f8be633",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::cgeo::getVolume",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno_1_1cgeo.html#af3e14dddca32e264c9483f1f8575f985",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::cgeo::isInTet",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno_1_1cgeo.html#a7ecb79c49eebf2a25b0e89c96c7c572c",tooltip=" "];
+}

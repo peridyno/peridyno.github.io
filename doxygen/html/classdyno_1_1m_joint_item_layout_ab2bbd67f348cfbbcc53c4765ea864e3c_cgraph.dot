@@ -1,0 +1,24 @@
+digraph "dyno::mJointItemLayout::mJointItemLayout"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="dyno::mJointItemLayout\l::mJointItemLayout",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="dyno::mJointItemLayout\l::createJointDetailWidget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1m_joint_item_layout.html#a8a03a509ff53a628be60c5a19936681a",tooltip="Create Joint Detail Panel."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::mJointItemLayout\l::emitChange",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1m_joint_item_layout.html#a65f728cd8cb435d0e8df4bbc97452c25",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::mJointItemLayout\l::valueChange",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1m_joint_item_layout.html#ad1933829600c38b845b08fea714d1959",tooltip="Joint Data Change."];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::QJointBodyDetail\l::jointChange",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_q_joint_body_detail.html#a02efb30f098533110cd09f8b055352c3",tooltip="Transmits a signal when data is updated."];
+  Node1 -> Node3 [id="edge5_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node6 [id="edge6_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="dyno::mJointItemLayout\l::emitRemove",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1m_joint_item_layout.html#aaf9e1cf3b7ed543d5eab26c6654dc799",tooltip=" "];
+  Node6 -> Node7 [id="edge7_Node000006_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="dyno::mJointItemLayout\l::removeByElementIndexId",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1m_joint_item_layout.html#a5c97bba59a2a22c5bd9e77bf42aa632b",tooltip=" "];
+  Node1 -> Node8 [id="edge8_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="dyno::mJointItemLayout\l::value",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1m_joint_item_layout.html#ab4565163820e2a50538d124e5a69cf22",tooltip="Get current RigidBodyInfo."];
+}

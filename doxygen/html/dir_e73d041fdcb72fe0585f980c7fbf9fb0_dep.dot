@@ -1,0 +1,18 @@
+digraph "D:/Peridyno/peridyno/src/Dynamics/Cuda/RigidBody/Module"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_b0683d05cd6290cc82bac308306ede2e {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="RigidBody", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_b0683d05cd6290cc82bac308306ede2e.html",tooltip=""]
+  dir_e73d041fdcb72fe0585f980c7fbf9fb0 [label="Module", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_e73d041fdcb72fe0585f980c7fbf9fb0.html",tooltip=""];
+  }
+  dir_18ab09de471ddf4a6c726bf6f36eb1c9 [label="Core", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_18ab09de471ddf4a6c726bf6f36eb1c9.html",tooltip=""];
+  dir_72c161997c5186b0a4bbf39a44809cf4 [label="Framework", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_72c161997c5186b0a4bbf39a44809cf4.html",tooltip=""];
+  dir_7ded34adb3e08c5a039f89f629ad7b33 [label="Topology", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_7ded34adb3e08c5a039f89f629ad7b33.html",tooltip=""];
+  dir_e73d041fdcb72fe0585f980c7fbf9fb0->dir_18ab09de471ddf4a6c726bf6f36eb1c9 [headlabel="5", labeldistance=1.5 headhref="dir_000047_000014.html" href="dir_000047_000014.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_e73d041fdcb72fe0585f980c7fbf9fb0->dir_72c161997c5186b0a4bbf39a44809cf4 [headlabel="11", labeldistance=1.5 headhref="dir_000047_000027.html" href="dir_000047_000027.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_e73d041fdcb72fe0585f980c7fbf9fb0->dir_7ded34adb3e08c5a039f89f629ad7b33 [headlabel="16", labeldistance=1.5 headhref="dir_000047_000081.html" href="dir_000047_000081.html" color="steelblue1" fontcolor="steelblue1"];
+}

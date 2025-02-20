@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -88,10 +88,62 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="_node_8h_source.html">Node.h</a>&gt;</code></p>
-
-<p>Inherits <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a>.</p>
-
-<p>Inherited by <a class="el" href="classdyno_1_1_parametric_model.html">dyno::ParametricModel&lt; DataType3f &gt;</a><code> [virtual]</code>, <a class="el" href="classdyno_1_1_adaptive_boundary.html">dyno::AdaptiveBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_capillary_wave.html">dyno::CapillaryWave&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_collision_detector.html">dyno::CollisionDetector&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_coupling.html">dyno::Coupling&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ear_clipper.html">dyno::EarClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_edge_picker_node.html">dyno::EdgePickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_common_point_visual_node.html">dyno::GLCommonPointVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_instance_visual_node.html">dyno::GLInstanceVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_point_visual_node.html">dyno::GLPointVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_surface_visual_node.html">dyno::GLSurfaceVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_wireframe_visual_node.html">dyno::GLWireframeVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_granular_media.html">dyno::GranularMedia&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_group.html">dyno::Group&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_joint_deform.html">dyno::JointDeform&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_marching_cubes.html">dyno::MarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge.html">dyno::Merge&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge_simplex_set.html">dyno::MergeSimplexSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge_triangle_set.html">dyno::MergeTriangleSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_normal.html">dyno::Normal&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean.html">dyno::Ocean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean_patch.html">dyno::OceanPatch&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_parametric_model.html">dyno::ParametricModel&lt; TDataType &gt;</a><code> [virtual]</code>, <a class="el" href="classdyno_1_1_particle_system.html">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_picker_node.html">dyno::PointPickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_set_to_triangle_set.html">dyno::PointSetToTriangleSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_quad_picker_node.html">dyno::QuadPickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem&lt; TDataType &gt;</a><code> [virtual]</code>, <a class="el" href="classdyno_1_1_sampler.html">dyno::Sampler&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sampling_points.html">dyno::SamplingPoints&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_semi_analytical_s_f_i_node.html">dyno::SemiAnalyticalSFINode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_marching_cubes.html">dyno::SparseMarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_volume_clipper.html">dyno::SparseVolumeClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_spline_constraint.html">dyno::SplineConstraint&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_split_simplex_set.html">dyno::SplitSimplexSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_static_boundary.html">dyno::StaticBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_level_set_construction_node.html">dyno::SurfaceLevelSetConstructionNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_particle_tracking.html">dyno::SurfaceParticleTracking&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_tetrahedral_system.html">dyno::TetrahedralSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_texture_mesh_to_triangle_set_node.html">dyno::TextureMeshToTriangleSetNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_thread_system.html">dyno::ThreadSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangle_picker_node.html">dyno::TrianglePickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_mesh_boundary.html">dyno::TriangularMeshBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_system.html">dyno::TriangularSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vector_visual_node.html">dyno::VectorVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume.html">dyno::Volume&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_bool.html">dyno::VolumeBool&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_boundary.html">dyno::VolumeBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_clipper.html">dyno::VolumeClipper&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_volume_octree.html">dyno::VolumeOctree&lt; TDataType &gt;</a>.</p>
+<div class="dynheader">
+Inheritance diagram for dyno::Node:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_node__inherit__graph.png" border="0" usemap="#adyno_1_1_node_inherit__map" alt="Inheritance graph"/></div>
+<map name="adyno_1_1_node_inherit__map" id="adyno_1_1_node_inherit__map">
+<area shape="rect" title=" " alt="" coords="296,1237,384,1263"/>
+<area shape="rect" href="classdyno_1_1_adaptive_boundary.html" title=" " alt="" coords="459,5,621,47"/>
+<area shape="rect" href="classdyno_1_1_capillary_wave.html" title=" " alt="" coords="470,71,610,112"/>
+<area shape="rect" href="classdyno_1_1_coupling.html" title=" " alt="" coords="443,137,637,163"/>
+<area shape="rect" href="classdyno_1_1_edge_picker_node.html" title=" " alt="" coords="463,188,617,229"/>
+<area shape="rect" href="classdyno_1_1_g_l_common_point_visual_node.html" title=" " alt="" coords="443,253,637,295"/>
+<area shape="rect" href="classdyno_1_1_g_l_point_visual_node.html" title=" " alt="" coords="455,319,625,360"/>
+<area shape="rect" href="classdyno_1_1_g_l_surface_visual_node.html" title=" " alt="" coords="447,384,633,425"/>
+<area shape="rect" href="classdyno_1_1_g_l_wireframe_visual_node.html" title=" " alt="" coords="440,449,640,491"/>
+<area shape="rect" href="classdyno_1_1_geometry_loader.html" title=" " alt="" coords="463,515,617,542"/>
+<area shape="rect" href="classdyno_1_1_ghost_fluid.html" title="Ghost fluid method." alt="" coords="437,566,643,593"/>
+<area shape="rect" href="classdyno_1_1_gmsh_generator.html" title=" " alt="" coords="465,617,615,659"/>
+<area shape="rect" href="classdyno_1_1_marching_cubes.html" title=" " alt="" coords="466,683,614,724"/>
+<area shape="rect" href="classdyno_1_1_merge.html" title=" " alt="" coords="450,749,630,775"/>
+<area shape="rect" href="classdyno_1_1_merge_triangle_set.html" title=" " alt="" coords="461,800,619,841"/>
+<area shape="rect" href="classdyno_1_1_o_b_j_exporter.html" title=" " alt="" coords="470,865,610,907"/>
+<area shape="rect" href="classdyno_1_1_obj_mesh.html" title=" " alt="" coords="442,931,638,958"/>
+<area shape="rect" href="classdyno_1_1_obj_point.html" title=" " alt="" coords="443,982,637,1009"/>
+<area shape="rect" href="classdyno_1_1_ocean.html" title=" " alt="" coords="449,1033,631,1059"/>
+<area shape="rect" href="classdyno_1_1_ocean_patch.html" title=" " alt="" coords="432,1083,648,1110"/>
+<area shape="rect" href="classdyno_1_1_parametric_model.html" title=" " alt="" coords="462,1135,618,1176"/>
+<area shape="rect" href="classdyno_1_1_particle_system.html" title="This class represents the base class for more advanced particle&#45;based nodes." alt="" coords="467,1200,613,1241"/>
+<area shape="rect" href="classdyno_1_1_picker_node.html" title=" " alt="" coords="435,1266,645,1293"/>
+<area shape="rect" href="classdyno_1_1_ply_exporter.html" title=" " alt="" coords="473,1317,607,1359"/>
+<area shape="rect" href="classdyno_1_1_point_picker_node.html" title=" " alt="" coords="463,1383,617,1424"/>
+<area shape="rect" href="classdyno_1_1_point_set_to_triangle_set.html" title=" " alt="" coords="457,1448,623,1489"/>
+<area shape="rect" href="classdyno_1_1_rigid_body_system.html" title="Implementation of a rigid body system containing a variety of rigid bodies with different shapes." alt="" coords="459,1513,621,1555"/>
+<area shape="rect" href="classdyno_1_1_sampler.html" title=" " alt="" coords="444,1579,636,1606"/>
+<area shape="rect" href="classdyno_1_1_sampling_points.html" title=" " alt="" coords="465,1631,615,1672"/>
+<area shape="rect" href="classdyno_1_1_semi_analytical_s_f_i_node.html" title="Semi&#45;Analytical Solid Fluid Interaction." alt="" coords="443,1696,637,1737"/>
+<area shape="rect" href="classdyno_1_1_skeleton_loader.html" title="Load a Skeleton." alt="" coords="466,1761,614,1803"/>
+<area shape="rect" href="classdyno_1_1_sparse_marching_cubes.html" title=" " alt="" coords="445,1827,635,1868"/>
+<area shape="rect" href="classdyno_1_1_sparse_volume_clipper.html" title=" " alt="" coords="449,1892,631,1933"/>
+<area shape="rect" href="classdyno_1_1_spline_constraint.html" title=" " alt="" coords="463,1957,617,1999"/>
+<area shape="rect" href="classdyno_1_1_static_boundary.html" title=" " alt="" coords="467,2023,613,2064"/>
+<area shape="rect" href="classdyno_1_1_tetrahedral_system.html" title=" " alt="" coords="457,2088,623,2129"/>
+<area shape="rect" href="classdyno_1_1_thread_system.html" title=" " alt="" coords="469,2153,611,2195"/>
+<area shape="rect" href="classdyno_1_1_triangular_system.html" title=" " alt="" coords="461,2219,619,2260"/>
+<area shape="rect" href="classdyno_1_1_volume.html" title=" " alt="" coords="446,2285,634,2311"/>
+<area shape="rect" href="classdyno_1_1_volume_bool.html" title=" " alt="" coords="433,2335,647,2362"/>
+<area shape="rect" href="classdyno_1_1_volume_boundary.html" title=" " alt="" coords="461,2387,619,2428"/>
+<area shape="rect" href="classdyno_1_1_volume_clipper.html" title=" " alt="" coords="469,2452,611,2493"/>
+<area shape="rect" href="classdyno_1_1_volume_octree.html" title=" " alt="" coords="469,2517,611,2559"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="149,1237,248,1263"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="5,1237,101,1263"/>
+<area shape="rect" href="classdyno_1_1_points_loader.html" title="Load a triangular mesh." alt="" coords="733,476,868,517"/>
+<area shape="rect" href="classdyno_1_1_surface_mesh_loader.html" title="Load a triangular mesh." alt="" coords="714,541,887,583"/>
+<area shape="rect" href="classdyno_1_1_cone_model.html" title=" " alt="" coords="696,1117,905,1143"/>
+<area shape="rect" href="classdyno_1_1_copy_model.html" title=" " alt="" coords="696,1167,905,1194"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for dyno::Node:</div>
 <div class="dyncontent">
@@ -131,9 +183,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a62573b87297311901232e5867edeb9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44daf82dfe3ccecf2d07be6b8ff34ffa" id="r_a44daf82dfe3ccecf2d07be6b8ff34ffa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a44daf82dfe3ccecf2d07be6b8ff34ffa">isAutoSync</a> ()</td></tr>
 <tr class="separator:a44daf82dfe3ccecf2d07be6b8ff34ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c34274bf9622f91b5d342b31ee48dd6" id="r_a9c34274bf9622f91b5d342b31ee48dd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a9c34274bf9622f91b5d342b31ee48dd6">isAutoHidden</a> ()</td></tr>
+<tr class="separator:a9c34274bf9622f91b5d342b31ee48dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a302ff1cc36838b400066e194d0230c3c" id="r_a302ff1cc36838b400066e194d0230c3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a302ff1cc36838b400066e194d0230c3c">setAutoSync</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">con</a>)</td></tr>
 <tr class="memdesc:a302ff1cc36838b400066e194d0230c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the node can be automatically synchronized when its ancestor is updated.  <br /></td></tr>
 <tr class="separator:a302ff1cc36838b400066e194d0230c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce66b8565da4e39b72864b0bb90b72c" id="r_acce66b8565da4e39b72864b0bb90b72c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#acce66b8565da4e39b72864b0bb90b72c">setAutoHidden</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">con</a>)</td></tr>
+<tr class="separator:acce66b8565da4e39b72864b0bb90b72c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af563c470551277606c8eb62a4b6b05" id="r_a2af563c470551277606c8eb62a4b6b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a2af563c470551277606c8eb62a4b6b05">isActive</a> ()</td></tr>
 <tr class="memdesc:a2af563c470551277606c8eb62a4b6b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the state of dynamics.  <br /></td></tr>
 <tr class="separator:a2af563c470551277606c8eb62a4b6b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,6 +431,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:af47a1357fc362ab02180e92158efe8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfe36839a68dc44c552235daadd985d5" id="r_adfe36839a68dc44c552235daadd985d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#adfe36839a68dc44c552235daadd985d5">mForceUpdate</a> = <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">true</a></td></tr>
 <tr class="separator:adfe36839a68dc44c552235daadd985d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f0c6af5edf0e1401cbd9c13870a30f" id="r_a12f0c6af5edf0e1401cbd9c13870a30f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a12f0c6af5edf0e1401cbd9c13870a30f">mAutoHidden</a> = <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">false</a></td></tr>
+<tr class="separator:a12f0c6af5edf0e1401cbd9c13870a30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a784d0d015ca9500b6ffe7b30cbc91870" id="r_a784d0d015ca9500b6ffe7b30cbc91870"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a784d0d015ca9500b6ffe7b30cbc91870">mDt</a></td></tr>
 <tr class="memdesc:a784d0d015ca9500b6ffe7b30cbc91870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time step size.  <br /></td></tr>
 <tr class="separator:a784d0d015ca9500b6ffe7b30cbc91870"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -533,7 +591,7 @@ Here is the call graph for this function:</div>
 <dd>
 false return false if module already exists </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00357">357</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00365">365</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -600,7 +658,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 <dd>
 false </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00133">133</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00137">137</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -640,7 +698,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00194">194</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00198">198</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -681,7 +739,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00564">564</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00580">580</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -718,7 +776,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00641">641</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00657">657</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -749,7 +807,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00303">303</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00311">311</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -808,7 +866,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00427">427</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00435">435</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -903,7 +961,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd">dyno::OBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00477">477</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00493">493</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -954,7 +1012,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_vessel.html#a234b4410377d91f195bba033754b77a9">dyno::Vessel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_capsule_model.html#a1d0f33d45383c44e14f68216b8e4172b">dyno::CapsuleModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cone_model.html#ac675fc9d981ecc26a14a67a33b736d51">dyno::ConeModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cube_model.html#ad2ca13247a6957bfa272c666270ef7cf">dyno::CubeModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cylinder_model.html#aebd0901a4ab99bc0fc6574a705f26518">dyno::CylinderModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_plane_model.html#a8b1805876116b3ae5108862b441bb25d">dyno::PlaneModel&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_sphere_model.html#aa4fb549b8d838f2578d111175219e9fb">dyno::SphereModel&lt; TDataType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00191">191</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00196">196</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 
 </div>
 </div>
@@ -974,7 +1032,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00465">465</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00481">481</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1155,7 +1213,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00654">654</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00670">670</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1186,7 +1244,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00365">365</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00373">373</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1235,7 +1293,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00139">139</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00143">143</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1265,7 +1323,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00472">472</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00488">488</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1316,7 +1374,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00257">257</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00261">261</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -1347,7 +1405,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_particle_system.html#a1c4f91f13c3d82877b7940a336a56e0e">dyno::ParticleSystem&lt; TDataType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00088">88</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00093">93</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1383,41 +1441,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00112">112</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_node_ac916b8e66f57d13e7480c7d1459382c4_icgraph.png" border="0" usemap="#aclassdyno_1_1_node_ac916b8e66f57d13e7480c7d1459382c4_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_node_ac916b8e66f57d13e7480c7d1459382c4_icgraph" id="aclassdyno_1_1_node_ac916b8e66f57d13e7480c7d1459382c4_icgraph">
-<area shape="rect" title=" " alt="" coords="1372,311,1561,338"/>
-<area shape="rect" href="namespacedyno.html#a109d8400a967092c2a34c16d8a413e73" title=" " alt="" coords="1211,234,1295,260"/>
-<area shape="rect" href="namespacedyno.html#ab66005c94c46c3177cae0d9732ef91d2" title=" " alt="" coords="1211,311,1295,338"/>
-<area shape="rect" href="namespacedyno.html#aae96e7ab34de45053d5422cd00d7fe12" title=" " alt="" coords="1181,386,1324,412"/>
-<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#abc41454a06023bf8ef05c2ab31622a4e" title=" " alt="" coords="945,144,1097,185"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#abf532d81498c4b4ff78c3df242319916" title="Breadth&#45;first tree traversal starting from a specific node." alt="" coords="929,226,1112,268"/>
-<area shape="rect" href="classdyno_1_1_auto_layout_d_a_g.html#a144ea09d5017263863cd47c9559067bd" title=" " alt="" coords="693,140,845,181"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a0213026fd0192eca76280c076f49b7da" title=" " alt="" coords="437,42,601,84"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#af66c8338521e25db6fdbdf31fdb93830" title=" " alt="" coords="443,140,595,181"/>
-<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="5,30,148,72"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="196,26,360,68"/>
-<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624" title=" " alt="" coords="196,92,360,133"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ab47298add0fea824f9705563d4ac7511" title=" " alt="" coords="202,157,354,198"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#a6b8432d4021b78626b2310004c57a30b" title=" " alt="" coords="932,312,1109,353"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#ae3b645430924f40aa1e4b7efa6c42c32" title=" " alt="" coords="684,264,853,291"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#a88cafad9fab910bb35e542c464346825" title="Depth&#45;first tree traversal." alt="" coords="677,320,860,361"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#a9b17477004903a64280ebd07cdeea356" title="Breadth&#45;first tree traversal." alt="" coords="677,485,860,526"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#a70c546b4c26d81c5888ad2fc9c0eaecc" title=" " alt="" coords="412,206,625,232"/>
-<area shape="rect" href="classdyno_1_1_g_l_render_engine.html#a578959292fd08838c4cdc0537c4b2beb" title=" " alt="" coords="439,257,598,298"/>
-<area shape="rect" href="classdyno_1_1_g_l_render_engine.html#a3ff0ad2f46fb0666f13218274ef5e918" title=" " alt="" coords="200,408,356,449"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#ae7ec30f9b8224c00c9de9c6b55fd4568" title=" " alt="" coords="427,322,610,364"/>
-<area shape="rect" href="structdyno_1_1_gather_visual_module_action.html#aeb517e105b0e5045ffd0bfcefa185d9b" title=" " alt="" coords="408,388,629,429"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#a75ac4850c0d453379b086f34f5c247c5" title=" " alt="" coords="423,453,614,494"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#a4db59a350803f47b98a3ebdc97b3f882" title=" " alt="" coords="425,518,612,560"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#a24004f3e6bd3fd6a13a6c6c32d297985" title=" " alt="" coords="427,584,610,625"/>
-<area shape="rect" href="classdyno_1_1_shadow_map.html#a770068872b68e3f302205db1ce99377f" title=" " alt="" coords="431,650,607,676"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html#a9bc81034081919264da3ee618520d925" title=" " alt="" coords="908,386,1133,412"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00116">116</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -1444,7 +1468,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00111">111</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00115">115</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1504,7 +1528,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;TModule&gt; return nullptr is no module is found, otherwise return the first found module </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00164">164</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00168">168</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1544,7 +1568,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::shared_ptr&lt;Module&gt; return nullptr is no module is found, otherwise return the first found module </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00606">606</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00622">622</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1574,7 +1598,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00182">182</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00186">186</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1610,7 +1634,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00145">145</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00149">149</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1692,7 +1716,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classdyno_1_1_edge_picker_node.html#ae28ecdf4577b688b52914caf054a2f5d">dyno::EdgePickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_picker_node.html#afdf0624ecf7f5725e29397a95b7caeed">dyno::PointPickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_quad_picker_node.html#a3a82a47a6f4e28aed9247ec9fa9bfb67">dyno::QuadPickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangle_picker_node.html#aa4fcd7f6896f953ec2912828876eeb70">dyno::TrianglePickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_emitter.html#a480296b88d80724f644cab5805e411af">dyno::ParticleEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html#a45501d05c9933454a27595c7816071b6">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_emitter.html#a480296b88d80724f644cab5805e411af">dyno::ParticleEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html#a45501d05c9933454a27595c7816071b6">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_basic_shape.html#adb3d71cf01e96341e61cc2331e54ad13">dyno::BasicShape&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_collision_detector.html#acf7cfe5ba0d53b184018e6ef4cb799dd">dyno::CollisionDetector&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_common_point_visual_node.html#a89d2bc913b8538aff1e099f3ddf2be8b">dyno::GLCommonPointVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_instance_visual_node.html#a42d380ed13f1b25f4ecf13035333317e">dyno::GLInstanceVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_point_visual_node.html#a16da28c81b7f4e30f5cfd4e68fa6965d">dyno::GLPointVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_surface_visual_node.html#ae15f901d3c64d5a86fd620e8fc69a9ba">dyno::GLSurfaceVisualNode&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_g_l_wireframe_visual_node.html#a21deb66e4060a493ef3d82c4cabdfc1f">dyno::GLWireframeVisualNode&lt; TDataType &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classdyno_1_1_edge_picker_node.html#ae28ecdf4577b688b52914caf054a2f5d">dyno::EdgePickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_picker_node.html#afdf0624ecf7f5725e29397a95b7caeed">dyno::PointPickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_quad_picker_node.html#a3a82a47a6f4e28aed9247ec9fa9bfb67">dyno::QuadPickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangle_picker_node.html#aa4fcd7f6896f953ec2912828876eeb70">dyno::TrianglePickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_capillary_wave.html#ae4f4522ca66d4834569198c87ed1411b">dyno::CapillaryWave&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean_base.html#a1d3b08fef249773d12ca21a37c8abe50">dyno::OceanBase&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean_patch.html#ab9e029057a6e3cf32fb53e602eb8d047">dyno::OceanPatch&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_water_coupling.html#a988474f27b48364813d463077bd48e00">dyno::RigidWaterCoupling&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vessel.html#ae6659b4e339a30b602c9db34f51b0436">dyno::Vessel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_adaptive_boundary.html#a4eeb1aef18f72ba1743d20df0c302322">dyno::AdaptiveBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_boundary.html#ae9ba6976fec6ebda220f2b1e63474e73">dyno::VolumeBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_emitter.html#a480296b88d80724f644cab5805e411af">dyno::ParticleEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html#a45501d05c9933454a27595c7816071b6">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_peridynamics.html#ac957f42ef4f43d5ef5b80dd9194ef3dd">dyno::Peridynamics&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_body.html#a4473d2e83e4976ec6cb3c8fb7c017dbc">dyno::RigidBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_body_system.html#a2bb22f0dae8b61fd157b62674d2177e9">dyno::RigidBodySystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_marching_cubes.html#a4ef494b23ba2b145ffd648b6d3c656e3">dyno::MarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_marching_cubes.html#a9c0f07840f3426a8da4774f100f92f53">dyno::SparseMarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_volume_clipper.html#a19ea49690b65307aa2eb84f581ff063e">dyno::SparseVolumeClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume.html#a5b58b19ff879df6d3dd2079398d04332">dyno::Volume&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_boolean.html#ad1c2c63fcd0012ab0a984c962abc8964">dyno::VolumeBoolean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_clipper.html#a232fee73d327dd7f3fe3bc9f508baf10">dyno::VolumeClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree.html#aba977fa711661efa04fcf1095edb40e3">dyno::VolumeOctree&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_emitter.html#a480296b88d80724f644cab5805e411af">dyno::ParticleEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html#a45501d05c9933454a27595c7816071b6">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_static_mesh_loader.html#a478b67b59b83401d7b3bac061b93e347">dyno::StaticMeshLoader&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_texture_mesh_loader.html#aec5df5ec7da6963d809ae34ed82a9dea">dyno::TextureMeshLoader</a>, <a class="el" href="classdyno_1_1_basic_shape.html#adb3d71cf01e96341e61cc2331e54ad13">dyno::BasicShape&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_collision_detector.html#acf7cfe5ba0d53b184018e6ef4cb799dd">dyno::CollisionDetector&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_gltf_loader.html#a688a0b07b82723d36cc92704f37356c5">dyno::GltfLoader&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_model_editing.html#a51928cb2f9adbd7b32225eec2a40de44">dyno::ModelEditing&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_normal_visualization.html#aa8fc33d452cd1e57bc14956c2ad8d671">dyno::NormalVisualization&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sampler.html#a8cc3cb64927548016d15116f3ed40a89">dyno::Sampler&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vector_visual_node.html#a1655d46e407202be038d106861841566">dyno::VectorVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_common_point_visual_node.html#a89d2bc913b8538aff1e099f3ddf2be8b">dyno::GLCommonPointVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_instance_visual_node.html#a42d380ed13f1b25f4ecf13035333317e">dyno::GLInstanceVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_point_visual_node.html#a16da28c81b7f4e30f5cfd4e68fa6965d">dyno::GLPointVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_surface_visual_node.html#ae15f901d3c64d5a86fd620e8fc69a9ba">dyno::GLSurfaceVisualNode&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_g_l_wireframe_visual_node.html#a21deb66e4060a493ef3d82c4cabdfc1f">dyno::GLWireframeVisualNode&lt; TDataType &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00048">48</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 
@@ -1713,7 +1737,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00103">103</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00108">108</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1741,7 +1765,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00312">312</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00320">320</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1807,7 +1831,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00621">621</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00637">637</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1854,7 +1878,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check the state of dynamics. </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00063">63</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00073">73</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1865,6 +1889,25 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classdyno_1_1_scene_graph.html#a4db59a350803f47b98a3ebdc97b3f882" title=" " alt="" coords="5,5,192,47"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a9c34274bf9622f91b5d342b31ee48dd6" name="a9c34274bf9622f91b5d342b31ee48dd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c34274bf9622f91b5d342b31ee48dd6">&#9670;&#160;</a></span>isAutoHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> dyno::Node::isAutoHidden </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00058">58</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 
 </div>
 </div>
@@ -1912,7 +1955,7 @@ Here is the caller graph for this function:</div>
 
 <p>Check the visibility of context. </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00073">73</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00083">83</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1951,9 +1994,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classdyno_1_1_dual_particle_fluid_system.html#ab3e3178844e039247bddb8be01313beb">dyno::DualParticleFluidSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean_patch.html#aec84bf4cf4db5c06e84ec70ca823e91e">dyno::OceanPatch&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ghost_fluid.html#a82635af40759a73305bfaae1e65213aa">dyno::GhostFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html#ab38edc0cec96ef534d76f3aea773e0e7">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_semi_analytical_s_f_i_node.html#ad8830da8ca2f94fa9a2ce0a97ac86cc5">dyno::SemiAnalyticalSFINode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_mesh_boundary.html#a988c14e19a35ecc01c35362efa7502dd">dyno::TriangularMeshBoundary&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_particle_fluid.html#a6250ec9cb576fa30f70484880555851d">dyno::ParticleFluid&lt; TDataType &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classdyno_1_1_dual_particle_fluid.html#ad120d507d49d74b1e67d77277c3e0e4e">dyno::DualParticleFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean_patch.html#aec84bf4cf4db5c06e84ec70ca823e91e">dyno::OceanPatch&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ghost_fluid.html#a82635af40759a73305bfaae1e65213aa">dyno::GhostFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html#ab38edc0cec96ef534d76f3aea773e0e7">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_system.html#a76b4b4536cd3e36f9dc18eee1581f77c">dyno::TriangularSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_multibody_system.html#a39587cfda92984dbdd50f538ba23d758">dyno::MultibodySystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_body_system.html#acba13a4d714a1c72d11748c3ede02efe">dyno::RigidBodySystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_semi_analytical_s_f_i_node.html#ad8830da8ca2f94fa9a2ce0a97ac86cc5">dyno::SemiAnalyticalSFINode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_mesh_boundary.html#a988c14e19a35ecc01c35362efa7502dd">dyno::TriangularMeshBoundary&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_particle_fluid.html#a6250ec9cb576fa30f70484880555851d">dyno::ParticleFluid&lt; TDataType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00196">196</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00201">201</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1993,9 +2036,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classdyno_1_1_dual_particle_fluid_system.html#a9c4765379edfdb99a23a3c1e034983f6">dyno::DualParticleFluidSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_level_set_construction_node.html#ac392063d67a295341a42b408328ed056">dyno::SurfaceLevelSetConstructionNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_fluid.html#a745cfa9d3b5e9c58319f29492cce1275">dyno::ParticleFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_codimensional_p_d.html#aa6edd641ae8463202a2fd6ed2fd3e905">dyno::CodimensionalPD&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_relaxtion_on_mesh.html#a288791687e4364040f27505e6e9494b5">dyno::ParticleRelaxtionOnMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ghost_fluid.html#a06b58c9b3e441d01911c97d92af72ec3">dyno::GhostFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cloth.html#aa4fa4b871bc6543fc003225fb18e3a9e">dyno::Cloth&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_semi_analytical_s_f_i_node.html#ab70c50fdf07651da74ccb9d66a603319">dyno::SemiAnalyticalSFINode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_mesh_boundary.html#a551a97ea154de5c2861770db749c56a4">dyno::TriangularMeshBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_fluid.html#a756aaaf6ab26850b16bece67c1efb6fd">dyno::ParticleFluid&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_merge.html#aaf1d5a1817c3972f281fd9083f2cf7cf">dyno::Merge&lt; TDataType &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classdyno_1_1_dual_particle_fluid.html#acc67eb0da1595baac49c6c86debc4eb7">dyno::DualParticleFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_relaxtion_on_mesh.html#a288791687e4364040f27505e6e9494b5">dyno::ParticleRelaxtionOnMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_skinning.html#a5b3f29c75cd7c5b983aef7903c2d812e">dyno::ParticleSkinning&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ghost_fluid.html#a06b58c9b3e441d01911c97d92af72ec3">dyno::GhostFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_fluid.html#a756aaaf6ab26850b16bece67c1efb6fd">dyno::ParticleFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cloth.html#aa4fa4b871bc6543fc003225fb18e3a9e">dyno::Cloth&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_codimensional_p_d.html#a0f3c185c3ce59728c9f77ea8ffa3d0de">dyno::CodimensionalPD&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_semi_analytical_s_f_i_node.html#ab70c50fdf07651da74ccb9d66a603319">dyno::SemiAnalyticalSFINode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_mesh_boundary.html#a551a97ea154de5c2861770db749c56a4">dyno::TriangularMeshBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_fluid.html#a756aaaf6ab26850b16bece67c1efb6fd">dyno::ParticleFluid&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_merge.html#aaf1d5a1817c3972f281fd9083f2cf7cf">dyno::Merge&lt; TDataType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00131">131</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00136">136</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2036,7 +2079,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00441">441</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00453">453</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2087,7 +2130,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00229">229</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00237">237</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2111,7 +2154,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00178">178</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00183">183</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2152,7 +2195,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00294">294</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00302">302</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2184,9 +2227,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classdyno_1_1_dual_particle_fluid_system.html#ac9b42a14caa83cf2b46e366e2931b790">dyno::DualParticleFluidSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_level_set_construction_node.html#a07ac963dd5759fca9451549b7bda7f86">dyno::SurfaceLevelSetConstructionNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_static_boundary.html#a06af07f0c586033657143944ca7d6bd7">dyno::StaticBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_capillary_wave.html#a80703e39f08c2bb1ea076935a2b902ae">dyno::CapillaryWave&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_coupling.html#ad643350a79286de10f2b3d7ccf43a318">dyno::Coupling&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_granular_media.html#abe7721938bb283dcdbd15b6b3268ced4">dyno::GranularMedia&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_land_scape.html#a73240a7315d4b901587dcd3c03c7215f">dyno::LandScape&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean.html#a539fd6b03cad1f1e21c972a332f6f7a4">dyno::Ocean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean_patch.html#ad495aa16ca7c468552d72d823f68d414">dyno::OceanPatch&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_particle_tracking.html#a00bb5b68cb14af36e8ac11f99c340407">dyno::SurfaceParticleTracking&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vessel.html#a75ab8a31bd62b16e58a8f0d525707860">dyno::Vessel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_circular_emitter.html#a035162ce18ea8505c3318f7c351b510a">dyno::CircularEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cube_sampler.html#a0f19c587a9fd01b23e1aee5b154cbff6">dyno::CubeSampler&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ghost_particles.html#a43b170d08a7d2c20963122527f72fb20">dyno::GhostParticles&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_make_particle_system.html#a325384d88d14190371552b90b80d0112">dyno::MakeParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_fluid.html#a87135641e513f2f869b24d4c6ff988ad">dyno::ParticleFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html#a1647be2184acdeb7e7f7e0d5e5980ceb">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_poisson_disk_sampling.html#ae23982e496863a5b933aa330805b4e2d">dyno::PoissonDiskSampling&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_poisson_emitter.html#a555d45d83b5178c29301902df04f8f59">dyno::PoissonEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sphere_sampler.html#aafc737b53e99ea1c061c5b94b062eedc">dyno::SphereSampler&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_square_emitter.html#a03b4a77a2a1e9cc29470add98be07b53">dyno::SquareEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cloth.html#a7bcd94bfcaf58f51980bb0cc2c7ad753">dyno::Cloth&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_codimensional_p_d.html#af6c1e9c21d5a810f4fdfba3896a41f8c">dyno::CodimensionalPD&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_elastic_body.html#a2f1e50a5ce9aa0e738cfb8b94f14fa11">dyno::ElasticBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_elastoplastic_body.html#afe2763c811dcdfee24a175343dcbeaa5">dyno::ElastoplasticBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_hyperelastic_body.html#a4686672375558905018c0fa54dc18652">dyno::HyperelasticBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_tetrahedral_system.html#a5af0d9c347df0edcd674c42f0159a88a">dyno::TetrahedralSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_thread.html#a1e525dd33a46e93616e87f3e7e23c270">dyno::Thread&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_thread_system.html#acfffe198d022e5698f8766de37fe88ff">dyno::ThreadSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_system.html#a43c721be6fcbfcf05dec57d53698a000">dyno::TriangularSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_body_system.html#a1d2c8f65ffe487d5f38b1fe8d36f0b6b">dyno::RigidBodySystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_mesh.html#a59d1247feec19bddd9a7451e78faa8ab">dyno::RigidMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vechicle.html#af22ed5882007bee03440ea033bf2cac3">dyno::Vechicle&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_jeep.html#a8d2296b5d85aac1548fe0946dd38307d">dyno::Jeep&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_relaxtion_on_mesh.html#addd1317010b4788150b2d782a4cbce01">dyno::ParticleRelaxtionOnMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_semi_analytical_s_f_i_node.html#a4f317954db9fcb439ba60a23b54b4e3b">dyno::SemiAnalyticalSFINode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_marching_cubes.html#a281acbe6ac2fa6dda3d1beefe5a3ae98">dyno::SparseMarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_volume_clipper.html#af9920d7d1d3e824e0d8e891be0c5663f">dyno::SparseVolumeClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_bool.html#a3a87988437235a029411e99889b6fa71">dyno::VolumeBool&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_generator.html#ad86ae450393b28df8aa7fd3194d654e9">dyno::VolumeGenerator&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree_boolean.html#a48bdd9e9cf8f03faaf9c195c2109e271">dyno::VolumeOctreeBoolean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree_generator.html#a3995deaec8d79baf6df64ad779336c12">dyno::VolumeOctreeGenerator&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_uniform_generator.html#ae558fa926f206f3d4789e4fb6033097f">dyno::VolumeUniformGenerator&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_fluid.html#a87135641e513f2f869b24d4c6ff988ad">dyno::ParticleFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html#a1647be2184acdeb7e7f7e0d5e5980ceb">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_square_emitter.html#a03b4a77a2a1e9cc29470add98be07b53">dyno::SquareEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_edge_picker_node.html#a3b98a17b0077cf02d030f3bc6c681994">dyno::EdgePickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_picker_node.html#a5f870315b2bd8e1c2b2926ed9144ffa8">dyno::PointPickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_quad_picker_node.html#a652abadec3e520b5fb4907591cd5fe60">dyno::QuadPickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangle_picker_node.html#af35190646cb686d9d071b6054f9f6e63">dyno::TrianglePickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_points_loader.html#a8d4507e0b2f69d816b6b05cd65a8ba3e">dyno::PointsLoader&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_mesh_loader.html#a6cfdf250545e14160514dff21e1efad2">dyno::SurfaceMeshLoader&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_capsule_model.html#aeceacf03d4f644f75fc1ad15657408b5">dyno::CapsuleModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_collision_detector.html#a5da0262341622b8235d12d3835646f9f">dyno::CollisionDetector&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cone_model.html#a02c22aefb196da528cc0b8ebfae46ff4">dyno::ConeModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_copy_model.html#ad80445004140cf25858c553f0260ad5e">dyno::CopyModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_copy_to_point.html#aac49ed6d858779259e2bf6649279a591">dyno::CopyToPoint&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cube_model.html#a680413e7ce71c1ae3262a92ae99c47f2">dyno::CubeModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cylinder_model.html#af5cbb152a068f9d5c3ac0a401b05a369">dyno::CylinderModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ear_clipper.html#aa3b9ac2226b68bfdf7fd44511a6b34b7">dyno::EarClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_extrude_model.html#a124c456d18076363b3a755889fe6a2ab">dyno::ExtrudeModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_gltf_loader.html#acc5b27aff90aad5dec95496cfb745f6a">dyno::GltfLoader&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_group.html#a944aedde51bff69359a3e329f672b7f3">dyno::Group&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_joint_deform.html#ae0f519d6e3473293b9c1ec9d7eb24b3b">dyno::JointDeform&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge.html#aa87b5617eca7092bb4f23c5885f6895c">dyno::Merge&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_normal.html#a6484eedd0134e85a3efc5ab8ef2a0a4e">dyno::Normal&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_plane_model.html#ad7c92210a19853eb5bd112ee4592ad39">dyno::PlaneModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_clip.html#a786e6aebd79321cdf32bd36f3dfc0807">dyno::PointClip&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_from_curve.html#a0232553f2413269cbe59598b031247f5">dyno::PointFromCurve&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_points_behind_mesh.html#ab6c95e44a228b16e83974205d492274c">dyno::PointsBehindMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_poly_extrude.html#aac4c7ba1b6fb408d97d40df089f5e658">dyno::PolyExtrude&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sphere_model.html#a885db9f8ebe0abd74a861e73cd8aca07">dyno::SphereModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_spline_constraint.html#aadbd86d5807337d8f112a727ef24b0f4">dyno::SplineConstraint&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sweep_model.html#aa5f3069ac2c1d01a83828086aec47959">dyno::SweepModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_transform_model.html#a5207329da7e457891ff3c016b62d86c3">dyno::TransformModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_turning_model.html#ad40510d536858ef3ab4010ba14c56d0d">dyno::TurningModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vector_visual_node.html#a3ff221955e27c84b032629c12d104208">dyno::VectorVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_common_point_visual_node.html#ae95bbd30bcdc9977a0433acd7364f8a4">dyno::GLCommonPointVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_instance_visual_node.html#a5552b1a49dc29bcfc38cd2e7b2b281d8">dyno::GLInstanceVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_point_visual_node.html#a76ceb1170597e8a09d935ac76ed2db9b">dyno::GLPointVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_surface_visual_node.html#a82c2c2cd4e0ce1c03d63b6a16f890281">dyno::GLSurfaceVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_wireframe_visual_node.html#a2b40b123061b32ec17341110465a0c83">dyno::GLWireframeVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_marching_cubes.html#a4d3b252fbd02352843535e69f28e1c92">dyno::MarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge_simplex_set.html#a54b7096928fd22cb57caa2c20e8f461d">dyno::MergeSimplexSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge_triangle_set.html#a59a889ede4389eadf84aa41a7db98a2b">dyno::MergeTriangleSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_set_to_triangle_set.html#aa6cc7f0bbc202cdfa8b8f654b4c9b2db">dyno::PointSetToTriangleSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_split_simplex_set.html#a03baee9253aedbf9e48986f3f8f45acf">dyno::SplitSimplexSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_texture_mesh_to_triangle_set_node.html#acbc39fbb77de88918cf94e9fcc36ad52">dyno::TextureMeshToTriangleSetNode&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_volume_clipper.html#aed0832720a22175900d570a5029166b2">dyno::VolumeClipper&lt; TDataType &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classdyno_1_1_dual_particle_fluid.html#a2df6570af86222266e5874ac40ae896b">dyno::DualParticleFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_capillary_wave.html#a80703e39f08c2bb1ea076935a2b902ae">dyno::CapillaryWave&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_granular_media.html#abe7721938bb283dcdbd15b6b3268ced4">dyno::GranularMedia&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_land_scape.html#a73240a7315d4b901587dcd3c03c7215f">dyno::LandScape&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_large_ocean.html#aec836e9b9b890f0f5ca5838e0de7366a">dyno::LargeOcean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean.html#a539fd6b03cad1f1e21c972a332f6f7a4">dyno::Ocean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean_patch.html#ad495aa16ca7c468552d72d823f68d414">dyno::OceanPatch&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_sand_coupling.html#a51252844667a48aeff019863091eda15">dyno::RigidSandCoupling&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_water_coupling.html#ae16841a912e5f470e9695b74d7002936">dyno::RigidWaterCoupling&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_particle_tracking.html#a00bb5b68cb14af36e8ac11f99c340407">dyno::SurfaceParticleTracking&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vessel.html#a75ab8a31bd62b16e58a8f0d525707860">dyno::Vessel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_skinning.html#a6748fb664e38b40896c608e71e7f1050">dyno::ParticleSkinning&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_poisson_disk_sampling.html#ae23982e496863a5b933aa330805b4e2d">dyno::PoissonDiskSampling&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sdf_sampler.html#a8ad1bf21e1a17226b0b2c8c7ece0806f">dyno::SdfSampler&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_circular_emitter.html#a035162ce18ea8505c3318f7c351b510a">dyno::CircularEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_emitter.html#a19903d65f88d399ddbe8c512b078e51b">dyno::ParticleEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_poisson_emitter.html#a555d45d83b5178c29301902df04f8f59">dyno::PoissonEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_square_emitter.html#a03b4a77a2a1e9cc29470add98be07b53">dyno::SquareEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ghost_fluid.html#a17a7f0c1a817e6174efa36fa9c62fc83">dyno::GhostFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ghost_particles.html#a43b170d08a7d2c20963122527f72fb20">dyno::GhostParticles&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_make_ghost_particles.html#ac2cefdff8d536537a1ee020c0f9b3d15">dyno::MakeGhostParticles&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_make_particle_system.html#a325384d88d14190371552b90b80d0112">dyno::MakeParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_fluid.html#a87135641e513f2f869b24d4c6ff988ad">dyno::ParticleFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html#a1647be2184acdeb7e7f7e0d5e5980ceb">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cloth.html#a7bcd94bfcaf58f51980bb0cc2c7ad753">dyno::Cloth&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_codimensional_p_d.html#af6c1e9c21d5a810f4fdfba3896a41f8c">dyno::CodimensionalPD&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_hyperelastic_body.html#a4686672375558905018c0fa54dc18652">dyno::HyperelasticBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_peridynamics.html#a3d55a50e188ec4f7803da385b71ee01a">dyno::Peridynamics&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_tetrahedral_system.html#a5af0d9c347df0edcd674c42f0159a88a">dyno::TetrahedralSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_thread.html#a1e525dd33a46e93616e87f3e7e23c270">dyno::Thread&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_thread_system.html#acfffe198d022e5698f8766de37fe88ff">dyno::ThreadSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_system.html#a43c721be6fcbfcf05dec57d53698a000">dyno::TriangularSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_articulated_body.html#aba1ec8e0ef6697b0aabcb051bdcaa4ee">dyno::ArticulatedBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_configurable_body.html#a63ef98cd114ca2539be77c91ea7752a2">dyno::ConfigurableBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_gear.html#aafd03adf97208b59c483c5dd786252ba">dyno::Gear&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_multibody_system.html#adf9c58f6e72141d6a8f30c6a6cf53178">dyno::MultibodySystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_body_system.html#a1d2c8f65ffe487d5f38b1fe8d36f0b6b">dyno::RigidBodySystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_mesh.html#a59d1247feec19bddd9a7451e78faa8ab">dyno::RigidMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_jeep.html#a8d2296b5d85aac1548fe0946dd38307d">dyno::Jeep&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_tank.html#a4fa92a590c7f004be1951154e1a8286e">dyno::Tank&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_tracked_tank.html#a95d381c3ba3ab94c958bc2d39ad95dbd">dyno::TrackedTank&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_u_a_v.html#aa909352294d5222b7dd2c2522ab0eae2">dyno::UAV&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_u_u_v.html#ad47ce6f6df60888ae17281e2190f2bbe">dyno::UUV&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_relaxtion_on_mesh.html#addd1317010b4788150b2d782a4cbce01">dyno::ParticleRelaxtionOnMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_semi_analytical_s_f_i_node.html#a4f317954db9fcb439ba60a23b54b4e3b">dyno::SemiAnalyticalSFINode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_basic_shape_to_volume.html#a083deddc2f43d688346ac7b5c144be7d">dyno::BasicShapeToVolume&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_marching_cubes.html#a4d3b252fbd02352843535e69f28e1c92">dyno::MarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_marching_cubes.html#a281acbe6ac2fa6dda3d1beefe5a3ae98">dyno::SparseMarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_volume_clipper.html#af9920d7d1d3e824e0d8e891be0c5663f">dyno::SparseVolumeClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_boolean.html#ab427d16e7e44f457722d3205c4e5f407">dyno::VolumeBoolean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_clipper.html#aed0832720a22175900d570a5029166b2">dyno::VolumeClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_generator.html#ad86ae450393b28df8aa7fd3194d654e9">dyno::VolumeGenerator&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_loader.html#a8c8fdf98bd5927ee5d7b2d2ca2c7a1c6">dyno::VolumeLoader&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree_boolean.html#a48bdd9e9cf8f03faaf9c195c2109e271">dyno::VolumeOctreeBoolean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree_generator.html#a3995deaec8d79baf6df64ad779336c12">dyno::VolumeOctreeGenerator&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_fluid.html#a87135641e513f2f869b24d4c6ff988ad">dyno::ParticleFluid&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_system.html#a1647be2184acdeb7e7f7e0d5e5980ceb">dyno::ParticleSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_square_emitter.html#a03b4a77a2a1e9cc29470add98be07b53">dyno::SquareEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_edge_picker_node.html#a3b98a17b0077cf02d030f3bc6c681994">dyno::EdgePickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_picker_node.html#a5f870315b2bd8e1c2b2926ed9144ffa8">dyno::PointPickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_quad_picker_node.html#a652abadec3e520b5fb4907591cd5fe60">dyno::QuadPickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangle_picker_node.html#af35190646cb686d9d071b6054f9f6e63">dyno::TrianglePickerNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_points_loader.html#a8d4507e0b2f69d816b6b05cd65a8ba3e">dyno::PointsLoader&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_texture_mesh_loader.html#a79a2dd99bd577e22d21c38d617218004">dyno::TextureMeshLoader</a>, <a class="el" href="classdyno_1_1_capsule_model.html#aeceacf03d4f644f75fc1ad15657408b5">dyno::CapsuleModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cone_model.html#a02c22aefb196da528cc0b8ebfae46ff4">dyno::ConeModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cube_model.html#a680413e7ce71c1ae3262a92ae99c47f2">dyno::CubeModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_cylinder_model.html#af5cbb152a068f9d5c3ac0a401b05a369">dyno::CylinderModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_plane_model.html#ad7c92210a19853eb5bd112ee4592ad39">dyno::PlaneModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sphere_model.html#a885db9f8ebe0abd74a861e73cd8aca07">dyno::SphereModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_collision_detector.html#a5da0262341622b8235d12d3835646f9f">dyno::CollisionDetector&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_convert_to_texture_mesh.html#a93dd9b6043169a79b32993e40d88c125">dyno::ConvertToTextureMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_copy_model.html#ad80445004140cf25858c553f0260ad5e">dyno::CopyModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_copy_to_point.html#aac49ed6d858779259e2bf6649279a591">dyno::CopyToPoint&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ear_clipper.html#aa3b9ac2226b68bfdf7fd44511a6b34b7">dyno::EarClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_editable_mesh.html#a94ef8e4e4bde0b048425df8274e3651d">dyno::EditableMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_extract_shape.html#a7b927b336dd661f13159261c0a417ff3">dyno::ExtractShape&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_extrude_model.html#a124c456d18076363b3a755889fe6a2ab">dyno::ExtrudeModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge.html#aa87b5617eca7092bb4f23c5885f6895c">dyno::Merge&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_clip.html#a786e6aebd79321cdf32bd36f3dfc0807">dyno::PointClip&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_poly_extrude.html#aac4c7ba1b6fb408d97d40df089f5e658">dyno::PolyExtrude&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_polygon_set_to_triangle_set_node.html#a8eb1ea7ef15912b14e66777d75a514fc">dyno::PolygonSetToTriangleSetNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sweep_model.html#aa5f3069ac2c1d01a83828086aec47959">dyno::SweepModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_texture_mesh_merge.html#a270594030bf7b870d1c65c2059442208">dyno::TextureMeshMerge&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_transform_model.html#a5207329da7e457891ff3c016b62d86c3">dyno::TransformModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_turning_model.html#ad40510d536858ef3ab4010ba14c56d0d">dyno::TurningModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_gltf_loader.html#acc5b27aff90aad5dec95496cfb745f6a">dyno::GltfLoader&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_group.html#a944aedde51bff69359a3e329f672b7f3">dyno::Group&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_joint_deform.html#ae0f519d6e3473293b9c1ec9d7eb24b3b">dyno::JointDeform&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_normal_visualization.html#a6c91a403ad64493f1810ec887cd0e9ef">dyno::NormalVisualization&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_from_curve.html#a0232553f2413269cbe59598b031247f5">dyno::PointFromCurve&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_points_behind_mesh.html#ab6c95e44a228b16e83974205d492274c">dyno::PointsBehindMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_shape_sampler.html#a516644b9c316a09e8dd9464b73f304b8">dyno::ShapeSampler&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_spline_constraint.html#aadbd86d5807337d8f112a727ef24b0f4">dyno::SplineConstraint&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_subdivide.html#a12a2a871a5e6815c2a7d9ef77928c926">dyno::Subdivide&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vector_visual_node.html#a3ff221955e27c84b032629c12d104208">dyno::VectorVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_common_point_visual_node.html#ae95bbd30bcdc9977a0433acd7364f8a4">dyno::GLCommonPointVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_instance_visual_node.html#a5552b1a49dc29bcfc38cd2e7b2b281d8">dyno::GLInstanceVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_point_visual_node.html#a76ceb1170597e8a09d935ac76ed2db9b">dyno::GLPointVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_surface_visual_node.html#a82c2c2cd4e0ce1c03d63b6a16f890281">dyno::GLSurfaceVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_g_l_wireframe_visual_node.html#a2b40b123061b32ec17341110465a0c83">dyno::GLWireframeVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge_simplex_set.html#a54b7096928fd22cb57caa2c20e8f461d">dyno::MergeSimplexSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge_triangle_set.html#a59a889ede4389eadf84aa41a7db98a2b">dyno::MergeTriangleSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_set_to_triangle_set.html#aa6cc7f0bbc202cdfa8b8f654b4c9b2db">dyno::PointSetToTriangleSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_split_simplex_set.html#a03baee9253aedbf9e48986f3f8f45acf">dyno::SplitSimplexSet&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_texture_mesh_to_triangle_set_node.html#acbc39fbb77de88918cf94e9fcc36ad52">dyno::TextureMeshToTriangleSetNode&lt; TDataType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00206">206</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00214">214</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2240,7 +2283,32 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the state of dynamics. </p>
 
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00078">78</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acce66b8565da4e39b72864b0bb90b72c" name="acce66b8565da4e39b72864b0bb90b72c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce66b8565da4e39b72864b0bb90b72c">&#9670;&#160;</a></span>setAutoHidden()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> dyno::Node::setAutoHidden </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td>
+          <td class="paramname"><em>con</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00068">68</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_node_acce66b8565da4e39b72864b0bb90b72c_icgraph.png" border="0" usemap="#aclassdyno_1_1_node_acce66b8565da4e39b72864b0bb90b72c_icgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -2268,7 +2336,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00058">58</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00063">63</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2293,7 +2361,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00093">93</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00098">98</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2318,7 +2386,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00528">528</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00544">544</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2363,7 +2431,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00098">98</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00103">103</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2393,16 +2461,7 @@ Here is the caller graph for this function:</div>
 
 <p><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the visibility of context. </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00078">78</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_node_ac8d11214a0508e24421095c5f9067421_cgraph.png" border="0" usemap="#aclassdyno_1_1_node_ac8d11214a0508e24421095c5f9067421_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_node_ac8d11214a0508e24421095c5f9067421_cgraph" id="aclassdyno_1_1_node_ac8d11214a0508e24421095c5f9067421_cgraph">
-<area shape="rect" title="Set the visibility of context." alt="" coords="5,5,159,32"/>
-<area shape="rect" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226" title=" " alt="" coords="207,5,397,32"/>
-</map>
-</div>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00088">88</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2438,7 +2497,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00262">262</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00266">266</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -2457,7 +2516,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00517">517</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00533">533</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 
 </div>
 </div>
@@ -2484,7 +2543,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00259">259</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00263">263</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -2513,7 +2572,7 @@ Here is the caller graph for this function:</div>
 
 <p>notify all state and output fields are updated </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00258">258</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00266">266</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2554,7 +2613,7 @@ Here is the caller graph for this function:</div>
 
 <p>Called every time interval. </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00141">141</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00146">146</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2599,7 +2658,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00201">201</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00206">206</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2645,9 +2704,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classdyno_1_1_particle_emitter.html#a322921e41e8a4aee5b430266e4d5fb09">dyno::ParticleEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_emitter.html#a322921e41e8a4aee5b430266e4d5fb09">dyno::ParticleEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_capillary_wave.html#a80b34fb9746816005e75b4c8651ccb8d">dyno::CapillaryWave&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_coupling.html#a5b400a8d3856e7d1fbd7a14d2e5a5971">dyno::Coupling&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_granular_media.html#afabd96e0e6a9feb7e56b01f2f8a24e14">dyno::GranularMedia&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean.html#a29dae43e61543bd8614b2b72ed263b23">dyno::Ocean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean_patch.html#a5aaa1799242d974b4f5c07c87832fecd">dyno::OceanPatch&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_particle_tracking.html#a32ecea82c5284bea57969a5d9964e344">dyno::SurfaceParticleTracking&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vessel.html#a8c7d3e6dc48b70fcfed4958f6f8105a0">dyno::Vessel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_wake.html#a211728a2ec5eab889ee088f824dbdb31">dyno::Wake&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_adaptive_boundary.html#ace075db77043b97f9a41c3dd3342e201">dyno::AdaptiveBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_boundary.html#abc884f4997a948e1113f889073b4587b">dyno::VolumeBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_static_boundary.html#a48c8304d8e8522da7043ca8b2997e6af">dyno::StaticBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_body.html#afa311e750c8986e1f9c3cae698b3f2cd">dyno::RigidBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_mesh.html#a24acbf8f6f684a2f060d7878b7cc950e">dyno::RigidMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vechicle.html#a1f9f619c3a6bfc2d16769873af2bd7eb">dyno::Vechicle&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_mesh_boundary.html#aa1b9b6bf62410df7e88d8b032888fd3e">dyno::TriangularMeshBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_marching_cubes.html#a9a2c164e63a1e00d0073df667cbe15d9">dyno::SparseMarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_volume_clipper.html#a496499dcbeb00fc0803baa50f6a0fc73">dyno::SparseVolumeClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree_boolean.html#af99ec95de420bb540e56769497a89b0f">dyno::VolumeOctreeBoolean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree_generator.html#a9737f22c8e8c0ceff8fe6f508b30529d">dyno::VolumeOctreeGenerator&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_uniform_generator.html#aeedfdee55ac409efafcfa2ba51c0ba01">dyno::VolumeUniformGenerator&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_gltf_loader.html#ae6fd9468ff716938520b858430731816">dyno::GltfLoader&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_joint_deform.html#a250cf9513b6e60c50d363e3bce29449d">dyno::JointDeform&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_normal.html#a6d27557a91a09175575564cd9e8c33a7">dyno::Normal&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_clip.html#ab7fbd1d146762d9d11df4e48e6483885">dyno::PointClip&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_spline_constraint.html#ae3eb9132cf09a02f4206921d86f347ea">dyno::SplineConstraint&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vector_visual_node.html#a30dfaf2c5e165c8065a2fc4e74c56c7e">dyno::VectorVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_marching_cubes.html#a77f618b60055927260ef0ff7841dfbff">dyno::MarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge_triangle_set.html#a575c7fca19d1078500595c65790a72a4">dyno::MergeTriangleSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_set_to_triangle_set.html#a03857dc6494a246c39dbc0d8f3fc42f1">dyno::PointSetToTriangleSet&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_texture_mesh_to_triangle_set_node.html#aa55a5abab9f8ec2b9337ff1c0616e0c6">dyno::TextureMeshToTriangleSetNode&lt; TDataType &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classdyno_1_1_particle_emitter.html#a322921e41e8a4aee5b430266e4d5fb09">dyno::ParticleEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_particle_emitter.html#a322921e41e8a4aee5b430266e4d5fb09">dyno::ParticleEmitter&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_capillary_wave.html#a80b34fb9746816005e75b4c8651ccb8d">dyno::CapillaryWave&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_granular_media.html#afabd96e0e6a9feb7e56b01f2f8a24e14">dyno::GranularMedia&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_large_ocean.html#a19ad93232cc2dc511f38cd51e1ba6e66">dyno::LargeOcean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean.html#a29dae43e61543bd8614b2b72ed263b23">dyno::Ocean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_ocean_patch.html#a5aaa1799242d974b4f5c07c87832fecd">dyno::OceanPatch&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_sand_coupling.html#a7c039c56d4cbe51f291191c74bf3257d">dyno::RigidSandCoupling&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_water_coupling.html#ad4796966342c9d56aa8577f37503babb">dyno::RigidWaterCoupling&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_particle_tracking.html#a32ecea82c5284bea57969a5d9964e344">dyno::SurfaceParticleTracking&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vessel.html#a8c7d3e6dc48b70fcfed4958f6f8105a0">dyno::Vessel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_wake.html#a211728a2ec5eab889ee088f824dbdb31">dyno::Wake&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_adaptive_boundary.html#ace075db77043b97f9a41c3dd3342e201">dyno::AdaptiveBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_boundary.html#abc884f4997a948e1113f889073b4587b">dyno::VolumeBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_articulated_body.html#abbb2a25a4593ee8991a6f3c2075fa349">dyno::ArticulatedBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_body.html#afa311e750c8986e1f9c3cae698b3f2cd">dyno::RigidBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_mesh.html#a24acbf8f6f684a2f060d7878b7cc950e">dyno::RigidMesh&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_mesh_boundary.html#aa1b9b6bf62410df7e88d8b032888fd3e">dyno::TriangularMeshBoundary&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_marching_cubes.html#a77f618b60055927260ef0ff7841dfbff">dyno::MarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_marching_cubes.html#a9a2c164e63a1e00d0073df667cbe15d9">dyno::SparseMarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_volume_clipper.html#a496499dcbeb00fc0803baa50f6a0fc73">dyno::SparseVolumeClipper&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree_boolean.html#af99ec95de420bb540e56769497a89b0f">dyno::VolumeOctreeBoolean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree_generator.html#a9737f22c8e8c0ceff8fe6f508b30529d">dyno::VolumeOctreeGenerator&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_clip.html#ab7fbd1d146762d9d11df4e48e6483885">dyno::PointClip&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_polygon_set_to_triangle_set_node.html#abd3ecb7cb3852f4f4ecf0f954389a563">dyno::PolygonSetToTriangleSetNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_gltf_loader.html#ae6fd9468ff716938520b858430731816">dyno::GltfLoader&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_joint_deform.html#a250cf9513b6e60c50d363e3bce29449d">dyno::JointDeform&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_normal_visualization.html#a4b7c781e0fd973274b0b21d6951fdfb7">dyno::NormalVisualization&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_spline_constraint.html#ae3eb9132cf09a02f4206921d86f347ea">dyno::SplineConstraint&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_vector_visual_node.html#a30dfaf2c5e165c8065a2fc4e74c56c7e">dyno::VectorVisualNode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_merge_triangle_set.html#a575c7fca19d1078500595c65790a72a4">dyno::MergeTriangleSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_set_to_triangle_set.html#a03857dc6494a246c39dbc0d8f3fc42f1">dyno::PointSetToTriangleSet&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_texture_mesh_to_triangle_set_node.html#aa55a5abab9f8ec2b9337ff1c0616e0c6">dyno::TextureMeshToTriangleSetNode&lt; TDataType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00136">136</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00141">141</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2697,9 +2756,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classdyno_1_1_codimensional_p_d.html#ab8529bec8fd37c9a462f0ed16f40b321">dyno::CodimensionalPD&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_elastic_body.html#a0c00a95e07bf67885750d62aee91ae12">dyno::ElasticBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_elastoplastic_body.html#a30174d4ea44b22e9a1087d0bfbef02fe">dyno::ElastoplasticBody&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_tetrahedral_system.html#a8af1403f1b121a0824a5744c0f6acb60">dyno::TetrahedralSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_thread_system.html#a2ceb6abbee84238d515be8ad10156361">dyno::ThreadSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangular_system.html#aa8c5fed1373f3dfa5947610b49aea51a">dyno::TriangularSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_rigid_body_system.html#aba51bc976b278eff5363089327a93af9">dyno::RigidBodySystem&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_volume_octree_generator.html#a400981be80733f9dea210c7f83d8dcd0">dyno::VolumeOctreeGenerator&lt; TDataType &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classdyno_1_1_codimensional_p_d.html#ab8529bec8fd37c9a462f0ed16f40b321">dyno::CodimensionalPD&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_tetrahedral_system.html#a8af1403f1b121a0824a5744c0f6acb60">dyno::TetrahedralSystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_thread_system.html#a2ceb6abbee84238d515be8ad10156361">dyno::ThreadSystem&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_volume_octree_generator.html#a400981be80733f9dea210c7f83d8dcd0">dyno::VolumeOctreeGenerator&lt; TDataType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00460">460</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00476">476</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -2739,9 +2798,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classdyno_1_1_ocean.html#a2fcb01e84cce13ecbc271ab842d346cd">dyno::Ocean&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_particle_tracking.html#a0902164479a66d011dd4565b584532ee">dyno::SurfaceParticleTracking&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_semi_analytical_s_f_i_node.html#a40a92c87b3241c43da91a80c9d573e1e">dyno::SemiAnalyticalSFINode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_marching_cubes.html#a1b29fb16ce12a8d0f4b862f225fe82e6">dyno::SparseMarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree_boolean.html#a30977b8ccc39ab8311bed432b40b200a">dyno::VolumeOctreeBoolean&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_collision_detector.html#a93e248452426353cf7bfdd1906f8db08">dyno::CollisionDetector&lt; TDataType &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classdyno_1_1_ocean_base.html#a21e663824d8f76f324b782235b3b40db">dyno::OceanBase&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_surface_particle_tracking.html#a0902164479a66d011dd4565b584532ee">dyno::SurfaceParticleTracking&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sdf_sampler.html#a743e98f99aedc058c7eb28f43b8a8f2d">dyno::SdfSampler&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_multibody_system.html#a5ee0f4723d00a79083456a65f7d0763f">dyno::MultibodySystem&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_semi_analytical_s_f_i_node.html#a40a92c87b3241c43da91a80c9d573e1e">dyno::SemiAnalyticalSFINode&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_basic_shape_to_volume.html#af04749eeff772ed3bb3bea74e0789082">dyno::BasicShapeToVolume&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_sparse_marching_cubes.html#a1b29fb16ce12a8d0f4b862f225fe82e6">dyno::SparseMarchingCubes&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_volume_octree_boolean.html#a30977b8ccc39ab8311bed432b40b200a">dyno::VolumeOctreeBoolean&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_collision_detector.html#a93e248452426353cf7bfdd1906f8db08">dyno::CollisionDetector&lt; TDataType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00211">211</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8cpp_source.html#l00219">219</a> of file <a class="el" href="_node_8cpp_source.html">Node.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2789,7 +2848,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00346">346</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00352">352</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -2806,7 +2865,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00297">297</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00301">301</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -2830,7 +2889,31 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00335">335</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00341">341</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+
+</div>
+</div>
+<a id="a12f0c6af5edf0e1401cbd9c13870a30f" name="a12f0c6af5edf0e1401cbd9c13870a30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f0c6af5edf0e1401cbd9c13870a30f">&#9670;&#160;</a></span>mAutoHidden</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> dyno::Node::mAutoHidden = <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">false</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00322">322</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -2856,7 +2939,7 @@ Here is the caller graph for this function:</div>
 
 <p>A parameter to control whether the node can be updated automatically by its ancestor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00308">308</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00312">312</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -2882,7 +2965,7 @@ Here is the caller graph for this function:</div>
 
 <p>Time step size. </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00322">322</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00328">328</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -2906,7 +2989,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00314">314</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00318">318</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -2930,7 +3013,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00342">342</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00348">348</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -2954,7 +3037,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00316">316</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00320">320</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -2978,7 +3061,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00336">336</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00342">342</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -3002,7 +3085,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00340">340</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00346">346</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -3028,7 +3111,7 @@ Here is the caller graph for this function:</div>
 
 <p>A module list containing all modules. </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00328">328</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00334">334</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -3052,7 +3135,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00310">310</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00314">314</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -3076,7 +3159,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00312">312</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00316">316</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -3102,7 +3185,7 @@ Here is the caller graph for this function:</div>
 
 <p>Pointer of the pipeline. </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00334">334</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00340">340</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
@@ -3126,13 +3209,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00344">344</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00350">350</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>E:/Peridyno/peridyno/src/Framework/<a class="el" href="_node_8h_source.html">Node.h</a></li>
-<li>E:/Peridyno/peridyno/src/Framework/<a class="el" href="_node_8cpp_source.html">Node.cpp</a></li>
+<li>D:/Peridyno/peridyno/src/Framework/<a class="el" href="_node_8h_source.html">Node.h</a></li>
+<li>D:/Peridyno/peridyno/src/Framework/<a class="el" href="_node_8cpp_source.html">Node.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

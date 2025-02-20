@@ -1,0 +1,33 @@
+digraph "D:/Peridyno/peridyno/src/Dynamics/Cuda/Peridynamics"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_5b6078a30aa2f816f8ccd07bd3a8bd2d {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="Cuda", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_5b6078a30aa2f816f8ccd07bd3a8bd2d.html",tooltip=""]
+  dir_5112e9c65d410148830e991585b68117 [label="ParticleSystem", fillcolor="#a2b4d6", color="red", style="filled", URL="dir_5112e9c65d410148830e991585b68117.html",tooltip=""];
+  subgraph clusterdir_305303aa3cf349edf3bb3bf63e491719 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_305303aa3cf349edf3bb3bf63e491719.html",tooltip=""]
+    dir_305303aa3cf349edf3bb3bf63e491719 [shape=plaintext, label="Peridynamics"];
+  dir_c50de9124de42b7d7629713c381f931a [label="Module", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_c50de9124de42b7d7629713c381f931a.html",tooltip=""];
+  }
+  }
+  dir_18ab09de471ddf4a6c726bf6f36eb1c9 [label="Core", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_18ab09de471ddf4a6c726bf6f36eb1c9.html",tooltip=""];
+  dir_72c161997c5186b0a4bbf39a44809cf4 [label="Framework", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_72c161997c5186b0a4bbf39a44809cf4.html",tooltip=""];
+  dir_764a12c72bc3d9052d5e3ebe390f3c27 [label="Rendering", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_764a12c72bc3d9052d5e3ebe390f3c27.html",tooltip=""];
+  dir_7ded34adb3e08c5a039f89f629ad7b33 [label="Topology", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_7ded34adb3e08c5a039f89f629ad7b33.html",tooltip=""];
+  dir_ad704191c13ee5eda64786a6ffabcfdc [label="IO", fillcolor="#edf0f7", color="red", style="filled,dashed", URL="dir_ad704191c13ee5eda64786a6ffabcfdc.html",tooltip=""];
+  dir_305303aa3cf349edf3bb3bf63e491719->dir_18ab09de471ddf4a6c726bf6f36eb1c9 [headlabel="9", labeldistance=1.5 headhref="dir_000064_000014.html" href="dir_000064_000014.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_305303aa3cf349edf3bb3bf63e491719->dir_5112e9c65d410148830e991585b68117 [headlabel="2", labeldistance=1.5 headhref="dir_000064_000062.html" href="dir_000064_000062.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_305303aa3cf349edf3bb3bf63e491719->dir_72c161997c5186b0a4bbf39a44809cf4 [headlabel="17", labeldistance=1.5 headhref="dir_000064_000027.html" href="dir_000064_000027.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_305303aa3cf349edf3bb3bf63e491719->dir_764a12c72bc3d9052d5e3ebe390f3c27 [headlabel="7", labeldistance=1.5 headhref="dir_000064_000072.html" href="dir_000064_000072.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_305303aa3cf349edf3bb3bf63e491719->dir_7ded34adb3e08c5a039f89f629ad7b33 [headlabel="8", labeldistance=1.5 headhref="dir_000064_000081.html" href="dir_000064_000081.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_305303aa3cf349edf3bb3bf63e491719->dir_ad704191c13ee5eda64786a6ffabcfdc [headlabel="6", labeldistance=1.5 headhref="dir_000064_000037.html" href="dir_000064_000037.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_305303aa3cf349edf3bb3bf63e491719->dir_c50de9124de42b7d7629713c381f931a [headlabel="7", labeldistance=1.5 headhref="dir_000064_000046.html" href="dir_000064_000046.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_c50de9124de42b7d7629713c381f931a->dir_18ab09de471ddf4a6c726bf6f36eb1c9 [headlabel="1", labeldistance=1.5 headhref="dir_000046_000014.html" href="dir_000046_000014.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_c50de9124de42b7d7629713c381f931a->dir_5112e9c65d410148830e991585b68117 [headlabel="1", labeldistance=1.5 headhref="dir_000046_000062.html" href="dir_000046_000062.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_c50de9124de42b7d7629713c381f931a->dir_72c161997c5186b0a4bbf39a44809cf4 [headlabel="10", labeldistance=1.5 headhref="dir_000046_000027.html" href="dir_000046_000027.html" color="steelblue1" fontcolor="steelblue1"];
+  dir_c50de9124de42b7d7629713c381f931a->dir_7ded34adb3e08c5a039f89f629ad7b33 [headlabel="5", labeldistance=1.5 headhref="dir_000046_000081.html" href="dir_000046_000081.html" color="steelblue1" fontcolor="steelblue1"];
+}

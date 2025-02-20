@@ -2,7 +2,7 @@ var searchData=
 [
   ['declare_5fclass_0',['DECLARE_CLASS',['../_object_8h.html#a3b131c7f347617d57ae845e1a94e7db0',1,'Object.h']]],
   ['declare_5fenum_1',['DECLARE_ENUM',['../_declare_enum_8h.html#ac16ac4c9d7850c54b3d5aac7c3184852',1,'DeclareEnum.h']]],
-  ['declare_5ffield_5fwidget_2',['declare_field_widget',['../_p_property_widget_8h.html#a57a5ad0258d76ea1710eca1501d38064',1,'DECLARE_FIELD_WIDGET:&#160;PPropertyWidget.h'],['../_w_parameter_data_node_8h.html#a57a5ad0258d76ea1710eca1501d38064',1,'DECLARE_FIELD_WIDGET:&#160;WParameterDataNode.h']]],
+  ['declare_5ffield_5fwidget_2',['DECLARE_FIELD_WIDGET',['../_p_property_widget_8h.html#a57a5ad0258d76ea1710eca1501d38064',1,'PPropertyWidget.h']]],
   ['declare_5fperidyno_5fsample_3',['DECLARE_PERIDYNO_SAMPLE',['../_w_sample_widget_8cpp.html#a9960e9ae30432b29eff7183ce7c0a97f',1,'WSampleWidget.cpp']]],
   ['declare_5ftclass_4',['DECLARE_TCLASS',['../_object_8h.html#a610e334cf630b9ec038f131226866605',1,'Object.h']]],
   ['def_5farray2d_5fin_5',['DEF_ARRAY2D_IN',['../_declare_field_8h.html#a72f7e1c3dbf676d56de6247782df0bec',1,'DeclareField.h']]],

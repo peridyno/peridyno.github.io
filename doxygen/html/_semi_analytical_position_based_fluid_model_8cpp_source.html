@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/Cuda/SemiAnalyticalScheme/SemiAnalyticalPositionBasedFluidModel.cpp Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Dynamics/Cuda/SemiAnalyticalScheme/SemiAnalyticalPositionBasedFluidModel.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_fcf8d9b41703035e4148e841d5c3507a.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_86b8b179eab9268df732fbb357c09369.html">SemiAnalyticalScheme</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_fd8f3ed6aa4978ca948e4e53f2ea17ff.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_5b6078a30aa2f816f8ccd07bd3a8bd2d.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_8a798e7a8c736afd3309aed060e625d7.html">SemiAnalyticalScheme</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -142,38 +142,37 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inTimeStep</a>()-&gt;connect(m_integrator-&gt;inTimeStep());</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inPosition</a>()-&gt;connect(m_integrator-&gt;inPosition());</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inVelocity</a>()-&gt;connect(m_integrator-&gt;inVelocity());</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inForce</a>()-&gt;connect(m_integrator-&gt;inForceDensity());</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_group_module.html#a1471ba0bbf6529e70a40a1d60d3ba392">pushModule</a>(m_integrator);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keyword">auto</span> m_visModule = std::make_shared&lt;ImplicitViscosity&lt;TDataType&gt;&gt;();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inTimeStep</a>()-&gt;connect(m_visModule-&gt;inTimeStep());</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inPosition</a>()-&gt;connect(m_visModule-&gt;inPosition());</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inVelocity</a>()-&gt;connect(m_visModule-&gt;inVelocity());</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        m_visModule-&gt;varViscosity()-&gt;setValue(<a class="code hl_typedef" href="classdyno_1_1_semi_analytical_position_based_fluid_model.html#afaa4c9f08f68d7cb7f46e338cc73e752">Real</a>(1));</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">smoothingLength</a>-&gt;outFloating()-&gt;connect(m_visModule-&gt;inSmoothingLength());</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        m_nbrQueryPoint-&gt;outNeighborIds()-&gt;connect(m_visModule-&gt;inNeighborIds());</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_group_module.html#a1471ba0bbf6529e70a40a1d60d3ba392">pushModule</a>(m_visModule);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="comment">//TODO:</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keyword">auto</span> m_meshCollision = std::make_shared&lt;TriangularMeshConstraint&lt;TDataType&gt;&gt;();</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inTimeStep</a>()-&gt;connect(m_meshCollision-&gt;inTimeStep());</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inPosition</a>()-&gt;connect(m_meshCollision-&gt;inPosition());</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inVelocity</a>()-&gt;connect(m_meshCollision-&gt;inVelocity());</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inTriangleSet</a>()-&gt;connect(m_meshCollision-&gt;inTriangleSet());</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        m_nbrQueryTri-&gt;outNeighborIds()-&gt;connect(m_meshCollision-&gt;inTriangleNeighborIds());</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_group_module.html#a1471ba0bbf6529e70a40a1d60d3ba392">pushModule</a>(m_meshCollision);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">varSmoothingLength</a>()-&gt;attach(</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            std::make_shared&lt;FCallBackFunc&gt;(</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                [=]() {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                    <a class="code hl_class" href="classdyno_1_1_array_map.html">smoothingLength</a>-&gt;varValue()-&gt;setValue(this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">varSmoothingLength</a>()-&gt;getValue());</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                })</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        );</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_group_module.html#a1471ba0bbf6529e70a40a1d60d3ba392">pushModule</a>(m_integrator);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keyword">auto</span> m_visModule = std::make_shared&lt;ImplicitViscosity&lt;TDataType&gt;&gt;();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inTimeStep</a>()-&gt;connect(m_visModule-&gt;inTimeStep());</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inPosition</a>()-&gt;connect(m_visModule-&gt;inPosition());</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inVelocity</a>()-&gt;connect(m_visModule-&gt;inVelocity());</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        m_visModule-&gt;varViscosity()-&gt;setValue(<a class="code hl_typedef" href="classdyno_1_1_semi_analytical_position_based_fluid_model.html#afaa4c9f08f68d7cb7f46e338cc73e752">Real</a>(1));</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">smoothingLength</a>-&gt;outFloating()-&gt;connect(m_visModule-&gt;inSmoothingLength());</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        m_nbrQueryPoint-&gt;outNeighborIds()-&gt;connect(m_visModule-&gt;inNeighborIds());</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_group_module.html#a1471ba0bbf6529e70a40a1d60d3ba392">pushModule</a>(m_visModule);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="comment">//TODO:</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keyword">auto</span> m_meshCollision = std::make_shared&lt;TriangularMeshConstraint&lt;TDataType&gt;&gt;();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inTimeStep</a>()-&gt;connect(m_meshCollision-&gt;inTimeStep());</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inPosition</a>()-&gt;connect(m_meshCollision-&gt;inPosition());</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inVelocity</a>()-&gt;connect(m_meshCollision-&gt;inVelocity());</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">inTriangleSet</a>()-&gt;connect(m_meshCollision-&gt;inTriangleSet());</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        m_nbrQueryTri-&gt;outNeighborIds()-&gt;connect(m_meshCollision-&gt;inTriangleNeighborIds());</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_group_module.html#a1471ba0bbf6529e70a40a1d60d3ba392">pushModule</a>(m_meshCollision);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">varSmoothingLength</a>()-&gt;attach(</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            std::make_shared&lt;FCallBackFunc&gt;(</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                [=]() {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                    <a class="code hl_class" href="classdyno_1_1_array_map.html">smoothingLength</a>-&gt;varValue()-&gt;setValue(this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">varSmoothingLength</a>()-&gt;getValue());</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                })</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        );</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
 </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="namespacedyno.html#a92edd6616d2abb298ed74ceeb3d0308d">   95</a></span>    <a class="code hl_define" href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_semi_analytical_position_based_fluid_model.html">SemiAnalyticalPositionBasedFluidModel</a>);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}  <span class="comment">// namespace PhysIKA</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="namespacedyno.html#a92edd6616d2abb298ed74ceeb3d0308d">   94</a></span>    <a class="code hl_define" href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_semi_analytical_position_based_fluid_model.html">SemiAnalyticalPositionBasedFluidModel</a>);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}  <span class="comment">// namespace PhysIKA</span></div>
 <div class="ttc" id="a_data_source_8h_html"><div class="ttname"><a href="_data_source_8h.html">DataSource.h</a></div></div>
 <div class="ttc" id="a_implicit_viscosity_8h_html"><div class="ttname"><a href="_implicit_viscosity_8h.html">ImplicitViscosity.h</a></div></div>
 <div class="ttc" id="a_iterative_density_solver_8h_html"><div class="ttname"><a href="_iterative_density_solver_8h.html">IterativeDensitySolver.h</a></div></div>
@@ -189,8 +188,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclassdyno_1_1_semi_analytical_position_based_fluid_model_html"><div class="ttname"><a href="classdyno_1_1_semi_analytical_position_based_fluid_model.html">dyno::SemiAnalyticalPositionBasedFluidModel</a></div><div class="ttdef"><b>Definition</b> <a href="_semi_analytical_position_based_fluid_model_8h_source.html#l00038">SemiAnalyticalPositionBasedFluidModel.h:39</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_semi_analytical_position_based_fluid_model_html_a63fda48e9f9ae91f910e21eb9d255c70"><div class="ttname"><a href="classdyno_1_1_semi_analytical_position_based_fluid_model.html#a63fda48e9f9ae91f910e21eb9d255c70">dyno::SemiAnalyticalPositionBasedFluidModel::SemiAnalyticalPositionBasedFluidModel</a></div><div class="ttdeci">SemiAnalyticalPositionBasedFluidModel()</div><div class="ttdef"><b>Definition</b> <a href="_semi_analytical_position_based_fluid_model_8cpp_source.html#l00026">SemiAnalyticalPositionBasedFluidModel.cpp:26</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_semi_analytical_position_based_fluid_model_html_afaa4c9f08f68d7cb7f46e338cc73e752"><div class="ttname"><a href="classdyno_1_1_semi_analytical_position_based_fluid_model.html#afaa4c9f08f68d7cb7f46e338cc73e752">dyno::SemiAnalyticalPositionBasedFluidModel::Real</a></div><div class="ttdeci">TDataType::Real Real</div><div class="ttdef"><b>Definition</b> <a href="_semi_analytical_position_based_fluid_model_8h_source.html#l00042">SemiAnalyticalPositionBasedFluidModel.h:42</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00080">ArrayMap.inl:80</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00082">ArrayMap.inl:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

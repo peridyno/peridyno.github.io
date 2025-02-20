@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Dynamics/Cuda/Peridynamics/TetrahedralSystem.cpp Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Dynamics/Cuda/Peridynamics/TetrahedralSystem.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_b1e46f0478f46f3a97fbed2b9c7339a6.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_fcf8d9b41703035e4148e841d5c3507a.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_5d01a63832621f707ea04991ac11b7fd.html">Peridynamics</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_fd8f3ed6aa4978ca948e4e53f2ea17ff.html">Dynamics</a></li><li class="navelem"><a class="el" href="dir_5b6078a30aa2f816f8ccd07bd3a8bd2d.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_305303aa3cf349edf3bb3bf63e491719.html">Peridynamics</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,8 +89,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Topology/PointSet.h&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;Topology/TetrahedronSet.h&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_cuda_2_smesh___i_o_2smesh_8h.html">Smesh_IO/smesh.h</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="gmsh_8h.html">Gmsh_IO/gmsh.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="smesh__helper_8h.html">helpers/smesh_helper.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="gmsh__helper_8h.html">helpers/gmsh_helper.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
@@ -218,10 +218,10 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
 <div class="foldopen" id="foldopen00120" data-start="{" data-end="}">
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classdyno_1_1_tetrahedral_system.html#a550b97a947108afb7c9c8de6db87ea0c">  120</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classdyno_1_1_tetrahedral_system.html#a550b97a947108afb7c9c8de6db87ea0c">TetrahedralSystem&lt;TDataType&gt;::rotate</a>(<a class="code hl_class" href="classdyno_1_1_array_map.html">Quat&lt;Real&gt;</a> <a class="code hl_class" href="classdyno_1_1_array_map.html">q</a>)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="classdyno_1_1_tetrahedral_system.html#a550b97a947108afb7c9c8de6db87ea0c">  120</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classdyno_1_1_tetrahedral_system.html#a550b97a947108afb7c9c8de6db87ea0c">TetrahedralSystem&lt;TDataType&gt;::rotate</a>(<a class="code hl_class" href="classdyno_1_1_array_map.html">Quat&lt;Real&gt;</a> q)</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    {</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keyword">auto</span> <a class="code hl_class" href="classdyno_1_1_array_map.html">ptSet</a> = this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">stateTetrahedronSet</a>()-&gt;getDataPtr();</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">ptSet</a>-&gt;rotate(<a class="code hl_class" href="classdyno_1_1_array_map.html">q</a>);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">ptSet</a>-&gt;rotate(q);</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
@@ -229,16 +229,15 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="namespacedyno.html#aa8852f107739a9b4f9edbaa160fe029c">  128</a></span>    <a class="code hl_define" href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_tetrahedral_system.html">TetrahedralSystem</a>);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
-<div class="ttc" id="a_cuda_2_smesh___i_o_2smesh_8h_html"><div class="ttname"><a href="_cuda_2_smesh___i_o_2smesh_8h.html">smesh.h</a></div></div>
 <div class="ttc" id="a_object_8h_html_a71c43943296af027d72de263f0f40d27"><div class="ttname"><a href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a></div><div class="ttdeci">#define DEFINE_CLASS(name)</div><div class="ttdef"><b>Definition</b> <a href="_object_8h_source.html#l00140">Object.h:140</a></div></div>
 <div class="ttc" id="a_object_8h_html_ad04bb7da7189939ce1eeba05386dfdb8"><div class="ttname"><a href="_object_8h.html#ad04bb7da7189939ce1eeba05386dfdb8">IMPLEMENT_TCLASS</a></div><div class="ttdeci">#define IMPLEMENT_TCLASS(name, T1)</div><div class="ttdef"><b>Definition</b> <a href="_object_8h_source.html#l00103">Object.h:103</a></div></div>
 <div class="ttc" id="a_primitive3_d_8h_html"><div class="ttname"><a href="_primitive3_d_8h.html">Primitive3D.h</a></div></div>
 <div class="ttc" id="a_tetrahedral_system_8h_html"><div class="ttname"><a href="_tetrahedral_system_8h.html">TetrahedralSystem.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_map_html"><div class="ttname"><a href="classdyno_1_1_array_map.html">dyno::ArrayMap</a></div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00025">ArrayMap.h:25</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_gmsh_html"><div class="ttname"><a href="classdyno_1_1_gmsh.html">dyno::Gmsh</a></div><div class="ttdef"><b>Definition</b> <a href="gmsh_8h_source.html#l00010">gmsh.h:10</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_gmsh_html"><div class="ttname"><a href="classdyno_1_1_gmsh.html">dyno::Gmsh</a></div><div class="ttdef"><b>Definition</b> <a href="gmsh__helper_8h_source.html#l00010">gmsh_helper.h:10</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_html"><div class="ttname"><a href="classdyno_1_1_node.html">dyno::Node</a></div><div class="ttdef"><b>Definition</b> <a href="_node_8h_source.html#l00067">Node.h:68</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_a268d036395a10abc9669a042d35d91cf"><div class="ttname"><a href="classdyno_1_1_node.html#a268d036395a10abc9669a042d35d91cf">dyno::Node::resetStates</a></div><div class="ttdeci">virtual void resetStates()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00206">Node.cpp:206</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_smesh_html"><div class="ttname"><a href="classdyno_1_1_smesh.html">dyno::Smesh</a></div><div class="ttdef"><b>Definition</b> <a href="_cuda_2_smesh___i_o_2smesh_8h_source.html#l00010">smesh.h:10</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a268d036395a10abc9669a042d35d91cf"><div class="ttname"><a href="classdyno_1_1_node.html#a268d036395a10abc9669a042d35d91cf">dyno::Node::resetStates</a></div><div class="ttdeci">virtual void resetStates()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00214">Node.cpp:214</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_smesh_html"><div class="ttname"><a href="classdyno_1_1_smesh.html">dyno::Smesh</a></div><div class="ttdef"><b>Definition</b> <a href="smesh__helper_8h_source.html#l00010">smesh_helper.h:10</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_tetrahedral_system_html"><div class="ttname"><a href="classdyno_1_1_tetrahedral_system.html">dyno::TetrahedralSystem</a></div><div class="ttdef"><b>Definition</b> <a href="_tetrahedral_system_8h_source.html#l00013">TetrahedralSystem.h:14</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_tetrahedral_system_html_a44fc71b70ed200d5d9fdf72422ec5cc8"><div class="ttname"><a href="classdyno_1_1_tetrahedral_system.html#a44fc71b70ed200d5d9fdf72422ec5cc8">dyno::TetrahedralSystem::scale</a></div><div class="ttdeci">virtual bool scale(Real s)</div><div class="ttdef"><b>Definition</b> <a href="_tetrahedral_system_8cpp_source.html#l00110">TetrahedralSystem.cpp:110</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_tetrahedral_system_html_a550b97a947108afb7c9c8de6db87ea0c"><div class="ttname"><a href="classdyno_1_1_tetrahedral_system.html#a550b97a947108afb7c9c8de6db87ea0c">dyno::TetrahedralSystem::rotate</a></div><div class="ttdeci">virtual bool rotate(Quat&lt; Real &gt; q)</div><div class="ttdef"><b>Definition</b> <a href="_tetrahedral_system_8cpp_source.html#l00120">TetrahedralSystem.cpp:120</a></div></div>
@@ -251,9 +250,10 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclassdyno_1_1_tetrahedral_system_html_af382742555d7bbf4edd230fda12562c0"><div class="ttname"><a href="classdyno_1_1_tetrahedral_system.html#af382742555d7bbf4edd230fda12562c0">dyno::TetrahedralSystem::Real</a></div><div class="ttdeci">TDataType::Real Real</div><div class="ttdef"><b>Definition</b> <a href="_tetrahedral_system_8h_source.html#l00017">TetrahedralSystem.h:17</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_tetrahedral_system_html_af9b7f00e71b11762dac98c740c5e3732"><div class="ttname"><a href="classdyno_1_1_tetrahedral_system.html#af9b7f00e71b11762dac98c740c5e3732">dyno::TetrahedralSystem::~TetrahedralSystem</a></div><div class="ttdeci">~TetrahedralSystem() override</div><div class="ttdef"><b>Definition</b> <a href="_tetrahedral_system_8cpp_source.html#l00024">TetrahedralSystem.cpp:24</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_tetrahedral_system_html_afbef3113da9ee9b21acaa46c435b5efd"><div class="ttname"><a href="classdyno_1_1_tetrahedral_system.html#afbef3113da9ee9b21acaa46c435b5efd">dyno::TetrahedralSystem::translate</a></div><div class="ttdeci">virtual bool translate(Coord t)</div><div class="ttdef"><b>Definition</b> <a href="_tetrahedral_system_8cpp_source.html#l00100">TetrahedralSystem.cpp:100</a></div></div>
-<div class="ttc" id="agmsh_8h_html"><div class="ttname"><a href="gmsh_8h.html">gmsh.h</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00080">ArrayMap.inl:80</a></div></div>
+<div class="ttc" id="agmsh__helper_8h_html"><div class="ttname"><a href="gmsh__helper_8h.html">gmsh_helper.h</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00082">ArrayMap.inl:82</a></div></div>
+<div class="ttc" id="asmesh__helper_8h_html"><div class="ttname"><a href="smesh__helper_8h.html">smesh_helper.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -7,7 +7,9 @@ digraph "dyno::Node::setDt"
   rankdir="RL";
   Node1 [id="Node000001",label="dyno::Node::setDt",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node2 [id="Node000002",label="dyno::ElasticBody::\lElasticBody",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_elastic_body.html#abfe5363124cf40ae385b822ec81fe214",tooltip=" "];
+  Node2 [id="Node000002",label="dyno::ParticleFluid\l::ParticleFluid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_particle_fluid.html#afa48f9370686aea2745ebd826397357f",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="dyno::ParticleFluid\l::ParticleFluid",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_particle_fluid.html#afa48f9370686aea2745ebd826397357f",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::Peridynamics\l::Peridynamics",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_peridynamics.html#ac64838a3f91e4d9744c7b0746b59d555",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::SemiAnalyticalSFINode\l::SemiAnalyticalSFINode",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_semi_analytical_s_f_i_node.html#ab7d08dfc3a7bb2ca6d09852437d29730",tooltip=" "];
 }

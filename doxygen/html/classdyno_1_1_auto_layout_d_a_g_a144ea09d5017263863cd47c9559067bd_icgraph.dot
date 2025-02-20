@@ -15,8 +15,11 @@ digraph "dyno::AutoLayoutDAG::update"
   Node2 -> Node5 [id="edge4_Node000002_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node5 [id="Node000005",label="Qt::QtModuleFlowScene\l::showGraphicsPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624",tooltip=" "];
   Node5 -> Node3 [id="edge5_Node000005_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node1 -> Node6 [id="edge6_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node6 [id="Node000006",label="Qt::QtNodeFlowScene\l::reorderAllNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_node_flow_scene.html#af66c8338521e25db6fdbdf31fdb93830",tooltip=" "];
-  Node6 -> Node7 [id="edge7_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="Qt::QtNodeFlowScene\l::QtNodeFlowScene",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_node_flow_scene.html#ab47298add0fea824f9705563d4ac7511",tooltip=" "];
+  Node2 -> Node6 [id="edge6_Node000002_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Qt::QtModuleFlowScene\l::showResetPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#af7703705ba566378630cc46198ad6ed8",tooltip=" "];
+  Node6 -> Node3 [id="edge7_Node000006_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node7 [id="edge8_Node000001_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Qt::QtNodeFlowScene\l::reorderAllNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_node_flow_scene.html#af66c8338521e25db6fdbdf31fdb93830",tooltip=" "];
+  Node7 -> Node8 [id="edge9_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="Qt::QtNodeFlowScene\l::QtNodeFlowScene",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_node_flow_scene.html#ab47298add0fea824f9705563d4ac7511",tooltip=" "];
 }

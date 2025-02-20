@@ -59,18 +59,13 @@ digraph "dyno::ShadowMap::update"
   Node26 -> Node27 [id="edge26_Node000026_Node000027",color="steelblue1",style="solid",tooltip=" "];
   Node27 [id="Node000027",label="dyno::SceneGraph::update\lExecutionQueue",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_scene_graph.html#a6b8432d4021b78626b2310004c57a30b",tooltip=" "];
   Node27 -> Node28 [id="edge27_Node000027_Node000028",color="steelblue1",style="solid",tooltip=" "];
-  Node28 [id="Node000028",label="dyno::DFS",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#ab66005c94c46c3177cae0d9732ef91d2",tooltip=" "];
-  Node28 -> Node28 [id="edge28_Node000028_Node000028",color="steelblue1",style="solid",tooltip=" "];
-  Node28 -> Node29 [id="edge29_Node000028_Node000029",color="steelblue1",style="solid",tooltip=" "];
-  Node29 [id="Node000029",label="dyno::Node::getExportNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#ac916b8e66f57d13e7480c7d1459382c4",tooltip=" "];
-  Node28 -> Node30 [id="edge30_Node000028_Node000030",color="steelblue1",style="solid",tooltip=" "];
-  Node30 [id="Node000030",label="dyno::Node::getImportNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#afdb83b6808ac89f1993062575d316e35",tooltip=" "];
-  Node28 -> Node31 [id="edge31_Node000028_Node000031",color="steelblue1",style="solid",tooltip=" "];
-  Node31 [id="Node000031",label="dyno::OBase::getInputFields",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_o_base.html#a67b5d4f1a17f5ccb3d196bc6515243a2",tooltip=" "];
-  Node28 -> Node32 [id="edge32_Node000028_Node000032",color="steelblue1",style="solid",tooltip=" "];
-  Node32 [id="Node000032",label="dyno::OBase::getOutputFields",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5",tooltip=" "];
-  Node28 -> Node33 [id="edge33_Node000028_Node000033",color="steelblue1",style="solid",tooltip=" "];
-  Node33 [id="Node000033",label="dyno::Object::objectId",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8",tooltip=" "];
-  Node1 -> Node34 [id="edge34_Node000001_Node000034",color="steelblue1",style="solid",tooltip=" "];
-  Node34 [id="Node000034",label="dyno::Program::use",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_program.html#ae8573883cde7419e9814c345e7ede2ca",tooltip=" "];
+  Node28 [id="Node000028",label="dyno::Object::baseId",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_object.html#a1c74670edfee2018cfa434a0a6380ed5",tooltip="Base Id."];
+  Node27 -> Node29 [id="edge28_Node000027_Node000029",color="steelblue1",style="solid",tooltip=" "];
+  Node29 [id="Node000029",label="dyno::Node::getImportNodes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#afdb83b6808ac89f1993062575d316e35",tooltip=" "];
+  Node27 -> Node30 [id="edge29_Node000027_Node000030",color="steelblue1",style="solid",tooltip=" "];
+  Node30 [id="Node000030",label="dyno::OBase::getInputFields",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_o_base.html#a67b5d4f1a17f5ccb3d196bc6515243a2",tooltip=" "];
+  Node27 -> Node31 [id="edge30_Node000027_Node000031",color="steelblue1",style="solid",tooltip=" "];
+  Node31 [id="Node000031",label="dyno::Object::objectId",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8",tooltip=" "];
+  Node1 -> Node32 [id="edge31_Node000001_Node000032",color="steelblue1",style="solid",tooltip=" "];
+  Node32 [id="Node000032",label="dyno::Program::use",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_program.html#ae8573883cde7419e9814c345e7ede2ca",tooltip=" "];
 }

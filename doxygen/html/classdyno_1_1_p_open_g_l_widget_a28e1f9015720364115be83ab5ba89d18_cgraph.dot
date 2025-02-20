@@ -10,4 +10,6 @@ digraph "dyno::POpenGLWidget::updateGraphicsContext"
   Node2 [id="Node000002",label="dyno::Node::graphicsPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="dyno::PSimulationThread\l::instance",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::PSimulationThread\l::PSimulationThread",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_p_simulation_thread.html#af8a98174b18d5f7895c5f0f40015f106",tooltip=" "];
 }

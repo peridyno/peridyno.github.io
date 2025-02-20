@@ -9,7 +9,8 @@ var searchData=
   ['imguiexcolval_5fwindowmenubg_5f1_6',['ImGuiExColVal_WindowMenuBg_1',['../namespace_im_gui.html#a093ca7a1a7099cc3282b3e1ca513b0e9a19d963196615b6c5f2c78d41eddab4cb',1,'ImGui']]],
   ['imguiexcolval_5fwindowtopbg_5f1_7',['ImGuiExColVal_WindowTopBg_1',['../namespace_im_gui.html#a093ca7a1a7099cc3282b3e1ca513b0e9a450bdf061ff970a8f8aaf4db5a1c39b2',1,'ImGui']]],
   ['in_8',['In',['../namespacedyno.html#ac3362376850a026da08e48efc8032048a0a111c0ae393223801a990c650ddbd00',1,'dyno']]],
-  ['info_9',['Info',['../classdyno_1_1_log.html#a57564273e9263cec9bf27dd90627cab6ad4826ed33a01ab68808becd6e3af96e9',1,'dyno::Log']]],
-  ['interpolationcount_10',['InterpolationCount',['../classdyno_1_1_canvas.html#ae30b82c26c6d0a92b8709a9af801bed4a2c5169cdff95b1c6f657404fd4fb3d27',1,'dyno::Canvas']]],
-  ['io_11',['IO',['../namespacedyno.html#ac3362376850a026da08e48efc8032048adcabc8c408dd15c9be2a14f0815a8141',1,'dyno']]]
+  ['infinite_9',['Infinite',['../namespacedyno.html#a46a870319986d4e50d4cc0fbd10ebad7a6c66b91e6af9cd10ab03f9ccc6a3b1ea',1,'dyno']]],
+  ['info_10',['Info',['../classdyno_1_1_log.html#a57564273e9263cec9bf27dd90627cab6ad4826ed33a01ab68808becd6e3af96e9',1,'dyno::Log']]],
+  ['interpolationcount_11',['InterpolationCount',['../classdyno_1_1_canvas.html#ae30b82c26c6d0a92b8709a9af801bed4a2c5169cdff95b1c6f657404fd4fb3d27',1,'dyno::Canvas']]],
+  ['io_12',['IO',['../namespacedyno.html#ac3362376850a026da08e48efc8032048adcabc8c408dd15c9be2a14f0815a8141',1,'dyno']]]
 ];

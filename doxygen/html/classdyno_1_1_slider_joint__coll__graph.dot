@@ -15,4 +15,5 @@ digraph "dyno::SliderJoint&lt; Real &gt;"
   Node5 [id="Node000005",label="dyno::Quat\< float \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_quat.html",tooltip=" "];
   Node6 -> Node1 [id="edge5_Node000001_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" r1\nr2\nsliderAxis",fontcolor="grey" ];
   Node6 [id="Node000006",label="dyno::Vector\< Real, 3 \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_vector.html",tooltip=" "];
+  Node5 -> Node1 [id="edge6_Node000001_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" q_init",fontcolor="grey" ];
 }

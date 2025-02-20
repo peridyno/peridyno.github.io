@@ -27,4 +27,9 @@ digraph "dyno::OceanPatch&lt; TDataType &gt;"
   Node10 [id="Node000010",label="dyno::VkVariable",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_variable.html",tooltip=" "];
   Node11 -> Node10 [id="edge11_Node000010_Node000011",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" ctx",fontcolor="grey" ];
   Node11 [id="Node000011",label="dyno::VkContext",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_context.html",tooltip=" "];
+  Node12 -> Node1 [id="edge12_Node000001_Node000012",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mDisp",fontcolor="grey" ];
+  Node12 [id="Node000012",label="dyno::Array2D\< T, Device\lType::GPU \>\< Coord \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_array2_d_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html",tooltip=" "];
+  Node13 -> Node12 [id="edge13_Node000012_Node000013",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_data",fontcolor="grey" ];
+  Node13 [id="Node000013",label="dyno::VkDeviceArray2D\l\< Coord \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_device_array2_d.html",tooltip=" "];
+  Node10 -> Node13 [id="edge14_Node000013_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

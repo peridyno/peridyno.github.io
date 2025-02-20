@@ -10,4 +10,6 @@ digraph "dyno::Envmap::load"
   Node2 [id="Node000002",label="dyno::GLRenderEngine\l::setEnvmap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_g_l_render_engine.html#ad485112ff4568dd837a5159fd1d8958b",tooltip=" "];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node3 [id="Node000003",label="dyno::GLRenderEngine\l::setDefaultEnvmap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_g_l_render_engine.html#a697c3563d517256d6ae74b4d346e501c",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::GLRenderEngine\l::initialize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_g_l_render_engine.html#a5c750a13a345911de8521f1d6eb2846e",tooltip=" "];
 }

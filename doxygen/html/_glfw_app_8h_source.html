@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Rendering/GUI/GlfwGUI/GlfwApp.h Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Rendering/GUI/GlfwGUI/GlfwApp.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_0a5d901ffa28d51286754f85d80379d0.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_7c8c8fba1a70356d35ffd4eeee2587ef.html">GUI</a></li><li class="navelem"><a class="el" href="dir_723b7f43e1a2b3b2fe5783f67631b842.html">GlfwGUI</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_764a12c72bc3d9052d5e3ebe390f3c27.html">Rendering</a></li><li class="navelem"><a class="el" href="dir_1142aa39e27f489476c1eb847f941055.html">GUI</a></li><li class="navelem"><a class="el" href="dir_b4e8764f01a270a96dfca35fda41b8eb.html">GlfwGUI</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -102,7 +102,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_glfw_app.html#a918b8ab8df27a9570b2568c2d27402f8">initialize</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">bool</span> <a class="code hl_class" href="classdyno_1_1_array_map.html">usePlugin</a> = <span class="keyword">false</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classdyno_1_1_glfw_app.html#a74920576413036d7f6b8895fc7175b1a">   20</a></span>        std::shared_ptr&lt;RenderWindow&gt; <a class="code hl_function" href="classdyno_1_1_glfw_app.html#a74920576413036d7f6b8895fc7175b1a">renderWindow</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="classdyno_1_1_glfw_app.html#af984ac0c0bc71cd39edf5c8f047d9c2e">mRenderWindow</a>; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classdyno_1_1_glfw_app.html#a84696ad6c1535ce4c714dd2bbd922ec2">   20</a></span>        <a class="code hl_class" href="classdyno_1_1_render_window.html">RenderWindow</a>* <a class="code hl_function" href="classdyno_1_1_glfw_app.html#a84696ad6c1535ce4c714dd2bbd922ec2">renderWindow</a>()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classdyno_1_1_glfw_app.html#af984ac0c0bc71cd39edf5c8f047d9c2e">mRenderWindow</a>.get(); }</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62">mainLoop</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
@@ -117,16 +117,17 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="a_glfw_render_window_8h_html"><div class="ttname"><a href="_glfw_render_window_8h.html">GlfwRenderWindow.h</a></div></div>
 <div class="ttc" id="a_im_window_8h_html"><div class="ttname"><a href="_im_window_8h.html">ImWindow.h</a></div></div>
 <div class="ttc" id="a_render_window_8h_html"><div class="ttname"><a href="_render_window_8h.html">RenderWindow.h</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_app_base_html"><div class="ttname"><a href="classdyno_1_1_app_base.html">dyno::AppBase</a></div><div class="ttdef"><b>Definition</b> <a href="_app_base_8h_source.html#l00012">AppBase.h:12</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_app_base_html"><div class="ttname"><a href="classdyno_1_1_app_base.html">dyno::AppBase</a></div><div class="ttdef"><b>Definition</b> <a href="_app_base_8h_source.html#l00014">AppBase.h:14</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_map_html"><div class="ttname"><a href="classdyno_1_1_array_map.html">dyno::ArrayMap</a></div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00025">ArrayMap.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_glfw_app_html"><div class="ttname"><a href="classdyno_1_1_glfw_app.html">dyno::GlfwApp</a></div><div class="ttdef"><b>Definition</b> <a href="_glfw_app_8h_source.html#l00012">GlfwApp.h:13</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a0e3db30b09903287a07625f2099e8f1c"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a0e3db30b09903287a07625f2099e8f1c">dyno::GlfwApp::setWindowTitle</a></div><div class="ttdeci">void setWindowTitle(const std::string &amp;title)</div><div class="ttdef"><b>Definition</b> <a href="_glfw_app_8cpp_source.html#l00037">GlfwApp.cpp:37</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a0e3db30b09903287a07625f2099e8f1c"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a0e3db30b09903287a07625f2099e8f1c">dyno::GlfwApp::setWindowTitle</a></div><div class="ttdeci">void setWindowTitle(const std::string &amp;title)</div><div class="ttdef"><b>Definition</b> <a href="_glfw_app_8cpp_source.html#l00034">GlfwApp.cpp:34</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_glfw_app_html_a11ca81fd8654ca8aa95c28c90749ca45"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a11ca81fd8654ca8aa95c28c90749ca45">dyno::GlfwApp::~GlfwApp</a></div><div class="ttdeci">~GlfwApp()</div><div class="ttdef"><b>Definition</b> <a href="_glfw_app_8cpp_source.html#l00018">GlfwApp.cpp:18</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a74920576413036d7f6b8895fc7175b1a"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a74920576413036d7f6b8895fc7175b1a">dyno::GlfwApp::renderWindow</a></div><div class="ttdeci">std::shared_ptr&lt; RenderWindow &gt; renderWindow()</div><div class="ttdef"><b>Definition</b> <a href="_glfw_app_8h_source.html#l00020">GlfwApp.h:20</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a84696ad6c1535ce4c714dd2bbd922ec2"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a84696ad6c1535ce4c714dd2bbd922ec2">dyno::GlfwApp::renderWindow</a></div><div class="ttdeci">RenderWindow * renderWindow() override</div><div class="ttdef"><b>Definition</b> <a href="_glfw_app_8h_source.html#l00020">GlfwApp.h:20</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_glfw_app_html_a918b8ab8df27a9570b2568c2d27402f8"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a918b8ab8df27a9570b2568c2d27402f8">dyno::GlfwApp::initialize</a></div><div class="ttdeci">void initialize(int width, int height, bool usePlugin=false) override</div><div class="ttdef"><b>Definition</b> <a href="_glfw_app_8cpp_source.html#l00022">GlfwApp.cpp:22</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a9bcfcc85f524122ef6f409965373ba62"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62">dyno::GlfwApp::mainLoop</a></div><div class="ttdeci">void mainLoop() override</div><div class="ttdef"><b>Definition</b> <a href="_glfw_app_8cpp_source.html#l00032">GlfwApp.cpp:32</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_glfw_app_html_a9bcfcc85f524122ef6f409965373ba62"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#a9bcfcc85f524122ef6f409965373ba62">dyno::GlfwApp::mainLoop</a></div><div class="ttdeci">void mainLoop() override</div><div class="ttdef"><b>Definition</b> <a href="_glfw_app_8cpp_source.html#l00029">GlfwApp.cpp:29</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_glfw_app_html_af984ac0c0bc71cd39edf5c8f047d9c2e"><div class="ttname"><a href="classdyno_1_1_glfw_app.html#af984ac0c0bc71cd39edf5c8f047d9c2e">dyno::GlfwApp::mRenderWindow</a></div><div class="ttdeci">std::shared_ptr&lt; GlfwRenderWindow &gt; mRenderWindow</div><div class="ttdef"><b>Definition</b> <a href="_glfw_app_8h_source.html#l00027">GlfwApp.h:27</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_render_window_html"><div class="ttname"><a href="classdyno_1_1_render_window.html">dyno::RenderWindow</a></div><div class="ttdef"><b>Definition</b> <a href="_render_window_8h_source.html#l00023">RenderWindow.h:24</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

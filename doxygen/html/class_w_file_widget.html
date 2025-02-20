@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0ea3e48192b38af70d67f2b069c1fe3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf7a049f9fcec5ec0fc9bb6af444817" id="r_a4bf7a049f9fcec5ec0fc9bb6af444817"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_file_widget.html#a4bf7a049f9fcec5ec0fc9bb6af444817">updateField</a> ()</td></tr>
 <tr class="separator:a4bf7a049f9fcec5ec0fc9bb6af444817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3beeef2603420d59250201da17b4d058" id="r_a3beeef2603420d59250201da17b4d058"><td class="memItemLeft" align="right" valign="top">Wt::Signal&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_file_widget.html#a3beeef2603420d59250201da17b4d058">changeValue</a> ()</td></tr>
+<tr class="separator:a3beeef2603420d59250201da17b4d058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -129,6 +131,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a66e12a094e96a27758c3dd68eb2acec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af638a432c9f4e5dd6e260a7d77882b51" id="r_af638a432c9f4e5dd6e260a7d77882b51"><td class="memItemLeft" align="right" valign="top">Wt::WFileUpload *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_file_widget.html#af638a432c9f4e5dd6e260a7d77882b51">upload</a></td></tr>
 <tr class="separator:af638a432c9f4e5dd6e260a7d77882b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac578b32160e9dc8b08e457446902d0cf" id="r_ac578b32160e9dc8b08e457446902d0cf"><td class="memItemLeft" align="right" valign="top">Wt::Signal&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_file_widget.html#ac578b32160e9dc8b08e457446902d0cf">changeValue_</a></td></tr>
+<tr class="separator:ac578b32160e9dc8b08e457446902d0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -179,6 +183,33 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3beeef2603420d59250201da17b4d058" name="a3beeef2603420d59250201da17b4d058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3beeef2603420d59250201da17b4d058">&#9670;&#160;</a></span>changeValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Wt::Signal&lt; int &gt; &amp; WFileWidget::changeValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_file_widget_8h_source.html#l00030">30</a> of file <a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a>.</p>
+
+</div>
+</div>
 <a id="ae90b88afd1625029c63bd4b7b36498f6" name="ae90b88afd1625029c63bd4b7b36498f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae90b88afd1625029c63bd4b7b36498f6">&#9670;&#160;</a></span>fileTooLarge()</h2>
 
@@ -402,6 +433,30 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac578b32160e9dc8b08e457446902d0cf" name="ac578b32160e9dc8b08e457446902d0cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac578b32160e9dc8b08e457446902d0cf">&#9670;&#160;</a></span>changeValue_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Wt::Signal&lt;int&gt; WFileWidget::changeValue_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_file_widget_8h_source.html#l00041">41</a> of file <a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a>.</p>
+
+</div>
+</div>
 <a id="abd82b32eb99affe6899cec9ca469967c" name="abd82b32eb99affe6899cec9ca469967c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd82b32eb99affe6899cec9ca469967c">&#9670;&#160;</a></span>layout</h2>
 
@@ -422,7 +477,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_file_widget_8h_source.html#l00033">33</a> of file <a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_file_widget_8h_source.html#l00037">37</a> of file <a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +501,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_file_widget_8h_source.html#l00032">32</a> of file <a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_file_widget_8h_source.html#l00036">36</a> of file <a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a>.</p>
 
 </div>
 </div>
@@ -470,7 +525,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_file_widget_8h_source.html#l00034">34</a> of file <a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_file_widget_8h_source.html#l00038">38</a> of file <a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a>.</p>
 
 </div>
 </div>
@@ -494,13 +549,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_file_widget_8h_source.html#l00036">36</a> of file <a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_file_widget_8h_source.html#l00040">40</a> of file <a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>E:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/PropertyItem/<a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a></li>
-<li>E:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/PropertyItem/<a class="el" href="_w_file_widget_8cpp_source.html">WFileWidget.cpp</a></li>
+<li>D:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/PropertyItem/<a class="el" href="_w_file_widget_8h_source.html">WFileWidget.h</a></li>
+<li>D:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/PropertyItem/<a class="el" href="_w_file_widget_8cpp_source.html">WFileWidget.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

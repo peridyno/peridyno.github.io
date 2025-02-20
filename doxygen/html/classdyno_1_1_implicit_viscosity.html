@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class implements an implicit solver for artificial viscosity based on the XSPH method.  
+ <a href="classdyno_1_1_implicit_viscosity.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for dyno::ImplicitViscosity&lt; TDataType &gt;:</div>
@@ -123,6 +126,9 @@ Public Types</h2></td></tr>
 <tr class="separator:a5014fda0bacaf9e626041cdb3b644ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56f3f97cc3533b231695dadd4fb6fa0d" id="r_a56f3f97cc3533b231695dadd4fb6fa0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> TDataType::Coord&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_implicit_viscosity.html#a56f3f97cc3533b231695dadd4fb6fa0d">Coord</a></td></tr>
 <tr class="separator:a56f3f97cc3533b231695dadd4fb6fa0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classdyno_1_1_particle_approximation"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classdyno_1_1_particle_approximation')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classdyno_1_1_particle_approximation.html">dyno::ParticleApproximation&lt; TDataType &gt;</a></td></tr>
+<tr class="memitem:a6db23781941a855782e70a4c6f5984b9 inherit pub_types_classdyno_1_1_particle_approximation" id="r_a6db23781941a855782e70a4c6f5984b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> TDataType::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#a6db23781941a855782e70a4c6f5984b9">Real</a></td></tr>
+<tr class="separator:a6db23781941a855782e70a4c6f5984b9 inherit pub_types_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:a29a6f1a9ee6dcb2619b6dd69bc1e2bc1 inherit pub_types_classdyno_1_1_o_base" id="r_a29a6f1a9ee6dcb2619b6dd69bc1e2bc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a29a6f1a9ee6dcb2619b6dd69bc1e2bc1">FieldVector</a></td></tr>
 <tr class="separator:a29a6f1a9ee6dcb2619b6dd69bc1e2bc1 inherit pub_types_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,14 +141,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3f597c420b415c7f56e381810c362e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b76e153241394fd4b32e65de9ed81f" id="r_ad3b76e153241394fd4b32e65de9ed81f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_implicit_viscosity.html#ad3b76e153241394fd4b32e65de9ed81f">~ImplicitViscosity</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:ad3b76e153241394fd4b32e65de9ed81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace5c7bd786d85d29373f0f20de4a8ea1" id="r_ace5c7bd786d85d29373f0f20de4a8ea1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_implicit_viscosity.html#ace5c7bd786d85d29373f0f20de4a8ea1">constrain</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
-<tr class="separator:ace5c7bd786d85d29373f0f20de4a8ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fca281c39efc6d75c796e511561c6d9" id="r_a5fca281c39efc6d75c796e511561c6d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_implicit_viscosity.html#a5fca281c39efc6d75c796e511561c6d9">DEF_VAR</a> (<a class="el" href="classdyno_1_1_implicit_viscosity.html#a5014fda0bacaf9e626041cdb3b644ed6">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Viscosity</a>, 0.05, &quot;&quot;)</td></tr>
 <tr class="separator:a5fca281c39efc6d75c796e511561c6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a053c86492abc33d645c226997eb35bd8" id="r_a053c86492abc33d645c226997eb35bd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_implicit_viscosity.html#a053c86492abc33d645c226997eb35bd8">DEF_VAR</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">InterationNumber</a>, 3, &quot;&quot;)</td></tr>
 <tr class="separator:a053c86492abc33d645c226997eb35bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23320eb334ce6dfdc5606a835fd86467" id="r_a23320eb334ce6dfdc5606a835fd86467"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_implicit_viscosity.html#a23320eb334ce6dfdc5606a835fd86467">DEF_VAR_IN</a> (<a class="el" href="classdyno_1_1_implicit_viscosity.html#a5014fda0bacaf9e626041cdb3b644ed6">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">SmoothingLength</a>, &quot;&quot;)</td></tr>
-<tr class="separator:a23320eb334ce6dfdc5606a835fd86467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a3e97b666b9d07884781aef6bb77707" id="r_a7a3e97b666b9d07884781aef6bb77707"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_implicit_viscosity.html#a7a3e97b666b9d07884781aef6bb77707">DEF_VAR_IN</a> (<a class="el" href="classdyno_1_1_implicit_viscosity.html#a5014fda0bacaf9e626041cdb3b644ed6">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TimeStep</a>, &quot;&quot;)</td></tr>
 <tr class="separator:a7a3e97b666b9d07884781aef6bb77707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f87b384b0f07b90e31f6f9c73a2f135" id="r_a6f87b384b0f07b90e31f6f9c73a2f135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_implicit_viscosity.html#a6f87b384b0f07b90e31f6f9c73a2f135">DEF_ARRAY_IN</a> (<a class="el" href="classdyno_1_1_implicit_viscosity.html#a56f3f97cc3533b231695dadd4fb6fa0d">Coord</a>, Position, DeviceType::GPU, &quot;&quot;)</td></tr>
@@ -151,13 +153,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afb96b8aaf07bf79fb6a47a75aff7db96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8876639196c817fd5d4b8e8d7c2eb2a7" id="r_a8876639196c817fd5d4b8e8d7c2eb2a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_implicit_viscosity.html#a8876639196c817fd5d4b8e8d7c2eb2a7">DEF_ARRAYLIST_IN</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">NeighborIds</a>, DeviceType::GPU, &quot;&quot;)</td></tr>
 <tr class="separator:a8876639196c817fd5d4b8e8d7c2eb2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classdyno_1_1_constraint_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_constraint_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_constraint_module.html">dyno::ConstraintModule</a></td></tr>
-<tr class="memitem:aecdea8c3754f0573e001b3245a52880e inherit pub_methods_classdyno_1_1_constraint_module" id="r_aecdea8c3754f0573e001b3245a52880e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_constraint_module.html#aecdea8c3754f0573e001b3245a52880e">ConstraintModule</a> ()</td></tr>
-<tr class="separator:aecdea8c3754f0573e001b3245a52880e inherit pub_methods_classdyno_1_1_constraint_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a532bf058e42d35db4a9ea4de70e0f73f inherit pub_methods_classdyno_1_1_constraint_module" id="r_a532bf058e42d35db4a9ea4de70e0f73f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_constraint_module.html#a532bf058e42d35db4a9ea4de70e0f73f">~ConstraintModule</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
-<tr class="separator:a532bf058e42d35db4a9ea4de70e0f73f inherit pub_methods_classdyno_1_1_constraint_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5118a7472bdcf21de95d5bd6c5bbce inherit pub_methods_classdyno_1_1_constraint_module" id="r_a3f5118a7472bdcf21de95d5bd6c5bbce"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_constraint_module.html#a3f5118a7472bdcf21de95d5bd6c5bbce">getModuleType</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
-<tr class="separator:a3f5118a7472bdcf21de95d5bd6c5bbce inherit pub_methods_classdyno_1_1_constraint_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed30ec601c0d30d1f84137ffc871f32c" id="r_aed30ec601c0d30d1f84137ffc871f32c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_implicit_viscosity.html#aed30ec601c0d30d1f84137ffc871f32c">compute</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:aed30ec601c0d30d1f84137ffc871f32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classdyno_1_1_particle_approximation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_particle_approximation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_particle_approximation.html">dyno::ParticleApproximation&lt; TDataType &gt;</a></td></tr>
+<tr class="memitem:a16a27118ed96b2b61b24b0514ec81894 inherit pub_methods_classdyno_1_1_particle_approximation" id="r_a16a27118ed96b2b61b24b0514ec81894"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#a16a27118ed96b2b61b24b0514ec81894">ParticleApproximation</a> ()</td></tr>
+<tr class="separator:a16a27118ed96b2b61b24b0514ec81894 inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22e7124299f11c68e2f71afaac84429 inherit pub_methods_classdyno_1_1_particle_approximation" id="r_ad22e7124299f11c68e2f71afaac84429"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#ad22e7124299f11c68e2f71afaac84429">~ParticleApproximation</a> ()</td></tr>
+<tr class="separator:ad22e7124299f11c68e2f71afaac84429 inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3a99c780e5ba3a3aae05ee9b249b4b inherit pub_methods_classdyno_1_1_particle_approximation" id="r_a2b3a99c780e5ba3a3aae05ee9b249b4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#a2b3a99c780e5ba3a3aae05ee9b249b4b">DECLARE_ENUM</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">EKernelType</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">KT_Smooth</a>=0, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">KT_Spiky</a>=1)</td></tr>
+<tr class="separator:a2b3a99c780e5ba3a3aae05ee9b249b4b inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944e6049abcc88d79f28ed4f3fb408fe inherit pub_methods_classdyno_1_1_particle_approximation" id="r_a944e6049abcc88d79f28ed4f3fb408fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#a944e6049abcc88d79f28ed4f3fb408fe">compute</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a944e6049abcc88d79f28ed4f3fb408fe inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93939e261faae858474ad0488028e0ce inherit pub_methods_classdyno_1_1_particle_approximation" id="r_a93939e261faae858474ad0488028e0ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#a93939e261faae858474ad0488028e0ce">DEF_VAR_IN</a> (<a class="el" href="classdyno_1_1_particle_approximation.html#a6db23781941a855782e70a4c6f5984b9">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">SmoothingLength</a>, &quot;Smoothing <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Length&quot;</a>)</td></tr>
+<tr class="separator:a93939e261faae858474ad0488028e0ce inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae540d9b6af48048eae38f6584181c623 inherit pub_methods_classdyno_1_1_particle_approximation" id="r_ae540d9b6af48048eae38f6584181c623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#ae540d9b6af48048eae38f6584181c623">DEF_VAR_IN</a> (<a class="el" href="classdyno_1_1_particle_approximation.html#a6db23781941a855782e70a4c6f5984b9">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">SamplingDistance</a>, &quot;Particle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">sampling</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">distance&quot;</a>)</td></tr>
+<tr class="separator:ae540d9b6af48048eae38f6584181c623 inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9604a95a8d4ce7e79f7d37a460350279 inherit pub_methods_classdyno_1_1_particle_approximation" id="r_a9604a95a8d4ce7e79f7d37a460350279"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#a9604a95a8d4ce7e79f7d37a460350279">DEF_ENUM</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">EKernelType</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">KernelType</a>, EKernelType::KT_Spiky, &quot;Rendering <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">mode&quot;</a>)</td></tr>
+<tr class="separator:a9604a95a8d4ce7e79f7d37a460350279 inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classdyno_1_1_compute_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_compute_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_compute_module.html">dyno::ComputeModule</a></td></tr>
+<tr class="memitem:a2a3e955ceb536e92570705f26c55828b inherit pub_methods_classdyno_1_1_compute_module" id="r_a2a3e955ceb536e92570705f26c55828b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_compute_module.html#a2a3e955ceb536e92570705f26c55828b">ComputeModule</a> ()</td></tr>
+<tr class="separator:a2a3e955ceb536e92570705f26c55828b inherit pub_methods_classdyno_1_1_compute_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d804e49a14e603c0633ae354bc0f049 inherit pub_methods_classdyno_1_1_compute_module" id="r_a2d804e49a14e603c0633ae354bc0f049"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_compute_module.html#a2d804e49a14e603c0633ae354bc0f049">~ComputeModule</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a2d804e49a14e603c0633ae354bc0f049 inherit pub_methods_classdyno_1_1_compute_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4e64fd6704e65ae453d6dfacbf2397 inherit pub_methods_classdyno_1_1_compute_module" id="r_a8a4e64fd6704e65ae453d6dfacbf2397"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_compute_module.html#a8a4e64fd6704e65ae453d6dfacbf2397">getModuleType</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a8a4e64fd6704e65ae453d6dfacbf2397 inherit pub_methods_classdyno_1_1_compute_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_module.html">dyno::Module</a></td></tr>
 <tr class="memitem:a95810aa1aafc398d9a3af0f0d7e006e5 inherit pub_methods_classdyno_1_1_module" id="r_a95810aa1aafc398d9a3af0f0d7e006e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a95810aa1aafc398d9a3af0f0d7e006e5">Module</a> (std::string name=&quot;default&quot;)</td></tr>
 <tr class="separator:a95810aa1aafc398d9a3af0f0d7e006e5 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,7 +207,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module" id="r_a5a53a1ff27547593a8358e6ab5767fa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a5a53a1ff27547593a8358e6ab5767fa2">isOutputCompete</a> ()</td></tr>
 <tr class="separator:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8074a810611d1408b5b3c6c5b210f94 inherit pub_methods_classdyno_1_1_module" id="r_ac8074a810611d1408b5b3c6c5b210f94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ac8074a810611d1408b5b3c6c5b210f94">DEF_VAR</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>, ForceUpdate, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">false</a>, &quot;&quot;)</td></tr>
+<tr class="memitem:ac8074a810611d1408b5b3c6c5b210f94 inherit pub_methods_classdyno_1_1_module" id="r_ac8074a810611d1408b5b3c6c5b210f94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ac8074a810611d1408b5b3c6c5b210f94">DEF_VAR</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">ForceUpdate</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">false</a>, &quot;&quot;)</td></tr>
 <tr class="separator:ac8074a810611d1408b5b3c6c5b210f94 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module" id="r_a636486141cc15ef93c96ca4106351af0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">setUpdateAlways</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> b)</td></tr>
 <tr class="memdesc:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the update strategy for the module.  <br /></td></tr>
@@ -310,9 +329,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object" id="r_a1c74670edfee2018cfa434a0a6380ed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">static</a> <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a1c74670edfee2018cfa434a0a6380ed5">baseId</a> ()</td></tr>
 <tr class="memdesc:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base Id.  <br /></td></tr>
 <tr class="separator:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classdyno_1_1_constraint_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdyno_1_1_constraint_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_constraint_module.html">dyno::ConstraintModule</a></td></tr>
-<tr class="memitem:a011cfe6a929ed7f0c17563375390fe00 inherit pro_methods_classdyno_1_1_constraint_module" id="r_a011cfe6a929ed7f0c17563375390fe00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_constraint_module.html#a011cfe6a929ed7f0c17563375390fe00">updateImpl</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
-<tr class="separator:a011cfe6a929ed7f0c17563375390fe00 inherit pro_methods_classdyno_1_1_constraint_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classdyno_1_1_module"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdyno_1_1_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_module.html">dyno::Module</a></td></tr>
 <tr class="memitem:a7084de192d5189f7e4da3be290670d03 inherit pro_methods_classdyno_1_1_module" id="r_a7084de192d5189f7e4da3be290670d03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a7084de192d5189f7e4da3be290670d03">initializeImpl</a> ()</td></tr>
 <tr class="separator:a7084de192d5189f7e4da3be290670d03 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,6 +347,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ba5aec44b13ce53020c7e83a338f4c inherit pro_methods_classdyno_1_1_module" id="r_ae7ba5aec44b13ce53020c7e83a338f4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ae7ba5aec44b13ce53020c7e83a338f4c">updateEnded</a> ()</td></tr>
 <tr class="separator:ae7ba5aec44b13ce53020c7e83a338f4c inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classdyno_1_1_particle_approximation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classdyno_1_1_particle_approximation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdyno_1_1_particle_approximation.html">dyno::ParticleApproximation&lt; TDataType &gt;</a></td></tr>
+<tr class="memitem:aff34447806976d032f1f1fe1b8a1d1ac inherit pro_attribs_classdyno_1_1_particle_approximation" id="r_aff34447806976d032f1f1fe1b8a1d1ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_particle_approximation.html#a6db23781941a855782e70a4c6f5984b9">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#aff34447806976d032f1f1fe1b8a1d1ac">mScalingFactor</a> = <a class="el" href="classdyno_1_1_particle_approximation.html#a6db23781941a855782e70a4c6f5984b9">Real</a>(1)</td></tr>
+<tr class="separator:aff34447806976d032f1f1fe1b8a1d1ac inherit pro_attribs_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:a8b5f7805d779751d0a57a8d397173585 inherit pro_attribs_classdyno_1_1_o_base" id="r_a8b5f7805d779751d0a57a8d397173585"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a8b5f7805d779751d0a57a8d397173585">fields_input</a></td></tr>
 <tr class="separator:a8b5f7805d779751d0a57a8d397173585 inherit pro_attribs_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,8 +360,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a>&gt;<br />
-class dyno::ImplicitViscosity&lt; TDataType &gt;</div>
-<p class="definition">Definition at line <a class="el" href="_implicit_viscosity_8h_source.html#l00022">22</a> of file <a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>.</p>
+class dyno::ImplicitViscosity&lt; TDataType &gt;</div><p>This class implements an implicit solver for artificial viscosity based on the XSPH method. </p>
+
+<p class="definition">Definition at line <a class="el" href="_implicit_viscosity_8h_source.html#l00025">25</a> of file <a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a56f3f97cc3533b231695dadd4fb6fa0d" name="a56f3f97cc3533b231695dadd4fb6fa0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a56f3f97cc3533b231695dadd4fb6fa0d">&#9670;&#160;</a></span>Coord</h2>
@@ -358,7 +378,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_implicit_viscosity_8h_source.html#l00027">27</a> of file <a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_implicit_viscosity_8h_source.html#l00030">30</a> of file <a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +396,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_implicit_viscosity_8h_source.html#l00026">26</a> of file <a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_implicit_viscosity_8h_source.html#l00029">29</a> of file <a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>.</p>
 
 </div>
 </div>
@@ -428,8 +448,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ace5c7bd786d85d29373f0f20de4a8ea1" name="ace5c7bd786d85d29373f0f20de4a8ea1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace5c7bd786d85d29373f0f20de4a8ea1">&#9670;&#160;</a></span>constrain()</h2>
+<a id="aed30ec601c0d30d1f84137ffc871f32c" name="aed30ec601c0d30d1f84137ffc871f32c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed30ec601c0d30d1f84137ffc871f32c">&#9670;&#160;</a></span>compute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -440,7 +460,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_implicit_viscosity.html">dyno::ImplicitViscosity</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::constrain </td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_implicit_viscosity.html">dyno::ImplicitViscosity</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::compute </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -453,7 +473,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classdyno_1_1_constraint_module.html#a71205052d6933999d8955d5199754b54">dyno::ConstraintModule</a>.</p>
+<p>Implements <a class="el" href="classdyno_1_1_compute_module.html#aaa323499e49b8a55827dcf6f294799b8">dyno::ComputeModule</a>.</p>
 
 </div>
 </div>
@@ -667,44 +687,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="a23320eb334ce6dfdc5606a835fd86467" name="a23320eb334ce6dfdc5606a835fd86467"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23320eb334ce6dfdc5606a835fd86467">&#9670;&#160;</a></span>DEF_VAR_IN() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_implicit_viscosity.html">dyno::ImplicitViscosity</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_VAR_IN </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_implicit_viscosity.html#a5014fda0bacaf9e626041cdb3b644ed6">Real</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">SmoothingLength</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;&quot;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7a3e97b666b9d07884781aef6bb77707" name="a7a3e97b666b9d07884781aef6bb77707"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a3e97b666b9d07884781aef6bb77707">&#9670;&#160;</a></span>DEF_VAR_IN() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3e97b666b9d07884781aef6bb77707">&#9670;&#160;</a></span>DEF_VAR_IN()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -762,7 +746,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_implicit_viscosity_8h_source.html#l00051">51</a> of file <a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_implicit_viscosity_8h_source.html#l00053">53</a> of file <a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>.</p>
 
 </div>
 </div>
@@ -788,12 +772,12 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_implicit_viscosity_8h_source.html#l00050">50</a> of file <a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_implicit_viscosity_8h_source.html#l00052">52</a> of file <a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Peridyno/peridyno/src/Dynamics/Cuda/ParticleSystem/Module/<a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a></li>
+<li>D:/Peridyno/peridyno/src/Dynamics/Cuda/ParticleSystem/Module/<a class="el" href="_implicit_viscosity_8h_source.html">ImplicitViscosity.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

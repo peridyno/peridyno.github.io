@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a126d639e1314712b7a1775ad3a948bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac87e1be2baa4825b52c0eb7d1f0c58b8" id="r_ac87e1be2baa4825b52c0eb7d1f0c58b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_vector3i_field_widget.html#ac87e1be2baa4825b52c0eb7d1f0c58b8">updateField</a> ()</td></tr>
 <tr class="separator:ac87e1be2baa4825b52c0eb7d1f0c58b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd10059cc1ea05acd24efe232cd7bb19" id="r_abd10059cc1ea05acd24efe232cd7bb19"><td class="memItemLeft" align="right" valign="top">Wt::Signal&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_vector3i_field_widget.html#abd10059cc1ea05acd24efe232cd7bb19">changeValue</a> ()</td></tr>
+<tr class="separator:abd10059cc1ea05acd24efe232cd7bb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -119,6 +121,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a85776ebc9071bed6df257b988b20f426"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af59d70b0387b2538fcb6724541b02a7b" id="r_af59d70b0387b2538fcb6724541b02a7b"><td class="memItemLeft" align="right" valign="top">Wt::WSpinBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_vector3i_field_widget.html#af59d70b0387b2538fcb6724541b02a7b">mData3</a></td></tr>
 <tr class="separator:af59d70b0387b2538fcb6724541b02a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc89ef5569addab1941649124cc8e41" id="r_a5dc89ef5569addab1941649124cc8e41"><td class="memItemLeft" align="right" valign="top">Wt::Signal&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_w_vector3i_field_widget.html#a5dc89ef5569addab1941649124cc8e41">changeValue_</a></td></tr>
+<tr class="separator:a5dc89ef5569addab1941649124cc8e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -169,6 +173,33 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="abd10059cc1ea05acd24efe232cd7bb19" name="abd10059cc1ea05acd24efe232cd7bb19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd10059cc1ea05acd24efe232cd7bb19">&#9670;&#160;</a></span>changeValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Wt::Signal&lt; int &gt; &amp; WVector3iFieldWidget::changeValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00022">22</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
+
+</div>
+</div>
 <a id="a126d639e1314712b7a1775ad3a948bfa" name="a126d639e1314712b7a1775ad3a948bfa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a126d639e1314712b7a1775ad3a948bfa">&#9670;&#160;</a></span>setValue()</h2>
 
@@ -262,6 +293,30 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5dc89ef5569addab1941649124cc8e41" name="a5dc89ef5569addab1941649124cc8e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc89ef5569addab1941649124cc8e41">&#9670;&#160;</a></span>changeValue_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Wt::Signal&lt;int&gt; WVector3iFieldWidget::changeValue_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00033">33</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
+
+</div>
+</div>
 <a id="a8d30b288173e114cd2177b0887f118c1" name="a8d30b288173e114cd2177b0887f118c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d30b288173e114cd2177b0887f118c1">&#9670;&#160;</a></span>layout</h2>
 
@@ -282,7 +337,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00025">25</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00029">29</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
 
 </div>
 </div>
@@ -306,7 +361,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00026">26</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00030">30</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
 
 </div>
 </div>
@@ -330,7 +385,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00027">27</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00031">31</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
 
 </div>
 </div>
@@ -354,7 +409,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00028">28</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00032">32</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
 
 </div>
 </div>
@@ -378,13 +433,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00024">24</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_w_vector3i_field_widget_8h_source.html#l00028">28</a> of file <a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>E:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/PropertyItem/<a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a></li>
-<li>E:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/PropertyItem/<a class="el" href="_w_vector3i_field_widget_8cpp_source.html">WVector3iFieldWidget.cpp</a></li>
+<li>D:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/PropertyItem/<a class="el" href="_w_vector3i_field_widget_8h_source.html">WVector3iFieldWidget.h</a></li>
+<li>D:/Peridyno/peridyno/src/Rendering/GUI/WtGUI/PropertyItem/<a class="el" href="_w_vector3i_field_widget_8cpp_source.html">WVector3iFieldWidget.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

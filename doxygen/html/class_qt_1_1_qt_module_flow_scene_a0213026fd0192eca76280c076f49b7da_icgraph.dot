@@ -13,4 +13,7 @@ digraph "Qt::QtModuleFlowScene::reorderAllModules"
   Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node4 [id="Node000004",label="Qt::QtModuleFlowScene\l::showGraphicsPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624",tooltip=" "];
   Node4 -> Node2 [id="edge4_Node000004_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge5_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Qt::QtModuleFlowScene\l::showResetPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#af7703705ba566378630cc46198ad6ed8",tooltip=" "];
+  Node5 -> Node2 [id="edge6_Node000005_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

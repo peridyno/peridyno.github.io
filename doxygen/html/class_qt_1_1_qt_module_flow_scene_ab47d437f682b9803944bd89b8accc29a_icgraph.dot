@@ -18,11 +18,12 @@ digraph "Qt::QtModuleFlowScene::showModuleFlow"
   Node4 -> Node6 [id="edge6_Node000004_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node6 [id="Node000006",label="Qt::QtModuleFlowScene\l::showGraphicsPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624",tooltip=" "];
   Node6 -> Node5 [id="edge7_Node000006_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 -> Node7 [id="edge8_Node000003_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node7 [id="Node000007",label="Qt::QtModuleFlowScene\l::showAnimationPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#addeed20a2928406fac8349fc3489ea4a",tooltip=" "];
+  Node4 -> Node7 [id="edge8_Node000004_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Qt::QtModuleFlowScene\l::showResetPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#af7703705ba566378630cc46198ad6ed8",tooltip=" "];
   Node7 -> Node5 [id="edge9_Node000007_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 -> Node6 [id="edge10_Node000003_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 -> Node8 [id="edge11_Node000003_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node8 [id="Node000008",label="Qt::QtModuleFlowScene\l::showResetPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#af7703705ba566378630cc46198ad6ed8",tooltip=" "];
-  Node8 -> Node5 [id="edge12_Node000008_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node8 [id="edge10_Node000003_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="Qt::QtModuleFlowScene\l::showAnimationPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_qt_1_1_qt_module_flow_scene.html#addeed20a2928406fac8349fc3489ea4a",tooltip=" "];
+  Node8 -> Node5 [id="edge11_Node000008_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node6 [id="edge12_Node000003_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node7 [id="edge13_Node000003_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
 }

@@ -8,4 +8,6 @@ digraph "dyno::Vessel::Vessel"
   Node1 [id="Node000001",label="dyno::Vessel::Vessel",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="dyno::Node::graphicsPipeline",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::loadGLTFTextureMesh",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#a683f708013cedfa13225662800f733a6",tooltip=" "];
 }

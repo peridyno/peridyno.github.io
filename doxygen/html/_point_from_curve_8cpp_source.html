@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Modeling/PointFromCurve.cpp Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Modeling/Samplers/PointFromCurve.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,7 @@ $(document).ready(function() { init_codefold(0); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_fc0f6501aa20ea1b5a86082ca8079383.html">Modeling</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_7098558150fb41b4059e7cec4fdfe2bf.html">Modeling</a></li><li class="navelem"><a class="el" href="dir_1d9fa65aee6686201e679e2aa6c1fb5a.html">Samplers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -153,8 +153,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">auto</span> <a class="code hl_class" href="classdyno_1_1_array_map.html">uniformScale</a> = this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">varUniformScale</a>()-&gt;getData();</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keyword">auto</span> <a class="code hl_class" href="classdyno_1_1_array_map.html">pointSet</a> = this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">statePointSet</a>()-&gt;getDataPtr();</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">auto</span> <a class="code hl_class" href="classdyno_1_1_array_map.html">curve</a> = this-&gt;<a class="code hl_typedef" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">varCurve</a>()-&gt;getValue();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keyword">auto</span> floatCoord = <a class="code hl_class" href="classdyno_1_1_array_map.html">curve</a>.getPoints();</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordtype">int</span> length = floatCoord.size();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keyword">auto</span> <a class="code hl_class" href="classdyno_1_1_array_map.html">floatCoord</a> = <a class="code hl_class" href="classdyno_1_1_array_map.html">curve</a>.getPoints();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordtype">int</span> length = <a class="code hl_class" href="classdyno_1_1_array_map.html">floatCoord</a>.size();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        std::vector&lt;Coord&gt; vertices;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
@@ -163,7 +163,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        {</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; length; i++)</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <a class="code hl_class" href="classdyno_1_1_array_map.html">Location</a> = <a class="code hl_typedef" href="classdyno_1_1_point_from_curve.html#ade11ae07ac156992a5eda7ab32c76599">Coord</a>(floatCoord[i].x, floatCoord[i].y, 0);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <a class="code hl_class" href="classdyno_1_1_array_map.html">Location</a> = <a class="code hl_typedef" href="classdyno_1_1_point_from_curve.html#ade11ae07ac156992a5eda7ab32c76599">Coord</a>(<a class="code hl_class" href="classdyno_1_1_array_map.html">floatCoord</a>[i].x, <a class="code hl_class" href="classdyno_1_1_array_map.html">floatCoord</a>[i].y, 0);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                vertices.push_back(<a class="code hl_class" href="classdyno_1_1_array_map.html">Location</a>);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            }</div>
@@ -178,7 +178,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="comment">//Transform Coord</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">Quat&lt;Real&gt;</a> <a class="code hl_class" href="classdyno_1_1_array_map.html">q2</a> = computeQuaternion();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">Quat&lt;Real&gt;</a> <a class="code hl_class" href="classdyno_1_1_array_map.html">q2</a> = this-&gt;computeQuaternion();</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <a class="code hl_class" href="classdyno_1_1_array_map.html">q2</a>.normalize();</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
@@ -253,16 +253,16 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="a_point_from_curve_8h_html"><div class="ttname"><a href="_point_from_curve_8h.html">PointFromCurve.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_map_html"><div class="ttname"><a href="classdyno_1_1_array_map.html">dyno::ArrayMap</a></div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00025">ArrayMap.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_color_html"><div class="ttname"><a href="classdyno_1_1_color.html">dyno::Color</a></div><div class="ttdef"><b>Definition</b> <a href="_core_2_color_8h_source.html#l00006">Color.h:7</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00312">Node.cpp:312</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00320">Node.cpp:320</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_parametric_model_html"><div class="ttname"><a href="classdyno_1_1_parametric_model.html">dyno::ParametricModel</a></div><div class="ttdef"><b>Definition</b> <a href="_parametric_model_8h_source.html#l00027">ParametricModel.h:28</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_point_from_curve_html"><div class="ttname"><a href="classdyno_1_1_point_from_curve.html">dyno::PointFromCurve</a></div><div class="ttdef"><b>Definition</b> <a href="_point_from_curve_8h_source.html#l00029">PointFromCurve.h:30</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_point_from_curve_html"><div class="ttname"><a href="classdyno_1_1_point_from_curve.html">dyno::PointFromCurve</a></div><div class="ttdef"><b>Definition</b> <a href="_point_from_curve_8h_source.html#l00030">PointFromCurve.h:31</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_point_from_curve_html_a0232553f2413269cbe59598b031247f5"><div class="ttname"><a href="classdyno_1_1_point_from_curve.html#a0232553f2413269cbe59598b031247f5">dyno::PointFromCurve::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition</b> <a href="_point_from_curve_8cpp_source.html#l00053">PointFromCurve.cpp:53</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_point_from_curve_html_a3f1a0f6088c64a5a38d1b377693faec9"><div class="ttname"><a href="classdyno_1_1_point_from_curve.html#a3f1a0f6088c64a5a38d1b377693faec9">dyno::PointFromCurve::PointFromCurve</a></div><div class="ttdeci">PointFromCurve()</div><div class="ttdef"><b>Definition</b> <a href="_point_from_curve_8cpp_source.html#l00012">PointFromCurve.cpp:12</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_point_from_curve_html_a5d05d049039b0484cb93a918c5818261"><div class="ttname"><a href="classdyno_1_1_point_from_curve.html#a5d05d049039b0484cb93a918c5818261">dyno::PointFromCurve::varChanged</a></div><div class="ttdeci">void varChanged()</div><div class="ttdef"><b>Definition</b> <a href="_point_from_curve_8cpp_source.html#l00059">PointFromCurve.cpp:59</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_point_from_curve_html_ade11ae07ac156992a5eda7ab32c76599"><div class="ttname"><a href="classdyno_1_1_point_from_curve.html#ade11ae07ac156992a5eda7ab32c76599">dyno::PointFromCurve::Coord</a></div><div class="ttdeci">TDataType::Coord Coord</div><div class="ttdef"><b>Definition</b> <a href="_point_from_curve_8h_source.html#l00035">PointFromCurve.h:35</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_point_from_curve_html_ade11ae07ac156992a5eda7ab32c76599"><div class="ttname"><a href="classdyno_1_1_point_from_curve.html#ade11ae07ac156992a5eda7ab32c76599">dyno::PointFromCurve::Coord</a></div><div class="ttdeci">TDataType::Coord Coord</div><div class="ttdef"><b>Definition</b> <a href="_point_from_curve_8h_source.html#l00036">PointFromCurve.h:36</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_vector_n_d_html"><div class="ttname"><a href="classdyno_1_1_vector_n_d.html">dyno::VectorND</a></div><div class="ttdef"><b>Definition</b> <a href="_vector_n_d_8h_source.html#l00013">VectorND.h:14</a></div></div>
-<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00024">Array.h:24</a></div></div>
-<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00080">ArrayMap.inl:80</a></div></div>
+<div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a75bb648935aee05bc4e2200c1b430297"><div class="ttname"><a href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">dyno::DArrayMap</a></div><div class="ttdeci">ArrayMap&lt; T, DeviceType::GPU &gt; DArrayMap</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8inl_source.html#l00082">ArrayMap.inl:82</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

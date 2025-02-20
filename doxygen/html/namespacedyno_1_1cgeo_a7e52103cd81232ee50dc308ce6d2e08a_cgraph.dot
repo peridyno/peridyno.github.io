@@ -1,0 +1,30 @@
+digraph "dyno::cgeo::getTriBoxAreaInTet"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="dyno::cgeo::getTriBoxArea\lInTet",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="dyno::cross",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#a3a41eab550394ecaa0df89d68418ef98",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="dyno::cgeo::Dot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno_1_1cgeo.html#af24aee977725afd06560c5b38cf4017f",tooltip=" "];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="dyno::dot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#a4507df9ee65a41a57037f78bebad27eb",tooltip=" "];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="dyno::cgeo::getOverLapBox\lAreaInPoly2D",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno_1_1cgeo.html#aaa2ecd111bb17cb2f45f4b11e18042a8",tooltip=" "];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="dyno::cgeo::Cross",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno_1_1cgeo.html#a9abfd6ef81aa9d6739aa8b31b7192569",tooltip=" "];
+  Node6 -> Node2 [id="edge6_Node000006_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node3 [id="edge7_Node000005_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node4 [id="edge8_Node000005_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node5 -> Node7 [id="edge9_Node000005_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="dyno::cgeo::isOverLap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno_1_1cgeo.html#a9e9d1433dba4137cd9c3e143026db009",tooltip=" "];
+  Node1 -> Node8 [id="edge10_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="dyno::cgeo::Sign",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno_1_1cgeo.html#aca6f621f2457d546bee7e7d3c2db3548",tooltip=" "];
+  Node8 -> Node6 [id="edge11_Node000008_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node8 -> Node3 [id="edge12_Node000008_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node9 [id="edge13_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="dyno::cgeo::Swap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno_1_1cgeo.html#a7f7adc7390c85fd60094f108c49bdc3c",tooltip=" "];
+}

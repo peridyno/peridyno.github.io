@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: E:/Peridyno/peridyno/src/Modeling/EarClipper.cpp File Reference</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Modeling/Commands/EarClipper.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e1d3a722a3f1709e7921084212f8a51.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_9ff22b279fca3cb014c234517e61ce6a.html">src</a></li><li class="navelem"><a class="el" href="dir_fc0f6501aa20ea1b5a86082ca8079383.html">Modeling</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_7098558150fb41b4059e7cec4fdfe2bf.html">Modeling</a></li><li class="navelem"><a class="el" href="dir_19e475df6b9256e8501e1ff3e008b9b9.html">Commands</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -85,10 +85,11 @@ $(function() {
 <code>#include &quot;<a class="el" href="_g_l_surface_visual_module_8h_source.html">GLSurfaceVisualModule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_g_l_wireframe_visual_module_8h_source.html">GLWireframeVisualModule.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_g_l_point_visual_module_8h_source.html">GLPointVisualModule.h</a>&quot;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for EarClipper.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="_ear_clipper_8cpp__incl.png" border="0" usemap="#a_e_1_2_peridyno_2peridyno_2src_2_modeling_2_ear_clipper_8cpp" alt=""/></div>
+<div class="center"><img src="_ear_clipper_8cpp__incl.png" border="0" usemap="#a_d_1_2_peridyno_2peridyno_2src_2_modeling_2_commands_2_ear_clipper_8cpp" alt=""/></div>
 </div>
 </div>
 <p><a href="_ear_clipper_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -101,6 +102,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ab49de364d1d941244a23583658a32bfd" id="r_ab49de364d1d941244a23583658a32bfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#ab49de364d1d941244a23583658a32bfd">dyno::crossProduct</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;a, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;b)</td></tr>
+<tr class="separator:ab49de364d1d941244a23583658a32bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50742973d4606ee9cd9266caf0ca1b7b" id="r_a50742973d4606ee9cd9266caf0ca1b7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">float</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#a50742973d4606ee9cd9266caf0ca1b7b">dyno::triangleArea</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;a, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;b, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">c</a>)</td></tr>
+<tr class="separator:a50742973d4606ee9cd9266caf0ca1b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1096ad744d44407e938b76bce9c90dc0" id="r_a1096ad744d44407e938b76bce9c90dc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#a1096ad744d44407e938b76bce9c90dc0">dyno::projectPointToTriangle</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;A, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;B, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;C, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;P)</td></tr>
+<tr class="separator:a1096ad744d44407e938b76bce9c90dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d5246e1a696ccfe3ae5767e22623d0" id="r_ab5d5246e1a696ccfe3ae5767e22623d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#ab5d5246e1a696ccfe3ae5767e22623d0">dyno::isPointInTriangle</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">pt</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;a, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;b, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">c</a>)</td></tr>
+<tr class="separator:ab5d5246e1a696ccfe3ae5767e22623d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25fab18c76b673677092af4c5fd9c1ab" id="r_a25fab18c76b673677092af4c5fd9c1ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#a25fab18c76b673677092af4c5fd9c1ab">dyno::isEar</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;vertices, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">TopologyModule::Triangle</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">triangle</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> n)</td></tr>
+<tr class="separator:a25fab18c76b673677092af4c5fd9c1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73f30f237eeca1d2d0ee98c30155f0f" id="r_aa73f30f237eeca1d2d0ee98c30155f0f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_topology_module.html#a700e457d98aa4fa9d48a74053599f91a">TopologyModule::Triangle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#aa73f30f237eeca1d2d0ee98c30155f0f">dyno::earClipping</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;vertices)</td></tr>
+<tr class="separator:aa73f30f237eeca1d2d0ee98c30155f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42efdce821b3c2678da663ebee20965a" id="r_a42efdce821b3c2678da663ebee20965a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedyno.html#a42efdce821b3c2678da663ebee20965a">dyno::DEFINE_CLASS</a> (<a class="el" href="classdyno_1_1_ear_clipper.html">EarClipper</a>)</td></tr>
 <tr class="separator:a42efdce821b3c2678da663ebee20965a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

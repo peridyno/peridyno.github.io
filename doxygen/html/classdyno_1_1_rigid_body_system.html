@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -79,6 +79,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_rigid_body_system-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::RigidBodySystem&lt; TDataType &gt; Class Template Reference</div></div>
@@ -150,16 +151,16 @@ Public Types</h2></td></tr>
 <tr class="separator:a02ff9872e802b2af33e9b61e6b749d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbb1cebcf7de575011e4525e5b86af20" id="r_afbb1cebcf7de575011e4525e5b86af20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_t_contact_pair.html">dyno::TContactPair</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#afbb1cebcf7de575011e4525e5b86af20">ContactPair</a></td></tr>
 <tr class="separator:afbb1cebcf7de575011e4525e5b86af20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c25cae6dcebe6debef690b4f5b10434" id="r_a2c25cae6dcebe6debef690b4f5b10434"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a2c25cae6dcebe6debef690b4f5b10434">BallAndSocketJoint</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a2c25cae6dcebe6debef690b4f5b10434">BallAndSocketJoint</a></td></tr>
-<tr class="separator:a2c25cae6dcebe6debef690b4f5b10434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa117ad0ae29182e94a0c4cea74659772" id="r_aa117ad0ae29182e94a0c4cea74659772"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#aa117ad0ae29182e94a0c4cea74659772">SliderJoint</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#aa117ad0ae29182e94a0c4cea74659772">SliderJoint</a></td></tr>
-<tr class="separator:aa117ad0ae29182e94a0c4cea74659772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a357a1124e09205ba6ffe3635464e16" id="r_a2a357a1124e09205ba6ffe3635464e16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a2a357a1124e09205ba6ffe3635464e16">HingeJoint</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a2a357a1124e09205ba6ffe3635464e16">HingeJoint</a></td></tr>
-<tr class="separator:a2a357a1124e09205ba6ffe3635464e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaba9e95e2982384716aeb189df6d1d1" id="r_aaaba9e95e2982384716aeb189df6d1d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#aaaba9e95e2982384716aeb189df6d1d1">FixedJoint</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#aaaba9e95e2982384716aeb189df6d1d1">FixedJoint</a></td></tr>
-<tr class="separator:aaaba9e95e2982384716aeb189df6d1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af73ffaa52eff4e684709423df3867a4e" id="r_af73ffaa52eff4e684709423df3867a4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#af73ffaa52eff4e684709423df3867a4e">PointJoint</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#af73ffaa52eff4e684709423df3867a4e">PointJoint</a></td></tr>
-<tr class="separator:af73ffaa52eff4e684709423df3867a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa939ce113226647ad30df8af58e0d2a0" id="r_aa939ce113226647ad30df8af58e0d2a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_ball_and_socket_joint.html">::dyno::BallAndSocketJoint</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#aa939ce113226647ad30df8af58e0d2a0">BallAndSocketJoint</a></td></tr>
+<tr class="separator:aa939ce113226647ad30df8af58e0d2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc456f1b3f4229d355dce914b3726524" id="r_abc456f1b3f4229d355dce914b3726524"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_slider_joint.html">::dyno::SliderJoint</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#abc456f1b3f4229d355dce914b3726524">SliderJoint</a></td></tr>
+<tr class="separator:abc456f1b3f4229d355dce914b3726524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb02615fc00439a5c262813f8ae1e2a" id="r_acdb02615fc00439a5c262813f8ae1e2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_hinge_joint.html">::dyno::HingeJoint</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#acdb02615fc00439a5c262813f8ae1e2a">HingeJoint</a></td></tr>
+<tr class="separator:acdb02615fc00439a5c262813f8ae1e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc36ac5ac4a0036d8e7f943098109a7" id="r_aefc36ac5ac4a0036d8e7f943098109a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_fixed_joint.html">::dyno::FixedJoint</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#aefc36ac5ac4a0036d8e7f943098109a7">FixedJoint</a></td></tr>
+<tr class="separator:aefc36ac5ac4a0036d8e7f943098109a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3f1f7f7f407a12412bb1d9fd7f3a00" id="r_a3d3f1f7f7f407a12412bb1d9fd7f3a00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_point_joint.html">::dyno::PointJoint</a>&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a3d3f1f7f7f407a12412bb1d9fd7f3a00">PointJoint</a></td></tr>
+<tr class="separator:a3d3f1f7f7f407a12412bb1d9fd7f3a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classdyno_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classdyno_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classdyno_1_1_node.html">dyno::Node</a></td></tr>
 <tr class="memitem:ab968acd9804a279e056486d466240bce inherit pub_types_classdyno_1_1_node" id="r_ab968acd9804a279e056486d466240bce"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">class</a> <a class="el" href="im_gu_i_z_m_oquat_8cpp.html#ae53008cb938e8e14ae47291e41be8bec">T</a> &gt; </td></tr>
 <tr class="memitem:ab968acd9804a279e056486d466240bce inherit pub_types_classdyno_1_1_node"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#ab968acd9804a279e056486d466240bce">SPtr</a> = std::shared_ptr&lt; <a class="el" href="im_gu_i_z_m_oquat_8cpp.html#ae53008cb938e8e14ae47291e41be8bec">T</a> &gt;</td></tr>
@@ -180,53 +181,64 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a09738feb58b2d3d38a611eb4906f10d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad904d8e34252bedfb1d92c4cf8c02f7c" id="r_ad904d8e34252bedfb1d92c4cf8c02f7c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#ad904d8e34252bedfb1d92c4cf8c02f7c">addSphere</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_sphere_info.html">SphereInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">sphere</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_rigid_body_info.html">RigidBodyInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodyDef</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> density=<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>(100))</td></tr>
 <tr class="separator:ad904d8e34252bedfb1d92c4cf8c02f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434c557520274fd81139ffcc5f03bcd5" id="r_a434c557520274fd81139ffcc5f03bcd5"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a434c557520274fd81139ffcc5f03bcd5">addTet</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_tet_info.html">TetInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">tet</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_rigid_body_info.html">RigidBodyInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodyDef</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> density=<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>(100))</td></tr>
+<tr class="memitem:a434c557520274fd81139ffcc5f03bcd5" id="r_a434c557520274fd81139ffcc5f03bcd5"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a434c557520274fd81139ffcc5f03bcd5">addTet</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_tet_info.html">TetInfo</a> &amp;tet, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_rigid_body_info.html">RigidBodyInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodyDef</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> density=<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>(100))</td></tr>
 <tr class="separator:a434c557520274fd81139ffcc5f03bcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96151bd58054671485fac7c839900c4f" id="r_a96151bd58054671485fac7c839900c4f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a96151bd58054671485fac7c839900c4f">addCapsule</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_capsule_info.html">CapsuleInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">capsule</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_rigid_body_info.html">RigidBodyInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodyDef</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> density=<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>(100))</td></tr>
 <tr class="separator:a96151bd58054671485fac7c839900c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af71ab512dd95e5a0a25e39bae4a0aaa6" id="r_af71ab512dd95e5a0a25e39bae4a0aaa6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#a2c25cae6dcebe6debef690b4f5b10434">BallAndSocketJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#af71ab512dd95e5a0a25e39bae4a0aaa6">createBallAndSocketJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1, std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor2)</td></tr>
+<tr class="memitem:a311f0da818b06f1e1897d2366f66237e" id="r_a311f0da818b06f1e1897d2366f66237e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a311f0da818b06f1e1897d2366f66237e">createRigidBody</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a126b0add64f4f9c292189ce9c572db36">Coord</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">p</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a02ff9872e802b2af33e9b61e6b749d4f">TQuat</a> &amp;q)</td></tr>
+<tr class="separator:a311f0da818b06f1e1897d2366f66237e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205376147c8a9b821c9227d4af2f9e2c" id="r_a205376147c8a9b821c9227d4af2f9e2c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a205376147c8a9b821c9227d4af2f9e2c">createRigidBody</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_rigid_body_info.html">RigidBodyInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodyDef</a>)</td></tr>
+<tr class="separator:a205376147c8a9b821c9227d4af2f9e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ca29f3faecbf4e0b70bdb23afe607e" id="r_a70ca29f3faecbf4e0b70bdb23afe607e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a70ca29f3faecbf4e0b70bdb23afe607e">bindBox</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">actor</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_box_info.html">BoxInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">box</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> density=<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>(100))</td></tr>
+<tr class="separator:a70ca29f3faecbf4e0b70bdb23afe607e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2096ecbfdd5762d373930997646ff7d" id="r_ad2096ecbfdd5762d373930997646ff7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#ad2096ecbfdd5762d373930997646ff7d">bindSphere</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">actor</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_sphere_info.html">SphereInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">sphere</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> density=<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>(100))</td></tr>
+<tr class="separator:ad2096ecbfdd5762d373930997646ff7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba027eb1b7be9a152e5a0080485c3b65" id="r_aba027eb1b7be9a152e5a0080485c3b65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#aba027eb1b7be9a152e5a0080485c3b65">bindCapsule</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">actor</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_capsule_info.html">CapsuleInfo</a> &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">capsule</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a> density=<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>(100))</td></tr>
+<tr class="separator:aba027eb1b7be9a152e5a0080485c3b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71ab512dd95e5a0a25e39bae4a0aaa6" id="r_af71ab512dd95e5a0a25e39bae4a0aaa6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#aa939ce113226647ad30df8af58e0d2a0">BallAndSocketJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#af71ab512dd95e5a0a25e39bae4a0aaa6">createBallAndSocketJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1, std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor2)</td></tr>
 <tr class="separator:af71ab512dd95e5a0a25e39bae4a0aaa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b5e6addfbd9d0d837aa69fee187b192" id="r_a0b5e6addfbd9d0d837aa69fee187b192"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#aa117ad0ae29182e94a0c4cea74659772">SliderJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a0b5e6addfbd9d0d837aa69fee187b192">createSliderJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1, std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor2)</td></tr>
+<tr class="memitem:a0b5e6addfbd9d0d837aa69fee187b192" id="r_a0b5e6addfbd9d0d837aa69fee187b192"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#abc456f1b3f4229d355dce914b3726524">SliderJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a0b5e6addfbd9d0d837aa69fee187b192">createSliderJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1, std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor2)</td></tr>
 <tr class="separator:a0b5e6addfbd9d0d837aa69fee187b192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18334755c3fa4894a29dbe7c07a4bfdb" id="r_a18334755c3fa4894a29dbe7c07a4bfdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#a2a357a1124e09205ba6ffe3635464e16">HingeJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a18334755c3fa4894a29dbe7c07a4bfdb">createHingeJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1, std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor2)</td></tr>
+<tr class="memitem:a18334755c3fa4894a29dbe7c07a4bfdb" id="r_a18334755c3fa4894a29dbe7c07a4bfdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#acdb02615fc00439a5c262813f8ae1e2a">HingeJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a18334755c3fa4894a29dbe7c07a4bfdb">createHingeJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1, std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor2)</td></tr>
 <tr class="separator:a18334755c3fa4894a29dbe7c07a4bfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5330b4235fc68fa3ee064225d877f7ca" id="r_a5330b4235fc68fa3ee064225d877f7ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#aaaba9e95e2982384716aeb189df6d1d1">FixedJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a5330b4235fc68fa3ee064225d877f7ca">createFixedJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1, std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor2)</td></tr>
+<tr class="memitem:a5330b4235fc68fa3ee064225d877f7ca" id="r_a5330b4235fc68fa3ee064225d877f7ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#aefc36ac5ac4a0036d8e7f943098109a7">FixedJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a5330b4235fc68fa3ee064225d877f7ca">createFixedJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1, std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor2)</td></tr>
 <tr class="separator:a5330b4235fc68fa3ee064225d877f7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d9cfd2eb1db33b3860afd7ca4ba95fe" id="r_a6d9cfd2eb1db33b3860afd7ca4ba95fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#aaaba9e95e2982384716aeb189df6d1d1">FixedJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a6d9cfd2eb1db33b3860afd7ca4ba95fe">createUnilateralFixedJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1)</td></tr>
+<tr class="memitem:a6d9cfd2eb1db33b3860afd7ca4ba95fe" id="r_a6d9cfd2eb1db33b3860afd7ca4ba95fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#aefc36ac5ac4a0036d8e7f943098109a7">FixedJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a6d9cfd2eb1db33b3860afd7ca4ba95fe">createUnilateralFixedJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1)</td></tr>
 <tr class="separator:a6d9cfd2eb1db33b3860afd7ca4ba95fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf9a9c1de54ff3bb0064efc5f6b33602" id="r_acf9a9c1de54ff3bb0064efc5f6b33602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#af73ffaa52eff4e684709423df3867a4e">PointJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#acf9a9c1de54ff3bb0064efc5f6b33602">createPointJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1)</td></tr>
+<tr class="memitem:acf9a9c1de54ff3bb0064efc5f6b33602" id="r_acf9a9c1de54ff3bb0064efc5f6b33602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_rigid_body_system.html#a3d3f1f7f7f407a12412bb1d9fd7f3a00">PointJoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#acf9a9c1de54ff3bb0064efc5f6b33602">createPointJoint</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; actor1)</td></tr>
 <tr class="separator:acf9a9c1de54ff3bb0064efc5f6b33602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38d58d9833e57b08f19a9378b1cc5210" id="r_a38d58d9833e57b08f19a9378b1cc5210"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a02f4cf9ee4ba9da3da65b1c14eabe8c2">Mat3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a38d58d9833e57b08f19a9378b1cc5210">pointInertia</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a126b0add64f4f9c292189ce9c572db36">Coord</a> v1)</td></tr>
 <tr class="separator:a38d58d9833e57b08f19a9378b1cc5210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb22f0dae8b61fd157b62674d2177e9" id="r_a2bb22f0dae8b61fd157b62674d2177e9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a2bb22f0dae8b61fd157b62674d2177e9">getNodeType</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a2bb22f0dae8b61fd157b62674d2177e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3179efcccb28f595d42045725928cc" id="r_a1c3179efcccb28f595d42045725928cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a1c3179efcccb28f595d42045725928cc">DEF_VAR</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">FrictionEnabled</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">true</a>, &quot;A toggle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">to</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">control</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">the</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">friction&quot;</a>)</td></tr>
 <tr class="separator:a1c3179efcccb28f595d42045725928cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eda5ecba0bc5604d12f49462488fc37" id="r_a6eda5ecba0bc5604d12f49462488fc37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a6eda5ecba0bc5604d12f49462488fc37">DEF_VAR</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">GravityEnabled</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">true</a>, &quot;A toggle <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">to</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">control</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">the</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">gravity&quot;</a>)</td></tr>
 <tr class="separator:a6eda5ecba0bc5604d12f49462488fc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd2e2eb0a3ff55ac260b55451e274ab2" id="r_abd2e2eb0a3ff55ac260b55451e274ab2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#abd2e2eb0a3ff55ac260b55451e274ab2">DEF_VAR</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">GravityValue</a>, 9.8, &quot;&quot;)</td></tr>
 <tr class="separator:abd2e2eb0a3ff55ac260b55451e274ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aede132c4538b24948340d450b1108d58" id="r_aede132c4538b24948340d450b1108d58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#aede132c4538b24948340d450b1108d58">DEF_VAR</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">FrictionCoefficient</a>, 2.0, &quot;&quot;)</td></tr>
-<tr class="separator:aede132c4538b24948340d450b1108d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3934f21659effe870a3e869e47eb9c8d" id="r_a3934f21659effe870a3e869e47eb9c8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a3934f21659effe870a3e869e47eb9c8d">DEF_VAR</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Slop</a>, 0.001, &quot;&quot;)</td></tr>
-<tr class="separator:a3934f21659effe870a3e869e47eb9c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc9a90f1e7d1777135b7f9095a36f39" id="r_a2cc9a90f1e7d1777135b7f9095a36f39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a2cc9a90f1e7d1777135b7f9095a36f39">DEF_VAR</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">FrictionCoefficient</a>, 200, &quot;&quot;)</td></tr>
+<tr class="separator:a2cc9a90f1e7d1777135b7f9095a36f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b451335e6d79ff40910eef1756cdaa0" id="r_a4b451335e6d79ff40910eef1756cdaa0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a4b451335e6d79ff40910eef1756cdaa0">DEF_VAR</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Slop</a>, 0.0001, &quot;&quot;)</td></tr>
+<tr class="separator:a4b451335e6d79ff40910eef1756cdaa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f81692baaa680942626549a1ca533a" id="r_ae2f81692baaa680942626549a1ca533a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#ae2f81692baaa680942626549a1ca533a">DEF_INSTANCE_STATE</a> (<a class="el" href="classdyno_1_1_discrete_elements.html">DiscreteElements</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Topology</a>, &quot;Topology&quot;)</td></tr>
 <tr class="separator:ae2f81692baaa680942626549a1ca533a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8294f625a582b6738809f02467dbc66c" id="r_a8294f625a582b6738809f02467dbc66c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a8294f625a582b6738809f02467dbc66c">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">FrictionCoefficients</a>, DeviceType::GPU, &quot;FrictionCoefficients <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">of</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">rigid</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodies&quot;</a>)</td></tr>
+<tr class="separator:a8294f625a582b6738809f02467dbc66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2c4dea28a1f231e76d99807221a0290" id="r_ae2c4dea28a1f231e76d99807221a0290"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#ae2c4dea28a1f231e76d99807221a0290">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Mass</a>, DeviceType::GPU, &quot;Mass <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">of</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">rigid</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodies&quot;</a>)</td></tr>
-<tr class="memdesc:ae2c4dea28a1f231e76d99807221a0290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle position.  <br /></td></tr>
+<tr class="memdesc:ae2c4dea28a1f231e76d99807221a0290"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_rigid.html">Rigid</a> Mass.  <br /></td></tr>
 <tr class="separator:ae2c4dea28a1f231e76d99807221a0290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a9f7bbd0609c9c599ecd1169baf4a31" id="r_a9a9f7bbd0609c9c599ecd1169baf4a31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a9a9f7bbd0609c9c599ecd1169baf4a31">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a126b0add64f4f9c292189ce9c572db36">Coord</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Center</a>, DeviceType::GPU, &quot;Center <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">of</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">rigid</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodies&quot;</a>)</td></tr>
-<tr class="memdesc:a9a9f7bbd0609c9c599ecd1169baf4a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle position.  <br /></td></tr>
+<tr class="memdesc:a9a9f7bbd0609c9c599ecd1169baf4a31"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_rigid.html">Rigid</a> Position.  <br /></td></tr>
 <tr class="separator:a9a9f7bbd0609c9c599ecd1169baf4a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97352e4bcbb9d03fe7d2eba0a2abb75a" id="r_a97352e4bcbb9d03fe7d2eba0a2abb75a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a97352e4bcbb9d03fe7d2eba0a2abb75a">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a126b0add64f4f9c292189ce9c572db36">Coord</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Offset</a>, DeviceType::GPU, &quot;Offset <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">of</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">barycenters&quot;</a>)</td></tr>
-<tr class="memdesc:a97352e4bcbb9d03fe7d2eba0a2abb75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial offset of barycenters.  <br /></td></tr>
-<tr class="separator:a97352e4bcbb9d03fe7d2eba0a2abb75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b6b9e7424df372b2ee16ca88378514e" id="r_a7b6b9e7424df372b2ee16ca88378514e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a7b6b9e7424df372b2ee16ca88378514e">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a126b0add64f4f9c292189ce9c572db36">Coord</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Velocity</a>, DeviceType::GPU, &quot;Velocity <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">of</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">rigid</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodies&quot;</a>)</td></tr>
-<tr class="memdesc:a7b6b9e7424df372b2ee16ca88378514e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle position.  <br /></td></tr>
+<tr class="memdesc:a7b6b9e7424df372b2ee16ca88378514e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_rigid.html">Rigid</a> Velocity.  <br /></td></tr>
 <tr class="separator:a7b6b9e7424df372b2ee16ca88378514e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af912e8d409141e3b2b5e13a3a719a6a3" id="r_af912e8d409141e3b2b5e13a3a719a6a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#af912e8d409141e3b2b5e13a3a719a6a3">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a126b0add64f4f9c292189ce9c572db36">Coord</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">AngularVelocity</a>, DeviceType::GPU, &quot;Angular <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">velocity</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">of</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">rigid</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodies&quot;</a>)</td></tr>
-<tr class="memdesc:af912e8d409141e3b2b5e13a3a719a6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle position.  <br /></td></tr>
+<tr class="memdesc:af912e8d409141e3b2b5e13a3a719a6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_rigid.html">Rigid</a> Angular Velocity.  <br /></td></tr>
 <tr class="separator:af912e8d409141e3b2b5e13a3a719a6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea60d674cdd7ba0736e16fa8eba4be91" id="r_aea60d674cdd7ba0736e16fa8eba4be91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#aea60d674cdd7ba0736e16fa8eba4be91">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a25a863be16034dfb2ee9e2b7853f7010">Matrix</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">RotationMatrix</a>, DeviceType::GPU, &quot;Rotation matrix <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">of</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">rigid</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodies&quot;</a>)</td></tr>
-<tr class="memdesc:aea60d674cdd7ba0736e16fa8eba4be91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Particle position.  <br /></td></tr>
+<tr class="memdesc:aea60d674cdd7ba0736e16fa8eba4be91"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_rigid.html">Rigid</a> Rotation.  <br /></td></tr>
 <tr class="separator:aea60d674cdd7ba0736e16fa8eba4be91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94657a48bde52b3254b3c0462181fa42" id="r_a94657a48bde52b3254b3c0462181fa42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a94657a48bde52b3254b3c0462181fa42">DEF_ARRAY_STATE</a> (<a class="el" href="classdyno_1_1_rigid_body_system.html#a25a863be16034dfb2ee9e2b7853f7010">Matrix</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Inertia</a>, DeviceType::GPU, &quot;Inertia <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">matrix&quot;</a>)</td></tr>
 <tr class="separator:a94657a48bde52b3254b3c0462181fa42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,13 +265,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa9279d8339403f5108c9306a9d9fd105 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe51e6101f5cd330b19315c136ad2cc3 inherit pub_methods_classdyno_1_1_node" id="r_abe51e6101f5cd330b19315c136ad2cc3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#abe51e6101f5cd330b19315c136ad2cc3">getName</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:abe51e6101f5cd330b19315c136ad2cc3 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62573b87297311901232e5867edeb9e3 inherit pub_methods_classdyno_1_1_node" id="r_a62573b87297311901232e5867edeb9e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a62573b87297311901232e5867edeb9e3">getNodeType</a> ()</td></tr>
-<tr class="separator:a62573b87297311901232e5867edeb9e3 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44daf82dfe3ccecf2d07be6b8ff34ffa inherit pub_methods_classdyno_1_1_node" id="r_a44daf82dfe3ccecf2d07be6b8ff34ffa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a44daf82dfe3ccecf2d07be6b8ff34ffa">isAutoSync</a> ()</td></tr>
 <tr class="separator:a44daf82dfe3ccecf2d07be6b8ff34ffa inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c34274bf9622f91b5d342b31ee48dd6 inherit pub_methods_classdyno_1_1_node" id="r_a9c34274bf9622f91b5d342b31ee48dd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a9c34274bf9622f91b5d342b31ee48dd6">isAutoHidden</a> ()</td></tr>
+<tr class="separator:a9c34274bf9622f91b5d342b31ee48dd6 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a302ff1cc36838b400066e194d0230c3c inherit pub_methods_classdyno_1_1_node" id="r_a302ff1cc36838b400066e194d0230c3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a302ff1cc36838b400066e194d0230c3c">setAutoSync</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">con</a>)</td></tr>
 <tr class="memdesc:a302ff1cc36838b400066e194d0230c3c inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the node can be automatically synchronized when its ancestor is updated.  <br /></td></tr>
 <tr class="separator:a302ff1cc36838b400066e194d0230c3c inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce66b8565da4e39b72864b0bb90b72c inherit pub_methods_classdyno_1_1_node" id="r_acce66b8565da4e39b72864b0bb90b72c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#acce66b8565da4e39b72864b0bb90b72c">setAutoHidden</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">con</a>)</td></tr>
+<tr class="separator:acce66b8565da4e39b72864b0bb90b72c inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af563c470551277606c8eb62a4b6b05 inherit pub_methods_classdyno_1_1_node" id="r_a2af563c470551277606c8eb62a4b6b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a2af563c470551277606c8eb62a4b6b05">isActive</a> ()</td></tr>
 <tr class="memdesc:a2af563c470551277606c8eb62a4b6b05 inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the state of dynamics.  <br /></td></tr>
 <tr class="separator:a2af563c470551277606c8eb62a4b6b05 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -470,8 +484,10 @@ Public Attributes</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a1d2c8f65ffe487d5f38b1fe8d36f0b6b" id="r_a1d2c8f65ffe487d5f38b1fe8d36f0b6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a1d2c8f65ffe487d5f38b1fe8d36f0b6b">resetStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:a1d2c8f65ffe487d5f38b1fe8d36f0b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba51bc976b278eff5363089327a93af9" id="r_aba51bc976b278eff5363089327a93af9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#aba51bc976b278eff5363089327a93af9">updateTopology</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
-<tr class="separator:aba51bc976b278eff5363089327a93af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba13a4d714a1c72d11748c3ede02efe" id="r_acba13a4d714a1c72d11748c3ede02efe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#acba13a4d714a1c72d11748c3ede02efe">postUpdateStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:acba13a4d714a1c72d11748c3ede02efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d311eea9d6bfd01c54c6400255602c3" id="r_a1d311eea9d6bfd01c54c6400255602c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a1d311eea9d6bfd01c54c6400255602c3">clearRigidBodySystem</a> ()</td></tr>
+<tr class="separator:a1d311eea9d6bfd01c54c6400255602c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classdyno_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classdyno_1_1_node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_node.html">dyno::Node</a></td></tr>
 <tr class="memitem:a09fffdf7fc240a52ce2a9e010774f1fa inherit pro_methods_classdyno_1_1_node" id="r_a09fffdf7fc240a52ce2a9e010774f1fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a09fffdf7fc240a52ce2a9e010774f1fa">appendExportNode</a> (<a class="el" href="classdyno_1_1_node_port.html">NodePort</a> *<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">nodePort</a>)</td></tr>
 <tr class="separator:a09fffdf7fc240a52ce2a9e010774f1fa inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -481,8 +497,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a78c03eea00535e75a4cbaf0e1442989b inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4338663f7efbde6c56b506a8d89c896c inherit pro_methods_classdyno_1_1_node" id="r_a4338663f7efbde6c56b506a8d89c896c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a4338663f7efbde6c56b506a8d89c896c">updateStates</a> ()</td></tr>
 <tr class="separator:a4338663f7efbde6c56b506a8d89c896c inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae07592f3b153eedbe5d2faa8b9cedbdc inherit pro_methods_classdyno_1_1_node" id="r_ae07592f3b153eedbe5d2faa8b9cedbdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#ae07592f3b153eedbe5d2faa8b9cedbdc">postUpdateStates</a> ()</td></tr>
-<tr class="separator:ae07592f3b153eedbe5d2faa8b9cedbdc inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7f286fa69a74ca665e7149d61c4fd6 inherit pro_methods_classdyno_1_1_node" id="r_a1e7f286fa69a74ca665e7149d61c4fd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a1e7f286fa69a74ca665e7149d61c4fd6">updateTopology</a> ()</td></tr>
+<tr class="separator:a1e7f286fa69a74ca665e7149d61c4fd6 inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcad5713df037429dd4ee560bd086a86 inherit pro_methods_classdyno_1_1_node" id="r_abcad5713df037429dd4ee560bd086a86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#abcad5713df037429dd4ee560bd086a86">validateInputs</a> ()</td></tr>
 <tr class="separator:abcad5713df037429dd4ee560bd086a86 inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64f453ccf76663ec27ad2127ee3592ca inherit pro_methods_classdyno_1_1_node" id="r_a64f453ccf76663ec27ad2127ee3592ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a64f453ccf76663ec27ad2127ee3592ca">requireUpdate</a> ()</td></tr>
@@ -490,6 +506,11 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7a88dfdd26c4e4b22e2a4e5a95909058 inherit pro_methods_classdyno_1_1_node" id="r_a7a88dfdd26c4e4b22e2a4e5a95909058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a7a88dfdd26c4e4b22e2a4e5a95909058">tick</a> ()</td></tr>
 <tr class="memdesc:a7a88dfdd26c4e4b22e2a4e5a95909058 inherit pro_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">notify all state and output fields are updated  <br /></td></tr>
 <tr class="separator:a7a88dfdd26c4e4b22e2a4e5a95909058 inherit pro_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3c387f7caa08a4d930c93698c7a9a58e" id="r_a3c387f7caa08a4d930c93698c7a9a58e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a3c387f7caa08a4d930c93698c7a9a58e">setupShape2RigidBodyMapping</a> ()</td></tr>
+<tr class="separator:a3c387f7caa08a4d930c93698c7a9a58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -513,16 +534,18 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3f358c1e30d23903318ee7df9839c185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a3c33ccf1b95f9c3c4c8246d0f9fa1f" id="r_a9a3c33ccf1b95f9c3c4c8246d0f9fa1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a33d075378091a9bb72dea76304195228">DArray</a>&lt; <a class="el" href="structdyno_1_1_capsule_info.html">CapsuleInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a9a3c33ccf1b95f9c3c4c8246d0f9fa1f">mDeviceCapsules</a></td></tr>
 <tr class="separator:a9a3c33ccf1b95f9c3c4c8246d0f9fa1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a585b37f26ecde5ba9d68a28fe6974884" id="r_a585b37f26ecde5ba9d68a28fe6974884"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a2c25cae6dcebe6debef690b4f5b10434">BallAndSocketJoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a585b37f26ecde5ba9d68a28fe6974884">mHostJointsBallAndSocket</a></td></tr>
+<tr class="memitem:a585b37f26ecde5ba9d68a28fe6974884" id="r_a585b37f26ecde5ba9d68a28fe6974884"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#aa939ce113226647ad30df8af58e0d2a0">BallAndSocketJoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a585b37f26ecde5ba9d68a28fe6974884">mHostJointsBallAndSocket</a></td></tr>
 <tr class="separator:a585b37f26ecde5ba9d68a28fe6974884"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad88bdc0979dcbf3421454f0a6ec43e5b" id="r_ad88bdc0979dcbf3421454f0a6ec43e5b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#aa117ad0ae29182e94a0c4cea74659772">SliderJoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#ad88bdc0979dcbf3421454f0a6ec43e5b">mHostJointsSlider</a></td></tr>
+<tr class="memitem:ad88bdc0979dcbf3421454f0a6ec43e5b" id="r_ad88bdc0979dcbf3421454f0a6ec43e5b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#abc456f1b3f4229d355dce914b3726524">SliderJoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#ad88bdc0979dcbf3421454f0a6ec43e5b">mHostJointsSlider</a></td></tr>
 <tr class="separator:ad88bdc0979dcbf3421454f0a6ec43e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0d46f289304a2d5cd74cc4a3fad685" id="r_a4b0d46f289304a2d5cd74cc4a3fad685"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a2a357a1124e09205ba6ffe3635464e16">HingeJoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a4b0d46f289304a2d5cd74cc4a3fad685">mHostJointsHinge</a></td></tr>
+<tr class="memitem:a4b0d46f289304a2d5cd74cc4a3fad685" id="r_a4b0d46f289304a2d5cd74cc4a3fad685"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#acdb02615fc00439a5c262813f8ae1e2a">HingeJoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#a4b0d46f289304a2d5cd74cc4a3fad685">mHostJointsHinge</a></td></tr>
 <tr class="separator:a4b0d46f289304a2d5cd74cc4a3fad685"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7e216e084750f8cc2a7e1c1b7f5c0b" id="r_ace7e216e084750f8cc2a7e1c1b7f5c0b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#aaaba9e95e2982384716aeb189df6d1d1">FixedJoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#ace7e216e084750f8cc2a7e1c1b7f5c0b">mHostJointsFixed</a></td></tr>
+<tr class="memitem:ace7e216e084750f8cc2a7e1c1b7f5c0b" id="r_ace7e216e084750f8cc2a7e1c1b7f5c0b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#aefc36ac5ac4a0036d8e7f943098109a7">FixedJoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#ace7e216e084750f8cc2a7e1c1b7f5c0b">mHostJointsFixed</a></td></tr>
 <tr class="separator:ace7e216e084750f8cc2a7e1c1b7f5c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae05ce83f9ab586884446a0c0c3a070a0" id="r_ae05ce83f9ab586884446a0c0c3a070a0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#af73ffaa52eff4e684709423df3867a4e">PointJoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#ae05ce83f9ab586884446a0c0c3a070a0">mHostJointsPoint</a></td></tr>
+<tr class="memitem:ae05ce83f9ab586884446a0c0c3a070a0" id="r_ae05ce83f9ab586884446a0c0c3a070a0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_rigid_body_system.html#a3d3f1f7f7f407a12412bb1d9fd7f3a00">PointJoint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#ae05ce83f9ab586884446a0c0c3a070a0">mHostJointsPoint</a></td></tr>
 <tr class="separator:ae05ce83f9ab586884446a0c0c3a070a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4c0f47ba4617b6f858fa91334beeb1" id="r_abb4c0f47ba4617b6f858fa91334beeb1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_pair.html">Pair</a>&lt; <a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>, <a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_rigid_body_system.html#abb4c0f47ba4617b6f858fa91334beeb1">mHostShape2RigidBodyMapping</a></td></tr>
+<tr class="separator:abb4c0f47ba4617b6f858fa91334beeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -548,10 +571,10 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a>&gt;<br />
 class dyno::RigidBodySystem&lt; TDataType &gt;</div><p>Implementation of a rigid body system containing a variety of rigid bodies with different shapes. </p>
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00032">32</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00033">33</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a2c25cae6dcebe6debef690b4f5b10434" name="a2c25cae6dcebe6debef690b4f5b10434"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c25cae6dcebe6debef690b4f5b10434">&#9670;&#160;</a></span>BallAndSocketJoint</h2>
+<a id="aa939ce113226647ad30df8af58e0d2a0" name="aa939ce113226647ad30df8af58e0d2a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa939ce113226647ad30df8af58e0d2a0">&#9670;&#160;</a></span>BallAndSocketJoint</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -559,7 +582,7 @@ class dyno::RigidBodySystem&lt; TDataType &gt;</div><p>Implementation of a rigid
 template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a2c25cae6dcebe6debef690b4f5b10434">BallAndSocketJoint</a>&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::BallAndSocketJoint</td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_ball_and_socket_joint.html">::dyno::BallAndSocketJoint</a>&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::BallAndSocketJoint</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -622,8 +645,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="aaaba9e95e2982384716aeb189df6d1d1" name="aaaba9e95e2982384716aeb189df6d1d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaba9e95e2982384716aeb189df6d1d1">&#9670;&#160;</a></span>FixedJoint</h2>
+<a id="aefc36ac5ac4a0036d8e7f943098109a7" name="aefc36ac5ac4a0036d8e7f943098109a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc36ac5ac4a0036d8e7f943098109a7">&#9670;&#160;</a></span>FixedJoint</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,7 +654,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#aaaba9e95e2982384716aeb189df6d1d1">FixedJoint</a>&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::FixedJoint</td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_fixed_joint.html">::dyno::FixedJoint</a>&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::FixedJoint</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -640,8 +663,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="a2a357a1124e09205ba6ffe3635464e16" name="a2a357a1124e09205ba6ffe3635464e16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a357a1124e09205ba6ffe3635464e16">&#9670;&#160;</a></span>HingeJoint</h2>
+<a id="acdb02615fc00439a5c262813f8ae1e2a" name="acdb02615fc00439a5c262813f8ae1e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb02615fc00439a5c262813f8ae1e2a">&#9670;&#160;</a></span>HingeJoint</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -649,7 +672,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a2a357a1124e09205ba6ffe3635464e16">HingeJoint</a>&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::HingeJoint</td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_hinge_joint.html">::dyno::HingeJoint</a>&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::HingeJoint</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -676,8 +699,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="af73ffaa52eff4e684709423df3867a4e" name="af73ffaa52eff4e684709423df3867a4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af73ffaa52eff4e684709423df3867a4e">&#9670;&#160;</a></span>PointJoint</h2>
+<a id="a3d3f1f7f7f407a12412bb1d9fd7f3a00" name="a3d3f1f7f7f407a12412bb1d9fd7f3a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3f1f7f7f407a12412bb1d9fd7f3a00">&#9670;&#160;</a></span>PointJoint</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -685,7 +708,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#af73ffaa52eff4e684709423df3867a4e">PointJoint</a>&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::PointJoint</td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_point_joint.html">::dyno::PointJoint</a>&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::PointJoint</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -712,8 +735,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="aa117ad0ae29182e94a0c4cea74659772" name="aa117ad0ae29182e94a0c4cea74659772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa117ad0ae29182e94a0c4cea74659772">&#9670;&#160;</a></span>SliderJoint</h2>
+<a id="abc456f1b3f4229d355dce914b3726524" name="abc456f1b3f4229d355dce914b3726524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc456f1b3f4229d355dce914b3726524">&#9670;&#160;</a></span>SliderJoint</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -721,7 +744,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#aa117ad0ae29182e94a0c4cea74659772">SliderJoint</a>&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::SliderJoint</td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typedef</a> <a class="el" href="classdyno_1_1_slider_joint.html">::dyno::SliderJoint</a>&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::SliderJoint</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -847,11 +870,6 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_rigid_body_system_a09738feb58b2d3d38a611eb4906f10d4_icgraph.png" border="0" usemap="#aclassdyno_1_1_rigid_body_system_a09738feb58b2d3d38a611eb4906f10d4_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -888,11 +906,6 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_rigid_body_system_a96151bd58054671485fac7c839900c4f_icgraph.png" border="0" usemap="#aclassdyno_1_1_rigid_body_system_a96151bd58054671485fac7c839900c4f_icgraph" alt=""/></div>
-</div>
 
 </div>
 </div>
@@ -968,6 +981,141 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
+<a id="a70ca29f3faecbf4e0b70bdb23afe607e" name="a70ca29f3faecbf4e0b70bdb23afe607e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ca29f3faecbf4e0b70bdb23afe607e">&#9670;&#160;</a></span>bindBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::bindBox </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td>
+          <td class="paramname"><em>actor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_box_info.html">BoxInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>box</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&#160;</td>
+          <td class="paramname"><em>density</em> = <code><a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>(100)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba027eb1b7be9a152e5a0080485c3b65" name="aba027eb1b7be9a152e5a0080485c3b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba027eb1b7be9a152e5a0080485c3b65">&#9670;&#160;</a></span>bindCapsule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::bindCapsule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td>
+          <td class="paramname"><em>actor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_capsule_info.html">CapsuleInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>capsule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&#160;</td>
+          <td class="paramname"><em>density</em> = <code><a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>(100)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2096ecbfdd5762d373930997646ff7d" name="ad2096ecbfdd5762d373930997646ff7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2096ecbfdd5762d373930997646ff7d">&#9670;&#160;</a></span>bindSphere()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::bindSphere </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td>
+          <td class="paramname"><em>actor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_sphere_info.html">SphereInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>sphere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&#160;</td>
+          <td class="paramname"><em>density</em> = <code><a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>(100)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d311eea9d6bfd01c54c6400255602c3" name="a1d311eea9d6bfd01c54c6400255602c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d311eea9d6bfd01c54c6400255602c3">&#9670;&#160;</a></span>clearRigidBodySystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::clearRigidBodySystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af71ab512dd95e5a0a25e39bae4a0aaa6" name="af71ab512dd95e5a0a25e39bae4a0aaa6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af71ab512dd95e5a0a25e39bae4a0aaa6">&#9670;&#160;</a></span>createBallAndSocketJoint()</h2>
 
@@ -980,7 +1128,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#a2c25cae6dcebe6debef690b4f5b10434">BallAndSocketJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createBallAndSocketJoint </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#aa939ce113226647ad30df8af58e0d2a0">BallAndSocketJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createBallAndSocketJoint </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td>
           <td class="paramname"><em>actor1</em>, </td>
@@ -1004,7 +1152,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00078">78</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00097">97</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -1020,7 +1168,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#aaaba9e95e2982384716aeb189df6d1d1">FixedJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createFixedJoint </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#aefc36ac5ac4a0036d8e7f943098109a7">FixedJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createFixedJoint </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td>
           <td class="paramname"><em>actor1</em>, </td>
@@ -1044,12 +1192,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00108">108</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_rigid_body_system_a5330b4235fc68fa3ee064225d877f7ca_icgraph.png" border="0" usemap="#aclassdyno_1_1_rigid_body_system_a5330b4235fc68fa3ee064225d877f7ca_icgraph" alt=""/></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00127">127</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -1065,7 +1208,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#a2a357a1124e09205ba6ffe3635464e16">HingeJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createHingeJoint </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#acdb02615fc00439a5c262813f8ae1e2a">HingeJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createHingeJoint </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td>
           <td class="paramname"><em>actor1</em>, </td>
@@ -1089,12 +1232,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00098">98</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_rigid_body_system_a18334755c3fa4894a29dbe7c07a4bfdb_icgraph.png" border="0" usemap="#aclassdyno_1_1_rigid_body_system_a18334755c3fa4894a29dbe7c07a4bfdb_icgraph" alt=""/></div>
-</div>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00117">117</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1248,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#af73ffaa52eff4e684709423df3867a4e">PointJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createPointJoint </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#a3d3f1f7f7f407a12412bb1d9fd7f3a00">PointJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createPointJoint </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td>
           <td class="paramname"><em>actor1</em></td><td>)</td>
@@ -1124,7 +1262,57 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00127">127</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00146">146</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+
+</div>
+</div>
+<a id="a311f0da818b06f1e1897d2366f66237e" name="a311f0da818b06f1e1897d2366f66237e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311f0da818b06f1e1897d2366f66237e">&#9670;&#160;</a></span>createRigidBody() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createRigidBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a126b0add64f4f9c292189ce9c572db36">Coord</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="classdyno_1_1_rigid_body_system.html#a02ff9872e802b2af33e9b61e6b749d4f">TQuat</a> &amp;&#160;</td>
+          <td class="paramname"><em>q</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a205376147c8a9b821c9227d4af2f9e2c" name="a205376147c8a9b821c9227d4af2f9e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205376147c8a9b821c9227d4af2f9e2c">&#9670;&#160;</a></span>createRigidBody() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createRigidBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> <a class="el" href="structdyno_1_1_rigid_body_info.html">RigidBodyInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>bodyDef</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1140,7 +1328,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#aa117ad0ae29182e94a0c4cea74659772">SliderJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createSliderJoint </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#abc456f1b3f4229d355dce914b3726524">SliderJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createSliderJoint </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td>
           <td class="paramname"><em>actor1</em>, </td>
@@ -1164,7 +1352,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00088">88</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00107">107</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1368,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#aaaba9e95e2982384716aeb189df6d1d1">FixedJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createUnilateralFixedJoint </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html#aefc36ac5ac4a0036d8e7f943098109a7">FixedJoint</a> &amp; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::createUnilateralFixedJoint </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_pd_actor.html">PdActor</a> &gt;&#160;</td>
           <td class="paramname"><em>actor1</em></td><td>)</td>
@@ -1194,7 +1382,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00118">118</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00137">137</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -1322,7 +1510,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p>Particle position. </p>
+<p><a class="el" href="classdyno_1_1_rigid.html">Rigid</a> Angular Velocity. </p>
 
 </div>
 </div>
@@ -1366,56 +1554,12 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p>Particle position. </p>
-
-</div>
-</div>
-<a id="a97352e4bcbb9d03fe7d2eba0a2abb75a" name="a97352e4bcbb9d03fe7d2eba0a2abb75a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97352e4bcbb9d03fe7d2eba0a2abb75a">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[5/11]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_ARRAY_STATE </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_rigid_body_system.html#a126b0add64f4f9c292189ce9c572db36">Coord</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Offset</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DeviceType::GPU&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;Offset <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">of</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">barycenters&quot;</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The initial offset of barycenters. </p>
+<p><a class="el" href="classdyno_1_1_rigid.html">Rigid</a> Position. </p>
 
 </div>
 </div>
 <a id="a7b6b9e7424df372b2ee16ca88378514e" name="a7b6b9e7424df372b2ee16ca88378514e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b6b9e7424df372b2ee16ca88378514e">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[6/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6b9e7424df372b2ee16ca88378514e">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[5/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1454,12 +1598,12 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p>Particle position. </p>
+<p><a class="el" href="classdyno_1_1_rigid.html">Rigid</a> Velocity. </p>
 
 </div>
 </div>
 <a id="a94657a48bde52b3254b3c0462181fa42" name="a94657a48bde52b3254b3c0462181fa42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94657a48bde52b3254b3c0462181fa42">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[7/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a94657a48bde52b3254b3c0462181fa42">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[6/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1501,7 +1645,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </div>
 </div>
 <a id="aee5040afecbd55ad822c37e7de7caca3" name="aee5040afecbd55ad822c37e7de7caca3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee5040afecbd55ad822c37e7de7caca3">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[8/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aee5040afecbd55ad822c37e7de7caca3">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[7/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1543,7 +1687,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </div>
 </div>
 <a id="aea60d674cdd7ba0736e16fa8eba4be91" name="aea60d674cdd7ba0736e16fa8eba4be91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea60d674cdd7ba0736e16fa8eba4be91">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[9/11]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aea60d674cdd7ba0736e16fa8eba4be91">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[8/11]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1582,7 +1726,49 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p>Particle position. </p>
+<p><a class="el" href="classdyno_1_1_rigid.html">Rigid</a> Rotation. </p>
+
+</div>
+</div>
+<a id="a8294f625a582b6738809f02467dbc66c" name="a8294f625a582b6738809f02467dbc66c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8294f625a582b6738809f02467dbc66c">&#9670;&#160;</a></span>DEF_ARRAY_STATE() <span class="overload">[9/11]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_ARRAY_STATE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_rigid_body_system.html#a9ebc2dd5081b180556a285a5d48addeb">Real</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">FrictionCoefficients</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DeviceType::GPU&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;FrictionCoefficients <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">of</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">rigid</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bodies&quot;</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1626,7 +1812,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p>Particle position. </p>
+<p><a class="el" href="classdyno_1_1_rigid.html">Rigid</a> Mass. </p>
 
 </div>
 </div>
@@ -1792,8 +1978,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="aede132c4538b24948340d450b1108d58" name="aede132c4538b24948340d450b1108d58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aede132c4538b24948340d450b1108d58">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[3/5]</span></h2>
+<a id="a2cc9a90f1e7d1777135b7f9095a36f39" name="a2cc9a90f1e7d1777135b7f9095a36f39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc9a90f1e7d1777135b7f9095a36f39">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1815,8 +2001,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">2.&#160;</td>
-          <td class="paramname"><em>0</em>, </td>
+          <td class="paramtype">200&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1876,8 +2062,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="a3934f21659effe870a3e869e47eb9c8d" name="a3934f21659effe870a3e869e47eb9c8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3934f21659effe870a3e869e47eb9c8d">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[5/5]</span></h2>
+<a id="a4b451335e6d79ff40910eef1756cdaa0" name="a4b451335e6d79ff40910eef1756cdaa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b451335e6d79ff40910eef1756cdaa0">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1900,7 +2086,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">0.&#160;</td>
-          <td class="paramname"><em>001</em>, </td>
+          <td class="paramname"><em>0001</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1915,6 +2101,37 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2bb22f0dae8b61fd157b62674d2177e9" name="a2bb22f0dae8b61fd157b62674d2177e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb22f0dae8b61fd157b62674d2177e9">&#9670;&#160;</a></span>getNodeType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::getNodeType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classdyno_1_1_node.html#a62573b87297311901232e5867edeb9e3">dyno::Node</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00157">157</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -1943,7 +2160,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00228">228</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00252">252</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -1972,7 +2189,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00227">227</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00251">251</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2001,7 +2218,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00225">225</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00249">249</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2022,6 +2239,40 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="acba13a4d714a1c72d11748c3ede02efe" name="acba13a4d714a1c72d11748c3ede02efe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba13a4d714a1c72d11748c3ede02efe">&#9670;&#160;</a></span>postUpdateStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::postUpdateStates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classdyno_1_1_node.html#ae07592f3b153eedbe5d2faa8b9cedbdc">dyno::Node</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_rigid_body_system_acba13a4d714a1c72d11748c3ede02efe_icgraph.png" border="0" usemap="#aclassdyno_1_1_rigid_body_system_acba13a4d714a1c72d11748c3ede02efe_icgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -2052,17 +2303,12 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_node.html#a268d036395a10abc9669a042d35d91cf">dyno::Node</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classdyno_1_1_vechicle.html#af22ed5882007bee03440ea033bf2cac3">dyno::Vechicle&lt; TDataType &gt;</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_rigid_body_system_a1d2c8f65ffe487d5f38b1fe8d36f0b6b_icgraph.png" border="0" usemap="#aclassdyno_1_1_rigid_body_system_a1d2c8f65ffe487d5f38b1fe8d36f0b6b_icgraph" alt=""/></div>
-</div>
+<p>Reimplemented in <a class="el" href="classdyno_1_1_tank.html#a4fa92a590c7f004be1951154e1a8286e">dyno::Tank&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_tracked_tank.html#a95d381c3ba3ab94c958bc2d39ad95dbd">dyno::TrackedTank&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_u_a_v.html#aa909352294d5222b7dd2c2522ab0eae2">dyno::UAV&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_u_u_v.html#ad47ce6f6df60888ae17281e2190f2bbe">dyno::UUV&lt; TDataType &gt;</a>.</p>
 
 </div>
 </div>
-<a id="aba51bc976b278eff5363089327a93af9" name="aba51bc976b278eff5363089327a93af9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba51bc976b278eff5363089327a93af9">&#9670;&#160;</a></span>updateTopology()</h2>
+<a id="a3c387f7caa08a4d930c93698c7a9a58e" name="a3c387f7caa08a4d930c93698c7a9a58e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c387f7caa08a4d930c93698c7a9a58e">&#9670;&#160;</a></span>setupShape2RigidBodyMapping()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2073,7 +2319,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::updateTopology </td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::setupShape2RigidBodyMapping </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2081,12 +2327,10 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classdyno_1_1_node.html#a1e7f286fa69a74ca665e7149d61c4fd6">dyno::Node</a>.</p>
 
 </div>
 </div>
@@ -2105,7 +2349,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00220">220</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00244">244</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2123,7 +2367,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00219">219</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00243">243</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2141,7 +2385,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00218">218</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00242">242</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2167,7 +2411,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00207">207</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00229">229</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2193,7 +2437,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00209">209</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00231">231</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2219,7 +2463,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00204">204</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00226">226</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2245,7 +2489,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00206">206</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00228">228</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2271,7 +2515,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00208">208</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00230">230</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2297,7 +2541,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00200">200</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00222">222</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2323,7 +2567,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00202">202</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00224">224</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2339,7 +2583,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a2c25cae6dcebe6debef690b4f5b10434">BallAndSocketJoint</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostJointsBallAndSocket</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#aa939ce113226647ad30df8af58e0d2a0">BallAndSocketJoint</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostJointsBallAndSocket</td>
         </tr>
       </table>
   </td>
@@ -2349,7 +2593,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00211">211</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00233">233</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2365,7 +2609,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#aaaba9e95e2982384716aeb189df6d1d1">FixedJoint</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostJointsFixed</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#aefc36ac5ac4a0036d8e7f943098109a7">FixedJoint</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostJointsFixed</td>
         </tr>
       </table>
   </td>
@@ -2375,7 +2619,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00214">214</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00236">236</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2391,7 +2635,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a2a357a1124e09205ba6ffe3635464e16">HingeJoint</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostJointsHinge</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#acdb02615fc00439a5c262813f8ae1e2a">HingeJoint</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostJointsHinge</td>
         </tr>
       </table>
   </td>
@@ -2401,7 +2645,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00213">213</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00235">235</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2417,7 +2661,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#af73ffaa52eff4e684709423df3867a4e">PointJoint</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostJointsPoint</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#a3d3f1f7f7f407a12412bb1d9fd7f3a00">PointJoint</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostJointsPoint</td>
         </tr>
       </table>
   </td>
@@ -2427,7 +2671,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00215">215</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00237">237</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2443,7 +2687,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#aa117ad0ae29182e94a0c4cea74659772">SliderJoint</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostJointsSlider</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_rigid_body_system.html#abc456f1b3f4229d355dce914b3726524">SliderJoint</a>&gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostJointsSlider</td>
         </tr>
       </table>
   </td>
@@ -2453,7 +2697,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00212">212</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00234">234</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2479,7 +2723,33 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00197">197</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00219">219</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+
+</div>
+</div>
+<a id="abb4c0f47ba4617b6f858fa91334beeb1" name="abb4c0f47ba4617b6f858fa91334beeb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4c0f47ba4617b6f858fa91334beeb1">&#9670;&#160;</a></span>mHostShape2RigidBodyMapping</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_pair.html">Pair</a>&lt;<a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>, <a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>&gt; &gt; <a class="el" href="classdyno_1_1_rigid_body_system.html">dyno::RigidBodySystem</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::mHostShape2RigidBodyMapping</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00239">239</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2505,7 +2775,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00199">199</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00221">221</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2531,7 +2801,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00201">201</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00223">223</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2549,7 +2819,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00223">223</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00247">247</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
@@ -2567,12 +2837,12 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00222">222</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_rigid_body_system_8h_source.html#l00246">246</a> of file <a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>E:/Peridyno/peridyno/src/Dynamics/Cuda/RigidBody/<a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a></li>
+<li>D:/Peridyno/peridyno/src/Dynamics/Cuda/RigidBody/<a class="el" href="_rigid_body_system_8h_source.html">RigidBodySystem.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

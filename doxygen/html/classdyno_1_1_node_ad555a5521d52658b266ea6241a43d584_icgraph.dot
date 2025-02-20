@@ -14,4 +14,6 @@ digraph "dyno::Node::isVisible"
   Node4 [id="Node000004",label="WidgetQueue::process",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_widget_queue.html#a0694006704a5b7ba0f22e9250118a63e",tooltip=" "];
   Node1 -> Node5 [id="edge4_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node5 [id="Node000005",label="dyno::ShadowMap::update",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_shadow_map.html#a30060849db857df2119546cc0102a8c2",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="dyno::SceneGraph::update\lGraphicsContext",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_scene_graph.html#aef3804bd03cac0047403ca54f9126fba",tooltip=" "];
 }

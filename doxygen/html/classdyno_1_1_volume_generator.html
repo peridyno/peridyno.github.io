@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -77,15 +77,11 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classdyno_1_1_volume_generator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::VolumeGenerator&lt; TDataType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>This is a CPU-based implementation of grid-based signed distance field (level set) generator for triangle meshes. For more details, please refer to Robert Bridson's website (www.cs.ubc.ca/~rbridson).  
- <a href="classdyno_1_1_volume_generator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -148,31 +144,23 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af5172942369d719d47bf7915a9c19818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2feea9b66725e36aa8126cdf68dd54b7" id="r_a2feea9b66725e36aa8126cdf68dd54b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a2feea9b66725e36aa8126cdf68dd54b7">~VolumeGenerator</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:a2feea9b66725e36aa8126cdf68dd54b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7feed69062a910121e96710706ad7083" id="r_a7feed69062a910121e96710706ad7083"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a7feed69062a910121e96710706ad7083">loadClosedSurface</a> ()</td></tr>
-<tr class="separator:a7feed69062a910121e96710706ad7083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f9dcaaeee6cec5f9ca8da0eef4afc19" id="r_a7f9dcaaeee6cec5f9ca8da0eef4afc19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a7f9dcaaeee6cec5f9ca8da0eef4afc19">load</a> (std::string <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">filename</a>)</td></tr>
-<tr class="separator:a7f9dcaaeee6cec5f9ca8da0eef4afc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed728768184dec757aaae93e067ab63f" id="r_aed728768184dec757aaae93e067ab63f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#aed728768184dec757aaae93e067ab63f">DEF_VAR</a> (<a class="el" href="classdyno_1_1_volume_generator.html#aeed86bef605e7c96dbf5ae7eb6f2f7be">Real</a>, Spacing, 0.05f, &quot;&quot;)</td></tr>
+<tr class="separator:aed728768184dec757aaae93e067ab63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5716fa96e5da72627033ef7df25a74a" id="r_ad5716fa96e5da72627033ef7df25a74a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#ad5716fa96e5da72627033ef7df25a74a">DEF_VAR</a> (<a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Padding</a>, 10, &quot;&quot;)</td></tr>
+<tr class="separator:ad5716fa96e5da72627033ef7df25a74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad223b1a4b44807729e18de6713a6606b" id="r_ad223b1a4b44807729e18de6713a6606b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#ad223b1a4b44807729e18de6713a6606b">DEF_INSTANCE_IN</a> (<a class="el" href="classdyno_1_1_triangle_set.html">TriangleSet</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="classdyno_1_1_triangle_set.html">TriangleSet</a>, &quot;&quot;)</td></tr>
 <tr class="separator:ad223b1a4b44807729e18de6713a6606b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37baacb08b072256d89bdf3cf114301a" id="r_a37baacb08b072256d89bdf3cf114301a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a37baacb08b072256d89bdf3cf114301a">DEF_INSTANCE_OUT</a> (<a class="el" href="classdyno_1_1_signed_distance_field.html">SignedDistanceField</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">GenSDF</a>, &quot;&quot;)</td></tr>
-<tr class="separator:a37baacb08b072256d89bdf3cf114301a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ff68927eff2bf8a8968ba7aea9fa6cb" id="r_a6ff68927eff2bf8a8968ba7aea9fa6cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a6ff68927eff2bf8a8968ba7aea9fa6cb">DEF_VAR_IN</a> (<a class="el" href="classdyno_1_1_volume_generator.html#aeed86bef605e7c96dbf5ae7eb6f2f7be">Real</a>, Spacing, &quot;&quot;)</td></tr>
-<tr class="separator:a6ff68927eff2bf8a8968ba7aea9fa6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e5208f7812b6574e89271c6c9284cc9" id="r_a6e5208f7812b6574e89271c6c9284cc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a6e5208f7812b6574e89271c6c9284cc9">DEF_VAR_IN</a> (<a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Padding</a>, &quot;&quot;)</td></tr>
-<tr class="separator:a6e5208f7812b6574e89271c6c9284cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26464f9cf37233f8993d7f79530a1355" id="r_a26464f9cf37233f8993d7f79530a1355"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a26464f9cf37233f8993d7f79530a1355">makeLevelSet</a> ()</td></tr>
-<tr class="separator:a26464f9cf37233f8993d7f79530a1355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c2e26c80f8b4212ce70b09c74dbd52" id="r_a73c2e26c80f8b4212ce70b09c74dbd52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a73c2e26c80f8b4212ce70b09c74dbd52">DEF_INSTANCE_OUT</a> (<a class="el" href="classdyno_1_1_level_set.html">LevelSet</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="classdyno_1_1_level_set.html">LevelSet</a>, &quot;&quot;)</td></tr>
+<tr class="separator:a73c2e26c80f8b4212ce70b09c74dbd52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_volume"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_volume')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_volume.html">dyno::Volume&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:a62b976985069cabcd70e26af02523838 inherit pub_methods_classdyno_1_1_volume" id="r_a62b976985069cabcd70e26af02523838"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume.html#a62b976985069cabcd70e26af02523838">Volume</a> ()</td></tr>
 <tr class="separator:a62b976985069cabcd70e26af02523838 inherit pub_methods_classdyno_1_1_volume"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7760e0edd8831f73e51ae30e2e07db72 inherit pub_methods_classdyno_1_1_volume" id="r_a7760e0edd8831f73e51ae30e2e07db72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume.html#a7760e0edd8831f73e51ae30e2e07db72">~Volume</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:a7760e0edd8831f73e51ae30e2e07db72 inherit pub_methods_classdyno_1_1_volume"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a144205da4dded9a0f32c5d1a05d5dee0 inherit pub_methods_classdyno_1_1_volume" id="r_a144205da4dded9a0f32c5d1a05d5dee0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume.html#a144205da4dded9a0f32c5d1a05d5dee0">updateVolume</a> ()</td></tr>
-<tr class="separator:a144205da4dded9a0f32c5d1a05d5dee0 inherit pub_methods_classdyno_1_1_volume"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b56ed58f93ca08440912303948256b6 inherit pub_methods_classdyno_1_1_volume" id="r_a6b56ed58f93ca08440912303948256b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume.html#a6b56ed58f93ca08440912303948256b6">DEF_INSTANCE_STATE</a> (<a class="el" href="classdyno_1_1_signed_distance_field.html">SignedDistanceField</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">SDF</a>, &quot;&quot;)</td></tr>
-<tr class="separator:a6b56ed58f93ca08440912303948256b6 inherit pub_methods_classdyno_1_1_volume"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e7111b14bbb84070b8334aa7ea438f2 inherit pub_methods_classdyno_1_1_volume" id="r_a0e7111b14bbb84070b8334aa7ea438f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume.html#a0e7111b14bbb84070b8334aa7ea438f2">DEF_INSTANCE_STATE</a> (<a class="el" href="classdyno_1_1_topology_module.html">TopologyModule</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">Topology</a>, &quot;Topology&quot;)</td></tr>
-<tr class="separator:a0e7111b14bbb84070b8334aa7ea438f2 inherit pub_methods_classdyno_1_1_volume"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b58b19ff879df6d3dd2079398d04332 inherit pub_methods_classdyno_1_1_volume" id="r_a5b58b19ff879df6d3dd2079398d04332"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume.html#a5b58b19ff879df6d3dd2079398d04332">getNodeType</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
+<tr class="separator:a5b58b19ff879df6d3dd2079398d04332 inherit pub_methods_classdyno_1_1_volume"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a1a92d675f298a9a29983165636e6b inherit pub_methods_classdyno_1_1_volume" id="r_a75a1a92d675f298a9a29983165636e6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume.html#a75a1a92d675f298a9a29983165636e6b">DEF_INSTANCE_STATE</a> (<a class="el" href="classdyno_1_1_level_set.html">LevelSet</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;, <a class="el" href="classdyno_1_1_level_set.html">LevelSet</a>, &quot;&quot;)</td></tr>
+<tr class="separator:a75a1a92d675f298a9a29983165636e6b inherit pub_methods_classdyno_1_1_volume"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_node.html">dyno::Node</a></td></tr>
 <tr class="memitem:a32b5a5d3f09f3fd9642844187038ad24 inherit pub_methods_classdyno_1_1_node" id="r_a32b5a5d3f09f3fd9642844187038ad24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a32b5a5d3f09f3fd9642844187038ad24">Node</a> ()</td></tr>
 <tr class="separator:a32b5a5d3f09f3fd9642844187038ad24 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,13 +170,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa9279d8339403f5108c9306a9d9fd105 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe51e6101f5cd330b19315c136ad2cc3 inherit pub_methods_classdyno_1_1_node" id="r_abe51e6101f5cd330b19315c136ad2cc3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#abe51e6101f5cd330b19315c136ad2cc3">getName</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
 <tr class="separator:abe51e6101f5cd330b19315c136ad2cc3 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62573b87297311901232e5867edeb9e3 inherit pub_methods_classdyno_1_1_node" id="r_a62573b87297311901232e5867edeb9e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a62573b87297311901232e5867edeb9e3">getNodeType</a> ()</td></tr>
-<tr class="separator:a62573b87297311901232e5867edeb9e3 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44daf82dfe3ccecf2d07be6b8ff34ffa inherit pub_methods_classdyno_1_1_node" id="r_a44daf82dfe3ccecf2d07be6b8ff34ffa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a44daf82dfe3ccecf2d07be6b8ff34ffa">isAutoSync</a> ()</td></tr>
 <tr class="separator:a44daf82dfe3ccecf2d07be6b8ff34ffa inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c34274bf9622f91b5d342b31ee48dd6 inherit pub_methods_classdyno_1_1_node" id="r_a9c34274bf9622f91b5d342b31ee48dd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a9c34274bf9622f91b5d342b31ee48dd6">isAutoHidden</a> ()</td></tr>
+<tr class="separator:a9c34274bf9622f91b5d342b31ee48dd6 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a302ff1cc36838b400066e194d0230c3c inherit pub_methods_classdyno_1_1_node" id="r_a302ff1cc36838b400066e194d0230c3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a302ff1cc36838b400066e194d0230c3c">setAutoSync</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">con</a>)</td></tr>
 <tr class="memdesc:a302ff1cc36838b400066e194d0230c3c inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the node can be automatically synchronized when its ancestor is updated.  <br /></td></tr>
 <tr class="separator:a302ff1cc36838b400066e194d0230c3c inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce66b8565da4e39b72864b0bb90b72c inherit pub_methods_classdyno_1_1_node" id="r_acce66b8565da4e39b72864b0bb90b72c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#acce66b8565da4e39b72864b0bb90b72c">setAutoHidden</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">con</a>)</td></tr>
+<tr class="separator:acce66b8565da4e39b72864b0bb90b72c inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af563c470551277606c8eb62a4b6b05 inherit pub_methods_classdyno_1_1_node" id="r_a2af563c470551277606c8eb62a4b6b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a2af563c470551277606c8eb62a4b6b05">isActive</a> ()</td></tr>
 <tr class="memdesc:a2af563c470551277606c8eb62a4b6b05 inherit pub_methods_classdyno_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the state of dynamics.  <br /></td></tr>
 <tr class="separator:a2af563c470551277606c8eb62a4b6b05 inherit pub_methods_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,28 +369,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object" id="r_a5105729f9f9faf65100b999d076418c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8">objectId</a> ()</td></tr>
 <tr class="separator:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a3c333f1032aebcb4693974aa2b59e317" id="r_a3c333f1032aebcb4693974aa2b59e317"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a601e64d42b4a3b105db6d6ae57f625fa">CArray</a>&lt; <a class="el" href="namespacedyno.html#ad9ce92e90ca9acbd16ed6e8bdfd0ec47">Vec3ui</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a3c333f1032aebcb4693974aa2b59e317">faceList</a></td></tr>
-<tr class="separator:a3c333f1032aebcb4693974aa2b59e317"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad40ed00b301febeecc9e7a3a3469a00a" id="r_ad40ed00b301febeecc9e7a3a3469a00a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a601e64d42b4a3b105db6d6ae57f625fa">CArray</a>&lt; <a class="el" href="classdyno_1_1_volume_generator.html#a7737edd8bf3eab5a733c2482584bbe56">Coord</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#ad40ed00b301febeecc9e7a3a3469a00a">vertList</a></td></tr>
-<tr class="separator:ad40ed00b301febeecc9e7a3a3469a00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed18d91492301643edcf22f0d09070bc" id="r_aed18d91492301643edcf22f0d09070bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#aed18d91492301643edcf22f0d09070bc">ni</a></td></tr>
-<tr class="separator:aed18d91492301643edcf22f0d09070bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86c3dc3ea6783f7007af887e6957e55b" id="r_a86c3dc3ea6783f7007af887e6957e55b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a86c3dc3ea6783f7007af887e6957e55b">nj</a></td></tr>
-<tr class="separator:a86c3dc3ea6783f7007af887e6957e55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e49462b29eb2f21a295fa3b29e1f0c0" id="r_a9e49462b29eb2f21a295fa3b29e1f0c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a9e49462b29eb2f21a295fa3b29e1f0c0">nk</a></td></tr>
-<tr class="separator:a9e49462b29eb2f21a295fa3b29e1f0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6db8b9a8628d27f8897fff36af8579a" id="r_ab6db8b9a8628d27f8897fff36af8579a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#ab6db8b9a8628d27f8897fff36af8579a">origin</a></td></tr>
-<tr class="separator:ab6db8b9a8628d27f8897fff36af8579a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a880bcef9982d87386eee02916da18f2d" id="r_a880bcef9982d87386eee02916da18f2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#a880bcef9982d87386eee02916da18f2d">maxPoint</a></td></tr>
-<tr class="separator:a880bcef9982d87386eee02916da18f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add3fd0ff801142f541281c3fd66b5fda" id="r_add3fd0ff801142f541281c3fd66b5fda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#aa71b21e34f0e4d1ab5b6834038426f01">CArray3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#add3fd0ff801142f541281c3fd66b5fda">phi</a></td></tr>
-<tr class="separator:add3fd0ff801142f541281c3fd66b5fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classdyno_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdyno_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdyno_1_1_node.html">dyno::Node</a></td></tr>
-<tr class="memitem:a49ff335a2189c6d3a801fcffe519f5de inherit pub_attribs_classdyno_1_1_node" id="r_a49ff335a2189c6d3a801fcffe519f5de"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a49ff335a2189c6d3a801fcffe519f5de">m_node_name</a></td></tr>
-<tr class="separator:a49ff335a2189c6d3a801fcffe519f5de inherit pub_attribs_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad86ae450393b28df8aa7fd3194d654e9" id="r_ad86ae450393b28df8aa7fd3194d654e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_volume_generator.html#ad86ae450393b28df8aa7fd3194d654e9">resetStates</a> () <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">override</a></td></tr>
@@ -438,6 +406,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object" id="r_a1c74670edfee2018cfa434a0a6380ed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">static</a> <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a1c74670edfee2018cfa434a0a6380ed5">baseId</a> ()</td></tr>
 <tr class="memdesc:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base Id.  <br /></td></tr>
 <tr class="separator:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classdyno_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classdyno_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classdyno_1_1_node.html">dyno::Node</a></td></tr>
+<tr class="memitem:a49ff335a2189c6d3a801fcffe519f5de inherit pub_attribs_classdyno_1_1_node" id="r_a49ff335a2189c6d3a801fcffe519f5de"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_node.html#a49ff335a2189c6d3a801fcffe519f5de">m_node_name</a></td></tr>
+<tr class="separator:a49ff335a2189c6d3a801fcffe519f5de inherit pub_attribs_classdyno_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:a8b5f7805d779751d0a57a8d397173585 inherit pro_attribs_classdyno_1_1_o_base" id="r_a8b5f7805d779751d0a57a8d397173585"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_f_base.html">FBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#a8b5f7805d779751d0a57a8d397173585">fields_input</a></td></tr>
 <tr class="separator:a8b5f7805d779751d0a57a8d397173585 inherit pro_attribs_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,9 +419,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a>&gt;<br />
-class dyno::VolumeGenerator&lt; TDataType &gt;</div><p>This is a CPU-based implementation of grid-based signed distance field (level set) generator for triangle meshes. For more details, please refer to Robert Bridson's website (www.cs.ubc.ca/~rbridson). </p>
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00036">36</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
+class dyno::VolumeGenerator&lt; TDataType &gt;</div>
+<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00024">24</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a7737edd8bf3eab5a733c2482584bbe56" name="a7737edd8bf3eab5a733c2482584bbe56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7737edd8bf3eab5a733c2482584bbe56">&#9670;&#160;</a></span>Coord</h2>
@@ -466,7 +436,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00041">41</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00029">29</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +454,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00040">40</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00028">28</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -502,7 +472,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00042">42</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00030">30</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
 
 </div>
 </div>
@@ -524,7 +494,12 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00013">13</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00011">11</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_volume_generator_af5172942369d719d47bf7915a9c19818_cgraph.png" border="0" usemap="#aclassdyno_1_1_volume_generator_af5172942369d719d47bf7915a9c19818_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -553,7 +528,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00021">21</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00034">34</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
 
 </div>
 </div>
@@ -594,8 +569,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="a37baacb08b072256d89bdf3cf114301a" name="a37baacb08b072256d89bdf3cf114301a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37baacb08b072256d89bdf3cf114301a">&#9670;&#160;</a></span>DEF_INSTANCE_OUT()</h2>
+<a id="a73c2e26c80f8b4212ce70b09c74dbd52" name="a73c2e26c80f8b4212ce70b09c74dbd52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73c2e26c80f8b4212ce70b09c74dbd52">&#9670;&#160;</a></span>DEF_INSTANCE_OUT()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -605,13 +580,13 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         <tr>
           <td class="memname"><a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_INSTANCE_OUT </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_signed_distance_field.html">SignedDistanceField</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_level_set.html">LevelSet</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">GenSDF</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_level_set.html">LevelSet</a>&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -630,8 +605,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="a6ff68927eff2bf8a8968ba7aea9fa6cb" name="a6ff68927eff2bf8a8968ba7aea9fa6cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ff68927eff2bf8a8968ba7aea9fa6cb">&#9670;&#160;</a></span>DEF_VAR_IN() <span class="overload">[1/2]</span></h2>
+<a id="aed728768184dec757aaae93e067ab63f" name="aed728768184dec757aaae93e067ab63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed728768184dec757aaae93e067ab63f">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -639,7 +614,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_VAR_IN </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_VAR </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdyno_1_1_volume_generator.html#aeed86bef605e7c96dbf5ae7eb6f2f7be">Real</a>&#160;</td>
           <td class="paramname">, </td>
@@ -653,6 +628,12 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">0.&#160;</td>
+          <td class="paramname"><em>05f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">&quot;&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
@@ -666,8 +647,8 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 </div>
 </div>
-<a id="a6e5208f7812b6574e89271c6c9284cc9" name="a6e5208f7812b6574e89271c6c9284cc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e5208f7812b6574e89271c6c9284cc9">&#9670;&#160;</a></span>DEF_VAR_IN() <span class="overload">[2/2]</span></h2>
+<a id="ad5716fa96e5da72627033ef7df25a74a" name="ad5716fa96e5da72627033ef7df25a74a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5716fa96e5da72627033ef7df25a74a">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -675,7 +656,7 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_VAR_IN </td>
+          <td class="memname"><a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::DEF_VAR </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedyno.html#ac18e2e35a51adf79d17b0d7b86ce8bad">uint</a>&#160;</td>
           <td class="paramname">, </td>
@@ -689,6 +670,12 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">10&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">&quot;&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
@@ -699,92 +686,6 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7f9dcaaeee6cec5f9ca8da0eef4afc19" name="a7f9dcaaeee6cec5f9ca8da0eef4afc19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f9dcaaeee6cec5f9ca8da0eef4afc19">&#9670;&#160;</a></span>load()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::load </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00096">96</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a7feed69062a910121e96710706ad7083" name="a7feed69062a910121e96710706ad7083"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7feed69062a910121e96710706ad7083">&#9670;&#160;</a></span>loadClosedSurface()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::loadClosedSurface </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00047">47</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a26464f9cf37233f8993d7f79530a1355" name="a26464f9cf37233f8993d7f79530a1355"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26464f9cf37233f8993d7f79530a1355">&#9670;&#160;</a></span>makeLevelSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::makeLevelSet </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00243">243</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_volume_generator_a26464f9cf37233f8993d7f79530a1355_cgraph.png" border="0" usemap="#aclassdyno_1_1_volume_generator_a26464f9cf37233f8993d7f79530a1355_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_volume_generator_a26464f9cf37233f8993d7f79530a1355_cgraph" id="aclassdyno_1_1_volume_generator_a26464f9cf37233f8993d7f79530a1355_cgraph">
-<area shape="rect" title=" " alt="" coords="5,115,164,156"/>
-<area shape="rect" href="classdyno_1_1_array3_d_3_01_t_00_01_device_type_1_1_c_p_u_01_4.html#a291e56b764605f4f1359516222728534" title=" " alt="" coords="213,5,384,47"/>
-<area shape="rect" href="namespacedyno.html#abd3e5cc4bd0a05f79e85c2eff969be87" title=" " alt="" coords="252,71,345,98"/>
-<area shape="rect" href="namespacedyno.html#a3819361c7504d9037e21419bd3fa7658" title=" " alt="" coords="212,122,385,149"/>
-<area shape="rect" href="namespacedyno.html#a89e43b7baee781bd78bd62d0f89b5249" title=" " alt="" coords="652,191,787,232"/>
-<area shape="rect" href="namespacedyno.html#aa644342b8277f75165ed61b14b803107" title=" " alt="" coords="251,282,346,309"/>
-<area shape="rect" href="_vulkan_swap_chain_8cpp.html#a21b5a77bb7dd2ff2a93f6c086da96d46" title=" " alt="" coords="489,71,548,98"/>
-<area shape="rect" href="namespacedyno.html#a87255d64a4b1c4d8e8caa1299076b5e7" title=" " alt="" coords="459,122,578,149"/>
-<area shape="rect" href="namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146" title=" " alt="" coords="849,147,963,174"/>
-<area shape="rect" href="namespace_im_guizmo.html#a4328433ac685d1b796ba38b82ffba4f2" title=" " alt="" coords="851,198,961,225"/>
-<area shape="rect" href="namespacedyno.html#a3a3dcf75e9cb466e5b3d18c1372b8a57" title=" " alt="" coords="835,249,977,291"/>
-<area shape="rect" href="namespacedyno.html#abb97b1c79e707e4e317243bcdba764b2" title=" " alt="" coords="441,223,597,250"/>
-<area shape="rect" href="classdyno_1_1_array3_d_3_01_t_00_01_device_type_1_1_c_p_u_01_4.html#a36b072c5365ce4f7ac29de96d156d4f0" title=" " alt="" coords="433,275,604,316"/>
-<area shape="rect" href="classdyno_1_1_array3_d_3_01_t_00_01_device_type_1_1_c_p_u_01_4.html#ab8af1f5622da3405ab535f35efbde733" title=" " alt="" coords="433,340,604,381"/>
-<area shape="rect" href="classdyno_1_1_array3_d_3_01_t_00_01_device_type_1_1_c_p_u_01_4.html#a7b626c2ce39b277cbe6571e9d917f9c6" title=" " alt="" coords="433,405,604,447"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -815,158 +716,37 @@ template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b43
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_node.html#a268d036395a10abc9669a042d35d91cf">dyno::Node</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00026">26</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
-
+<p class="definition">Definition at line <a class="el" href="_volume_generator_8cpp_source.html#l00039">39</a> of file <a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_volume_generator_ad86ae450393b28df8aa7fd3194d654e9_cgraph.png" border="0" usemap="#aclassdyno_1_1_volume_generator_ad86ae450393b28df8aa7fd3194d654e9_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_volume_generator_ad86ae450393b28df8aa7fd3194d654e9_cgraph" id="aclassdyno_1_1_volume_generator_ad86ae450393b28df8aa7fd3194d654e9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,435,164,477"/>
+<area shape="rect" href="classdyno_1_1_distance_field3_d.html#a6c9e72d4fca1f0132b33a1b7c8c870b7" title=" " alt="" coords="212,402,365,443"/>
+<area shape="rect" href="classdyno_1_1_distance_field3_d.html#a73a5d15ba0f0bce3ba1b3db60d78726d" title=" " alt="" coords="212,467,365,509"/>
+<area shape="rect" href="namespacevgm.html#a5aa9a35291fc47a1bcc7ed8507e035d2" title=" " alt="" coords="413,409,516,436"/>
+<area shape="rect" href="namespacevgm.html#af5bfc8b3f1a44713d342b5caee51906e" title=" " alt="" coords="564,409,652,436"/>
+<area shape="rect" href="namespacevgm.html#a74219de8d7167b3dbf6467fe7c10097e" title=" " alt="" coords="705,372,775,399"/>
+<area shape="rect" href="namespacedyno.html#ac2d9bbc99f7fd7afbe6b0889eff86281" title=" " alt="" coords="700,447,780,473"/>
+<area shape="rect" href="namespacedyno.html#a04befed6e1a89e4c84fbc7009f951d26" title=" " alt="" coords="1415,320,1491,347"/>
+<area shape="rect" href="classdyno_1_1_complex.html#ac27c15f0b204f54a8d087b3ca2424371" title=" " alt="" coords="1539,181,1708,208"/>
+<area shape="rect" href="classdyno_1_1_complex.html#a39594d0d244d10ad92ff9c7934f27685" title=" " alt="" coords="1542,396,1705,423"/>
+<area shape="rect" href="classdyno_1_1_complex.html#a5442492a59f72a71da02081dcdf44b0f" title=" " alt="" coords="828,573,975,600"/>
+<area shape="rect" href="namespacedyno.html#ac5d2551b7bf3e82e743324ebf79c203d" title=" " alt="" coords="858,269,945,296"/>
+<area shape="rect" href="namespacedyno.html#a7fffe8a3dc13634202a34f0a8eaadeed" title=" " alt="" coords="1023,269,1101,296"/>
+<area shape="rect" href="namespacedyno.html#a45d70d118bacb800d4011955d52c6d21" title=" " alt="" coords="1415,219,1490,245"/>
+<area shape="rect" href="namespacedyno.html#a037afbb50b4ec5903f29b70db629d8cd" title=" " alt="" coords="1149,269,1236,296"/>
+<area shape="rect" href="namespacedyno.html#a611f1e43a5ee147f9c3f11d256378bbe" title=" " alt="" coords="1286,195,1365,221"/>
+<area shape="rect" href="namespacedyno.html#ad630ac9bb92289c2552bc043e1f0e4d5" title=" " alt="" coords="1284,320,1367,347"/>
+</map>
 </div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3c333f1032aebcb4693974aa2b59e317" name="a3c333f1032aebcb4693974aa2b59e317"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c333f1032aebcb4693974aa2b59e317">&#9670;&#160;</a></span>faceList</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a601e64d42b4a3b105db6d6ae57f625fa">CArray</a>&lt;<a class="el" href="namespacedyno.html#ad9ce92e90ca9acbd16ed6e8bdfd0ec47">Vec3ui</a>&gt; <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::faceList</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00066">66</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
-
-</div>
-</div>
-<a id="a880bcef9982d87386eee02916da18f2d" name="a880bcef9982d87386eee02916da18f2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a880bcef9982d87386eee02916da18f2d">&#9670;&#160;</a></span>maxPoint</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::maxPoint</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00073">73</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
-
-</div>
-</div>
-<a id="aed18d91492301643edcf22f0d09070bc" name="aed18d91492301643edcf22f0d09070bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed18d91492301643edcf22f0d09070bc">&#9670;&#160;</a></span>ni</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::ni</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00069">69</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
-
-</div>
-</div>
-<a id="a86c3dc3ea6783f7007af887e6957e55b" name="a86c3dc3ea6783f7007af887e6957e55b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86c3dc3ea6783f7007af887e6957e55b">&#9670;&#160;</a></span>nj</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::nj</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00070">70</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
-
-</div>
-</div>
-<a id="a9e49462b29eb2f21a295fa3b29e1f0c0" name="a9e49462b29eb2f21a295fa3b29e1f0c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e49462b29eb2f21a295fa3b29e1f0c0">&#9670;&#160;</a></span>nk</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">int</a> <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::nk</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00071">71</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
-
-</div>
-</div>
-<a id="ab6db8b9a8628d27f8897fff36af8579a" name="ab6db8b9a8628d27f8897fff36af8579a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6db8b9a8628d27f8897fff36af8579a">&#9670;&#160;</a></span>origin</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::origin</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00072">72</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
-
-</div>
-</div>
-<a id="add3fd0ff801142f541281c3fd66b5fda" name="add3fd0ff801142f541281c3fd66b5fda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add3fd0ff801142f541281c3fd66b5fda">&#9670;&#160;</a></span>phi</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#aa71b21e34f0e4d1ab5b6834038426f01">CArray3f</a> <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::phi</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00074">74</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
-
-</div>
-</div>
-<a id="ad40ed00b301febeecc9e7a3a3469a00a" name="ad40ed00b301febeecc9e7a3a3469a00a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad40ed00b301febeecc9e7a3a3469a00a">&#9670;&#160;</a></span>vertList</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">typename</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a601e64d42b4a3b105db6d6ae57f625fa">CArray</a>&lt;<a class="el" href="classdyno_1_1_volume_generator.html#a7737edd8bf3eab5a733c2482584bbe56">Coord</a>&gt; <a class="el" href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a>&lt; <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">TDataType</a> &gt;::vertList</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_volume_generator_8h_source.html#l00067">67</a> of file <a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>E:/Peridyno/peridyno/src/Dynamics/Cuda/Volume/<a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a></li>
-<li>E:/Peridyno/peridyno/src/Dynamics/Cuda/Volume/<a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a></li>
+<li>D:/Peridyno/peridyno/src/Dynamics/Cuda/Volume/<a class="el" href="_volume_generator_8h_source.html">VolumeGenerator.h</a></li>
+<li>D:/Peridyno/peridyno/src/Dynamics/Cuda/Volume/<a class="el" href="_volume_generator_8cpp_source.html">VolumeGenerator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

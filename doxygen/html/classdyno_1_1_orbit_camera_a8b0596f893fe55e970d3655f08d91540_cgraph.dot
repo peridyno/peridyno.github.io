@@ -21,4 +21,6 @@ digraph "dyno::OrbitCamera::translateToPoint"
   Node6 -> Node8 [id="edge7_Node000006_Node000008",color="steelblue1",style="solid",tooltip=" "];
   Node8 [id="Node000008",label="dyno::polar",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacedyno.html#ac5d2551b7bf3e82e743324ebf79c203d",tooltip=" "];
   Node4 -> Node6 [id="edge8_Node000004_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node9 [id="edge9_Node000003_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="dyno::Quat::rotate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classdyno_1_1_quat.html#aecb3f17108bfb3ed31c7f6aa97f300a9",tooltip="Rotate a vector by the quaternion, guarantee the quaternion is normalized before rotating the vector."];
 }

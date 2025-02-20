@@ -43,7 +43,7 @@ digraph "dyno::CoSemiImplicitHyperelasticitySolver&lt; TDataType &gt;"
   Node17 [id="Node000017",label="dyno::VkDeviceArray\l\< Matrix \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_vk_device_array.html",tooltip=" "];
   Node12 -> Node17 [id="edge20_Node000017_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node10 -> Node1 [id="edge21_Node000001_Node000010",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_alpha\nm_energy\nm_fraction\nm_gradientMagnitude\nm_volume",fontcolor="grey" ];
-  Node14 -> Node1 [id="edge22_Node000001_Node000014",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mEnergyGradient\nmPosBuf_March\nm_eigenValues\nm_fixedPos\nm_gradient\nm_source\ny_current\ny_gradC\ny_pre\ny_residual\n...",fontcolor="grey" ];
+  Node14 -> Node1 [id="edge22_Node000001_Node000014",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" mEnergyGradient\nmPosBuf_March\nm_eigenValues\nm_fixedPos\nm_gradient\nm_source\ny_current\ny_gradC\ny_next\ny_pre\n...",fontcolor="grey" ];
   Node16 -> Node1 [id="edge23_Node000001_Node000016",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_A\nm_F\nm_invF\nm_invK\nm_matR\nm_matU\nm_matV",fontcolor="grey" ];
   Node18 -> Node1 [id="edge24_Node000001_Node000018",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=" m_bFixed\nm_validOfF\nm_validOfK",fontcolor="grey" ];
   Node18 [id="Node000018",label="dyno::Array\< T, DeviceType\l::GPU \>\< bool \>",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$classdyno_1_1_array_3_01_t_00_01_device_type_1_1_g_p_u_01_4.html",tooltip=" "];

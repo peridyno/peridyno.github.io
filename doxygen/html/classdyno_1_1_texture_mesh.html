@@ -22,7 +22,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;0.9.2</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
    </div>
   </td>
  </tr>
@@ -112,8 +112,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9dac4fd16d9dd87c99e36ac320eef4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4050c415b251652d348a43baf0ee0b65" id="r_a4050c415b251652d348a43baf0ee0b65"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_material.html">Material</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_texture_mesh.html#a4050c415b251652d348a43baf0ee0b65">materials</a> ()</td></tr>
 <tr class="separator:a4050c415b251652d348a43baf0ee0b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a44b9b3fcaafafd0c4c301f79d42f4c" id="r_a1a44b9b3fcaafafd0c4c301f79d42f4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_texture_mesh.html#a1a44b9b3fcaafafd0c4c301f79d42f4c">clear</a> ()</td></tr>
-<tr class="separator:a1a44b9b3fcaafafd0c4c301f79d42f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6423f4e913ba4301f2b8352b9a50518d" id="r_a6423f4e913ba4301f2b8352b9a50518d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_texture_mesh.html#a6423f4e913ba4301f2b8352b9a50518d">merge</a> (<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::shared_ptr&lt; <a class="el" href="classdyno_1_1_texture_mesh.html">TextureMesh</a> &gt; &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">texMesh01</a>, <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::shared_ptr&lt; <a class="el" href="classdyno_1_1_texture_mesh.html">TextureMesh</a> &gt; &amp;<a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">texMesh02</a>)</td></tr>
+<tr class="separator:a6423f4e913ba4301f2b8352b9a50518d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b37eabb0cbee7b314b41b0c15b2bd8" id="r_ad6b37eabb0cbee7b314b41b0c15b2bd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_texture_mesh.html#ad6b37eabb0cbee7b314b41b0c15b2bd8">clear</a> ()</td></tr>
+<tr class="separator:ad6b37eabb0cbee7b314b41b0c15b2bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_topology_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdyno_1_1_topology_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_topology_module.html">dyno::TopologyModule</a></td></tr>
 <tr class="memitem:af25ade16762059f06ca9a2143ac34ebc inherit pub_methods_classdyno_1_1_topology_module" id="r_af25ade16762059f06ca9a2143ac34ebc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_topology_module.html#af25ade16762059f06ca9a2143ac34ebc">TopologyModule</a> ()</td></tr>
 <tr class="separator:af25ade16762059f06ca9a2143ac34ebc inherit pub_methods_classdyno_1_1_topology_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -331,8 +333,6 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_texture_mesh_8cpp_source.html#l00005">5</a> of file <a class="el" href="_texture_mesh_8cpp_source.html">TextureMesh.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ad32b001fa1a21d73ddc02187ddf25169" name="ad32b001fa1a21d73ddc02187ddf25169"></a>
@@ -358,35 +358,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_texture_mesh_8cpp_source.html#l00010">10</a> of file <a class="el" href="_texture_mesh_8cpp_source.html">TextureMesh.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1a44b9b3fcaafafd0c4c301f79d42f4c" name="a1a44b9b3fcaafafd0c4c301f79d42f4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a44b9b3fcaafafd0c4c301f79d42f4c">&#9670;&#160;</a></span>clear()</h2>
+<a id="ad6b37eabb0cbee7b314b41b0c15b2bd8" name="ad6b37eabb0cbee7b314b41b0c15b2bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6b37eabb0cbee7b314b41b0c15b2bd8">&#9670;&#160;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">virtual</a> <a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> dyno::TextureMesh::clear </td>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> dyno::TextureMesh::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00085">85</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
 
 </div>
 </div>
@@ -414,6 +402,34 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00082">82</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
+
+</div>
+</div>
+<a id="a6423f4e913ba4301f2b8352b9a50518d" name="a6423f4e913ba4301f2b8352b9a50518d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6423f4e913ba4301f2b8352b9a50518d">&#9670;&#160;</a></span>merge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">void</a> dyno::TextureMesh::merge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::shared_ptr&lt; <a class="el" href="classdyno_1_1_texture_mesh.html">TextureMesh</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>texMesh01</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a75bb648935aee05bc4e2200c1b430297">const</a> std::shared_ptr&lt; <a class="el" href="classdyno_1_1_texture_mesh.html">TextureMesh</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>texMesh02</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -573,7 +589,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00101">101</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00094">94</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
 
 </div>
 </div>
@@ -597,7 +613,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00097">97</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00090">90</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
 
 </div>
 </div>
@@ -621,7 +637,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00099">99</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00092">92</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
 
 </div>
 </div>
@@ -645,7 +661,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00102">102</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00095">95</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
 
 </div>
 </div>
@@ -669,7 +685,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00098">98</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00091">91</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
 
 </div>
 </div>
@@ -693,13 +709,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00096">96</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_texture_mesh_8h_source.html#l00089">89</a> of file <a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>E:/Peridyno/peridyno/src/Topology/Cuda/Topology/<a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a></li>
-<li>E:/Peridyno/peridyno/src/Topology/Cuda/Topology/<a class="el" href="_texture_mesh_8cpp_source.html">TextureMesh.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>D:/Peridyno/peridyno/src/Topology/Cuda/Topology/<a class="el" href="_texture_mesh_8h_source.html">TextureMesh.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
