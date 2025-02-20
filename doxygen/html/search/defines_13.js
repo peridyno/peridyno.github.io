@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['v_0',['v',['../im_gu_i_z_m_oquat_8cpp.html#a0372b3ee8076c76ae46501c2ebbb9250',1,'V:&#160;imGuIZMOquat.cpp'],['../im_gu_i_z_m_oquat_8cpp.html#aa355b9354aa3a9a31c8810e654f0352d',1,'V:&#160;imGuIZMOquat.cpp'],['../im_gu_i_z_m_oquat_8cpp.html#af5a7c1210f9b5ad39b88f31ec6920c06',1,'V:&#160;imGuIZMOquat.cpp'],['../im_gu_i_z_m_oquat_8cpp.html#af5a7c1210f9b5ad39b88f31ec6920c06',1,'V:&#160;imGuIZMOquat.cpp']]],
+  ['v_0',['V',['../im_gu_i_z_m_oquat_8cpp.html#a0372b3ee8076c76ae46501c2ebbb9250',1,'V:&#160;imGuIZMOquat.cpp'],['../im_gu_i_z_m_oquat_8cpp.html#aa355b9354aa3a9a31c8810e654f0352d',1,'V:&#160;imGuIZMOquat.cpp'],['../im_gu_i_z_m_oquat_8cpp.html#af5a7c1210f9b5ad39b88f31ec6920c06',1,'V:&#160;imGuIZMOquat.cpp'],['../im_gu_i_z_m_oquat_8cpp.html#af5a7c1210f9b5ad39b88f31ec6920c06',1,'V:&#160;imGuIZMOquat.cpp']]],
   ['vec2_5fprecision_1',['VEC2_PRECISION',['../vg_math_8h.html#a411ed457179c7a01a56a4bc03c35c095',1,'vgMath.h']]],
   ['vec2_5ft_2',['VEC2_T',['../vg_math_8h.html#a78199e01e0d9421c6e2ef12cf1477d6f',1,'vgMath.h']]],
   ['vec3_5fprecision_3',['VEC3_PRECISION',['../vg_math_8h.html#a27d3bde57451d340163438349855dcd8',1,'vgMath.h']]],
@@ -15,6 +15,5 @@ var searchData=
   ['vk_5fflags_5fnone_12',['VK_FLAGS_NONE',['../_vulkan_tools_8h.html#ade63d9cb954ff5437466d0c00f65e116',1,'VulkanTools.h']]],
   ['vkfft_5fbackend_13',['VKFFT_BACKEND',['../_vk_f_f_t___base_8h.html#af9266631fbe3f0ad37c69a764f63e884',1,'VkFFT_Base.h']]],
   ['vma_5fimplementation_14',['VMA_IMPLEMENTATION',['../_vk_context_8cpp.html#abea80547807da765ebe9fce1c6dd6a8d',1,'VkContext.cpp']]],
-  ['vulkanandroid_5fh_15',['VULKANANDROID_H',['../_vulkan_android_8h.html#a6588d6747f8c35cad70d557274c26ab9',1,'VulkanAndroid.h']]],
-  ['vulkanandroid_5fhpp_16',['VULKANANDROID_HPP',['../_vulkan_android_8h.html#ad149a8b1e82fab27c7a07f0a2b48af58',1,'VulkanAndroid.h']]]
+  ['vulkanandroid_5fh_15',['VULKANANDROID_H',['../_vulkan_android_8h.html#a6588d6747f8c35cad70d557274c26ab9',1,'VulkanAndroid.h']]]
 ];

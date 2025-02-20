@@ -1,52 +1,78 @@
 <map id="VkApp::renderLoop" name="VkApp::renderLoop">
-<area shape="rect" id="node1" title="Entry point for the main render loop." alt="" coords="5,497,139,524"/>
-<area shape="rect" id="node2" href="$namespacedyno.html#a611f1e43a5ee147f9c3f11d256378bbe" title=" " alt="" coords="1130,93,1209,120"/>
-<area shape="rect" id="node3" href="$classdyno_1_1_vk_context.html#af9eb048735ab3316470619f9bf0d4acf" title=" " alt="" coords="1323,804,1525,831"/>
-<area shape="rect" id="node4" href="$class_vk_app.html#a271496c24fa0c1d5685741d5161be134" title=" " alt="" coords="187,624,317,651"/>
-<area shape="rect" id="node8" href="$class_vk_app.html#ab63b7933ea35df31039ed96b36d75e75" title="(Pure virtual) Render function to be implemented by the sample application" alt="" coords="391,693,497,720"/>
-<area shape="rect" id="node27" href="$class_vk_app.html#a6404e5667eef136f91987f9f525dc688" title="(Virtual) Called when the camera view has changed" alt="" coords="1097,569,1241,596"/>
-<area shape="rect" id="node31" href="$class_camera.html#a793f9f0edff8984a65d7d908e0ff481c" title=" " alt="" coords="387,371,501,397"/>
-<area shape="rect" id="node44" href="$class_vk_app.html#aca66237cd22fe6e242aab6bd2c3b2cdc" title=" " alt="" coords="369,1036,519,1063"/>
-<area shape="rect" id="node48" href="$class_camera.html#aa61268d90d49b7788689bcd8c40ffbc8" title=" " alt="" coords="198,421,306,448"/>
-<area shape="rect" id="node49" href="$class_camera.html#ad0954e6eee976784756b2f2889b12c4b" title=" " alt="" coords="189,472,315,499"/>
-<area shape="rect" id="node50" href="$class_camera.html#a46ca44bc72dd940b88920203a9697367" title=" " alt="" coords="375,219,513,245"/>
-<area shape="rect" id="node5" href="$class_vk_app.html#a19d6febc4b8291e89fd62135806d9e65" title=" " alt="" coords="365,807,523,833"/>
-<area shape="rect" id="node7" href="$class_camera.html#a247ecfb88dbc9fd11ea3177dabd4fd99" title=" " alt="" coords="605,472,719,499"/>
-<area shape="rect" id="node6" href="$classdyno_1_1_vk_system.html#ae9dfacd8ffcaa69bd39faec9ab24c66e" title=" " alt="" coords="574,1011,750,1037"/>
-<area shape="rect" id="node9" href="$classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="1573,881,1748,922"/>
-<area shape="rect" id="node11" href="$classdyno_1_1_vk_context.html#ad6404255ba055cbe9873651fffb4266e" title=" " alt="" coords="821,843,997,885"/>
-<area shape="rect" id="node12" href="$classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="1573,617,1748,658"/>
-<area shape="rect" id="node14" href="$class_vk_app.html#a0162143259d08706c042d08fbebe4706" title=" " alt="" coords="587,693,737,720"/>
-<area shape="rect" id="node29" href="$class_vk_app.html#a77aa2460391395eadb236bd13826b56e" title="Presents the current image to the swap chain." alt="" coords="589,756,735,783"/>
-<area shape="rect" id="node10" href="$classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="1796,881,1971,922"/>
-<area shape="rect" id="node13" href="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="1796,617,1971,658"/>
-<area shape="rect" id="node15" href="$class_vulkan_swap_chain.html#ae4c017063e104df6af453f511476c5f2" title=" " alt="" coords="820,675,997,717"/>
-<area shape="rect" id="node16" href="$class_vk_app.html#a7cd16d7aa5e59f3320f4db4203d9c6c2" title=" " alt="" coords="833,741,984,768"/>
-<area shape="rect" id="node17" href="$class_vk_app.html#a38047afc15c4ecf19d652c4b8c62c544" title="(Virtual) Called when resources have been recreated that require a rebuild of the command buffers (e...." alt="" coords="1072,1136,1267,1163"/>
-<area shape="rect" id="node24" href="$class_vk_app.html#aebc0a020547b33662c7ab153e0f5ee78" title=" " alt="" coords="1067,741,1271,768"/>
-<area shape="rect" id="node25" href="$class_vk_app.html#a2cab8bd97fb34c53c75c5af7497afdca" title=" " alt="" coords="1064,843,1275,869"/>
-<area shape="rect" id="node26" href="$classvks_1_1_u_i_overlay.html#aa22c7b7099c6628c2b997445827a71d0" title=" " alt="" coords="1096,691,1243,717"/>
-<area shape="rect" id="node18" href="$class_vk_app.html#a2d514ecd18dc274f4117753e6c299b32" title=" " alt="" coords="1324,881,1524,922"/>
-<area shape="rect" id="node19" href="$namespacevks_1_1initializers.html#ab43b98c7cf767b67fd3501fedb4a8348" title=" " alt="" coords="1341,1011,1507,1053"/>
-<area shape="rect" id="node20" href="$class_vk_app.html#a0533d19e918fc69c112df4e80d75f50a" title="Adds the drawing commands for the ImGui overlay to the given command buffer." alt="" coords="1370,1217,1478,1244"/>
-<area shape="rect" id="node21" href="$namespacevks_1_1initializers.html#accf10566e09a15387484562d7b62fb1d" title=" " alt="" coords="1603,1257,1718,1298"/>
-<area shape="rect" id="node22" href="$namespacevks_1_1initializers.html#ad8d2fa8d651cf0b1a1d6ee1190dd318c" title=" " alt="" coords="1603,1165,1718,1206"/>
-<area shape="rect" id="node23" href="$namespacevks_1_1initializers.html#a9a2b0d6286daad93f68a4d9100a8f354" title=" " alt="" coords="1353,1101,1495,1142"/>
-<area shape="rect" id="node28" href="$classdyno_1_1_vk_visual_module.html#ad5176c02e568be37a4a5163c96e473bc" title=" " alt="" coords="1348,558,1500,599"/>
-<area shape="rect" id="node30" href="$class_vulkan_swap_chain.html#aa86b2b32130ae574aa25ac0c56c45a71" title=" " alt="" coords="801,792,1016,819"/>
-<area shape="rect" id="node32" href="$namespacedyno.html#a7fffe8a3dc13634202a34f0a8eaadeed" title=" " alt="" coords="623,168,701,195"/>
-<area shape="rect" id="node36" href="$namespacedyno.html#a45d70d118bacb800d4011955d52c6d21" title=" " alt="" coords="1387,219,1461,245"/>
-<area shape="rect" id="node38" href="$namespacevgm.html#ac98673597446f419b3b887a33eede1f9" title=" " alt="" coords="619,269,705,296"/>
-<area shape="rect" id="node39" href="$namespacevgm.html#a9e01535a47e715a94ccd8c8336920c4e" title=" " alt="" coords="607,117,717,144"/>
-<area shape="rect" id="node41" href="$namespacevgm.html#af523d02058f73a0081545fca76158587" title=" " alt="" coords="861,421,956,448"/>
-<area shape="rect" id="node42" href="$class_camera.html#a8fe5c71a390571a861ad8afd99dfdea3" title=" " alt="" coords="573,421,751,448"/>
-<area shape="rect" id="node33" href="$namespacedyno.html#a037afbb50b4ec5903f29b70db629d8cd" title=" " alt="" coords="865,219,952,245"/>
-<area shape="rect" id="node34" href="$classdyno_1_1_complex.html#ac27c15f0b204f54a8d087b3ca2424371" title=" " alt="" coords="1576,345,1745,372"/>
-<area shape="rect" id="node35" href="$classdyno_1_1_complex.html#a39594d0d244d10ad92ff9c7934f27685" title=" " alt="" coords="1579,181,1742,208"/>
-<area shape="rect" id="node37" href="$namespacedyno.html#ad630ac9bb92289c2552bc043e1f0e4d5" title=" " alt="" coords="1128,269,1211,296"/>
-<area shape="rect" id="node40" href="$namespacevgm.html#af5bfc8b3f1a44713d342b5caee51906e" title=" " alt="" coords="865,93,953,120"/>
-<area shape="rect" id="node43" href="$namespacevgm.html#a2de7e4c7a17d855ec7a17058852709f5" title=" " alt="" coords="857,472,960,499"/>
-<area shape="rect" id="node45" href="$class_vk_app.html#afb2cb5448a5a8cfec25f860b05d96c3c" title="(Virtual) Called when the UI overlay is updating, can be used to add custom elements to the overlay" alt="" coords="571,1061,753,1088"/>
-<area shape="rect" id="node46" href="$classvks_1_1_u_i_overlay.html#af37f79e6b1fdf62e23c5da038f20034f" title=" " alt="" coords="587,1112,737,1139"/>
-<area shape="rect" id="node47" href="$classdyno_1_1_vk_context.html#a028ed53563ea1872e4fc37bd38508d9b" title=" " alt="" coords="811,1112,1007,1139"/>
+<area shape="rect" id="Node000001" title="Entry point for the main render loop." alt="" coords="5,473,138,500"/>
+<area shape="rect" id="Node000002" href="$class_vk_app.html#a271496c24fa0c1d5685741d5161be134" title=" " alt="" coords="186,499,316,525"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,493,171,498,170,503,138,499"/>
+<area shape="rect" id="Node000006" href="$class_vk_app.html#ab63b7933ea35df31039ed96b36d75e75" title="(Pure virtual) Render function to be implemented by the sample application" alt="" coords="391,321,495,348"/>
+<area shape="poly" id="edge44_Node000001_Node000006" title=" " alt="" coords="105,470,394,352,396,357,107,475"/>
+<area shape="rect" id="Node000026" href="$class_vk_app.html#a6404e5667eef136f91987f9f525dc688" title="(Virtual) Called when the camera view has changed" alt="" coords="1072,397,1220,424"/>
+<area shape="poly" id="edge46_Node000001_Node000026" title=" " alt="" coords="138,477,277,465,442,459,665,459,829,454,992,436,1063,425,1063,430,992,441,829,459,665,464,442,464,278,470,138,482"/>
+<area shape="rect" id="Node000029" href="$class_vk_app.html#aca66237cd22fe6e242aab6bd2c3b2cdc" title=" " alt="" coords="367,549,519,576"/>
+<area shape="poly" id="edge45_Node000001_Node000029" title=" " alt="" coords="99,498,139,518,186,535,271,551,352,558,351,564,270,556,185,540,137,523,96,503"/>
+<area shape="rect" id="Node000003" href="$class_vk_app.html#a19d6febc4b8291e89fd62135806d9e65" title=" " alt="" coords="364,499,522,525"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="316,509,348,509,348,515,316,515"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="261,497,304,448,362,390,407,355,411,359,366,394,308,452,265,500"/>
+<area shape="poly" id="edge43_Node000002_Node000026" title=" " alt="" coords="307,495,364,484,557,457,750,437,1057,413,1057,418,750,442,558,462,364,489,308,501"/>
+<area shape="poly" id="edge39_Node000002_Node000029" title=" " alt="" coords="305,523,376,542,374,547,304,529"/>
+<area shape="rect" id="Node000004" href="$classdyno_1_1_vk_system.html#ae9dfacd8ffcaa69bd39faec9ab24c66e" title=" " alt="" coords="576,499,751,525"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="522,509,560,509,560,515,522,515"/>
+<area shape="rect" id="Node000005" href="$classdyno_1_1_vk_system.html#afdc505f686ef49fc7e88a3ff2038411a" title=" " alt="" coords="805,499,992,525"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="751,509,789,509,789,515,751,515"/>
+<area shape="rect" id="Node000007" href="$classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="1550,288,1723,331"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="451,319,508,244,553,192,607,138,670,87,740,44,778,27,816,14,856,6,897,3,1148,3,1225,12,1331,35,1434,66,1475,82,1503,98,1545,138,1580,185,1606,232,1624,273,1619,275,1601,235,1575,188,1541,141,1500,102,1472,87,1432,71,1330,40,1225,17,1147,8,897,8,857,11,818,19,780,32,743,48,673,91,611,142,557,196,512,247,456,323"/>
+<area shape="rect" id="Node000009" href="$classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="1550,389,1723,432"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="496,337,673,350,897,357,1148,357,1251,361,1355,369,1535,391,1534,397,1354,374,1251,366,1147,363,897,363,673,355,495,342"/>
+<area shape="rect" id="Node000011" href="$class_vk_app.html#a0162143259d08706c042d08fbebe4706" title=" " alt="" coords="589,296,738,323"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="495,326,573,317,574,322,496,331"/>
+<area shape="rect" id="Node000028" href="$class_vk_app.html#a77aa2460391395eadb236bd13826b56e" title="Presents the current image to the swap chain." alt="" coords="591,245,736,272"/>
+<area shape="poly" id="edge37_Node000006_Node000028" title=" " alt="" coords="475,318,569,281,592,274,594,279,571,287,477,323"/>
+<area shape="rect" id="Node000008" href="$classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="1771,288,1944,331"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1723,307,1755,307,1755,312,1723,312"/>
+<area shape="rect" id="Node000010" href="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="1771,389,1944,432"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1723,408,1755,408,1755,413,1723,413"/>
+<area shape="rect" id="Node000012" href="$class_vk_app.html#a7cd16d7aa5e59f3320f4db4203d9c6c2" title=" " alt="" coords="822,245,975,272"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="728,293,818,273,819,278,729,298"/>
+<area shape="rect" id="Node000013" href="$class_vk_app.html#a38047afc15c4ecf19d652c4b8c62c544" title="(Virtual) Called when resources have been recreated that require a rebuild of the command buffers (e...." alt="" coords="1048,581,1244,608"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="912,271,1128,567,1124,570,907,274"/>
+<area shape="rect" id="Node000020" href="$class_vk_app.html#aebc0a020547b33662c7ab153e0f5ee78" title=" " alt="" coords="1044,144,1249,171"/>
+<area shape="poly" id="edge26_Node000012_Node000020" title=" " alt="" coords="920,242,973,211,1039,180,1061,173,1062,178,1041,185,975,216,923,247"/>
+<area shape="rect" id="Node000022" href="$class_vk_app.html#a2cab8bd97fb34c53c75c5af7497afdca" title=" " alt="" coords="1040,296,1252,323"/>
+<area shape="poly" id="edge29_Node000012_Node000022" title=" " alt="" coords="968,270,1063,290,1062,295,967,275"/>
+<area shape="rect" id="Node000023" href="$class_vk_app.html#a885893a4870100949051d768130e9520" title="(Virtual) Setup default depth and stencil views" alt="" coords="1058,43,1234,69"/>
+<area shape="poly" id="edge30_Node000012_Node000023" title=" " alt="" coords="904,244,923,210,952,165,991,119,1038,79,1048,74,1051,78,1042,84,995,122,956,168,927,213,909,246"/>
+<area shape="rect" id="Node000024" href="$class_vk_app.html#a3f057963f839559ea6d71e2163417997" title="(Virtual) Setup default framebuffers for all requested swapchain images" alt="" coords="1060,93,1232,120"/>
+<area shape="poly" id="edge31_Node000012_Node000024" title=" " alt="" coords="909,243,961,188,998,156,1039,130,1052,123,1055,128,1041,134,1001,161,964,192,913,247"/>
+<area shape="rect" id="Node000025" href="$class_vk_app.html#a8a926ccea752b2a139453f054ca1480d" title=" " alt="" coords="1062,195,1230,221"/>
+<area shape="poly" id="edge32_Node000012_Node000025" title=" " alt="" coords="967,242,1062,222,1063,228,968,247"/>
+<area shape="poly" id="edge33_Node000012_Node000026" title=" " alt="" coords="923,270,1111,387,1108,391,920,275"/>
+<area shape="rect" id="Node000027" href="$class_vk_app.html#a9b734787be2c77f9fb709008aacd0a4e" title="(Virtual) Called when the window has been resized, can be used by the sample application to recreate ..." alt="" coords="1066,245,1226,272"/>
+<area shape="poly" id="edge36_Node000012_Node000027" title=" " alt="" coords="976,256,1050,256,1050,261,976,261"/>
+<area shape="rect" id="Node000014" href="$class_vk_app.html#a2d514ecd18dc274f4117753e6c299b32" title=" " alt="" coords="1300,448,1502,491"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="1166,578,1224,541,1299,500,1313,494,1315,499,1302,505,1227,545,1169,583"/>
+<area shape="rect" id="Node000015" href="$namespacevks_1_1initializers.html#ab43b98c7cf767b67fd3501fedb4a8348" title=" " alt="" coords="1317,605,1485,648"/>
+<area shape="poly" id="edge16_Node000013_Node000015" title=" " alt="" coords="1245,604,1302,612,1302,617,1245,610"/>
+<area shape="rect" id="Node000016" href="$class_vk_app.html#a0533d19e918fc69c112df4e80d75f50a" title="Adds the drawing commands for the ImGui overlay to the given command buffer." alt="" coords="1346,723,1456,749"/>
+<area shape="poly" id="edge17_Node000013_Node000016" title=" " alt="" coords="1165,607,1223,652,1261,679,1302,702,1333,715,1330,720,1299,706,1258,683,1220,657,1162,611"/>
+<area shape="rect" id="Node000017" href="$namespacevks_1_1initializers.html#accf10566e09a15387484562d7b62fb1d" title=" " alt="" coords="1578,669,1694,712"/>
+<area shape="poly" id="edge22_Node000013_Node000017" title=" " alt="" coords="1174,606,1231,633,1301,657,1369,671,1439,680,1563,688,1562,693,1439,686,1369,677,1300,663,1229,638,1172,611"/>
+<area shape="rect" id="Node000018" href="$namespacevks_1_1initializers.html#ad8d2fa8d651cf0b1a1d6ee1190dd318c" title=" " alt="" coords="1578,763,1694,805"/>
+<area shape="poly" id="edge25_Node000013_Node000018" title=" " alt="" coords="1157,607,1178,640,1210,682,1252,725,1276,744,1301,759,1367,782,1437,792,1504,795,1563,791,1563,797,1504,800,1436,798,1366,787,1299,764,1273,748,1248,729,1206,686,1173,643,1153,610"/>
+<area shape="rect" id="Node000019" href="$namespacevks_1_1initializers.html#a9a2b0d6286daad93f68a4d9100a8f354" title=" " alt="" coords="1330,539,1472,581"/>
+<area shape="poly" id="edge23_Node000013_Node000019" title=" " alt="" coords="1245,579,1314,569,1315,574,1245,584"/>
+<area shape="poly" id="edge14_Node000014_Node000007" title=" " alt="" coords="1433,445,1589,337,1592,342,1436,450"/>
+<area shape="poly" id="edge15_Node000014_Node000009" title=" " alt="" coords="1488,445,1534,433,1535,439,1490,450"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1456,723,1562,702,1563,707,1457,728"/>
+<area shape="poly" id="edge20_Node000016_Node000018" title=" " alt="" coords="1457,745,1563,767,1562,772,1456,750"/>
+<area shape="poly" id="edge19_Node000017_Node000017" title=" " alt="" coords="1594,669,1593,659,1600,650,1614,645,1636,643,1660,645,1674,651,1672,656,1659,650,1636,648,1615,650,1603,655,1598,661,1599,668"/>
+<area shape="poly" id="edge21_Node000018_Node000018" title=" " alt="" coords="1594,763,1593,753,1600,744,1614,738,1636,736,1660,738,1674,745,1672,749,1659,744,1636,741,1615,743,1603,748,1598,754,1599,762"/>
+<area shape="poly" id="edge24_Node000019_Node000019" title=" " alt="" coords="1356,539,1355,529,1362,520,1378,514,1401,512,1426,514,1441,521,1439,526,1425,520,1401,517,1379,519,1365,524,1360,530,1362,538"/>
+<area shape="rect" id="Node000021" href="$namespacevks_1_1initializers.html#a56e8b0b74504c6870b752df0ec9052be" title=" " alt="" coords="1310,136,1492,179"/>
+<area shape="poly" id="edge27_Node000020_Node000021" title=" " alt="" coords="1249,155,1295,155,1295,160,1249,160"/>
+<area shape="poly" id="edge28_Node000021_Node000021" title=" " alt="" coords="1356,136,1355,126,1362,117,1378,111,1401,109,1426,112,1441,118,1439,123,1425,117,1401,115,1379,117,1365,121,1360,127,1362,135"/>
+<area shape="poly" id="edge34_Node000026_Node000007" title=" " alt="" coords="1214,394,1534,328,1535,333,1215,399"/>
+<area shape="poly" id="edge35_Node000026_Node000009" title=" " alt="" coords="1220,408,1534,408,1534,413,1220,413"/>
+<area shape="poly" id="edge38_Node000028_Node000012" title=" " alt="" coords="736,256,806,256,806,261,736,261"/>
+<area shape="poly" id="edge41_Node000029_Node000004" title=" " alt="" coords="504,546,587,527,588,532,505,551"/>
+<area shape="poly" id="edge40_Node000029_Node000013" title=" " alt="" coords="520,563,1032,587,1032,592,520,569"/>
+<area shape="rect" id="Node000030" href="$class_vk_app.html#afb2cb5448a5a8cfec25f860b05d96c3c" title="(Virtual) Called when the UI overlay is updating, can be used to add custom elements to the overlay" alt="" coords="570,600,757,627"/>
+<area shape="poly" id="edge42_Node000029_Node000030" title=" " alt="" coords="505,574,588,593,587,599,504,579"/>
 </map>

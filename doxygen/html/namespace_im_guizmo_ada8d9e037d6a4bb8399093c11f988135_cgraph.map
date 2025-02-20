@@ -1,18 +1,36 @@
 <map id="ImGuizmo::ComputeContext" name="ImGuizmo::ComputeContext">
-<area shape="rect" id="node1" title=" " alt="" coords="5,297,192,324"/>
-<area shape="rect" id="node2" href="$namespace_im_guizmo.html#a2a49b7afd89c853316c331957562ca35" title=" " alt="" coords="240,134,449,161"/>
-<area shape="rect" id="node3" href="$struct_im_guizmo_1_1matrix__t.html#a8a0e24127eb60b7b4e0049488569c567" title=" " alt="" coords="521,30,657,71"/>
-<area shape="rect" id="node5" href="$namespace_im_guizmo.html#a640be01f179c80230cd4b7ee9b298456" title=" " alt="" coords="515,233,663,260"/>
-<area shape="rect" id="node8" href="$struct_im_guizmo_1_1vec__t.html#a5fdc55e19fe7a468751ab9a8a77ebf23" title=" " alt="" coords="963,62,1129,89"/>
-<area shape="rect" id="node9" href="$struct_im_guizmo_1_1vec__t.html#aaaafbe7ea0ca56793617e8d085a78268" title=" " alt="" coords="497,96,681,122"/>
-<area shape="rect" id="node10" href="$namespace_im_guizmo.html#a672e34453f8e0303f8d268e29422fe1d" title=" " alt="" coords="244,560,445,602"/>
-<area shape="rect" id="node11" href="$struct_im_guizmo_1_1vec__t.html#a904cb32e9200475ae5a9f5c918816dc2" title=" " alt="" coords="497,560,681,602"/>
-<area shape="rect" id="node12" href="$struct_im_guizmo_1_1matrix__t.html#a230d5d19800a0aca753e1c324dcda9d7" title=" " alt="" coords="277,378,413,419"/>
-<area shape="rect" id="node13" href="$struct_im_guizmo_1_1vec__t.html#a3a9bbf64bfa707364b68813dd46a5d5b" title=" " alt="" coords="271,444,418,470"/>
-<area shape="rect" id="node14" href="$struct_im_guizmo_1_1vec__t.html#af803c601b07db954f6df8e40b056bded" title=" " alt="" coords="253,495,437,536"/>
-<area shape="rect" id="node15" href="$struct_im_guizmo_1_1matrix__t.html#a1a91d7a06f60933bc28ff9151c77f551" title=" " alt="" coords="277,260,413,302"/>
-<area shape="rect" id="node16" href="$namespace_im_guizmo.html#abb3202afd314281c19295b1ba03f9665" title=" " alt="" coords="267,326,423,353"/>
-<area shape="rect" id="node6" href="$namespace_im_guizmo.html#a1619646543d1daf5ef5b8edc6060dd81" title=" " alt="" coords="512,146,667,173"/>
-<area shape="rect" id="node4" href="$struct_im_guizmo_1_1matrix__t.html#a56d2d5ba7efc096d369aae01ef0e1da8" title=" " alt="" coords="754,30,890,71"/>
-<area shape="rect" id="node7" href="$struct_im_guizmo_1_1vec__t.html#af017b8aa014292dc855f180448a66579" title=" " alt="" coords="729,121,915,148"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,289,194,316"/>
+<area shape="rect" id="Node000002" href="$namespace_im_guizmo.html#a2a49b7afd89c853316c331957562ca35" title=" " alt="" coords="242,163,454,189"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,287,170,247,240,206,274,192,276,197,243,210,173,252,119,291"/>
+<area shape="rect" id="Node000003" href="$struct_im_guizmo_1_1matrix__t.html#a8a0e24127eb60b7b4e0049488569c567" title=" " alt="" coords="528,96,664,139"/>
+<area shape="poly" id="edge13_Node000001_Node000003" title=" " alt="" coords="106,288,126,257,156,219,194,179,240,148,309,123,381,110,451,105,513,106,513,112,451,111,382,115,310,128,243,153,198,184,160,222,130,260,111,291"/>
+<area shape="rect" id="Node000006" href="$namespace_im_guizmo.html#a640be01f179c80230cd4b7ee9b298456" title=" " alt="" coords="522,264,670,291"/>
+<area shape="poly" id="edge14_Node000001_Node000006" title=" " alt="" coords="194,295,507,279,507,285,194,301"/>
+<area shape="rect" id="Node000010" href="$struct_im_guizmo_1_1vec__t.html#aaaafbe7ea0ca56793617e8d085a78268" title=" " alt="" coords="502,213,690,240"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="156,286,241,268,368,249,486,235,487,240,369,254,242,273,157,291"/>
+<area shape="rect" id="Node000011" href="$namespace_im_guizmo.html#a672e34453f8e0303f8d268e29422fe1d" title=" " alt="" coords="247,416,448,459"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="120,314,174,353,243,395,269,407,267,412,240,400,171,358,117,319"/>
+<area shape="rect" id="Node000012" href="$struct_im_guizmo_1_1vec__t.html#a904cb32e9200475ae5a9f5c918816dc2" title=" " alt="" coords="502,357,690,400"/>
+<area shape="poly" id="edge16_Node000001_Node000012" title=" " alt="" coords="132,314,183,334,242,351,305,362,368,369,487,376,486,381,368,374,304,367,241,356,182,339,130,319"/>
+<area shape="rect" id="Node000013" href="$struct_im_guizmo_1_1vec__t.html#af803c601b07db954f6df8e40b056bded" title=" " alt="" coords="254,483,442,525"/>
+<area shape="poly" id="edge17_Node000001_Node000013" title=" " alt="" coords="111,315,160,388,198,431,243,469,251,473,248,478,240,473,195,435,156,391,106,318"/>
+<area shape="rect" id="Node000014" href="$namespace_im_guizmo.html#abb3202afd314281c19295b1ba03f9665" title=" " alt="" coords="269,315,426,341"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="194,310,254,316,254,321,194,315"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="407,160,512,134,514,139,408,165"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="375,188,432,218,503,250,523,257,522,262,501,254,430,223,372,192"/>
+<area shape="rect" id="Node000007" href="$namespace_im_guizmo.html#a1619646543d1daf5ef5b8edc6060dd81" title=" " alt="" coords="518,163,674,189"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="454,173,503,173,503,179,454,179"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="417,187,513,207,512,212,416,193"/>
+<area shape="rect" id="Node000004" href="$struct_im_guizmo_1_1matrix__t.html#a56d2d5ba7efc096d369aae01ef0e1da8" title=" " alt="" coords="764,96,901,139"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="664,115,749,115,749,120,664,120"/>
+<area shape="rect" id="Node000005" href="$struct_im_guizmo_1_1matrix__t.html#a4cfcfb1fb32dc0374b4efe6386e0f38f" title=" " alt="" coords="764,29,901,72"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="664,96,748,71,750,77,665,101"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="789,29,788,19,795,10,810,5,833,3,857,5,871,11,869,16,855,10,832,8,811,10,798,15,793,21,795,28"/>
+<area shape="rect" id="Node000008" href="$struct_im_guizmo_1_1vec__t.html#af017b8aa014292dc855f180448a66579" title=" " alt="" coords="738,163,927,189"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="674,173,723,173,723,179,674,179"/>
+<area shape="rect" id="Node000009" href="$struct_im_guizmo_1_1vec__t.html#a5fdc55e19fe7a468751ab9a8a77ebf23" title=" " alt="" coords="975,163,1143,189"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="927,173,959,173,959,179,927,179"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="440,413,487,402,488,407,442,418"/>
+<area shape="poly" id="edge19_Node000014_Node000006" title=" " alt="" coords="416,311,512,292,513,297,417,317"/>
+<area shape="poly" id="edge20_Node000014_Node000012" title=" " alt="" coords="417,339,487,354,486,359,416,345"/>
 </map>

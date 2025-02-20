@@ -1,11 +1,25 @@
 <map id="VkApp::viewChanged" name="VkApp::viewChanged">
-<area shape="rect" id="node1" title="(Virtual) Called when the camera view has changed" alt="" coords="952,68,1096,95"/>
-<area shape="rect" id="node2" href="$class_vk_app.html#a271496c24fa0c1d5685741d5161be134" title=" " alt="" coords="187,43,317,69"/>
-<area shape="rect" id="node3" href="$class_vk_app.html#a8c9b49184fcb89a73a6ea6c1ed2b7f54" title="Entry point for the main render loop." alt="" coords="5,43,139,69"/>
-<area shape="rect" id="node4" href="$class_vk_app.html#aa232b32eb5b90698500190d0fe004cdb" title="Prepares all Vulkan resources and functions required to run the sample." alt="" coords="773,168,885,195"/>
-<area shape="rect" id="node5" href="$class_vk_app.html#a7cd16d7aa5e59f3320f4db4203d9c6c2" title=" " alt="" coords="753,93,904,120"/>
-<area shape="rect" id="node6" href="$class_vk_app.html#a0162143259d08706c042d08fbebe4706" title=" " alt="" coords="556,93,705,120"/>
-<area shape="rect" id="node9" href="$class_vk_app.html#a77aa2460391395eadb236bd13826b56e" title="Presents the current image to the swap chain." alt="" coords="558,144,703,171"/>
-<area shape="rect" id="node7" href="$class_vk_app.html#ab63b7933ea35df31039ed96b36d75e75" title="(Pure virtual) Render function to be implemented by the sample application" alt="" coords="384,93,489,120"/>
-<area shape="rect" id="node8" href="$class_vk_app.html#a5d8fd30fd675c69715d49be5469896ba" title="(Virtual) Default image acquire + submission and command buffer submission function" alt="" coords="365,144,508,171"/>
+<area shape="rect" id="Node000001" title="(Virtual) Called when the camera view has changed" alt="" coords="951,68,1098,95"/>
+<area shape="rect" id="Node000002" href="$class_vk_app.html#a271496c24fa0c1d5685741d5161be134" title=" " alt="" coords="186,43,316,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="935,81,316,61,316,55,935,76"/>
+<area shape="rect" id="Node000003" href="$class_vk_app.html#a8c9b49184fcb89a73a6ea6c1ed2b7f54" title="Entry point for the main render loop." alt="" coords="5,43,138,69"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="965,66,897,47,814,28,722,14,629,8,433,8,309,14,186,33,129,45,128,39,185,28,309,9,433,3,629,3,722,9,815,23,899,42,966,61"/>
+<area shape="rect" id="Node000004" href="$class_vk_app.html#aa232b32eb5b90698500190d0fe004cdb" title="Prepares all Vulkan resources and functions required to run the sample." alt="" coords="771,168,882,195"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="984,104,856,170,853,165,982,100"/>
+<area shape="rect" id="Node000005" href="$class_vk_app.html#a7cd16d7aa5e59f3320f4db4203d9c6c2" title=" " alt="" coords="750,93,903,120"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="936,95,904,100,903,94,935,90"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="170,59,138,59,138,53,170,53"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="860,155,848,149,826,147,806,149,794,153,792,159,797,166,793,169,787,159,791,150,804,143,826,141,850,144,863,150"/>
+<area shape="rect" id="Node000006" href="$class_vk_app.html#a0162143259d08706c042d08fbebe4706" title=" " alt="" coords="553,93,702,120"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="734,109,702,109,702,104,734,104"/>
+<area shape="rect" id="Node000009" href="$class_vk_app.html#a77aa2460391395eadb236bd13826b56e" title="Presents the current image to the swap chain." alt="" coords="555,144,700,171"/>
+<area shape="poly" id="edge12_Node000005_Node000009" title=" " alt="" coords="757,127,683,146,682,141,756,122"/>
+<area shape="rect" id="Node000007" href="$class_vk_app.html#ab63b7933ea35df31039ed96b36d75e75" title="(Pure virtual) Render function to be implemented by the sample application" alt="" coords="382,93,487,120"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="538,109,487,109,487,104,538,104"/>
+<area shape="rect" id="Node000008" href="$class_vk_app.html#a5d8fd30fd675c69715d49be5469896ba" title="(Virtual) Default image acquire + submission and command buffer submission function" alt="" coords="364,144,505,171"/>
+<area shape="poly" id="edge11_Node000006_Node000008" title=" " alt="" coords="560,127,489,146,488,141,558,122"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="368,91,301,73,303,67,369,86"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="367,105,280,97,185,84,128,73,129,67,186,79,281,91,367,99"/>
+<area shape="poly" id="edge13_Node000009_Node000007" title=" " alt="" coords="558,142,486,123,488,118,560,137"/>
+<area shape="poly" id="edge14_Node000009_Node000008" title=" " alt="" coords="540,160,506,160,506,155,540,155"/>
 </map>

@@ -13,7 +13,7 @@ var searchData=
   ['implicitviscosity_10',['ImplicitViscosity',['../classdyno_1_1_implicit_viscosity.html',1,'dyno']]],
   ['imwidget_11',['ImWidget',['../classdyno_1_1_im_widget.html',1,'dyno']]],
   ['imwindow_12',['ImWindow',['../classdyno_1_1_im_window.html',1,'dyno']]],
-  ['index2d_13',['index2d',['../structdyno_1_1_index2_d.html',1,'dyno::Index2D'],['../struct_index2_d.html',1,'Index2D']]],
+  ['index2d_13',['Index2D',['../structdyno_1_1_index2_d.html',1,'dyno::Index2D'],['../struct_index2_d.html',1,'Index2D']]],
   ['index2dplane_14',['Index2DPlane',['../structdyno_1_1_index2_d_plane.html',1,'dyno']]],
   ['indexcmp_15',['IndexCmp',['../structdyno_1_1_index_cmp.html',1,'dyno']]],
   ['indexnode_16',['IndexNode',['../classdyno_1_1_index_node.html',1,'dyno']]],

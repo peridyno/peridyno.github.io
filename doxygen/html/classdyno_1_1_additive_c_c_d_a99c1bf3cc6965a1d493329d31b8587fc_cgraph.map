@@ -1,8 +1,40 @@
 <map id="dyno::AdditiveCCD::TriangleCCD" name="dyno::AdditiveCCD::TriangleCCD">
-<area shape="rect" id="node1" title="Do a continuous collision detection between two triangles." alt="" coords="5,107,144,149"/>
-<area shape="rect" id="node2" href="$namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146" title=" " alt="" coords="209,5,323,32"/>
-<area shape="rect" id="node3" href="$namespacedyno.html#ace5ae4adfa4b4997bc8604ad790d8f58" title=" " alt="" coords="388,85,503,112"/>
-<area shape="rect" id="node4" href="$classdyno_1_1_t_triangle3_d.html#a78881d86d4f7bbcdf1c4c7ade509a1d7" title=" " alt="" coords="192,107,340,149"/>
-<area shape="rect" id="node5" href="$namespace_im_guizmo.html#a4328433ac685d1b796ba38b82ffba4f2" title=" " alt="" coords="211,173,321,200"/>
-<area shape="rect" id="node6" href="$namespacedyno.html#a91f6eb791bd70afce29e83daebadbd26" title=" " alt="" coords="211,224,321,251"/>
+<area shape="rect" id="Node000001" title="Do a continuous collision detection between two triangles." alt="" coords="5,195,148,237"/>
+<area shape="rect" id="Node000002" href="$classdyno_1_1_additive_c_c_d.html#a9b3acb2efa19389f1c322e1ccfb82950" title="Do a continuous collision detection between two edges." alt="" coords="198,136,340,179"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,192,183,181,184,186,149,197"/>
+<area shape="rect" id="Node000003" href="$namespacedyno.html#a91f6eb791bd70afce29e83daebadbd26" title=" " alt="" coords="407,19,517,45"/>
+<area shape="poly" id="edge18_Node000001_Node000003" title=" " alt="" coords="99,192,142,157,194,122,244,98,296,77,391,47,393,52,298,82,246,102,197,126,145,161,103,196"/>
+<area shape="rect" id="Node000013" href="$namespacedyno.html#ace5ae4adfa4b4997bc8604ad790d8f58" title=" " alt="" coords="405,261,519,288"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="148,217,241,224,344,239,405,254,404,259,342,244,241,230,148,222"/>
+<area shape="rect" id="Node000014" href="$classdyno_1_1_t_triangle3_d.html#a78881d86d4f7bbcdf1c4c7ade509a1d7" title=" " alt="" coords="196,253,343,296"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="149,235,183,246,182,251,147,240"/>
+<area shape="rect" id="Node000015" href="$classdyno_1_1_additive_c_c_d.html#a826aed6eaa58083cd95abd9dbe5ba3b3" title="Do a continuous collision detection between a vertex and a triangle." alt="" coords="198,320,340,363"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="104,236,146,270,197,306,205,310,202,315,194,310,143,275,101,240"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,134,334,94,390,55,400,50,403,54,392,60,337,98,294,138"/>
+<area shape="rect" id="Node000004" href="$namespacedyno.html#a5bdd7542c587886740e9159c9f8aad1b" title=" " alt="" coords="422,93,503,120"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="340,136,406,118,408,124,342,141"/>
+<area shape="rect" id="Node000005" href="$namespacedyno.html#ac2d9bbc99f7fd7afbe6b0889eff86281" title=" " alt="" coords="422,144,502,171"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="341,155,407,155,407,160,341,160"/>
+<area shape="rect" id="Node000011" href="$classdyno_1_1_additive_c_c_d.html#af442529f1a94a9caf50a0ae2a70ff8b3" title=" " alt="" coords="391,195,533,237"/>
+<area shape="poly" id="edge13_Node000002_Node000011" title=" " alt="" coords="342,176,377,187,376,193,340,182"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="429,94,424,85,428,75,441,69,462,67,485,69,497,76,495,80,484,74,462,72,442,74,431,79,429,84,434,91"/>
+<area shape="rect" id="Node000006" href="$namespacedyno.html#a04befed6e1a89e4c84fbc7009f951d26" title=" " alt="" coords="617,47,692,73"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="501,144,532,130,556,110,580,90,602,78,605,82,583,94,559,114,535,134,503,148"/>
+<area shape="rect" id="Node000007" href="$classdyno_1_1_complex.html#ac27c15f0b204f54a8d087b3ca2424371" title=" " alt="" coords="776,21,945,48"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="501,147,532,130,542,118,548,106,553,80,559,55,567,43,580,32,606,19,634,10,691,3,748,6,798,15,797,20,748,11,692,8,635,16,608,24,583,37,571,47,564,57,558,81,553,108,546,121,535,134,504,151"/>
+<area shape="rect" id="Node000008" href="$classdyno_1_1_complex.html#a39594d0d244d10ad92ff9c7934f27685" title=" " alt="" coords="779,72,942,99"/>
+<area shape="poly" id="edge12_Node000005_Node000008" title=" " alt="" coords="502,148,767,99,768,105,503,153"/>
+<area shape="rect" id="Node000009" href="$classdyno_1_1_complex.html#a5442492a59f72a71da02081dcdf44b0f" title=" " alt="" coords="581,148,728,175"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="502,155,566,157,566,162,502,161"/>
+<area shape="rect" id="Node000010" href="$namespacedyno.html#ac5d2551b7bf3e82e743324ebf79c203d" title=" " alt="" coords="612,199,697,225"/>
+<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="503,166,598,193,597,198,502,171"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="692,53,760,44,761,50,693,58"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="693,62,764,71,763,76,692,67"/>
+<area shape="rect" id="Node000012" href="$classdyno_1_1_additive_c_c_d.html#a872e9016afd53f4c7e5e825d0cab740a" title=" " alt="" coords="583,249,726,292"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="534,234,569,244,567,249,533,239"/>
+<area shape="poly" id="edge17_Node000014_Node000013" title=" " alt="" coords="344,272,390,272,390,277,344,277"/>
+<area shape="rect" id="Node000016" href="$classdyno_1_1_additive_c_c_d.html#af7623f4db60df6d6de2186fe98c471af" title=" " alt="" coords="391,320,533,363"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="341,339,376,339,376,344,341,344"/>
+<area shape="rect" id="Node000017" href="$classdyno_1_1_additive_c_c_d.html#a0055adb5957ad560058f53ff687119d2" title=" " alt="" coords="583,320,726,363"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="534,339,567,339,567,344,534,344"/>
 </map>

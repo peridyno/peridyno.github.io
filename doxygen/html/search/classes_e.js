@@ -7,7 +7,7 @@ var searchData=
   ['neighborpointquery_4',['NeighborPointQuery',['../classdyno_1_1_neighbor_point_query.html',1,'dyno']]],
   ['neighbortrianglequery_5',['NeighborTriangleQuery',['../classdyno_1_1_neighbor_triangle_query.html',1,'dyno']]],
   ['neohookeanmodel_6',['NeoHookeanModel',['../classdyno_1_1_neo_hookean_model.html',1,'dyno']]],
-  ['node_7',['node',['../classdyno_1_1_node.html',1,'dyno::Node'],['../structvkgl_t_f_1_1_node.html',1,'vkglTF::Node']]],
+  ['node_7',['Node',['../classdyno_1_1_node.html',1,'dyno::Node'],['../class_node.html',1,'Node'],['../structvkgl_t_f_1_1_node.html',1,'vkglTF::Node']]],
   ['nodeaction_8',['NodeAction',['../classdyno_1_1_node_action.html',1,'dyno']]],
   ['nodecmp_9',['NodeCmp',['../structdyno_1_1_node_cmp.html',1,'dyno']]],
   ['nodefactory_10',['NodeFactory',['../classdyno_1_1_node_factory.html',1,'dyno']]],
@@ -16,7 +16,7 @@ var searchData=
   ['nodeitem_13',['NodeItem',['../struct_w_node_data_model_1_1_node_item.html',1,'WNodeDataModel']]],
   ['nodeiterator_14',['NodeIterator',['../classdyno_1_1_node_iterator.html',1,'dyno']]],
   ['nodepage_15',['NodePage',['../classdyno_1_1_node_page.html',1,'dyno']]],
-  ['nodeport_16',['NodePort',['../classdyno_1_1_node_port.html',1,'dyno']]],
+  ['nodeport_16',['NodePort',['../classdyno_1_1_node_port.html',1,'dyno::NodePort'],['../class_node_port.html',1,'NodePort']]],
   ['normalforce_17',['NormalForce',['../classdyno_1_1_normal_force.html',1,'dyno']]],
   ['normalvisualization_18',['NormalVisualization',['../classdyno_1_1_normal_visualization.html',1,'dyno']]],
   ['notequalfunc_19',['NotEqualFunc',['../structdyno_1_1_not_equal_func.html',1,'dyno']]]

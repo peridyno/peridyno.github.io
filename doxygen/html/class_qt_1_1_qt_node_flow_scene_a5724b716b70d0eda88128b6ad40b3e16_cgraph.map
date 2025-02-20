@@ -1,15 +1,25 @@
 <map id="Qt::QtNodeFlowScene::updateNodeGraphView" name="Qt::QtNodeFlowScene::updateNodeGraphView">
-<area shape="rect" id="node1" title="Update the view only for the active scene graph, the data model will be changed." alt="" coords="5,291,168,332"/>
-<area shape="rect" id="node2" href="$class_qt_1_1_qt_node_flow_scene.html#a89206a4a64a463931313a1facf24da06" title="create a QT&#45;based view for the active scene graph." alt="" coords="216,144,375,185"/>
-<area shape="rect" id="node10" href="$class_qt_1_1_qt_node_flow_scene.html#aa26f9a3ae86fe2565a7a50c5274d180c" title=" " alt="" coords="219,291,371,332"/>
-<area shape="rect" id="node12" href="$class_qt_1_1_qt_node_flow_scene.html#af484b83f48a4bd4585e12ed65f088cea" title=" " alt="" coords="219,356,371,397"/>
-<area shape="rect" id="node3" href="$classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="435,5,609,47"/>
-<area shape="rect" id="node5" href="$classdyno_1_1_node.html#a5180095adb1b50c0af8184a56e1727f5" title=" " alt="" coords="437,71,607,98"/>
-<area shape="rect" id="node6" href="$classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5" title=" " alt="" coords="423,122,621,149"/>
-<area shape="rect" id="node7" href="$classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="435,173,609,215"/>
-<area shape="rect" id="node9" href="$classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8" title=" " alt="" coords="447,239,597,266"/>
-<area shape="rect" id="node4" href="$classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="669,5,844,47"/>
-<area shape="rect" id="node8" href="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="669,173,844,215"/>
-<area shape="rect" id="node11" href="$class_qt_1_1_qt_node_widget.html#a8fad4628e22f202b96313524f996bc2d" title="When disabled, the scenegraph can not be affected by the corresponding GUI." alt="" coords="433,291,611,332"/>
-<area shape="rect" id="node13" href="$class_qt_1_1_qt_node_widget.html#ad0bc6c8cc337b5e9038eb1e4202cedec" title="When enabled, the scenegraph can be updated as long as the corresponding GUI is updated." alt="" coords="435,356,609,397"/>
+<area shape="rect" id="Node000001" title="Update the view only for the active scene graph, the data model will not be changed." alt="" coords="5,181,169,224"/>
+<area shape="rect" id="Node000002" href="$class_qt_1_1_qt_node_flow_scene.html#a89206a4a64a463931313a1facf24da06" title="create a QT&#45;based view for the active scene graph." alt="" coords="217,115,377,157"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,178,212,160,214,165,157,183"/>
+<area shape="rect" id="Node000011" href="$class_qt_1_1_qt_node_flow_scene.html#aa26f9a3ae86fe2565a7a50c5274d180c" title=" " alt="" coords="220,181,374,224"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="169,200,204,200,204,205,169,205"/>
+<area shape="rect" id="Node000012" href="$class_qt_1_1_qt_node_flow_scene.html#af484b83f48a4bd4585e12ed65f088cea" title=" " alt="" coords="220,248,374,291"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="157,222,214,240,212,245,155,227"/>
+<area shape="rect" id="Node000003" href="$classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="437,5,610,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="329,112,373,84,424,58,437,52,440,57,426,62,376,89,332,116"/>
+<area shape="rect" id="Node000005" href="$classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5" title=" " alt="" coords="425,72,622,99"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="377,116,445,100,446,105,378,121"/>
+<area shape="rect" id="Node000006" href="$classdyno_1_1_module.html#a3e3dbcc0b37a89a0be80542fbcd85d2f" title=" " alt="" coords="426,123,621,149"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="377,133,411,133,411,139,377,139"/>
+<area shape="rect" id="Node000008" href="$classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="437,173,610,216"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="378,154,424,166,423,171,377,159"/>
+<area shape="rect" id="Node000010" href="$classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8" title=" " alt="" coords="449,240,598,267"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="360,156,379,167,394,183,403,198,411,212,427,226,436,231,433,236,423,230,407,216,398,201,390,186,375,171,357,160"/>
+<area shape="rect" id="Node000004" href="$classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="670,5,844,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="611,24,655,24,655,29,611,29"/>
+<area shape="rect" id="Node000007" href="$classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28" title="Add a new message to log." alt="" coords="673,123,841,149"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="621,133,658,133,658,139,621,139"/>
+<area shape="rect" id="Node000009" href="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="670,173,844,216"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="611,192,655,192,655,197,611,197"/>
 </map>

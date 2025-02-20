@@ -1,13 +1,35 @@
 <map id="vkglTF::Model::loadImages" name="vkglTF::Model::loadImages">
-<area shape="rect" id="node1" title=" " alt="" coords="5,256,181,283"/>
-<area shape="rect" id="node2" href="$classvkgl_t_f_1_1_texture.html#a2d056838f0b713f47bcd3b7f74ee1833" title=" " alt="" coords="229,249,392,290"/>
-<area shape="rect" id="node3" href="$_vulkan_swap_chain_8cpp.html#a21b5a77bb7dd2ff2a93f6c086da96d46" title=" " alt="" coords="499,5,558,32"/>
-<area shape="rect" id="node4" href="$namespacevks_1_1initializers.html#add6323753fce6b02303f50317d7daf0c" title=" " alt="" coords="471,57,586,98"/>
-<area shape="rect" id="node5" href="$namespacevks_1_1tools.html#af75a924b4fa375017dd275374aebd3e2" title=" " alt="" coords="461,123,596,149"/>
-<area shape="rect" id="node6" href="$namespacevks_1_1tools.html#a05c7cd8737f3745896e2c4f03b147b7b" title="Checks if a file exists." alt="" coords="459,173,598,200"/>
-<area shape="rect" id="node7" href="$namespacevks_1_1initializers.html#ab4c7633b1da4a97eb772f6f9ce7a934c" title=" " alt="" coords="471,249,586,290"/>
-<area shape="rect" id="node8" href="$namespacevks_1_1initializers.html#a656c3a342fadefe19ddd795228856dfa" title="Initialize an image memory barrier with no image transfer ownership." alt="" coords="665,391,808,433"/>
-<area shape="rect" id="node9" href="$namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146" title=" " alt="" coords="471,365,586,392"/>
-<area shape="rect" id="node10" href="$namespacevks_1_1initializers.html#ab2b2acd3e66b782c756f8fe322dd3e72" title=" " alt="" coords="461,417,597,458"/>
-<area shape="rect" id="node11" href="$namespacevks_1_1tools.html#a0f31a639c1b6b19ae992db88bf759c4d" title=" " alt="" coords="440,483,617,509"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,261,185,288"/>
+<area shape="rect" id="Node000002" href="$classvkgl_t_f_1_1_model.html#a7c831b304cd04a0e2d3f685f3651e96e" title=" " alt="" coords="233,299,419,341"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,286,218,296,217,301,166,291"/>
+<area shape="rect" id="Node000010" href="$classvkgl_t_f_1_1_texture.html#a2d056838f0b713f47bcd3b7f74ee1833" title=" " alt="" coords="242,179,410,221"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="138,258,243,224,244,229,140,263"/>
+<area shape="rect" id="Node000003" href="$namespacevks_1_1initializers.html#add6323753fce6b02303f50317d7daf0c" title=" " alt="" coords="498,208,615,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="378,296,466,260,483,254,485,259,468,265,380,301"/>
+<area shape="rect" id="Node000004" href="$namespacevks_1_1initializers.html#ab4c7633b1da4a97eb772f6f9ce7a934c" title=" " alt="" coords="498,299,615,341"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="419,317,483,317,483,323,419,323"/>
+<area shape="rect" id="Node000005" href="$namespacevks_1_1initializers.html#acfbfe5f8e72de3e6620a189acfa9c9e8" title=" " alt="" coords="484,547,630,589"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="342,341,393,419,429,466,469,509,504,536,501,540,465,513,425,469,388,422,337,343"/>
+<area shape="rect" id="Node000006" href="$namespacevks_1_1initializers.html#ab2b2acd3e66b782c756f8fe322dd3e72" title=" " alt="" coords="488,365,625,408"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="403,339,474,360,472,365,401,344"/>
+<area shape="rect" id="Node000007" href="$namespacevks_1_1initializers.html#acf1c3af2b417b70f5bb1ed16921b7301" title=" " alt="" coords="492,456,621,499"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="358,340,469,418,509,445,506,449,465,422,355,344"/>
+<area shape="rect" id="Node000008" href="$namespacevks_1_1tools.html#a0f31a639c1b6b19ae992db88bf759c4d" title=" " alt="" coords="467,157,646,184"/>
+<area shape="poly" id="edge10_Node000002_Node000008" title=" " alt="" coords="349,296,416,235,466,194,478,188,481,192,468,198,419,239,352,300"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="517,299,515,289,522,280,536,274,557,272,579,274,593,281,590,285,578,280,557,277,537,279,525,284,520,290,522,298"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="517,547,515,537,522,528,536,522,557,520,579,522,593,529,590,533,578,528,557,525,537,527,525,532,520,538,522,546"/>
+<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="517,456,515,446,522,437,536,431,557,429,579,432,593,438,590,443,578,437,557,435,537,437,525,441,520,447,522,455"/>
+<area shape="rect" id="Node000009" href="$namespacevks_1_1initializers.html#a656c3a342fadefe19ddd795228856dfa" title="Initialize an image memory barrier with no image transfer ownership." alt="" coords="694,149,836,192"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="646,168,679,168,679,173,646,173"/>
+<area shape="poly" id="edge12_Node000009_Node000009" title=" " alt="" coords="725,149,724,139,730,130,744,125,765,123,787,125,801,131,799,136,786,130,765,128,745,130,734,135,729,141,730,148"/>
+<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="411,208,484,217,483,223,410,213"/>
+<area shape="poly" id="edge18_Node000010_Node000004" title=" " alt="" coords="370,219,502,289,499,293,367,224"/>
+<area shape="poly" id="edge19_Node000010_Node000006" title=" " alt="" coords="355,220,421,285,435,304,443,321,453,336,469,351,476,356,473,361,465,355,449,339,439,323,430,307,417,288,351,224"/>
+<area shape="poly" id="edge20_Node000010_Node000008" title=" " alt="" coords="410,187,451,181,452,187,411,192"/>
+<area shape="rect" id="Node000011" href="$_vulkan_swap_chain_8cpp.html#a21b5a77bb7dd2ff2a93f6c086da96d46" title=" " alt="" coords="528,5,585,32"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="339,177,389,110,425,73,466,42,488,31,512,23,514,28,490,36,468,46,428,77,393,114,343,180"/>
+<area shape="rect" id="Node000012" href="$namespacevks_1_1tools.html#af75a924b4fa375017dd275374aebd3e2" title=" " alt="" coords="488,56,625,83"/>
+<area shape="poly" id="edge16_Node000010_Node000012" title=" " alt="" coords="349,176,400,134,466,92,480,86,482,91,468,97,403,138,352,180"/>
+<area shape="rect" id="Node000013" href="$namespacevks_1_1tools.html#a05c7cd8737f3745896e2c4f03b147b7b" title="Checks if a file exists." alt="" coords="486,107,627,133"/>
+<area shape="poly" id="edge17_Node000010_Node000013" title=" " alt="" coords="379,176,466,143,488,136,490,141,468,148,381,181"/>
 </map>

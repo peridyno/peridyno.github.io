@@ -1,22 +1,98 @@
 <map id="dyno::ComputeModule" name="dyno::ComputeModule">
-<area shape="rect" id="node1" title=" " alt="" coords="444,405,596,431"/>
-<area shape="rect" id="node5" href="$classdyno_1_1_calculate_bounding_box.html" title="A class implementation to calculate bounding box." alt="" coords="657,5,847,47"/>
-<area shape="rect" id="node6" href="$classdyno_1_1_calculate_maximum.html" title=" " alt="" coords="667,71,837,112"/>
-<area shape="rect" id="node7" href="$classdyno_1_1_calculate_minimum.html" title=" " alt="" coords="669,136,835,177"/>
-<area shape="rect" id="node8" href="$classdyno_1_1_calculate_norm.html" title=" " alt="" coords="681,201,823,243"/>
-<area shape="rect" id="node9" href="$classdyno_1_1_calculate_normal_s_d_f.html" title=" " alt="" coords="663,267,841,308"/>
-<area shape="rect" id="node10" href="$classdyno_1_1_color_mapping.html" title=" " alt="" coords="683,332,821,373"/>
-<area shape="rect" id="node11" href="$classdyno_1_1_compute_particle_anisotropy.html" title=" " alt="" coords="644,397,860,439"/>
-<area shape="rect" id="node12" href="$classdyno_1_1_contacts_union.html" title=" " alt="" coords="681,463,823,504"/>
-<area shape="rect" id="node13" href="$classdyno_1_1_neighbor_element_query.html" title="A class implementation to find neighboring elements for a given array of elements." alt="" coords="656,528,848,569"/>
-<area shape="rect" id="node14" href="$classdyno_1_1_neighbor_point_query.html" title=" " alt="" coords="665,593,839,635"/>
-<area shape="rect" id="node15" href="$classdyno_1_1_neighbor_triangle_query.html" title=" " alt="" coords="657,659,847,700"/>
-<area shape="rect" id="node16" href="$classdyno_1_1_particle_approximation.html" title=" " alt="" coords="659,724,845,765"/>
-<area shape="rect" id="node20" href="$classdyno_1_1_sparse_neighbor_point_query.html" title=" " alt="" coords="662,789,842,831"/>
-<area shape="rect" id="node2" href="$classdyno_1_1_module.html" title=" " alt="" coords="296,405,396,431"/>
-<area shape="rect" id="node3" href="$classdyno_1_1_o_base.html" title=" " alt="" coords="149,405,248,431"/>
-<area shape="rect" id="node4" href="$classdyno_1_1_object.html" title=" " alt="" coords="5,405,101,431"/>
-<area shape="rect" id="node17" href="$classdyno_1_1_semi_analytical_particle_shifting.html" title=" " alt="" coords="919,659,1108,700"/>
-<area shape="rect" id="node18" href="$classdyno_1_1_semi_analytical_summation_density.html" title=" " alt="" coords="908,724,1119,765"/>
-<area shape="rect" id="node19" href="$classdyno_1_1_summation_density.html" title="The standard summation density." alt="" coords="929,789,1097,831"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="441,840,594,867"/>
+<area shape="rect" id="Node000005" href="$classdyno_1_1_add.html" title=" " alt="" coords="713,13,794,40"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="516,825,521,665,538,433,554,313,575,203,603,112,620,77,640,50,656,38,674,29,712,23,713,28,676,34,658,42,644,54,625,80,608,114,580,204,559,314,543,433,527,666,522,825"/>
+<area shape="rect" id="Node000007" href="$classdyno_1_1_bounding_box_of_texture_mesh.html" title="A class to facilitate showing the shape information." alt="" coords="642,64,865,91"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="517,824,523,674,541,457,557,345,578,243,605,158,621,126,640,101,655,89,658,93,644,105,626,128,610,160,583,244,562,346,547,457,528,674,522,825"/>
+<area shape="rect" id="Node000008" href="$classdyno_1_1_calculate_bounding_box.html" title="A class implementation to calculate bounding box." alt="" coords="659,115,848,157"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="517,824,526,687,547,490,563,389,583,297,609,220,623,190,640,168,657,154,660,158,644,171,628,193,614,222,589,298,568,390,552,491,532,687,523,825"/>
+<area shape="rect" id="Node000009" href="$classdyno_1_1_calculate_maximum.html" title=" " alt="" coords="669,181,838,224"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="518,824,529,698,551,522,567,432,587,349,611,281,625,255,640,234,667,215,670,219,644,238,629,257,616,283,592,351,573,433,557,523,534,699,523,825"/>
+<area shape="rect" id="Node000010" href="$classdyno_1_1_calculate_minimum.html" title=" " alt="" coords="671,248,836,291"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="519,824,532,710,556,554,572,474,591,402,614,342,640,301,669,281,672,285,644,305,619,344,596,403,577,476,561,555,537,711,524,825"/>
+<area shape="rect" id="Node000011" href="$classdyno_1_1_calculate_norm.html" title=" " alt="" coords="681,315,826,357"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="520,825,536,726,561,593,577,526,596,465,617,414,640,380,658,365,680,355,682,360,661,370,644,383,621,417,601,466,582,527,566,594,541,727,526,825"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="519,825,533,721,559,581,575,510,594,445,616,392,640,356,658,341,680,332,682,337,661,346,644,359,621,394,599,447,581,511,564,582,539,722,524,825"/>
+<area shape="rect" id="Node000012" href="$classdyno_1_1_calculate_normal_s_d_f.html" title=" " alt="" coords="663,381,844,424"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="516,824,520,747,537,643,552,587,574,532,603,480,640,434,660,419,664,423,644,438,607,483,579,534,557,588,542,644,525,748,521,825"/>
+<area shape="rect" id="Node000013" href="$classdyno_1_1_collision_detection_broad_phase.html" title=" " alt="" coords="664,448,843,491"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="518,824,527,760,547,677,563,633,583,589,609,549,640,513,659,499,681,489,684,494,662,503,643,517,613,552,588,592,568,635,552,678,532,761,524,825"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="517,824,525,756,544,665,559,618,580,571,607,527,640,489,662,473,665,478,643,493,611,530,585,573,564,620,549,667,530,756,523,824"/>
+<area shape="rect" id="Node000014" href="$classdyno_1_1_collistion_detection_bounding_box.html" title=" " alt="" coords="661,515,846,557"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="520,824,532,770,554,701,589,629,612,596,640,567,659,554,662,559,643,571,617,600,594,632,559,703,537,771,526,825"/>
+<area shape="rect" id="Node000015" href="$classdyno_1_1_collistion_detection_triangle_set.html" title=" " alt="" coords="666,581,840,624"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="525,825,540,782,564,731,597,679,617,655,640,634,664,619,667,624,643,638,621,659,601,682,569,734,545,785,530,826"/>
+<area shape="rect" id="Node000016" href="$classdyno_1_1_color_mapping.html" title=" " alt="" coords="685,648,822,691"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="537,825,580,769,608,738,640,712,666,699,693,689,695,694,668,704,643,717,612,742,584,772,541,829"/>
+<area shape="poly" id="edge18_Node000001_Node000016" title=" " alt="" coords="528,824,546,793,571,756,603,719,640,688,683,669,685,674,643,693,607,723,575,759,550,795,532,827"/>
+<area shape="rect" id="Node000017" href="$classdyno_1_1_compute_particle_anisotropy.html" title=" " alt="" coords="645,715,862,757"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="546,828,589,797,640,767,669,755,671,760,643,772,592,801,549,832"/>
+<area shape="rect" id="Node000018" href="$classdyno_1_1_construct_tangent_space.html" title=" " alt="" coords="655,781,852,808"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="582,833,641,817,689,806,690,811,642,823,584,838"/>
+<area shape="rect" id="Node000019" href="$classdyno_1_1_contacts_union.html" title=" " alt="" coords="681,832,826,875"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="609,851,681,851,681,856,609,856"/>
+<area shape="rect" id="Node000020" href="$classdyno_1_1_divide.html" title=" " alt="" coords="706,899,800,925"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="584,869,642,884,706,899,705,904,641,889,582,874"/>
+<area shape="rect" id="Node000022" href="$classdyno_1_1_fast_marching_method_g_p_u.html" title="this class implements a GPU&#45;based fast marching method to do boolean between two distance fields." alt="" coords="664,949,843,992"/>
+<area shape="poly" id="edge24_Node000001_Node000022" title=" " alt="" coords="549,874,592,905,643,935,671,946,669,951,640,940,589,910,546,879"/>
+<area shape="rect" id="Node000023" href="$classdyno_1_1_fast_sweeping_method.html" title="This is a CPU&#45;based implementation of grid&#45;based signed distance field (level set) generator for tria..." alt="" coords="662,1016,845,1059"/>
+<area shape="poly" id="edge25_Node000001_Node000023" title=" " alt="" coords="536,879,579,941,609,974,643,1002,664,1013,661,1018,640,1006,605,978,575,944,532,882"/>
+<area shape="rect" id="Node000024" href="$classdyno_1_1_fast_sweeping_method_g_p_u.html" title="This is a GPU&#45;based fast sweeping method to generate signed distance field from a mesh." alt="" coords="662,1083,845,1125"/>
+<area shape="poly" id="edge26_Node000001_Node000024" title=" " alt="" coords="530,880,545,922,569,973,601,1025,621,1048,643,1069,663,1081,660,1085,640,1073,617,1052,597,1028,564,976,540,924,525,882"/>
+<area shape="rect" id="Node000025" href="$classdyno_1_1_instance_transform.html" title=" " alt="" coords="670,1149,836,1192"/>
+<area shape="poly" id="edge27_Node000001_Node000025" title=" " alt="" coords="526,881,537,935,559,1004,594,1075,617,1107,643,1135,671,1153,669,1157,640,1139,612,1110,589,1077,554,1006,532,937,520,882"/>
+<area shape="rect" id="Node000026" href="$classdyno_1_1_multiply.html" title=" " alt="" coords="702,1216,804,1243"/>
+<area shape="poly" id="edge28_Node000001_Node000026" title=" " alt="" coords="523,882,530,949,549,1035,564,1081,585,1125,611,1166,643,1202,671,1218,702,1226,701,1231,669,1223,640,1206,607,1170,580,1128,559,1083,544,1037,525,949,517,883"/>
+<area shape="rect" id="Node000028" href="$classdyno_1_1_neighbor_element_query.html" title="A class implementation to find neighboring elements for a given array of elements." alt="" coords="657,1267,850,1309"/>
+<area shape="poly" id="edge30_Node000001_Node000028" title=" " alt="" coords="522,882,527,956,544,1056,559,1109,580,1161,608,1210,644,1253,658,1264,655,1269,640,1257,604,1213,576,1163,554,1111,539,1057,521,957,516,882"/>
+<area shape="rect" id="Node000029" href="$classdyno_1_1_neighbor_point_query.html" title=" " alt="" coords="666,1333,840,1376"/>
+<area shape="poly" id="edge31_Node000001_Node000029" title=" " alt="" coords="524,882,539,986,564,1124,581,1194,600,1258,621,1309,644,1343,667,1360,664,1364,640,1347,616,1311,595,1259,576,1196,559,1126,533,986,519,883"/>
+<area shape="poly" id="edge32_Node000001_Node000029" title=" " alt="" coords="525,881,540,979,566,1111,582,1177,601,1237,621,1286,644,1319,667,1336,664,1341,640,1323,617,1289,596,1239,577,1178,561,1112,535,980,520,882"/>
+<area shape="poly" id="edge33_Node000001_Node000029" title=" " alt="" coords="527,882,543,976,569,1099,603,1218,622,1264,644,1296,660,1308,678,1317,717,1330,716,1335,676,1322,657,1313,640,1299,618,1267,598,1220,563,1101,538,977,522,883"/>
+<area shape="rect" id="Node000030" href="$classdyno_1_1_neighbor_triangle_query.html" title=" " alt="" coords="658,1400,848,1443"/>
+<area shape="poly" id="edge34_Node000001_Node000030" title=" " alt="" coords="524,882,538,993,562,1144,578,1221,597,1290,619,1348,644,1386,660,1399,656,1403,640,1390,614,1350,592,1292,573,1222,557,1145,532,993,519,883"/>
+<area shape="rect" id="Node000031" href="$classdyno_1_1_particle_approximation.html" title=" " alt="" coords="661,1467,846,1509"/>
+<area shape="poly" id="edge35_Node000001_Node000031" title=" " alt="" coords="523,881,535,1004,557,1176,574,1263,593,1343,617,1409,630,1434,644,1453,663,1468,659,1472,640,1457,625,1437,612,1411,588,1345,568,1264,552,1176,529,1004,518,882"/>
+<area shape="rect" id="Node000042" href="$classdyno_1_1_particle_integrator.html" title=" " alt="" coords="675,1533,832,1576"/>
+<area shape="poly" id="edge46_Node000001_Node000042" title=" " alt="" coords="523,882,532,1017,553,1209,569,1307,590,1396,614,1470,628,1498,644,1520,658,1532,676,1541,674,1546,655,1536,640,1523,624,1501,609,1472,584,1398,564,1308,548,1209,527,1018,518,883"/>
+<area shape="rect" id="Node000043" href="$classdyno_1_1_poisson_plane.html" title=" " alt="" coords="685,1600,822,1643"/>
+<area shape="poly" id="edge47_Node000001_Node000043" title=" " alt="" coords="522,882,530,1029,549,1241,565,1349,586,1449,612,1531,627,1562,644,1586,663,1601,686,1611,684,1616,660,1606,640,1590,622,1565,607,1533,581,1450,560,1350,544,1241,525,1030,517,883"/>
+<area shape="rect" id="Node000044" href="$classdyno_1_1_simple_vechicle_driver.html" title=" " alt="" coords="663,1667,844,1693"/>
+<area shape="poly" id="edge48_Node000001_Node000044" title=" " alt="" coords="522,882,527,1041,543,1273,559,1393,580,1503,608,1593,625,1627,644,1653,664,1668,661,1672,640,1657,620,1630,603,1595,575,1504,554,1394,538,1274,521,1041,516,882"/>
+<area shape="rect" id="Node000045" href="$classdyno_1_1_subtract.html" title=" " alt="" coords="700,1763,806,1789"/>
+<area shape="poly" id="edge49_Node000001_Node000045" title=" " alt="" coords="522,882,531,1047,551,1290,567,1417,588,1535,613,1634,628,1673,644,1704,659,1722,677,1737,717,1760,714,1764,674,1742,655,1726,639,1707,623,1675,608,1636,582,1536,562,1418,546,1291,526,1047,517,882"/>
+<area shape="rect" id="Node000002" href="$classdyno_1_1_module.html" title=" " alt="" coords="294,840,393,867"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="409,851,441,851,441,856,409,856"/>
+<area shape="rect" id="Node000003" href="$classdyno_1_1_o_base.html" title=" " alt="" coords="149,840,246,867"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="261,851,294,851,294,856,261,856"/>
+<area shape="rect" id="Node000004" href="$classdyno_1_1_object.html" title=" " alt="" coords="5,840,101,867"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="116,851,148,851,148,856,116,856"/>
+<area shape="rect" id="Node000006" href="$classdyno_1_1_add_real_and_real.html" title=" " alt="" coords="940,5,1097,48"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="809,24,939,24,939,29,809,29"/>
+<area shape="rect" id="Node000021" href="$classdyno_1_1_divide_real_and_real.html" title=" " alt="" coords="932,891,1104,933"/>
+<area shape="poly" id="edge23_Node000020_Node000021" title=" " alt="" coords="816,909,932,909,932,915,816,915"/>
+<area shape="rect" id="Node000027" href="$classdyno_1_1_multiply_real_and_real.html" title=" " alt="" coords="928,1100,1108,1143"/>
+<area shape="poly" id="edge29_Node000026_Node000027" title=" " alt="" coords="818,1218,864,1202,878,1190,887,1178,896,1165,912,1152,934,1141,936,1146,914,1157,900,1169,891,1181,882,1194,866,1206,820,1223"/>
+<area shape="rect" id="Node000032" href="$classdyno_1_1_divergence_free_sph_solver.html" title=" " alt="" coords="914,1167,1123,1209"/>
+<area shape="poly" id="edge36_Node000031_Node000032" title=" " alt="" coords="856,1460,863,1453,882,1424,890,1396,890,1367,887,1339,883,1309,883,1280,891,1250,911,1220,925,1208,928,1212,915,1223,896,1252,888,1280,888,1309,892,1338,896,1367,895,1397,887,1427,867,1456,860,1463"/>
+<area shape="rect" id="Node000033" href="$classdyno_1_1_implicit_i_s_p_h.html" title="This is an implementation of the Implicit Incompressible SPH (IISPH) solver based on PeriDyno...." alt="" coords="952,1233,1084,1276"/>
+<area shape="poly" id="edge37_Node000031_Node000033" title=" " alt="" coords="857,1459,863,1453,878,1433,885,1413,887,1371,888,1329,895,1308,911,1286,930,1272,951,1262,953,1267,932,1276,915,1290,900,1310,893,1330,892,1372,890,1414,883,1435,867,1456,860,1463"/>
+<area shape="rect" id="Node000034" href="$classdyno_1_1_implicit_viscosity.html" title="This class implements an implicit solver for artificial viscosity based on the XSPH method." alt="" coords="942,1300,1095,1343"/>
+<area shape="poly" id="edge38_Node000031_Node000034" title=" " alt="" coords="857,1457,863,1453,874,1441,881,1429,887,1404,893,1379,900,1365,911,1353,940,1335,942,1340,915,1357,904,1368,898,1380,892,1405,886,1431,878,1444,867,1457,860,1462"/>
+<area shape="rect" id="Node000035" href="$classdyno_1_1_iterative_density_solver.html" title="This is an implementation of the iterative density solver integrated into the Position Based Dynamics..." alt="" coords="925,1367,1111,1409"/>
+<area shape="poly" id="edge39_Node000031_Node000035" title=" " alt="" coords="851,1458,864,1452,888,1436,912,1419,939,1407,941,1412,914,1424,891,1440,866,1457,853,1463"/>
+<area shape="rect" id="Node000036" href="$classdyno_1_1_semi_analytical_particle_shifting.html" title=" " alt="" coords="924,1433,1112,1476"/>
+<area shape="poly" id="edge40_Node000031_Node000036" title=" " alt="" coords="861,1472,923,1464,924,1469,861,1477"/>
+<area shape="rect" id="Node000037" href="$classdyno_1_1_semi_analytical_summation_density.html" title=" " alt="" coords="913,1500,1123,1543"/>
+<area shape="poly" id="edge41_Node000031_Node000037" title=" " alt="" coords="861,1499,913,1505,912,1511,860,1504"/>
+<area shape="rect" id="Node000038" href="$classdyno_1_1_semi_implicit_density_solver.html" title="This class implements a semi&#45;implicit successive substitution method to solve incompressibility...." alt="" coords="931,1567,1105,1609"/>
+<area shape="poly" id="edge42_Node000031_Node000038" title=" " alt="" coords="853,1513,866,1519,891,1536,914,1552,941,1564,939,1569,912,1557,888,1540,864,1524,851,1518"/>
+<area shape="rect" id="Node000039" href="$classdyno_1_1_summation_density.html" title="The standard summation density." alt="" coords="934,1633,1102,1676"/>
+<area shape="poly" id="edge43_Node000031_Node000039" title=" " alt="" coords="860,1514,867,1519,878,1532,886,1545,892,1571,898,1596,904,1608,915,1619,935,1633,932,1637,911,1623,900,1611,893,1597,887,1572,881,1547,874,1535,863,1523,857,1519"/>
+<area shape="rect" id="Node000040" href="$classdyno_1_1_surface_energy_force.html" title="An implementation of the energy&#45;based surface model proposed by He et al.[2024]. Refer to &quot;Robust Sim..." alt="" coords="930,1700,1106,1743"/>
+<area shape="poly" id="edge44_Node000031_Node000040" title=" " alt="" coords="860,1513,867,1520,883,1541,890,1562,892,1604,893,1646,900,1666,915,1686,931,1699,928,1703,911,1690,895,1668,888,1647,887,1605,885,1563,878,1543,863,1523,857,1517"/>
+<area shape="rect" id="Node000041" href="$classdyno_1_1_variational_approximate_projection.html" title="Projection&#45;based solver." alt="" coords="923,1767,1113,1809"/>
+<area shape="poly" id="edge45_Node000031_Node000041" title=" " alt="" coords="860,1513,867,1520,887,1549,895,1579,896,1609,892,1638,888,1667,888,1696,896,1724,915,1753,928,1764,925,1768,911,1756,891,1726,883,1696,883,1667,887,1637,890,1609,890,1580,882,1552,863,1523,856,1516"/>
+<area shape="rect" id="Node000046" href="$classdyno_1_1_subtract_real_and_real.html" title=" " alt="" coords="926,1833,1110,1876"/>
+<area shape="poly" id="edge50_Node000045_Node000046" title=" " alt="" coords="816,1792,945,1830,943,1835,815,1797"/>
 </map>

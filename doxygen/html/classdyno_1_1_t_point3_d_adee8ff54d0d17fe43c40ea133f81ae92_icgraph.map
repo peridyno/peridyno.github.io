@@ -1,15 +1,78 @@
 <map id="dyno::TPoint3D::distance" name="dyno::TPoint3D::distance">
-<area shape="rect" id="node1" title=" " alt="" coords="683,157,851,184"/>
-<area shape="rect" id="node2" href="$namespacedyno.html#a94de691fb290dd4ffeeab57cc41978d4" title="Calculate the intersection area between a sphere and a triangle by using the domain decompsotion algo..." alt="" coords="431,5,635,32"/>
-<area shape="rect" id="node3" href="$classdyno_1_1_t_line3_d.html#af9652a97eccaf31d45ff9b98b917680b" title=" " alt="" coords="451,56,614,83"/>
-<area shape="rect" id="node4" href="$classdyno_1_1_t_ray3_d.html#acf2480219a53cb4251ac4c3b0b2eeebe" title=" " alt="" coords="452,107,613,133"/>
-<area shape="rect" id="node5" href="$classdyno_1_1_t_line3_d.html#a36e55a166325216d5673b6e12d8bb5b2" title=" " alt="" coords="451,157,614,184"/>
-<area shape="rect" id="node6" href="$classdyno_1_1_t_point_sweep3_d.html#a915af26e8c3ecb43bde216ecee5610b7" title="Calculate the possible intersection for a moving point and a moving triangle. We assume both the poin..." alt="" coords="457,209,608,250"/>
-<area shape="rect" id="node7" href="$classdyno_1_1_t_oriented_box3_d.html#ad446fe98960d8cb96d46d56f6aa0c9ee" title=" " alt="" coords="456,274,609,315"/>
-<area shape="rect" id="node8" href="$classdyno_1_1_t_segment3_d.html#a9950f5a017f87a177c07f049e3af26cd" title=" " alt="" coords="435,340,630,367"/>
-<area shape="rect" id="node9" href="$classdyno_1_1_collision_detection.html#a6397f6a25678d29c8f5450613b7bfdc7" title=" " alt="" coords="218,274,381,315"/>
-<area shape="rect" id="node10" href="$namespacedyno.html#a83723fb8334cd585b9e0f34b68494772" title=" " alt="" coords="219,340,379,367"/>
-<area shape="rect" id="node12" href="$namespacedyno.html#a761c47fea5180e2634c89864ee137831" title=" " alt="" coords="216,395,383,421"/>
-<area shape="rect" id="node11" href="$classdyno_1_1_collision_detection.html#ae23604fa7bd2ef122a76959d7ed802cf" title=" " alt="" coords="5,329,168,370"/>
-<area shape="rect" id="node13" href="$classdyno_1_1_collision_detection.html#a9d1cb5b54cb44aee4f2b3b8bd14414b6" title=" " alt="" coords="5,394,168,435"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="716,403,886,429"/>
+<area shape="rect" id="Node000002" href="$namespacedyno.html#a94de691fb290dd4ffeeab57cc41978d4" title="Calculate the intersection area between a sphere and a triangle by using the domain decompsotion algo..." alt="" coords="462,184,666,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="786,390,768,352,742,307,708,262,667,225,645,214,648,209,670,220,712,259,747,304,773,349,791,387"/>
+<area shape="rect" id="Node000003" href="$namespacedyno.html#a18fd2018ed3aa2ef8af4aec070a66c3d" title="Calculate the signed distance from a point to a triangular mesh." alt="" coords="460,235,668,277"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="777,392,730,341,700,315,667,292,645,280,647,276,670,287,703,310,734,337,781,389"/>
+<area shape="rect" id="Node000004" href="$classdyno_1_1_t_line3_d.html#af9652a97eccaf31d45ff9b98b917680b" title=" " alt="" coords="482,301,646,328"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="766,396,720,368,667,342,633,331,635,326,669,338,723,364,769,392"/>
+<area shape="rect" id="Node000005" href="$classdyno_1_1_t_ray3_d.html#acf2480219a53cb4251ac4c3b0b2eeebe" title=" " alt="" coords="482,352,646,379"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="719,401,629,382,630,377,721,396"/>
+<area shape="rect" id="Node000006" href="$classdyno_1_1_t_line3_d.html#a36e55a166325216d5673b6e12d8bb5b2" title=" " alt="" coords="482,403,646,429"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="701,419,647,419,647,413,701,413"/>
+<area shape="rect" id="Node000007" href="$classdyno_1_1_t_oriented_box3_d.html#ad446fe98960d8cb96d46d56f6aa0c9ee" title=" " alt="" coords="487,453,641,496"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="730,436,643,458,641,453,729,431"/>
+<area shape="rect" id="Node000008" href="$classdyno_1_1_t_oriented_box3_d.html#af7882c1514d2703a68c409a4d7e6a67c" title=" " alt="" coords="487,520,641,563"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="773,442,726,476,670,510,643,522,641,517,667,506,723,472,770,437"/>
+<area shape="rect" id="Node000009" href="$classdyno_1_1_t_oriented_box3_d.html#a9c41e154f2d34b8259f022839a3c3c94" title=" " alt="" coords="487,587,641,629"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="787,444,740,510,707,546,670,577,643,591,641,586,667,572,704,542,736,507,782,441"/>
+<area shape="rect" id="Node000010" href="$classdyno_1_1_t_segment3_d.html#a9950f5a017f87a177c07f049e3af26cd" title=" " alt="" coords="466,653,662,680"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="794,445,778,489,752,543,716,597,694,622,670,644,649,655,647,651,667,639,691,618,712,594,747,540,773,487,789,443"/>
+<area shape="rect" id="Node000011" href="$namespacedyno.html#a621fe0f984f7a22de68fda95c63e6436" title=" " alt="" coords="240,292,388,319"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="460,645,458,643,443,623,432,604,423,564,425,525,433,486,441,447,443,409,435,370,425,352,410,333,387,317,390,312,414,329,429,349,440,369,448,408,446,448,438,487,431,525,429,564,437,602,447,621,462,640,464,642"/>
+<area shape="rect" id="Node000022" href="$classdyno_1_1_t_segment3_d.html#a08bd93b87ba91de49b7e5f2114006f70" title=" " alt="" coords="219,343,410,369"/>
+<area shape="poly" id="edge21_Node000010_Node000022" title=" " alt="" coords="461,646,458,643,436,610,427,577,428,544,433,511,438,479,439,447,431,415,410,383,396,372,399,368,414,380,436,413,445,446,444,479,438,512,433,544,432,576,441,608,462,640,464,642"/>
+<area shape="rect" id="Node000023" href="$classdyno_1_1_t_segment3_d.html#a7a945e8121c9a8e15f0ff8257f577d63" title=" " alt="" coords="219,393,410,420"/>
+<area shape="poly" id="edge22_Node000010_Node000023" title=" " alt="" coords="461,646,458,643,439,617,431,590,430,563,433,537,436,510,435,484,428,459,410,434,395,423,398,418,414,430,433,457,441,484,441,511,438,537,436,563,436,589,444,614,462,640,465,642"/>
+<area shape="rect" id="Node000024" href="$classdyno_1_1_t_segment3_d.html#afb0d61bb798eaa5bd8dee32b536859d5" title=" " alt="" coords="219,444,410,487"/>
+<area shape="poly" id="edge23_Node000010_Node000024" title=" " alt="" coords="462,647,458,643,443,626,436,607,433,571,430,535,423,518,410,501,396,489,399,485,414,497,428,515,435,534,438,571,441,606,448,623,462,639,466,643"/>
+<area shape="rect" id="Node000025" href="$classdyno_1_1_t_segment3_d.html#aa97b30ba20ea68404a375e1a1bce13ce" title=" " alt="" coords="219,511,410,553"/>
+<area shape="poly" id="edge24_Node000010_Node000025" title=" " alt="" coords="466,648,458,643,441,625,433,605,426,586,410,567,392,556,395,552,414,563,430,583,438,603,445,622,462,639,469,644"/>
+<area shape="rect" id="Node000026" href="$classdyno_1_1_t_segment3_d.html#a2bfa8fafed4447ad97e345334af5737b" title=" " alt="" coords="217,577,412,604"/>
+<area shape="poly" id="edge25_Node000010_Node000026" title=" " alt="" coords="481,651,459,644,435,631,411,618,376,607,378,602,413,614,437,626,461,639,483,646"/>
+<area shape="rect" id="Node000027" href="$classdyno_1_1_t_segment3_d.html#a9d861df79803c219175dca1aef122c39" title=" " alt="" coords="217,628,412,655"/>
+<area shape="poly" id="edge26_Node000010_Node000027" title=" " alt="" coords="451,658,412,654,413,649,451,653"/>
+<area shape="rect" id="Node000028" href="$classdyno_1_1_collision_detection.html#abbd4125fd82c0e77daf5d4a6e44f1536" title=" " alt="" coords="5,683,169,725"/>
+<area shape="poly" id="edge27_Node000010_Node000028" title=" " alt="" coords="451,678,169,700,169,695,451,673"/>
+<area shape="rect" id="Node000029" href="$classdyno_1_1_collision_detection.html#a6397f6a25678d29c8f5450613b7bfdc7" title=" " alt="" coords="233,729,396,772"/>
+<area shape="poly" id="edge28_Node000010_Node000029" title=" " alt="" coords="509,688,381,731,379,726,507,683"/>
+<area shape="rect" id="Node000030" href="$namespacedyno.html#a6d944350bf940cb26b27d7720d6701ea" title=" " alt="" coords="231,796,398,823"/>
+<area shape="poly" id="edge29_Node000010_Node000030" title=" " alt="" coords="540,693,485,740,450,765,413,786,384,798,382,793,411,782,447,761,482,736,537,689"/>
+<area shape="rect" id="Node000031" href="$namespacedyno.html#a413a5f3589d794c44ddc415add45ff2d" title=" " alt="" coords="234,847,394,873"/>
+<area shape="poly" id="edge31_Node000010_Node000031" title=" " alt="" coords="549,695,494,766,457,804,413,837,389,849,386,844,411,832,453,800,490,762,544,692"/>
+<area shape="rect" id="Node000035" href="$namespacedyno.html#a4959726de892868feea75e7ec6f577de" title=" " alt="" coords="234,897,394,924"/>
+<area shape="poly" id="edge35_Node000010_Node000035" title=" " alt="" coords="554,696,533,738,503,790,463,843,439,867,413,888,392,899,389,894,411,883,436,863,459,839,498,787,529,736,549,693"/>
+<area shape="rect" id="Node000036" href="$namespacedyno.html#adc392ae8b07a498f9f655556cb1ea4a5" title=" " alt="" coords="234,948,394,975"/>
+<area shape="poly" id="edge36_Node000010_Node000036" title=" " alt="" coords="558,696,540,748,511,813,469,881,443,911,414,938,394,950,391,945,410,934,439,908,465,878,506,811,535,746,553,694"/>
+<area shape="rect" id="Node000037" href="$namespacedyno.html#a761c47fea5180e2634c89864ee137831" title=" " alt="" coords="230,999,398,1025"/>
+<area shape="poly" id="edge37_Node000010_Node000037" title=" " alt="" coords="560,696,545,757,518,836,498,878,475,918,447,956,414,989,395,1000,392,996,410,985,443,953,470,915,494,875,513,834,540,756,555,695"/>
+<area shape="rect" id="Node000012" href="$classdyno_1_1_collision_detection.html#aee247e8380b29c8e1e1634e30e4bcd11" title=" " alt="" coords="5,5,169,48"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="301,278,282,232,253,174,215,115,192,87,167,62,151,51,154,46,170,58,196,83,219,111,258,172,287,230,306,276"/>
+<area shape="rect" id="Node000013" href="$classdyno_1_1_collision_detection.html#a530a7d3bc155f8eb82b916107969fb14" title=" " alt="" coords="5,72,169,115"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="295,280,244,206,208,165,167,129,149,117,152,113,170,125,212,161,248,203,300,277"/>
+<area shape="rect" id="Node000014" href="$classdyno_1_1_collision_detection.html#a1819b8e6bc11fd64c0338af60cfd9ba2" title=" " alt="" coords="5,139,169,181"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="285,283,232,240,167,196,145,184,148,179,170,191,235,236,288,279"/>
+<area shape="rect" id="Node000015" href="$classdyno_1_1_collision_detection.html#aaa9d1772c5c3f61e5734f94bf7a218a5" title=" " alt="" coords="5,205,169,248"/>
+<area shape="poly" id="edge14_Node000011_Node000015" title=" " alt="" coords="258,289,150,251,152,246,260,284"/>
+<area shape="rect" id="Node000016" href="$classdyno_1_1_collision_detection.html#a67a4ff282f4367797856b0abd7366ca9" title=" " alt="" coords="5,272,169,315"/>
+<area shape="poly" id="edge15_Node000011_Node000016" title=" " alt="" coords="225,303,169,300,169,295,225,298"/>
+<area shape="rect" id="Node000017" href="$classdyno_1_1_collision_detection.html#ae1c20c6defa188a668c892b3cb60cdb9" title=" " alt="" coords="5,339,169,381"/>
+<area shape="poly" id="edge16_Node000011_Node000017" title=" " alt="" coords="242,325,170,343,169,338,240,320"/>
+<area shape="rect" id="Node000018" href="$classdyno_1_1_collision_detection.html#ad9c7f111cdae45656066c5b71e1df466" title=" " alt="" coords="5,405,169,448"/>
+<area shape="poly" id="edge17_Node000011_Node000018" title=" " alt="" coords="227,327,218,333,203,347,194,363,186,379,170,395,152,407,149,402,167,391,182,376,190,360,199,344,215,329,225,323"/>
+<area shape="rect" id="Node000019" href="$classdyno_1_1_collision_detection.html#a13cf908dfdfab6eec7f6fcde6547f378" title=" " alt="" coords="5,472,169,515"/>
+<area shape="poly" id="edge18_Node000011_Node000019" title=" " alt="" coords="228,326,218,333,206,348,199,363,194,395,190,428,183,445,171,462,156,474,153,469,167,458,179,442,185,426,189,394,193,361,201,345,215,329,224,321"/>
+<area shape="rect" id="Node000020" href="$classdyno_1_1_collision_detection.html#a4c0bcfc7db5cdcbff1675fc0f92b59fa" title=" " alt="" coords="5,539,169,581"/>
+<area shape="poly" id="edge19_Node000011_Node000020" title=" " alt="" coords="228,324,219,333,201,356,193,379,192,403,194,427,195,477,187,502,171,528,158,540,154,536,167,525,182,500,189,476,188,427,187,403,188,378,197,353,215,329,225,320"/>
+<area shape="rect" id="Node000021" href="$classdyno_1_1_collision_detection.html#a03d4f3039b5d3d22f09a3098403be404" title=" " alt="" coords="5,605,169,648"/>
+<area shape="poly" id="edge20_Node000011_Node000021" title=" " alt="" coords="228,324,219,332,197,364,188,396,188,427,193,460,198,492,199,526,191,560,171,595,158,607,155,603,167,592,186,558,194,525,193,493,188,460,183,428,183,395,192,362,215,329,224,320"/>
+<area shape="poly" id="edge30_Node000030_Node000028" title=" " alt="" coords="234,793,216,786,162,758,116,728,119,724,164,753,218,782,235,788"/>
+<area shape="rect" id="Node000032" href="$classdyno_1_1_collision_detection.html#aaeac3f68909d63d18b582185fe8c276a" title=" " alt="" coords="5,772,169,815"/>
+<area shape="poly" id="edge32_Node000031_Node000032" title=" " alt="" coords="242,845,216,837,153,818,155,813,217,832,244,840"/>
+<area shape="rect" id="Node000033" href="$classdyno_1_1_collision_detection.html#aaf56e3348510fa9e65d002383c4469d3" title=" " alt="" coords="5,839,169,881"/>
+<area shape="poly" id="edge33_Node000031_Node000033" title=" " alt="" coords="219,863,169,863,169,857,219,857"/>
+<area shape="rect" id="Node000034" href="$classdyno_1_1_collision_detection.html#adc6e63fa5e7e75f323b23740da39a64a" title=" " alt="" coords="5,905,169,948"/>
+<area shape="poly" id="edge34_Node000031_Node000034" title=" " alt="" coords="244,880,217,888,155,907,153,902,216,883,242,875"/>
+<area shape="rect" id="Node000038" href="$classdyno_1_1_collision_detection.html#a9d1cb5b54cb44aee4f2b3b8bd14414b6" title=" " alt="" coords="5,991,169,1033"/>
+<area shape="poly" id="edge38_Node000037_Node000038" title=" " alt="" coords="215,1015,169,1015,169,1009,215,1009"/>
 </map>

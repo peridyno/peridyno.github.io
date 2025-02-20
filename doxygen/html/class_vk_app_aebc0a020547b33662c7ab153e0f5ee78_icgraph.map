@@ -1,11 +1,23 @@
 <map id="VkApp::createCommandBuffers" name="VkApp::createCommandBuffers">
-<area shape="rect" id="node1" title=" " alt="" coords="952,55,1156,81"/>
-<area shape="rect" id="node2" href="$class_vk_app.html#aa232b32eb5b90698500190d0fe004cdb" title="Prepares all Vulkan resources and functions required to run the sample." alt="" coords="773,29,885,56"/>
-<area shape="rect" id="node3" href="$class_vk_app.html#a7cd16d7aa5e59f3320f4db4203d9c6c2" title=" " alt="" coords="753,80,904,107"/>
-<area shape="rect" id="node4" href="$class_vk_app.html#a0162143259d08706c042d08fbebe4706" title=" " alt="" coords="556,55,705,81"/>
-<area shape="rect" id="node9" href="$class_vk_app.html#a77aa2460391395eadb236bd13826b56e" title="Presents the current image to the swap chain." alt="" coords="558,105,703,132"/>
-<area shape="rect" id="node5" href="$class_vk_app.html#ab63b7933ea35df31039ed96b36d75e75" title="(Pure virtual) Render function to be implemented by the sample application" alt="" coords="384,55,489,81"/>
-<area shape="rect" id="node8" href="$class_vk_app.html#a5d8fd30fd675c69715d49be5469896ba" title="(Virtual) Default image acquire + submission and command buffer submission function" alt="" coords="365,105,508,132"/>
-<area shape="rect" id="node6" href="$class_vk_app.html#a271496c24fa0c1d5685741d5161be134" title=" " alt="" coords="187,80,317,107"/>
-<area shape="rect" id="node7" href="$class_vk_app.html#a8c9b49184fcb89a73a6ea6c1ed2b7f54" title="Entry point for the main render loop." alt="" coords="5,55,139,81"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="951,55,1156,81"/>
+<area shape="rect" id="Node000002" href="$class_vk_app.html#aa232b32eb5b90698500190d0fe004cdb" title="Prepares all Vulkan resources and functions required to run the sample." alt="" coords="771,29,882,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="935,57,882,51,883,46,936,52"/>
+<area shape="rect" id="Node000003" href="$class_vk_app.html#a7cd16d7aa5e59f3320f4db4203d9c6c2" title=" " alt="" coords="750,80,903,107"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="936,84,904,87,903,82,935,79"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="860,16,849,10,826,8,806,10,794,15,792,20,797,27,793,30,786,21,791,11,804,5,826,3,850,5,863,12"/>
+<area shape="rect" id="Node000004" href="$class_vk_app.html#a0162143259d08706c042d08fbebe4706" title=" " alt="" coords="553,55,702,81"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="734,84,702,80,702,75,734,79"/>
+<area shape="rect" id="Node000009" href="$class_vk_app.html#a77aa2460391395eadb236bd13826b56e" title="Presents the current image to the swap chain." alt="" coords="555,105,700,132"/>
+<area shape="poly" id="edge10_Node000003_Node000009" title=" " alt="" coords="735,108,700,112,700,107,734,102"/>
+<area shape="rect" id="Node000005" href="$class_vk_app.html#ab63b7933ea35df31039ed96b36d75e75" title="(Pure virtual) Render function to be implemented by the sample application" alt="" coords="382,55,487,81"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="538,71,487,71,487,65,538,65"/>
+<area shape="rect" id="Node000008" href="$class_vk_app.html#a5d8fd30fd675c69715d49be5469896ba" title="(Virtual) Default image acquire + submission and command buffer submission function" alt="" coords="364,105,505,132"/>
+<area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="560,89,489,107,488,102,558,83"/>
+<area shape="rect" id="Node000006" href="$class_vk_app.html#a271496c24fa0c1d5685741d5161be134" title=" " alt="" coords="186,80,316,107"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="368,80,317,87,316,82,367,75"/>
+<area shape="rect" id="Node000007" href="$class_vk_app.html#a8c9b49184fcb89a73a6ea6c1ed2b7f54" title="Entry point for the main render loop." alt="" coords="5,55,138,81"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="367,71,138,71,138,65,367,65"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="170,85,138,80,138,75,171,79"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="558,103,486,84,488,79,560,98"/>
+<area shape="poly" id="edge12_Node000009_Node000008" title=" " alt="" coords="540,121,506,121,506,116,540,116"/>
 </map>

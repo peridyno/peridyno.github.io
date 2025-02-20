@@ -1,20 +1,39 @@
 <map id="dyno::TriangleSetRenderer" name="dyno::TriangleSetRenderer">
-<area shape="rect" id="node1" title=" " alt="" coords="1701,501,1876,528"/>
-<area shape="rect" id="node2" href="$classdyno_1_1_vk_visual_module.html" title=" " alt="" coords="1387,287,1539,313"/>
-<area shape="rect" id="node3" href="$classdyno_1_1_visual_module.html" title=" " alt="" coords="1159,256,1295,283"/>
-<area shape="rect" id="node4" href="$classdyno_1_1_module.html" title=" " alt="" coords="928,231,1028,257"/>
-<area shape="rect" id="node5" href="$classdyno_1_1_o_base.html" title=" " alt="" coords="181,180,279,207"/>
-<area shape="rect" id="node7" href="$classdyno_1_1_node.html" title=" " alt="" coords="716,231,804,257"/>
-<area shape="rect" id="node9" href="$classdyno_1_1_scene_graph.html" title=" " alt="" coords="440,180,571,207"/>
-<area shape="rect" id="node6" href="$classdyno_1_1_object.html" title=" " alt="" coords="5,180,101,207"/>
-<area shape="rect" id="node8" title=" " alt="" coords="478,309,533,336"/>
-<area shape="rect" id="node10" href="$classdyno_1_1_vector.html" title=" " alt="" coords="151,53,309,80"/>
-<area shape="rect" id="node11" href="$classdyno_1_1_quat.html" title=" " alt="" coords="911,281,1045,308"/>
-<area shape="rect" id="node12" href="$classdyno_1_1_vk_constant.html" title=" " alt="" coords="1365,472,1561,499"/>
-<area shape="rect" id="node13" href="$classdyno_1_1_vk_variable.html" title=" " alt="" coords="1166,604,1287,631"/>
-<area shape="rect" id="node16" href="$classdyno_1_1_vk_device_array.html" title=" " alt="" coords="1392,670,1535,711"/>
-<area shape="rect" id="node17" href="$classdyno_1_1_vk_device_array.html" title=" " alt="" coords="1392,735,1535,777"/>
-<area shape="rect" id="node18" href="$classdyno_1_1_vk_uniform.html" title=" " alt="" coords="1384,589,1543,645"/>
-<area shape="rect" id="node14" href="$classdyno_1_1_vk_context.html" title=" " alt="" coords="919,475,1037,501"/>
-<area shape="rect" id="node15" href="$structdyno_1_1_triangle_set_renderer_1_1_graphics_u_b_o.html" title=" " alt="" coords="1376,523,1551,565"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1621,334,1797,361"/>
+<area shape="rect" id="Node000002" href="$classdyno_1_1_vk_visual_module.html" title=" " alt="" coords="1307,134,1458,161"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1462,163,1531,187,1566,204,1599,225,1630,252,1659,281,1700,332,1696,335,1655,285,1627,256,1595,229,1564,209,1529,192,1461,168"/>
+<area shape="rect" id="Node000003" href="$classdyno_1_1_visual_module.html" title=" " alt="" coords="1079,134,1215,161"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1230,145,1307,145,1307,150,1230,150"/>
+<area shape="rect" id="Node000004" href="$classdyno_1_1_module.html" title=" " alt="" coords="900,134,999,161"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1015,145,1079,145,1079,150,1015,150"/>
+<area shape="rect" id="Node000005" href="$classdyno_1_1_o_base.html" title=" " alt="" coords="180,107,278,134"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="294,122,477,133,704,143,900,145,900,150,704,149,477,139,293,127"/>
+<area shape="rect" id="Node000007" href="$classdyno_1_1_node.html" title=" " alt="" coords="704,107,792,134"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="293,118,703,118,703,123,293,123"/>
+<area shape="rect" id="Node000008" href="$classdyno_1_1_scene_graph.html" title=" " alt="" coords="439,57,569,83"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="292,106,438,79,439,84,293,112"/>
+<area shape="rect" id="Node000006" href="$classdyno_1_1_object.html" title=" " alt="" coords="5,107,101,134"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="116,118,180,118,180,123,116,123"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="808,126,900,138,899,143,807,131"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="585,81,680,101,704,106,702,111,679,106,584,86"/>
+<area shape="rect" id="Node000009" href="$classdyno_1_1_vector.html" title=" " alt="" coords="150,30,308,57"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="324,50,439,61,439,66,323,55"/>
+<area shape="rect" id="Node000010" href="$classdyno_1_1_vk_constant.html" title=" " alt="" coords="1285,334,1481,361"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1497,345,1621,345,1621,350,1497,350"/>
+<area shape="rect" id="Node000011" href="$classdyno_1_1_vk_variable.html" title=" " alt="" coords="1087,334,1207,361"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="1222,345,1284,345,1284,350,1222,350"/>
+<area shape="rect" id="Node000014" href="$classdyno_1_1_vk_device_array.html" title=" " alt="" coords="1310,385,1456,427"/>
+<area shape="poly" id="edge17_Node000014_Node000011" title=" " alt="" coords="1219,362,1310,385,1309,390,1218,367"/>
+<area shape="rect" id="Node000015" href="$classdyno_1_1_vk_device_array.html" title=" " alt="" coords="1310,185,1456,227"/>
+<area shape="poly" id="edge19_Node000015_Node000011" title=" " alt="" coords="1172,321,1221,279,1283,237,1309,225,1311,230,1286,241,1224,283,1175,325"/>
+<area shape="rect" id="Node000016" href="$classdyno_1_1_vk_uniform.html" title=" " alt="" coords="1303,251,1462,310"/>
+<area shape="poly" id="edge21_Node000016_Node000011" title=" " alt="" coords="1211,326,1302,300,1304,306,1213,332"/>
+<area shape="rect" id="Node000012" href="$classdyno_1_1_vk_context.html" title=" " alt="" coords="890,410,1009,437"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="1025,433,1117,444,1232,452,1357,451,1419,446,1480,437,1539,421,1595,400,1682,359,1684,363,1597,405,1540,426,1482,442,1420,451,1357,457,1231,457,1117,450,1025,438"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="1000,401,1109,359,1111,364,1002,406"/>
+<area shape="rect" id="Node000013" href="$structdyno_1_1_triangle_set_renderer_1_1_graphics_u_b_o.html" title=" " alt="" coords="1295,502,1471,545"/>
+<area shape="poly" id="edge15_Node000001_Node000013" title=" " alt="" coords="1486,526,1543,517,1570,509,1596,497,1634,466,1664,428,1686,390,1700,360,1705,362,1691,392,1668,431,1637,470,1598,501,1572,514,1544,523,1487,531"/>
+<area shape="poly" id="edge16_Node000001_Node000014" title=" " alt="" coords="1471,388,1597,366,1636,358,1637,364,1597,371,1472,394"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="1464,230,1482,237,1541,258,1598,282,1687,331,1684,336,1596,287,1539,263,1480,242,1462,235"/>
+<area shape="poly" id="edge20_Node000001_Node000016" title=" " alt="" coords="1478,297,1641,331,1640,336,1477,302"/>
 </map>

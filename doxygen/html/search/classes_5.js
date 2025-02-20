@@ -11,7 +11,7 @@ var searchData=
   ['elastoplasticbody_8',['ElastoplasticBody',['../classdyno_1_1_elastoplastic_body.html',1,'dyno']]],
   ['elastoplasticitymodule_9',['ElastoplasticityModule',['../classdyno_1_1_elastoplasticity_module.html',1,'dyno']]],
   ['elementoffset_10',['ElementOffset',['../structdyno_1_1_element_offset.html',1,'dyno']]],
-  ['endpoint_11',['endpoint',['../structdyno_1_1_canvas_1_1_end_point.html',1,'dyno::Canvas::EndPoint'],['../structdyno_1_1m_draw_label_1_1_end_point.html',1,'dyno::mDrawLabel::EndPoint']]],
+  ['endpoint_11',['EndPoint',['../structdyno_1_1_canvas_1_1_end_point.html',1,'dyno::Canvas::EndPoint'],['../structdyno_1_1m_draw_label_1_1_end_point.html',1,'dyno::mDrawLabel::EndPoint']]],
   ['energyanalysis_12',['EnergyAnalysis',['../classdyno_1_1_energy_analysis.html',1,'dyno']]],
   ['energymodels_13',['EnergyModels',['../structdyno_1_1_energy_models.html',1,'dyno']]],
   ['envmap_14',['Envmap',['../classdyno_1_1_envmap.html',1,'dyno']]],

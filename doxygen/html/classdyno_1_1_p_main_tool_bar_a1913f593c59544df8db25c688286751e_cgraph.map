@@ -1,15 +1,39 @@
 <map id="dyno::PMainToolBar::openFile" name="dyno::PMainToolBar::openFile">
-<area shape="rect" id="node1" title=" " alt="" coords="5,260,144,301"/>
-<area shape="rect" id="node2" href="$classdyno_1_1_p_simulation_thread.html#a8bc824595ab90bbf275b4a05c57be926" title=" " alt="" coords="198,129,365,171"/>
-<area shape="rect" id="node10" href="$classdyno_1_1_scene_loader_factory.html#a5bedb102e1dcf02438ac013b8587e653" title="Get an entry given a file extension." alt="" coords="192,195,371,236"/>
-<area shape="rect" id="node11" href="$classdyno_1_1_scene_loader_factory.html#a2f9bbd5f40b3737227c24332442acf9e" title="Get the ObjectFactory singleton instance." alt="" coords="192,260,371,301"/>
-<area shape="rect" id="node12" href="$classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1" title=" " alt="" coords="198,325,365,367"/>
-<area shape="rect" id="node13" href="$classdyno_1_1_scene_loader.html#a7e429cfdb19777b1b9183dc7e3f6c8a0" title=" " alt="" coords="198,391,365,418"/>
-<area shape="rect" id="node3" href="$classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="857,5,1032,47"/>
-<area shape="rect" id="node4" href="$classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="635,165,809,207"/>
-<area shape="rect" id="node6" href="$classdyno_1_1_p_simulation_thread.html#a0cb1f5a6088db96385a6277b77b1d6a7" title=" " alt="" coords="419,100,586,141"/>
-<area shape="rect" id="node9" href="$classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28" title="Add a new message to log." alt="" coords="419,217,587,243"/>
-<area shape="rect" id="node5" href="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="857,165,1032,207"/>
-<area shape="rect" id="node7" href="$classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="635,35,809,76"/>
-<area shape="rect" id="node8" href="$classdyno_1_1_p_simulation_thread.html#a7dba012537618b2cf001a17714160bf6" title=" " alt="" coords="639,100,805,141"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,357,144,400"/>
+<area shape="rect" id="Node000002" href="$classdyno_1_1_p_simulation_thread.html#a8bc824595ab90bbf275b4a05c57be926" title=" " alt="" coords="197,144,364,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,355,246,196,250,200,98,359"/>
+<area shape="rect" id="Node000012" href="$classdyno_1_1_scene_loader_factory.html#a5bedb102e1dcf02438ac013b8587e653" title="Get an entry given a file extension." alt="" coords="192,291,369,333"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="142,354,197,336,198,341,143,359"/>
+<area shape="rect" id="Node000013" href="$classdyno_1_1_scene_loader_factory.html#a2f9bbd5f40b3737227c24332442acf9e" title="Get the ObjectFactory singleton instance." alt="" coords="192,357,369,400"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="144,376,176,376,176,381,144,381"/>
+<area shape="rect" id="Node000016" href="$classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1" title=" " alt="" coords="197,424,364,467"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="143,398,198,416,197,421,142,403"/>
+<area shape="rect" id="Node000018" href="$classdyno_1_1_scene_loader.html#a7e429cfdb19777b1b9183dc7e3f6c8a0" title=" " alt="" coords="198,491,363,517"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="97,399,139,438,193,476,205,482,203,487,190,481,136,442,94,402"/>
+<area shape="rect" id="Node000003" href="$classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="868,203,1041,245"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,185,386,213,464,244,552,272,643,292,732,303,770,302,819,292,866,275,908,252,911,256,868,280,820,297,771,307,731,309,642,297,551,278,462,249,384,218,324,190"/>
+<area shape="rect" id="Node000004" href="$classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="644,40,818,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="364,152,474,135,594,108,658,86,659,91,595,113,475,140,365,158"/>
+<area shape="rect" id="Node000006" href="$classdyno_1_1_p_simulation_thread.html#a0cb1f5a6088db96385a6277b77b1d6a7" title="Reset the simulation." alt="" coords="422,173,589,216"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="365,174,407,179,406,184,364,179"/>
+<area shape="rect" id="Node000010" href="$classdyno_1_1_p_simulation_thread.html#a4762a73779f4b673d7aa2b27cd668dcc" title=" " alt="" coords="422,5,589,48"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="303,142,353,100,416,58,425,53,428,57,418,62,356,104,307,146"/>
+<area shape="rect" id="Node000011" href="$classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28" title="Add a new message to log." alt="" coords="422,72,589,99"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="342,141,451,102,453,107,343,146"/>
+<area shape="rect" id="Node000005" href="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="868,40,1041,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="818,59,852,59,852,64,818,64"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="564,170,593,153,607,138,616,123,625,108,641,93,647,88,650,93,644,97,629,111,620,126,611,141,596,157,567,175"/>
+<area shape="rect" id="Node000007" href="$classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="644,107,818,149"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="579,170,641,152,642,157,581,175"/>
+<area shape="rect" id="Node000008" href="$classdyno_1_1_p_simulation_thread.html#adea9d0cba8dd2f70cc9b60c74c3b4071" title=" " alt="" coords="647,240,815,283"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="581,214,642,232,641,238,579,219"/>
+<area shape="rect" id="Node000009" href="$classdyno_1_1_p_simulation_thread.html#a7dba012537618b2cf001a17714160bf6" title=" " alt="" coords="647,173,815,216"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="590,192,632,192,632,197,590,197"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="793,148,821,159,897,193,895,198,819,164,791,152"/>
+<area shape="rect" id="Node000014" href="$classdyno_1_1_scene_loader_factory.html#a8a217b2b79e88e31460f9b000002e60d" title=" " alt="" coords="417,357,594,400"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="369,376,401,376,401,381,369,381"/>
+<area shape="rect" id="Node000015" href="$classdyno_1_1_scene_loader_factory.html#a5f02af664b78be1a1a6603bb141b9cee" title="Add a scene loader." alt="" coords="642,357,820,400"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="594,376,627,376,627,381,594,381"/>
+<area shape="rect" id="Node000017" href="$classdyno_1_1_p_simulation_thread.html#af8a98174b18d5f7895c5f0f40015f106" title=" " alt="" coords="422,424,589,467"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="365,443,406,443,406,448,365,448"/>
 </map>

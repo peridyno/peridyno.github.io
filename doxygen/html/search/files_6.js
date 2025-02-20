@@ -66,7 +66,7 @@ var searchData=
   ['gridset_2eh_63',['GridSet.h',['../_grid_set_8h.html',1,'']]],
   ['group_2ecpp_64',['Group.cpp',['../_group_8cpp.html',1,'']]],
   ['group_2ecu_65',['Group.cu',['../_group_8cu.html',1,'']]],
-  ['group_2eh_66',['group.h',['../_rendering_2_g_u_i_2_qt_g_u_i_2_tool_bar_2_group_8h.html',1,'(Global Namespace)'],['../_modeling_2_group_8h.html',1,'(Global Namespace)']]],
+  ['group_2eh_66',['Group.h',['../_modeling_2_group_8h.html',1,'(Global Namespace)'],['../_rendering_2_g_u_i_2_qt_g_u_i_2_tool_bar_2_group_8h.html',1,'(Global Namespace)']]],
   ['groupmodule_2ecpp_67',['GroupModule.cpp',['../_group_module_8cpp.html',1,'']]],
   ['groupmodule_2eh_68',['GroupModule.h',['../_group_module_8h.html',1,'']]]
 ];

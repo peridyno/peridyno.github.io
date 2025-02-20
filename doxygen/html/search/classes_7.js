@@ -32,7 +32,7 @@ var searchData=
   ['granularmodule_29',['GranularModule',['../classdyno_1_1_granular_module.html',1,'dyno']]],
   ['graphicsobject_30',['GraphicsObject',['../classdyno_1_1_graphics_object.html',1,'dyno']]],
   ['graphicspipeline_31',['GraphicsPipeline',['../classdyno_1_1_graphics_pipeline.html',1,'dyno']]],
-  ['graphicsubo_32',['graphicsubo',['../structdyno_1_1_triangle_set_renderer_1_1_graphics_u_b_o.html',1,'dyno::TriangleSetRenderer::GraphicsUBO'],['../structdyno_1_1_vk_graphics_pipeline_1_1_graphics_u_b_o.html',1,'dyno::VkGraphicsPipeline::GraphicsUBO']]],
+  ['graphicsubo_32',['GraphicsUBO',['../structdyno_1_1_triangle_set_renderer_1_1_graphics_u_b_o.html',1,'dyno::TriangleSetRenderer::GraphicsUBO'],['../structdyno_1_1_vk_graphics_pipeline_1_1_graphics_u_b_o.html',1,'dyno::VkGraphicsPipeline::GraphicsUBO']]],
   ['greater_33',['greater',['../structdyno_1_1greater.html',1,'dyno']]],
   ['greaterequalfunc_34',['GreaterEqualFunc',['../structdyno_1_1_greater_equal_func.html',1,'dyno']]],
   ['greaterfunc_35',['GreaterFunc',['../structdyno_1_1_greater_func.html',1,'dyno']]],
@@ -41,6 +41,6 @@ var searchData=
   ['gridinfo_38',['GridInfo',['../structdyno_1_1_grid_info.html',1,'dyno']]],
   ['gridset_39',['GridSet',['../classdyno_1_1_grid_set.html',1,'dyno']]],
   ['groundrenderer_40',['GroundRenderer',['../classdyno_1_1_ground_renderer.html',1,'dyno']]],
-  ['group_41',['group',['../classdyno_1_1_group.html',1,'dyno::Group&lt; TDataType &gt;'],['../classtt_1_1_group.html',1,'tt::Group']]],
+  ['group_41',['Group',['../classdyno_1_1_group.html',1,'dyno::Group&lt; TDataType &gt;'],['../classtt_1_1_group.html',1,'tt::Group']]],
   ['groupmodule_42',['GroupModule',['../classdyno_1_1_group_module.html',1,'dyno']]]
 ];

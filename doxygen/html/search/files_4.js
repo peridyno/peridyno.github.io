@@ -8,7 +8,7 @@ var searchData=
   ['edgepickernode_2eh_5',['EdgePickerNode.h',['../_edge_picker_node_8h.html',1,'']]],
   ['edgeset_2ecpp_6',['EdgeSet.cpp',['../_edge_set_8cpp.html',1,'']]],
   ['edgeset_2ecu_7',['EdgeSet.cu',['../_edge_set_8cu.html',1,'']]],
-  ['edgeset_2eh_8',['edgeset.h',['../_cuda_2_topology_2_edge_set_8h.html',1,'(Global Namespace)'],['../_vulkan_2_topology_2_edge_set_8h.html',1,'(Global Namespace)']]],
+  ['edgeset_2eh_8',['EdgeSet.h',['../_cuda_2_topology_2_edge_set_8h.html',1,'(Global Namespace)'],['../_vulkan_2_topology_2_edge_set_8h.html',1,'(Global Namespace)']]],
   ['editablemesh_2ecu_9',['EditableMesh.cu',['../_editable_mesh_8cu.html',1,'']]],
   ['editablemesh_2eh_10',['EditableMesh.h',['../_editable_mesh_8h.html',1,'']]],
   ['eigenvaluewriter_2ecpp_11',['EigenValueWriter.cpp',['../_eigen_value_writer_8cpp.html',1,'']]],

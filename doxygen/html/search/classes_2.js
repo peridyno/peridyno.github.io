@@ -6,7 +6,7 @@ var searchData=
   ['basicshapetovolume_3',['BasicShapeToVolume',['../classdyno_1_1_basic_shape_to_volume.html',1,'dyno']]],
   ['bboxrenderer_4',['BBoxRenderer',['../classdyno_1_1_b_box_renderer.html',1,'dyno']]],
   ['binary_5ffunction_5',['binary_function',['../structdyno_1_1binary__function.html',1,'dyno']]],
-  ['binary_5ffunction_3c_20typename_20container_3a_3avalue_5ftype_2c_20typename_20container_3a_3avalue_5ftype_2c_20bool_20_3e_6',['binary_function&lt; typename Container::value_type, typename Container::value_type, bool &gt;',['../structdyno_1_1binary__function.html',1,'dyno']]],
+  ['binary_5ffunction_3c_20t_2c_20t_2c_20bool_20_3e_6',['binary_function&lt; T, T, bool &gt;',['../structdyno_1_1binary__function.html',1,'dyno']]],
   ['binary_5ffunction_3c_20void_2c_20void_2c_20bool_20_3e_7',['binary_function&lt; void, void, bool &gt;',['../structdyno_1_1binary__function.html',1,'dyno']]],
   ['bitandfunc_8',['BitAndFunc',['../structdyno_1_1_bit_and_func.html',1,'dyno']]],
   ['bitorfunc_9',['BitOrFunc',['../structdyno_1_1_bit_or_func.html',1,'dyno']]],
@@ -18,7 +18,7 @@ var searchData=
   ['boundingboxtoedgeset_15',['BoundingBoxToEdgeSet',['../classdyno_1_1_bounding_box_to_edge_set.html',1,'dyno']]],
   ['box_16',['Box',['../structpx_1_1_box.html',1,'px']]],
   ['boxinfo_17',['BoxInfo',['../structdyno_1_1_box_info.html',1,'dyno']]],
-  ['buffer_18',['buffer',['../classdyno_1_1_buffer.html',1,'dyno::Buffer'],['../classvks_1_1_buffer.html',1,'vks::Buffer']]],
+  ['buffer_18',['Buffer',['../classdyno_1_1_buffer.html',1,'dyno::Buffer'],['../classvks_1_1_buffer.html',1,'vks::Buffer']]],
   ['buffercopy_19',['BufferCopy',['../classdyno_1_1_buffer_copy.html',1,'dyno']]],
   ['builder_20',['Builder',['../classtt_1_1_builder.html',1,'tt']]],
   ['bvhnode_21',['BVHNode',['../classdyno_1_1_b_v_h_node.html',1,'dyno']]]

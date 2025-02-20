@@ -1,16 +1,28 @@
 <map id="VkApp::buildCommandBuffers" name="VkApp::buildCommandBuffers">
-<area shape="rect" id="node1" title="(Virtual) Called when resources have been recreated that require a rebuild of the command buffers (e...." alt="" coords="5,262,200,289"/>
-<area shape="rect" id="node2" href="$class_vk_app.html#a2d514ecd18dc274f4117753e6c299b32" title=" " alt="" coords="248,87,448,128"/>
-<area shape="rect" id="node8" href="$namespacevks_1_1initializers.html#ab43b98c7cf767b67fd3501fedb4a8348" title=" " alt="" coords="265,171,431,212"/>
-<area shape="rect" id="node9" href="$class_vk_app.html#a0533d19e918fc69c112df4e80d75f50a" title="Adds the drawing commands for the ImGui overlay to the given command buffer." alt="" coords="294,287,402,314"/>
-<area shape="rect" id="node12" href="$namespacevks_1_1initializers.html#accf10566e09a15387484562d7b62fb1d" title=" " alt="" coords="526,225,641,267"/>
-<area shape="rect" id="node13" href="$namespacevks_1_1initializers.html#ad8d2fa8d651cf0b1a1d6ee1190dd318c" title=" " alt="" coords="526,367,641,408"/>
-<area shape="rect" id="node14" href="$namespacevks_1_1initializers.html#a9a2b0d6286daad93f68a4d9100a8f354" title=" " alt="" coords="277,413,419,455"/>
-<area shape="rect" id="node3" href="$classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="496,5,671,47"/>
-<area shape="rect" id="node5" href="$classdyno_1_1_vk_visual_module.html#a4d5fc3965b77c5113df70656361bea11" title=" " alt="" coords="505,71,661,112"/>
-<area shape="rect" id="node6" href="$classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="496,136,671,177"/>
-<area shape="rect" id="node4" href="$classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="719,5,893,47"/>
-<area shape="rect" id="node7" href="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="719,136,893,177"/>
-<area shape="rect" id="node10" href="$classvks_1_1_u_i_overlay.html#a624e18c79a8ec4df22119b14dd53d690" title=" " alt="" coords="514,291,653,318"/>
-<area shape="rect" id="node11" href="$namespace_im_guizmo.html#a0f74448b3175fca54b42a180c5475146" title=" " alt="" coords="749,291,863,318"/>
+<area shape="rect" id="Node000001" title="(Virtual) Called when resources have been recreated that require a rebuild of the command buffers (e...." alt="" coords="5,212,202,239"/>
+<area shape="rect" id="Node000002" href="$class_vk_app.html#a2d514ecd18dc274f4117753e6c299b32" title=" " alt="" coords="250,53,451,96"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,210,171,160,208,131,248,106,259,100,261,105,251,110,211,135,175,164,120,213"/>
+<area shape="rect" id="Node000007" href="$namespacevks_1_1initializers.html#ab43b98c7cf767b67fd3501fedb4a8348" title=" " alt="" coords="267,120,434,163"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="144,209,270,166,272,171,146,214"/>
+<area shape="rect" id="Node000008" href="$class_vk_app.html#a0533d19e918fc69c112df4e80d75f50a" title="Adds the drawing commands for the ImGui overlay to the given command buffer." alt="" coords="295,237,406,264"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="202,233,280,241,279,246,202,238"/>
+<area shape="rect" id="Node000009" href="$namespacevks_1_1initializers.html#accf10566e09a15387484562d7b62fb1d" title=" " alt="" coords="528,181,644,224"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="202,218,511,203,512,209,202,223"/>
+<area shape="rect" id="Node000010" href="$namespacevks_1_1initializers.html#ad8d2fa8d651cf0b1a1d6ee1190dd318c" title=" " alt="" coords="528,275,644,317"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="137,237,190,257,250,273,319,284,389,291,512,295,512,300,388,296,318,290,249,279,188,262,135,242"/>
+<area shape="rect" id="Node000011" href="$namespacevks_1_1initializers.html#a9a2b0d6286daad93f68a4d9100a8f354" title=" " alt="" coords="279,363,422,405"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="127,237,251,318,304,352,301,356,248,322,124,241"/>
+<area shape="rect" id="Node000003" href="$classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="499,5,672,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="451,51,483,45,484,50,452,57"/>
+<area shape="rect" id="Node000005" href="$classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="499,72,672,115"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="452,80,483,83,483,88,451,85"/>
+<area shape="rect" id="Node000004" href="$classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="720,5,894,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="673,24,705,24,705,29,673,29"/>
+<area shape="rect" id="Node000006" href="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="720,72,894,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="673,91,705,91,705,96,673,96"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="405,237,512,215,513,220,406,242"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="406,259,513,279,512,285,405,264"/>
+<area shape="poly" id="edge9_Node000009_Node000009" title=" " alt="" coords="544,181,542,171,549,162,564,157,586,155,609,157,624,163,621,168,608,162,586,160,565,162,552,167,547,173,549,180"/>
+<area shape="poly" id="edge11_Node000010_Node000010" title=" " alt="" coords="544,275,542,265,549,256,564,250,586,248,609,250,624,257,621,261,608,256,586,253,565,255,552,260,547,266,549,274"/>
+<area shape="poly" id="edge14_Node000011_Node000011" title=" " alt="" coords="306,363,304,353,311,344,327,338,350,336,375,338,391,345,389,350,374,344,350,341,328,343,314,348,309,354,311,362"/>
 </map>
