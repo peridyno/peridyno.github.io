@@ -12,9 +12,11 @@ var searchData=
   ['joint_5fscale_9',['joint_scale',['../classdyno_1_1_gltf_loader.html#a068edd8778ca366062eedc8c8f188f66',1,'dyno::GltfLoader']]],
   ['joint_5ftranslation_10',['joint_translation',['../classdyno_1_1_gltf_loader.html#a484c3c0c14c93e34d9392c1baa5a8098',1,'dyno::GltfLoader']]],
   ['jointcount_11',['jointcount',['../structvkgl_t_f_1_1_mesh_1_1_uniform_block.html#aafa9240287c857b08cc2618ef100b720',1,'vkglTF::Mesh::UniformBlock']]],
-  ['jointid_5fjoint_5fdir_12',['jointId_joint_Dir',['../classdyno_1_1_gltf_loader.html#a2c9c4d8e2df74ad84e2da83131acedcf',1,'dyno::GltfLoader']]],
-  ['jointlinerender_13',['jointLineRender',['../classdyno_1_1_gltf_loader.html#ab943757ca129583524f8f0d8a1e85632',1,'dyno::GltfLoader']]],
-  ['jointmatrix_14',['jointMatrix',['../structvkgl_t_f_1_1_mesh_1_1_uniform_block.html#aada408020d6641cde78127c8b065c2e1',1,'vkglTF::Mesh::UniformBlock']]],
-  ['jointpointrender_15',['jointPointRender',['../classdyno_1_1_gltf_loader.html#acbfdcd5c32c54815df33677e0cf5f87f',1,'dyno::GltfLoader']]],
-  ['joints_16',['joints',['../structvkgl_t_f_1_1_skin.html#af96a0306dbbe82b7e475496ebbcb0580',1,'vkglTF::Skin']]]
+  ['jointid_12',['JointId',['../classdyno_1_1_animation2_joint_config.html#a2369b2bd04c07284ba3f8194db0c999b',1,'dyno::Animation2JointConfig']]],
+  ['jointid_5fjoint_5fdir_13',['jointId_joint_Dir',['../classdyno_1_1_gltf_loader.html#a2c9c4d8e2df74ad84e2da83131acedcf',1,'dyno::GltfLoader']]],
+  ['jointlinerender_14',['jointLineRender',['../classdyno_1_1_gltf_loader.html#ab943757ca129583524f8f0d8a1e85632',1,'dyno::GltfLoader']]],
+  ['jointmatrix_15',['jointMatrix',['../structvkgl_t_f_1_1_mesh_1_1_uniform_block.html#aada408020d6641cde78127c8b065c2e1',1,'vkglTF::Mesh::UniformBlock']]],
+  ['jointname_16',['JointName',['../classdyno_1_1_animation2_joint_config.html#a2ba623ce72892c39ca5a820097d6076f',1,'dyno::Animation2JointConfig']]],
+  ['jointpointrender_17',['jointPointRender',['../classdyno_1_1_gltf_loader.html#acbfdcd5c32c54815df33677e0cf5f87f',1,'dyno::GltfLoader']]],
+  ['joints_18',['joints',['../structvkgl_t_f_1_1_skin.html#af96a0306dbbe82b7e475496ebbcb0580',1,'vkglTF::Skin']]]
 ];

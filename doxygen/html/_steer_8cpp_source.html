@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -122,33 +122,34 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_typedef" href="classdyno_1_1_steer.html#a5007e6b1216cc4d76d1fa8d140841bd7">Coord</a> vel_prime = rot.transpose() * vel;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_typedef" href="classdyno_1_1_steer.html#a5007e6b1216cc4d76d1fa8d140841bd7">Coord</a> omega_prime = rot.transpose() * omega;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">switch</span> (event.<a class="code hl_variable" href="structdyno_1_1_p_keyboard_event.html#acb0a560b04179b36bc2b042942c63803">key</a>)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedyno.html#aa196f1602f79a114798c3855f2200547a985f129a1be2da2afc107ab611672420">PKeyboardType::PKEY_W</a>:</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            vel_prime[2] += 0.5f;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            vel_prime[2] = vel_prime[2] &gt; 5.0 ? 5.0 : vel_prime[2];</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            vel_prime[2] = vel_prime[2] &lt; -5.0 ? -5.0 : vel_prime[2];</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedyno.html#aa196f1602f79a114798c3855f2200547a04ae5f3ffad6040f6fc61228256a4262">PKeyboardType::PKEY_S</a>:</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            vel_prime[2] *= 0.95f;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedyno.html#aa196f1602f79a114798c3855f2200547a133dc98206375fac04c42e6d861a7e88">PKeyboardType::PKEY_A</a>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            omega_prime.y += 0.5;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedyno.html#aa196f1602f79a114798c3855f2200547a428cdcbf7ff936b400b9b4dbb1713179">PKeyboardType::PKEY_D</a>:</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            omega_prime.y -= 0.5;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        this-&gt;inVelocity()-&gt;setValue(rot * vel_prime);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        this-&gt;inAngularVelocity()-&gt;setValue(rot * omega_prime);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <a class="code hl_typedef" href="classdyno_1_1_steer.html#ac418c37a5a297918c832e08642bf385f">Real</a> strength = this-&gt;varStrength()-&gt;getValue();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">switch</span> (event.<a class="code hl_variable" href="structdyno_1_1_p_keyboard_event.html#acb0a560b04179b36bc2b042942c63803">key</a>)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedyno.html#aa196f1602f79a114798c3855f2200547a985f129a1be2da2afc107ab611672420">PKeyboardType::PKEY_W</a>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            vel_prime[2] += strength;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            vel_prime[2] = vel_prime[2] &gt; 5.0 ? 5.0 : vel_prime[2];</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            vel_prime[2] = vel_prime[2] &lt; -5.0 ? -5.0 : vel_prime[2];</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedyno.html#aa196f1602f79a114798c3855f2200547a04ae5f3ffad6040f6fc61228256a4262">PKeyboardType::PKEY_S</a>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            vel_prime[2] *= 0.95f;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedyno.html#aa196f1602f79a114798c3855f2200547a133dc98206375fac04c42e6d861a7e88">PKeyboardType::PKEY_A</a>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            omega_prime.y += strength;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacedyno.html#aa196f1602f79a114798c3855f2200547a428cdcbf7ff936b400b9b4dbb1713179">PKeyboardType::PKEY_D</a>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            omega_prime.y -= strength;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        this-&gt;inVelocity()-&gt;setValue(rot * vel_prime);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        this-&gt;inAngularVelocity()-&gt;setValue(rot * omega_prime);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespacedyno.html#ad79d7420c423e870d4c5d434fe229eb2">   52</a></span>    <a class="code hl_define" href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_steer.html">Steer</a>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespacedyno.html#ad79d7420c423e870d4c5d434fe229eb2">   53</a></span>    <a class="code hl_define" href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_steer.html">Steer</a>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 <div class="ttc" id="a_object_8h_html_a71c43943296af027d72de263f0f40d27"><div class="ttname"><a href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a></div><div class="ttdeci">#define DEFINE_CLASS(name)</div><div class="ttdef"><b>Definition</b> <a href="_object_8h_source.html#l00140">Object.h:140</a></div></div>
 <div class="ttc" id="a_object_8h_html_ad04bb7da7189939ce1eeba05386dfdb8"><div class="ttname"><a href="_object_8h.html#ad04bb7da7189939ce1eeba05386dfdb8">IMPLEMENT_TCLASS</a></div><div class="ttdeci">#define IMPLEMENT_TCLASS(name, T1)</div><div class="ttdef"><b>Definition</b> <a href="_object_8h_source.html#l00103">Object.h:103</a></div></div>
 <div class="ttc" id="a_steer_8h_html"><div class="ttname"><a href="_steer_8h.html">Steer.h</a></div></div>
@@ -156,6 +157,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclassdyno_1_1_steer_html"><div class="ttname"><a href="classdyno_1_1_steer.html">dyno::Steer</a></div><div class="ttdef"><b>Definition</b> <a href="_steer_8h_source.html#l00022">Steer.h:23</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_steer_html_a5007e6b1216cc4d76d1fa8d140841bd7"><div class="ttname"><a href="classdyno_1_1_steer.html#a5007e6b1216cc4d76d1fa8d140841bd7">dyno::Steer::Coord</a></div><div class="ttdeci">TDataType::Coord Coord</div><div class="ttdef"><b>Definition</b> <a href="_steer_8h_source.html#l00027">Steer.h:27</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_steer_html_ab1e7ce8e95ed565a9b83bd4b9d9f98ee"><div class="ttname"><a href="classdyno_1_1_steer.html#ab1e7ce8e95ed565a9b83bd4b9d9f98ee">dyno::Steer::Steer</a></div><div class="ttdeci">Steer()</div><div class="ttdef"><b>Definition</b> <a href="#l00008">Steer.cpp:8</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_steer_html_ac418c37a5a297918c832e08642bf385f"><div class="ttname"><a href="classdyno_1_1_steer.html#ac418c37a5a297918c832e08642bf385f">dyno::Steer::Real</a></div><div class="ttdeci">TDataType::Real Real</div><div class="ttdef"><b>Definition</b> <a href="_steer_8h_source.html#l00026">Steer.h:26</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_steer_html_ad7c2206b64852bb5d7260fb958bf68b8"><div class="ttname"><a href="classdyno_1_1_steer.html#ad7c2206b64852bb5d7260fb958bf68b8">dyno::Steer::onEvent</a></div><div class="ttdeci">void onEvent(PKeyboardEvent event) override</div><div class="ttdef"><b>Definition</b> <a href="#l00015">Steer.cpp:15</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_steer_html_ae96669947dfeb883747afc29ca52974b"><div class="ttname"><a href="classdyno_1_1_steer.html#ae96669947dfeb883747afc29ca52974b">dyno::Steer::Matrix</a></div><div class="ttdeci">TDataType::Matrix Matrix</div><div class="ttdef"><b>Definition</b> <a href="_steer_8h_source.html#l00028">Steer.h:28</a></div></div>
 <div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>

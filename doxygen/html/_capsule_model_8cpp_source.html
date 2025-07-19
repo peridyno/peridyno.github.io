@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -140,106 +140,106 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        this-&gt;varHeight()-&gt;setRange(0, 100);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        this-&gt;varHeightSegment()-&gt;setRange(1, 10000);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">auto</span> callback = std::make_shared&lt;FCallBackFunc&gt;(std::bind(&amp;<a class="code hl_function" href="classdyno_1_1_capsule_model.html#a1ec0f36d933d72bbaf10041ab7cad568">CapsuleModel&lt;TDataType&gt;::varChanged</a>, <span class="keyword">this</span>));</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        this-&gt;varScale()-&gt;setRange(0.001, 100);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        this-&gt;varLocation()-&gt;attach(callback);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        this-&gt;varScale()-&gt;attach(callback);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        this-&gt;varRotation()-&gt;attach(callback);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        this-&gt;varRadius()-&gt;attach(callback);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        this-&gt;varLatitude()-&gt;attach(callback);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        this-&gt;varLongitude()-&gt;attach(callback);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">auto</span> tsRender = std::make_shared&lt;GLSurfaceVisualModule&gt;();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        tsRender-&gt;setVisible(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        this-&gt;stateTriangleSet()-&gt;connect(tsRender-&gt;inTriangleSet());</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(tsRender);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keyword">auto</span> exES = std::make_shared&lt;ExtractEdgeSetFromPolygonSet&lt;TDataType&gt;&gt;();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        this-&gt;statePolygonSet()-&gt;connect(exES-&gt;inPolygonSet());</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(exES);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">auto</span> clRender = std::make_shared&lt;GLWireframeVisualModule&gt;();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        clRender-&gt;varBaseColor()-&gt;setValue(<a class="code hl_class" href="classdyno_1_1_color.html">Color</a>(46.f / 255.f , 107.f / 255.f, 202.f / 255.f));</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        clRender-&gt;varLineWidth()-&gt;setValue(1.f);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        clRender-&gt;varRenderMode()-&gt;setCurrentKey(GLWireframeVisualModule::CYLINDER);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        this-&gt;stateCenterLine()-&gt;connect(clRender-&gt;inEdgeSet());</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(clRender);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keyword">auto</span> esRender = std::make_shared&lt;GLWireframeVisualModule&gt;();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        esRender-&gt;varBaseColor()-&gt;setValue(<a class="code hl_class" href="classdyno_1_1_color.html">Color</a>(0, 0, 0));</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        exES-&gt;outEdgeSet()-&gt;connect(esRender-&gt;inEdgeSet());</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(esRender);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        this-&gt;stateTriangleSet()-&gt;promoteOuput();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        this-&gt;statePolygonSet()-&gt;promoteOuput();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">auto</span> callback = std::make_shared&lt;FCallBackFunc&gt;(std::bind(&amp;<a class="code hl_function" href="classdyno_1_1_capsule_model.html#a1ec0f36d933d72bbaf10041ab7cad568">CapsuleModel&lt;TDataType&gt;::varChanged</a>, <span class="keyword">this</span>));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        this-&gt;varLocation()-&gt;attach(callback);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        this-&gt;varScale()-&gt;attach(callback);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        this-&gt;varRotation()-&gt;attach(callback);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        this-&gt;varRadius()-&gt;attach(callback);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        this-&gt;varLatitude()-&gt;attach(callback);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        this-&gt;varLongitude()-&gt;attach(callback);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">auto</span> tsRender = std::make_shared&lt;GLSurfaceVisualModule&gt;();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        tsRender-&gt;setVisible(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        this-&gt;stateTriangleSet()-&gt;connect(tsRender-&gt;inTriangleSet());</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(tsRender);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">auto</span> exES = std::make_shared&lt;ExtractEdgeSetFromPolygonSet&lt;TDataType&gt;&gt;();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        this-&gt;statePolygonSet()-&gt;connect(exES-&gt;inPolygonSet());</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(exES);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keyword">auto</span> clRender = std::make_shared&lt;GLWireframeVisualModule&gt;();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        clRender-&gt;varBaseColor()-&gt;setValue(<a class="code hl_class" href="classdyno_1_1_color.html">Color</a>(46.f / 255.f , 107.f / 255.f, 202.f / 255.f));</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        clRender-&gt;varLineWidth()-&gt;setValue(1.f);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        clRender-&gt;varRenderMode()-&gt;setCurrentKey(GLWireframeVisualModule::CYLINDER);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        this-&gt;stateCenterLine()-&gt;connect(clRender-&gt;inEdgeSet());</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(clRender);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">auto</span> esRender = std::make_shared&lt;GLWireframeVisualModule&gt;();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        esRender-&gt;varBaseColor()-&gt;setValue(<a class="code hl_class" href="classdyno_1_1_color.html">Color</a>(0, 0, 0));</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        exES-&gt;outEdgeSet()-&gt;connect(esRender-&gt;inEdgeSet());</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(esRender);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        this-&gt;stateTriangleSet()-&gt;promoteOuput();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        this-&gt;statePolygonSet()-&gt;promoteOuput();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
 </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classdyno_1_1_capsule_model.html#aeceacf03d4f644f75fc1ad15657408b5">   82</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_capsule_model.html#aeceacf03d4f644f75fc1ad15657408b5">CapsuleModel&lt;TDataType&gt;::resetStates</a>()</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_function" href="classdyno_1_1_capsule_model.html#a1ec0f36d933d72bbaf10041ab7cad568">varChanged</a>();</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classdyno_1_1_capsule_model.html#aeceacf03d4f644f75fc1ad15657408b5">   83</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_capsule_model.html#aeceacf03d4f644f75fc1ad15657408b5">CapsuleModel&lt;TDataType&gt;::resetStates</a>()</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_function" href="classdyno_1_1_capsule_model.html#a1ec0f36d933d72bbaf10041ab7cad568">varChanged</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
 </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classdyno_1_1_capsule_model.html#a1d0f33d45383c44e14f68216b8e4172b">   88</a></span>    <a class="code hl_struct" href="structdyno_1_1_n_bounding_box.html">NBoundingBox</a> <a class="code hl_function" href="classdyno_1_1_capsule_model.html#a1d0f33d45383c44e14f68216b8e4172b">CapsuleModel&lt;TDataType&gt;::boundingBox</a>()</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keyword">auto</span> center = this-&gt;varLocation()-&gt;getData();</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keyword">auto</span> rot = this-&gt;varRotation()-&gt;getData();</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keyword">auto</span> scale = this-&gt;varScale()-&gt;getData();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keyword">auto</span> radius = this-&gt;varRadius()-&gt;getData();</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a54c5505ef354f7e7f9f3e85c5c5d3479">Coord</a> length(radius);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        length[0] *= scale[0];</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        length[1] *= scale[1];</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        length[2] *= scale[2];</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <a class="code hl_class" href="classdyno_1_1_quat.html">Quat&lt;Real&gt;</a> q = this-&gt;<a class="code hl_function" href="classdyno_1_1_parametric_model.html#a56847649a0ae44a75ce3d9ff8c3d75df">computeQuaternion</a>();</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        q.<a class="code hl_function" href="classdyno_1_1_quat.html#a0a8063c13b2f894a00a622697ff69f74">normalize</a>();</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_class" href="classdyno_1_1_t_oriented_box3_d.html">TOrientedBox3D&lt;Real&gt;</a> box;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        box.<a class="code hl_variable" href="classdyno_1_1_t_oriented_box3_d.html#ad49a64058718f696bdb0dff7e1e77974">center</a> = center;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        box.<a class="code hl_variable" href="classdyno_1_1_t_oriented_box3_d.html#a1ff7dbd70e6a5e0ec712ec0f4b6f60b0">u</a> = q.<a class="code hl_function" href="classdyno_1_1_quat.html#aecb3f17108bfb3ed31c7f6aa97f300a9">rotate</a>(<a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a54c5505ef354f7e7f9f3e85c5c5d3479">Coord</a>(1, 0, 0));</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        box.<a class="code hl_variable" href="classdyno_1_1_t_oriented_box3_d.html#adaa070df281190148063107b8b76d067">v</a> = q.<a class="code hl_function" href="classdyno_1_1_quat.html#aecb3f17108bfb3ed31c7f6aa97f300a9">rotate</a>(<a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a54c5505ef354f7e7f9f3e85c5c5d3479">Coord</a>(0, 1, 0));</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        box.<a class="code hl_variable" href="classdyno_1_1_t_oriented_box3_d.html#acd42481d618a43e8ac6d34db4aa552c0">w</a> = q.<a class="code hl_function" href="classdyno_1_1_quat.html#aecb3f17108bfb3ed31c7f6aa97f300a9">rotate</a>(<a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a54c5505ef354f7e7f9f3e85c5c5d3479">Coord</a>(0, 0, 1));</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        box.<a class="code hl_variable" href="classdyno_1_1_t_oriented_box3_d.html#aa2bdc0220ee43ffe82c3bbd04a12cc79">extent</a> = length;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keyword">auto</span> <a class="code hl_typedef" href="namespacedyno.html#a95483fb9b064eee75e4036e80fca98fe">AABB</a> = box.<a class="code hl_function" href="classdyno_1_1_t_oriented_box3_d.html#af13c48e496dd089b5d428994dfa76aeb">aabb</a>();</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keyword">auto</span>&amp; v0 = <a class="code hl_typedef" href="namespacedyno.html#a95483fb9b064eee75e4036e80fca98fe">AABB</a>.v0;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keyword">auto</span>&amp; v1 = <a class="code hl_typedef" href="namespacedyno.html#a95483fb9b064eee75e4036e80fca98fe">AABB</a>.v1;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <a class="code hl_struct" href="structdyno_1_1_n_bounding_box.html">NBoundingBox</a> ret;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        ret.<a class="code hl_variable" href="structdyno_1_1_n_bounding_box.html#a84bff8b838702d43a53d53a4c0a72801">lower</a> = <a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(v0.x, v0.y, v0.z);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        ret.<a class="code hl_variable" href="structdyno_1_1_n_bounding_box.html#a158955609f421a0e36664acb27ab51d9">upper</a> = <a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(v1.x, v1.y, v1.z);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classdyno_1_1_capsule_model.html#a1d0f33d45383c44e14f68216b8e4172b">   89</a></span>    <a class="code hl_struct" href="structdyno_1_1_n_bounding_box.html">NBoundingBox</a> <a class="code hl_function" href="classdyno_1_1_capsule_model.html#a1d0f33d45383c44e14f68216b8e4172b">CapsuleModel&lt;TDataType&gt;::boundingBox</a>()</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keyword">auto</span> center = this-&gt;varLocation()-&gt;getValue();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keyword">auto</span> rot = this-&gt;varRotation()-&gt;getValue();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keyword">auto</span> scale = this-&gt;varScale()-&gt;getValue();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keyword">auto</span> radius = this-&gt;varRadius()-&gt;getValue();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a54c5505ef354f7e7f9f3e85c5c5d3479">Coord</a> length(radius);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        length[0] *= scale[0];</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        length[1] *= scale[1];</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        length[2] *= scale[2];</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <a class="code hl_class" href="classdyno_1_1_quat.html">Quat&lt;Real&gt;</a> q = this-&gt;<a class="code hl_function" href="classdyno_1_1_parametric_model.html#a56847649a0ae44a75ce3d9ff8c3d75df">computeQuaternion</a>();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        q.<a class="code hl_function" href="classdyno_1_1_quat.html#a0a8063c13b2f894a00a622697ff69f74">normalize</a>();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <a class="code hl_class" href="classdyno_1_1_t_oriented_box3_d.html">TOrientedBox3D&lt;Real&gt;</a> box;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        box.<a class="code hl_variable" href="classdyno_1_1_t_oriented_box3_d.html#ad49a64058718f696bdb0dff7e1e77974">center</a> = center;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        box.<a class="code hl_variable" href="classdyno_1_1_t_oriented_box3_d.html#a1ff7dbd70e6a5e0ec712ec0f4b6f60b0">u</a> = q.<a class="code hl_function" href="classdyno_1_1_quat.html#aecb3f17108bfb3ed31c7f6aa97f300a9">rotate</a>(<a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a54c5505ef354f7e7f9f3e85c5c5d3479">Coord</a>(1, 0, 0));</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        box.<a class="code hl_variable" href="classdyno_1_1_t_oriented_box3_d.html#adaa070df281190148063107b8b76d067">v</a> = q.<a class="code hl_function" href="classdyno_1_1_quat.html#aecb3f17108bfb3ed31c7f6aa97f300a9">rotate</a>(<a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a54c5505ef354f7e7f9f3e85c5c5d3479">Coord</a>(0, 1, 0));</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        box.<a class="code hl_variable" href="classdyno_1_1_t_oriented_box3_d.html#acd42481d618a43e8ac6d34db4aa552c0">w</a> = q.<a class="code hl_function" href="classdyno_1_1_quat.html#aecb3f17108bfb3ed31c7f6aa97f300a9">rotate</a>(<a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a54c5505ef354f7e7f9f3e85c5c5d3479">Coord</a>(0, 0, 1));</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        box.<a class="code hl_variable" href="classdyno_1_1_t_oriented_box3_d.html#aa2bdc0220ee43ffe82c3bbd04a12cc79">extent</a> = length;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keyword">auto</span> <a class="code hl_typedef" href="namespacedyno.html#a95483fb9b064eee75e4036e80fca98fe">AABB</a> = box.<a class="code hl_function" href="classdyno_1_1_t_oriented_box3_d.html#af13c48e496dd089b5d428994dfa76aeb">aabb</a>();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keyword">auto</span>&amp; v0 = <a class="code hl_typedef" href="namespacedyno.html#a95483fb9b064eee75e4036e80fca98fe">AABB</a>.v0;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keyword">auto</span>&amp; v1 = <a class="code hl_typedef" href="namespacedyno.html#a95483fb9b064eee75e4036e80fca98fe">AABB</a>.v1;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <a class="code hl_struct" href="structdyno_1_1_n_bounding_box.html">NBoundingBox</a> ret;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        ret.<a class="code hl_variable" href="structdyno_1_1_n_bounding_box.html#a84bff8b838702d43a53d53a4c0a72801">lower</a> = <a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(v0.x, v0.y, v0.z);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        ret.<a class="code hl_variable" href="structdyno_1_1_n_bounding_box.html#a158955609f421a0e36664acb27ab51d9">upper</a> = <a class="code hl_typedef" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>(v1.x, v1.y, v1.z);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
 </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
-<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classdyno_1_1_capsule_model.html#a1ec0f36d933d72bbaf10041ab7cad568">  128</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_capsule_model.html#a1ec0f36d933d72bbaf10041ab7cad568">CapsuleModel&lt;TDataType&gt;::varChanged</a>()</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    {</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keyword">auto</span> center = this-&gt;varLocation()-&gt;getValue();</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <span class="keyword">auto</span> rot = this-&gt;varRotation()-&gt;getValue();</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keyword">auto</span> scale = this-&gt;varScale()-&gt;getValue();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDataType&gt;</div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classdyno_1_1_capsule_model.html#a1ec0f36d933d72bbaf10041ab7cad568">  126</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_capsule_model.html#a1ec0f36d933d72bbaf10041ab7cad568">CapsuleModel&lt;TDataType&gt;::varChanged</a>()</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keyword">auto</span> center = this-&gt;varLocation()-&gt;getValue();</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keyword">auto</span> rot = this-&gt;varRotation()-&gt;getValue();</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keyword">auto</span> scale = this-&gt;varScale()-&gt;getValue();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        this-&gt;varScale()-&gt;setValue(<a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a54c5505ef354f7e7f9f3e85c5c5d3479">Coord</a>(scale.x, scale.y, scale.x), <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keyword">auto</span> radius = this-&gt;varRadius()-&gt;getValue();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keyword">auto</span> radius = this-&gt;varRadius()-&gt;getValue() * scale.x;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keyword">auto</span> latitude = this-&gt;varLatitude()-&gt;getValue();</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keyword">auto</span> longitude = this-&gt;varLongitude()-&gt;getValue();</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a66935a9a015879d93c7e812f4f27b773">Real</a> halfHeight = this-&gt;varHeight()-&gt;getValue() / 2;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <a class="code hl_typedef" href="classdyno_1_1_capsule_model.html#a66935a9a015879d93c7e812f4f27b773">Real</a> halfHeight = this-&gt;varHeight()-&gt;getValue() / 2 * scale.y;</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keyword">auto</span> row = this-&gt;varHeightSegment()-&gt;getValue();</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <a class="code hl_class" href="classdyno_1_1_quat.html">Quat&lt;Real&gt;</a> q = this-&gt;<a class="code hl_function" href="classdyno_1_1_parametric_model.html#a56847649a0ae44a75ce3d9ff8c3d75df">computeQuaternion</a>();</div>
@@ -462,7 +462,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            <span class="keywordtype">int</span> numpt = vertices.size();</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; numpt; i++) {</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                vertices[i] = RV(vertices[i] * scale + RV(center));</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                vertices[i] = RV(vertices[i] + RV(center));</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>            }</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            polySet-&gt;setPoints(vertices);</div>
@@ -507,28 +507,28 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="a_typedef_8inl_html_ae71449b1cc6e6250b91f539153a7a0d3"><div class="ttname"><a href="_typedef_8inl.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a></div><div class="ttdeci">#define M_PI</div><div class="ttdef"><b>Definition</b> <a href="_typedef_8inl_source.html#l00036">Typedef.inl:36</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_basic_shape_html_ae24bd30cfabb545eaecfe682b318d836"><div class="ttname"><a href="classdyno_1_1_basic_shape.html#ae24bd30cfabb545eaecfe682b318d836">dyno::BasicShape::BasicShape</a></div><div class="ttdeci">BasicShape()</div><div class="ttdef"><b>Definition</b> <a href="_basic_shape_8cpp_source.html#l00006">BasicShape.cpp:6</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_capsule_model_html"><div class="ttname"><a href="classdyno_1_1_capsule_model.html">dyno::CapsuleModel</a></div><div class="ttdef"><b>Definition</b> <a href="_capsule_model_8h_source.html#l00030">CapsuleModel.h:31</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_capsule_model_html_a1d0f33d45383c44e14f68216b8e4172b"><div class="ttname"><a href="classdyno_1_1_capsule_model.html#a1d0f33d45383c44e14f68216b8e4172b">dyno::CapsuleModel::boundingBox</a></div><div class="ttdeci">NBoundingBox boundingBox() override</div><div class="ttdef"><b>Definition</b> <a href="#l00088">CapsuleModel.cpp:88</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_capsule_model_html_a1ec0f36d933d72bbaf10041ab7cad568"><div class="ttname"><a href="classdyno_1_1_capsule_model.html#a1ec0f36d933d72bbaf10041ab7cad568">dyno::CapsuleModel::varChanged</a></div><div class="ttdeci">void varChanged()</div><div class="ttdef"><b>Definition</b> <a href="#l00128">CapsuleModel.cpp:128</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_capsule_model_html_a1d0f33d45383c44e14f68216b8e4172b"><div class="ttname"><a href="classdyno_1_1_capsule_model.html#a1d0f33d45383c44e14f68216b8e4172b">dyno::CapsuleModel::boundingBox</a></div><div class="ttdeci">NBoundingBox boundingBox() override</div><div class="ttdef"><b>Definition</b> <a href="#l00089">CapsuleModel.cpp:89</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_capsule_model_html_a1ec0f36d933d72bbaf10041ab7cad568"><div class="ttname"><a href="classdyno_1_1_capsule_model.html#a1ec0f36d933d72bbaf10041ab7cad568">dyno::CapsuleModel::varChanged</a></div><div class="ttdeci">void varChanged()</div><div class="ttdef"><b>Definition</b> <a href="#l00126">CapsuleModel.cpp:126</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_capsule_model_html_a54c5505ef354f7e7f9f3e85c5c5d3479"><div class="ttname"><a href="classdyno_1_1_capsule_model.html#a54c5505ef354f7e7f9f3e85c5c5d3479">dyno::CapsuleModel::Coord</a></div><div class="ttdeci">TDataType::Coord Coord</div><div class="ttdef"><b>Definition</b> <a href="_capsule_model_8h_source.html#l00036">CapsuleModel.h:36</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_capsule_model_html_a66935a9a015879d93c7e812f4f27b773"><div class="ttname"><a href="classdyno_1_1_capsule_model.html#a66935a9a015879d93c7e812f4f27b773">dyno::CapsuleModel::Real</a></div><div class="ttdeci">TDataType::Real Real</div><div class="ttdef"><b>Definition</b> <a href="_capsule_model_8h_source.html#l00035">CapsuleModel.h:35</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_capsule_model_html_aa4df107d6ccdc6fc82b78e84b2e08d46"><div class="ttname"><a href="classdyno_1_1_capsule_model.html#aa4df107d6ccdc6fc82b78e84b2e08d46">dyno::CapsuleModel::CapsuleModel</a></div><div class="ttdeci">CapsuleModel()</div><div class="ttdef"><b>Definition</b> <a href="#l00028">CapsuleModel.cpp:28</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_capsule_model_html_aeceacf03d4f644f75fc1ad15657408b5"><div class="ttname"><a href="classdyno_1_1_capsule_model.html#aeceacf03d4f644f75fc1ad15657408b5">dyno::CapsuleModel::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition</b> <a href="#l00082">CapsuleModel.cpp:82</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_color_html"><div class="ttname"><a href="classdyno_1_1_color.html">dyno::Color</a></div><div class="ttdef"><b>Definition</b> <a href="_core_2_color_8h_source.html#l00006">Color.h:7</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_capsule_model_html_aeceacf03d4f644f75fc1ad15657408b5"><div class="ttname"><a href="classdyno_1_1_capsule_model.html#aeceacf03d4f644f75fc1ad15657408b5">dyno::CapsuleModel::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition</b> <a href="#l00083">CapsuleModel.cpp:83</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_color_html"><div class="ttname"><a href="classdyno_1_1_color.html">dyno::Color</a></div><div class="ttdef"><b>Definition</b> <a href="_framework_2_field_2_color_8h_source.html#l00008">Color.h:9</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_edge_set_html"><div class="ttname"><a href="classdyno_1_1_edge_set.html">dyno::EdgeSet</a></div><div class="ttdef"><b>Definition</b> <a href="_cuda_2_topology_2_edge_set_8h_source.html#l00093">EdgeSet.h:94</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00320">Node.cpp:320</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00311">Node.cpp:311</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_parametric_model_html_a56847649a0ae44a75ce3d9ff8c3d75df"><div class="ttname"><a href="classdyno_1_1_parametric_model.html#a56847649a0ae44a75ce3d9ff8c3d75df">dyno::ParametricModel::computeQuaternion</a></div><div class="ttdeci">Quat&lt; Real &gt; computeQuaternion()</div><div class="ttdef"><b>Definition</b> <a href="_parametric_model_8h_source.html#l00035">ParametricModel.h:35</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_polygon_set_html"><div class="ttname"><a href="classdyno_1_1_polygon_set.html">dyno::PolygonSet</a></div><div class="ttdoc">a class to store polygon whose vertex number is greater or equal than 3</div><div class="ttdef"><b>Definition</b> <a href="_polygon_set_8h_source.html#l00028">PolygonSet.h:29</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_quat_html"><div class="ttname"><a href="classdyno_1_1_quat.html">dyno::Quat</a></div><div class="ttdef"><b>Definition</b> <a href="_quat_8h_source.html#l00031">Quat.h:32</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_quat_html_a0a8063c13b2f894a00a622697ff69f74"><div class="ttname"><a href="classdyno_1_1_quat.html#a0a8063c13b2f894a00a622697ff69f74">dyno::Quat::normalize</a></div><div class="ttdeci">DYN_FUNC Quat&lt; Real &gt; &amp; normalize()</div><div class="ttdef"><b>Definition</b> <a href="_quat_8inl_source.html#l00183">Quat.inl:183</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_quat_html_aecb3f17108bfb3ed31c7f6aa97f300a9"><div class="ttname"><a href="classdyno_1_1_quat.html#aecb3f17108bfb3ed31c7f6aa97f300a9">dyno::Quat::rotate</a></div><div class="ttdeci">DYN_FUNC Vector&lt; Real, 3 &gt; rotate(const Vector&lt; Real, 3 &gt; &amp;v) const</div><div class="ttdoc">Rotate a vector by the quaternion, guarantee the quaternion is normalized before rotating the vector.</div><div class="ttdef"><b>Definition</b> <a href="_quat_8inl_source.html#l00259">Quat.inl:259</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_t_capsule3_d_html"><div class="ttname"><a href="classdyno_1_1_t_capsule3_d.html">dyno::TCapsule3D</a></div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00640">Primitive3D.h:641</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html">dyno::TOrientedBox3D</a></div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00745">Primitive3D.h:746</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_a1ff7dbd70e6a5e0ec712ec0f4b6f60b0"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#a1ff7dbd70e6a5e0ec712ec0f4b6f60b0">dyno::TOrientedBox3D::u</a></div><div class="ttdeci">Coord3D u</div><div class="ttdoc">three unit vectors u, v and w forming a right-handed orthornormal basis</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00800">Primitive3D.h:800</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_aa2bdc0220ee43ffe82c3bbd04a12cc79"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#aa2bdc0220ee43ffe82c3bbd04a12cc79">dyno::TOrientedBox3D::extent</a></div><div class="ttdeci">Coord3D extent</div><div class="ttdoc">half the dimension in each of the u, v, and w directions</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00805">Primitive3D.h:805</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_acd42481d618a43e8ac6d34db4aa552c0"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#acd42481d618a43e8ac6d34db4aa552c0">dyno::TOrientedBox3D::w</a></div><div class="ttdeci">Coord3D w</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00800">Primitive3D.h:800</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_ad49a64058718f696bdb0dff7e1e77974"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#ad49a64058718f696bdb0dff7e1e77974">dyno::TOrientedBox3D::center</a></div><div class="ttdeci">Coord3D center</div><div class="ttdoc">centerpoint</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00794">Primitive3D.h:794</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_adaa070df281190148063107b8b76d067"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#adaa070df281190148063107b8b76d067">dyno::TOrientedBox3D::v</a></div><div class="ttdeci">Coord3D v</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00800">Primitive3D.h:800</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_af13c48e496dd089b5d428994dfa76aeb"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#af13c48e496dd089b5d428994dfa76aeb">dyno::TOrientedBox3D::aabb</a></div><div class="ttdeci">DYN_FUNC TAlignedBox3D&lt; Real &gt; aabb()</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8inl_source.html#l04234">Primitive3D.inl:4234</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_capsule3_d_html"><div class="ttname"><a href="classdyno_1_1_t_capsule3_d.html">dyno::TCapsule3D</a></div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00643">Primitive3D.h:644</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html">dyno::TOrientedBox3D</a></div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00748">Primitive3D.h:749</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_a1ff7dbd70e6a5e0ec712ec0f4b6f60b0"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#a1ff7dbd70e6a5e0ec712ec0f4b6f60b0">dyno::TOrientedBox3D::u</a></div><div class="ttdeci">Coord3D u</div><div class="ttdoc">three unit vectors u, v and w forming a right-handed orthornormal basis</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00803">Primitive3D.h:803</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_aa2bdc0220ee43ffe82c3bbd04a12cc79"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#aa2bdc0220ee43ffe82c3bbd04a12cc79">dyno::TOrientedBox3D::extent</a></div><div class="ttdeci">Coord3D extent</div><div class="ttdoc">half the dimension in each of the u, v, and w directions</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00808">Primitive3D.h:808</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_acd42481d618a43e8ac6d34db4aa552c0"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#acd42481d618a43e8ac6d34db4aa552c0">dyno::TOrientedBox3D::w</a></div><div class="ttdeci">Coord3D w</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00803">Primitive3D.h:803</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_ad49a64058718f696bdb0dff7e1e77974"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#ad49a64058718f696bdb0dff7e1e77974">dyno::TOrientedBox3D::center</a></div><div class="ttdeci">Coord3D center</div><div class="ttdoc">centerpoint</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00797">Primitive3D.h:797</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_adaa070df281190148063107b8b76d067"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#adaa070df281190148063107b8b76d067">dyno::TOrientedBox3D::v</a></div><div class="ttdeci">Coord3D v</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8h_source.html#l00803">Primitive3D.h:803</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_t_oriented_box3_d_html_af13c48e496dd089b5d428994dfa76aeb"><div class="ttname"><a href="classdyno_1_1_t_oriented_box3_d.html#af13c48e496dd089b5d428994dfa76aeb">dyno::TOrientedBox3D::aabb</a></div><div class="ttdeci">DYN_FUNC TAlignedBox3D&lt; Real &gt; aabb()</div><div class="ttdef"><b>Definition</b> <a href="_primitive3_d_8inl_source.html#l04250">Primitive3D.inl:4250</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_topology_module_html_a0c1dbdb7e9374ee1958795e7ac7c6ecc"><div class="ttname"><a href="classdyno_1_1_topology_module.html#a0c1dbdb7e9374ee1958795e7ac7c6ecc">dyno::TopologyModule::Edge</a></div><div class="ttdeci">VectorND&lt; PointType, 2 &gt; Edge</div><div class="ttdef"><b>Definition</b> <a href="_topology_module_8h_source.html#l00030">TopologyModule.h:30</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_triangle_set_html"><div class="ttname"><a href="classdyno_1_1_triangle_set.html">dyno::TriangleSet</a></div><div class="ttdef"><b>Definition</b> <a href="_vulkan_2_topology_2_triangle_set_8h_source.html#l00006">TriangleSet.h:7</a></div></div>
 <div class="ttc" id="aim_gu_i_z_m_oquat_8cpp_html_afe041114e904f94b93bc8c94921ed615"><div class="ttname"><a href="im_gu_i_z_m_oquat_8cpp.html#afe041114e904f94b93bc8c94921ed615">N</a></div><div class="ttdeci">#define N(x, y, z)</div></div>

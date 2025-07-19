@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -145,13 +145,13 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordtype">void</span> assign(std::vector&lt;std::map&lt;int, ElementType&gt;&gt;&amp; src);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_g_p_u_01_4.html#aa936fda41863e5c783051b42e9b3e1f2">   56</a></span>        <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_g_p_u_01_4.html#aa936fda41863e5c783051b42e9b3e1f2">operator&lt;&lt;</a>(std::ostream&amp; out, <span class="keyword">const</span> <a class="code hl_function" href="classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_g_p_u_01_4.html#aaaabdc63a5dd3f47ecd1064f5cc70983">ArrayMap&lt;ElementType, DeviceType::GPU&gt;</a>&amp; aMap)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_g_p_u_01_4.html#aa936fda41863e5c783051b42e9b3e1f2">   56</a></span>        <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_g_p_u_01_4.html#aa936fda41863e5c783051b42e9b3e1f2">operator&lt;&lt;</a>(std::ostream&amp; <a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a>, <span class="keyword">const</span> <a class="code hl_function" href="classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_g_p_u_01_4.html#aaaabdc63a5dd3f47ecd1064f5cc70983">ArrayMap&lt;ElementType, DeviceType::GPU&gt;</a>&amp; aMap)</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_function" href="classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_g_p_u_01_4.html#aaaabdc63a5dd3f47ecd1064f5cc70983">ArrayMap&lt;ElementType, DeviceType::CPU&gt;</a> hMap;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            hMap.assign(aMap);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            out &lt;&lt; hMap;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a> &lt;&lt; hMap;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
 </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
@@ -419,6 +419,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="a_reduction_8h_html"><div class="ttname"><a href="_reduction_8h.html">Reduction.h</a></div></div>
 <div class="ttc" id="a_scan_8h_html"><div class="ttname"><a href="_scan_8h.html">Scan.h</a></div></div>
 <div class="ttc" id="a_vulkan_swap_chain_8cpp_html_a21b5a77bb7dd2ff2a93f6c086da96d46"><div class="ttname"><a href="_vulkan_swap_chain_8cpp.html#a21b5a77bb7dd2ff2a93f6c086da96d46">assert</a></div><div class="ttdeci">assert(queueCount &gt;=1)</div></div>
+<div class="ttc" id="a_wt_flow_widget_8h_html_a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579"><div class="ttname"><a href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a></div><div class="ttdeci">@ out</div><div class="ttdef"><b>Definition</b> <a href="_wt_flow_widget_8h_source.html#l00013">WtFlowWidget.h:13</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4_html_a337ac8f66d6867117e117287157f24f4"><div class="ttname"><a href="classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4.html#a337ac8f66d6867117e117287157f24f4">dyno::ArrayMap&lt; ElementType, DeviceType::CPU &gt;::m_elements</a></div><div class="ttdeci">CArray&lt; Pair&lt; int, ElementType &gt; &gt; m_elements</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00088">ArrayMap.h:88</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4_html_a960fe37e24cdb686e181ffab8d6cb63e"><div class="ttname"><a href="classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4.html#a960fe37e24cdb686e181ffab8d6cb63e">dyno::ArrayMap&lt; ElementType, DeviceType::CPU &gt;::m_maps</a></div><div class="ttdeci">CArray&lt; Map&lt; int, ElementType &gt; &gt; m_maps</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00090">ArrayMap.h:90</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4_html_aaa467239094915d840e708c6abeb6526"><div class="ttname"><a href="classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4.html#aaa467239094915d840e708c6abeb6526">dyno::ArrayMap&lt; ElementType, DeviceType::CPU &gt;::ArrayMap</a></div><div class="ttdeci">ArrayMap()</div><div class="ttdef"><b>Definition</b> <a href="_array_map_8h_source.html#l00031">ArrayMap.h:31</a></div></div>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['operator_3c_3c_0',['operator&lt;&lt;',['../classdyno_1_1_array_list_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4.html#a532453b7abf1faa376b5a1382e1a8137',1,'dyno::ArrayList&lt; ElementType, DeviceType::CPU &gt;::operator&lt;&lt;()'],['../classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4.html#ab0fafbc5d610f2f109d42a92d8698713',1,'dyno::ArrayMap&lt; ElementType, DeviceType::CPU &gt;::operator&lt;&lt;()'],['../classdyno_1_1_array_map_3_01_element_type_00_01_device_type_1_1_g_p_u_01_4.html#aa936fda41863e5c783051b42e9b3e1f2',1,'dyno::ArrayMap&lt; ElementType, DeviceType::GPU &gt;::operator&lt;&lt;()'],['../classdyno_1_1_vector_3_01_t_00_014_01_4.html#a813131ff5b4fc09e1bd326447c4e676f',1,'dyno::Vector&lt; T, 4 &gt;::operator&lt;&lt;()'],['../classdyno_1_1_vector_n_d.html#a2b98d2e368c5ecda65fc8fd299f57982',1,'dyno::VectorND::operator&lt;&lt;(std::ostream &amp;out, const VectorND&lt; T, N &gt; &amp;a)']]],
-  ['operator_3e_3e_1',['operator&gt;&gt;',['../classdyno_1_1_vector_n_d.html#ac47359c5c2b331d7762c437a67ca4c5b',1,'dyno::VectorND']]]
+  ['detail_3a_3aexternal_5fconstructor_0',['external_constructor',['../classbasic__json.html#a6275ed57bae6866cdf5db5370a7ad47c',1,'basic_json']]]
 ];

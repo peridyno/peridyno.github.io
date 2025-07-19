@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -118,13 +118,13 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_group_module.html#a1471ba0bbf6529e70a40a1d60d3ba392">pushModule</a>(integrator);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">auto</span> nbrQuery =std::make_shared&lt;NeighborPointQuery&lt;TDataType&gt;&gt;();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        this-&gt;varSmoothingLength()-&gt;connect(nbrQuery-&gt;inRadius());</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        this-&gt;inSmoothingLength()-&gt;connect(nbrQuery-&gt;inRadius());</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        this-&gt;inPosition()-&gt;connect(nbrQuery-&gt;inPosition());</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_group_module.html#a1471ba0bbf6529e70a40a1d60d3ba392">pushModule</a>(nbrQuery);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">auto</span> density = std::make_shared&lt;IterativeDensitySolver&lt;TDataType&gt;&gt;();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        this-&gt;varSamplingDistance()-&gt;connect(density-&gt;inSamplingDistance());</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        this-&gt;varSmoothingLength()-&gt;connect(density-&gt;inSmoothingLength());</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        this-&gt;inSamplingDistance()-&gt;connect(density-&gt;inSamplingDistance());</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        this-&gt;inSmoothingLength()-&gt;connect(density-&gt;inSmoothingLength());</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        this-&gt;inTimeStep()-&gt;connect(density-&gt;inTimeStep());</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        this-&gt;inPosition()-&gt;connect(density-&gt;inPosition());</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        this-&gt;inVelocity()-&gt;connect(density-&gt;inVelocity());</div>
@@ -135,16 +135,17 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">auto</span> viscosity = std::make_shared&lt;ImplicitViscosity&lt;TDataType&gt;&gt;();</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        viscosity-&gt;varViscosity()-&gt;setValue(<a class="code hl_typedef" href="classdyno_1_1_position_based_fluid_model.html#a8cf4fe4ea17b9de58e95e63af7206c54">Real</a>(1.0));</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        this-&gt;inTimeStep()-&gt;connect(viscosity-&gt;inTimeStep());</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        this-&gt;varSmoothingLength()-&gt;connect(viscosity-&gt;inSmoothingLength());</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        this-&gt;inPosition()-&gt;connect(viscosity-&gt;inPosition());</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        this-&gt;inVelocity()-&gt;connect(viscosity-&gt;inVelocity());</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        nbrQuery-&gt;outNeighborIds()-&gt;connect(viscosity-&gt;inNeighborIds());</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_group_module.html#a1471ba0bbf6529e70a40a1d60d3ba392">pushModule</a>(viscosity);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        this-&gt;inSamplingDistance()-&gt;connect(viscosity-&gt;inSamplingDistance());</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        this-&gt;inSmoothingLength()-&gt;connect(viscosity-&gt;inSmoothingLength());</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        this-&gt;inPosition()-&gt;connect(viscosity-&gt;inPosition());</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        this-&gt;inVelocity()-&gt;connect(viscosity-&gt;inVelocity());</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        nbrQuery-&gt;outNeighborIds()-&gt;connect(viscosity-&gt;inNeighborIds());</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_group_module.html#a1471ba0bbf6529e70a40a1d60d3ba392">pushModule</a>(viscosity);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
 </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="namespacedyno.html#a575f32515cc521a7d1081c94adf4de41">   50</a></span>    <a class="code hl_define" href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_position_based_fluid_model.html">PositionBasedFluidModel</a>);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="namespacedyno.html#a575f32515cc521a7d1081c94adf4de41">   51</a></span>    <a class="code hl_define" href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a>(<a class="code hl_class" href="classdyno_1_1_position_based_fluid_model.html">PositionBasedFluidModel</a>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
 <div class="ttc" id="a_cuda_2_particle_system_2_module_2_particle_integrator_8h_html"><div class="ttname"><a href="_cuda_2_particle_system_2_module_2_particle_integrator_8h.html">ParticleIntegrator.h</a></div></div>
 <div class="ttc" id="a_implicit_viscosity_8h_html"><div class="ttname"><a href="_implicit_viscosity_8h.html">ImplicitViscosity.h</a></div></div>
 <div class="ttc" id="a_iterative_density_solver_8h_html"><div class="ttname"><a href="_iterative_density_solver_8h.html">IterativeDensitySolver.h</a></div></div>

@@ -9,5 +9,6 @@ var searchData=
   ['translate_5fz_6',['TRANSLATE_Z',['../namespace_im_guizmo.html#a3559e88fd6409ce121ee4d9847867cd1ab9c42c5942607e6d41dea7c80a68f072',1,'ImGuizmo']]],
   ['translation_7',['TRANSLATION',['../structvkgl_t_f_1_1_animation_channel.html#adbfd48a366b28f363fb9500873a7d681acfdf7a1a984cb279c9e0a689ba5ab3ce',1,'vkglTF::AnimationChannel']]],
   ['tri_8',['Tri',['../namespacedyno.html#a4d5ddf176d424630781350333a73bb8da2e5c9b03b8cbb06b66705b5a49ab00a1',1,'dyno']]],
-  ['triangle_5f_9',['Triangle_',['../classdyno_1_1_transform_model.html#a133d296329229853522f06bd9c4a4430ac7b4c215db044cd3b351fbacca911b4d',1,'dyno::TransformModel']]]
+  ['triangle_5f_9',['Triangle_',['../classdyno_1_1_transform_model.html#a133d296329229853522f06bd9c4a4430ac7b4c215db044cd3b351fbacca911b4d',1,'dyno::TransformModel']]],
+  ['type_10',['Type',['../class_wt_connection_graphics_object.html#a5ff8883c8133a8c887e3ddd50ca868fda46522089fc9974351daa6866a76ce059',1,'WtConnectionGraphicsObject::Type'],['../class_wt_node_graphics_object.html#ae20ad962f0533f3c5eab3d4238eefcd4ad6935c644d75f33cce3eb926b5822dab',1,'WtNodeGraphicsObject::Type']]]
 ];

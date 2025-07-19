@@ -9,25 +9,25 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Window :: Documentation for PeriDyno</title>
+    <title>Windows Binary Installation :: Documentation for PeriDyno</title>
 
     
-    <link href="/css/nucleus.css?1719408425" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1719408425" rel="stylesheet">
-    <link href="/css/hybrid.css?1719408425" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1719408425" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1719408425" rel="stylesheet">
-    <link href="/css/auto-complete.css?1719408425" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1719408425" rel="stylesheet">
-    <link href="/css/theme.css?1719408425" rel="stylesheet">
-    <link href="/css/tabs.css?1719408425" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1719408425" rel="stylesheet">
+    <link href="/css/nucleus.css?1752936062" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1752936062" rel="stylesheet">
+    <link href="/css/hybrid.css?1752936062" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1752936062" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1752936062" rel="stylesheet">
+    <link href="/css/auto-complete.css?1752936062" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1752936062" rel="stylesheet">
+    <link href="/css/theme.css?1752936062" rel="stylesheet">
+    <link href="/css/tabs.css?1752936062" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1752936062" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1719408425" rel="stylesheet">
+    <link href="/css/theme-blue.css?1752936062" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1719408425"></script>
+    <script src="/js/jquery-3.3.1.min.js?1752936062"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1719408425"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1719408425"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1752936062"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1752936062"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1719408425"></script>
+<script type="text/javascript" src="/js/search.js?1752936062"></script>
 
     
   </div>
@@ -162,7 +162,7 @@
         
         ">
       <a href="/en/installation/window/">
-           Windows Installation
+          2.1 Windows Installation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -187,13 +187,13 @@
  
   
     
-    <li data-nav-id="/en/installation/window/source/" title="Windows Platform Installation" class="dd-item
+    <li data-nav-id="/en/installation/window/source/" title="Windows Source Code Installation" class="dd-item
         
         
         
         ">
       <a href="/en/installation/window/source/">
-           Windows Installation
+          - Install from Source
           
             <i class="fas fa-check read-icon"></i>
           
@@ -215,13 +215,13 @@
  
   
     
-    <li data-nav-id="/en/installation/window/binary/" title="Window" class="dd-item
+    <li data-nav-id="/en/installation/window/binary/" title="Windows Binary Installation" class="dd-item
         parent
         active
         
         ">
       <a href="/en/installation/window/binary/">
-          - binary installation
+          - Binary Installation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -252,13 +252,13 @@
  
   
     
-    <li data-nav-id="/en/installation/linux/" title="Linux" class="dd-item
+    <li data-nav-id="/en/installation/linux/" title="Linux Platform Installation" class="dd-item
         
         
         
         ">
       <a href="/en/installation/linux/">
-          2.2 Linux
+          2.2 Linux Installation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -2853,7 +2853,7 @@
             
           
           
-            <a href='/en/'>PeriDyno</a> > <a href='/en/installation/'>Installation</a> > <a href='/en/installation/window/'>Windows Platform Installation</a> > Window
+            <a href='/en/'>PeriDyno</a> > <a href='/en/installation/'>Installation</a> > <a href='/en/installation/window/'>Windows Platform Installation</a> > Windows Binary Installation
           
         
           
@@ -2868,7 +2868,20 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-system-requirements">1. System Requirements</a></li>
+        <li><a href="#2-runtime-dependencies">2. Runtime Dependencies</a></li>
+        <li><a href="#3-installation">3. Installation</a></li>
+        <li><a href="#4-verification-test">4. Verification Test</a></li>
+        <li><a href="#5-usage-guide">5. Usage Guide</a></li>
+        <li><a href="#6-pip-installation-faq">6. pip Installation FAQ</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -2884,7 +2897,7 @@
           
             <h1>
               
-              Window
+              Windows Binary Installation
             </h1>
           
 
@@ -2896,7 +2909,111 @@
 
 
 
-	<p>To be continued&hellip;</p>
+	<h3 id="1-system-requirements">1. System Requirements</h3>
+<ul>
+<li><strong>Windows Platform</strong>: Windows 11</li>
+<li><strong>GPU</strong>: NVIDIA graphics card</li>
+<li><strong>CPU</strong>: Intel i7 or higher</li>
+<li><strong>OpenGL</strong>: 4.6+</li>
+<li><strong>RAM</strong>: 8GB+</li>
+</ul>
+<h3 id="2-runtime-dependencies">2. Runtime Dependencies</h3>
+<ul>
+<li>Python: <a href="https://www.python.org/downloads/windows/">3.12</a></li>
+<li>CUDA: <a href="https://developer.nvidia.com/cuda-12-2-0-download-archive?target_os=Windows&amp;target_arch=x86_64&amp;target_version=10">CUDA Toolkit 12.2</a></li>
+</ul>
+<h3 id="3-installation">3. Installation</h3>
+<p>Install the package using <code>pip</code>:</p>
+<pre><code>pip install PyPeridyno
+</code></pre><p>We recommend installing in a real environment with administrator privileges.</p>
+<h3 id="4-verification-test">4. Verification Test</h3>
+<ol>
+<li>Copy the test code into a new file named <code>GL_GlfwGUI.py</code>:</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os
+<span style="color:#f92672">import</span> sys
+<span style="color:#f92672">import</span> PyPeridyno <span style="color:#f92672">as</span> dyno
+<span style="color:#66d9ef">print</span>(sys<span style="color:#f92672">.</span>path)
+
+scn <span style="color:#f92672">=</span> dyno<span style="color:#f92672">.</span>SceneGraph()
+
+app <span style="color:#f92672">=</span> dyno<span style="color:#f92672">.</span>GlfwApp()
+app<span style="color:#f92672">.</span>setSceneGraph(scn)
+app<span style="color:#f92672">.</span>initialize(<span style="color:#ae81ff">1920</span>, <span style="color:#ae81ff">1080</span>, True)
+app<span style="color:#f92672">.</span>setWindowTitle(<span style="color:#e6db74">&#34;Empty GUI&#34;</span>)
+app<span style="color:#f92672">.</span>mainLoop()
+</code></pre></div><ol start="2">
+<li>Execute the file using shell:<code>python -u &quot;/path/GL_GlfwGUI.py&quot;</code></li>
+<li>Expected successful output:
+<img src="/images/installation/windows/GL_GlfwGUI.py.jpg?width=50pc" alt=""></li>
+</ol>
+<h3 id="5-usage-guide">5. Usage Guide</h3>
+<p>First import the PyPeridyno package: <code>import PyPeridyno as dyno</code></p>
+<h4 id="key-usage-patterns">Key Usage Patterns:</h4>
+<ol>
+<li>
+<p><strong>Class Instantiation</strong><br>
+Python classes mirror their C++ counterparts with identical names.<br>
+C++: <code>std::shared_ptr&lt;SceneGraph&gt; scn = std::make_shared&lt;SceneGraph&gt;();</code><br>
+Python: <code>scn = dyno.SceneGraph()</code></p>
+</li>
+<li>
+<p><strong>Templated Classes</strong><br>
+For C++ template classes, use class name + type abbreviation in Python:<br>
+C++: <code>CodimensionalPD&lt;DataType3f&gt;</code> → Python: <code>CodimensionalPD3f</code></p>
+</li>
+<li>
+<p><strong>Method Calls</strong><br>
+All method names match C++, with pointer operators (-&gt;) replaced by dot notation (.):<br>
+C++: <code>scn-&gt;setLowerBound();</code> → Python: <code>scn.setLowerBound()</code></p>
+</li>
+<li>
+<p><strong>Vector Types</strong><br>
+<code>dyno.Vector3f()</code> corresponds to C++&rsquo;s <code>dyno::Vec3f()</code>, but requires explicit list syntax:<br>
+C++: <code>dyno::Vec3f(1)</code> → Python: <code>dyno.Vector3f([1,1,1])</code></p>
+</li>
+<li>
+<p><strong>Default Parameters</strong><br>
+Python requires explicit specification of all parameters:<br>
+C++: <code>CodimensionalPD&lt;DataType3f&gt;(0.15, 120, 0.001, 0.0001)</code><br>
+Python: <code>CodimensionalPD3f(0.15, 120, 0.001, 0.0001, &quot;default&quot;)</code></p>
+</li>
+<li>
+<p><strong>Enum Types</strong><br>
+Enums maintain C++ naming but require full qualification:<br>
+C++: <code>GLPointVisualModule::PER_OBJECT_SHADER</code><br>
+Python: <code>dyno.GLPointVisualModule().ColorMapMode.PER_OBJECT_SHADER</code></p>
+</li>
+<li>
+<p><strong>File Paths</strong><br>
+Use <code>dyno.get_asset_path()</code> + relative path (absolute paths also accepted).<br>
+Default path: <code>C:\ProgramData\Peridyno\data</code> (created during pip install).<br>
+Download additional data from: <a href="https://github.com/peridyno/peridyno/archive/refs/heads/data.zip">data.zip</a></p>
+</li>
+</ol>
+<p>All other usage patterns remain consistent with the C++ implementation.</p>
+<h3 id="6-pip-installation-faq">6. pip Installation FAQ</h3>
+<p><strong>Q1: Why is administrator privilege required?</strong></p>
+<blockquote>
+<p>A: During installation, pip needs to copy <code>cufft64_11.dll</code> from the CUDA_PATH to your Python directory. Without admin rights, this copy operation may fail silently. While the installation may complete without errors, missing this DLL will prevent proper execution.<br>
+<strong>Workaround</strong>: Manually copy <code>cufft64_11.dll</code> to your Python installation directory if admin rights are unavailable.</p>
+</blockquote>
+<p><strong>Q2: Runtime Error: &ldquo;ImportError: DLL load failed while importing PyPeridyno: The specified module could not be found&rdquo;</strong></p>
+<blockquote>
+<p>Solution:</p>
+<ol>
+<li>Verify your CUDA version is exactly 12.2 (check CUDA_PATH)</li>
+<li>Manually copy the correct <code>cufft64_11.dll</code> to your Python directory</li>
+<li>Ensure you&rsquo;re using Python 3.12 (version mismatch can cause this error)</li>
+</ol>
+</blockquote>
+<p><strong>Q3: How to reinstall?</strong></p>
+<blockquote>
+<p>Complete removal steps:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip uninstall PyPeridyno
+pip cache purge
+pip install PyPeridyno
+</code></pre></div></blockquote>
 
 
 
@@ -4379,10 +4496,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/installation/window/source/" title="Windows Platform Installation"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/installation/window/source/" title="Windows Source Code Installation"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/installation/linux/" title="Linux" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/installation/linux/" title="Linux Platform Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -4392,16 +4509,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1719408425"></script>
-    <script src="/js/perfect-scrollbar.min.js?1719408425"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1719408425"></script>
-    <script src="/js/jquery.sticky.js?1719408425"></script>
-    <script src="/js/featherlight.min.js?1719408425"></script>
-    <script src="/js/highlight.pack.js?1719408425"></script>
+    <script src="/js/clipboard.min.js?1752936062"></script>
+    <script src="/js/perfect-scrollbar.min.js?1752936062"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1752936062"></script>
+    <script src="/js/jquery.sticky.js?1752936062"></script>
+    <script src="/js/featherlight.min.js?1752936062"></script>
+    <script src="/js/highlight.pack.js?1752936062"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1719408425"></script>
-    <script src="/js/learn.js?1719408425"></script>
-    <script src="/js/hugo-learn.js?1719408425"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1752936062"></script>
+    <script src="/js/learn.js?1752936062"></script>
+    <script src="/js/hugo-learn.js?1752936062"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

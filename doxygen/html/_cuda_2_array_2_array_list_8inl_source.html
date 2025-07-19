@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -138,13 +138,13 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordtype">void</span> assign(<span class="keyword">const</span> ArrayList&lt;ElementType, DeviceType::CPU&gt;&amp; src);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordtype">void</span> assign(<span class="keyword">const</span> std::vector&lt;std::vector&lt;ElementType&gt;&gt;&amp; src);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">friend</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; out, <span class="keyword">const</span> ArrayList&lt;ElementType, DeviceType::GPU&gt;&amp; aList)</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_function" href="namespace_wt.html#ac22016c13f21cabb7c6376d563aa7b3b">operator&lt;&lt;</a>(std::ostream&amp; <a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a>, <span class="keyword">const</span> ArrayList&lt;ElementType, DeviceType::GPU&gt;&amp; aList)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            ArrayList&lt;ElementType, DeviceType::CPU&gt; hList;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            hList.assign(aList);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            out &lt;&lt; hList;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a> &lt;&lt; hList;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray&lt;uint&gt;</a>&amp; index()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> mIndex; }</div>
@@ -365,6 +365,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="a_reduction_8h_html"><div class="ttname"><a href="_reduction_8h.html">Reduction.h</a></div></div>
 <div class="ttc" id="a_scan_8h_html"><div class="ttname"><a href="_scan_8h.html">Scan.h</a></div></div>
 <div class="ttc" id="a_vulkan_swap_chain_8cpp_html_a21b5a77bb7dd2ff2a93f6c086da96d46"><div class="ttname"><a href="_vulkan_swap_chain_8cpp.html#a21b5a77bb7dd2ff2a93f6c086da96d46">assert</a></div><div class="ttdeci">assert(queueCount &gt;=1)</div></div>
+<div class="ttc" id="a_wt_flow_widget_8h_html_a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579"><div class="ttname"><a href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a></div><div class="ttdeci">@ out</div><div class="ttdef"><b>Definition</b> <a href="_wt_flow_widget_8h_source.html#l00013">WtFlowWidget.h:13</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_list_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4_html_a476a6463a6accda955ab11399899cb11"><div class="ttname"><a href="classdyno_1_1_array_list_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4.html#a476a6463a6accda955ab11399899cb11">dyno::ArrayList&lt; ElementType, DeviceType::CPU &gt;::mIndex</a></div><div class="ttdeci">CArray&lt; uint &gt; mIndex</div><div class="ttdef"><b>Definition</b> <a href="_array_list_8h_source.html#l00103">ArrayList.h:103</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_list_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4_html_a7ca76e5374f541c4fdbcd17566166b3a"><div class="ttname"><a href="classdyno_1_1_array_list_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4.html#a7ca76e5374f541c4fdbcd17566166b3a">dyno::ArrayList&lt; ElementType, DeviceType::CPU &gt;::mLists</a></div><div class="ttdeci">CArray&lt; List&lt; ElementType &gt; &gt; mLists</div><div class="ttdef"><b>Definition</b> <a href="_array_list_8h_source.html#l00106">ArrayList.h:106</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_list_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4_html_a811a231edd29363ba44350e023581714"><div class="ttname"><a href="classdyno_1_1_array_list_3_01_element_type_00_01_device_type_1_1_c_p_u_01_4.html#a811a231edd29363ba44350e023581714">dyno::ArrayList&lt; ElementType, DeviceType::CPU &gt;::mElements</a></div><div class="ttdeci">CArray&lt; ElementType &gt; mElements</div><div class="ttdef"><b>Definition</b> <a href="_array_list_8h_source.html#l00104">ArrayList.h:104</a></div></div>
@@ -375,6 +376,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclassdyno_1_1_reduction_html"><div class="ttname"><a href="classdyno_1_1_reduction.html">dyno::Reduction</a></div><div class="ttdef"><b>Definition</b> <a href="_reduction_8h_source.html#l00008">Reduction.h:9</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_scan_html"><div class="ttname"><a href="classdyno_1_1_scan.html">dyno::Scan</a></div><div class="ttdef"><b>Definition</b> <a href="_scan_8h_source.html#l00009">Scan.h:10</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_scan_html_a10fc558085671ebdd94d4a375329e65c"><div class="ttname"><a href="classdyno_1_1_scan.html#a10fc558085671ebdd94d4a375329e65c">dyno::Scan::exclusive</a></div><div class="ttdeci">void exclusive(T *output, const T *input, size_t length, bool bcao=true)</div></div>
+<div class="ttc" id="anamespace_wt_html_ac22016c13f21cabb7c6376d563aa7b3b"><div class="ttname"><a href="namespace_wt.html#ac22016c13f21cabb7c6376d563aa7b3b">Wt::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;s, const Guid &amp;guid)</div><div class="ttdef"><b>Definition</b> <a href="guid_8cpp_source.html#l00070">guid.cpp:70</a></div></div>
 <div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a2aa59d9fceeeb72a56f3030d5518cb02"><div class="ttname"><a href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">dyno::DArray</a></div><div class="ttdeci">Array&lt; T, DeviceType::GPU &gt; DArray</div><div class="ttdef"><b>Definition</b> <a href="_cuda_2_array_2_array_8inl_source.html#l00089">Array.inl:89</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a433e3d17b0b4b5733b188e6f31c16986"><div class="ttname"><a href="namespacedyno.html#a433e3d17b0b4b5733b188e6f31c16986">dyno::parallel_allocate_for_list</a></div><div class="ttdeci">void parallel_allocate_for_list(void *lists, void *elements, size_t ele_size, DArray&lt; uint &gt; &amp;index)</div></div>

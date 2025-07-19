@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -150,14 +150,14 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordtype">void</span> assign(<span class="keyword">const</span> Array&lt;T, DeviceType::CPU&gt;&amp; src, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> count, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> dstOffset = 0, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> srcOffset = 0);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordtype">void</span> assign(<span class="keyword">const</span> std::vector&lt;T&gt;&amp; src, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> count, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> dstOffset = 0, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> srcOffset = 0);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keyword">friend</span> std::ostream&amp; operator&lt;&lt;(std::ostream &amp;out, <span class="keyword">const</span> Array&lt;T, DeviceType::GPU&gt;&amp; dArray)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_function" href="namespace_wt.html#ac22016c13f21cabb7c6376d563aa7b3b">operator&lt;&lt;</a>(std::ostream &amp;<a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a>, <span class="keyword">const</span> Array&lt;T, DeviceType::GPU&gt;&amp; dArray)</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            Array&lt;T, DeviceType::CPU&gt; hArray;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            hArray.assign(dArray);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            out &lt;&lt; hArray;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a> &lt;&lt; hArray;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a>;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">private</span>:</div>
@@ -260,8 +260,10 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        cuSafeCall(cudaMemcpy(mData + dstOffset, src.begin() + srcOffset, count * <span class="keyword">sizeof</span>(<a class="code hl_define" href="im_gu_i_z_m_oquat_8cpp.html#ae53008cb938e8e14ae47291e41be8bec">T</a>), cudaMemcpyDeviceToDevice));</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    }</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
+<div class="ttc" id="a_wt_flow_widget_8h_html_a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579"><div class="ttname"><a href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a></div><div class="ttdeci">@ out</div><div class="ttdef"><b>Definition</b> <a href="_wt_flow_widget_8h_source.html#l00013">WtFlowWidget.h:13</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_array_html"><div class="ttname"><a href="classdyno_1_1_array.html">dyno::Array</a></div><div class="ttdoc">This class is designed to be elegant, so it can be directly passed to GPU as parameters.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00027">Array.h:27</a></div></div>
 <div class="ttc" id="aim_gu_i_z_m_oquat_8cpp_html_ae53008cb938e8e14ae47291e41be8bec"><div class="ttname"><a href="im_gu_i_z_m_oquat_8cpp.html#ae53008cb938e8e14ae47291e41be8bec">T</a></div><div class="ttdeci">#define T(t)</div></div>
+<div class="ttc" id="anamespace_wt_html_ac22016c13f21cabb7c6376d563aa7b3b"><div class="ttname"><a href="namespace_wt.html#ac22016c13f21cabb7c6376d563aa7b3b">Wt::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;s, const Guid &amp;guid)</div><div class="ttdef"><b>Definition</b> <a href="guid_8cpp_source.html#l00070">guid.cpp:70</a></div></div>
 <div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a2aa59d9fceeeb72a56f3030d5518cb02"><div class="ttname"><a href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">dyno::DArray</a></div><div class="ttdeci">Array&lt; T, DeviceType::GPU &gt; DArray</div><div class="ttdef"><b>Definition</b> <a href="#l00089">Array.inl:89</a></div></div>
 <div class="ttc" id="anamespacedyno_html_abe192b493e5b4f187a5e9b22d0e0dbb8"><div class="ttname"><a href="namespacedyno.html#abe192b493e5b4f187a5e9b22d0e0dbb8">dyno::exp</a></div><div class="ttdeci">DYN_FUNC Complex&lt; Real &gt; exp(const Complex&lt; Real &gt; &amp;)</div><div class="ttdef"><b>Definition</b> <a href="_complex_8inl_source.html#l00338">Complex.inl:338</a></div></div>

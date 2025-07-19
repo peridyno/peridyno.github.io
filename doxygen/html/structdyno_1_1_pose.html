@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -111,19 +111,21 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8bcf99177a42e7313dd6ba37bc219afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad542c33ca9649ad65de9ead203f9bbc5" id="r_ad542c33ca9649ad65de9ead203f9bbc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad542c33ca9649ad65de9ead203f9bbc5">resize</a> (int s)</td></tr>
 <tr class="separator:ad542c33ca9649ad65de9ead203f9bbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1fc662d1200a2aac01d42e256ede14e" id="r_af1fc662d1200a2aac01d42e256ede14e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdyno_1_1_pose.html">Pose</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1fc662d1200a2aac01d42e256ede14e">operator=</a> (const <a class="el" href="structdyno_1_1_pose.html">Pose</a> &amp;other)</td></tr>
+<tr class="separator:af1fc662d1200a2aac01d42e256ede14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af8930b9f9d3fbc04edecbd378c80ebfb" id="r_af8930b9f9d3fbc04edecbd378c80ebfb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8930b9f9d3fbc04edecbd378c80ebfb">mTranslation</a></td></tr>
 <tr class="separator:af8930b9f9d3fbc04edecbd378c80ebfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff41dc99ad624a661ba704abcf6eab0" id="r_a2ff41dc99ad624a661ba704abcf6eab0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ff41dc99ad624a661ba704abcf6eab0">mRotation</a></td></tr>
-<tr class="separator:a2ff41dc99ad624a661ba704abcf6eab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6f413b9e07aece1a9c6917f0d3951da" id="r_ad6f413b9e07aece1a9c6917f0d3951da"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6f413b9e07aece1a9c6917f0d3951da">mQuatRotation</a></td></tr>
+<tr class="separator:ad6f413b9e07aece1a9c6917f0d3951da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b12a2fa0dd6b9f6fdb1ac48673f920" id="r_a82b12a2fa0dd6b9f6fdb1ac48673f920"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b12a2fa0dd6b9f6fdb1ac48673f920">mScale</a></td></tr>
 <tr class="separator:a82b12a2fa0dd6b9f6fdb1ac48673f920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00013">13</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00016">16</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a405e04722d6b8315511f53d6a8c60ed5" name="a405e04722d6b8315511f53d6a8c60ed5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a405e04722d6b8315511f53d6a8c60ed5">&#9670;&#160;</a></span>Pose() <span class="overload">[1/2]</span></h2>
@@ -148,7 +150,17 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00015">15</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00018">18</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structdyno_1_1_pose_a405e04722d6b8315511f53d6a8c60ed5_icgraph.png" border="0" usemap="#astructdyno_1_1_pose_a405e04722d6b8315511f53d6a8c60ed5_icgraph" alt=""/></div>
+<map name="astructdyno_1_1_pose_a405e04722d6b8315511f53d6a8c60ed5_icgraph" id="astructdyno_1_1_pose_a405e04722d6b8315511f53d6a8c60ed5_icgraph">
+<area shape="rect" title=" " alt="" coords="204,5,329,32"/>
+<area shape="rect" href="structdyno_1_1_pose.html#af1fc662d1200a2aac01d42e256ede14e" title=" " alt="" coords="5,5,156,32"/>
+<area shape="poly" title=" " alt="" coords="188,21,156,21,156,16,188,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -184,7 +196,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00017">17</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00020">20</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -211,11 +223,48 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00024">24</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00027">27</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af1fc662d1200a2aac01d42e256ede14e" name="af1fc662d1200a2aac01d42e256ede14e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1fc662d1200a2aac01d42e256ede14e">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdyno_1_1_pose.html">Pose</a> &amp; dyno::Pose::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdyno_1_1_pose.html">Pose</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00043">43</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structdyno_1_1_pose_af1fc662d1200a2aac01d42e256ede14e_cgraph.png" border="0" usemap="#astructdyno_1_1_pose_af1fc662d1200a2aac01d42e256ede14e_cgraph" alt=""/></div>
+<map name="astructdyno_1_1_pose_af1fc662d1200a2aac01d42e256ede14e_cgraph" id="astructdyno_1_1_pose_af1fc662d1200a2aac01d42e256ede14e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" href="structdyno_1_1_pose.html#a405e04722d6b8315511f53d6a8c60ed5" title=" " alt="" coords="204,5,329,32"/>
+<area shape="poly" title=" " alt="" coords="156,16,188,16,188,21,156,21"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ad542c33ca9649ad65de9ead203f9bbc5" name="ad542c33ca9649ad65de9ead203f9bbc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad542c33ca9649ad65de9ead203f9bbc5">&#9670;&#160;</a></span>resize()</h2>
 
@@ -239,7 +288,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00033">33</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00036">36</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -266,24 +315,24 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00031">31</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00034">34</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2ff41dc99ad624a661ba704abcf6eab0" name="a2ff41dc99ad624a661ba704abcf6eab0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ff41dc99ad624a661ba704abcf6eab0">&#9670;&#160;</a></span>mRotation</h2>
+<a id="ad6f413b9e07aece1a9c6917f0d3951da" name="ad6f413b9e07aece1a9c6917f0d3951da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6f413b9e07aece1a9c6917f0d3951da">&#9670;&#160;</a></span>mQuatRotation</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a>&gt; dyno::Pose::mRotation</td>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a>&gt; dyno::Pose::mQuatRotation</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00041">41</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00053">53</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -299,7 +348,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00042">42</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00054">54</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -315,12 +364,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00040">40</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00052">52</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>D:/Peridyno/peridyno/src/Modeling/<a class="el" href="_joint_info_8h_source.html">JointInfo.h</a></li>
+<li>D:/Peridyno/peridyno/src/Topology/Cuda/Topology/<a class="el" href="_joint_info_8h_source.html">JointInfo.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,13 +1,31 @@
 <map id="Qt::QtNodeFlowScene::autoSyncAllDescendants" name="Qt::QtNodeFlowScene::autoSyncAllDescendants">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,182,115"/>
-<area shape="rect" id="Node000002" href="$classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="230,5,403,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,69,227,50,229,56,168,74"/>
-<area shape="rect" id="Node000004" href="$classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="230,72,403,115"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,91,214,91,214,96,182,96"/>
-<area shape="rect" id="Node000006" href="$classdyno_1_1_node.html#a302ff1cc36838b400066e194d0230c3c" title="Whether the node can be automatically synchronized when its ancestor is updated." alt="" coords="231,139,402,165"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="178,113,249,132,248,137,176,118"/>
-<area shape="rect" id="Node000003" href="$classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="451,5,624,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,24,435,24,435,29,403,29"/>
-<area shape="rect" id="Node000005" href="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="451,72,624,115"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="403,91,435,91,435,96,403,96"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,101,182,144"/>
+<area shape="rect" id="Node000002" href="$classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c" title=" " alt="" coords="669,5,843,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,101,229,92,457,59,653,35,654,40,457,64,230,97,183,106"/>
+<area shape="rect" id="Node000004" href="$classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b" title=" " alt="" coords="669,72,843,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,116,653,95,654,100,182,121"/>
+<area shape="rect" id="Node000006" href="$classdyno_1_1_node.html#a302ff1cc36838b400066e194d0230c3c" title="Whether the node can be automatically synchronized when its ancestor is updated." alt="" coords="230,197,401,224"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="139,142,231,183,250,190,248,195,229,188,137,147"/>
+<area shape="rect" id="Node000007" href="$class_qt_1_1_qt_node_flow_scene.html#a5724b716b70d0eda88128b6ad40b3e16" title="Update the view only for the active scene graph, the data model will not be changed." alt="" coords="234,131,397,173"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="182,132,218,137,218,142,182,137"/>
+<area shape="rect" id="Node000003" href="$classdyno_1_1_scene_graph_factory.html#a2c7da62fdbcf38f24d93b0b71017f59c" title="Create a new SceneGraph." alt="" coords="903,5,1076,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="843,24,887,24,887,29,843,29"/>
+<area shape="rect" id="Node000005" href="$classdyno_1_1_scene_graph_factory.html#a8903c0a4594870792c19db4302361bad" title=" " alt="" coords="903,72,1076,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="843,91,887,91,887,96,843,96"/>
+<area shape="rect" id="Node000008" href="$class_qt_1_1_qt_node_flow_scene.html#a89206a4a64a463931313a1facf24da06" title="create a QT&#45;based view for the active scene graph." alt="" coords="449,131,609,173"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="397,149,433,149,433,155,397,155"/>
+<area shape="rect" id="Node000013" href="$class_qt_1_1_qt_node_flow_scene.html#aa26f9a3ae86fe2565a7a50c5274d180c" title=" " alt="" coords="452,197,606,240"/>
+<area shape="poly" id="edge14_Node000007_Node000013" title=" " alt="" coords="387,171,445,190,443,195,385,176"/>
+<area shape="rect" id="Node000014" href="$class_qt_1_1_qt_node_flow_scene.html#af484b83f48a4bd4585e12ed65f088cea" title=" " alt="" coords="452,264,606,307"/>
+<area shape="poly" id="edge15_Node000007_Node000014" title=" " alt="" coords="385,172,403,183,419,200,427,217,436,234,451,250,455,253,452,258,447,254,431,237,423,220,414,204,399,187,382,176"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="554,128,600,93,656,58,668,52,670,57,659,62,603,97,557,132"/>
+<area shape="poly" id="edge12_Node000008_Node000004" title=" " alt="" coords="609,129,655,117,657,122,610,134"/>
+<area shape="rect" id="Node000009" href="$classdyno_1_1_o_base.html#a3e429b5c73bc7ae8ef707cd40ac3a2e5" title=" " alt="" coords="657,139,855,165"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="610,149,641,149,641,155,610,155"/>
+<area shape="rect" id="Node000010" href="$classdyno_1_1_module.html#a3e3dbcc0b37a89a0be80542fbcd85d2f" title=" " alt="" coords="659,189,853,216"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="610,167,679,183,677,188,609,172"/>
+<area shape="rect" id="Node000012" href="$classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8" title=" " alt="" coords="681,240,831,267"/>
+<area shape="poly" id="edge13_Node000008_Node000012" title=" " alt="" coords="590,172,611,183,635,205,644,216,659,226,671,232,669,236,656,230,641,220,631,209,608,187,587,176"/>
+<area shape="rect" id="Node000011" href="$classdyno_1_1_log.html#ade134ff996b87eb30b5cab64bc73ad28" title="Add a new message to log." alt="" coords="906,189,1073,216"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="854,200,890,200,890,205,854,205"/>
 </map>

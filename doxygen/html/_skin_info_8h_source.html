@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PeriDyno: D:/Peridyno/peridyno/src/Modeling/SkinInfo.h Source File</title>
+<title>PeriDyno: D:/Peridyno/peridyno/src/Topology/Cuda/Topology/SkinInfo.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -84,7 +84,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_7098558150fb41b4059e7cec4fdfe2bf.html">Modeling</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_b687dece5b089bd91a319b44befe67d0.html">Peridyno</a></li><li class="navelem"><a class="el" href="dir_3f70cb55a65d18dd385a8b6871afcc93.html">peridyno</a></li><li class="navelem"><a class="el" href="dir_6a6e80a0c5c1b65cddfc9bdbf102d730.html">src</a></li><li class="navelem"><a class="el" href="dir_7ded34adb3e08c5a039f89f629ad7b33.html">Topology</a></li><li class="navelem"><a class="el" href="dir_47e3abb3b8d15cc04336db3a85fcf0c7.html">Cuda</a></li><li class="navelem"><a class="el" href="dir_acf531aa428883c481dad4770768fca0.html">Topology</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -118,70 +118,70 @@ $(function(){ initResizable(false); });
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a95acb2228b7058eb437e61b085f9c92b">   23</a></span>        <a class="code hl_function" href="classdyno_1_1_skin_info.html#a95acb2228b7058eb437e61b085f9c92b">~SkinInfo</a>() </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>; i++)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">V_jointWeight_0</a>[i].clear();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>[i].clear();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>[i].clear();</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>[i].clear();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            }</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">V_jointWeight_0</a>.clear();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>.clear();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>.clear();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>.clear();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> it : <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a103e5a351a2f481824d1c3cf2c2a1fe0">skin_VerticeRange</a>)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                it.second.clear();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a103e5a351a2f481824d1c3cf2c2a1fe0">skin_VerticeRange</a>.clear();</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        };</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            this-&gt;<a class="code hl_function" href="classdyno_1_1_skin_info.html#a4e228bfabc947fb1afc92ec0dbdb6892">clear</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        };</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a6f72df4f41c40361097dcd61776a00ee">   44</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_skin_info.html#a6f72df4f41c40361097dcd61776a00ee">pushBack_Data</a>(<span class="keyword">const</span> std::vector&lt;Vec4f&gt;&amp; Weight_0,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">const</span> std::vector&lt;Vec4f&gt;&amp; Weight_1,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keyword">const</span> std::vector&lt;Vec4f&gt;&amp; ID_0,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keyword">const</span> std::vector&lt;Vec4f&gt;&amp; ID_1</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        ) </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>++;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">V_jointWeight_0</a>.resize(<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>.resize(<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>.resize(<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>.resize(<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a2a9c649823411a24dbc55f2676ebfdfd">   28</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_skin_info.html#a2a9c649823411a24dbc55f2676ebfdfd">pushBack_Data</a>(<span class="keyword">const</span> std::vector&lt;Vec4f&gt;&amp; Weight_0,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keyword">const</span> std::vector&lt;Vec4f&gt;&amp; Weight_1,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            <span class="keyword">const</span> std::vector&lt;Vec4f&gt;&amp; ID_0,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="keyword">const</span> std::vector&lt;Vec4f&gt;&amp; ID_1,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            std::vector&lt;Vec4f&gt;* Weight_2 = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            std::vector&lt;Vec4f&gt;* ID_2 = <span class="keyword">nullptr</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        ) </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>++;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">V_jointWeight_0</a>.resize(<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>.resize(<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>.resize(<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>.resize(<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            this-&gt;<a class="code hl_variable" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">V_jointWeight_0</a>[<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>-1].assign(Weight_0);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            this-&gt;<a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>[<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a> - 1].assign(Weight_1);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            this-&gt;<a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>[<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a> - 1].assign(ID_0);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            this-&gt;<a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>[<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a> - 1].assign(ID_1);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">if</span> (Weight_2 &amp;&amp; ID_2) </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a6343d2578548b67f3af33c5cded4ebd9">V_jointWeight_2</a>.resize(<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a61a3ec00adfead2feeb74529dec4e10d">V_jointID_2</a>.resize(<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                this-&gt;<a class="code hl_variable" href="classdyno_1_1_skin_info.html#a6343d2578548b67f3af33c5cded4ebd9">V_jointWeight_2</a>[<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a> - 1].assign(*Weight_2);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                this-&gt;<a class="code hl_variable" href="classdyno_1_1_skin_info.html#a61a3ec00adfead2feeb74529dec4e10d">V_jointID_2</a>[<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a> - 1].assign(*ID_2);             </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            this-&gt;<a class="code hl_variable" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">V_jointWeight_0</a>[<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>-1].assign(Weight_0);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            this-&gt;<a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>[<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a> - 1].assign(Weight_1);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            this-&gt;<a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>[<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a> - 1].assign(ID_0);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            this-&gt;<a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>[<a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a> - 1].assign(ID_1);                  </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
-</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a72f88a30d1d034b888fa993923f24f48">   63</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_skin_info.html#a72f88a30d1d034b888fa993923f24f48">clearSkinInfo</a>() </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>; i++)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">V_jointWeight_0</a>[i].clear();</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>[i].clear();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>[i].clear();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>[i].clear();</div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a4e228bfabc947fb1afc92ec0dbdb6892">   57</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_skin_info.html#a4e228bfabc947fb1afc92ec0dbdb6892">clear</a>() </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a>; i++)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">V_jointWeight_0</a>[i].clear();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>[i].clear();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keywordflow">if</span>(!<a class="code hl_variable" href="classdyno_1_1_skin_info.html#a6343d2578548b67f3af33c5cded4ebd9">V_jointWeight_2</a>.empty())</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                    <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a6343d2578548b67f3af33c5cded4ebd9">V_jointWeight_2</a>[i].clear();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>[i].clear();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>[i].clear();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classdyno_1_1_skin_info.html#a61a3ec00adfead2feeb74529dec4e10d">V_jointID_2</a>.empty())</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                    <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a61a3ec00adfead2feeb74529dec4e10d">V_jointID_2</a>[i].clear();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">skinNum</a> = 0;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">V_jointWeight_0</a>.clear();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>.clear();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>.clear();</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>.clear();</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> it : <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a103e5a351a2f481824d1c3cf2c2a1fe0">skin_VerticeRange</a>)</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                it.second.clear();</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a103e5a351a2f481824d1c3cf2c2a1fe0">skin_VerticeRange</a>.clear();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a6343d2578548b67f3af33c5cded4ebd9">V_jointWeight_2</a>.clear();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>.clear();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>.clear();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a61a3ec00adfead2feeb74529dec4e10d">V_jointID_2</a>.clear();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <a class="code hl_variable" href="classdyno_1_1_skin_info.html#ad380bfefa59e939837fd6f54777a1a10">skin_VerticeRange</a>.clear();</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
 </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
@@ -196,14 +196,14 @@ $(function(){ initResizable(false); });
 </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">   95</a></span>        std::vector&lt;DArray&lt;Vec4f&gt;&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">V_jointWeight_0</a>;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">   97</a></span>        std::vector&lt;DArray&lt;Vec4f&gt;&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">   96</a></span>        std::vector&lt;DArray&lt;Vec4f&gt;&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">V_jointWeight_1</a>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a6343d2578548b67f3af33c5cded4ebd9">   97</a></span>        std::vector&lt;DArray&lt;Vec4f&gt;&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a6343d2578548b67f3af33c5cded4ebd9">V_jointWeight_2</a>;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">   99</a></span>        std::vector&lt;DArray&lt;Vec4f&gt;&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">V_jointID_0</a>;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">  101</a></span>        std::vector&lt;DArray&lt;Vec4f&gt;&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">  100</a></span>        std::vector&lt;DArray&lt;Vec4f&gt;&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">V_jointID_1</a>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a61a3ec00adfead2feeb74529dec4e10d">  101</a></span>        std::vector&lt;DArray&lt;Vec4f&gt;&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a61a3ec00adfead2feeb74529dec4e10d">V_jointID_2</a>;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a103e5a351a2f481824d1c3cf2c2a1fe0">  103</a></span>        std::map&lt;int, std::vector&lt;Vec2u&gt;&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a103e5a351a2f481824d1c3cf2c2a1fe0">skin_VerticeRange</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#ad380bfefa59e939837fd6f54777a1a10">  103</a></span>        std::map&lt;int, Vec2u&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#ad380bfefa59e939837fd6f54777a1a10">skin_VerticeRange</a>;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classdyno_1_1_skin_info.html#a77c3b4601112863bf15512db4d2b8a6a">  105</a></span>        std::shared_ptr&lt;TextureMesh&gt; <a class="code hl_variable" href="classdyno_1_1_skin_info.html#a77c3b4601112863bf15512db4d2b8a6a">mesh</a> = NULL;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
@@ -220,28 +220,31 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    };</div>
 </div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="ttc" id="a_canvas_8h_html"><div class="ttname"><a href="_canvas_8h.html">Canvas.h</a></div></div>
 <div class="ttc" id="a_module_8h_html"><div class="ttname"><a href="_module_8h.html">Module.h</a></div></div>
 <div class="ttc" id="a_o_base_8h_html"><div class="ttname"><a href="_o_base_8h.html">OBase.h</a></div></div>
 <div class="ttc" id="a_texture_mesh_8h_html"><div class="ttname"><a href="_texture_mesh_8h.html">TextureMesh.h</a></div></div>
 <div class="ttc" id="a_vector_8h_html"><div class="ttname"><a href="_vector_8h.html">Vector.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_o_base_html_ab65d583b85bc42e7b2faab3af43d159f"><div class="ttname"><a href="classdyno_1_1_o_base.html#ab65d583b85bc42e7b2faab3af43d159f">dyno::OBase::OBase</a></div><div class="ttdeci">OBase()</div><div class="ttdef"><b>Definition</b> <a href="_o_base_8h_source.html#l00049">OBase.h:49</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_skin_info_html_a00fd2262326efda179d1427d9c399e5b"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">dyno::SkinInfo::V_jointWeight_1</a></div><div class="ttdeci">std::vector&lt; DArray&lt; Vec4f &gt; &gt; V_jointWeight_1</div><div class="ttdef"><b>Definition</b> <a href="#l00097">SkinInfo.h:97</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_skin_info_html_a00fd2262326efda179d1427d9c399e5b"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a00fd2262326efda179d1427d9c399e5b">dyno::SkinInfo::V_jointWeight_1</a></div><div class="ttdeci">std::vector&lt; DArray&lt; Vec4f &gt; &gt; V_jointWeight_1</div><div class="ttdef"><b>Definition</b> <a href="#l00096">SkinInfo.h:96</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_skin_info_html_a02e6acbb9b1815c1bc0c9c4bdcd49b96"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a02e6acbb9b1815c1bc0c9c4bdcd49b96">dyno::SkinInfo::V_jointWeight_0</a></div><div class="ttdeci">std::vector&lt; DArray&lt; Vec4f &gt; &gt; V_jointWeight_0</div><div class="ttdef"><b>Definition</b> <a href="#l00095">SkinInfo.h:95</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_skin_info_html_a0b5828758250a0f4898c1f03fcc93d56"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a0b5828758250a0f4898c1f03fcc93d56">dyno::SkinInfo::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdef"><b>Definition</b> <a href="#l00089">SkinInfo.h:89</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_skin_info_html_a103e5a351a2f481824d1c3cf2c2a1fe0"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a103e5a351a2f481824d1c3cf2c2a1fe0">dyno::SkinInfo::skin_VerticeRange</a></div><div class="ttdeci">std::map&lt; int, std::vector&lt; Vec2u &gt; &gt; skin_VerticeRange</div><div class="ttdef"><b>Definition</b> <a href="#l00103">SkinInfo.h:103</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_skin_info_html_a109c2bfc312fc8475c8d5d6ab4b5abdf"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a109c2bfc312fc8475c8d5d6ab4b5abdf">dyno::SkinInfo::initialNormal</a></div><div class="ttdeci">DArray&lt; Vec3f &gt; initialNormal</div><div class="ttdef"><b>Definition</b> <a href="#l00109">SkinInfo.h:109</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_skin_info_html_a2a9c649823411a24dbc55f2676ebfdfd"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a2a9c649823411a24dbc55f2676ebfdfd">dyno::SkinInfo::pushBack_Data</a></div><div class="ttdeci">void pushBack_Data(const std::vector&lt; Vec4f &gt; &amp;Weight_0, const std::vector&lt; Vec4f &gt; &amp;Weight_1, const std::vector&lt; Vec4f &gt; &amp;ID_0, const std::vector&lt; Vec4f &gt; &amp;ID_1, std::vector&lt; Vec4f &gt; *Weight_2=nullptr, std::vector&lt; Vec4f &gt; *ID_2=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="#l00028">SkinInfo.h:28</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_skin_info_html_a421561878f22e800fb155dff67a339c4"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a421561878f22e800fb155dff67a339c4">dyno::SkinInfo::V_jointID_0</a></div><div class="ttdeci">std::vector&lt; DArray&lt; Vec4f &gt; &gt; V_jointID_0</div><div class="ttdef"><b>Definition</b> <a href="#l00099">SkinInfo.h:99</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_skin_info_html_a4ddf3e405534857c8621a7f139226240"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a4ddf3e405534857c8621a7f139226240">dyno::SkinInfo::size</a></div><div class="ttdeci">int size()</div><div class="ttdef"><b>Definition</b> <a href="#l00087">SkinInfo.h:87</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_skin_info_html_a6f72df4f41c40361097dcd61776a00ee"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a6f72df4f41c40361097dcd61776a00ee">dyno::SkinInfo::pushBack_Data</a></div><div class="ttdeci">void pushBack_Data(const std::vector&lt; Vec4f &gt; &amp;Weight_0, const std::vector&lt; Vec4f &gt; &amp;Weight_1, const std::vector&lt; Vec4f &gt; &amp;ID_0, const std::vector&lt; Vec4f &gt; &amp;ID_1)</div><div class="ttdef"><b>Definition</b> <a href="#l00044">SkinInfo.h:44</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_skin_info_html_a72f88a30d1d034b888fa993923f24f48"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a72f88a30d1d034b888fa993923f24f48">dyno::SkinInfo::clearSkinInfo</a></div><div class="ttdeci">void clearSkinInfo()</div><div class="ttdef"><b>Definition</b> <a href="#l00063">SkinInfo.h:63</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_skin_info_html_a4e228bfabc947fb1afc92ec0dbdb6892"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a4e228bfabc947fb1afc92ec0dbdb6892">dyno::SkinInfo::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdef"><b>Definition</b> <a href="#l00057">SkinInfo.h:57</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_skin_info_html_a61a3ec00adfead2feeb74529dec4e10d"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a61a3ec00adfead2feeb74529dec4e10d">dyno::SkinInfo::V_jointID_2</a></div><div class="ttdeci">std::vector&lt; DArray&lt; Vec4f &gt; &gt; V_jointID_2</div><div class="ttdef"><b>Definition</b> <a href="#l00101">SkinInfo.h:101</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_skin_info_html_a6343d2578548b67f3af33c5cded4ebd9"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a6343d2578548b67f3af33c5cded4ebd9">dyno::SkinInfo::V_jointWeight_2</a></div><div class="ttdeci">std::vector&lt; DArray&lt; Vec4f &gt; &gt; V_jointWeight_2</div><div class="ttdef"><b>Definition</b> <a href="#l00097">SkinInfo.h:97</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_skin_info_html_a77c3b4601112863bf15512db4d2b8a6a"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a77c3b4601112863bf15512db4d2b8a6a">dyno::SkinInfo::mesh</a></div><div class="ttdeci">std::shared_ptr&lt; TextureMesh &gt; mesh</div><div class="ttdef"><b>Definition</b> <a href="#l00105">SkinInfo.h:105</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_skin_info_html_a95acb2228b7058eb437e61b085f9c92b"><div class="ttname"><a href="classdyno_1_1_skin_info.html#a95acb2228b7058eb437e61b085f9c92b">dyno::SkinInfo::~SkinInfo</a></div><div class="ttdeci">~SkinInfo()</div><div class="ttdef"><b>Definition</b> <a href="#l00023">SkinInfo.h:23</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_skin_info_html_aa0459eb7d617b2d6fbccaaf037a3f7a1"><div class="ttname"><a href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">dyno::SkinInfo::V_jointID_1</a></div><div class="ttdeci">std::vector&lt; DArray&lt; Vec4f &gt; &gt; V_jointID_1</div><div class="ttdef"><b>Definition</b> <a href="#l00101">SkinInfo.h:101</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_skin_info_html_aa0459eb7d617b2d6fbccaaf037a3f7a1"><div class="ttname"><a href="classdyno_1_1_skin_info.html#aa0459eb7d617b2d6fbccaaf037a3f7a1">dyno::SkinInfo::V_jointID_1</a></div><div class="ttdeci">std::vector&lt; DArray&lt; Vec4f &gt; &gt; V_jointID_1</div><div class="ttdef"><b>Definition</b> <a href="#l00100">SkinInfo.h:100</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_skin_info_html_aa7909cccc0bdff3f00b4ac8239d98062"><div class="ttname"><a href="classdyno_1_1_skin_info.html#aa7909cccc0bdff3f00b4ac8239d98062">dyno::SkinInfo::initialPosition</a></div><div class="ttdeci">DArray&lt; Vec3f &gt; initialPosition</div><div class="ttdef"><b>Definition</b> <a href="#l00107">SkinInfo.h:107</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_skin_info_html_aad066a887838f832ce9f572d0b907c82"><div class="ttname"><a href="classdyno_1_1_skin_info.html#aad066a887838f832ce9f572d0b907c82">dyno::SkinInfo::SkinInfo</a></div><div class="ttdeci">SkinInfo()</div><div class="ttdef"><b>Definition</b> <a href="#l00021">SkinInfo.h:21</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_skin_info_html_ad380bfefa59e939837fd6f54777a1a10"><div class="ttname"><a href="classdyno_1_1_skin_info.html#ad380bfefa59e939837fd6f54777a1a10">dyno::SkinInfo::skin_VerticeRange</a></div><div class="ttdeci">std::map&lt; int, Vec2u &gt; skin_VerticeRange</div><div class="ttdef"><b>Definition</b> <a href="#l00103">SkinInfo.h:103</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_skin_info_html_afe637cd183cd9413034af3890db6e1af"><div class="ttname"><a href="classdyno_1_1_skin_info.html#afe637cd183cd9413034af3890db6e1af">dyno::SkinInfo::skinNum</a></div><div class="ttdeci">int skinNum</div><div class="ttdef"><b>Definition</b> <a href="#l00114">SkinInfo.h:114</a></div></div>
 <div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a2aa59d9fceeeb72a56f3030d5518cb02"><div class="ttname"><a href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">dyno::DArray</a></div><div class="ttdeci">Array&lt; T, DeviceType::GPU &gt; DArray</div><div class="ttdef"><b>Definition</b> <a href="_cuda_2_array_2_array_8inl_source.html#l00089">Array.inl:89</a></div></div>

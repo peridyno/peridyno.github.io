@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -106,7 +106,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classdyno_1_1_volume_generator.html#af5172942369d719d47bf7915a9c19818">   11</a></span>    <a class="code hl_function" href="classdyno_1_1_volume_generator.html#af5172942369d719d47bf7915a9c19818">VolumeGenerator&lt;TDataType&gt;::VolumeGenerator</a>()</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        : <a class="code hl_namespace" href="namespace_volume.html">Volume</a>&lt;TDataType&gt;()</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        this-&gt;varSpacing()-&gt;setRange(0.001, 1.0f);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        this-&gt;varSpacing()-&gt;setRange(0.005, 1.0f);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">auto</span> fsm = std::make_shared&lt;FastSweepingMethodGPU&lt;TDataType&gt;&gt;();</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        this-&gt;inTriangleSet()-&gt;connect(fsm-&gt;inTriangleSet());</div>
@@ -150,8 +150,8 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="a_object_8h_html_a71c43943296af027d72de263f0f40d27"><div class="ttname"><a href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a></div><div class="ttdeci">#define DEFINE_CLASS(name)</div><div class="ttdef"><b>Definition</b> <a href="_object_8h_source.html#l00140">Object.h:140</a></div></div>
 <div class="ttc" id="a_object_8h_html_ad04bb7da7189939ce1eeba05386dfdb8"><div class="ttname"><a href="_object_8h.html#ad04bb7da7189939ce1eeba05386dfdb8">IMPLEMENT_TCLASS</a></div><div class="ttdeci">#define IMPLEMENT_TCLASS(name, T1)</div><div class="ttdef"><b>Definition</b> <a href="_object_8h_source.html#l00103">Object.h:103</a></div></div>
 <div class="ttc" id="a_volume_generator_8h_html"><div class="ttname"><a href="_volume_generator_8h.html">VolumeGenerator.h</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_a268d036395a10abc9669a042d35d91cf"><div class="ttname"><a href="classdyno_1_1_node.html#a268d036395a10abc9669a042d35d91cf">dyno::Node::resetStates</a></div><div class="ttdeci">virtual void resetStates()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00214">Node.cpp:214</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_a79e4a772643a4d7cda8077c9857ab4d0"><div class="ttname"><a href="classdyno_1_1_node.html#a79e4a772643a4d7cda8077c9857ab4d0">dyno::Node::resetPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; Pipeline &gt; resetPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00302">Node.cpp:302</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a268d036395a10abc9669a042d35d91cf"><div class="ttname"><a href="classdyno_1_1_node.html#a268d036395a10abc9669a042d35d91cf">dyno::Node::resetStates</a></div><div class="ttdeci">virtual void resetStates()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00205">Node.cpp:205</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a79e4a772643a4d7cda8077c9857ab4d0"><div class="ttname"><a href="classdyno_1_1_node.html#a79e4a772643a4d7cda8077c9857ab4d0">dyno::Node::resetPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; Pipeline &gt; resetPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00293">Node.cpp:293</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_generator_html"><div class="ttname"><a href="classdyno_1_1_volume_generator.html">dyno::VolumeGenerator</a></div><div class="ttdef"><b>Definition</b> <a href="_volume_generator_8h_source.html#l00024">VolumeGenerator.h:25</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_generator_html_a2feea9b66725e36aa8126cdf68dd54b7"><div class="ttname"><a href="classdyno_1_1_volume_generator.html#a2feea9b66725e36aa8126cdf68dd54b7">dyno::VolumeGenerator::~VolumeGenerator</a></div><div class="ttdeci">~VolumeGenerator() override</div><div class="ttdef"><b>Definition</b> <a href="#l00034">VolumeGenerator.cpp:34</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_generator_html_ad86ae450393b28df8aa7fd3194d654e9"><div class="ttname"><a href="classdyno_1_1_volume_generator.html#ad86ae450393b28df8aa7fd3194d654e9">dyno::VolumeGenerator::resetStates</a></div><div class="ttdeci">void resetStates() override</div><div class="ttdef"><b>Definition</b> <a href="#l00039">VolumeGenerator.cpp:39</a></div></div>

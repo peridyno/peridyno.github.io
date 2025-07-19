@@ -12,22 +12,22 @@
     <title>Windows平台二进制安装 :: PeriDyno帮助文档</title>
 
     
-    <link href="/css/nucleus.css?1719408426" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1719408426" rel="stylesheet">
-    <link href="/css/hybrid.css?1719408426" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1719408426" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1719408426" rel="stylesheet">
-    <link href="/css/auto-complete.css?1719408426" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1719408426" rel="stylesheet">
-    <link href="/css/theme.css?1719408426" rel="stylesheet">
-    <link href="/css/tabs.css?1719408426" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1719408426" rel="stylesheet">
+    <link href="/css/nucleus.css?1752936062" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1752936062" rel="stylesheet">
+    <link href="/css/hybrid.css?1752936062" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1752936062" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1752936062" rel="stylesheet">
+    <link href="/css/auto-complete.css?1752936062" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1752936062" rel="stylesheet">
+    <link href="/css/theme.css?1752936062" rel="stylesheet">
+    <link href="/css/tabs.css?1752936062" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1752936062" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1719408426" rel="stylesheet">
+    <link href="/css/theme-blue.css?1752936062" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1719408426"></script>
+    <script src="/js/jquery-3.3.1.min.js?1752936062"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1719408426"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1719408426"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1752936062"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1752936062"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/zh";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1719408426"></script>
+<script type="text/javascript" src="/js/search.js?1752936062"></script>
 
     
   </div>
@@ -3128,16 +3128,18 @@
 </code></pre><p>推荐使用管理员权限安装在真实环境中。</p>
 <h3 id="4测试">4、测试</h3>
 <p>复制测试代码到新文件GL_GlfwGUI.py：</p>
-<pre><code>import PyPeridyno as dyno
+<pre><code>import os
+import sys
+import PyPeridyno as dyno
+print(sys.path)
 
 scn = dyno.SceneGraph()
 
-app = dyno.GLfwApp()
-app.set_scenegraph(scn)
+app = dyno.GlfwApp()
+app.setSceneGraph(scn)
 app.initialize(1920, 1080, True)
-app.set_window_title(&quot;Empty GUI&quot;)
-app.main_loop()
-
+app.setWindowTitle(&quot;Empty GUI&quot;)
+app.mainLoop()
 </code></pre><p>使用shell运行文件：<code>python -u &quot;/path/GL_GlfwGUI.py&quot;</code></p>
 <p>运行结果如下图所示，说明安装正常：
 <img src="/images/installation/windows/GL_GlfwGUI.py.jpg?width=50pc" alt=""></p>
@@ -3152,7 +3154,7 @@ app.main_loop()
 <p>对于C++中使用了泛型的类，python中改为类名+泛型简写的形式，例如：C++中<code>CodimensionalPD&lt;DataType3f&gt;</code>在python中为<code>CodimensionalPD3f</code>。</p>
 </li>
 <li>
-<p>python中所有方法名称均与C++方法相同，只是从驼峰命名更改为下划线命名。引用运算符(.和-&gt;)，统一更改为python中的点运算符(.)，例如：C++代码：<code>scn-&gt;setLowerBound();</code>，更改为python：<code>scn.set_lower_bound()</code>。</p>
+<p>python中所有方法名称均与C++方法相同。引用运算符(.和-&gt;)，统一更改为python中的点运算符(.)，例如：C++代码：<code>scn-&gt;setLowerBound();</code>，更改为python：<code>scn.setLowerBound()</code>。</p>
 </li>
 <li>
 <p>python中的<code>dyno.Vector3f()</code>与C++中的<code>dyno::Vec3f()</code>功能相同，但python中输入数据需要使用列表[]，如果数据相同，不可以使用C++中的简写形式，例如：C++：<code>dyno::Vec3f(1)</code>，更改为python：<code>dyno.Vector3f([1,1,1])</code>。</p>
@@ -4776,16 +4778,16 @@ app.main_loop()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1719408426"></script>
-    <script src="/js/perfect-scrollbar.min.js?1719408426"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1719408426"></script>
-    <script src="/js/jquery.sticky.js?1719408426"></script>
-    <script src="/js/featherlight.min.js?1719408426"></script>
-    <script src="/js/highlight.pack.js?1719408426"></script>
+    <script src="/js/clipboard.min.js?1752936062"></script>
+    <script src="/js/perfect-scrollbar.min.js?1752936062"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1752936062"></script>
+    <script src="/js/jquery.sticky.js?1752936062"></script>
+    <script src="/js/featherlight.min.js?1752936062"></script>
+    <script src="/js/highlight.pack.js?1752936062"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1719408426"></script>
-    <script src="/js/learn.js?1719408426"></script>
-    <script src="/js/hugo-learn.js?1719408426"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1752936062"></script>
+    <script src="/js/learn.js?1752936062"></script>
+    <script src="/js/hugo-learn.js?1752936062"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

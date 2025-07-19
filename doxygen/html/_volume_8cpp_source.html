@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#acce66b8565da4e39b72864b0bb90b72c">setAutoHidden</a>(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">auto</span> mapper = std::make_shared&lt;VolumeToTriangleSet&lt;TDataType&gt;&gt;();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        this-&gt;stateLevelSet()-&gt;connect(mapper-&gt;ioVolume());</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        this-&gt;stateLevelSet()-&gt;connect(mapper-&gt;inVolume());</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        this-&gt;<a class="code hl_function" href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">graphicsPipeline</a>()-&gt;pushModule(mapper);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">auto</span> renderer = std::make_shared&lt;GLSurfaceVisualModule&gt;();</div>
@@ -142,9 +142,9 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="a_object_8h_html_a71c43943296af027d72de263f0f40d27"><div class="ttname"><a href="_object_8h.html#a71c43943296af027d72de263f0f40d27">DEFINE_CLASS</a></div><div class="ttdeci">#define DEFINE_CLASS(name)</div><div class="ttdef"><b>Definition</b> <a href="_object_8h_source.html#l00140">Object.h:140</a></div></div>
 <div class="ttc" id="a_volume_8h_html"><div class="ttname"><a href="_volume_8h.html">Volume.h</a></div></div>
 <div class="ttc" id="a_volume_to_triangle_set_8h_html"><div class="ttname"><a href="_volume_to_triangle_set_8h.html">VolumeToTriangleSet.h</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00320">Node.cpp:320</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_a0a775162e9f479bc5b4252fc2afc1226"><div class="ttname"><a href="classdyno_1_1_node.html#a0a775162e9f479bc5b4252fc2afc1226">dyno::Node::graphicsPipeline</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicsPipeline &gt; graphicsPipeline()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00311">Node.cpp:311</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_node_html_a32b5a5d3f09f3fd9642844187038ad24"><div class="ttname"><a href="classdyno_1_1_node.html#a32b5a5d3f09f3fd9642844187038ad24">dyno::Node::Node</a></div><div class="ttdeci">Node()</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00008">Node.cpp:8</a></div></div>
-<div class="ttc" id="aclassdyno_1_1_node_html_acce66b8565da4e39b72864b0bb90b72c"><div class="ttname"><a href="classdyno_1_1_node.html#acce66b8565da4e39b72864b0bb90b72c">dyno::Node::setAutoHidden</a></div><div class="ttdeci">void setAutoHidden(bool con)</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00068">Node.cpp:68</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_node_html_acce66b8565da4e39b72864b0bb90b72c"><div class="ttname"><a href="classdyno_1_1_node.html#acce66b8565da4e39b72864b0bb90b72c">dyno::Node::setAutoHidden</a></div><div class="ttdeci">void setAutoHidden(bool con)</div><div class="ttdef"><b>Definition</b> <a href="_node_8cpp_source.html#l00059">Node.cpp:59</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_html_a5b58b19ff879df6d3dd2079398d04332"><div class="ttname"><a href="classdyno_1_1_volume.html#a5b58b19ff879df6d3dd2079398d04332">dyno::Volume::getNodeType</a></div><div class="ttdeci">std::string getNodeType() override</div><div class="ttdef"><b>Definition</b> <a href="#l00033">Volume.cpp:33</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_html_a62b976985069cabcd70e26af02523838"><div class="ttname"><a href="classdyno_1_1_volume.html#a62b976985069cabcd70e26af02523838">dyno::Volume::Volume</a></div><div class="ttdeci">Volume()</div><div class="ttdef"><b>Definition</b> <a href="#l00013">Volume.cpp:13</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_volume_html_a7760e0edd8831f73e51ae30e2e07db72"><div class="ttname"><a href="classdyno_1_1_volume.html#a7760e0edd8831f73e51ae30e2e07db72">dyno::Volume::~Volume</a></div><div class="ttdeci">~Volume() override</div><div class="ttdef"><b>Definition</b> <a href="#l00028">Volume.cpp:28</a></div></div>

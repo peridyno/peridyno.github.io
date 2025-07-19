@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_sdf_sampler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::SdfSampler&lt; TDataType &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -103,17 +104,19 @@ Inheritance diagram for dyno::SdfSampler&lt; TDataType &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_sdf_sampler__inherit__graph.png" border="0" usemap="#adyno_1_1_sdf_sampler_3_01_t_data_type_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="adyno_1_1_sdf_sampler_3_01_t_data_type_01_4_inherit__map" id="adyno_1_1_sdf_sampler_3_01_t_data_type_01_4_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,304,218,331"/>
-<area shape="rect" href="classdyno_1_1_poisson_disk_sampling.html" title=" " alt="" coords="19,379,204,421"/>
-<area shape="poly" title=" " alt="" coords="114,346,114,378,109,378,109,346"/>
-<area shape="rect" href="classdyno_1_1_sampler.html" title=" " alt="" coords="15,229,208,256"/>
-<area shape="poly" title=" " alt="" coords="114,272,114,304,109,304,109,272"/>
-<area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="67,155,156,181"/>
-<area shape="poly" title=" " alt="" coords="114,197,114,229,109,229,109,197"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="63,80,160,107"/>
-<area shape="poly" title=" " alt="" coords="114,122,114,154,109,154,109,122"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="64,5,159,32"/>
-<area shape="poly" title=" " alt="" coords="114,48,114,80,109,80,109,48"/>
+<area shape="rect" title=" " alt="" coords="121,304,334,331"/>
+<area shape="rect" href="classdyno_1_1_device_poisson_disk_sampler.html" title=" " alt="" coords="5,379,226,421"/>
+<area shape="poly" title=" " alt="" coords="199,342,146,380,143,376,196,338"/>
+<area shape="rect" href="classdyno_1_1_poisson_disk_sampler.html" title=" " alt="" coords="250,379,429,421"/>
+<area shape="poly" title=" " alt="" coords="259,338,312,376,309,380,256,342"/>
+<area shape="rect" href="classdyno_1_1_sampler.html" title=" " alt="" coords="131,229,324,256"/>
+<area shape="poly" title=" " alt="" coords="230,272,230,304,225,304,225,272"/>
+<area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="183,155,272,181"/>
+<area shape="poly" title=" " alt="" coords="230,197,230,229,225,229,225,197"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="179,80,276,107"/>
+<area shape="poly" title=" " alt="" coords="230,122,230,154,225,154,225,122"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="180,5,275,32"/>
+<area shape="poly" title=" " alt="" coords="230,48,230,80,225,80,225,48"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -173,24 +176,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a743e98f99aedc058c7eb28f43b8a8f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d9e1fd8f44678d0cc85ec6cc49e8574" id="r_a3d9e1fd8f44678d0cc85ec6cc49e8574"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_distance_field3_d.html">dyno::DistanceField3D</a>&lt; TDataType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d9e1fd8f44678d0cc85ec6cc49e8574">convert2Uniform</a> (<a class="el" href="classdyno_1_1_volume_octree.html">VolumeOctree</a>&lt; TDataType &gt; *volume, <a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a> h)</td></tr>
 <tr class="separator:a3d9e1fd8f44678d0cc85ec6cc49e8574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a855916647acbdfe32d43d4898a030a8a" id="r_a855916647acbdfe32d43d4898a030a8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a855916647acbdfe32d43d4898a030a8a">DEF_NODE_PORT</a> (<a class="el" href="classdyno_1_1_volume_octree.html">VolumeOctree</a>&lt; TDataType &gt;, <a class="el" href="classdyno_1_1_volume.html">Volume</a>, &quot;&quot;)</td></tr>
-<tr class="separator:a855916647acbdfe32d43d4898a030a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add36af10692942e8b4aece9f5fc315df" id="r_add36af10692942e8b4aece9f5fc315df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add36af10692942e8b4aece9f5fc315df">DEF_NODE_PORT</a> (<a class="el" href="classdyno_1_1_volume.html">Volume</a>&lt; TDataType &gt;, <a class="el" href="classdyno_1_1_volume.html">Volume</a>, &quot;&quot;)</td></tr>
+<tr class="separator:add36af10692942e8b4aece9f5fc315df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1924833b0a3993150c3351cbcf6eb86" id="r_ae1924833b0a3993150c3351cbcf6eb86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1924833b0a3993150c3351cbcf6eb86">DEF_NODE_PORT</a> (<a class="el" href="classdyno_1_1_volume_octree.html">VolumeOctree</a>&lt; TDataType &gt;, <a class="el" href="classdyno_1_1_volume_octree.html">VolumeOctree</a>, &quot;&quot;)</td></tr>
+<tr class="separator:ae1924833b0a3993150c3351cbcf6eb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2213f38e3b1427ed34db69bc264ec2a" id="r_ac2213f38e3b1427ed34db69bc264ec2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2213f38e3b1427ed34db69bc264ec2a">DEF_VAR</a> (float, Spacing, <a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>(0.02), &quot; &quot;)</td></tr>
 <tr class="separator:ac2213f38e3b1427ed34db69bc264ec2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a8692ea970aa5def70f743c2c572f09" id="r_a6a8692ea970aa5def70f743c2c572f09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a8692ea970aa5def70f743c2c572f09">DEF_VAR</a> (<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, CubeTilt, 0, &quot;Cube Init Rotation&quot;)</td></tr>
-<tr class="separator:a6a8692ea970aa5def70f743c2c572f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7f31ddb4e722509c88cfe4c3d0e7ca5" id="r_af7f31ddb4e722509c88cfe4c3d0e7ca5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7f31ddb4e722509c88cfe4c3d0e7ca5">DEF_VAR</a> (<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, X, <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(1, 0.0f, 0.0f), &quot;Cube Init X Rotation&quot;)</td></tr>
-<tr class="separator:af7f31ddb4e722509c88cfe4c3d0e7ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a09b7b9e4e189d76f34a7fac071ab6c" id="r_a9a09b7b9e4e189d76f34a7fac071ab6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a09b7b9e4e189d76f34a7fac071ab6c">DEF_VAR</a> (<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, Y, <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(0.0f, 1, 0.0f), &quot;Cube Init Y Rotation&quot;)</td></tr>
-<tr class="separator:a9a09b7b9e4e189d76f34a7fac071ab6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f96526e4eb593518a5c99e9e3d08dda" id="r_a8f96526e4eb593518a5c99e9e3d08dda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f96526e4eb593518a5c99e9e3d08dda">DEF_VAR</a> (<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, Z, <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(0.0f, 0.0f, 1), &quot;Cube Init Z Rotation&quot;)</td></tr>
-<tr class="separator:a8f96526e4eb593518a5c99e9e3d08dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d720e5dd82f998c8015109ad5fa5e4" id="r_a61d720e5dd82f998c8015109ad5fa5e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61d720e5dd82f998c8015109ad5fa5e4">DEF_VAR</a> (<a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>, Alpha, <a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>(0), &quot; &quot;)</td></tr>
-<tr class="separator:a61d720e5dd82f998c8015109ad5fa5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69e8e1e3823aa7a05ca5edd5fb32c06b" id="r_a69e8e1e3823aa7a05ca5edd5fb32c06b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69e8e1e3823aa7a05ca5edd5fb32c06b">DEF_VAR</a> (<a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>, Beta, <a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>(0), &quot; &quot;)</td></tr>
-<tr class="separator:a69e8e1e3823aa7a05ca5edd5fb32c06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e873f6691eef454b14420fcb6e5699" id="r_ac2e873f6691eef454b14420fcb6e5699"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2e873f6691eef454b14420fcb6e5699">DEF_VAR</a> (<a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>, Gamma, <a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>(0), &quot; &quot;)</td></tr>
-<tr class="separator:ac2e873f6691eef454b14420fcb6e5699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_sampler"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdyno_1_1_sampler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_sampler.html">dyno::Sampler&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:a76e695457a9936a089a1a1af9ba660ea inherit pub_methods_classdyno_1_1_sampler" id="r_a76e695457a9936a089a1a1af9ba660ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_sampler.html#a76e695457a9936a089a1a1af9ba660ea">Sampler</a> ()</td></tr>
 <tr class="separator:a76e695457a9936a089a1a1af9ba660ea inherit pub_methods_classdyno_1_1_sampler"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,6 +398,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object" id="r_a5105729f9f9faf65100b999d076418c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8">objectId</a> ()</td></tr>
 <tr class="separator:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab2ce3dbdd12a9dea522d33f3612ab3c9" id="r_ab2ce3dbdd12a9dea522d33f3612ab3c9"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_distance_field3_d.html">DistanceField3D</a>&lt; TDataType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2ce3dbdd12a9dea522d33f3612ab3c9">m_inputSDF</a></td></tr>
+<tr class="separator:ab2ce3dbdd12a9dea522d33f3612ab3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff9d452d51254eaf2aae582fb7991df" id="r_a5ff9d452d51254eaf2aae582fb7991df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ff9d452d51254eaf2aae582fb7991df">mCubeTilt</a> = <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(0.0f)</td></tr>
+<tr class="separator:a5ff9d452d51254eaf2aae582fb7991df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a901ba1ac6d16565041d4832b19b2a39f" id="r_a901ba1ac6d16565041d4832b19b2a39f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a901ba1ac6d16565041d4832b19b2a39f">mX</a> = <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(1.0f, 0.0f, 0.0f)</td></tr>
+<tr class="separator:a901ba1ac6d16565041d4832b19b2a39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d4af68d56aa065c20ccd4c3bcde486" id="r_a62d4af68d56aa065c20ccd4c3bcde486"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62d4af68d56aa065c20ccd4c3bcde486">mY</a> = <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(0.0f, 1.0f, 0.0f)</td></tr>
+<tr class="separator:a62d4af68d56aa065c20ccd4c3bcde486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48cba355a78a5e65de37befc0dc796d9" id="r_a48cba355a78a5e65de37befc0dc796d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48cba355a78a5e65de37befc0dc796d9">mZ</a> = <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(0.0f, 0.0f, 1.0f)</td></tr>
+<tr class="separator:a48cba355a78a5e65de37befc0dc796d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aff6623a09dbb1f92d4521bd58cb392" id="r_a3aff6623a09dbb1f92d4521bd58cb392"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3aff6623a09dbb1f92d4521bd58cb392">mAlpha</a> = 0.0f</td></tr>
+<tr class="separator:a3aff6623a09dbb1f92d4521bd58cb392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1080cee3437584d80f65142518cff79c" id="r_a1080cee3437584d80f65142518cff79c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1080cee3437584d80f65142518cff79c">mBeta</a> = 0.0f</td></tr>
+<tr class="separator:a1080cee3437584d80f65142518cff79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8965c57cbe180157ac9cede9593ace57" id="r_a8965c57cbe180157ac9cede9593ace57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8965c57cbe180157ac9cede9593ace57">mGamma</a> = 0.0f</td></tr>
+<tr class="separator:a8965c57cbe180157ac9cede9593ace57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classdyno_1_1_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classdyno_1_1_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classdyno_1_1_object.html">dyno::Object</a></td></tr>
@@ -578,8 +588,8 @@ template&lt;typename TDataType&gt; </div>
 
 </div>
 </div>
-<a id="a855916647acbdfe32d43d4898a030a8a" name="a855916647acbdfe32d43d4898a030a8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a855916647acbdfe32d43d4898a030a8a">&#9670;&#160;</a></span>DEF_NODE_PORT()</h2>
+<a id="add36af10692942e8b4aece9f5fc315df" name="add36af10692942e8b4aece9f5fc315df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add36af10692942e8b4aece9f5fc315df">&#9670;&#160;</a></span>DEF_NODE_PORT() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -589,7 +599,7 @@ template&lt;typename TDataType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::DEF_NODE_PORT </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdyno_1_1_volume_octree.html">VolumeOctree</a>&lt; TDataType &gt;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_volume.html">Volume</a>&lt; TDataType &gt;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -606,8 +616,36 @@ template&lt;typename TDataType&gt; </div>
 
 </div>
 </div>
+<a id="ae1924833b0a3993150c3351cbcf6eb86" name="ae1924833b0a3993150c3351cbcf6eb86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1924833b0a3993150c3351cbcf6eb86">&#9670;&#160;</a></span>DEF_NODE_PORT() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::DEF_NODE_PORT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_volume_octree.html">VolumeOctree</a>&lt; TDataType &gt;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_volume_octree.html">VolumeOctree</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac2213f38e3b1427ed34db69bc264ec2a" name="ac2213f38e3b1427ed34db69bc264ec2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2213f38e3b1427ed34db69bc264ec2a">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2213f38e3b1427ed34db69bc264ec2a">&#9670;&#160;</a></span>DEF_VAR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -633,237 +671,6 @@ template&lt;typename TDataType&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&quot; &quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a61d720e5dd82f998c8015109ad5fa5e4" name="a61d720e5dd82f998c8015109ad5fa5e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61d720e5dd82f998c8015109ad5fa5e4">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[2/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::DEF_VAR </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Alpha</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>(0)</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot; &quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a69e8e1e3823aa7a05ca5edd5fb32c06b" name="a69e8e1e3823aa7a05ca5edd5fb32c06b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69e8e1e3823aa7a05ca5edd5fb32c06b">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[3/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::DEF_VAR </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Beta</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>(0)</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot; &quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac2e873f6691eef454b14420fcb6e5699" name="ac2e873f6691eef454b14420fcb6e5699"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2e873f6691eef454b14420fcb6e5699">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[4/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::DEF_VAR </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Gamma</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a>(0)</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot; &quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6a8692ea970aa5def70f743c2c572f09" name="a6a8692ea970aa5def70f743c2c572f09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a8692ea970aa5def70f743c2c572f09">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[5/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::DEF_VAR </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">CubeTilt</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">0</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;Cube Init Rotation&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af7f31ddb4e722509c88cfe4c3d0e7ca5" name="af7f31ddb4e722509c88cfe4c3d0e7ca5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7f31ddb4e722509c88cfe4c3d0e7ca5">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[6/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::DEF_VAR </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">X</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(1, 0.0f, 0.0f)</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;Cube Init X Rotation&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9a09b7b9e4e189d76f34a7fac071ab6c" name="a9a09b7b9e4e189d76f34a7fac071ab6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a09b7b9e4e189d76f34a7fac071ab6c">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[7/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::DEF_VAR </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Y</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(0.0f, 1, 0.0f)</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;Cube Init Y Rotation&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8f96526e4eb593518a5c99e9e3d08dda" name="a8f96526e4eb593518a5c99e9e3d08dda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f96526e4eb593518a5c99e9e3d08dda">&#9670;&#160;</a></span>DEF_VAR() <span class="overload">[8/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TDataType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::DEF_VAR </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Z</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(0.0f, 0.0f, 1)</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;Cube Init Z Rotation&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -925,6 +732,215 @@ template&lt;typename TDataType&gt; </div>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_node.html#abcad5713df037429dd4ee560bd086a86">dyno::Node</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab2ce3dbdd12a9dea522d33f3612ab3c9" name="ab2ce3dbdd12a9dea522d33f3612ab3c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2ce3dbdd12a9dea522d33f3612ab3c9">&#9670;&#160;</a></span>m_inputSDF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_distance_field3_d.html">DistanceField3D</a>&lt;TDataType&gt; &gt; <a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::m_inputSDF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sdf_sampler_8h_source.html#l00061">61</a> of file <a class="el" href="_sdf_sampler_8h_source.html">SdfSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a3aff6623a09dbb1f92d4521bd58cb392" name="a3aff6623a09dbb1f92d4521bd58cb392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aff6623a09dbb1f92d4521bd58cb392">&#9670;&#160;</a></span>mAlpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a> <a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::mAlpha = 0.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sdf_sampler_8h_source.html#l00080">80</a> of file <a class="el" href="_sdf_sampler_8h_source.html">SdfSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a1080cee3437584d80f65142518cff79c" name="a1080cee3437584d80f65142518cff79c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1080cee3437584d80f65142518cff79c">&#9670;&#160;</a></span>mBeta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a> <a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::mBeta = 0.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sdf_sampler_8h_source.html#l00081">81</a> of file <a class="el" href="_sdf_sampler_8h_source.html">SdfSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a5ff9d452d51254eaf2aae582fb7991df" name="a5ff9d452d51254eaf2aae582fb7991df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff9d452d51254eaf2aae582fb7991df">&#9670;&#160;</a></span>mCubeTilt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a> <a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::mCubeTilt = <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(0.0f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sdf_sampler_8h_source.html#l00074">74</a> of file <a class="el" href="_sdf_sampler_8h_source.html">SdfSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a8965c57cbe180157ac9cede9593ace57" name="a8965c57cbe180157ac9cede9593ace57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8965c57cbe180157ac9cede9593ace57">&#9670;&#160;</a></span>mGamma</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac79dfe1cc8074cff65ab6c306234c03a">Real</a> <a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::mGamma = 0.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sdf_sampler_8h_source.html#l00082">82</a> of file <a class="el" href="_sdf_sampler_8h_source.html">SdfSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a901ba1ac6d16565041d4832b19b2a39f" name="a901ba1ac6d16565041d4832b19b2a39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a901ba1ac6d16565041d4832b19b2a39f">&#9670;&#160;</a></span>mX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a> <a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::mX = <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(1.0f, 0.0f, 0.0f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sdf_sampler_8h_source.html#l00076">76</a> of file <a class="el" href="_sdf_sampler_8h_source.html">SdfSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a62d4af68d56aa065c20ccd4c3bcde486" name="a62d4af68d56aa065c20ccd4c3bcde486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62d4af68d56aa065c20ccd4c3bcde486">&#9670;&#160;</a></span>mY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a> <a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::mY = <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(0.0f, 1.0f, 0.0f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sdf_sampler_8h_source.html#l00077">77</a> of file <a class="el" href="_sdf_sampler_8h_source.html">SdfSampler.h</a>.</p>
+
+</div>
+</div>
+<a id="a48cba355a78a5e65de37befc0dc796d9" name="a48cba355a78a5e65de37befc0dc796d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48cba355a78a5e65de37befc0dc796d9">&#9670;&#160;</a></span>mZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a> <a class="el" href="classdyno_1_1_sdf_sampler.html">dyno::SdfSampler</a>&lt; TDataType &gt;::mZ = <a class="el" href="#a3ef27a27209f578524e29f8ebe3bbf19">Coord</a>(0.0f, 0.0f, 1.0f)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_sdf_sampler_8h_source.html#l00078">78</a> of file <a class="el" href="_sdf_sampler_8h_source.html">SdfSampler.h</a>.</p>
 
 </div>
 </div>

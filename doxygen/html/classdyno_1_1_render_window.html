@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(function(){ initResizable(false); });
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classdyno_1_1_render_window-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">dyno::RenderWindow Class Reference</div></div>
+  <div class="headertitle"><div class="title">dyno::RenderWindow Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -178,6 +178,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a28cd9ece3de78941c116d6153bf5529e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3aedbfbb438b9eae7df161425d19d79" id="r_ab3aedbfbb438b9eae7df161425d19d79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3aedbfbb438b9eae7df161425d19d79">setMainLightDirection</a> (glm::vec3 dir)</td></tr>
 <tr class="separator:ab3aedbfbb438b9eae7df161425d19d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357aa44b28c393ca3014e33acc8055d9" id="r_a357aa44b28c393ca3014e33acc8055d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a357aa44b28c393ca3014e33acc8055d9">setDefaultAnimationOption</a> (bool op)=0</td></tr>
+<tr class="separator:a357aa44b28c393ca3014e33acc8055d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7fbed725926f02fb7c613bfdb1c9d33" id="r_aa7fbed725926f02fb7c613bfdb1c9d33"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="structdyno_1_1_selection.html">Selection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7fbed725926f02fb7c613bfdb1c9d33">select</a> (int x, int y, int w, int h)</td></tr>
 <tr class="separator:aa7fbed725926f02fb7c613bfdb1c9d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61bfd8b664cc817dd07dcc248790feb3" id="r_a61bfd8b664cc817dd07dcc248790feb3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61bfd8b664cc817dd07dcc248790feb3">select</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_node.html">Node</a> &gt; node, int instance=-1, int primitive=-1)</td></tr>
@@ -317,38 +319,41 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_render_window_a1dc3aef8594650078ec0e4cc330571cc_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_window_a1dc3aef8594650078ec0e4cc330571cc_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_render_window_a1dc3aef8594650078ec0e4cc330571cc_icgraph" id="aclassdyno_1_1_render_window_a1dc3aef8594650078ec0e4cc330571cc_icgraph">
-<area shape="rect" title=" " alt="" coords="891,283,1037,325"/>
-<area shape="rect" href="classdyno_1_1_glfw_render_window.html#ae66f2e06797a413f817ad88993cd5969" title=" " alt="" coords="448,25,621,68"/>
-<area shape="poly" title=" " alt="" coords="956,268,945,213,925,149,910,117,891,87,868,60,841,38,813,24,783,14,751,9,719,8,655,14,600,27,599,22,654,9,718,3,751,4,784,9,815,19,844,34,872,56,895,84,914,115,930,147,950,212,961,267"/>
-<area shape="rect" href="classdyno_1_1_im_window.html#a5075b54a2c06c5ca3ba633b3388cd836" title=" " alt="" coords="678,48,834,75"/>
-<area shape="poly" title=" " alt="" coords="950,269,934,227,911,178,880,130,841,89,822,77,825,73,844,84,885,127,916,176,939,225,955,267"/>
-<area shape="rect" href="classdyno_1_1_glfw_render_window.html#ab8e07e56f11d10250031670ac32b490c" title=" " alt="" coords="669,99,843,141"/>
-<area shape="poly" title=" " alt="" coords="938,271,897,216,870,188,841,162,812,144,815,139,844,158,874,184,901,213,943,268"/>
-<area shape="rect" href="classdyno_1_1_glfw_render_window.html#ae3f9e3f8cd68e78d6945791b60c6282f" title=" " alt="" coords="448,128,621,171"/>
-<area shape="poly" title=" " alt="" coords="931,274,891,237,841,206,787,185,729,171,621,155,622,150,730,165,788,180,844,202,894,233,935,270"/>
-<area shape="rect" href="classdyno_1_1_glfw_render_window.html#a9ea028c7fd739000cec1fc2c9ef7051d" title=" " alt="" coords="669,216,843,259"/>
-<area shape="poly" title=" " alt="" coords="880,280,824,262,826,257,882,275"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a80fb558c07b76be2f507393eece06036" title=" " alt="" coords="679,283,833,325"/>
-<area shape="poly" title=" " alt="" coords="875,307,834,307,834,301,875,301"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4c461917d8c70b899d7bbf4450e77e75" title=" " alt="" coords="679,349,833,392"/>
-<area shape="poly" title=" " alt="" coords="882,333,826,351,824,346,880,328"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3125be328aa2698c6b85c9570fff7538" title=" " alt="" coords="679,416,833,459"/>
-<area shape="poly" title=" " alt="" coords="931,338,891,373,844,406,822,418,819,413,841,402,888,369,928,334"/>
-<area shape="rect" href="class_w_simulation_canvas.html#a87077c5eecc9d8b27c407e26167e0492" title=" " alt="" coords="682,483,830,525"/>
-<area shape="poly" title=" " alt="" coords="948,340,906,407,877,442,844,473,826,484,823,480,841,468,874,438,902,403,943,337"/>
-<area shape="rect" href="classdyno_1_1_glfw_render_window.html#a43a493ef9049f564dc00755bbb5d0f24" title=" " alt="" coords="448,541,621,584"/>
-<area shape="poly" title=" " alt="" coords="958,341,945,388,922,443,890,496,869,520,844,539,818,554,791,565,733,578,675,582,622,579,622,574,675,576,732,573,789,560,816,549,841,535,865,516,885,493,918,440,940,386,953,340"/>
-<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#afe314e3bdd16cb1176728d5627c6226c" title=" " alt="" coords="679,600,833,643"/>
-<area shape="poly" title=" " alt="" coords="958,341,944,393,922,457,889,524,868,555,844,583,820,602,817,597,841,579,864,552,885,521,917,455,939,392,953,340"/>
-<area shape="rect" href="classdyno_1_1_glfw_render_window.html#a6484e0b6dc9e6d846b6cdaa7f5e350af" title=" " alt="" coords="227,128,400,171"/>
-<area shape="poly" title=" " alt="" coords="475,77,362,130,360,125,472,72"/>
-<area shape="rect" href="classdyno_1_1_glfw_render_window.html#a3f51fbbfa7066af87fe2dbde8a78fda4" title=" " alt="" coords="5,128,179,171"/>
-<area shape="poly" title=" " alt="" coords="211,152,179,152,179,147,211,147"/>
-<area shape="poly" title=" " alt="" coords="654,136,622,140,622,135,654,131"/>
-<area shape="poly" title=" " alt="" coords="433,152,401,152,401,147,433,147"/>
-<area shape="rect" href="class_w_simulation_canvas.html#aba49cf5b1ddf8ea4c7810319b75f687d" title=" " alt="" coords="460,475,609,517"/>
-<area shape="poly" title=" " alt="" coords="666,503,609,501,609,496,666,498"/>
-<area shape="poly" title=" " alt="" coords="449,534,446,531,411,488,383,439,360,387,343,335,322,239,313,171,319,171,327,238,348,334,365,385,387,436,415,485,450,527,452,530"/>
+<area shape="rect" title=" " alt="" coords="891,317,1037,360"/>
+<area shape="rect" href="classdyno_1_1_glfw_render_window.html#ae66f2e06797a413f817ad88993cd5969" title=" " alt="" coords="448,26,621,69"/>
+<area shape="poly" title=" " alt="" coords="958,302,949,241,930,168,915,131,896,96,871,65,841,39,813,24,783,14,751,9,718,8,654,15,598,28,597,23,653,10,718,3,751,4,784,9,815,19,844,35,875,61,900,93,920,128,935,166,955,240,963,301"/>
+<area shape="rect" href="classdyno_1_1_im_window.html#a5075b54a2c06c5ca3ba633b3388cd836" title=" " alt="" coords="678,49,834,76"/>
+<area shape="poly" title=" " alt="" coords="952,303,939,254,917,197,884,139,864,113,841,90,823,78,826,74,844,86,868,109,889,136,921,195,944,253,958,301"/>
+<area shape="rect" href="classdyno_1_1_glfw_render_window.html#ab8e07e56f11d10250031670ac32b490c" title=" " alt="" coords="669,100,843,142"/>
+<area shape="poly" title=" " alt="" coords="943,304,902,234,874,196,841,163,814,145,816,141,844,159,878,193,907,231,948,301"/>
+<area shape="rect" href="classdyno_1_1_glfw_render_window.html#ae3f9e3f8cd68e78d6945791b60c6282f" title=" " alt="" coords="448,129,621,172"/>
+<area shape="poly" title=" " alt="" coords="939,306,898,253,871,228,841,207,788,184,730,168,674,158,622,153,622,148,674,153,732,163,789,179,844,203,875,224,902,250,943,302"/>
+<area shape="rect" href="classdyno_1_1_glfw_render_window.html#a9ea028c7fd739000cec1fc2c9ef7051d" title=" " alt="" coords="669,217,843,260"/>
+<area shape="poly" title=" " alt="" coords="912,312,842,274,815,263,818,258,844,269,915,307"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a80fb558c07b76be2f507393eece06036" title=" " alt="" coords="679,284,833,326"/>
+<area shape="poly" title=" " alt="" coords="875,327,833,320,834,315,876,321"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4c461917d8c70b899d7bbf4450e77e75" title=" " alt="" coords="679,350,833,393"/>
+<area shape="poly" title=" " alt="" coords="876,355,834,362,833,357,875,350"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3125be328aa2698c6b85c9570fff7538" title=" " alt="" coords="679,417,833,460"/>
+<area shape="poly" title=" " alt="" coords="915,370,844,407,818,419,815,414,842,403,912,365"/>
+<area shape="rect" href="class_w_simulation_canvas.html#a87077c5eecc9d8b27c407e26167e0492" title=" " alt="" coords="682,484,830,526"/>
+<area shape="poly" title=" " alt="" coords="941,374,899,425,873,451,844,474,824,485,821,481,841,469,869,447,895,421,937,371"/>
+<area shape="rect" href="class_w_simulation_canvas.html#afcda1e1e797b6d929eff7806def64ca5" title=" " alt="" coords="682,550,830,593"/>
+<area shape="poly" title=" " alt="" coords="952,376,935,414,912,458,881,502,844,540,827,552,824,548,841,536,877,498,907,455,930,411,947,373"/>
+<area shape="rect" href="classdyno_1_1_glfw_render_window.html#a43a493ef9049f564dc00755bbb5d0f24" title=" " alt="" coords="448,594,621,637"/>
+<area shape="poly" title=" " alt="" coords="961,376,950,429,929,494,914,526,895,557,872,584,844,607,819,622,791,632,733,643,675,644,622,638,622,633,675,638,733,638,790,627,816,617,841,603,868,580,890,554,909,524,924,492,945,428,956,374"/>
+<area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#afe314e3bdd16cb1176728d5627c6226c" title=" " alt="" coords="679,668,833,710"/>
+<area shape="poly" title=" " alt="" coords="960,376,948,434,926,507,893,583,871,618,845,651,821,669,817,665,841,647,866,615,888,580,921,505,943,433,955,374"/>
+<area shape="rect" href="classdyno_1_1_glfw_render_window.html#a6484e0b6dc9e6d846b6cdaa7f5e350af" title=" " alt="" coords="227,129,400,172"/>
+<area shape="poly" title=" " alt="" coords="475,78,362,131,360,126,472,73"/>
+<area shape="rect" href="classdyno_1_1_glfw_render_window.html#a3f51fbbfa7066af87fe2dbde8a78fda4" title=" " alt="" coords="5,129,179,172"/>
+<area shape="poly" title=" " alt="" coords="211,153,179,153,179,148,211,148"/>
+<area shape="poly" title=" " alt="" coords="654,137,622,141,622,136,654,132"/>
+<area shape="poly" title=" " alt="" coords="433,153,401,153,401,148,433,148"/>
+<area shape="rect" href="class_w_simulation_canvas.html#aba49cf5b1ddf8ea4c7810319b75f687d" title=" " alt="" coords="460,498,609,541"/>
+<area shape="poly" title=" " alt="" coords="666,514,609,517,609,512,666,508"/>
+<area shape="poly" title=" " alt="" coords="666,553,609,540,610,534,667,548"/>
+<area shape="poly" title=" " alt="" coords="479,587,446,555,414,505,388,451,366,395,349,340,326,241,315,172,320,172,331,240,354,339,371,393,393,448,419,502,450,551,483,583"/>
 </map>
 </div>
 
@@ -383,21 +388,25 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_render_window_adf00c6c502c464e3353cc359537ac46e_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_window_adf00c6c502c464e3353cc359537ac46e_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_render_window_adf00c6c502c464e3353cc359537ac46e_icgraph" id="aclassdyno_1_1_render_window_adf00c6c502c464e3353cc359537ac46e_icgraph">
-<area shape="rect" title=" " alt="" coords="669,123,842,165"/>
+<area shape="rect" title=" " alt="" coords="669,156,842,199"/>
 <area shape="rect" href="classdyno_1_1_im_window.html#a5075b54a2c06c5ca3ba633b3388cd836" title=" " alt="" coords="457,5,612,32"/>
-<area shape="poly" title=" " alt="" coords="718,115,673,79,620,46,592,35,594,30,623,42,676,75,721,110"/>
+<area shape="poly" title=" " alt="" coords="727,146,681,94,651,68,620,46,596,35,598,30,623,42,655,64,684,90,731,142"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#ae3f9e3f8cd68e78d6945791b60c6282f" title=" " alt="" coords="448,56,621,99"/>
-<area shape="poly" title=" " alt="" coords="668,120,607,102,609,97,669,115"/>
+<area shape="poly" title=" " alt="" coords="699,151,620,113,593,102,595,97,622,108,701,146"/>
 <area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a80fb558c07b76be2f507393eece06036" title=" " alt="" coords="458,123,612,165"/>
-<area shape="poly" title=" " alt="" coords="654,147,612,147,612,141,654,141"/>
+<area shape="poly" title=" " alt="" coords="654,165,612,158,613,153,654,159"/>
 <area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4c461917d8c70b899d7bbf4450e77e75" title=" " alt="" coords="458,189,612,232"/>
-<area shape="poly" title=" " alt="" coords="669,173,609,191,607,186,668,168"/>
+<area shape="poly" title=" " alt="" coords="654,195,613,202,612,196,654,190"/>
 <area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3125be328aa2698c6b85c9570fff7538" title=" " alt="" coords="458,256,612,299"/>
-<area shape="poly" title=" " alt="" coords="720,178,675,213,623,246,599,258,597,253,620,242,672,208,716,174"/>
+<area shape="poly" title=" " alt="" coords="701,208,622,246,595,258,593,253,620,242,699,204"/>
+<area shape="rect" href="class_w_simulation_canvas.html#ae1a339e656b4479ecbe5c1e3f43b40a7" title=" " alt="" coords="460,323,609,365"/>
+<area shape="poly" title=" " alt="" coords="730,213,683,263,654,290,623,313,602,324,600,320,620,308,651,286,679,260,726,209"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#a6484e0b6dc9e6d846b6cdaa7f5e350af" title=" " alt="" coords="227,56,400,99"/>
 <area shape="poly" title=" " alt="" coords="433,80,401,80,401,75,433,75"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#a3f51fbbfa7066af87fe2dbde8a78fda4" title=" " alt="" coords="5,56,179,99"/>
 <area shape="poly" title=" " alt="" coords="211,80,179,80,179,75,211,75"/>
+<area shape="rect" href="class_w_simulation_canvas.html#aba49cf5b1ddf8ea4c7810319b75f687d" title=" " alt="" coords="239,323,388,365"/>
+<area shape="poly" title=" " alt="" coords="445,347,388,347,388,341,445,341"/>
 </map>
 </div>
 
@@ -510,21 +519,25 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_render_window_a57f1b2c0a9a413e5b5182a2d77176227_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_window_a57f1b2c0a9a413e5b5182a2d77176227_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_render_window_a57f1b2c0a9a413e5b5182a2d77176227_icgraph" id="aclassdyno_1_1_render_window_a57f1b2c0a9a413e5b5182a2d77176227_icgraph">
-<area shape="rect" title=" " alt="" coords="669,123,816,165"/>
+<area shape="rect" title=" " alt="" coords="669,156,816,199"/>
 <area shape="rect" href="classdyno_1_1_im_window.html#a5075b54a2c06c5ca3ba633b3388cd836" title=" " alt="" coords="457,5,612,32"/>
-<area shape="poly" title=" " alt="" coords="709,114,668,79,620,46,594,35,596,30,623,42,671,74,712,110"/>
+<area shape="poly" title=" " alt="" coords="717,145,675,94,649,68,620,46,597,35,599,30,623,42,652,64,679,90,721,141"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#ae3f9e3f8cd68e78d6945791b60c6282f" title=" " alt="" coords="448,56,621,99"/>
-<area shape="poly" title=" " alt="" coords="659,120,603,102,605,97,660,115"/>
+<area shape="poly" title=" " alt="" coords="691,151,620,113,594,102,596,97,622,108,694,146"/>
 <area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a80fb558c07b76be2f507393eece06036" title=" " alt="" coords="458,123,612,165"/>
-<area shape="poly" title=" " alt="" coords="654,147,612,147,612,141,654,141"/>
+<area shape="poly" title=" " alt="" coords="654,166,612,159,613,154,654,161"/>
 <area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a4c461917d8c70b899d7bbf4450e77e75" title=" " alt="" coords="458,189,612,232"/>
-<area shape="poly" title=" " alt="" coords="660,173,605,191,603,186,659,168"/>
+<area shape="poly" title=" " alt="" coords="654,194,613,201,612,196,654,189"/>
 <area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3125be328aa2698c6b85c9570fff7538" title=" " alt="" coords="458,256,612,299"/>
-<area shape="poly" title=" " alt="" coords="710,178,670,213,623,246,600,258,598,253,620,242,667,209,707,174"/>
+<area shape="poly" title=" " alt="" coords="694,209,622,246,596,258,594,253,620,242,691,204"/>
+<area shape="rect" href="class_w_simulation_canvas.html#ae1a339e656b4479ecbe5c1e3f43b40a7" title=" " alt="" coords="460,323,609,365"/>
+<area shape="poly" title=" " alt="" coords="720,213,678,264,652,290,623,313,603,324,600,320,620,308,648,286,674,260,716,210"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#a6484e0b6dc9e6d846b6cdaa7f5e350af" title=" " alt="" coords="227,56,400,99"/>
 <area shape="poly" title=" " alt="" coords="433,80,401,80,401,75,433,75"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#a3f51fbbfa7066af87fe2dbde8a78fda4" title=" " alt="" coords="5,56,179,99"/>
 <area shape="poly" title=" " alt="" coords="211,80,179,80,179,75,211,75"/>
+<area shape="rect" href="class_w_simulation_canvas.html#aba49cf5b1ddf8ea4c7810319b75f687d" title=" " alt="" coords="239,323,388,365"/>
+<area shape="poly" title=" " alt="" coords="445,347,388,347,388,341,445,341"/>
 </map>
 </div>
 
@@ -660,7 +673,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_glfw_render_window.html#a44bb239f67198965e333060b5ea47c4b">dyno::GlfwRenderWindow</a>, and <a class="el" href="classdyno_1_1_p_open_g_l_widget.html#a118ad6303bda2e5c13b2976da882d39b">dyno::POpenGLWidget</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00074">74</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00076">76</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -711,17 +724,23 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_render_window_a926ce5cc0b68ebe96f0a75360f152eea_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_window_a926ce5cc0b68ebe96f0a75360f152eea_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_render_window_a926ce5cc0b68ebe96f0a75360f152eea_icgraph" id="aclassdyno_1_1_render_window_a926ce5cc0b68ebe96f0a75360f152eea_icgraph">
-<area shape="rect" title=" " alt="" coords="864,39,1010,81"/>
-<area shape="rect" href="classdyno_1_1_render_window.html#aa7fbed725926f02fb7c613bfdb1c9d33" title=" " alt="" coords="669,39,816,81"/>
-<area shape="poly" title=" " alt="" coords="848,63,816,63,816,57,848,57"/>
+<area shape="rect" title=" " alt="" coords="864,105,1010,148"/>
+<area shape="rect" href="classdyno_1_1_render_window.html#aa7fbed725926f02fb7c613bfdb1c9d33" title=" " alt="" coords="669,105,816,148"/>
+<area shape="poly" title=" " alt="" coords="848,129,816,129,816,124,848,124"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#ae3f9e3f8cd68e78d6945791b60c6282f" title=" " alt="" coords="448,5,621,48"/>
-<area shape="poly" title=" " alt="" coords="654,48,621,43,622,38,654,43"/>
+<area shape="poly" title=" " alt="" coords="691,100,620,62,594,51,596,46,622,58,694,95"/>
 <area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3125be328aa2698c6b85c9570fff7538" title=" " alt="" coords="458,72,612,115"/>
-<area shape="poly" title=" " alt="" coords="654,77,613,84,612,78,654,72"/>
+<area shape="poly" title=" " alt="" coords="654,115,612,108,613,103,654,110"/>
+<area shape="rect" href="class_w_simulation_canvas.html#ae1a339e656b4479ecbe5c1e3f43b40a7" title=" " alt="" coords="460,139,609,181"/>
+<area shape="poly" title=" " alt="" coords="655,143,610,151,609,145,654,138"/>
+<area shape="rect" href="class_w_simulation_canvas.html#a00753b1ab6e54d1b412219eb56dc6fc0" title=" " alt="" coords="460,205,609,248"/>
+<area shape="poly" title=" " alt="" coords="694,158,622,196,596,207,594,202,620,191,691,153"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#a6484e0b6dc9e6d846b6cdaa7f5e350af" title=" " alt="" coords="227,5,400,48"/>
 <area shape="poly" title=" " alt="" coords="433,29,401,29,401,24,433,24"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#a3f51fbbfa7066af87fe2dbde8a78fda4" title=" " alt="" coords="5,5,179,48"/>
 <area shape="poly" title=" " alt="" coords="211,29,179,29,179,24,211,24"/>
+<area shape="rect" href="class_w_simulation_canvas.html#aba49cf5b1ddf8ea4c7810319b75f687d" title=" " alt="" coords="239,139,388,181"/>
+<area shape="poly" title=" " alt="" coords="445,163,388,163,388,157,445,157"/>
 </map>
 </div>
 
@@ -860,15 +879,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_render_window_aa7fbed725926f02fb7c613bfdb1c9d33_icgraph.png" border="0" usemap="#aclassdyno_1_1_render_window_aa7fbed725926f02fb7c613bfdb1c9d33_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_render_window_aa7fbed725926f02fb7c613bfdb1c9d33_icgraph" id="aclassdyno_1_1_render_window_aa7fbed725926f02fb7c613bfdb1c9d33_icgraph">
-<area shape="rect" title=" " alt="" coords="669,39,816,81"/>
+<area shape="rect" title=" " alt="" coords="669,105,816,148"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#ae3f9e3f8cd68e78d6945791b60c6282f" title=" " alt="" coords="448,5,621,48"/>
-<area shape="poly" title=" " alt="" coords="654,48,621,43,622,38,654,43"/>
+<area shape="poly" title=" " alt="" coords="691,100,620,62,594,51,596,46,622,58,694,95"/>
 <area shape="rect" href="classdyno_1_1_p_open_g_l_widget.html#a3125be328aa2698c6b85c9570fff7538" title=" " alt="" coords="458,72,612,115"/>
-<area shape="poly" title=" " alt="" coords="654,77,613,84,612,78,654,72"/>
+<area shape="poly" title=" " alt="" coords="654,115,612,108,613,103,654,110"/>
+<area shape="rect" href="class_w_simulation_canvas.html#ae1a339e656b4479ecbe5c1e3f43b40a7" title=" " alt="" coords="460,139,609,181"/>
+<area shape="poly" title=" " alt="" coords="655,143,610,151,609,145,654,138"/>
+<area shape="rect" href="class_w_simulation_canvas.html#a00753b1ab6e54d1b412219eb56dc6fc0" title=" " alt="" coords="460,205,609,248"/>
+<area shape="poly" title=" " alt="" coords="694,158,622,196,596,207,594,202,620,191,691,153"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#a6484e0b6dc9e6d846b6cdaa7f5e350af" title=" " alt="" coords="227,5,400,48"/>
 <area shape="poly" title=" " alt="" coords="433,29,401,29,401,24,433,24"/>
 <area shape="rect" href="classdyno_1_1_glfw_render_window.html#a3f51fbbfa7066af87fe2dbde8a78fda4" title=" " alt="" coords="5,5,179,48"/>
 <area shape="poly" title=" " alt="" coords="211,29,179,29,179,24,211,24"/>
+<area shape="rect" href="class_w_simulation_canvas.html#aba49cf5b1ddf8ea4c7810319b75f687d" title=" " alt="" coords="239,139,388,181"/>
+<area shape="poly" title=" " alt="" coords="445,163,388,163,388,157,445,157"/>
 </map>
 </div>
 
@@ -944,6 +969,33 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="193,29,161,29,161,24,193,24"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a357aa44b28c393ca3014e33acc8055d9" name="a357aa44b28c393ca3014e33acc8055d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a357aa44b28c393ca3014e33acc8055d9">&#9670;&#160;</a></span>setDefaultAnimationOption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void dyno::RenderWindow::setDefaultAnimationOption </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>op</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classdyno_1_1_glfw_render_window.html#a22d96a55f57f7e68213636e91e0e4e2d">dyno::GlfwRenderWindow</a>, <a class="el" href="classdyno_1_1_p_open_g_l_widget.html#ad0c755bda814e4e84ac1a09f0e556752">dyno::POpenGLWidget</a>, and <a class="el" href="class_w_simulation_canvas.html#a8b4d61697f31c7eb1c40f59f20f00ca3">WSimulationCanvas</a>.</p>
 
 </div>
 </div>
@@ -1253,7 +1305,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00072">72</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00074">74</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1277,7 +1329,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00069">69</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00071">71</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1301,7 +1353,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00070">70</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00072">72</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1325,7 +1377,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00097">97</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00099">99</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1401,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00096">96</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00098">98</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1373,7 +1425,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00099">99</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00101">101</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1397,7 +1449,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00092">92</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00094">94</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1421,7 +1473,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00094">94</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00096">96</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
 
 </div>
 </div>
@@ -1445,7 +1497,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00090">90</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_render_window_8h_source.html#l00092">92</a> of file <a class="el" href="_render_window_8h_source.html">RenderWindow.h</a>.</p>
 
 </div>
 </div>

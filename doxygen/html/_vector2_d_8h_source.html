@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -155,10 +155,10 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        DYN_FUNC <a class="code hl_define" href="im_gu_i_z_m_oquat_8cpp.html#ae53008cb938e8e14ae47291e41be8bec">T</a>* getDataPtr() { <span class="keywordflow">return</span> &amp;data_.x; }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">friend</span> std::ostream&amp; operator&lt;&lt;(std::ostream &amp;out, <span class="keyword">const</span> <a class="code hl_function" href="classdyno_1_1_vector.html#ae741fd9fbc5a725a88a1e52b219dbb63">Vector&lt;T, 2&gt;</a>&amp; vec)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_function" href="namespace_wt.html#ac22016c13f21cabb7c6376d563aa7b3b">operator&lt;&lt;</a>(std::ostream &amp;<a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a>, <span class="keyword">const</span> <a class="code hl_function" href="classdyno_1_1_vector.html#ae741fd9fbc5a725a88a1e52b219dbb63">Vector&lt;T, 2&gt;</a>&amp; vec)</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            out &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; vec[0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; vec[1] &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a> &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; vec[0] &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; vec[1] &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">public</span>:</div>
@@ -181,11 +181,13 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#include &quot;<a class="code" href="_vector2_d_8inl.html">Vector2D.inl</a>&quot;</span></div>
 <div class="ttc" id="a_vector2_d_8inl_html"><div class="ttname"><a href="_vector2_d_8inl.html">Vector2D.inl</a></div></div>
 <div class="ttc" id="a_vector_base_8h_html"><div class="ttname"><a href="_vector_base_8h.html">VectorBase.h</a></div></div>
+<div class="ttc" id="a_wt_flow_widget_8h_html_a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579"><div class="ttname"><a href="_wt_flow_widget_8h.html#a679431f1afc75d7bb9e972c022e53672aaca14bf8f96bb2b357f12496b7f11579">out</a></div><div class="ttdeci">@ out</div><div class="ttdef"><b>Definition</b> <a href="_wt_flow_widget_8h_source.html#l00013">WtFlowWidget.h:13</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_square_matrix_html"><div class="ttname"><a href="classdyno_1_1_square_matrix.html">dyno::SquareMatrix</a></div><div class="ttdef"><b>Definition</b> <a href="_square_matrix_8h_source.html#l00007">SquareMatrix.h:8</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_vector_html"><div class="ttname"><a href="classdyno_1_1_vector.html">dyno::Vector</a></div><div class="ttdef"><b>Definition</b> <a href="_vector_base_8h_source.html#l00023">VectorBase.h:24</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_vector_html_aab3af090ae5b44d52c860c2db5c89a31"><div class="ttname"><a href="classdyno_1_1_vector.html#aab3af090ae5b44d52c860c2db5c89a31">dyno::Vector::~Vector</a></div><div class="ttdeci">DYN_FUNC ~Vector()</div><div class="ttdef"><b>Definition</b> <a href="_vector_base_8h_source.html#l00027">VectorBase.h:27</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_vector_html_ae741fd9fbc5a725a88a1e52b219dbb63"><div class="ttname"><a href="classdyno_1_1_vector.html#ae741fd9fbc5a725a88a1e52b219dbb63">dyno::Vector::Vector</a></div><div class="ttdeci">DYN_FUNC Vector()</div><div class="ttdef"><b>Definition</b> <a href="_vector_base_8h_source.html#l00026">VectorBase.h:26</a></div></div>
 <div class="ttc" id="aim_gu_i_z_m_oquat_8cpp_html_ae53008cb938e8e14ae47291e41be8bec"><div class="ttname"><a href="im_gu_i_z_m_oquat_8cpp.html#ae53008cb938e8e14ae47291e41be8bec">T</a></div><div class="ttdeci">#define T(t)</div></div>
+<div class="ttc" id="anamespace_wt_html_ac22016c13f21cabb7c6376d563aa7b3b"><div class="ttname"><a href="namespace_wt.html#ac22016c13f21cabb7c6376d563aa7b3b">Wt::operator&lt;&lt;</a></div><div class="ttdeci">std::ostream &amp; operator&lt;&lt;(std::ostream &amp;s, const Guid &amp;guid)</div><div class="ttdef"><b>Definition</b> <a href="guid_8cpp_source.html#l00070">guid.cpp:70</a></div></div>
 <div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a3a41eab550394ecaa0df89d68418ef98"><div class="ttname"><a href="namespacedyno.html#a3a41eab550394ecaa0df89d68418ef98">dyno::cross</a></div><div class="ttdeci">DYN_FUNC Vector&lt; T, 3 &gt; cross(Vector&lt; T, 3 &gt; const &amp;U, Vector&lt; T, 3 &gt; const &amp;V)</div><div class="ttdef"><b>Definition</b> <a href="_simple_math_8h_source.html#l00211">SimpleMath.h:211</a></div></div>
 <div class="ttc" id="anamespacedyno_html_a4507df9ee65a41a57037f78bebad27eb"><div class="ttname"><a href="namespacedyno.html#a4507df9ee65a41a57037f78bebad27eb">dyno::dot</a></div><div class="ttdeci">DYN_FUNC T dot(Vector&lt; T, 2 &gt; const &amp;U, Vector&lt; T, 2 &gt; const &amp;V)</div><div class="ttdef"><b>Definition</b> <a href="_simple_math_8h_source.html#l00199">SimpleMath.h:199</a></div></div>

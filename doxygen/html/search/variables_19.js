@@ -10,7 +10,5 @@ var searchData=
   ['y_5fpre_7',['y_pre',['../classdyno_1_1_co_semi_implicit_hyperelasticity_solver.html#aeca440cc109a51410e12c660c640334f',1,'dyno::CoSemiImplicitHyperelasticitySolver::y_pre'],['../classdyno_1_1_semi_implicit_hyperelasticity_solver.html#abc70fc0118504636b1d8852659d5715d',1,'dyno::SemiImplicitHyperelasticitySolver::y_pre']]],
   ['y_5fresidual_8',['y_residual',['../classdyno_1_1_co_semi_implicit_hyperelasticity_solver.html#a585aa4b9d4b5015800ada9a538197a09',1,'dyno::CoSemiImplicitHyperelasticitySolver::y_residual'],['../classdyno_1_1_semi_implicit_hyperelasticity_solver.html#a188dd38301a5c0445556c3678e1b6d2e',1,'dyno::SemiImplicitHyperelasticitySolver::y_residual']]],
   ['yeohmodel_9',['yeohModel',['../structdyno_1_1_energy_models.html#a8967368e3210b6c8d581d44b1816ed30',1,'dyno::EnergyModels']]],
-  ['ygreater_10',['yGreater',['../classdyno_1_1_ramp.html#a6e299f187ae25e7af8a0f77074efe086',1,'dyno::Ramp']]],
-  ['yless_11',['yLess',['../classdyno_1_1_ramp.html#ab17e5fdd6e627681f4e36ff2b1043b83',1,'dyno::Ramp']]],
-  ['yrotationmodifier_12',['yRotationModifier',['../classvg_1_1virtual_gizmo_base_class.html#abd87631f8027a517aba859ecd4496c7f',1,'vg::virtualGizmoBaseClass']]]
+  ['yrotationmodifier_10',['yRotationModifier',['../classvg_1_1virtual_gizmo_base_class.html#abd87631f8027a517aba859ecd4496c7f',1,'vg::virtualGizmoBaseClass']]]
 ];

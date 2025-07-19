@@ -1,25 +1,30 @@
 <map id="dyno::IterativeDensitySolver&lt; TDataType &gt;" name="dyno::IterativeDensitySolver&lt; TDataType &gt;">
-<area shape="rect" id="Node000001" title="This is an implementation of the iterative density solver integrated into the Position Based Dynamics..." alt="" coords="103,659,289,701"/>
-<area shape="rect" id="Node000002" href="$classdyno_1_1_particle_approximation.html" title=" " alt="" coords="5,552,190,595"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,604,179,656,175,660,126,608"/>
-<area shape="rect" id="Node000003" href="$classdyno_1_1_compute_module.html" title=" " alt="" coords="21,461,174,488"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="100,504,100,551,95,551,95,504"/>
-<area shape="rect" id="Node000004" href="$classdyno_1_1_module.html" title=" " alt="" coords="48,385,147,412"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="100,427,100,461,95,461,95,427"/>
-<area shape="rect" id="Node000005" href="$classdyno_1_1_o_base.html" title=" " alt="" coords="53,81,150,108"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="104,124,100,385,95,385,98,124"/>
-<area shape="rect" id="Node000007" href="$classdyno_1_1_node.html" title=" " alt="" coords="113,295,202,321"/>
-<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="111,123,157,294,152,295,106,124"/>
-<area shape="rect" id="Node000008" href="$classdyno_1_1_scene_graph.html" title=" " alt="" coords="165,204,294,231"/>
-<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="131,116,147,130,220,202,216,206,144,134,127,120"/>
-<area shape="rect" id="Node000006" href="$classdyno_1_1_object.html" title=" " alt="" coords="54,5,149,32"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="104,47,104,81,99,81,99,47"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="143,336,108,386,104,383,138,333"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="212,245,170,296,166,292,208,241"/>
-<area shape="rect" id="Node000009" href="$classdyno_1_1_vector.html" title=" " alt="" coords="174,81,333,108"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="251,124,235,204,229,203,245,123"/>
-<area shape="rect" id="Node000010" href="$classdyno_1_1_arithmetic.html" title=" " alt="" coords="214,560,381,587"/>
-<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="277,600,218,660,214,656,273,596"/>
-<area shape="rect" id="Node000011" href="$classdyno_1_1_reduction.html" title=" " alt="" coords="214,461,381,488"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="300,504,300,560,295,560,295,504"/>
+<area shape="rect" id="Node000001" title="This is an implementation of the iterative density solver integrated into the Position Based Dynamics..." alt="" coords="216,673,403,716"/>
+<area shape="rect" id="Node000002" href="$classdyno_1_1_particle_approximation.html" title=" " alt="" coords="23,567,207,609"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,615,272,670,270,675,165,619"/>
+<area shape="rect" id="Node000003" href="$classdyno_1_1_compute_module.html" title=" " alt="" coords="5,476,158,503"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,517,110,565,105,567,88,518"/>
+<area shape="rect" id="Node000004" href="$classdyno_1_1_module.html" title=" " alt="" coords="193,385,292,412"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="208,422,106,478,103,473,205,418"/>
+<area shape="rect" id="Node000011" href="$classdyno_1_1_module_port.html" title="Input ports for Module." alt="" coords="181,476,304,503"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="246,428,246,475,240,475,240,428"/>
+<area shape="rect" id="Node000005" href="$classdyno_1_1_o_base.html" title=" " alt="" coords="198,81,296,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="249,124,246,385,240,385,244,124"/>
+<area shape="rect" id="Node000007" href="$classdyno_1_1_node.html" title=" " alt="" coords="259,295,347,321"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="257,123,302,294,297,295,252,124"/>
+<area shape="rect" id="Node000008" href="$classdyno_1_1_scene_graph.html" title=" " alt="" coords="310,204,440,231"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="276,116,293,130,365,202,361,206,289,134,273,120"/>
+<area shape="rect" id="Node000006" href="$classdyno_1_1_object.html" title=" " alt="" coords="199,5,294,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="250,47,250,81,244,81,244,47"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="288,336,254,386,249,383,283,333"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="357,245,315,296,311,292,353,241"/>
+<area shape="rect" id="Node000009" href="$classdyno_1_1_vector.html" title=" " alt="" coords="320,81,478,108"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="396,124,380,204,375,203,391,123"/>
+<area shape="rect" id="Node000010" href="$classdyno_1_1_multiple_module_port.html" title=" " alt="" coords="245,567,414,609"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="330,551,326,494,318,464,303,438,290,425,274,415,277,410,293,420,308,434,323,462,332,493,336,551"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="266,512,313,564,309,568,262,516"/>
+<area shape="rect" id="Node000012" href="$classdyno_1_1_arithmetic.html" title=" " alt="" coords="446,575,613,601"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="490,611,354,675,352,670,488,606"/>
+<area shape="rect" id="Node000013" href="$classdyno_1_1_reduction.html" title=" " alt="" coords="450,476,617,503"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="535,519,533,575,527,574,530,518"/>
 </map>

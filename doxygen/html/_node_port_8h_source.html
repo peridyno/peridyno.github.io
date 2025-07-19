@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -162,7 +162,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    };</div>
 </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespacedyno.html#aa1422d9d48b7fccaa94ebbd8bbe6f333">disconnect</a>(<a class="code hl_class" href="classdyno_1_1_node.html">Node</a>* node, <a class="code hl_class" href="classdyno_1_1_node_port.html">NodePort</a>* port);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespacedyno.html#a4e3768406dcc8afa707ad302f981c362">disconnect</a>(<a class="code hl_class" href="classdyno_1_1_node.html">Node</a>* node, <a class="code hl_class" href="classdyno_1_1_node_port.html">NodePort</a>* port);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00088" data-start="{" data-end="};">
@@ -182,7 +182,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classdyno_1_1_single_node_port.html#af2f4aefeaecb3ad92df3e11b47dbab8c">   98</a></span>        <a class="code hl_function" href="classdyno_1_1_single_node_port.html#af2f4aefeaecb3ad92df3e11b47dbab8c">~SingleNodePort</a>()<span class="keyword"> override </span>{</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="comment">//Disconnect nodes from node ports here instead of inside the destructor of Node to avoid memory leak</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="classdyno_1_1_node_port.html#a62e3aedf74a4e97bfa85f89309e10f03">m_nodes</a>[0] != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <a class="code hl_function" href="namespacedyno.html#aa1422d9d48b7fccaa94ebbd8bbe6f333">disconnect</a>(<a class="code hl_variable" href="classdyno_1_1_node_port.html#a62e3aedf74a4e97bfa85f89309e10f03">m_nodes</a>[0], <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <a class="code hl_function" href="namespacedyno.html#a4e3768406dcc8afa707ad302f981c362">disconnect</a>(<a class="code hl_variable" href="classdyno_1_1_node_port.html#a62e3aedf74a4e97bfa85f89309e10f03">m_nodes</a>[0], <span class="keyword">this</span>);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <span class="comment">//m_nodes[0]-&gt;disconnect(this);</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            }</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_variable" href="classdyno_1_1_node_port.html#a62e3aedf74a4e97bfa85f89309e10f03">m_nodes</a>[0] = <span class="keyword">nullptr</span>; </div>
@@ -297,7 +297,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="comment">//Disconnect nodes from node ports here instead of inside the destructor of Node to avoid memory leak</span></div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <span class="keywordflow">for</span>(<span class="keyword">auto</span> node : <a class="code hl_variable" href="classdyno_1_1_node_port.html#a62e3aedf74a4e97bfa85f89309e10f03">m_nodes</a>)</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            {</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                <a class="code hl_function" href="namespacedyno.html#aa1422d9d48b7fccaa94ebbd8bbe6f333">disconnect</a>(node, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                <a class="code hl_function" href="namespacedyno.html#a4e3768406dcc8afa707ad302f981c362">disconnect</a>(node, <span class="keyword">this</span>);</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                <span class="comment">//node-&gt;disconnect(this);</span></div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            }</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
@@ -475,7 +475,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclassdyno_1_1_single_node_port_html_afc6b697f33db58544825abd3da6253d5"><div class="ttname"><a href="classdyno_1_1_single_node_port.html#afc6b697f33db58544825abd3da6253d5">dyno::SingleNodePort::isKindOf</a></div><div class="ttdeci">bool isKindOf(Node *node) override</div><div class="ttdef"><b>Definition</b> <a href="#l00107">NodePort.h:107</a></div></div>
 <div class="ttc" id="aim_gu_i_z_m_oquat_8cpp_html_ae53008cb938e8e14ae47291e41be8bec"><div class="ttname"><a href="im_gu_i_z_m_oquat_8cpp.html#ae53008cb938e8e14ae47291e41be8bec">T</a></div><div class="ttdeci">#define T(t)</div></div>
 <div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
-<div class="ttc" id="anamespacedyno_html_aa1422d9d48b7fccaa94ebbd8bbe6f333"><div class="ttname"><a href="namespacedyno.html#aa1422d9d48b7fccaa94ebbd8bbe6f333">dyno::disconnect</a></div><div class="ttdeci">void disconnect(Node *node, NodePort *port)</div><div class="ttdef"><b>Definition</b> <a href="_node_port_8cpp_source.html#l00044">NodePort.cpp:44</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a4e3768406dcc8afa707ad302f981c362"><div class="ttname"><a href="namespacedyno.html#a4e3768406dcc8afa707ad302f981c362">dyno::disconnect</a></div><div class="ttdeci">void disconnect(Module *m, ModulePort *port)</div><div class="ttdef"><b>Definition</b> <a href="_module_port_8cpp_source.html#l00044">ModulePort.cpp:44</a></div></div>
 <div class="ttc" id="anamespacedyno_html_ac442c932556622589199e830a385bb34"><div class="ttname"><a href="namespacedyno.html#ac442c932556622589199e830a385bb34">dyno::NodePortType</a></div><div class="ttdeci">NodePortType</div><div class="ttdef"><b>Definition</b> <a href="#l00026">NodePort.h:27</a></div></div>
 <div class="ttc" id="anamespacedyno_html_ac442c932556622589199e830a385bb34a49cc4b7eedf1bd87a28e67bf72a5b98f"><div class="ttname"><a href="namespacedyno.html#ac442c932556622589199e830a385bb34a49cc4b7eedf1bd87a28e67bf72a5b98f">dyno::Unknown</a></div><div class="ttdeci">@ Unknown</div><div class="ttdef"><b>Definition</b> <a href="#l00030">NodePort.h:30</a></div></div>
 <div class="ttc" id="anamespacedyno_html_ac442c932556622589199e830a385bb34af73b08d70071a79a0ed6d2422d6a7282"><div class="ttname"><a href="namespacedyno.html#ac442c932556622589199e830a385bb34af73b08d70071a79a0ed6d2422d6a7282">dyno::Multiple</a></div><div class="ttdeci">@ Multiple</div><div class="ttdef"><b>Definition</b> <a href="#l00029">NodePort.h:29</a></div></div>

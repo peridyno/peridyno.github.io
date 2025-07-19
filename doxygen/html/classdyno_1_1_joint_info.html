@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -93,6 +93,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_joint_info-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::JointInfo Class Reference</div></div>
 </div><!--header-->
@@ -116,11 +117,13 @@ Collaboration diagram for dyno::JointInfo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_joint_info__coll__graph.png" border="0" usemap="#adyno_1_1_joint_info_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_joint_info_coll__map" id="adyno_1_1_joint_info_coll__map">
-<area shape="rect" title=" " alt="" coords="5,155,113,181"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="10,80,108,107"/>
-<area shape="poly" title=" " alt="" coords="62,122,62,154,56,154,56,122"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="11,5,107,32"/>
-<area shape="poly" title=" " alt="" coords="62,48,62,80,56,80,56,48"/>
+<area shape="rect" title=" " alt="" coords="87,172,194,199"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="5,81,103,108"/>
+<area shape="poly" title=" " alt="" coords="79,117,130,170,126,173,75,121"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="6,5,102,32"/>
+<area shape="poly" title=" " alt="" coords="57,47,57,81,51,81,51,47"/>
+<area shape="rect" href="structdyno_1_1_pose.html" title=" " alt="" coords="126,81,214,108"/>
+<area shape="poly" title=" " alt="" coords="163,124,147,172,142,171,158,122"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -132,20 +135,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa3820c97643c37eed4af11f0c4699c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56a52dce7599541eac3ee1a95b7cc92b" id="r_a56a52dce7599541eac3ee1a95b7cc92b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56a52dce7599541eac3ee1a95b7cc92b">~JointInfo</a> ()</td></tr>
 <tr class="separator:a56a52dce7599541eac3ee1a95b7cc92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed54dec779156d5df8dc071eb3fd3df5" id="r_aed54dec779156d5df8dc071eb3fd3df5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed54dec779156d5df8dc071eb3fd3df5">UpdateJointInfo</a> (<a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;InverseBindMatrix, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;LocalMatrix, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;WorldMatrix, std::vector&lt; int &gt; &amp;allJoints, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, std::vector&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a> &gt; &gt; &amp;jointDir, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;bindPoseTranslation, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;bindPoseScale, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt; &amp;bindPoseRotation)</td></tr>
-<tr class="separator:aed54dec779156d5df8dc071eb3fd3df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5121786b071ba3bab9f56a1bb8647cc3" id="r_a5121786b071ba3bab9f56a1bb8647cc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5121786b071ba3bab9f56a1bb8647cc3">setGltfJointInfo</a> (<a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;InverseBindMatrix, std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;LocalMatrix, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;WorldMatrix, std::vector&lt; int &gt; &amp;allJoints, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, std::vector&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a> &gt; &gt; &amp;jointDir, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;bindPoseTranslation, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;bindPoseScale, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt; &amp;bindPoseRotation)</td></tr>
+<tr class="separator:a5121786b071ba3bab9f56a1bb8647cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ccccdc5cf211426e4f9561cadc77b01" id="r_a9ccccdc5cf211426e4f9561cadc77b01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ccccdc5cf211426e4f9561cadc77b01">clear</a> ()</td></tr>
+<tr class="separator:a9ccccdc5cf211426e4f9561cadc77b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad738eade48c6c3f76638bc8ce2fe1b95" id="r_ad738eade48c6c3f76638bc8ce2fe1b95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad738eade48c6c3f76638bc8ce2fe1b95">SetJointInfo</a> (std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;InverseBindMatrix, std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;LocalMatrix, std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;WorldMatrix, std::vector&lt; int &gt; &amp;allJoints, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, std::vector&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a> &gt; &gt; &amp;jointDir, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;bindPoseTranslation, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;bindPoseScale, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;bindPoseRotation, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;bindPosePreRotation)</td></tr>
+<tr class="separator:ad738eade48c6c3f76638bc8ce2fe1b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fd4249ede313a921e3f820222d44d58" id="r_a4fd4249ede313a921e3f820222d44d58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fd4249ede313a921e3f820222d44d58">setJoint</a> (const <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &amp;j)</td></tr>
 <tr class="separator:a4fd4249ede313a921e3f820222d44d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab43f21827ca365c1078797a54f097cfa" id="r_ab43f21827ca365c1078797a54f097cfa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab43f21827ca365c1078797a54f097cfa">isEmpty</a> ()</td></tr>
 <tr class="separator:ab43f21827ca365c1078797a54f097cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee53f22ddfa8ee07459782d2d84a869" id="r_a1ee53f22ddfa8ee07459782d2d84a869"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ee53f22ddfa8ee07459782d2d84a869">updateWorldMatrixByTransform</a> ()</td></tr>
 <tr class="separator:a1ee53f22ddfa8ee07459782d2d84a869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad836a7a74c6518655b87cde266d03c70" id="r_ad836a7a74c6518655b87cde266d03c70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad836a7a74c6518655b87cde266d03c70">updateCurrentPose</a> (std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; t, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; s, std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt; r)</td></tr>
-<tr class="separator:ad836a7a74c6518655b87cde266d03c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb39c2158207fbba7d0f7d2070ad8d1" id="r_adeb39c2158207fbba7d0f7d2070ad8d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adeb39c2158207fbba7d0f7d2070ad8d1">setJointName</a> (const std::map&lt; int, std::string &gt; name)</td></tr>
 <tr class="separator:adeb39c2158207fbba7d0f7d2070ad8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157c06658f9deaa6b92607a102e86013" id="r_a157c06658f9deaa6b92607a102e86013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a157c06658f9deaa6b92607a102e86013">setLeftHandedCoordSystem</a> (bool islLeft)</td></tr>
+<tr class="separator:a157c06658f9deaa6b92607a102e86013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e1254f1595a51dad4edf4aecbd58cc7" id="r_a7e1254f1595a51dad4edf4aecbd58cc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e1254f1595a51dad4edf4aecbd58cc7">setPose</a> (<a class="el" href="structdyno_1_1_pose.html">Pose</a> pose)</td></tr>
 <tr class="separator:a7e1254f1595a51dad4edf4aecbd58cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0180fdef37f0d509526d5c1b8fb72b6" id="r_ad0180fdef37f0d509526d5c1b8fb72b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0180fdef37f0d509526d5c1b8fb72b6">findJointIndexByName</a> (const std::string &amp;value)</td></tr>
+<tr class="separator:ad0180fdef37f0d509526d5c1b8fb72b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc61a8fa17a2e66144d36987c57da11" id="r_a4cc61a8fa17a2e66144d36987c57da11"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cc61a8fa17a2e66144d36987c57da11">getLocalMatrix</a> (<a class="el" href="structdyno_1_1_pose.html">Pose</a> &amp;pose)</td></tr>
+<tr class="separator:a4cc61a8fa17a2e66144d36987c57da11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base" id="r_ab65d583b85bc42e7b2faab3af43d159f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ab65d583b85bc42e7b2faab3af43d159f">OBase</a> ()</td></tr>
 <tr class="separator:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,22 +266,22 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9f918252db22f02f195a2563c9aed715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34017cc5b7af440ff6df919f348ace63" id="r_a34017cc5b7af440ff6df919f348ace63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34017cc5b7af440ff6df919f348ace63">mJointInverseBindMatrix</a></td></tr>
 <tr class="separator:a34017cc5b7af440ff6df919f348ace63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e03d5a5da0dbbe5e09d9e6878ae10e5" id="r_a2e03d5a5da0dbbe5e09d9e6878ae10e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e03d5a5da0dbbe5e09d9e6878ae10e5">mJointLocalMatrix</a></td></tr>
-<tr class="separator:a2e03d5a5da0dbbe5e09d9e6878ae10e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41469387a9dda585e380d53e38a43d09" id="r_a41469387a9dda585e380d53e38a43d09"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41469387a9dda585e380d53e38a43d09">mJointLocalMatrix</a></td></tr>
+<tr class="separator:a41469387a9dda585e380d53e38a43d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73a36bc18225e35e9ecfd758eb8beba4" id="r_a73a36bc18225e35e9ecfd758eb8beba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73a36bc18225e35e9ecfd758eb8beba4">mJointWorldMatrix</a></td></tr>
 <tr class="separator:a73a36bc18225e35e9ecfd758eb8beba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b1dbb1ad72f0f52b5328c0d09a3c58" id="r_ac0b1dbb1ad72f0f52b5328c0d09a3c58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdyno_1_1_pose.html">Pose</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0b1dbb1ad72f0f52b5328c0d09a3c58">currentPose</a></td></tr>
+<tr class="separator:ac0b1dbb1ad72f0f52b5328c0d09a3c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b68ce83e670236d79e561a097a789e" id="r_ad2b68ce83e670236d79e561a097a789e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2b68ce83e670236d79e561a097a789e">mBindPoseTranslation</a></td></tr>
 <tr class="separator:ad2b68ce83e670236d79e561a097a789e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61bfdc9ab93e4fababbc476676d082e0" id="r_a61bfdc9ab93e4fababbc476676d082e0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61bfdc9ab93e4fababbc476676d082e0">mBindPoseScale</a></td></tr>
 <tr class="separator:a61bfdc9ab93e4fababbc476676d082e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c7547c357a299aaec21f5987d227947" id="r_a7c7547c357a299aaec21f5987d227947"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_quat.html">Quat</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c7547c357a299aaec21f5987d227947">mBindPoseRotation</a></td></tr>
 <tr class="separator:a7c7547c357a299aaec21f5987d227947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6a4a673de2987d38f779fe48d509f08" id="r_af6a4a673de2987d38f779fe48d509f08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6a4a673de2987d38f779fe48d509f08">mCurrentTranslation</a></td></tr>
-<tr class="separator:af6a4a673de2987d38f779fe48d509f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec4b2cd2d811716f537f8adc85e6fb61" id="r_aec4b2cd2d811716f537f8adc85e6fb61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="classdyno_1_1_quat.html">Quat</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec4b2cd2d811716f537f8adc85e6fb61">mCurrentRotation</a></td></tr>
-<tr class="separator:aec4b2cd2d811716f537f8adc85e6fb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9625ed692871fff2086b317421ea1941" id="r_a9625ed692871fff2086b317421ea1941"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9625ed692871fff2086b317421ea1941">mCurrentScale</a></td></tr>
-<tr class="separator:a9625ed692871fff2086b317421ea1941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad479bb498eab6a35c983efa2bdedcd" id="r_abad479bb498eab6a35c983efa2bdedcd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abad479bb498eab6a35c983efa2bdedcd">mBindPoseRotator</a></td></tr>
+<tr class="separator:abad479bb498eab6a35c983efa2bdedcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448817a72c157a2f5ba78e3ca01b29aa" id="r_a448817a72c157a2f5ba78e3ca01b29aa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a448817a72c157a2f5ba78e3ca01b29aa">mBindPosePreRotator</a></td></tr>
+<tr class="separator:a448817a72c157a2f5ba78e3ca01b29aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fd923849d45f279bff7072b4284ef37" id="r_a6fd923849d45f279bff7072b4284ef37"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fd923849d45f279bff7072b4284ef37">mAllJoints</a></td></tr>
 <tr class="separator:a6fd923849d45f279bff7072b4284ef37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5625816b74225063282d9a81e3707a00" id="r_a5625816b74225063282d9a81e3707a00"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, std::vector&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5625816b74225063282d9a81e3707a00">mJointDir</a></td></tr>
@@ -282,6 +293,11 @@ Public Attributes</h2></td></tr>
 Private Types</h2></td></tr>
 <tr class="memitem:a2dfc223bc9b8cda0f53f0b7344872342" id="r_a2dfc223bc9b8cda0f53f0b7344872342"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a></td></tr>
 <tr class="separator:a2dfc223bc9b8cda0f53f0b7344872342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab9b7e18e2696933d552957910a502b18" id="r_ab9b7e18e2696933d552957910a502b18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9b7e18e2696933d552957910a502b18">useLeftHandedCoordSystem</a> = true</td></tr>
+<tr class="separator:ab9b7e18e2696933d552957910a502b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -310,7 +326,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00045">45</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00057">57</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2dfc223bc9b8cda0f53f0b7344872342" name="a2dfc223bc9b8cda0f53f0b7344872342"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dfc223bc9b8cda0f53f0b7344872342">&#9670;&#160;</a></span>joint</h2>
@@ -332,7 +348,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00047">47</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00059">59</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -360,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00051">51</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00063">63</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -443,6 +459,87 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9ccccdc5cf211426e4f9561cadc77b01" name="a9ccccdc5cf211426e4f9561cadc77b01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ccccdc5cf211426e4f9561cadc77b01">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointInfo::clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00089">89</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="ad0180fdef37f0d509526d5c1b8fb72b6" name="ad0180fdef37f0d509526d5c1b8fb72b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0180fdef37f0d509526d5c1b8fb72b6">&#9670;&#160;</a></span>findJointIndexByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dyno::JointInfo::findJointIndexByName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00136">136</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a4cc61a8fa17a2e66144d36987c57da11" name="a4cc61a8fa17a2e66144d36987c57da11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc61a8fa17a2e66144d36987c57da11">&#9670;&#160;</a></span>getLocalMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; dyno::JointInfo::getLocalMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdyno_1_1_pose.html">Pose</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pose</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00148">148</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
 <a id="ab43f21827ca365c1078797a54f097cfa" name="ab43f21827ca365c1078797a54f097cfa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab43f21827ca365c1078797a54f097cfa">&#9670;&#160;</a></span>isEmpty()</h2>
 
@@ -460,138 +557,21 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a4fd4249ede313a921e3f820222d44d58" name="a4fd4249ede313a921e3f820222d44d58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fd4249ede313a921e3f820222d44d58">&#9670;&#160;</a></span>setJoint()</h2>
+<a id="a5121786b071ba3bab9f56a1bb8647cc3" name="a5121786b071ba3bab9f56a1bb8647cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5121786b071ba3bab9f56a1bb8647cc3">&#9670;&#160;</a></span>setGltfJointInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::JointInfo::setJoint </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>j</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_joint_info_a4fd4249ede313a921e3f820222d44d58_cgraph.png" border="0" usemap="#aclassdyno_1_1_joint_info_a4fd4249ede313a921e3f820222d44d58_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_joint_info_a4fd4249ede313a921e3f820222d44d58_cgraph" id="aclassdyno_1_1_joint_info_a4fd4249ede313a921e3f820222d44d58_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,167,32"/>
-<area shape="rect" href="classdyno_1_1_joint_info.html#a55bc16577a3c9bf40721f51e4f4f8ce0" title=" " alt="" coords="215,5,380,32"/>
-<area shape="poly" title=" " alt="" coords="167,16,199,16,199,21,167,21"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="adeb39c2158207fbba7d0f7d2070ad8d1" name="adeb39c2158207fbba7d0f7d2070ad8d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adeb39c2158207fbba7d0f7d2070ad8d1">&#9670;&#160;</a></span>setJointName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dyno::JointInfo::setJointName </td>
-          <td>(</td>
-          <td class="paramtype">const std::map&lt; int, std::string &gt;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00085">85</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
-
-</div>
-</div>
-<a id="a7e1254f1595a51dad4edf4aecbd58cc7" name="a7e1254f1595a51dad4edf4aecbd58cc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e1254f1595a51dad4edf4aecbd58cc7">&#9670;&#160;</a></span>setPose()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dyno::JointInfo::setPose </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structdyno_1_1_pose.html">Pose</a></td>          <td class="paramname"><span class="paramname"><em>pose</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00087">87</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_joint_info_a7e1254f1595a51dad4edf4aecbd58cc7_cgraph.png" border="0" usemap="#aclassdyno_1_1_joint_info_a7e1254f1595a51dad4edf4aecbd58cc7_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_joint_info_a7e1254f1595a51dad4edf4aecbd58cc7_cgraph" id="aclassdyno_1_1_joint_info_a7e1254f1595a51dad4edf4aecbd58cc7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,169,40"/>
-<area shape="rect" href="classdyno_1_1_joint_info.html#a1ee53f22ddfa8ee07459782d2d84a869" title=" " alt="" coords="217,5,404,48"/>
-<area shape="poly" title=" " alt="" coords="169,24,201,24,201,29,169,29"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad836a7a74c6518655b87cde266d03c70" name="ad836a7a74c6518655b87cde266d03c70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad836a7a74c6518655b87cde266d03c70">&#9670;&#160;</a></span>updateCurrentPose()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dyno::JointInfo::updateCurrentPose </td>
-          <td>(</td>
-          <td class="paramtype">std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>r</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aed54dec779156d5df8dc071eb3fd3df5" name="aed54dec779156d5df8dc071eb3fd3df5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed54dec779156d5df8dc071eb3fd3df5">&#9670;&#160;</a></span>UpdateJointInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dyno::JointInfo::UpdateJointInfo </td>
+          <td class="memname">void dyno::JointInfo::setGltfJointInfo </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>InverseBindMatrix</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>LocalMatrix</em></span>, </td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>LocalMatrix</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -628,6 +608,180 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a4fd4249ede313a921e3f820222d44d58" name="a4fd4249ede313a921e3f820222d44d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd4249ede313a921e3f820222d44d58">&#9670;&#160;</a></span>setJoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointInfo::setJoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>j</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_joint_info_a4fd4249ede313a921e3f820222d44d58_cgraph.png" border="0" usemap="#aclassdyno_1_1_joint_info_a4fd4249ede313a921e3f820222d44d58_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_joint_info_a4fd4249ede313a921e3f820222d44d58_cgraph" id="aclassdyno_1_1_joint_info_a4fd4249ede313a921e3f820222d44d58_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,167,32"/>
+<area shape="rect" href="classdyno_1_1_joint_info.html#a55bc16577a3c9bf40721f51e4f4f8ce0" title=" " alt="" coords="215,5,380,32"/>
+<area shape="poly" title=" " alt="" coords="167,16,199,16,199,21,167,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad738eade48c6c3f76638bc8ce2fe1b95" name="ad738eade48c6c3f76638bc8ce2fe1b95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad738eade48c6c3f76638bc8ce2fe1b95">&#9670;&#160;</a></span>SetJointInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointInfo::SetJointInfo </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>InverseBindMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>LocalMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>WorldMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>allJoints</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, std::vector&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>jointDir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bindPoseTranslation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bindPoseScale</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bindPoseRotation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="#a2dfc223bc9b8cda0f53f0b7344872342">joint</a>, <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bindPosePreRotation</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adeb39c2158207fbba7d0f7d2070ad8d1" name="adeb39c2158207fbba7d0f7d2070ad8d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb39c2158207fbba7d0f7d2070ad8d1">&#9670;&#160;</a></span>setJointName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointInfo::setJointName </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; int, std::string &gt;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00125">125</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a157c06658f9deaa6b92607a102e86013" name="a157c06658f9deaa6b92607a102e86013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157c06658f9deaa6b92607a102e86013">&#9670;&#160;</a></span>setLeftHandedCoordSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointInfo::setLeftHandedCoordSystem </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>islLeft</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00127">127</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a7e1254f1595a51dad4edf4aecbd58cc7" name="a7e1254f1595a51dad4edf4aecbd58cc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e1254f1595a51dad4edf4aecbd58cc7">&#9670;&#160;</a></span>setPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointInfo::setPose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdyno_1_1_pose.html">Pose</a></td>          <td class="paramname"><span class="paramname"><em>pose</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00129">129</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_joint_info_a7e1254f1595a51dad4edf4aecbd58cc7_cgraph.png" border="0" usemap="#aclassdyno_1_1_joint_info_a7e1254f1595a51dad4edf4aecbd58cc7_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_joint_info_a7e1254f1595a51dad4edf4aecbd58cc7_cgraph" id="aclassdyno_1_1_joint_info_a7e1254f1595a51dad4edf4aecbd58cc7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,169,40"/>
+<area shape="rect" href="classdyno_1_1_joint_info.html#a1ee53f22ddfa8ee07459782d2d84a869" title=" " alt="" coords="217,5,404,48"/>
+<area shape="poly" title=" " alt="" coords="169,24,201,24,201,29,169,29"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a1ee53f22ddfa8ee07459782d2d84a869" name="a1ee53f22ddfa8ee07459782d2d84a869"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ee53f22ddfa8ee07459782d2d84a869">&#9670;&#160;</a></span>updateWorldMatrixByTransform()</h2>
 
@@ -656,6 +810,22 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac0b1dbb1ad72f0f52b5328c0d09a3c58" name="ac0b1dbb1ad72f0f52b5328c0d09a3c58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b1dbb1ad72f0f52b5328c0d09a3c58">&#9670;&#160;</a></span>currentPose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdyno_1_1_pose.html">Pose</a> dyno::JointInfo::currentPose</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00191">191</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
 <a id="a6fd923849d45f279bff7072b4284ef37" name="a6fd923849d45f279bff7072b4284ef37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6fd923849d45f279bff7072b4284ef37">&#9670;&#160;</a></span>mAllJoints</h2>
 
@@ -668,7 +838,23 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00115">115</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00201">201</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a448817a72c157a2f5ba78e3ca01b29aa" name="a448817a72c157a2f5ba78e3ca01b29aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a448817a72c157a2f5ba78e3ca01b29aa">&#9670;&#160;</a></span>mBindPosePreRotator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&gt; dyno::JointInfo::mBindPosePreRotator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00198">198</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -684,7 +870,23 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00107">107</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00195">195</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="abad479bb498eab6a35c983efa2bdedcd" name="abad479bb498eab6a35c983efa2bdedcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abad479bb498eab6a35c983efa2bdedcd">&#9670;&#160;</a></span>mBindPoseRotator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&gt; dyno::JointInfo::mBindPoseRotator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00196">196</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -700,7 +902,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00106">106</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00194">194</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -716,55 +918,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00105">105</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
-
-</div>
-</div>
-<a id="aec4b2cd2d811716f537f8adc85e6fb61" name="aec4b2cd2d811716f537f8adc85e6fb61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec4b2cd2d811716f537f8adc85e6fb61">&#9670;&#160;</a></span>mCurrentRotation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt;<a class="el" href="classdyno_1_1_quat.html">Quat</a>&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointInfo::mCurrentRotation</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00112">112</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
-
-</div>
-</div>
-<a id="a9625ed692871fff2086b317421ea1941" name="a9625ed692871fff2086b317421ea1941"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9625ed692871fff2086b317421ea1941">&#9670;&#160;</a></span>mCurrentScale</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt;<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&gt; dyno::JointInfo::mCurrentScale</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00113">113</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
-
-</div>
-</div>
-<a id="af6a4a673de2987d38f779fe48d509f08" name="af6a4a673de2987d38f779fe48d509f08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6a4a673de2987d38f779fe48d509f08">&#9670;&#160;</a></span>mCurrentTranslation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt;<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&gt; dyno::JointInfo::mCurrentTranslation</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00111">111</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00193">193</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -780,7 +934,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00116">116</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00202">202</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -796,23 +950,23 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00101">101</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00185">185</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="a2e03d5a5da0dbbe5e09d9e6878ae10e5" name="a2e03d5a5da0dbbe5e09d9e6878ae10e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e03d5a5da0dbbe5e09d9e6878ae10e5">&#9670;&#160;</a></span>mJointLocalMatrix</h2>
+<a id="a41469387a9dda585e380d53e38a43d09" name="a41469387a9dda585e380d53e38a43d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41469387a9dda585e380d53e38a43d09">&#9670;&#160;</a></span>mJointLocalMatrix</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt;<a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a>&gt; dyno::JointInfo::mJointLocalMatrix</td>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a>&gt; dyno::JointInfo::mJointLocalMatrix</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00102">102</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00186">186</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +982,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00099">99</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00183">183</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -844,7 +998,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00103">103</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00187">187</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -860,12 +1014,36 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00118">118</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00204">204</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="ab9b7e18e2696933d552957910a502b18" name="ab9b7e18e2696933d552957910a502b18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b7e18e2696933d552957910a502b18">&#9670;&#160;</a></span>useLeftHandedCoordSystem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::JointInfo::useLeftHandedCoordSystem = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00207">207</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/Peridyno/peridyno/src/Modeling/<a class="el" href="_joint_info_8h_source.html">JointInfo.h</a></li>
+<li>D:/Peridyno/peridyno/src/Topology/Cuda/Topology/<a class="el" href="_joint_info_8h_source.html">JointInfo.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

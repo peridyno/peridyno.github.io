@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['t_0',['T',['../im_gu_i_z_m_oquat_8cpp.html#ae53008cb938e8e14ae47291e41be8bec',1,'T:&#160;imGuIZMOquat.cpp'],['../v_gizmo_8h.html#a0acb682b8260ab1c60b918599864e2e5',1,'T:&#160;vGizmo.h'],['../vg_math_8h.html#a0acb682b8260ab1c60b918599864e2e5',1,'T:&#160;vgMath.h']]],
-  ['t_5finv_5fpi_1',['T_INV_PI',['../vg_math_8h.html#a84f0f74ac6270e13ede84e67562b5716',1,'vgMath.h']]],
-  ['t_5fpi_2',['T_PI',['../vg_math_8h.html#ab70d01c0bc14a7202086562dccff0710',1,'vgMath.h']]],
-  ['template_5ftypename_5ft_3',['TEMPLATE_TYPENAME_T',['../vg_math_8h.html#a9c200ddbb3a27926547a2007a3ff24bf',1,'vgMath.h']]],
-  ['tinygltf_5fimplementation_4',['TINYGLTF_IMPLEMENTATION',['../_vulkangl_t_f_model_8cpp.html#ac203b64c0edef3702d707aed38ab024a',1,'VulkanglTFModel.cpp']]],
-  ['tinygltf_5fno_5fstb_5fimage_5fwrite_5',['TINYGLTF_NO_STB_IMAGE_WRITE',['../_vulkangl_t_f_model_8cpp.html#ab85d274e208f7c3760dee26d2ab13eb8',1,'TINYGLTF_NO_STB_IMAGE_WRITE:&#160;VulkanglTFModel.cpp'],['../_vulkangl_t_f_model_8h.html#ab85d274e208f7c3760dee26d2ab13eb8',1,'TINYGLTF_NO_STB_IMAGE_WRITE:&#160;VulkanglTFModel.h']]],
-  ['tinyobjloader_5fimplementation_6',['TINYOBJLOADER_IMPLEMENTATION',['../tinyobj__helper_8cpp.html#af14fac7fbc250522a78849d58d5b0811',1,'tinyobj_helper.cpp']]],
-  ['tri_5fmax_7',['TRI_MAX',['../_fast_sweeping_method_8cpp.html#a505aa700668aa74298b6652739e87428',1,'FastSweepingMethod.cpp']]],
-  ['tri_5fmin_8',['TRI_MIN',['../_fast_sweeping_method_8cpp.html#af4094a0dd3e5df67ccc8958b24801845',1,'FastSweepingMethod.cpp']]],
-  ['tt_5fproperty_9',['TT_PROPERTY',['../_styles_8h.html#ace5e89679ea7124eb716d60b72a68bfd',1,'Styles.h']]]
+  ['ramp_5fserialization_0',['RAMP_SERIALIZATION',['../_ramp_8inl.html#aacb162345ebc7ce78b1337c240c9f374',1,'Ramp.inl']]],
+  ['real_5feps_1',['REAL_EPS',['../_compute_geometry_8inl.html#aebb5e6716e06431296af4d1a71744dec',1,'ComputeGeometry.inl']]],
+  ['real_5fequal_2',['REAL_EQUAL',['../_additive_c_c_d_8inl.html#a2a9232dec46b8f19d5d02567aa792f0a',1,'REAL_EQUAL:&#160;AdditiveCCD.inl'],['../_tight_c_c_d_8inl.html#a2a9232dec46b8f19d5d02567aa792f0a',1,'REAL_EQUAL:&#160;TightCCD.inl'],['../_collision_detection_algorithm_8inl.html#a2a9232dec46b8f19d5d02567aa792f0a',1,'REAL_EQUAL:&#160;CollisionDetectionAlgorithm.inl'],['../_compute_geometry_8inl.html#a2a9232dec46b8f19d5d02567aa792f0a',1,'REAL_EQUAL:&#160;ComputeGeometry.inl']]],
+  ['real_5fgreat_3',['REAL_GREAT',['../_additive_c_c_d_8inl.html#a051a338e9f930231dc00e982de9b5416',1,'REAL_GREAT:&#160;AdditiveCCD.inl'],['../_collision_detection_algorithm_8inl.html#a051a338e9f930231dc00e982de9b5416',1,'REAL_GREAT:&#160;CollisionDetectionAlgorithm.inl'],['../_compute_geometry_8inl.html#a051a338e9f930231dc00e982de9b5416',1,'REAL_GREAT:&#160;ComputeGeometry.inl']]],
+  ['real_5finfinity_4',['REAL_infinity',['../_additive_c_c_d_8inl.html#a209e626b87f213543e54118bfb8fcfbc',1,'REAL_infinity:&#160;AdditiveCCD.inl'],['../_tight_c_c_d_8inl.html#a209e626b87f213543e54118bfb8fcfbc',1,'REAL_infinity:&#160;TightCCD.inl'],['../_collision_detection_algorithm_8inl.html#a209e626b87f213543e54118bfb8fcfbc',1,'REAL_infinity:&#160;CollisionDetectionAlgorithm.inl'],['../_compute_geometry_8inl.html#a209e626b87f213543e54118bfb8fcfbc',1,'REAL_infinity:&#160;ComputeGeometry.inl']]],
+  ['real_5fless_5',['REAL_LESS',['../_additive_c_c_d_8inl.html#a2289ef0fa29c922c69efe0fe1f84ef8b',1,'REAL_LESS:&#160;AdditiveCCD.inl'],['../_collision_detection_algorithm_8inl.html#a2289ef0fa29c922c69efe0fe1f84ef8b',1,'REAL_LESS:&#160;CollisionDetectionAlgorithm.inl'],['../_compute_geometry_8inl.html#a2289ef0fa29c922c69efe0fe1f84ef8b',1,'REAL_LESS:&#160;ComputeGeometry.inl']]],
+  ['real_5fzero_6',['REAL_ZERO',['../_compute_geometry_8inl.html#ab8551802efb9fcdd01a8a07aec737c2e',1,'ComputeGeometry.inl']]]
 ];

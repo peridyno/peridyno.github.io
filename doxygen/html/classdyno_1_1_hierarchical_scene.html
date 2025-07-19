@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -129,22 +129,77 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aace6bb22faeaa152f051c11a6cf2f0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ac545ca401f0b5e5dd352465552028c" id="r_a6ac545ca401f0b5e5dd352465552028c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ac545ca401f0b5e5dd352465552028c">clear</a> ()</td></tr>
 <tr class="separator:a6ac545ca401f0b5e5dd352465552028c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a84717da96d96e505bda29c5594c98" id="r_ab6a84717da96d96e505bda29c5594c98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6a84717da96d96e505bda29c5594c98">minMeshIndex</a> ()</td></tr>
+<tr class="separator:ab6a84717da96d96e505bda29c5594c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a373f46f8377f34b2c4c2342bd7715639" id="r_a373f46f8377f34b2c4c2342bd7715639"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a373f46f8377f34b2c4c2342bd7715639">findMeshIndexByName</a> (std::string name)</td></tr>
 <tr class="separator:a373f46f8377f34b2c4c2342bd7715639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f6584d21b5e772426e39c519048c26" id="r_a72f6584d21b5e772426e39c519048c26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72f6584d21b5e772426e39c519048c26">findObjectIndexByName</a> (std::string name)</td></tr>
+<tr class="separator:a72f6584d21b5e772426e39c519048c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a30052e1d40200c4d533d63f1ae9d0" id="r_ad4a30052e1d40200c4d533d63f1ae9d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4a30052e1d40200c4d533d63f1ae9d0">pushBackBone</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_bone.html">Bone</a> &gt; bone)</td></tr>
+<tr class="separator:ad4a30052e1d40200c4d533d63f1ae9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad44ec9d93a55827a93857fb3ead12f59" id="r_ad44ec9d93a55827a93857fb3ead12f59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad44ec9d93a55827a93857fb3ead12f59">pushBackMesh</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_mesh_info.html">MeshInfo</a> &gt; mesh)</td></tr>
+<tr class="separator:ad44ec9d93a55827a93857fb3ead12f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5560cb7fab371543e6c9d315ee46bbd3" id="r_a5560cb7fab371543e6c9d315ee46bbd3"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_model_object.html">ModelObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5560cb7fab371543e6c9d315ee46bbd3">getObjectByName</a> (std::string name)</td></tr>
 <tr class="separator:a5560cb7fab371543e6c9d315ee46bbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81ecee957b308a1c5bcd0e87f8c9d10b" id="r_a81ecee957b308a1c5bcd0e87f8c9d10b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81ecee957b308a1c5bcd0e87f8c9d10b">getObjIndexByName</a> (std::string name)</td></tr>
 <tr class="separator:a81ecee957b308a1c5bcd0e87f8c9d10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0aedf0b6661112f3d2284344f1f2ea5" id="r_ae0aedf0b6661112f3d2284344f1f2ea5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0aedf0b6661112f3d2284344f1f2ea5">getBoneIndexByName</a> (std::string name)</td></tr>
 <tr class="separator:ae0aedf0b6661112f3d2284344f1f2ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68554325cd881029cdef11ed77ec4c5d" id="r_a68554325cd881029cdef11ed77ec4c5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68554325cd881029cdef11ed77ec4c5d">updateBoneWorldMatrix</a> ()</td></tr>
+<tr class="separator:a68554325cd881029cdef11ed77ec4c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25f92f44b99433202b81a28910079ef" id="r_ae25f92f44b99433202b81a28910079ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae25f92f44b99433202b81a28910079ef">updateMeshWorldMatrix</a> ()</td></tr>
+<tr class="separator:ae25f92f44b99433202b81a28910079ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33b25a2b4ed104056cfed812a0c08d90" id="r_a33b25a2b4ed104056cfed812a0c08d90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33b25a2b4ed104056cfed812a0c08d90">updateInverseBindMatrix</a> ()</td></tr>
 <tr class="separator:a33b25a2b4ed104056cfed812a0c08d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86413a3bd4d9391d68e38050cf64d3c8" id="r_a86413a3bd4d9391d68e38050cf64d3c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86413a3bd4d9391d68e38050cf64d3c8">updateFrameWorldTransform</a> (<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> time)</td></tr>
-<tr class="separator:a86413a3bd4d9391d68e38050cf64d3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac32d9b75c034074082db8e6be80cf24b" id="r_ac32d9b75c034074082db8e6be80cf24b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac32d9b75c034074082db8e6be80cf24b">updateWorldTransformByKeyFrame</a> (<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> time)</td></tr>
+<tr class="separator:ac32d9b75c034074082db8e6be80cf24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa35dfd6ea80bd73b81a38f62b3c7965e" id="r_aa35dfd6ea80bd73b81a38f62b3c7965e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa35dfd6ea80bd73b81a38f62b3c7965e">getVectorDataByTime</a> (std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; data, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; timeCode, <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> time)</td></tr>
 <tr class="separator:aa35dfd6ea80bd73b81a38f62b3c7965e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9111b38e3919751f4adf6dcefb3b690b" id="r_a9111b38e3919751f4adf6dcefb3b690b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9111b38e3919751f4adf6dcefb3b690b">findMaxSmallerIndex</a> (const std::vector&lt; float &gt; &amp;arr, float v)</td></tr>
 <tr class="separator:a9111b38e3919751f4adf6dcefb3b690b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8948dfef32bb54d2a5334500ad09fd6" id="r_af8948dfef32bb54d2a5334500ad09fd6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_bone.html">Bone</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8948dfef32bb54d2a5334500ad09fd6">getBones</a> ()</td></tr>
+<tr class="separator:af8948dfef32bb54d2a5334500ad09fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c38522e6e832e155da9df05e29c0722" id="r_a4c38522e6e832e155da9df05e29c0722"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c38522e6e832e155da9df05e29c0722">skinAnimation</a> (<a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;intialPosition, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;worldPosition, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;joint_inverseBindMatrix, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;WorldMatrix, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_0, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_1, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_2, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_0, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_1, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_2, <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> transform, bool isNormal, <a class="el" href="namespacedyno.html#a7272e12a721e30a986082753e056a11a">Vec2u</a> range)</td></tr>
+<tr class="separator:a4c38522e6e832e155da9df05e29c0722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195e2707c21db75e61ee5c26ef5cf175" id="r_a195e2707c21db75e61ee5c26ef5cf175"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a195e2707c21db75e61ee5c26ef5cf175">skinVerticesAnimation</a> (<a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;intialVertices, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;Vertices, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;joint_inverseBindMatrix, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;WorldMatrix, <a class="el" href="namespacedyno.html#aa32862bcbf20b29134e18bad504c7f87">DArrayList</a>&lt; int &gt; &amp;point2Vertice, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_0, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_1, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_2, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_0, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_1, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_2, <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> transform, bool isNormal, <a class="el" href="namespacedyno.html#a7272e12a721e30a986082753e056a11a">Vec2u</a> range)</td></tr>
+<tr class="separator:a195e2707c21db75e61ee5c26ef5cf175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb1a2591934f233b85300cc56ed83c0" id="r_a2cb1a2591934f233b85300cc56ed83c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cb1a2591934f233b85300cc56ed83c0">c_skinVerticesAnimation</a> (<a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;intialVertices, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;Vertices, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;joint_inverseBindMatrix, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;WorldMatrix, <a class="el" href="namespacedyno.html#aa32862bcbf20b29134e18bad504c7f87">DArrayList</a>&lt; int &gt; &amp;point2Vertice, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_0, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_1, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_2, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_0, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_1, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_2, <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> transform, bool isNormal, <a class="el" href="namespacedyno.html#a7272e12a721e30a986082753e056a11a">Vec2u</a> range)</td></tr>
+<tr class="separator:a2cb1a2591934f233b85300cc56ed83c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c08de0995a1ea713f4bb09532681543" id="r_a0c08de0995a1ea713f4bb09532681543"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c08de0995a1ea713f4bb09532681543">getVerticesNormalInBindPose</a> (<a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;initialNormal, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;joint_inverseBindMatrix, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;WorldMatrix, <a class="el" href="namespacedyno.html#aa32862bcbf20b29134e18bad504c7f87">DArrayList</a>&lt; int &gt; &amp;point2Vertice, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_0, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_1, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;bind_joints_2, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_0, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_1, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;weights_2, <a class="el" href="namespacedyno.html#a7272e12a721e30a986082753e056a11a">Vec2u</a> range)</td></tr>
+<tr class="separator:a0c08de0995a1ea713f4bb09532681543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee1cecd871d7367b1fbd3a05abae6f1" id="r_a9ee1cecd871d7367b1fbd3a05abae6f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ee1cecd871d7367b1fbd3a05abae6f1">updatePoint2Vertice</a> (<a class="el" href="namespacedyno.html#aa32862bcbf20b29134e18bad504c7f87">DArrayList</a>&lt; int &gt; &amp;d_p2v, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; int &gt; &amp;d_v2p)</td></tr>
+<tr class="separator:a9ee1cecd871d7367b1fbd3a05abae6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c57d0db06e59d351f50995d4f2b53e" id="r_a47c57d0db06e59d351f50995d4f2b53e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47c57d0db06e59d351f50995d4f2b53e">UpdateJointData</a> ()</td></tr>
+<tr class="separator:a47c57d0db06e59d351f50995d4f2b53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf325cf516723cb4dade3f4a611a416d" id="r_adf325cf516723cb4dade3f4a611a416d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf325cf516723cb4dade3f4a611a416d">coutBoneHierarchial</a> ()</td></tr>
+<tr class="separator:adf325cf516723cb4dade3f4a611a416d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a997bae53d376e4538588318607fde31c" id="r_a997bae53d376e4538588318607fde31c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a997bae53d376e4538588318607fde31c">updateSkinData</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_texture_mesh.html">TextureMesh</a> &gt; texMesh)</td></tr>
+<tr class="separator:a997bae53d376e4538588318607fde31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f940b7aa617eee6daca9360428383c" id="r_aa0f940b7aa617eee6daca9360428383c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0f940b7aa617eee6daca9360428383c">createLocalTransform</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_model_object.html">ModelObject</a> &gt; object)</td></tr>
+<tr class="separator:aa0f940b7aa617eee6daca9360428383c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e3dee3966d275cebe186f90641790e" id="r_a58e3dee3966d275cebe186f90641790e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58e3dee3966d275cebe186f90641790e">coutMatrix</a> (int <a class="el" href="classdyno_1_1_object.html#a6ae10c2a19a7ad14fe7d2085032eeeea">id</a>, <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> c)</td></tr>
+<tr class="separator:a58e3dee3966d275cebe186f90641790e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379f57e28638e0619d2b2af0dfcc64c7" id="r_a379f57e28638e0619d2b2af0dfcc64c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a379f57e28638e0619d2b2af0dfcc64c7">showJointInfo</a> ()</td></tr>
+<tr class="separator:a379f57e28638e0619d2b2af0dfcc64c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914ee3259190c7902757730aef8a4721" id="r_a914ee3259190c7902757730aef8a4721"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, typename <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a>&gt; </td></tr>
+<tr class="memitem:a914ee3259190c7902757730aef8a4721"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a914ee3259190c7902757730aef8a4721">textureMeshTransform</a> (<a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;intialPosition, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;worldPosition, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;intialNormal, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;Normal, <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &amp;WorldMatrix)</td></tr>
+<tr class="separator:a914ee3259190c7902757730aef8a4721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c94136887177039ad3fb947541c03b" id="r_a45c94136887177039ad3fb947541c03b"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, typename <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a>&gt; </td></tr>
+<tr class="memitem:a45c94136887177039ad3fb947541c03b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a45c94136887177039ad3fb947541c03b">shapeTransform</a> (<a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;intialPosition, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;worldPosition, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;intialNormal, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;Normal, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;WorldMatrix, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> &gt; &amp;vertexId_shape, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; int &gt; &amp;shapeId_MeshId)</td></tr>
+<tr class="separator:a45c94136887177039ad3fb947541c03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ad1af22721b50ece3c2661b6617524" id="r_a71ad1af22721b50ece3c2661b6617524"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, typename <a class="el" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a>&gt; </td></tr>
+<tr class="memitem:a71ad1af22721b50ece3c2661b6617524"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a71ad1af22721b50ece3c2661b6617524">shapeToCenter</a> (<a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;iniPos, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;finalPos, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> &gt; &amp;shapeId, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;t)</td></tr>
+<tr class="separator:a71ad1af22721b50ece3c2661b6617524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54bfeb91ba85aaa431277ae5eb2288d" id="r_aa54bfeb91ba85aaa431277ae5eb2288d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_mesh_info.html">MeshInfo</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa54bfeb91ba85aaa431277ae5eb2288d">getMeshes</a> ()</td></tr>
+<tr class="separator:aa54bfeb91ba85aaa431277ae5eb2288d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd70658cc7cc31e6001cf97d490965f9" id="r_afd70658cc7cc31e6001cf97d490965f9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd70658cc7cc31e6001cf97d490965f9">getObjectWorldMatrix</a> ()</td></tr>
+<tr class="separator:afd70658cc7cc31e6001cf97d490965f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66057296de33f70660cdb1889f845dba" id="r_a66057296de33f70660cdb1889f845dba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66057296de33f70660cdb1889f845dba">computeTexMeshVerticesNormal</a> (std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_shape.html">Shape</a> &gt; &gt; &amp;shapes, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;Position, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;Normal, <a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; int &gt; *vertices2Point=nullptr)</td></tr>
+<tr class="separator:a66057296de33f70660cdb1889f845dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e83217472ba4240ab61def38bf07bc5" id="r_a4e83217472ba4240ab61def38bf07bc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e83217472ba4240ab61def38bf07bc5">flipNormal</a> (<a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;Normal)</td></tr>
+<tr class="separator:a4e83217472ba4240ab61def38bf07bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae6944a434fcdac8eba2c2b53748aee" id="r_a7ae6944a434fcdac8eba2c2b53748aee"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_animation_info.html">JointAnimationInfo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ae6944a434fcdac8eba2c2b53748aee">getJointAnimation</a> ()</td></tr>
+<tr class="separator:a7ae6944a434fcdac8eba2c2b53748aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdyno_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_object.html">dyno::Object</a></td></tr>
 <tr class="memitem:a7cd85508bee007243ca06e356b284250 inherit pub_methods_classdyno_1_1_object" id="r_a7cd85508bee007243ca06e356b284250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a7cd85508bee007243ca06e356b284250">Object</a> ()</td></tr>
 <tr class="separator:a7cd85508bee007243ca06e356b284250 inherit pub_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +212,8 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa54bc35737e1c5c0af517ad10594dade" id="r_aa54bc35737e1c5c0af517ad10594dade"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_model_object.html">ModelObject</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa54bc35737e1c5c0af517ad10594dade">mModelObjects</a></td></tr>
 <tr class="separator:aa54bc35737e1c5c0af517ad10594dade"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35270c23c8f99d714f61907eae55ff33" id="r_a35270c23c8f99d714f61907eae55ff33"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_mesh_info.html">MeshInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35270c23c8f99d714f61907eae55ff33">mMeshs</a></td></tr>
-<tr class="separator:a35270c23c8f99d714f61907eae55ff33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ee0d31fccd64a9692f3a93945b5c79" id="r_a51ee0d31fccd64a9692f3a93945b5c79"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_mesh_info.html">MeshInfo</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51ee0d31fccd64a9692f3a93945b5c79">mMeshes</a></td></tr>
+<tr class="separator:a51ee0d31fccd64a9692f3a93945b5c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62f3f2005f27751cd4b4a67915e9db83" id="r_a62f3f2005f27751cd4b4a67915e9db83"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_bone.html">Bone</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62f3f2005f27751cd4b4a67915e9db83">mBones</a></td></tr>
 <tr class="separator:a62f3f2005f27751cd4b4a67915e9db83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dbc0940936dd328e551f9c352e38125" id="r_a8dbc0940936dd328e551f9c352e38125"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dbc0940936dd328e551f9c352e38125">mBoneRotations</a></td></tr>
@@ -171,6 +226,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3f4d3d04b26860f2e29560a9829b4da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a608b2253f4dee1f874584d7aec988d19" id="r_a608b2253f4dee1f874584d7aec988d19"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a608b2253f4dee1f874584d7aec988d19">mBoneInverseBindMatrix</a></td></tr>
 <tr class="separator:a608b2253f4dee1f874584d7aec988d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141bbe2a44d07ce9afb5be3c34e445da" id="r_a141bbe2a44d07ce9afb5be3c34e445da"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a141bbe2a44d07ce9afb5be3c34e445da">mBoneLocalMatrix</a></td></tr>
+<tr class="separator:a141bbe2a44d07ce9afb5be3c34e445da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95470344ee24c8eec602ef9f98225486" id="r_a95470344ee24c8eec602ef9f98225486"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95470344ee24c8eec602ef9f98225486">mJointData</a></td></tr>
+<tr class="separator:a95470344ee24c8eec602ef9f98225486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ac97598046d533cbaa0ea054de289d" id="r_a31ac97598046d533cbaa0ea054de289d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_skin_info.html">SkinInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31ac97598046d533cbaa0ea054de289d">mSkinData</a></td></tr>
+<tr class="separator:a31ac97598046d533cbaa0ea054de289d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd1d2ac31ac699229454ba3768cb056" id="r_a2fd1d2ac31ac699229454ba3768cb056"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_animation_info.html">JointAnimationInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fd1d2ac31ac699229454ba3768cb056">mJointAnimationData</a></td></tr>
+<tr class="separator:a2fd1d2ac31ac699229454ba3768cb056"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76ed66001177da9e0c9464b3d831423d" id="r_a76ed66001177da9e0c9464b3d831423d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76ed66001177da9e0c9464b3d831423d">mTimeStart</a> = -1</td></tr>
 <tr class="separator:a76ed66001177da9e0c9464b3d831423d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22274a7768c944ec6ef64f89a88e8815" id="r_a22274a7768c944ec6ef64f89a88e8815"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22274a7768c944ec6ef64f89a88e8815">mTimeEnd</a> = -1</td></tr>
@@ -178,6 +241,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a38f181809376ddc194e3db05c5a64ca0" id="r_a38f181809376ddc194e3db05c5a64ca0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38f181809376ddc194e3db05c5a64ca0">buildTree</a> (std::string &amp;str, const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_model_object.html">ModelObject</a> &gt; &gt; &amp;child, <a class="el" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> level)</td></tr>
+<tr class="separator:a38f181809376ddc194e3db05c5a64ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ec82344df2a4235b35e0756ab67212" id="r_a28ec82344df2a4235b35e0756ab67212"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28ec82344df2a4235b35e0756ab67212">lerp</a> (<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> v0, <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> v1, float weight)</td></tr>
 <tr class="separator:a28ec82344df2a4235b35e0756ab67212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -201,16 +266,13 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00100">100</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00099">99</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac1353b939ebf9deef77d0a871c86122c" name="ac1353b939ebf9deef77d0a871c86122c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1353b939ebf9deef77d0a871c86122c">&#9670;&#160;</a></span>HierarchicalScene()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">dyno::HierarchicalScene::HierarchicalScene </td>
@@ -219,14 +281,7 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00103">103</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -235,9 +290,6 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">dyno::HierarchicalScene::~HierarchicalScene </td>
@@ -246,30 +298,13 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00108">108</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_hierarchical_scene_aace6bb22faeaa152f051c11a6cf2f0f2_cgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_aace6bb22faeaa152f051c11a6cf2f0f2_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_hierarchical_scene_aace6bb22faeaa152f051c11a6cf2f0f2_cgraph" id="aclassdyno_1_1_hierarchical_scene_aace6bb22faeaa152f051c11a6cf2f0f2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,169,48"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#a6ac545ca401f0b5e5dd352465552028c" title=" " alt="" coords="217,5,380,48"/>
-<area shape="poly" title=" " alt="" coords="169,24,201,24,201,29,169,29"/>
-</map>
-</div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6ac545ca401f0b5e5dd352465552028c" name="a6ac545ca401f0b5e5dd352465552028c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ac545ca401f0b5e5dd352465552028c">&#9670;&#160;</a></span>clear()</h2>
+<a id="a38f181809376ddc194e3db05c5a64ca0" name="a38f181809376ddc194e3db05c5a64ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f181809376ddc194e3db05c5a64ca0">&#9670;&#160;</a></span>buildTree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,10 +313,214 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
+          <td class="memname">void dyno::HierarchicalScene::buildTree </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_model_object.html">ModelObject</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>child</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00280">280</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_hierarchical_scene_a38f181809376ddc194e3db05c5a64ca0_cgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_a38f181809376ddc194e3db05c5a64ca0_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_hierarchical_scene_a38f181809376ddc194e3db05c5a64ca0_cgraph" id="aclassdyno_1_1_hierarchical_scene_a38f181809376ddc194e3db05c5a64ca0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,169,72"/>
+<area shape="poly" title=" " alt="" coords="55,29,54,19,59,11,70,5,87,3,105,5,116,11,113,16,103,10,87,8,72,10,63,14,59,20,60,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_hierarchical_scene_a38f181809376ddc194e3db05c5a64ca0_icgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_a38f181809376ddc194e3db05c5a64ca0_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_hierarchical_scene_a38f181809376ddc194e3db05c5a64ca0_icgraph" id="aclassdyno_1_1_hierarchical_scene_a38f181809376ddc194e3db05c5a64ca0_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,169,72"/>
+<area shape="poly" title=" " alt="" coords="113,16,103,10,87,8,72,10,63,14,59,20,60,28,55,29,54,19,59,11,70,5,87,3,105,5,116,11"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2cb1a2591934f233b85300cc56ed83c0" name="a2cb1a2591934f233b85300cc56ed83c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb1a2591934f233b85300cc56ed83c0">&#9670;&#160;</a></span>c_skinVerticesAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::c_skinVerticesAnimation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>intialVertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>Vertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>joint_inverseBindMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>WorldMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#aa32862bcbf20b29134e18bad504c7f87">DArrayList</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>point2Vertice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a></td>          <td class="paramname"><span class="paramname"><em>transform</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a7272e12a721e30a986082753e056a11a">Vec2u</a></td>          <td class="paramname"><span class="paramname"><em>range</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ac545ca401f0b5e5dd352465552028c" name="a6ac545ca401f0b5e5dd352465552028c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac545ca401f0b5e5dd352465552028c">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
           <td class="memname">void dyno::HierarchicalScene::clear </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66057296de33f70660cdb1889f845dba" name="a66057296de33f70660cdb1889f845dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66057296de33f70660cdb1889f845dba">&#9670;&#160;</a></span>computeTexMeshVerticesNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::computeTexMeshVerticesNormal </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_shape.html">Shape</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>shapes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>Position</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>Normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; int &gt; *</td>          <td class="paramname"><span class="paramname"><em>vertices2Point</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf325cf516723cb4dade3f4a611a416d" name="adf325cf516723cb4dade3f4a611a416d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf325cf516723cb4dade3f4a611a416d">&#9670;&#160;</a></span>coutBoneHierarchial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::coutBoneHierarchial </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58e3dee3966d275cebe186f90641790e" name="a58e3dee3966d275cebe186f90641790e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e3dee3966d275cebe186f90641790e">&#9670;&#160;</a></span>coutMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::coutMatrix </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a></td>          <td class="paramname"><span class="paramname"><em>c</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -291,17 +530,24 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00110">110</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_hierarchical_scene_a6ac545ca401f0b5e5dd352465552028c_icgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_a6ac545ca401f0b5e5dd352465552028c_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_hierarchical_scene_a6ac545ca401f0b5e5dd352465552028c_icgraph" id="aclassdyno_1_1_hierarchical_scene_a6ac545ca401f0b5e5dd352465552028c_icgraph">
-<area shape="rect" title=" " alt="" coords="217,5,380,48"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#aace6bb22faeaa152f051c11a6cf2f0f2" title=" " alt="" coords="5,5,169,48"/>
-<area shape="poly" title=" " alt="" coords="201,29,169,29,169,24,201,24"/>
-</map>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00205">205</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+
 </div>
+</div>
+<a id="aa0f940b7aa617eee6daca9360428383c" name="aa0f940b7aa617eee6daca9360428383c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f940b7aa617eee6daca9360428383c">&#9670;&#160;</a></span>createLocalTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> dyno::HierarchicalScene::createLocalTransform </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_model_object.html">ModelObject</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>object</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -310,9 +556,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int dyno::HierarchicalScene::findMaxSmallerIndex </td>
@@ -325,26 +568,7 @@ Here is the caller graph for this function:</div>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>v</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00249">249</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_hierarchical_scene_a9111b38e3919751f4adf6dcefb3b690b_icgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_a9111b38e3919751f4adf6dcefb3b690b_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_hierarchical_scene_a9111b38e3919751f4adf6dcefb3b690b_icgraph" id="aclassdyno_1_1_hierarchical_scene_a9111b38e3919751f4adf6dcefb3b690b_icgraph">
-<area shape="rect" title=" " alt="" coords="462,5,625,48"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#aa35dfd6ea80bd73b81a38f62b3c7965e" title=" " alt="" coords="251,5,414,48"/>
-<area shape="poly" title=" " alt="" coords="447,29,414,29,414,24,447,24"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#a86413a3bd4d9391d68e38050cf64d3c8" title=" " alt="" coords="5,5,203,48"/>
-<area shape="poly" title=" " alt="" coords="235,29,203,29,203,24,235,24"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -353,9 +577,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int dyno::HierarchicalScene::findMeshIndexByName </td>
@@ -364,14 +585,41 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00115">115</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+</div>
+</div>
+<a id="a72f6584d21b5e772426e39c519048c26" name="a72f6584d21b5e772426e39c519048c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f6584d21b5e772426e39c519048c26">&#9670;&#160;</a></span>findObjectIndexByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dyno::HierarchicalScene::findObjectIndexByName </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e83217472ba4240ab61def38bf07bc5" name="a4e83217472ba4240ab61def38bf07bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e83217472ba4240ab61def38bf07bc5">&#9670;&#160;</a></span>flipNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::flipNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>Normal</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -380,9 +628,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int dyno::HierarchicalScene::getBoneIndexByName </td>
@@ -391,6 +636,26 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8948dfef32bb54d2a5334500ad09fd6" name="af8948dfef32bb54d2a5334500ad09fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8948dfef32bb54d2a5334500ad09fd6">&#9670;&#160;</a></span>getBones()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_bone.html">Bone</a> &gt; &gt; &amp; dyno::HierarchicalScene::getBones </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
@@ -398,19 +663,61 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00151">151</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_hierarchical_scene_ae0aedf0b6661112f3d2284344f1f2ea5_icgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_ae0aedf0b6661112f3d2284344f1f2ea5_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_hierarchical_scene_ae0aedf0b6661112f3d2284344f1f2ea5_icgraph" id="aclassdyno_1_1_hierarchical_scene_ae0aedf0b6661112f3d2284344f1f2ea5_icgraph">
-<area shape="rect" title=" " alt="" coords="251,39,414,81"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#a86413a3bd4d9391d68e38050cf64d3c8" title=" " alt="" coords="5,5,203,48"/>
-<area shape="poly" title=" " alt="" coords="235,48,203,44,203,38,236,43"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#a33b25a2b4ed104056cfed812a0c08d90" title=" " alt="" coords="17,72,191,115"/>
-<area shape="poly" title=" " alt="" coords="236,77,192,83,191,78,235,72"/>
-</map>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00122">122</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+
 </div>
+</div>
+<a id="a7ae6944a434fcdac8eba2c2b53748aee" name="a7ae6944a434fcdac8eba2c2b53748aee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ae6944a434fcdac8eba2c2b53748aee">&#9670;&#160;</a></span>getJointAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_animation_info.html">JointAnimationInfo</a> &gt; &amp; dyno::HierarchicalScene::getJointAnimation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00275">275</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+
+</div>
+</div>
+<a id="aa54bfeb91ba85aaa431277ae5eb2288d" name="aa54bfeb91ba85aaa431277ae5eb2288d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54bfeb91ba85aaa431277ae5eb2288d">&#9670;&#160;</a></span>getMeshes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classdyno_1_1_mesh_info.html">MeshInfo</a> &gt; &gt; &amp; dyno::HierarchicalScene::getMeshes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00246">246</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -419,9 +726,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_model_object.html">ModelObject</a> &gt; dyno::HierarchicalScene::getObjectByName </td>
@@ -430,19 +734,12 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00127">127</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
-
 </div>
 </div>
-<a id="a81ecee957b308a1c5bcd0e87f8c9d10b" name="a81ecee957b308a1c5bcd0e87f8c9d10b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81ecee957b308a1c5bcd0e87f8c9d10b">&#9670;&#160;</a></span>getObjIndexByName()</h2>
+<a id="afd70658cc7cc31e6001cf97d490965f9" name="afd70658cc7cc31e6001cf97d490965f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd70658cc7cc31e6001cf97d490965f9">&#9670;&#160;</a></span>getObjectWorldMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,9 +748,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int dyno::HierarchicalScene::getObjIndexByName </td>
+          <td class="memname">std::vector&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; dyno::HierarchicalScene::getObjectWorldMatrix </td>
           <td>(</td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -464,7 +761,34 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00139">139</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00248">248</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_hierarchical_scene_afd70658cc7cc31e6001cf97d490965f9_cgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_afd70658cc7cc31e6001cf97d490965f9_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_hierarchical_scene_afd70658cc7cc31e6001cf97d490965f9_cgraph" id="aclassdyno_1_1_hierarchical_scene_afd70658cc7cc31e6001cf97d490965f9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,169,48"/>
+<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#ae25f92f44b99433202b81a28910079ef" title=" " alt="" coords="217,5,386,48"/>
+<area shape="poly" title=" " alt="" coords="169,24,201,24,201,29,169,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a81ecee957b308a1c5bcd0e87f8c9d10b" name="a81ecee957b308a1c5bcd0e87f8c9d10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ecee957b308a1c5bcd0e87f8c9d10b">&#9670;&#160;</a></span>getObjIndexByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dyno::HierarchicalScene::getObjIndexByName </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -473,9 +797,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> dyno::HierarchicalScene::getVectorDataByTime </td>
@@ -493,36 +814,73 @@ Here is the caller graph for this function:</div>
           <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>time</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00227">227</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_hierarchical_scene_aa35dfd6ea80bd73b81a38f62b3c7965e_cgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_aa35dfd6ea80bd73b81a38f62b3c7965e_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_hierarchical_scene_aa35dfd6ea80bd73b81a38f62b3c7965e_cgraph" id="aclassdyno_1_1_hierarchical_scene_aa35dfd6ea80bd73b81a38f62b3c7965e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,169,81"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#a9111b38e3919751f4adf6dcefb3b690b" title=" " alt="" coords="217,5,380,48"/>
-<area shape="poly" title=" " alt="" coords="169,44,201,39,202,45,169,50"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#a28ec82344df2a4235b35e0756ab67212" title=" " alt="" coords="217,72,380,115"/>
-<area shape="poly" title=" " alt="" coords="169,70,202,75,201,81,169,76"/>
-</map>
 </div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_hierarchical_scene_aa35dfd6ea80bd73b81a38f62b3c7965e_icgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_aa35dfd6ea80bd73b81a38f62b3c7965e_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_hierarchical_scene_aa35dfd6ea80bd73b81a38f62b3c7965e_icgraph" id="aclassdyno_1_1_hierarchical_scene_aa35dfd6ea80bd73b81a38f62b3c7965e_icgraph">
-<area shape="rect" title=" " alt="" coords="251,5,414,48"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#a86413a3bd4d9391d68e38050cf64d3c8" title=" " alt="" coords="5,5,203,48"/>
-<area shape="poly" title=" " alt="" coords="235,29,203,29,203,24,235,24"/>
-</map>
 </div>
+<a id="a0c08de0995a1ea713f4bb09532681543" name="a0c08de0995a1ea713f4bb09532681543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c08de0995a1ea713f4bb09532681543">&#9670;&#160;</a></span>getVerticesNormalInBindPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::getVerticesNormalInBindPose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>initialNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>joint_inverseBindMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>WorldMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#aa32862bcbf20b29134e18bad504c7f87">DArrayList</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>point2Vertice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a7272e12a721e30a986082753e056a11a">Vec2u</a></td>          <td class="paramname"><span class="paramname"><em>range</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -553,67 +911,371 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00294">294</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_hierarchical_scene_a28ec82344df2a4235b35e0756ab67212_icgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_a28ec82344df2a4235b35e0756ab67212_icgraph" alt=""/></div>
-<map name="aclassdyno_1_1_hierarchical_scene_a28ec82344df2a4235b35e0756ab67212_icgraph" id="aclassdyno_1_1_hierarchical_scene_a28ec82344df2a4235b35e0756ab67212_icgraph">
-<area shape="rect" title=" " alt="" coords="462,5,625,48"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#aa35dfd6ea80bd73b81a38f62b3c7965e" title=" " alt="" coords="251,5,414,48"/>
-<area shape="poly" title=" " alt="" coords="447,29,414,29,414,24,447,24"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#a86413a3bd4d9391d68e38050cf64d3c8" title=" " alt="" coords="5,5,203,48"/>
-<area shape="poly" title=" " alt="" coords="235,29,203,29,203,24,235,24"/>
-</map>
-</div>
-
 </div>
 </div>
-<a id="a86413a3bd4d9391d68e38050cf64d3c8" name="a86413a3bd4d9391d68e38050cf64d3c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86413a3bd4d9391d68e38050cf64d3c8">&#9670;&#160;</a></span>updateFrameWorldTransform()</h2>
+<a id="ab6a84717da96d96e505bda29c5594c98" name="ab6a84717da96d96e505bda29c5594c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a84717da96d96e505bda29c5594c98">&#9670;&#160;</a></span>minMeshIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::HierarchicalScene::updateFrameWorldTransform </td>
+          <td class="memname">int dyno::HierarchicalScene::minMeshIndex </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>time</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00185">185</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_hierarchical_scene_a86413a3bd4d9391d68e38050cf64d3c8_cgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_a86413a3bd4d9391d68e38050cf64d3c8_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_hierarchical_scene_a86413a3bd4d9391d68e38050cf64d3c8_cgraph" id="aclassdyno_1_1_hierarchical_scene_a86413a3bd4d9391d68e38050cf64d3c8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,203,81"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#ae0aedf0b6661112f3d2284344f1f2ea5" title=" " alt="" coords="251,5,414,48"/>
-<area shape="poly" title=" " alt="" coords="203,43,235,38,236,43,203,48"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#aa35dfd6ea80bd73b81a38f62b3c7965e" title=" " alt="" coords="251,72,414,115"/>
-<area shape="poly" title=" " alt="" coords="203,72,236,77,235,82,203,77"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#a9111b38e3919751f4adf6dcefb3b690b" title=" " alt="" coords="462,39,625,81"/>
-<area shape="poly" title=" " alt="" coords="414,78,446,73,447,78,415,83"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#a28ec82344df2a4235b35e0756ab67212" title=" " alt="" coords="462,105,625,148"/>
-<area shape="poly" title=" " alt="" coords="415,104,447,109,446,114,414,109"/>
-</map>
 </div>
+</div>
+<a id="ad4a30052e1d40200c4d533d63f1ae9d0" name="ad4a30052e1d40200c4d533d63f1ae9d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a30052e1d40200c4d533d63f1ae9d0">&#9670;&#160;</a></span>pushBackBone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::pushBackBone </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_bone.html">Bone</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>bone</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad44ec9d93a55827a93857fb3ead12f59" name="ad44ec9d93a55827a93857fb3ead12f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad44ec9d93a55827a93857fb3ead12f59">&#9670;&#160;</a></span>pushBackMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::pushBackMesh </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_mesh_info.html">MeshInfo</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71ad1af22721b50ece3c2661b6617524" name="a71ad1af22721b50ece3c2661b6617524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ad1af22721b50ece3c2661b6617524">&#9670;&#160;</a></span>shapeToCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, typename <a class="el" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a>&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::shapeToCenter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>iniPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>finalPos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>shapeId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45c94136887177039ad3fb947541c03b" name="a45c94136887177039ad3fb947541c03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45c94136887177039ad3fb947541c03b">&#9670;&#160;</a></span>shapeTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, typename <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a>&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::shapeTransform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>intialPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>worldPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>intialNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>Normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>WorldMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#ac37f85d71d5834a7fb54b41149b1f392">uint</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vertexId_shape</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>shapeId_MeshId</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a379f57e28638e0619d2b2af0dfcc64c7" name="a379f57e28638e0619d2b2af0dfcc64c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379f57e28638e0619d2b2af0dfcc64c7">&#9670;&#160;</a></span>showJointInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::showJointInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c38522e6e832e155da9df05e29c0722" name="a4c38522e6e832e155da9df05e29c0722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c38522e6e832e155da9df05e29c0722">&#9670;&#160;</a></span>skinAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::skinAnimation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>intialPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>worldPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>joint_inverseBindMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>WorldMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a></td>          <td class="paramname"><span class="paramname"><em>transform</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a7272e12a721e30a986082753e056a11a">Vec2u</a></td>          <td class="paramname"><span class="paramname"><em>range</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a195e2707c21db75e61ee5c26ef5cf175" name="a195e2707c21db75e61ee5c26ef5cf175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a195e2707c21db75e61ee5c26ef5cf175">&#9670;&#160;</a></span>skinVerticesAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::skinVerticesAnimation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>intialVertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>Vertices</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>joint_inverseBindMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>WorldMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#aa32862bcbf20b29134e18bad504c7f87">DArrayList</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>point2Vertice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bind_joints_2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#a6c9c49c21cf53254d1dcb471f4c7053f">Vec4f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>weights_2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a></td>          <td class="paramname"><span class="paramname"><em>transform</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a7272e12a721e30a986082753e056a11a">Vec2u</a></td>          <td class="paramname"><span class="paramname"><em>range</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a914ee3259190c7902757730aef8a4721" name="a914ee3259190c7902757730aef8a4721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a914ee3259190c7902757730aef8a4721">&#9670;&#160;</a></span>textureMeshTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>, typename <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a>&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::textureMeshTransform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>intialPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>worldPosition</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>intialNormal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>Normal</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>WorldMatrix</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68554325cd881029cdef11ed77ec4c5d" name="a68554325cd881029cdef11ed77ec4c5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68554325cd881029cdef11ed77ec4c5d">&#9670;&#160;</a></span>updateBoneWorldMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::updateBoneWorldMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -622,9 +1284,6 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void dyno::HierarchicalScene::updateInverseBindMatrix </td>
@@ -633,24 +1292,106 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00164">164</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+</div>
+</div>
+<a id="a47c57d0db06e59d351f50995d4f2b53e" name="a47c57d0db06e59d351f50995d4f2b53e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c57d0db06e59d351f50995d4f2b53e">&#9670;&#160;</a></span>UpdateJointData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::UpdateJointData </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae25f92f44b99433202b81a28910079ef" name="ae25f92f44b99433202b81a28910079ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25f92f44b99433202b81a28910079ef">&#9670;&#160;</a></span>updateMeshWorldMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::updateMeshWorldMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 <div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_hierarchical_scene_a33b25a2b4ed104056cfed812a0c08d90_cgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_a33b25a2b4ed104056cfed812a0c08d90_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_hierarchical_scene_a33b25a2b4ed104056cfed812a0c08d90_cgraph" id="aclassdyno_1_1_hierarchical_scene_a33b25a2b4ed104056cfed812a0c08d90_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,179,48"/>
-<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#ae0aedf0b6661112f3d2284344f1f2ea5" title=" " alt="" coords="227,5,390,48"/>
-<area shape="poly" title=" " alt="" coords="179,24,211,24,211,29,179,29"/>
+<div class="center"><img src="classdyno_1_1_hierarchical_scene_ae25f92f44b99433202b81a28910079ef_icgraph.png" border="0" usemap="#aclassdyno_1_1_hierarchical_scene_ae25f92f44b99433202b81a28910079ef_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_hierarchical_scene_ae25f92f44b99433202b81a28910079ef_icgraph" id="aclassdyno_1_1_hierarchical_scene_ae25f92f44b99433202b81a28910079ef_icgraph">
+<area shape="rect" title=" " alt="" coords="217,5,386,48"/>
+<area shape="rect" href="classdyno_1_1_hierarchical_scene.html#afd70658cc7cc31e6001cf97d490965f9" title=" " alt="" coords="5,5,169,48"/>
+<area shape="poly" title=" " alt="" coords="201,29,169,29,169,24,201,24"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a9ee1cecd871d7367b1fbd3a05abae6f1" name="a9ee1cecd871d7367b1fbd3a05abae6f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee1cecd871d7367b1fbd3a05abae6f1">&#9670;&#160;</a></span>updatePoint2Vertice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::updatePoint2Vertice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#aa32862bcbf20b29134e18bad504c7f87">DArrayList</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>d_p2v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; int &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>d_v2p</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a997bae53d376e4538588318607fde31c" name="a997bae53d376e4538588318607fde31c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a997bae53d376e4538588318607fde31c">&#9670;&#160;</a></span>updateSkinData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::updateSkinData </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_texture_mesh.html">TextureMesh</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>texMesh</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac32d9b75c034074082db8e6be80cf24b" name="ac32d9b75c034074082db8e6be80cf24b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac32d9b75c034074082db8e6be80cf24b">&#9670;&#160;</a></span>updateWorldTransformByKeyFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::HierarchicalScene::updateWorldTransformByKeyFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>time</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -675,7 +1416,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00298">298</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00320">320</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -691,7 +1432,23 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00287">287</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00307">307</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+
+</div>
+</div>
+<a id="a141bbe2a44d07ce9afb5be3c34e445da" name="a141bbe2a44d07ce9afb5be3c34e445da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141bbe2a44d07ce9afb5be3c34e445da">&#9670;&#160;</a></span>mBoneLocalMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a>&gt; dyno::HierarchicalScene::mBoneLocalMatrix</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00308">308</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -707,7 +1464,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00283">283</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00303">303</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -723,7 +1480,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00282">282</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00302">302</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -739,7 +1496,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00285">285</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00305">305</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -755,7 +1512,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00284">284</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00304">304</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -771,23 +1528,55 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00286">286</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00306">306</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
-<a id="a35270c23c8f99d714f61907eae55ff33" name="a35270c23c8f99d714f61907eae55ff33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35270c23c8f99d714f61907eae55ff33">&#9670;&#160;</a></span>mMeshs</h2>
+<a id="a2fd1d2ac31ac699229454ba3768cb056" name="a2fd1d2ac31ac699229454ba3768cb056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd1d2ac31ac699229454ba3768cb056">&#9670;&#160;</a></span>mJointAnimationData</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classdyno_1_1_mesh_info.html">MeshInfo</a>&gt; &gt; dyno::HierarchicalScene::mMeshs</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_joint_animation_info.html">JointAnimationInfo</a>&gt; dyno::HierarchicalScene::mJointAnimationData</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00281">281</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00312">312</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+
+</div>
+</div>
+<a id="a95470344ee24c8eec602ef9f98225486" name="a95470344ee24c8eec602ef9f98225486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95470344ee24c8eec602ef9f98225486">&#9670;&#160;</a></span>mJointData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a>&gt; dyno::HierarchicalScene::mJointData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00310">310</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+
+</div>
+</div>
+<a id="a51ee0d31fccd64a9692f3a93945b5c79" name="a51ee0d31fccd64a9692f3a93945b5c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51ee0d31fccd64a9692f3a93945b5c79">&#9670;&#160;</a></span>mMeshes</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="classdyno_1_1_mesh_info.html">MeshInfo</a>&gt; &gt; dyno::HierarchicalScene::mMeshes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00301">301</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -803,7 +1592,23 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00280">280</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00300">300</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+
+</div>
+</div>
+<a id="a31ac97598046d533cbaa0ea054de289d" name="a31ac97598046d533cbaa0ea054de289d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31ac97598046d533cbaa0ea054de289d">&#9670;&#160;</a></span>mSkinData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classdyno_1_1_skin_info.html">SkinInfo</a>&gt; dyno::HierarchicalScene::mSkinData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00311">311</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -819,7 +1624,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00290">290</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00315">315</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>
@@ -835,7 +1640,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00289">289</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_hierarchical_model_8h_source.html#l00314">314</a> of file <a class="el" href="_hierarchical_model_8h_source.html">HierarchicalModel.h</a>.</p>
 
 </div>
 </div>

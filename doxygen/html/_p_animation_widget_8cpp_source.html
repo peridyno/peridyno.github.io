@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -342,7 +342,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            <a class="code hl_variable" href="classdyno_1_1_p_animation_widget.html#a4f3d07c7d819541f0d8d1929a8df63f4">mFrameSlider</a>-&gt;setDisabled(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            <a class="code hl_variable" href="classdyno_1_1_p_animation_widget.html#ac4cbea2914773da9dfa3ce55059f0e7d">mTotalFrameSpinbox</a>-&gt;setDisabled(<span class="keyword">true</span>);</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <a class="code hl_function" href="namespacedyno.html#aa1422d9d48b7fccaa94ebbd8bbe6f333">disconnect</a>(<a class="code hl_function" href="classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1">PSimulationThread::instance</a>(), SIGNAL(oneFrameFinished(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(<a class="code hl_slot" href="classdyno_1_1_p_animation_widget.html#a18aabd1f0748650cf2aa1bce432d9df2">updateSlider</a>(<span class="keywordtype">int</span>)));</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <a class="code hl_function" href="namespacedyno.html#a4e3768406dcc8afa707ad302f981c362">disconnect</a>(<a class="code hl_function" href="classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1">PSimulationThread::instance</a>(), SIGNAL(oneFrameFinished(<span class="keywordtype">int</span>)), <span class="keyword">this</span>, SLOT(<a class="code hl_slot" href="classdyno_1_1_p_animation_widget.html#a18aabd1f0748650cf2aa1bce432d9df2">updateSlider</a>(<span class="keywordtype">int</span>)));</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            <a class="code hl_function" href="classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1">PSimulationThread::instance</a>()-&gt;<a class="code hl_function" href="classdyno_1_1_p_simulation_thread.html#af403a07a0a6e8bce08edf930c228d3d9">setTotalFrames</a>(std::numeric_limits&lt;int&gt;::max());</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>            <a class="code hl_function" href="classdyno_1_1_p_simulation_thread.html#aa6c154b97badd562a3d04e7bf3b736b1">PSimulationThread::instance</a>()-&gt;<a class="code hl_function" href="classdyno_1_1_p_simulation_thread.html#a83b6c0ff04614660760860ffb6f6df75">resume</a>();</div>
@@ -420,7 +420,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclassdyno_1_1_scene_graph_factory_html_a734602c4eaa53d89bd0293015383677b"><div class="ttname"><a href="classdyno_1_1_scene_graph_factory.html#a734602c4eaa53d89bd0293015383677b">dyno::SceneGraphFactory::instance</a></div><div class="ttdeci">static SceneGraphFactory * instance()</div><div class="ttdef"><b>Definition</b> <a href="_scene_graph_factory_8cpp_source.html#l00009">SceneGraphFactory.cpp:9</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_scene_graph_factory_html_afc062b9435ae40fa8ad6a37ec535461c"><div class="ttname"><a href="classdyno_1_1_scene_graph_factory.html#afc062b9435ae40fa8ad6a37ec535461c">dyno::SceneGraphFactory::active</a></div><div class="ttdeci">std::shared_ptr&lt; SceneGraph &gt; active()</div><div class="ttdef"><b>Definition</b> <a href="_scene_graph_factory_8cpp_source.html#l00024">SceneGraphFactory.cpp:24</a></div></div>
 <div class="ttc" id="anamespacedyno_html"><div class="ttname"><a href="namespacedyno.html">dyno</a></div><div class="ttdoc">This is an implementation of AdditiveCCD based on peridyno.</div><div class="ttdef"><b>Definition</b> <a href="_array_8h_source.html#l00025">Array.h:25</a></div></div>
-<div class="ttc" id="anamespacedyno_html_aa1422d9d48b7fccaa94ebbd8bbe6f333"><div class="ttname"><a href="namespacedyno.html#aa1422d9d48b7fccaa94ebbd8bbe6f333">dyno::disconnect</a></div><div class="ttdeci">void disconnect(Node *node, NodePort *port)</div><div class="ttdef"><b>Definition</b> <a href="_node_port_8cpp_source.html#l00044">NodePort.cpp:44</a></div></div>
+<div class="ttc" id="anamespacedyno_html_a4e3768406dcc8afa707ad302f981c362"><div class="ttname"><a href="namespacedyno.html#a4e3768406dcc8afa707ad302f981c362">dyno::disconnect</a></div><div class="ttdeci">void disconnect(Module *m, ModulePort *port)</div><div class="ttdef"><b>Definition</b> <a href="_module_port_8cpp_source.html#l00044">ModulePort.cpp:44</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

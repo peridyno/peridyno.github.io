@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,6 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_variational_approximate_projection-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::VariationalApproximateProjection&lt; TDataType &gt; Class Template Reference</div></div>
@@ -126,13 +125,15 @@ Collaboration diagram for dyno::VariationalApproximateProjection&lt; TDataType &
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_variational_approximate_projection__coll__graph.png" border="0" usemap="#adyno_1_1_variational_approximate_projection_3_01_t_data_type_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_variational_approximate_projection_3_01_t_data_type_01_4_coll__map" id="adyno_1_1_variational_approximate_projection_3_01_t_data_type_01_4_coll__map">
-<area shape="rect" title="Projection&#45;based solver." alt="" coords="1626,187,1817,230"/>
-<area shape="rect" href="classdyno_1_1_particle_approximation.html" title=" " alt="" coords="1315,129,1499,171"/>
-<area shape="poly" title=" " alt="" coords="1515,167,1627,188,1626,193,1514,172"/>
-<area shape="rect" href="classdyno_1_1_compute_module.html" title=" " alt="" coords="1046,137,1198,163"/>
-<area shape="poly" title=" " alt="" coords="1214,147,1315,147,1315,153,1214,153"/>
+<area shape="rect" title="Projection&#45;based solver." alt="" coords="1683,201,1873,243"/>
+<area shape="rect" href="classdyno_1_1_particle_approximation.html" title=" " alt="" coords="1372,75,1556,118"/>
+<area shape="poly" title=" " alt="" coords="1541,121,1557,127,1727,198,1725,202,1555,132,1539,126"/>
+<area shape="rect" href="classdyno_1_1_compute_module.html" title=" " alt="" coords="1103,83,1255,110"/>
+<area shape="poly" title=" " alt="" coords="1271,94,1371,94,1371,99,1271,99"/>
 <area shape="rect" href="classdyno_1_1_module.html" title=" " alt="" coords="890,137,989,163"/>
-<area shape="poly" title=" " alt="" coords="1005,147,1046,147,1046,153,1005,153"/>
+<area shape="poly" title=" " alt="" coords="1004,131,1013,129,1107,108,1109,113,1014,134,1005,136"/>
+<area shape="rect" href="classdyno_1_1_module_port.html" title="Input ports for Module." alt="" coords="1117,198,1241,225"/>
+<area shape="poly" title=" " alt="" coords="980,168,1014,182,1066,195,1117,203,1117,208,1065,200,1013,187,978,173"/>
 <area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="180,107,278,134"/>
 <area shape="poly" title=" " alt="" coords="294,122,704,143,890,147,890,152,704,149,293,127"/>
 <area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="704,107,792,134"/>
@@ -145,11 +146,14 @@ Collaboration diagram for dyno::VariationalApproximateProjection&lt; TDataType &
 <area shape="poly" title=" " alt="" coords="585,81,680,101,704,106,702,111,679,106,584,86"/>
 <area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="150,30,308,57"/>
 <area shape="poly" title=" " alt="" coords="324,50,439,61,439,66,323,55"/>
-<area shape="rect" href="classdyno_1_1_reduction.html" title=" " alt="" coords="1039,223,1206,250"/>
-<area shape="poly" title=" " alt="" coords="1222,242,1315,247,1407,251,1499,247,1626,227,1627,233,1500,252,1407,256,1315,253,1221,247"/>
-<area shape="rect" href="classdyno_1_1_arithmetic.html" title=" " alt="" coords="1324,195,1491,222"/>
-<area shape="poly" title=" " alt="" coords="1221,224,1323,214,1323,219,1222,229"/>
-<area shape="poly" title=" " alt="" coords="1506,206,1626,206,1626,211,1506,211"/>
+<area shape="rect" href="classdyno_1_1_multiple_module_port.html" title=" " alt="" coords="1380,142,1548,185"/>
+<area shape="poly" title=" " alt="" coords="1364,163,990,154,990,148,1364,158"/>
+<area shape="poly" title=" " alt="" coords="1255,196,1379,175,1380,180,1256,201"/>
+<area shape="rect" href="classdyno_1_1_reduction.html" title=" " alt="" coords="1095,255,1263,282"/>
+<area shape="poly" title=" " alt="" coords="1278,269,1410,269,1556,261,1682,240,1683,246,1556,266,1410,274,1278,274"/>
+<area shape="rect" href="classdyno_1_1_arithmetic.html" title=" " alt="" coords="1380,209,1548,235"/>
+<area shape="poly" title=" " alt="" coords="1278,250,1379,233,1380,238,1278,255"/>
+<area shape="poly" title=" " alt="" coords="1563,219,1683,219,1683,225,1563,225"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -188,13 +192,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2a8371de2bf7e2e93148890bd90c1bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1ce7613ac65ee62fbebcd50951fc6d5" id="r_aa1ce7613ac65ee62fbebcd50951fc6d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1ce7613ac65ee62fbebcd50951fc6d5">DEF_ARRAYLIST_IN</a> (int, NeighborIds, DeviceType::GPU, &quot;&quot;)</td></tr>
 <tr class="separator:aa1ce7613ac65ee62fbebcd50951fc6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5c89a11859314b12b75aef9c1b35977" id="r_af5c89a11859314b12b75aef9c1b35977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5c89a11859314b12b75aef9c1b35977">compute</a> () override</td></tr>
+<tr class="separator:af5c89a11859314b12b75aef9c1b35977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf762e0dc0a52f715461389e6a44105" id="r_aaaf762e0dc0a52f715461389e6a44105"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaf762e0dc0a52f715461389e6a44105">resizeArray</a> (int num)</td></tr>
+<tr class="separator:aaaf762e0dc0a52f715461389e6a44105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4607b6b271f528d2134ff0c9a55043ad" id="r_a4607b6b271f528d2134ff0c9a55043ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4607b6b271f528d2134ff0c9a55043ad">varChanged</a> ()</td></tr>
+<tr class="separator:a4607b6b271f528d2134ff0c9a55043ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_particle_approximation"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdyno_1_1_particle_approximation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_particle_approximation.html">dyno::ParticleApproximation&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:a16a27118ed96b2b61b24b0514ec81894 inherit pub_methods_classdyno_1_1_particle_approximation" id="r_a16a27118ed96b2b61b24b0514ec81894"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#a16a27118ed96b2b61b24b0514ec81894">ParticleApproximation</a> ()</td></tr>
 <tr class="separator:a16a27118ed96b2b61b24b0514ec81894 inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad22e7124299f11c68e2f71afaac84429 inherit pub_methods_classdyno_1_1_particle_approximation" id="r_ad22e7124299f11c68e2f71afaac84429"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#ad22e7124299f11c68e2f71afaac84429">~ParticleApproximation</a> ()</td></tr>
 <tr class="separator:ad22e7124299f11c68e2f71afaac84429 inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b3a99c780e5ba3a3aae05ee9b249b4b inherit pub_methods_classdyno_1_1_particle_approximation" id="r_a2b3a99c780e5ba3a3aae05ee9b249b4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#a2b3a99c780e5ba3a3aae05ee9b249b4b">DECLARE_ENUM</a> (EKernelType, KT_Smooth=0, KT_Spiky=1)</td></tr>
-<tr class="separator:a2b3a99c780e5ba3a3aae05ee9b249b4b inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce4de1e071465dd12bac6f8d35b311b inherit pub_methods_classdyno_1_1_particle_approximation" id="r_adce4de1e071465dd12bac6f8d35b311b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#adce4de1e071465dd12bac6f8d35b311b">DECLARE_ENUM</a> (EKernelType, KT_Smooth=0, KT_Spiky=1, KT_Cubic=2, KT_Constant=3, KT_Quartic=4, KT_Corrected=5, KT_CorrectedQuatic=6, KT_WendlandC2=7, KT_CorrectedMPSKernel=8)</td></tr>
+<tr class="separator:adce4de1e071465dd12bac6f8d35b311b inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93939e261faae858474ad0488028e0ce inherit pub_methods_classdyno_1_1_particle_approximation" id="r_a93939e261faae858474ad0488028e0ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#a93939e261faae858474ad0488028e0ce">DEF_VAR_IN</a> (<a class="el" href="classdyno_1_1_particle_approximation.html#a6db23781941a855782e70a4c6f5984b9">Real</a>, SmoothingLength, &quot;Smoothing Length&quot;)</td></tr>
 <tr class="separator:a93939e261faae858474ad0488028e0ce inherit pub_methods_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae540d9b6af48048eae38f6584181c623 inherit pub_methods_classdyno_1_1_particle_approximation" id="r_ae540d9b6af48048eae38f6584181c623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#ae540d9b6af48048eae38f6584181c623">DEF_VAR_IN</a> (<a class="el" href="classdyno_1_1_particle_approximation.html#a6db23781941a855782e70a4c6f5984b9">Real</a>, SamplingDistance, &quot;Particle sampling distance&quot;)</td></tr>
@@ -238,11 +248,28 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73f0c85f66dddc1ab648f2b628fa4fdb inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module" id="r_a5a53a1ff27547593a8358e6ab5767fa2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a5a53a1ff27547593a8358e6ab5767fa2">isOutputCompete</a> ()</td></tr>
 <tr class="separator:a5a53a1ff27547593a8358e6ab5767fa2 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0b364bd9c25c4ae9a735533ac3636d inherit pub_methods_classdyno_1_1_module" id="r_a7b0b364bd9c25c4ae9a735533ac3636d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a7b0b364bd9c25c4ae9a735533ac3636d">connect</a> (<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *nPort)</td></tr>
+<tr class="separator:a7b0b364bd9c25c4ae9a735533ac3636d inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e2c815c043e94549e0c3b285f5b9ba inherit pub_methods_classdyno_1_1_module" id="r_ae1e2c815c043e94549e0c3b285f5b9ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ae1e2c815c043e94549e0c3b285f5b9ba">disconnect</a> (<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *nPort)</td></tr>
+<tr class="separator:ae1e2c815c043e94549e0c3b285f5b9ba inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc23cdf465d8fc32e462c42a0e45fd3 inherit pub_methods_classdyno_1_1_module" id="r_a1cc23cdf465d8fc32e462c42a0e45fd3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a1cc23cdf465d8fc32e462c42a0e45fd3">allowImported</a> ()</td></tr>
+<tr class="separator:a1cc23cdf465d8fc32e462c42a0e45fd3 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b3d58d698a29766d0d8986dc9f45ca inherit pub_methods_classdyno_1_1_module" id="r_a42b3d58d698a29766d0d8986dc9f45ca"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a42b3d58d698a29766d0d8986dc9f45ca">allowExported</a> ()</td></tr>
+<tr class="separator:a42b3d58d698a29766d0d8986dc9f45ca inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa04ede594505d8317864a8b135a8316 inherit pub_methods_classdyno_1_1_module" id="r_aaa04ede594505d8317864a8b135a8316"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#aaa04ede594505d8317864a8b135a8316">getImportModules</a> ()</td></tr>
+<tr class="separator:aaa04ede594505d8317864a8b135a8316 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23ad635a770080b6ed18e49ac038546 inherit pub_methods_classdyno_1_1_module" id="r_aa23ad635a770080b6ed18e49ac038546"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#aa23ad635a770080b6ed18e49ac038546">getExportModules</a> ()</td></tr>
+<tr class="separator:aa23ad635a770080b6ed18e49ac038546 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8074a810611d1408b5b3c6c5b210f94 inherit pub_methods_classdyno_1_1_module" id="r_ac8074a810611d1408b5b3c6c5b210f94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ac8074a810611d1408b5b3c6c5b210f94">DEF_VAR</a> (bool, ForceUpdate, false, &quot;&quot;)</td></tr>
 <tr class="separator:ac8074a810611d1408b5b3c6c5b210f94 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module" id="r_a636486141cc15ef93c96ca4106351af0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a636486141cc15ef93c96ca4106351af0">setUpdateAlways</a> (bool b)</td></tr>
 <tr class="memdesc:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the update strategy for the module.  <br /></td></tr>
 <tr class="separator:a636486141cc15ef93c96ca4106351af0 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7084de192d5189f7e4da3be290670d03 inherit pub_methods_classdyno_1_1_module" id="r_a7084de192d5189f7e4da3be290670d03"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a7084de192d5189f7e4da3be290670d03">initializeImpl</a> ()</td></tr>
+<tr class="separator:a7084de192d5189f7e4da3be290670d03 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefac00cac85d2918a6c8b8c83c053ab9 inherit pub_methods_classdyno_1_1_module" id="r_aefac00cac85d2918a6c8b8c83c053ab9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_multiple_module_port.html">MultipleModulePort</a>&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#aefac00cac85d2918a6c8b8c83c053ab9">importModules</a> ()</td></tr>
+<tr class="memdesc:aefac00cac85d2918a6c8b8c83c053ab9 inherit pub_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to ensure modules can be executed in the correct order.  <br /></td></tr>
+<tr class="separator:aefac00cac85d2918a6c8b8c83c053ab9 inherit pub_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base" id="r_ab65d583b85bc42e7b2faab3af43d159f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ab65d583b85bc42e7b2faab3af43d159f">OBase</a> ()</td></tr>
 <tr class="separator:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,34 +368,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object" id="r_a5105729f9f9faf65100b999d076418c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a5105729f9f9faf65100b999d076418c8">objectId</a> ()</td></tr>
 <tr class="separator:a5105729f9f9faf65100b999d076418c8 inherit pub_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:af5c89a11859314b12b75aef9c1b35977" id="r_af5c89a11859314b12b75aef9c1b35977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5c89a11859314b12b75aef9c1b35977">compute</a> () override</td></tr>
-<tr class="separator:af5c89a11859314b12b75aef9c1b35977"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classdyno_1_1_module"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classdyno_1_1_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_module.html">dyno::Module</a></td></tr>
-<tr class="memitem:a7084de192d5189f7e4da3be290670d03 inherit pro_methods_classdyno_1_1_module" id="r_a7084de192d5189f7e4da3be290670d03"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a7084de192d5189f7e4da3be290670d03">initializeImpl</a> ()</td></tr>
-<tr class="separator:a7084de192d5189f7e4da3be290670d03 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42ad36251be9ece7eee4e84108f52a17 inherit pro_methods_classdyno_1_1_module" id="r_a42ad36251be9ece7eee4e84108f52a17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a42ad36251be9ece7eee4e84108f52a17">preprocess</a> ()</td></tr>
-<tr class="separator:a42ad36251be9ece7eee4e84108f52a17 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6978d85dd53eafd6759f8c65ebd9edcd inherit pro_methods_classdyno_1_1_module" id="r_a6978d85dd53eafd6759f8c65ebd9edcd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a6978d85dd53eafd6759f8c65ebd9edcd">postprocess</a> ()</td></tr>
-<tr class="separator:a6978d85dd53eafd6759f8c65ebd9edcd inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae904e76fed78ae31f760b710055aaeb9 inherit pro_methods_classdyno_1_1_module" id="r_ae904e76fed78ae31f760b710055aaeb9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ae904e76fed78ae31f760b710055aaeb9">validateInputs</a> ()</td></tr>
-<tr class="separator:ae904e76fed78ae31f760b710055aaeb9 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b3d99d086effb856d9af1aa27bf5ece inherit pro_methods_classdyno_1_1_module" id="r_a0b3d99d086effb856d9af1aa27bf5ece"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a0b3d99d086effb856d9af1aa27bf5ece">validateOutputs</a> ()</td></tr>
-<tr class="separator:a0b3d99d086effb856d9af1aa27bf5ece inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafed20478d711d12fb46f128addc9bb6 inherit pro_methods_classdyno_1_1_module" id="r_aafed20478d711d12fb46f128addc9bb6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#aafed20478d711d12fb46f128addc9bb6">requireUpdate</a> ()</td></tr>
-<tr class="separator:aafed20478d711d12fb46f128addc9bb6 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module" id="r_a8cbb0f56e3117ad920133d28e4dc5cc1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a8cbb0f56e3117ad920133d28e4dc5cc1">updateStarted</a> ()</td></tr>
-<tr class="memdesc:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two functions called at the beginning and end of <a class="el" href="classdyno_1_1_module.html#a671334fb99ebe01b59adbfd9980fcfa9">update()</a> used for debug.  <br /></td></tr>
-<tr class="separator:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7ba5aec44b13ce53020c7e83a338f4c inherit pro_methods_classdyno_1_1_module" id="r_ae7ba5aec44b13ce53020c7e83a338f4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ae7ba5aec44b13ce53020c7e83a338f4c">updateEnded</a> ()</td></tr>
-<tr class="separator:ae7ba5aec44b13ce53020c7e83a338f4c inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a39ba4784d0295e729d9187038e88e6eb" id="r_a39ba4784d0295e729d9187038e88e6eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a571aadc9f25553df2a9ae30bc936002e">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39ba4784d0295e729d9187038e88e6eb">mAlphaMax</a></td></tr>
 <tr class="separator:a39ba4784d0295e729d9187038e88e6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a223faa74a2a0cdb63736f6378177ec93" id="r_a223faa74a2a0cdb63736f6378177ec93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a571aadc9f25553df2a9ae30bc936002e">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a223faa74a2a0cdb63736f6378177ec93">mAMax</a></td></tr>
+<tr class="memitem:a223faa74a2a0cdb63736f6378177ec93" id="r_a223faa74a2a0cdb63736f6378177ec93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a571aadc9f25553df2a9ae30bc936002e">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a223faa74a2a0cdb63736f6378177ec93">mAMax</a> = 0.0f</td></tr>
 <tr class="separator:a223faa74a2a0cdb63736f6378177ec93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6e2bcaf4434364653818ce800389882" id="r_aa6e2bcaf4434364653818ce800389882"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a571aadc9f25553df2a9ae30bc936002e">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6e2bcaf4434364653818ce800389882">mAirPressure</a> = 0.0f</td></tr>
 <tr class="separator:aa6e2bcaf4434364653818ce800389882"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -400,6 +404,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a77a84f2329c5f5f8f506ef79bd973edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a447a0b1eecb5cd939d25ed4984e4296e" id="r_a447a0b1eecb5cd939d25ed4984e4296e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_arithmetic.html">Arithmetic</a>&lt; <a class="el" href="#a571aadc9f25553df2a9ae30bc936002e">Real</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a447a0b1eecb5cd939d25ed4984e4296e">m_arithmetic</a></td></tr>
 <tr class="separator:a447a0b1eecb5cd939d25ed4984e4296e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f5ee13580954565ba1ebfe428b0a86" id="r_a43f5ee13580954565ba1ebfe428b0a86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_corrected_m_p_s_kernel.html">CorrectedMPSKernel</a>&lt; <a class="el" href="#a571aadc9f25553df2a9ae30bc936002e">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43f5ee13580954565ba1ebfe428b0a86">Mpskernel</a></td></tr>
+<tr class="separator:a43f5ee13580954565ba1ebfe428b0a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa6a4fb731bfd4e61a8a98a0ac20ee92" id="r_aaa6a4fb731bfd4e61a8a98a0ac20ee92"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_summation_density.html">SummationDensity</a>&lt; TDataType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa6a4fb731bfd4e61a8a98a0ac20ee92">mDensityCalculator</a></td></tr>
 <tr class="separator:aaa6a4fb731bfd4e61a8a98a0ac20ee92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -415,6 +421,26 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object" id="r_a1c74670edfee2018cfa434a0a6380ed5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacedyno.html#a77327e72be70120bf99d2e448fe18097">ObjectId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_object.html#a1c74670edfee2018cfa434a0a6380ed5">baseId</a> ()</td></tr>
 <tr class="memdesc:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base Id.  <br /></td></tr>
 <tr class="separator:a1c74670edfee2018cfa434a0a6380ed5 inherit pub_static_methods_classdyno_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classdyno_1_1_module"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classdyno_1_1_module')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classdyno_1_1_module.html">dyno::Module</a></td></tr>
+<tr class="memitem:a42ad36251be9ece7eee4e84108f52a17 inherit pro_methods_classdyno_1_1_module" id="r_a42ad36251be9ece7eee4e84108f52a17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a42ad36251be9ece7eee4e84108f52a17">preprocess</a> ()</td></tr>
+<tr class="separator:a42ad36251be9ece7eee4e84108f52a17 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6978d85dd53eafd6759f8c65ebd9edcd inherit pro_methods_classdyno_1_1_module" id="r_a6978d85dd53eafd6759f8c65ebd9edcd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a6978d85dd53eafd6759f8c65ebd9edcd">postprocess</a> ()</td></tr>
+<tr class="separator:a6978d85dd53eafd6759f8c65ebd9edcd inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae904e76fed78ae31f760b710055aaeb9 inherit pro_methods_classdyno_1_1_module" id="r_ae904e76fed78ae31f760b710055aaeb9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ae904e76fed78ae31f760b710055aaeb9">validateInputs</a> ()</td></tr>
+<tr class="separator:ae904e76fed78ae31f760b710055aaeb9 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3d99d086effb856d9af1aa27bf5ece inherit pro_methods_classdyno_1_1_module" id="r_a0b3d99d086effb856d9af1aa27bf5ece"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a0b3d99d086effb856d9af1aa27bf5ece">validateOutputs</a> ()</td></tr>
+<tr class="separator:a0b3d99d086effb856d9af1aa27bf5ece inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafed20478d711d12fb46f128addc9bb6 inherit pro_methods_classdyno_1_1_module" id="r_aafed20478d711d12fb46f128addc9bb6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#aafed20478d711d12fb46f128addc9bb6">requireUpdate</a> ()</td></tr>
+<tr class="separator:aafed20478d711d12fb46f128addc9bb6 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module" id="r_a8cbb0f56e3117ad920133d28e4dc5cc1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a8cbb0f56e3117ad920133d28e4dc5cc1">updateStarted</a> ()</td></tr>
+<tr class="memdesc:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="mdescLeft">&#160;</td><td class="mdescRight">Two functions called at the beginning and end of <a class="el" href="classdyno_1_1_module.html#a671334fb99ebe01b59adbfd9980fcfa9">update()</a> used for debug.  <br /></td></tr>
+<tr class="separator:a8cbb0f56e3117ad920133d28e4dc5cc1 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ba5aec44b13ce53020c7e83a338f4c inherit pro_methods_classdyno_1_1_module" id="r_ae7ba5aec44b13ce53020c7e83a338f4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#ae7ba5aec44b13ce53020c7e83a338f4c">updateEnded</a> ()</td></tr>
+<tr class="separator:ae7ba5aec44b13ce53020c7e83a338f4c inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7398470ea816049a281e865d5bf0d7d2 inherit pro_methods_classdyno_1_1_module" id="r_a7398470ea816049a281e865d5bf0d7d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#a7398470ea816049a281e865d5bf0d7d2">appendExportModule</a> (<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *nodePort)</td></tr>
+<tr class="separator:a7398470ea816049a281e865d5bf0d7d2 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9da6c14d5822acffdfcaecf23fade8 inherit pro_methods_classdyno_1_1_module" id="r_aad9da6c14d5822acffdfcaecf23fade8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_module.html#aad9da6c14d5822acffdfcaecf23fade8">removeExportModule</a> (<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *nodePort)</td></tr>
+<tr class="separator:aad9da6c14d5822acffdfcaecf23fade8 inherit pro_methods_classdyno_1_1_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classdyno_1_1_particle_approximation"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classdyno_1_1_particle_approximation')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classdyno_1_1_particle_approximation.html">dyno::ParticleApproximation&lt; TDataType &gt;</a></td></tr>
 <tr class="memitem:aff34447806976d032f1f1fe1b8a1d1ac inherit pro_attribs_classdyno_1_1_particle_approximation" id="r_aff34447806976d032f1f1fe1b8a1d1ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_particle_approximation.html#a6db23781941a855782e70a4c6f5984b9">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_particle_approximation.html#aff34447806976d032f1f1fe1b8a1d1ac">mScalingFactor</a> = <a class="el" href="classdyno_1_1_particle_approximation.html#a6db23781941a855782e70a4c6f5984b9">Real</a>(1)</td></tr>
 <tr class="separator:aff34447806976d032f1f1fe1b8a1d1ac inherit pro_attribs_classdyno_1_1_particle_approximation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,7 +457,7 @@ Additional Inherited Members</h2></td></tr>
 class dyno::VariationalApproximateProjection&lt; TDataType &gt;</div><p>Projection-based solver. </p>
 <p>Implementation of an approximate projection method for incompressible free-surface flows under a variational staggered particle framework. Refer to "A Variational Staggered Particle Framework for Incompressible Free-Surface Flows", [arXiv:2001.09421], 2020. </p>
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00037">37</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00038">38</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3bbc0738d68eff50ae36586bd8515cb4" name="a3bbc0738d68eff50ae36586bd8515cb4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3bbc0738d68eff50ae36586bd8515cb4">&#9670;&#160;</a></span>Coord</h2>
@@ -447,7 +473,7 @@ template&lt;typename TDataType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00042">42</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00043">43</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -465,7 +491,7 @@ template&lt;typename TDataType&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00041">41</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00042">42</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -537,7 +563,7 @@ template&lt;typename TDataType&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -772,6 +798,44 @@ template&lt;typename TDataType&gt; </div>
 
 </div>
 </div>
+<a id="aaaf762e0dc0a52f715461389e6a44105" name="aaaf762e0dc0a52f715461389e6a44105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf762e0dc0a52f715461389e6a44105">&#9670;&#160;</a></span>resizeArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdyno_1_1_variational_approximate_projection.html">dyno::VariationalApproximateProjection</a>&lt; TDataType &gt;::resizeArray </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>num</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4607b6b271f528d2134ff0c9a55043ad" name="a4607b6b271f528d2134ff0c9a55043ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4607b6b271f528d2134ff0c9a55043ad">&#9670;&#160;</a></span>varChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdyno_1_1_variational_approximate_projection.html">dyno::VariationalApproximateProjection</a>&lt; TDataType &gt;::varChanged </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a447a0b1eecb5cd939d25ed4984e4296e" name="a447a0b1eecb5cd939d25ed4984e4296e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a447a0b1eecb5cd939d25ed4984e4296e">&#9670;&#160;</a></span>m_arithmetic</h2>
@@ -795,7 +859,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00093">93</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00098">98</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -821,7 +885,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00090">90</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00095">95</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -847,7 +911,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00089">89</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00094">94</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -873,7 +937,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00092">92</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00097">97</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -899,7 +963,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00088">88</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00093">93</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -925,7 +989,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00077">77</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00082">82</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -951,7 +1015,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00078">78</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00083">83</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -977,7 +1041,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00079">79</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00084">84</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1067,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00069">69</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00074">74</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1093,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00076">76</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00081">81</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1119,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00067">67</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00072">72</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1135,7 @@ template&lt;typename TDataType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a571aadc9f25553df2a9ae30bc936002e">Real</a> <a class="el" href="classdyno_1_1_variational_approximate_projection.html">dyno::VariationalApproximateProjection</a>&lt; TDataType &gt;::mAMax</td>
+          <td class="memname"><a class="el" href="#a571aadc9f25553df2a9ae30bc936002e">Real</a> <a class="el" href="classdyno_1_1_variational_approximate_projection.html">dyno::VariationalApproximateProjection</a>&lt; TDataType &gt;::mAMax = 0.0f</td>
         </tr>
       </table>
   </td>
@@ -1081,7 +1145,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00068">68</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00073">73</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1171,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00095">95</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00102">102</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1197,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00082">82</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00087">87</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1223,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00085">85</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00090">90</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -1185,7 +1249,33 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00081">81</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00086">86</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+
+</div>
+</div>
+<a id="a43f5ee13580954565ba1ebfe428b0a86" name="a43f5ee13580954565ba1ebfe428b0a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f5ee13580954565ba1ebfe428b0a86">&#9670;&#160;</a></span>Mpskernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TDataType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_corrected_m_p_s_kernel.html">CorrectedMPSKernel</a>&lt;<a class="el" href="#a571aadc9f25553df2a9ae30bc936002e">Real</a>&gt; <a class="el" href="classdyno_1_1_variational_approximate_projection.html">dyno::VariationalApproximateProjection</a>&lt; TDataType &gt;::Mpskernel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00100">100</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -1211,7 +1301,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00072">72</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00077">77</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>
@@ -1237,7 +1327,7 @@ template&lt;typename TDataType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00071">71</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_variational_approximate_projection_8h_source.html#l00076">76</a> of file <a class="el" href="_variational_approximate_projection_8h_source.html">VariationalApproximateProjection.h</a>.</p>
 
 </div>
 </div>

@@ -10,6 +10,5 @@ var searchData=
   ['unstructuredpointset_2eh_7',['UnstructuredPointSet.h',['../_unstructured_point_set_8h.html',1,'']]],
   ['utility_2ecpp_8',['Utility.cpp',['../_utility_8cpp.html',1,'']]],
   ['utility_2eh_9',['Utility.h',['../_utility_8h.html',1,'']]],
-  ['utility3d_2ecu_10',['Utility3D.cu',['../_utility3_d_8cu.html',1,'']]],
-  ['utility3d_2eh_11',['Utility3D.h',['../_utility3_d_8h.html',1,'']]]
+  ['utility3d_2eh_10',['Utility3D.h',['../_utility3_d_8h.html',1,'']]]
 ];

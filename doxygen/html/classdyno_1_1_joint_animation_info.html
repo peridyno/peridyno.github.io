@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -93,6 +93,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdyno_1_1_joint_animation_info-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::JointAnimationInfo Class Reference</div></div>
@@ -131,12 +132,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a470040f03c65a6f9e155b336d86b5414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81208064873c116879c05488950c3131" id="r_a81208064873c116879c05488950c3131"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81208064873c116879c05488950c3131">~JointAnimationInfo</a> ()</td></tr>
 <tr class="separator:a81208064873c116879c05488950c3131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c0d80181c2eab85999a3d27e4870a85" id="r_a2c0d80181c2eab85999a3d27e4870a85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c0d80181c2eab85999a3d27e4870a85">setAnimationData</a> (std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &gt; &amp;jointTranslation, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;jointTimeCodeTranslation, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &gt; &amp;jointScale, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;jointIndexTimeCodeScale, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt; &gt; &amp;jointRotation, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;jointIndexRotation, std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &gt; skeleton)</td></tr>
-<tr class="separator:a2c0d80181c2eab85999a3d27e4870a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58d384a71ed00e1e3e17edcf69fe4cb1" id="r_a58d384a71ed00e1e3e17edcf69fe4cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58d384a71ed00e1e3e17edcf69fe4cb1">updateJointsTransform</a> (float time)</td></tr>
-<tr class="separator:a58d384a71ed00e1e3e17edcf69fe4cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8a495e89df162e1f95d9bb7e8fd1c90" id="r_aa8a495e89df162e1f95d9bb7e8fd1c90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a82b42fe2bc0ff245b14cc01292c37bd2">Transform3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8a495e89df162e1f95d9bb7e8fd1c90">updateTransform</a> (<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a> jId, float time)</td></tr>
-<tr class="separator:aa8a495e89df162e1f95d9bb7e8fd1c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bb9b8681fb17451994d03a5b9df505" id="r_a48bb9b8681fb17451994d03a5b9df505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48bb9b8681fb17451994d03a5b9df505">setGLTFAnimationData</a> (std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &gt; &amp;jointTranslation, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;jointTimeCodeTranslation, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &gt; &amp;jointScale, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;jointIndexTimeCodeScale, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt; &gt; &amp;jointRotation, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;jointIndexRotation, std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &gt; skeleton, bool loop=true)</td></tr>
+<tr class="separator:a48bb9b8681fb17451994d03a5b9df505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db0744a2c5e2b5c49631075953cd20d" id="r_a2db0744a2c5e2b5c49631075953cd20d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2db0744a2c5e2b5c49631075953cd20d">clear</a> ()</td></tr>
+<tr class="separator:a2db0744a2c5e2b5c49631075953cd20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae168ad87ad929898b247bdebeee4603d" id="r_ae168ad87ad929898b247bdebeee4603d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae168ad87ad929898b247bdebeee4603d">isValid</a> ()</td></tr>
+<tr class="separator:ae168ad87ad929898b247bdebeee4603d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186e0366fe672b6b537ffd538188e73a" id="r_a186e0366fe672b6b537ffd538188e73a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a186e0366fe672b6b537ffd538188e73a">isGltfAnimation</a> ()</td></tr>
+<tr class="separator:a186e0366fe672b6b537ffd538188e73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab754ffe0a735e29fe950daa1dd153288" id="r_ab754ffe0a735e29fe950daa1dd153288"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab754ffe0a735e29fe950daa1dd153288">resizeJointsData</a> (int size)</td></tr>
+<tr class="separator:ab754ffe0a735e29fe950daa1dd153288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a585e3ce9c2ab3bb4b58d5a56f85882cb" id="r_a585e3ce9c2ab3bb4b58d5a56f85882cb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a585e3ce9c2ab3bb4b58d5a56f85882cb">getJointsTranslation</a> (float time)</td></tr>
 <tr class="separator:a585e3ce9c2ab3bb4b58d5a56f85882cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c4a0020513c40ae18c6690826fcd3fd" id="r_a3c4a0020513c40ae18c6690826fcd3fd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c4a0020513c40ae18c6690826fcd3fd">getJointsRotation</a> (float time)</td></tr>
@@ -153,6 +158,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae447052b2793e3516db257ced134eaa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b0b2537e72ba8669b066f60f9fabd3e" id="r_a4b0b2537e72ba8669b066f60f9fabd3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_quat.html">Quat</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b0b2537e72ba8669b066f60f9fabd3e">slerp</a> (const <a class="el" href="classdyno_1_1_quat.html">Quat</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &amp;q1, const <a class="el" href="classdyno_1_1_quat.html">Quat</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &amp;q2, float weight)</td></tr>
 <tr class="separator:a4b0b2537e72ba8669b066f60f9fabd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe02273ffda944b18eb45002f86003b9" id="r_abe02273ffda944b18eb45002f86003b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe02273ffda944b18eb45002f86003b9">lerp</a> (<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> v0, <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> v1, float weight)</td></tr>
+<tr class="separator:abe02273ffda944b18eb45002f86003b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0660d1bafcb4abbe49c2f0373bb74649" id="r_a0660d1bafcb4abbe49c2f0373bb74649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_quat.html">Quat</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0660d1bafcb4abbe49c2f0373bb74649">nlerp</a> (const <a class="el" href="classdyno_1_1_quat.html">Quat</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &amp;q1, const <a class="el" href="classdyno_1_1_quat.html">Quat</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &amp;q2, float weight)</td></tr>
 <tr class="separator:a0660d1bafcb4abbe49c2f0373bb74649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a445edf653723938db5427e1f94b91085" id="r_a445edf653723938db5427e1f94b91085"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a445edf653723938db5427e1f94b91085">getJointDir</a> (int Index, std::map&lt; int, std::vector&lt; int &gt; &gt; joint_Dir)</td></tr>
@@ -171,6 +178,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2f7c549b48eac34ef3e31ab796bac5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f3a1c8e493fbc9caccd643d5a918801" id="r_a5f3a1c8e493fbc9caccd643d5a918801"><td class="memItemLeft" align="right" valign="top">float &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f3a1c8e493fbc9caccd643d5a918801">getPlayRate</a> ()</td></tr>
 <tr class="separator:a5f3a1c8e493fbc9caccd643d5a918801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f73ca80cd49eb747c3ffa04b990769d" id="r_a2f73ca80cd49eb747c3ffa04b990769d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f73ca80cd49eb747c3ffa04b990769d">updateTotalTime</a> ()</td></tr>
+<tr class="separator:a2f73ca80cd49eb747c3ffa04b990769d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d82863f00c9acff6eca346eba80b0c6" id="r_a7d82863f00c9acff6eca346eba80b0c6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d82863f00c9acff6eca346eba80b0c6">getSkeleton</a> ()</td></tr>
+<tr class="separator:a7d82863f00c9acff6eca346eba80b0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efab47502a3fb6dc18856f5cd8c3e78" id="r_a9efab47502a3fb6dc18856f5cd8c3e78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9efab47502a3fb6dc18856f5cd8c3e78">setSkeleton</a> (std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &gt; sk)</td></tr>
+<tr class="separator:a9efab47502a3fb6dc18856f5cd8c3e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base" id="r_ab65d583b85bc42e7b2faab3af43d159f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ab65d583b85bc42e7b2faab3af43d159f">OBase</a> ()</td></tr>
 <tr class="separator:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,23 +291,68 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7ca35b2915261cd4db2395d9f21f5b72" id="r_a7ca35b2915261cd4db2395d9f21f5b72"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ca35b2915261cd4db2395d9f21f5b72">mSkeleton</a> = NULL</td></tr>
 <tr class="separator:a7ca35b2915261cd4db2395d9f21f5b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ace2f0b808cfc58aefaa8bedba14210" id="r_a7ace2f0b808cfc58aefaa8bedba14210"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ace2f0b808cfc58aefaa8bedba14210">mJoint_Index_Translation</a></td></tr>
-<tr class="separator:a7ace2f0b808cfc58aefaa8bedba14210"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adddb1f92bf79c3fd905cc8b532217758" id="r_adddb1f92bf79c3fd905cc8b532217758"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adddb1f92bf79c3fd905cc8b532217758">mJoint_Index_TimeCode_Translation</a></td></tr>
-<tr class="separator:adddb1f92bf79c3fd905cc8b532217758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a9b78bd2cada7b5d6ac68b21894e656" id="r_a9a9b78bd2cada7b5d6ac68b21894e656"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a9b78bd2cada7b5d6ac68b21894e656">mJoint_Index_Scale</a></td></tr>
-<tr class="separator:a9a9b78bd2cada7b5d6ac68b21894e656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ccfe2f1e91f4be8283d27112301bd9c" id="r_a5ccfe2f1e91f4be8283d27112301bd9c"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ccfe2f1e91f4be8283d27112301bd9c">mJoint_Index_TimeCode_Scale</a></td></tr>
-<tr class="separator:a5ccfe2f1e91f4be8283d27112301bd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b4f34bb4dab9d896ac87f12e73c090e" id="r_a2b4f34bb4dab9d896ac87f12e73c090e"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b4f34bb4dab9d896ac87f12e73c090e">mJoint_Index_Rotation</a></td></tr>
-<tr class="separator:a2b4f34bb4dab9d896ac87f12e73c090e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e1cbd51dc85deab619de15a4d45d478" id="r_a7e1cbd51dc85deab619de15a4d45d478"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e1cbd51dc85deab619de15a4d45d478">mJoint_Index_TimeCode_Rotation</a></td></tr>
-<tr class="separator:a7e1cbd51dc85deab619de15a4d45d478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67edbe143f90f4fb43cd317a4d3fc93" id="r_ac67edbe143f90f4fb43cd317a4d3fc93"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac67edbe143f90f4fb43cd317a4d3fc93">mJoint_KeyId_QuatRotation</a></td></tr>
+<tr class="separator:ac67edbe143f90f4fb43cd317a4d3fc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b610fa5f33e1b5f2f907d63184a4454" id="r_a6b610fa5f33e1b5f2f907d63184a4454"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b610fa5f33e1b5f2f907d63184a4454">mJoint_KeyId_tQuatRotation</a></td></tr>
+<tr class="separator:a6b610fa5f33e1b5f2f907d63184a4454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9baa8b5d8609c73e2467daece6b2120b" id="r_a9baa8b5d8609c73e2467daece6b2120b"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9baa8b5d8609c73e2467daece6b2120b">mJoint_KeyId_T_X</a></td></tr>
+<tr class="separator:a9baa8b5d8609c73e2467daece6b2120b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1888fe30e0141dc2983bc7786dbc90" id="r_afa1888fe30e0141dc2983bc7786dbc90"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa1888fe30e0141dc2983bc7786dbc90">mJoint_KeyId_tT_X</a></td></tr>
+<tr class="separator:afa1888fe30e0141dc2983bc7786dbc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579f656f8c022d87c1b866bd9e8d54cb" id="r_a579f656f8c022d87c1b866bd9e8d54cb"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a579f656f8c022d87c1b866bd9e8d54cb">mJoint_KeyId_T_Y</a></td></tr>
+<tr class="separator:a579f656f8c022d87c1b866bd9e8d54cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b03a477fb7ebdfb3364a0165d01bfe1" id="r_a8b03a477fb7ebdfb3364a0165d01bfe1"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b03a477fb7ebdfb3364a0165d01bfe1">mJoint_KeyId_tT_Y</a></td></tr>
+<tr class="separator:a8b03a477fb7ebdfb3364a0165d01bfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d299e9d3599834c8fcee9ef36178ae" id="r_a21d299e9d3599834c8fcee9ef36178ae"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21d299e9d3599834c8fcee9ef36178ae">mJoint_KeyId_T_Z</a></td></tr>
+<tr class="separator:a21d299e9d3599834c8fcee9ef36178ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46445caba4b026c391d185f4b38b4042" id="r_a46445caba4b026c391d185f4b38b4042"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46445caba4b026c391d185f4b38b4042">mJoint_KeyId_tT_Z</a></td></tr>
+<tr class="separator:a46445caba4b026c391d185f4b38b4042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cd137a73dfb20b98ef2852bd0cc631d" id="r_a5cd137a73dfb20b98ef2852bd0cc631d"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cd137a73dfb20b98ef2852bd0cc631d">mJoint_KeyId_R_X</a></td></tr>
+<tr class="separator:a5cd137a73dfb20b98ef2852bd0cc631d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a968e87a21f08f67159e289f170cc1888" id="r_a968e87a21f08f67159e289f170cc1888"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a968e87a21f08f67159e289f170cc1888">mJoint_KeyId_tR_X</a></td></tr>
+<tr class="separator:a968e87a21f08f67159e289f170cc1888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130177829dc749fe46a1fdb7fcdba8d7" id="r_a130177829dc749fe46a1fdb7fcdba8d7"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a130177829dc749fe46a1fdb7fcdba8d7">mJoint_KeyId_R_Y</a></td></tr>
+<tr class="separator:a130177829dc749fe46a1fdb7fcdba8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedd63526c66f4880a3e8e340e7e27e62" id="r_aedd63526c66f4880a3e8e340e7e27e62"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedd63526c66f4880a3e8e340e7e27e62">mJoint_KeyId_tR_Y</a></td></tr>
+<tr class="separator:aedd63526c66f4880a3e8e340e7e27e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a44d82dc18a847a9af69fbd35a122c1" id="r_a1a44d82dc18a847a9af69fbd35a122c1"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a44d82dc18a847a9af69fbd35a122c1">mJoint_KeyId_R_Z</a></td></tr>
+<tr class="separator:a1a44d82dc18a847a9af69fbd35a122c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba88d93b0db64ffe9b4f959930c01241" id="r_aba88d93b0db64ffe9b4f959930c01241"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba88d93b0db64ffe9b4f959930c01241">mJoint_KeyId_tR_Z</a></td></tr>
+<tr class="separator:aba88d93b0db64ffe9b4f959930c01241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ebb9f7d232ae9206a3f514824b35b0" id="r_ae0ebb9f7d232ae9206a3f514824b35b0"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0ebb9f7d232ae9206a3f514824b35b0">mJoint_KeyId_S_X</a></td></tr>
+<tr class="separator:ae0ebb9f7d232ae9206a3f514824b35b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5eb15911d7e66f32f3f94b9c85749b" id="r_a2a5eb15911d7e66f32f3f94b9c85749b"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a5eb15911d7e66f32f3f94b9c85749b">mJoint_KeyId_tS_X</a></td></tr>
+<tr class="separator:a2a5eb15911d7e66f32f3f94b9c85749b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641e356da702ec49174b0b2d3e48e1ee" id="r_a641e356da702ec49174b0b2d3e48e1ee"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a641e356da702ec49174b0b2d3e48e1ee">mJoint_KeyId_S_Y</a></td></tr>
+<tr class="separator:a641e356da702ec49174b0b2d3e48e1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990342984099459dede077ba2be653b8" id="r_a990342984099459dede077ba2be653b8"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a990342984099459dede077ba2be653b8">mJoint_KeyId_tS_Y</a></td></tr>
+<tr class="separator:a990342984099459dede077ba2be653b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a779438ad2066d48257311c13f8c3a514" id="r_a779438ad2066d48257311c13f8c3a514"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a779438ad2066d48257311c13f8c3a514">mJoint_KeyId_S_Z</a></td></tr>
+<tr class="separator:a779438ad2066d48257311c13f8c3a514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a4b8bbcea331957a7fbff7ff285b635" id="r_a6a4b8bbcea331957a7fbff7ff285b635"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a4b8bbcea331957a7fbff7ff285b635">mJoint_KeyId_tS_Z</a></td></tr>
+<tr class="separator:a6a4b8bbcea331957a7fbff7ff285b635"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
 <tr class="memitem:a9aeef4815f99cd09fdb239f16d01ca44" id="r_a9aeef4815f99cd09fdb239f16d01ca44"><td class="memItemLeft" align="right" valign="top">typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a></td></tr>
 <tr class="separator:a9aeef4815f99cd09fdb239f16d01ca44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a58d384a71ed00e1e3e17edcf69fe4cb1" id="r_a58d384a71ed00e1e3e17edcf69fe4cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58d384a71ed00e1e3e17edcf69fe4cb1">updateJointsTransform</a> (float time)</td></tr>
+<tr class="separator:a58d384a71ed00e1e3e17edcf69fe4cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a495e89df162e1f95d9bb7e8fd1c90" id="r_aa8a495e89df162e1f95d9bb7e8fd1c90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a82b42fe2bc0ff245b14cc01292c37bd2">Transform3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8a495e89df162e1f95d9bb7e8fd1c90">updateTransform</a> (<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a> jId, float time)</td></tr>
+<tr class="separator:aa8a495e89df162e1f95d9bb7e8fd1c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7696a8da679641111fcdfd2dbdce4e63" id="r_a7696a8da679641111fcdfd2dbdce4e63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7696a8da679641111fcdfd2dbdce4e63">calculateMinTime</a> (const std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;timeCodes)</td></tr>
+<tr class="separator:a7696a8da679641111fcdfd2dbdce4e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd45b1c087e6d6618dfd93510bcb76ee" id="r_acd45b1c087e6d6618dfd93510bcb76ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd45b1c087e6d6618dfd93510bcb76ee">calculateMaxTime</a> (const std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;timeCodes)</td></tr>
+<tr class="separator:acd45b1c087e6d6618dfd93510bcb76ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04711d9b9268173c7adb43fc51190b40" id="r_a04711d9b9268173c7adb43fc51190b40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04711d9b9268173c7adb43fc51190b40">offsetTimeCodes</a> (std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;timeCodes, <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> offset)</td></tr>
+<tr class="separator:a04711d9b9268173c7adb43fc51190b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af65f5da3da2ced43092be652a336d163" id="r_af65f5da3da2ced43092be652a336d163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af65f5da3da2ced43092be652a336d163">updateGLTFRotation</a> (int select, <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> time)</td></tr>
+<tr class="separator:af65f5da3da2ced43092be652a336d163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50981ad73c0fa79ab94808be4e37a50e" id="r_a50981ad73c0fa79ab94808be4e37a50e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50981ad73c0fa79ab94808be4e37a50e">updateCurrentPose</a> (int select, <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> time, std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;currentData, std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;bindPoseData, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;animationData, std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;TimeCode, int channel)</td></tr>
+<tr class="separator:a50981ad73c0fa79ab94808be4e37a50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -302,24 +360,26 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae07f0167b887c45b66ad1f752d72b79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a088ad94b675e7d17de202a13041b2e8e" id="r_a088ad94b675e7d17de202a13041b2e8e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a088ad94b675e7d17de202a13041b2e8e">mScale</a></td></tr>
 <tr class="separator:a088ad94b675e7d17de202a13041b2e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3cd12d96a7688ae10dc1669d504046e" id="r_ad3cd12d96a7688ae10dc1669d504046e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3cd12d96a7688ae10dc1669d504046e">mRotation</a></td></tr>
-<tr class="separator:ad3cd12d96a7688ae10dc1669d504046e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf96a49ab8dd3a9259687d7ff9a7850" id="r_aebf96a49ab8dd3a9259687d7ff9a7850"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebf96a49ab8dd3a9259687d7ff9a7850">mQuatRotation</a></td></tr>
+<tr class="separator:aebf96a49ab8dd3a9259687d7ff9a7850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3bc0ca4767fabe58dca4a21e8bac70e" id="r_ae3bc0ca4767fabe58dca4a21e8bac70e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3bc0ca4767fabe58dca4a21e8bac70e">mRotator</a></td></tr>
+<tr class="separator:ae3bc0ca4767fabe58dca4a21e8bac70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4fda577561ece0ad9d6d02024583ec5" id="r_ac4fda577561ece0ad9d6d02024583ec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedyno.html#a2aa59d9fceeeb72a56f3030d5518cb02">DArray</a>&lt; <a class="el" href="namespacedyno.html#aee0f80dc74f0a06d220e2aa7dce341db">Mat4f</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4fda577561ece0ad9d6d02024583ec5">mJointWorldMatrix</a></td></tr>
 <tr class="separator:ac4fda577561ece0ad9d6d02024583ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe75c3145cee36ea186de4bcf5273813" id="r_abe75c3145cee36ea186de4bcf5273813"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe75c3145cee36ea186de4bcf5273813">mTotalTime</a> = 0</td></tr>
-<tr class="separator:abe75c3145cee36ea186de4bcf5273813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0be2e31566c7086e39f2deb528373f6d" id="r_a0be2e31566c7086e39f2deb528373f6d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0be2e31566c7086e39f2deb528373f6d">currentTime</a> = -1</td></tr>
-<tr class="separator:a0be2e31566c7086e39f2deb528373f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6e1fa3b32fa27d30dfa1255e16161d" id="r_aef6e1fa3b32fa27d30dfa1255e16161d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef6e1fa3b32fa27d30dfa1255e16161d">mTotalTime</a> = 0</td></tr>
+<tr class="separator:aef6e1fa3b32fa27d30dfa1255e16161d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb1128737ba1e52daf874ad90369aa7" id="r_abdb1128737ba1e52daf874ad90369aa7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdb1128737ba1e52daf874ad90369aa7">currentTime</a> = -1</td></tr>
+<tr class="separator:abdb1128737ba1e52daf874ad90369aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a4ba862a51ef2a54eac46bcf78756b" id="r_a08a4ba862a51ef2a54eac46bcf78756b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08a4ba862a51ef2a54eac46bcf78756b">mLoop</a> = true</td></tr>
 <tr class="separator:a08a4ba862a51ef2a54eac46bcf78756b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d17e63e191ac7b6b74ab3707b5a24d9" id="r_a8d17e63e191ac7b6b74ab3707b5a24d9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d17e63e191ac7b6b74ab3707b5a24d9">mBlendInTime</a> = 0.0f</td></tr>
-<tr class="separator:a8d17e63e191ac7b6b74ab3707b5a24d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af56031380af13242b305eaa614ddf837" id="r_af56031380af13242b305eaa614ddf837"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af56031380af13242b305eaa614ddf837">mBlendOutTime</a> = 0.0f</td></tr>
-<tr class="separator:af56031380af13242b305eaa614ddf837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a55b48476d45831279fca66bcc90a42" id="r_a8a55b48476d45831279fca66bcc90a42"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a55b48476d45831279fca66bcc90a42">mPlayRate</a> = 1.0f</td></tr>
-<tr class="separator:a8a55b48476d45831279fca66bcc90a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d335831d4fb666a676593d477c52d0f" id="r_a9d335831d4fb666a676593d477c52d0f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d335831d4fb666a676593d477c52d0f">mAnimationTime</a> = 0.0f</td></tr>
-<tr class="separator:a9d335831d4fb666a676593d477c52d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80af0e162986e0adaf92f9b8cb36b21d" id="r_a80af0e162986e0adaf92f9b8cb36b21d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80af0e162986e0adaf92f9b8cb36b21d">mBlendInTime</a> = 0.0f</td></tr>
+<tr class="separator:a80af0e162986e0adaf92f9b8cb36b21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c4867c7adf3dd8731d400e340b0d38c" id="r_a1c4867c7adf3dd8731d400e340b0d38c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c4867c7adf3dd8731d400e340b0d38c">mBlendOutTime</a> = 0.0f</td></tr>
+<tr class="separator:a1c4867c7adf3dd8731d400e340b0d38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf6da1814a1cb18e0317fcde7f06fdf" id="r_aacf6da1814a1cb18e0317fcde7f06fdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacf6da1814a1cb18e0317fcde7f06fdf">mPlayRate</a> = 1.0f</td></tr>
+<tr class="separator:aacf6da1814a1cb18e0317fcde7f06fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc2cf93ceb5b560c364853fec12f4cb" id="r_a7dc2cf93ceb5b560c364853fec12f4cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dc2cf93ceb5b560c364853fec12f4cb">mAnimationTime</a> = 0.0f</td></tr>
+<tr class="separator:a7dc2cf93ceb5b560c364853fec12f4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -348,7 +408,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00122">122</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00211">211</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9aeef4815f99cd09fdb239f16d01ca44" name="a9aeef4815f99cd09fdb239f16d01ca44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9aeef4815f99cd09fdb239f16d01ca44">&#9670;&#160;</a></span>joint</h2>
@@ -370,7 +430,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00125">125</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00213">213</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -398,7 +458,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00129">129</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00217">217</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -420,6 +480,83 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acd45b1c087e6d6618dfd93510bcb76ee" name="acd45b1c087e6d6618dfd93510bcb76ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd45b1c087e6d6618dfd93510bcb76ee">&#9670;&#160;</a></span>calculateMaxTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> dyno::JointAnimationInfo::calculateMaxTime </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>timeCodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7696a8da679641111fcdfd2dbdce4e63" name="a7696a8da679641111fcdfd2dbdce4e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7696a8da679641111fcdfd2dbdce4e63">&#9670;&#160;</a></span>calculateMinTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> dyno::JointAnimationInfo::calculateMinTime </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>timeCodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2db0744a2c5e2b5c49631075953cd20d" name="a2db0744a2c5e2b5c49631075953cd20d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db0744a2c5e2b5c49631075953cd20d">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointAnimationInfo::clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00233">233</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
 <a id="a036504f0e32a789301162706157b2246" name="a036504f0e32a789301162706157b2246"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a036504f0e32a789301162706157b2246">&#9670;&#160;</a></span>findMaxSmallerIndex()</h2>
 
@@ -438,6 +575,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_joint_animation_info_a036504f0e32a789301162706157b2246_icgraph.png" border="0" usemap="#aclassdyno_1_1_joint_animation_info_a036504f0e32a789301162706157b2246_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_joint_animation_info_a036504f0e32a789301162706157b2246_icgraph" id="aclassdyno_1_1_joint_animation_info_a036504f0e32a789301162706157b2246_icgraph">
+<area shape="rect" title=" " alt="" coords="219,39,384,81"/>
+<area shape="rect" href="classdyno_1_1_joint_animation_info.html#a50981ad73c0fa79ab94808be4e37a50e" title=" " alt="" coords="5,5,171,48"/>
+<area shape="poly" title=" " alt="" coords="203,47,171,42,172,37,204,42"/>
+<area shape="rect" href="classdyno_1_1_joint_animation_info.html#af65f5da3da2ced43092be652a336d163" title=" " alt="" coords="5,72,171,115"/>
+<area shape="poly" title=" " alt="" coords="204,78,172,83,171,78,203,73"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -464,7 +613,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00181">181</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00331">331</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -491,7 +640,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00183">183</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00333">333</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -518,7 +667,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00179">179</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00329">329</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -617,7 +766,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00185">185</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00335">335</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -648,6 +797,33 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a7d82863f00c9acff6eca346eba80b0c6" name="a7d82863f00c9acff6eca346eba80b0c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d82863f00c9acff6eca346eba80b0c6">&#9670;&#160;</a></span>getSkeleton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &gt; &amp; dyno::JointAnimationInfo::getSkeleton </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00339">339</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
 <a id="a38a3b7602f85ecfe0960cd62cfcc730d" name="a38a3b7602f85ecfe0960cd62cfcc730d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38a3b7602f85ecfe0960cd62cfcc730d">&#9670;&#160;</a></span>getTotalTime()</h2>
 
@@ -671,12 +847,92 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00154">154</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00303">303</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a186e0366fe672b6b537ffd538188e73a" name="a186e0366fe672b6b537ffd538188e73a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a186e0366fe672b6b537ffd538188e73a">&#9670;&#160;</a></span>isGltfAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::JointAnimationInfo::isGltfAnimation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00282">282</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="ae168ad87ad929898b247bdebeee4603d" name="ae168ad87ad929898b247bdebeee4603d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae168ad87ad929898b247bdebeee4603d">&#9670;&#160;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::JointAnimationInfo::isValid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00278">278</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="abe02273ffda944b18eb45002f86003b9" name="abe02273ffda944b18eb45002f86003b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe02273ffda944b18eb45002f86003b9">&#9670;&#160;</a></span>lerp() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> dyno::JointAnimationInfo::lerp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>v0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>v1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>weight</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <a id="abb51b9a910919046e4cc8829b8146669" name="abb51b9a910919046e4cc8829b8146669"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb51b9a910919046e4cc8829b8146669">&#9670;&#160;</a></span>lerp()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abb51b9a910919046e4cc8829b8146669">&#9670;&#160;</a></span>lerp() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -698,6 +954,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_joint_animation_info_abb51b9a910919046e4cc8829b8146669_icgraph.png" border="0" usemap="#aclassdyno_1_1_joint_animation_info_abb51b9a910919046e4cc8829b8146669_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_joint_animation_info_abb51b9a910919046e4cc8829b8146669_icgraph" id="aclassdyno_1_1_joint_animation_info_abb51b9a910919046e4cc8829b8146669_icgraph">
+<area shape="rect" title=" " alt="" coords="219,5,384,48"/>
+<area shape="rect" href="classdyno_1_1_joint_animation_info.html#a50981ad73c0fa79ab94808be4e37a50e" title=" " alt="" coords="5,5,171,48"/>
+<area shape="poly" title=" " alt="" coords="203,29,171,29,171,24,203,24"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -724,6 +990,16 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_joint_animation_info_a0660d1bafcb4abbe49c2f0373bb74649_icgraph.png" border="0" usemap="#aclassdyno_1_1_joint_animation_info_a0660d1bafcb4abbe49c2f0373bb74649_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_joint_animation_info_a0660d1bafcb4abbe49c2f0373bb74649_icgraph" id="aclassdyno_1_1_joint_animation_info_a0660d1bafcb4abbe49c2f0373bb74649_icgraph">
+<area shape="rect" title=" " alt="" coords="219,5,384,48"/>
+<area shape="rect" href="classdyno_1_1_joint_animation_info.html#af65f5da3da2ced43092be652a336d163" title=" " alt="" coords="5,5,171,48"/>
+<area shape="poly" title=" " alt="" coords="203,29,171,29,171,24,203,24"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -744,14 +1020,72 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a2c0d80181c2eab85999a3d27e4870a85" name="a2c0d80181c2eab85999a3d27e4870a85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c0d80181c2eab85999a3d27e4870a85">&#9670;&#160;</a></span>setAnimationData()</h2>
+<a id="a04711d9b9268173c7adb43fc51190b40" name="a04711d9b9268173c7adb43fc51190b40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04711d9b9268173c7adb43fc51190b40">&#9670;&#160;</a></span>offsetTimeCodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointAnimationInfo::offsetTimeCodes </td>
+          <td>(</td>
+          <td class="paramtype">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>timeCodes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>offset</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00351">351</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="ab754ffe0a735e29fe950daa1dd153288" name="ab754ffe0a735e29fe950daa1dd153288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab754ffe0a735e29fe950daa1dd153288">&#9670;&#160;</a></span>resizeJointsData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointAnimationInfo::resizeJointsData </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00287">287</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a48bb9b8681fb17451994d03a5b9df505" name="a48bb9b8681fb17451994d03a5b9df505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48bb9b8681fb17451994d03a5b9df505">&#9670;&#160;</a></span>setGLTFAnimationData()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dyno::JointAnimationInfo::setAnimationData </td>
+          <td class="memname">void dyno::JointAnimationInfo::setGLTFAnimationData </td>
           <td>(</td>
           <td class="paramtype">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>jointTranslation</em></span>, </td>
         </tr>
@@ -783,7 +1117,12 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>skeleton</em></span>&#160;)</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>skeleton</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>loop</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -813,7 +1152,34 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00168">168</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00318">318</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a9efab47502a3fb6dc18856f5cd8c3e78" name="a9efab47502a3fb6dc18856f5cd8c3e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9efab47502a3fb6dc18856f5cd8c3e78">&#9670;&#160;</a></span>setSkeleton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointAnimationInfo::setSkeleton </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdyno_1_1_joint_info.html">JointInfo</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>sk</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00341">341</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +1232,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00172">172</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00322">322</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -880,16 +1246,152 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a50981ad73c0fa79ab94808be4e37a50e" name="a50981ad73c0fa79ab94808be4e37a50e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50981ad73c0fa79ab94808be4e37a50e">&#9670;&#160;</a></span>updateCurrentPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointAnimationInfo::updateCurrentPose </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>select</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>time</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>currentData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bindPoseData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>animationData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::map&lt; <a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>TimeCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00387">387</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_joint_animation_info_a50981ad73c0fa79ab94808be4e37a50e_cgraph.png" border="0" usemap="#aclassdyno_1_1_joint_animation_info_a50981ad73c0fa79ab94808be4e37a50e_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_joint_animation_info_a50981ad73c0fa79ab94808be4e37a50e_cgraph" id="aclassdyno_1_1_joint_animation_info_a50981ad73c0fa79ab94808be4e37a50e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,171,81"/>
+<area shape="rect" href="classdyno_1_1_joint_animation_info.html#a036504f0e32a789301162706157b2246" title=" " alt="" coords="219,5,384,48"/>
+<area shape="poly" title=" " alt="" coords="170,44,203,39,203,45,171,50"/>
+<area shape="rect" href="classdyno_1_1_joint_animation_info.html#abb51b9a910919046e4cc8829b8146669" title=" " alt="" coords="219,72,384,115"/>
+<area shape="poly" title=" " alt="" coords="171,70,203,75,203,81,170,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af65f5da3da2ced43092be652a336d163" name="af65f5da3da2ced43092be652a336d163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af65f5da3da2ced43092be652a336d163">&#9670;&#160;</a></span>updateGLTFRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointAnimationInfo::updateGLTFRotation </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>select</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>time</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00359">359</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_joint_animation_info_af65f5da3da2ced43092be652a336d163_cgraph.png" border="0" usemap="#aclassdyno_1_1_joint_animation_info_af65f5da3da2ced43092be652a336d163_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_joint_animation_info_af65f5da3da2ced43092be652a336d163_cgraph" id="aclassdyno_1_1_joint_animation_info_af65f5da3da2ced43092be652a336d163_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,171,81"/>
+<area shape="rect" href="classdyno_1_1_joint_animation_info.html#a036504f0e32a789301162706157b2246" title=" " alt="" coords="219,5,384,48"/>
+<area shape="poly" title=" " alt="" coords="170,44,203,39,203,45,171,50"/>
+<area shape="rect" href="classdyno_1_1_joint_animation_info.html#a0660d1bafcb4abbe49c2f0373bb74649" title=" " alt="" coords="219,72,384,115"/>
+<area shape="poly" title=" " alt="" coords="171,70,203,75,203,81,170,76"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a58d384a71ed00e1e3e17edcf69fe4cb1" name="a58d384a71ed00e1e3e17edcf69fe4cb1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58d384a71ed00e1e3e17edcf69fe4cb1">&#9670;&#160;</a></span>updateJointsTransform()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void dyno::JointAnimationInfo::updateJointsTransform </td>
           <td>(</td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>time</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f73ca80cd49eb747c3ffa04b990769d" name="a2f73ca80cd49eb747c3ffa04b990769d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f73ca80cd49eb747c3ffa04b990769d">&#9670;&#160;</a></span>updateTotalTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dyno::JointAnimationInfo::updateTotalTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -902,6 +1404,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespacedyno.html#a82b42fe2bc0ff245b14cc01292c37bd2">Transform3f</a> dyno::JointAnimationInfo::updateTransform </td>
@@ -914,13 +1419,18 @@ Here is the call graph for this function:</div>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>time</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a0be2e31566c7086e39f2deb528373f6d" name="a0be2e31566c7086e39f2deb528373f6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0be2e31566c7086e39f2deb528373f6d">&#9670;&#160;</a></span>currentTime</h2>
+<a id="abdb1128737ba1e52daf874ad90369aa7" name="abdb1128737ba1e52daf874ad90369aa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb1128737ba1e52daf874ad90369aa7">&#9670;&#160;</a></span>currentTime</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -929,7 +1439,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float dyno::JointAnimationInfo::currentTime = -1</td>
+          <td class="memname"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> dyno::JointAnimationInfo::currentTime = -1</td>
         </tr>
       </table>
   </td>
@@ -939,12 +1449,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00211">211</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00455">455</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="a9d335831d4fb666a676593d477c52d0f" name="a9d335831d4fb666a676593d477c52d0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d335831d4fb666a676593d477c52d0f">&#9670;&#160;</a></span>mAnimationTime</h2>
+<a id="a7dc2cf93ceb5b560c364853fec12f4cb" name="a7dc2cf93ceb5b560c364853fec12f4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc2cf93ceb5b560c364853fec12f4cb">&#9670;&#160;</a></span>mAnimationTime</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -953,7 +1463,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float dyno::JointAnimationInfo::mAnimationTime = 0.0f</td>
+          <td class="memname"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> dyno::JointAnimationInfo::mAnimationTime = 0.0f</td>
         </tr>
       </table>
   </td>
@@ -963,12 +1473,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00218">218</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00462">462</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="a8d17e63e191ac7b6b74ab3707b5a24d9" name="a8d17e63e191ac7b6b74ab3707b5a24d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d17e63e191ac7b6b74ab3707b5a24d9">&#9670;&#160;</a></span>mBlendInTime</h2>
+<a id="a80af0e162986e0adaf92f9b8cb36b21d" name="a80af0e162986e0adaf92f9b8cb36b21d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80af0e162986e0adaf92f9b8cb36b21d">&#9670;&#160;</a></span>mBlendInTime</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -977,7 +1487,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float dyno::JointAnimationInfo::mBlendInTime = 0.0f</td>
+          <td class="memname"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> dyno::JointAnimationInfo::mBlendInTime = 0.0f</td>
         </tr>
       </table>
   </td>
@@ -987,12 +1497,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00214">214</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00458">458</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="af56031380af13242b305eaa614ddf837" name="af56031380af13242b305eaa614ddf837"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af56031380af13242b305eaa614ddf837">&#9670;&#160;</a></span>mBlendOutTime</h2>
+<a id="a1c4867c7adf3dd8731d400e340b0d38c" name="a1c4867c7adf3dd8731d400e340b0d38c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c4867c7adf3dd8731d400e340b0d38c">&#9670;&#160;</a></span>mBlendOutTime</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1001,7 +1511,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float dyno::JointAnimationInfo::mBlendOutTime = 0.0f</td>
+          <td class="memname"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> dyno::JointAnimationInfo::mBlendOutTime = 0.0f</td>
         </tr>
       </table>
   </td>
@@ -1011,103 +1521,327 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00215">215</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00459">459</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="a2b4f34bb4dab9d896ac87f12e73c090e" name="a2b4f34bb4dab9d896ac87f12e73c090e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b4f34bb4dab9d896ac87f12e73c090e">&#9670;&#160;</a></span>mJoint_Index_Rotation</h2>
+<a id="ac67edbe143f90f4fb43cd317a4d3fc93" name="ac67edbe143f90f4fb43cd317a4d3fc93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac67edbe143f90f4fb43cd317a4d3fc93">&#9670;&#160;</a></span>mJoint_KeyId_QuatRotation</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_Index_Rotation</td>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_QuatRotation</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00198">198</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00419">419</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="a9a9b78bd2cada7b5d6ac68b21894e656" name="a9a9b78bd2cada7b5d6ac68b21894e656"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a9b78bd2cada7b5d6ac68b21894e656">&#9670;&#160;</a></span>mJoint_Index_Scale</h2>
+<a id="a5cd137a73dfb20b98ef2852bd0cc631d" name="a5cd137a73dfb20b98ef2852bd0cc631d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cd137a73dfb20b98ef2852bd0cc631d">&#9670;&#160;</a></span>mJoint_KeyId_R_X</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_Index_Scale</td>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_R_X</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00195">195</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00430">430</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="a7e1cbd51dc85deab619de15a4d45d478" name="a7e1cbd51dc85deab619de15a4d45d478"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e1cbd51dc85deab619de15a4d45d478">&#9670;&#160;</a></span>mJoint_Index_TimeCode_Rotation</h2>
+<a id="a130177829dc749fe46a1fdb7fcdba8d7" name="a130177829dc749fe46a1fdb7fcdba8d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130177829dc749fe46a1fdb7fcdba8d7">&#9670;&#160;</a></span>mJoint_KeyId_R_Y</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_Index_TimeCode_Rotation</td>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_R_Y</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00199">199</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00432">432</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="a5ccfe2f1e91f4be8283d27112301bd9c" name="a5ccfe2f1e91f4be8283d27112301bd9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ccfe2f1e91f4be8283d27112301bd9c">&#9670;&#160;</a></span>mJoint_Index_TimeCode_Scale</h2>
+<a id="a1a44d82dc18a847a9af69fbd35a122c1" name="a1a44d82dc18a847a9af69fbd35a122c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a44d82dc18a847a9af69fbd35a122c1">&#9670;&#160;</a></span>mJoint_KeyId_R_Z</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_Index_TimeCode_Scale</td>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_R_Z</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00196">196</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00434">434</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="adddb1f92bf79c3fd905cc8b532217758" name="adddb1f92bf79c3fd905cc8b532217758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adddb1f92bf79c3fd905cc8b532217758">&#9670;&#160;</a></span>mJoint_Index_TimeCode_Translation</h2>
+<a id="ae0ebb9f7d232ae9206a3f514824b35b0" name="ae0ebb9f7d232ae9206a3f514824b35b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ebb9f7d232ae9206a3f514824b35b0">&#9670;&#160;</a></span>mJoint_KeyId_S_X</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_Index_TimeCode_Translation</td>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_S_X</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00193">193</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00437">437</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="a7ace2f0b808cfc58aefaa8bedba14210" name="a7ace2f0b808cfc58aefaa8bedba14210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ace2f0b808cfc58aefaa8bedba14210">&#9670;&#160;</a></span>mJoint_Index_Translation</h2>
+<a id="a641e356da702ec49174b0b2d3e48e1ee" name="a641e356da702ec49174b0b2d3e48e1ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641e356da702ec49174b0b2d3e48e1ee">&#9670;&#160;</a></span>mJoint_KeyId_S_Y</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_Index_Translation</td>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_S_Y</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00192">192</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00439">439</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a779438ad2066d48257311c13f8c3a514" name="a779438ad2066d48257311c13f8c3a514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a779438ad2066d48257311c13f8c3a514">&#9670;&#160;</a></span>mJoint_KeyId_S_Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_S_Z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00441">441</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a9baa8b5d8609c73e2467daece6b2120b" name="a9baa8b5d8609c73e2467daece6b2120b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9baa8b5d8609c73e2467daece6b2120b">&#9670;&#160;</a></span>mJoint_KeyId_T_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_T_X</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00423">423</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a579f656f8c022d87c1b866bd9e8d54cb" name="a579f656f8c022d87c1b866bd9e8d54cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a579f656f8c022d87c1b866bd9e8d54cb">&#9670;&#160;</a></span>mJoint_KeyId_T_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_T_Y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00425">425</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a21d299e9d3599834c8fcee9ef36178ae" name="a21d299e9d3599834c8fcee9ef36178ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d299e9d3599834c8fcee9ef36178ae">&#9670;&#160;</a></span>mJoint_KeyId_T_Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_T_Z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00427">427</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a6b610fa5f33e1b5f2f907d63184a4454" name="a6b610fa5f33e1b5f2f907d63184a4454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b610fa5f33e1b5f2f907d63184a4454">&#9670;&#160;</a></span>mJoint_KeyId_tQuatRotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_tQuatRotation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00420">420</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a968e87a21f08f67159e289f170cc1888" name="a968e87a21f08f67159e289f170cc1888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a968e87a21f08f67159e289f170cc1888">&#9670;&#160;</a></span>mJoint_KeyId_tR_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_tR_X</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00431">431</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="aedd63526c66f4880a3e8e340e7e27e62" name="aedd63526c66f4880a3e8e340e7e27e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedd63526c66f4880a3e8e340e7e27e62">&#9670;&#160;</a></span>mJoint_KeyId_tR_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_tR_Y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00433">433</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="aba88d93b0db64ffe9b4f959930c01241" name="aba88d93b0db64ffe9b4f959930c01241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba88d93b0db64ffe9b4f959930c01241">&#9670;&#160;</a></span>mJoint_KeyId_tR_Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_tR_Z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00435">435</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a2a5eb15911d7e66f32f3f94b9c85749b" name="a2a5eb15911d7e66f32f3f94b9c85749b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5eb15911d7e66f32f3f94b9c85749b">&#9670;&#160;</a></span>mJoint_KeyId_tS_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_tS_X</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00438">438</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a990342984099459dede077ba2be653b8" name="a990342984099459dede077ba2be653b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990342984099459dede077ba2be653b8">&#9670;&#160;</a></span>mJoint_KeyId_tS_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_tS_Y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00440">440</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a6a4b8bbcea331957a7fbff7ff285b635" name="a6a4b8bbcea331957a7fbff7ff285b635"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a4b8bbcea331957a7fbff7ff285b635">&#9670;&#160;</a></span>mJoint_KeyId_tS_Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_tS_Z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00442">442</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="afa1888fe30e0141dc2983bc7786dbc90" name="afa1888fe30e0141dc2983bc7786dbc90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1888fe30e0141dc2983bc7786dbc90">&#9670;&#160;</a></span>mJoint_KeyId_tT_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_tT_X</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00424">424</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a8b03a477fb7ebdfb3364a0165d01bfe1" name="a8b03a477fb7ebdfb3364a0165d01bfe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b03a477fb7ebdfb3364a0165d01bfe1">&#9670;&#160;</a></span>mJoint_KeyId_tT_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_tT_Y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00426">426</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="a46445caba4b026c391d185f4b38b4042" name="a46445caba4b026c391d185f4b38b4042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46445caba4b026c391d185f4b38b4042">&#9670;&#160;</a></span>mJoint_KeyId_tT_Z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a9aeef4815f99cd09fdb239f16d01ca44">joint</a>, std::vector&lt;<a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; &gt; dyno::JointAnimationInfo::mJoint_KeyId_tT_Z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00428">428</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1865,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00207">207</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00451">451</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -1155,12 +1889,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00213">213</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00457">457</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="a8a55b48476d45831279fca66bcc90a42" name="a8a55b48476d45831279fca66bcc90a42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a55b48476d45831279fca66bcc90a42">&#9670;&#160;</a></span>mPlayRate</h2>
+<a id="aacf6da1814a1cb18e0317fcde7f06fdf" name="aacf6da1814a1cb18e0317fcde7f06fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf6da1814a1cb18e0317fcde7f06fdf">&#9670;&#160;</a></span>mPlayRate</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1169,7 +1903,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float dyno::JointAnimationInfo::mPlayRate = 1.0f</td>
+          <td class="memname"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> dyno::JointAnimationInfo::mPlayRate = 1.0f</td>
         </tr>
       </table>
   </td>
@@ -1179,12 +1913,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00216">216</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00460">460</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="ad3cd12d96a7688ae10dc1669d504046e" name="ad3cd12d96a7688ae10dc1669d504046e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3cd12d96a7688ae10dc1669d504046e">&#9670;&#160;</a></span>mRotation</h2>
+<a id="aebf96a49ab8dd3a9259687d7ff9a7850" name="aebf96a49ab8dd3a9259687d7ff9a7850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf96a49ab8dd3a9259687d7ff9a7850">&#9670;&#160;</a></span>mQuatRotation</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1193,7 +1927,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a>&gt; dyno::JointAnimationInfo::mRotation</td>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacedyno.html#a5b911f72b8a21ba847ce17c593055976">Quat1f</a>&gt; dyno::JointAnimationInfo::mQuatRotation</td>
         </tr>
       </table>
   </td>
@@ -1203,7 +1937,31 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00205">205</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00448">448</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+
+</div>
+</div>
+<a id="ae3bc0ca4767fabe58dca4a21e8bac70e" name="ae3bc0ca4767fabe58dca4a21e8bac70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3bc0ca4767fabe58dca4a21e8bac70e">&#9670;&#160;</a></span>mRotator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="namespacedyno.html#aafa7daf71ffcc74fd4e59d36d51ff01f">Vec3f</a>&gt; dyno::JointAnimationInfo::mRotator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00449">449</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -1227,7 +1985,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00204">204</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00447">447</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -1243,12 +2001,12 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00189">189</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00416">416</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
-<a id="abe75c3145cee36ea186de4bcf5273813" name="abe75c3145cee36ea186de4bcf5273813"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe75c3145cee36ea186de4bcf5273813">&#9670;&#160;</a></span>mTotalTime</h2>
+<a id="aef6e1fa3b32fa27d30dfa1255e16161d" name="aef6e1fa3b32fa27d30dfa1255e16161d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6e1fa3b32fa27d30dfa1255e16161d">&#9670;&#160;</a></span>mTotalTime</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1257,7 +2015,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float dyno::JointAnimationInfo::mTotalTime = 0</td>
+          <td class="memname"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> dyno::JointAnimationInfo::mTotalTime = 0</td>
         </tr>
       </table>
   </td>
@@ -1267,7 +2025,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00209">209</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00453">453</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
@@ -1291,12 +2049,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00203">203</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_joint_info_8h_source.html#l00446">446</a> of file <a class="el" href="_joint_info_8h_source.html">JointInfo.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>D:/Peridyno/peridyno/src/Modeling/<a class="el" href="_joint_info_8h_source.html">JointInfo.h</a></li>
+<li>D:/Peridyno/peridyno/src/Topology/Cuda/Topology/<a class="el" href="_joint_info_8h_source.html">JointInfo.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

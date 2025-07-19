@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,9 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classdyno_1_1_module-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::Module Class Reference</div></div>
 </div><!--header-->
@@ -104,35 +106,39 @@ Inheritance diagram for dyno::Module:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_module__inherit__graph.png" border="0" usemap="#adyno_1_1_module_inherit__map" alt="Inheritance graph"/></div>
 <map name="adyno_1_1_module_inherit__map" id="adyno_1_1_module_inherit__map">
-<area shape="rect" title=" " alt="" coords="294,2079,393,2105"/>
+<area shape="rect" title=" " alt="" coords="294,2063,393,2089"/>
 <area shape="rect" href="classdyno_1_1_compute_module.html" title=" " alt="" coords="445,861,597,888"/>
-<area shape="poly" title=" " alt="" coords="346,2063,515,888,520,889,352,2064"/>
+<area shape="poly" title=" " alt="" coords="347,2047,515,888,520,889,352,2047"/>
 <area shape="rect" href="classdyno_1_1_particle_integrator.html" title=" " alt="" coords="682,1693,838,1736"/>
-<area shape="poly" title=" " alt="" coords="351,2063,383,1980,408,1932,439,1888,488,1836,533,1803,583,1776,648,1746,681,1732,683,1737,650,1750,585,1781,536,1807,492,1840,443,1891,412,1935,387,1982,356,2065"/>
-<area shape="rect" href="classdyno_1_1_constraint_module.html" title=" " alt="" coords="441,1901,601,1928"/>
-<area shape="poly" title=" " alt="" coords="353,2063,386,2001,410,1967,440,1938,460,1926,462,1931,443,1942,414,1970,390,2003,358,2066"/>
-<area shape="rect" href="classdyno_1_1_data_source.html" title=" " alt="" coords="458,1952,584,1979"/>
-<area shape="poly" title=" " alt="" coords="362,2064,395,2025,440,1988,463,1977,466,1982,443,1993,399,2029,366,2068"/>
-<area shape="rect" href="classdyno_1_1_debug_info.html" title=" " alt="" coords="462,2003,580,2029"/>
-<area shape="poly" title=" " alt="" coords="381,2068,440,2039,471,2027,473,2032,442,2044,383,2073"/>
-<area shape="rect" href="classdyno_1_1_group_module.html" title=" " alt="" coords="454,2053,588,2080"/>
-<area shape="poly" title=" " alt="" coords="408,2080,453,2074,454,2079,409,2085"/>
-<area shape="rect" href="classdyno_1_1_input_module.html" title=" " alt="" coords="457,2104,585,2131"/>
-<area shape="poly" title=" " alt="" coords="409,2099,457,2105,456,2111,408,2104"/>
-<area shape="rect" href="classdyno_1_1_output_module.html" title=" " alt="" coords="452,2155,590,2181"/>
-<area shape="poly" title=" " alt="" coords="383,2111,442,2140,473,2152,471,2157,440,2145,381,2116"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html" title=" " alt="" coords="469,2205,573,2232"/>
-<area shape="poly" title=" " alt="" coords="366,2116,399,2155,443,2191,470,2204,468,2209,440,2196,395,2159,362,2120"/>
-<area shape="rect" href="classdyno_1_1_states.html" title=" " alt="" coords="473,2256,569,2283"/>
-<area shape="poly" title=" " alt="" coords="358,2118,390,2181,414,2214,443,2242,474,2258,472,2262,440,2246,410,2217,386,2183,353,2121"/>
-<area shape="rect" href="classdyno_1_1_topology_mapping.html" title=" " alt="" coords="442,2307,600,2333"/>
-<area shape="poly" title=" " alt="" coords="353,2119,364,2158,382,2205,408,2252,443,2293,461,2304,458,2308,440,2297,404,2255,377,2207,359,2160,348,2121"/>
-<area shape="rect" href="classdyno_1_1_visual_module.html" title=" " alt="" coords="453,2357,589,2384"/>
-<area shape="poly" title=" " alt="" coords="351,2120,359,2169,375,2229,403,2290,421,2318,443,2343,460,2355,457,2359,440,2347,417,2322,398,2293,370,2230,354,2170,345,2121"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="149,2079,246,2105"/>
-<area shape="poly" title=" " alt="" coords="261,2089,294,2089,294,2095,261,2095"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="5,2079,101,2105"/>
-<area shape="poly" title=" " alt="" coords="116,2089,148,2089,148,2095,116,2095"/>
+<area shape="poly" title=" " alt="" coords="345,2047,354,1999,371,1938,398,1876,417,1847,439,1821,466,1798,495,1779,558,1750,623,1731,681,1719,682,1725,624,1736,560,1755,498,1784,469,1803,443,1825,421,1850,403,1878,376,1940,359,2000,351,2048"/>
+<area shape="rect" href="classdyno_1_1_constraint_module.html" title=" " alt="" coords="441,1835,601,1861"/>
+<area shape="poly" title=" " alt="" coords="348,2047,359,2008,377,1961,404,1913,440,1871,458,1860,461,1864,443,1875,408,1916,382,1963,364,2010,353,2049"/>
+<area shape="rect" href="classdyno_1_1_data_source.html" title=" " alt="" coords="458,1885,584,1912"/>
+<area shape="poly" title=" " alt="" coords="353,2047,386,1985,410,1951,440,1922,460,1910,462,1915,443,1926,414,1954,390,1987,358,2050"/>
+<area shape="rect" href="classdyno_1_1_debug_info.html" title=" " alt="" coords="462,1936,580,1963"/>
+<area shape="poly" title=" " alt="" coords="362,2048,395,2009,440,1972,463,1961,466,1966,443,1977,399,2013,366,2052"/>
+<area shape="rect" href="classdyno_1_1_group_module.html" title=" " alt="" coords="454,1987,588,2013"/>
+<area shape="poly" title=" " alt="" coords="381,2052,440,2023,471,2011,473,2016,442,2028,383,2057"/>
+<area shape="rect" href="classdyno_1_1_input_module.html" title=" " alt="" coords="457,2037,585,2064"/>
+<area shape="poly" title=" " alt="" coords="408,2064,456,2057,457,2063,409,2069"/>
+<area shape="rect" href="classdyno_1_1_output_module.html" title=" " alt="" coords="452,2088,590,2115"/>
+<area shape="poly" title=" " alt="" coords="409,2083,452,2089,451,2094,408,2088"/>
+<area shape="rect" href="classdyno_1_1_outputs.html" title=" " alt="" coords="469,2139,573,2165"/>
+<area shape="poly" title=" " alt="" coords="383,2095,442,2124,473,2136,471,2141,440,2129,381,2100"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html" title=" " alt="" coords="469,2189,573,2216"/>
+<area shape="poly" title=" " alt="" coords="366,2100,399,2139,443,2175,470,2188,468,2193,440,2180,395,2143,362,2104"/>
+<area shape="rect" href="classdyno_1_1_states.html" title=" " alt="" coords="473,2240,569,2267"/>
+<area shape="poly" title=" " alt="" coords="358,2102,390,2165,414,2198,443,2226,474,2242,472,2246,440,2230,410,2201,386,2167,353,2105"/>
+<area shape="rect" href="classdyno_1_1_topology_mapping.html" title=" " alt="" coords="442,2291,600,2317"/>
+<area shape="poly" title=" " alt="" coords="353,2103,364,2142,382,2189,408,2236,443,2277,461,2288,458,2292,440,2281,404,2239,377,2191,359,2144,348,2105"/>
+<area shape="rect" href="classdyno_1_1_visual_module.html" title=" " alt="" coords="453,2341,589,2368"/>
+<area shape="poly" title=" " alt="" coords="351,2104,359,2153,375,2213,403,2274,421,2302,443,2327,460,2339,457,2343,440,2331,417,2306,398,2277,370,2214,354,2154,345,2105"/>
+<area shape="rect" href="classdyno_1_1_wt_states.html" title=" " alt="" coords="465,2392,577,2419"/>
+<area shape="poly" title=" " alt="" coords="348,2105,354,2162,369,2235,381,2274,397,2312,418,2347,443,2378,466,2393,463,2397,440,2382,413,2350,392,2314,376,2276,363,2237,349,2163,343,2105"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="149,2063,246,2089"/>
+<area shape="poly" title=" " alt="" coords="261,2073,294,2073,294,2079,261,2079"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="5,2063,101,2089"/>
+<area shape="poly" title=" " alt="" coords="116,2073,148,2073,148,2079,116,2079"/>
 <area shape="rect" href="classdyno_1_1_add.html" title=" " alt="" coords="720,5,800,32"/>
 <area shape="poly" title=" " alt="" coords="520,846,525,681,531,565,542,440,558,315,580,201,609,107,627,70,647,42,663,30,681,21,719,15,720,20,683,26,665,34,651,46,631,73,614,108,585,202,563,316,547,440,536,566,530,682,525,846"/>
 <area shape="rect" href="classdyno_1_1_bounding_box_of_texture_mesh.html" title="A class to facilitate showing the shape information." alt="" coords="649,56,872,83"/>
@@ -194,19 +200,15 @@ Inheritance diagram for dyno::Module:</div>
 <area shape="rect" href="classdyno_1_1_subtract.html" title=" " alt="" coords="707,1643,814,1669"/>
 <area shape="poly" title=" " alt="" coords="526,904,533,1055,552,1273,568,1386,589,1488,617,1573,633,1605,650,1629,677,1646,707,1653,706,1659,674,1651,647,1633,628,1607,612,1575,584,1490,563,1387,546,1274,527,1055,520,904"/>
 <area shape="rect" href="classdyno_1_1_approximate_implicit_viscosity.html" title=" " alt="" coords="674,1760,846,1803"/>
-<area shape="poly" title=" " alt="" coords="545,1889,591,1850,647,1812,673,1801,676,1806,650,1817,594,1854,549,1893"/>
+<area shape="poly" title=" " alt="" coords="586,1827,680,1801,682,1806,587,1832"/>
 <area shape="rect" href="classdyno_1_1_boundary_constraint.html" title=" " alt="" coords="674,1827,846,1869"/>
-<area shape="poly" title=" " alt="" coords="586,1894,680,1867,682,1873,587,1899"/>
+<area shape="poly" title=" " alt="" coords="616,1845,674,1845,674,1851,616,1851"/>
 <area shape="rect" href="classdyno_1_1_compute_surface_levelset.html" title=" " alt="" coords="658,1893,862,1936"/>
-<area shape="poly" title=" " alt="" coords="616,1912,658,1912,658,1917,616,1917"/>
+<area shape="poly" title=" " alt="" coords="587,1864,682,1890,680,1895,586,1869"/>
 <area shape="rect" href="classdyno_1_1_contact_rule.html" title=" " alt="" coords="691,1960,830,2003"/>
-<area shape="poly" title=" " alt="" coords="587,1930,691,1959,690,1965,586,1935"/>
+<area shape="poly" title=" " alt="" coords="596,1867,602,1871,619,1890,627,1910,635,1928,650,1946,670,1958,692,1966,690,1971,668,1962,647,1950,630,1931,622,1912,615,1893,599,1875,593,1871"/>
 <area shape="rect" href="classdyno_1_1_dual_particle_isph_module.html" title=" " alt="" coords="663,2027,858,2069"/>
-<area shape="poly" title=" " alt="" coords="596,1933,602,1938,619,1957,627,1976,635,1995,650,2013,669,2024,666,2028,647,2017,630,1998,622,1978,615,1960,599,1942,593,1938"/>
-<area shape="rect" href="classdyno_1_1_energy_analysis.html" title=" " alt="" coords="686,2093,834,2136"/>
-<area shape="poly" title=" " alt="" coords="599,1935,603,1938,617,1956,624,1975,627,2011,630,2046,637,2063,651,2079,667,2092,687,2101,685,2106,665,2097,647,2083,633,2065,625,2047,622,2011,619,1976,612,1959,599,1942,595,1939"/>
-<area shape="rect" href="classdyno_1_1_fixed_points.html" title=" " alt="" coords="693,2160,828,2203"/>
-<area shape="poly" title=" " alt="" coords="600,1936,603,1938,621,1965,629,1992,630,2018,627,2044,625,2070,625,2096,633,2121,651,2146,670,2161,694,2171,692,2176,668,2166,647,2150,628,2123,620,2097,619,2070,622,2044,624,2018,623,1993,616,1967,599,1942,596,1939"/>
+<area shape="poly" title=" " alt="" coords="599,1868,603,1872,617,1890,624,1908,627,1944,630,1979,637,1996,651,2013,665,2024,662,2028,647,2017,633,1999,625,1980,622,1944,619,1909,612,1892,599,1875,595,1872"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -214,19 +216,24 @@ Collaboration diagram for dyno::Module:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_module__coll__graph.png" border="0" usemap="#adyno_1_1_module_coll__map" alt="Collaboration graph"/></div>
 <map name="adyno_1_1_module_coll__map" id="adyno_1_1_module_coll__map">
-<area shape="rect" title=" " alt="" coords="5,385,105,412"/>
-<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="10,81,108,108"/>
-<area shape="poly" title=" " alt="" coords="61,124,58,385,53,385,56,124"/>
-<area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="71,295,159,321"/>
-<area shape="poly" title=" " alt="" coords="69,123,114,294,109,295,64,124"/>
-<area shape="rect" href="classdyno_1_1_scene_graph.html" title=" " alt="" coords="122,204,252,231"/>
-<area shape="poly" title=" " alt="" coords="88,116,105,130,177,202,174,206,101,134,85,120"/>
-<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="11,5,107,32"/>
-<area shape="poly" title=" " alt="" coords="62,47,62,81,56,81,56,47"/>
-<area shape="poly" title=" " alt="" coords="100,336,66,386,61,383,96,333"/>
-<area shape="poly" title=" " alt="" coords="169,245,127,296,123,292,165,241"/>
-<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="132,81,290,108"/>
-<area shape="poly" title=" " alt="" coords="208,124,192,204,187,203,203,123"/>
+<area shape="rect" title=" " alt="" coords="72,385,171,412"/>
+<area shape="rect" href="classdyno_1_1_module_port.html" title="Input ports for Module." alt="" coords="5,476,129,503"/>
+<area shape="poly" title=" " alt="" coords="108,427,77,477,73,474,103,424"/>
+<area shape="rect" href="classdyno_1_1_o_base.html" title=" " alt="" coords="77,81,174,108"/>
+<area shape="poly" title=" " alt="" coords="128,124,125,385,119,385,123,124"/>
+<area shape="rect" href="classdyno_1_1_node.html" title=" " alt="" coords="138,295,226,321"/>
+<area shape="poly" title=" " alt="" coords="136,123,181,294,176,295,130,124"/>
+<area shape="rect" href="classdyno_1_1_scene_graph.html" title=" " alt="" coords="189,204,318,231"/>
+<area shape="poly" title=" " alt="" coords="155,116,171,130,244,202,240,206,168,134,152,120"/>
+<area shape="rect" href="classdyno_1_1_object.html" title=" " alt="" coords="78,5,173,32"/>
+<area shape="poly" title=" " alt="" coords="128,47,128,81,123,81,123,47"/>
+<area shape="poly" title=" " alt="" coords="167,336,132,386,128,383,162,333"/>
+<area shape="poly" title=" " alt="" coords="236,245,194,296,190,292,232,241"/>
+<area shape="rect" href="classdyno_1_1_vector.html" title=" " alt="" coords="198,81,357,108"/>
+<area shape="poly" title=" " alt="" coords="275,124,259,204,254,203,270,123"/>
+<area shape="rect" href="classdyno_1_1_multiple_module_port.html" title=" " alt="" coords="38,552,206,595"/>
+<area shape="poly" title=" " alt="" coords="140,537,151,514,158,489,161,462,155,437,148,425,137,414,141,410,152,421,160,435,166,462,163,490,156,516,145,539"/>
+<area shape="poly" title=" " alt="" coords="86,514,110,550,106,553,81,517"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -263,11 +270,30 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a73f0c85f66dddc1ab648f2b628fa4fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a53a1ff27547593a8358e6ab5767fa2" id="r_a5a53a1ff27547593a8358e6ab5767fa2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a53a1ff27547593a8358e6ab5767fa2">isOutputCompete</a> ()</td></tr>
 <tr class="separator:a5a53a1ff27547593a8358e6ab5767fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0b364bd9c25c4ae9a735533ac3636d" id="r_a7b0b364bd9c25c4ae9a735533ac3636d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b0b364bd9c25c4ae9a735533ac3636d">connect</a> (<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *nPort)</td></tr>
+<tr class="separator:a7b0b364bd9c25c4ae9a735533ac3636d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e2c815c043e94549e0c3b285f5b9ba" id="r_ae1e2c815c043e94549e0c3b285f5b9ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1e2c815c043e94549e0c3b285f5b9ba">disconnect</a> (<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *nPort)</td></tr>
+<tr class="separator:ae1e2c815c043e94549e0c3b285f5b9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc23cdf465d8fc32e462c42a0e45fd3" id="r_a1cc23cdf465d8fc32e462c42a0e45fd3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cc23cdf465d8fc32e462c42a0e45fd3">allowImported</a> ()</td></tr>
+<tr class="separator:a1cc23cdf465d8fc32e462c42a0e45fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b3d58d698a29766d0d8986dc9f45ca" id="r_a42b3d58d698a29766d0d8986dc9f45ca"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42b3d58d698a29766d0d8986dc9f45ca">allowExported</a> ()</td></tr>
+<tr class="separator:a42b3d58d698a29766d0d8986dc9f45ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa04ede594505d8317864a8b135a8316" id="r_aaa04ede594505d8317864a8b135a8316"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa04ede594505d8317864a8b135a8316">getImportModules</a> ()</td></tr>
+<tr class="separator:aaa04ede594505d8317864a8b135a8316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23ad635a770080b6ed18e49ac038546" id="r_aa23ad635a770080b6ed18e49ac038546"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa23ad635a770080b6ed18e49ac038546">getExportModules</a> ()</td></tr>
+<tr class="separator:aa23ad635a770080b6ed18e49ac038546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8074a810611d1408b5b3c6c5b210f94" id="r_ac8074a810611d1408b5b3c6c5b210f94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8074a810611d1408b5b3c6c5b210f94">DEF_VAR</a> (bool, ForceUpdate, false, &quot;&quot;)</td></tr>
 <tr class="separator:ac8074a810611d1408b5b3c6c5b210f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a636486141cc15ef93c96ca4106351af0" id="r_a636486141cc15ef93c96ca4106351af0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a636486141cc15ef93c96ca4106351af0">setUpdateAlways</a> (bool b)</td></tr>
 <tr class="memdesc:a636486141cc15ef93c96ca4106351af0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdyno_1_1_set.html" title="An CPU/GPU implementation of the standard set suitable for small-size data.">Set</a> the update strategy for the module.  <br /></td></tr>
 <tr class="separator:a636486141cc15ef93c96ca4106351af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7084de192d5189f7e4da3be290670d03" id="r_a7084de192d5189f7e4da3be290670d03"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7084de192d5189f7e4da3be290670d03">initializeImpl</a> ()</td></tr>
+<tr class="separator:a7084de192d5189f7e4da3be290670d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0366940af4b266edbd7246cae511683b" id="r_a0366940af4b266edbd7246cae511683b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0366940af4b266edbd7246cae511683b">updateImpl</a> ()</td></tr>
+<tr class="separator:a0366940af4b266edbd7246cae511683b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefac00cac85d2918a6c8b8c83c053ab9" id="r_aefac00cac85d2918a6c8b8c83c053ab9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_multiple_module_port.html">MultipleModulePort</a>&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefac00cac85d2918a6c8b8c83c053ab9">importModules</a> ()</td></tr>
+<tr class="memdesc:aefac00cac85d2918a6c8b8c83c053ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to ensure modules can be executed in the correct order.  <br /></td></tr>
+<tr class="separator:aefac00cac85d2918a6c8b8c83c053ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_o_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdyno_1_1_o_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_o_base.html">dyno::OBase</a></td></tr>
 <tr class="memitem:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base" id="r_ab65d583b85bc42e7b2faab3af43d159f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_o_base.html#ab65d583b85bc42e7b2faab3af43d159f">OBase</a> ()</td></tr>
 <tr class="separator:ab65d583b85bc42e7b2faab3af43d159f inherit pub_methods_classdyno_1_1_o_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -368,10 +394,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7084de192d5189f7e4da3be290670d03" id="r_a7084de192d5189f7e4da3be290670d03"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7084de192d5189f7e4da3be290670d03">initializeImpl</a> ()</td></tr>
-<tr class="separator:a7084de192d5189f7e4da3be290670d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0366940af4b266edbd7246cae511683b" id="r_a0366940af4b266edbd7246cae511683b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0366940af4b266edbd7246cae511683b">updateImpl</a> ()</td></tr>
-<tr class="separator:a0366940af4b266edbd7246cae511683b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ad36251be9ece7eee4e84108f52a17" id="r_a42ad36251be9ece7eee4e84108f52a17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42ad36251be9ece7eee4e84108f52a17">preprocess</a> ()</td></tr>
 <tr class="separator:a42ad36251be9ece7eee4e84108f52a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6978d85dd53eafd6759f8c65ebd9edcd" id="r_a6978d85dd53eafd6759f8c65ebd9edcd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6978d85dd53eafd6759f8c65ebd9edcd">postprocess</a> ()</td></tr>
@@ -387,6 +409,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a8cbb0f56e3117ad920133d28e4dc5cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ba5aec44b13ce53020c7e83a338f4c" id="r_ae7ba5aec44b13ce53020c7e83a338f4c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7ba5aec44b13ce53020c7e83a338f4c">updateEnded</a> ()</td></tr>
 <tr class="separator:ae7ba5aec44b13ce53020c7e83a338f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7398470ea816049a281e865d5bf0d7d2" id="r_a7398470ea816049a281e865d5bf0d7d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7398470ea816049a281e865d5bf0d7d2">appendExportModule</a> (<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *nodePort)</td></tr>
+<tr class="separator:a7398470ea816049a281e865d5bf0d7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9da6c14d5822acffdfcaecf23fade8" id="r_aad9da6c14d5822acffdfcaecf23fade8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad9da6c14d5822acffdfcaecf23fade8">removeExportModule</a> (<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *nodePort)</td></tr>
+<tr class="separator:aad9da6c14d5822acffdfcaecf23fade8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a92f4eeeda0f3251a263a436946f650c8" id="r_a92f4eeeda0f3251a263a436946f650c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92f4eeeda0f3251a263a436946f650c8">addModulePort</a> (<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *port)</td></tr>
+<tr class="separator:a92f4eeeda0f3251a263a436946f650c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -396,6 +427,17 @@ Private Attributes</h2></td></tr>
 <tr class="separator:acd223dde5032b11ac481ecbb99567bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af81c164e1bd1f3f7906ee58ebc954196" id="r_af81c164e1bd1f3f7906ee58ebc954196"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af81c164e1bd1f3f7906ee58ebc954196">m_initialized</a></td></tr>
 <tr class="separator:af81c164e1bd1f3f7906ee58ebc954196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab0ec2c1e62063d1a62ac022ff4b1b4" id="r_aaab0ec2c1e62063d1a62ac022ff4b1b4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaab0ec2c1e62063d1a62ac022ff4b1b4">mImportModules</a></td></tr>
+<tr class="separator:aaab0ec2c1e62063d1a62ac022ff4b1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57ace6cd569299281ecf531e9f6a802b" id="r_a57ace6cd569299281ecf531e9f6a802b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57ace6cd569299281ecf531e9f6a802b">mExportModules</a></td></tr>
+<tr class="separator:a57ace6cd569299281ecf531e9f6a802b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a1db093df25cab815024d1dae01fa8" id="r_a21a1db093df25cab815024d1dae01fa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdyno_1_1_multiple_module_port.html">MultipleModulePort</a>&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21a1db093df25cab815024d1dae01fa8">mAncestors</a></td></tr>
+<tr class="separator:a21a1db093df25cab815024d1dae01fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a3f3d7525e0c978ba8a189034d4c88c28" id="r_a3f3d7525e0c978ba8a189034d4c88c28"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f3d7525e0c978ba8a189034d4c88c28">ModulePort</a></td></tr>
+<tr class="separator:a3f3d7525e0c978ba8a189034d4c88c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -424,7 +466,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00035">35</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00036">36</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a95810aa1aafc398d9a3af0f0d7e006e5" name="a95810aa1aafc398d9a3af0f0d7e006e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95810aa1aafc398d9a3af0f0d7e006e5">&#9670;&#160;</a></span>Module()</h2>
@@ -441,7 +483,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00007">7</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00009">9</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -588,11 +630,251 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00015">15</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00017">17</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a92f4eeeda0f3251a263a436946f650c8" name="a92f4eeeda0f3251a263a436946f650c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92f4eeeda0f3251a263a436946f650c8">&#9670;&#160;</a></span>addModulePort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::Module::addModulePort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *</td>          <td class="paramname"><span class="paramname"><em>port</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00195">195</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_a92f4eeeda0f3251a263a436946f650c8_cgraph.png" border="0" usemap="#aclassdyno_1_1_module_a92f4eeeda0f3251a263a436946f650c8_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_a92f4eeeda0f3251a263a436946f650c8_cgraph" id="aclassdyno_1_1_module_a92f4eeeda0f3251a263a436946f650c8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,200,56"/>
+<area shape="rect" href="classdyno_1_1_module.html#a3f3d7525e0c978ba8a189034d4c88c28" title=" " alt="" coords="248,29,421,56"/>
+<area shape="poly" title=" " alt="" coords="200,40,232,40,232,45,200,45"/>
+<area shape="poly" title=" " alt="" coords="295,31,288,21,293,11,309,5,334,3,362,5,377,12,375,17,361,10,334,8,310,10,297,15,294,20,300,27"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_a92f4eeeda0f3251a263a436946f650c8_icgraph.png" border="0" usemap="#aclassdyno_1_1_module_a92f4eeeda0f3251a263a436946f650c8_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_a92f4eeeda0f3251a263a436946f650c8_icgraph" id="aclassdyno_1_1_module_a92f4eeeda0f3251a263a436946f650c8_icgraph">
+<area shape="rect" title=" " alt="" coords="467,47,661,73"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#ab3d82df8449bd824db0b727e009e88d6" title=" " alt="" coords="222,47,419,73"/>
+<area shape="poly" title=" " alt="" coords="451,63,419,63,419,57,451,57"/>
+<area shape="rect" href="classdyno_1_1_multiple_module_port.html#a580a67d5dc23a01e2271ba30d06e3046" title=" " alt="" coords="5,5,174,48"/>
+<area shape="poly" title=" " alt="" coords="208,46,174,41,175,36,209,41"/>
+<area shape="rect" href="classdyno_1_1_single_module_port.html#acbdaefa8ef418426cf70ad93054d0e68" title=" " alt="" coords="10,72,169,115"/>
+<area shape="poly" title=" " alt="" coords="209,79,170,84,169,79,208,73"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a42b3d58d698a29766d0d8986dc9f45ca" name="a42b3d58d698a29766d0d8986dc9f45ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b3d58d698a29766d0d8986dc9f45ca">&#9670;&#160;</a></span>allowExported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool dyno::Module::allowExported </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classdyno_1_1_outputs.html#af207fb20ca17a2011a54e5049b84cb0e">dyno::Outputs</a>, and <a class="el" href="classdyno_1_1_states.html#a535f07ad1cc05334ba4168e1e474586e">dyno::States</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00089">89</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_a42b3d58d698a29766d0d8986dc9f45ca_cgraph.png" border="0" usemap="#aclassdyno_1_1_module_a42b3d58d698a29766d0d8986dc9f45ca_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_a42b3d58d698a29766d0d8986dc9f45ca_cgraph" id="aclassdyno_1_1_module_a42b3d58d698a29766d0d8986dc9f45ca_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,195,32"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3240798a9150986ba10defba8241f6fc" title="Whether to hide the caption in the GUI." alt="" coords="243,5,429,32"/>
+<area shape="poly" title=" " alt="" coords="195,16,227,16,227,21,195,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_a42b3d58d698a29766d0d8986dc9f45ca_icgraph.png" border="0" usemap="#aclassdyno_1_1_module_a42b3d58d698a29766d0d8986dc9f45ca_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_a42b3d58d698a29766d0d8986dc9f45ca_icgraph" id="aclassdyno_1_1_module_a42b3d58d698a29766d0d8986dc9f45ca_icgraph">
+<area shape="rect" title=" " alt="" coords="1148,149,1337,176"/>
+<area shape="rect" href="classdyno_1_1_module.html#a7b0b364bd9c25c4ae9a735533ac3636d" title=" " alt="" coords="941,120,1094,147"/>
+<area shape="poly" title=" " alt="" coords="1132,151,1095,146,1095,141,1133,146"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab47d437f682b9803944bd89b8accc29a" title=" " alt="" coords="936,171,1100,213"/>
+<area shape="poly" title=" " alt="" coords="1133,180,1101,184,1100,179,1132,174"/>
+<area shape="rect" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#afff82c227757565e3cf80e09869e7213" title=" " alt="" coords="620,5,888,64"/>
+<area shape="poly" title=" " alt="" coords="973,115,887,78,855,67,856,62,889,74,975,110"/>
+<area shape="rect" href="classdyno_1_1_texture_mesh_loader.html#a495921b758b171c1e61dbc711b49513d" title=" " alt="" coords="668,112,840,155"/>
+<area shape="poly" title=" " alt="" coords="926,136,840,136,840,131,926,131"/>
+<area shape="poly" title=" " alt="" coords="797,99,781,93,754,91,729,93,713,97,707,103,709,111,704,112,702,102,711,93,728,87,754,85,782,88,799,94"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#ab19f78cfb9699a18375c5be14679f4d0" title=" " alt="" coords="196,163,360,205"/>
+<area shape="poly" title=" " alt="" coords="920,194,360,188,360,182,920,188"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a5adb4cec576710a317f374c34d0e11b4" title=" " alt="" coords="667,288,841,331"/>
+<area shape="poly" title=" " alt="" coords="955,222,805,290,803,285,953,218"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#a0213026fd0192eca76280c076f49b7da" title=" " alt="" coords="408,288,572,331"/>
+<area shape="poly" title=" " alt="" coords="651,312,573,312,573,307,651,307"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#acd15be0b4f83b75d7f65d55b58803624" title=" " alt="" coords="196,347,360,389"/>
+<area shape="poly" title=" " alt="" coords="652,332,573,345,462,358,360,366,360,360,461,352,572,340,651,327"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#af7703705ba566378630cc46198ad6ed8" title=" " alt="" coords="196,229,360,272"/>
+<area shape="poly" title=" " alt="" coords="651,291,572,279,461,266,360,258,360,253,462,261,573,273,652,286"/>
+<area shape="rect" href="class_qt_1_1_qt_module_flow_scene.html#addeed20a2928406fac8349fc3489ea4a" title=" " alt="" coords="408,405,572,448"/>
+<area shape="poly" title=" " alt="" coords="692,340,541,407,539,402,689,335"/>
+<area shape="poly" title=" " alt="" coords="449,281,407,250,359,220,336,208,338,204,361,215,410,245,452,276"/>
+<area shape="rect" href="classdyno_1_1_p_module_editor.html#a697c5a914c0c2407c5f24551ad5c47d1" title=" " alt="" coords="5,317,148,360"/>
+<area shape="poly" title=" " alt="" coords="393,319,148,336,148,331,392,314"/>
+<area shape="poly" title=" " alt="" coords="397,338,358,349,357,343,396,333"/>
+<area shape="poly" title=" " alt="" coords="396,286,357,275,358,270,397,281"/>
+<area shape="poly" title=" " alt="" coords="180,356,148,352,148,346,180,351"/>
+<area shape="poly" title=" " alt="" coords="214,281,128,319,126,314,212,276"/>
+<area shape="poly" title=" " alt="" coords="392,431,296,424,245,416,195,404,149,385,109,363,112,358,151,380,196,399,246,411,297,419,393,425"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1cc23cdf465d8fc32e462c42a0e45fd3" name="a1cc23cdf465d8fc32e462c42a0e45fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc23cdf465d8fc32e462c42a0e45fd3">&#9670;&#160;</a></span>allowImported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool dyno::Module::allowImported </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classdyno_1_1_outputs.html#a5400a1d17f6b33dfda70349ff1b2786f">dyno::Outputs</a>, and <a class="el" href="classdyno_1_1_states.html#a5b9c1181624650fae4325a4da277de80">dyno::States</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00088">88</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_a1cc23cdf465d8fc32e462c42a0e45fd3_cgraph.png" border="0" usemap="#aclassdyno_1_1_module_a1cc23cdf465d8fc32e462c42a0e45fd3_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_a1cc23cdf465d8fc32e462c42a0e45fd3_cgraph" id="aclassdyno_1_1_module_a1cc23cdf465d8fc32e462c42a0e45fd3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,194,32"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3240798a9150986ba10defba8241f6fc" title="Whether to hide the caption in the GUI." alt="" coords="242,5,428,32"/>
+<area shape="poly" title=" " alt="" coords="194,16,226,16,226,21,194,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_a1cc23cdf465d8fc32e462c42a0e45fd3_icgraph.png" border="0" usemap="#aclassdyno_1_1_module_a1cc23cdf465d8fc32e462c42a0e45fd3_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_a1cc23cdf465d8fc32e462c42a0e45fd3_icgraph" id="aclassdyno_1_1_module_a1cc23cdf465d8fc32e462c42a0e45fd3_icgraph">
+<area shape="rect" title=" " alt="" coords="522,71,710,97"/>
+<area shape="rect" href="classdyno_1_1_module.html#a7b0b364bd9c25c4ae9a735533ac3636d" title=" " alt="" coords="321,71,474,97"/>
+<area shape="poly" title=" " alt="" coords="507,87,475,87,475,81,507,81"/>
+<area shape="rect" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#afff82c227757565e3cf80e09869e7213" title=" " alt="" coords="5,5,273,64"/>
+<area shape="poly" title=" " alt="" coords="308,70,272,63,273,58,309,65"/>
+<area shape="rect" href="classdyno_1_1_texture_mesh_loader.html#a495921b758b171c1e61dbc711b49513d" title=" " alt="" coords="53,112,225,155"/>
+<area shape="poly" title=" " alt="" coords="310,103,226,120,225,114,309,98"/>
+<area shape="poly" title=" " alt="" coords="181,99,165,93,139,91,114,93,99,97,93,103,95,111,90,112,88,102,97,93,113,87,139,85,166,88,183,94"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7398470ea816049a281e865d5bf0d7d2" name="a7398470ea816049a281e865d5bf0d7d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7398470ea816049a281e865d5bf0d7d2">&#9670;&#160;</a></span>appendExportModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::Module::appendExportModule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *</td>          <td class="paramname"><span class="paramname"><em>nodePort</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00162">162</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_a7398470ea816049a281e865d5bf0d7d2_cgraph.png" border="0" usemap="#aclassdyno_1_1_module_a7398470ea816049a281e865d5bf0d7d2_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_a7398470ea816049a281e865d5bf0d7d2_cgraph" id="aclassdyno_1_1_module_a7398470ea816049a281e865d5bf0d7d2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,59,193,101"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#ab6c1f12f5ac5940d7cd9dfeebbb6bd5f" title=" " alt="" coords="241,29,435,56"/>
+<area shape="poly" title=" " alt="" coords="193,63,233,56,233,62,193,68"/>
+<area shape="rect" href="classdyno_1_1_module.html#a3f3d7525e0c978ba8a189034d4c88c28" title=" " alt="" coords="251,104,424,131"/>
+<area shape="poly" title=" " alt="" coords="193,92,236,99,235,104,193,97"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#a21f639900c480510650969df9c74d17d" title=" " alt="" coords="483,29,656,56"/>
+<area shape="poly" title=" " alt="" coords="435,40,467,40,467,45,435,45"/>
+<area shape="poly" title=" " alt="" coords="531,31,524,21,528,11,544,5,570,3,598,5,612,12,610,17,596,10,570,8,545,10,532,15,529,20,535,27"/>
+<area shape="poly" title=" " alt="" coords="299,105,292,95,297,85,312,79,338,77,366,80,380,87,378,92,364,85,338,83,313,85,300,89,297,95,303,102"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_a7398470ea816049a281e865d5bf0d7d2_icgraph.png" border="0" usemap="#aclassdyno_1_1_module_a7398470ea816049a281e865d5bf0d7d2_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_a7398470ea816049a281e865d5bf0d7d2_icgraph" id="aclassdyno_1_1_module_a7398470ea816049a281e865d5bf0d7d2_icgraph">
+<area shape="rect" title=" " alt="" coords="522,63,709,105"/>
+<area shape="rect" href="classdyno_1_1_module.html#a7b0b364bd9c25c4ae9a735533ac3636d" title=" " alt="" coords="321,71,474,97"/>
+<area shape="poly" title=" " alt="" coords="506,87,474,87,474,81,506,81"/>
+<area shape="rect" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#afff82c227757565e3cf80e09869e7213" title=" " alt="" coords="5,5,273,64"/>
+<area shape="poly" title=" " alt="" coords="308,70,272,63,273,58,309,65"/>
+<area shape="rect" href="classdyno_1_1_texture_mesh_loader.html#a495921b758b171c1e61dbc711b49513d" title=" " alt="" coords="53,112,225,155"/>
+<area shape="poly" title=" " alt="" coords="310,103,226,120,225,114,309,98"/>
+<area shape="poly" title=" " alt="" coords="181,99,165,93,139,91,114,93,99,97,93,103,95,111,90,112,88,102,97,93,113,87,139,85,166,88,183,94"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="af5144714bef507ab31afe6d902ab2e65" name="af5144714bef507ab31afe6d902ab2e65"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5144714bef507ab31afe6d902ab2e65">&#9670;&#160;</a></span>attachField()</h2>
 
@@ -644,7 +926,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_o_base.html#a19cd186d305dca33384552b39dd84fcd">dyno::OBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00240">240</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00283">283</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -687,6 +969,69 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a7b0b364bd9c25c4ae9a735533ac3636d" name="a7b0b364bd9c25c4ae9a735533ac3636d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b0b364bd9c25c4ae9a735533ac3636d">&#9670;&#160;</a></span>connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::Module::connect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *</td>          <td class="paramname"><span class="paramname"><em>nPort</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00139">139</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_a7b0b364bd9c25c4ae9a735533ac3636d_cgraph.png" border="0" usemap="#aclassdyno_1_1_module_a7b0b364bd9c25c4ae9a735533ac3636d_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_a7b0b364bd9c25c4ae9a735533ac3636d_cgraph" id="aclassdyno_1_1_module_a7b0b364bd9c25c4ae9a735533ac3636d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,144,159,171"/>
+<area shape="rect" href="classdyno_1_1_module.html#a42b3d58d698a29766d0d8986dc9f45ca" title=" " alt="" coords="207,5,396,32"/>
+<area shape="poly" title=" " alt="" coords="92,142,138,93,170,65,205,42,218,36,220,40,208,46,173,70,142,97,96,145"/>
+<area shape="rect" href="classdyno_1_1_module.html#a1cc23cdf465d8fc32e462c42a0e45fd3" title=" " alt="" coords="207,56,396,83"/>
+<area shape="poly" title=" " alt="" coords="106,141,151,117,206,92,226,85,228,90,208,97,153,122,108,146"/>
+<area shape="rect" href="classdyno_1_1_module.html#a7398470ea816049a281e865d5bf0d7d2" title=" " alt="" coords="208,107,395,149"/>
+<area shape="poly" title=" " alt="" coords="159,144,192,140,192,145,159,150"/>
+<area shape="rect" href="classdyno_1_1_module.html#a3f3d7525e0c978ba8a189034d4c88c28" title=" " alt="" coords="454,173,628,200"/>
+<area shape="poly" title=" " alt="" coords="159,160,439,178,439,183,159,165"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#aa9503fc4b79a68a90881308cf6d4652b" title=" " alt="" coords="448,224,635,251"/>
+<area shape="poly" title=" " alt="" coords="149,169,207,180,434,218,433,224,206,185,148,174"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#ad63fb8035feb91b50a40dbc016db6836" title=" " alt="" coords="220,275,383,301"/>
+<area shape="poly" title=" " alt="" coords="99,169,145,210,208,254,236,267,234,271,205,258,142,215,96,173"/>
+<area shape="rect" href="classdyno_1_1_o_base.html#a3240798a9150986ba10defba8241f6fc" title="Whether to hide the caption in the GUI." alt="" coords="448,27,634,53"/>
+<area shape="poly" title=" " alt="" coords="397,24,433,28,432,33,396,30"/>
+<area shape="poly" title=" " alt="" coords="396,55,433,51,433,56,396,60"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#ab6c1f12f5ac5940d7cd9dfeebbb6bd5f" title=" " alt="" coords="444,99,638,125"/>
+<area shape="poly" title=" " alt="" coords="395,119,428,117,429,122,396,124"/>
+<area shape="poly" title=" " alt="" coords="392,147,469,166,468,172,391,153"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#a21f639900c480510650969df9c74d17d" title=" " alt="" coords="686,161,860,188"/>
+<area shape="poly" title=" " alt="" coords="596,123,639,135,709,154,707,159,638,140,595,129"/>
+<area shape="poly" title=" " alt="" coords="734,163,727,153,732,143,747,137,773,135,801,137,816,144,813,149,800,142,773,140,749,142,735,147,732,152,738,159"/>
+<area shape="poly" title=" " alt="" coords="502,175,495,165,500,155,516,149,541,147,569,149,584,156,581,161,568,154,541,152,517,154,503,159,500,164,506,171"/>
+<area shape="poly" title=" " alt="" coords="595,221,638,209,707,190,709,195,639,215,596,226"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_a7b0b364bd9c25c4ae9a735533ac3636d_icgraph.png" border="0" usemap="#aclassdyno_1_1_module_a7b0b364bd9c25c4ae9a735533ac3636d_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_a7b0b364bd9c25c4ae9a735533ac3636d_icgraph" id="aclassdyno_1_1_module_a7b0b364bd9c25c4ae9a735533ac3636d_icgraph">
+<area shape="rect" title=" " alt="" coords="321,71,474,97"/>
+<area shape="rect" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#afff82c227757565e3cf80e09869e7213" title=" " alt="" coords="5,5,273,64"/>
+<area shape="poly" title=" " alt="" coords="308,70,272,63,273,58,309,65"/>
+<area shape="rect" href="classdyno_1_1_texture_mesh_loader.html#a495921b758b171c1e61dbc711b49513d" title=" " alt="" coords="53,112,225,155"/>
+<area shape="poly" title=" " alt="" coords="310,103,226,120,225,114,309,98"/>
+<area shape="poly" title=" " alt="" coords="181,99,165,93,139,91,114,93,99,97,93,103,95,111,90,112,88,102,97,93,113,87,139,85,166,88,183,94"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ac8074a810611d1408b5b3c6c5b210f94" name="ac8074a810611d1408b5b3c6c5b210f94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8074a810611d1408b5b3c6c5b210f94">&#9670;&#160;</a></span>DEF_VAR()</h2>
 
@@ -718,6 +1063,141 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="ae1e2c815c043e94549e0c3b285f5b9ba" name="ae1e2c815c043e94549e0c3b285f5b9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e2c815c043e94549e0c3b285f5b9ba">&#9670;&#160;</a></span>disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::Module::disconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *</td>          <td class="paramname"><span class="paramname"><em>nPort</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00149">149</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_ae1e2c815c043e94549e0c3b285f5b9ba_cgraph.png" border="0" usemap="#aclassdyno_1_1_module_ae1e2c815c043e94549e0c3b285f5b9ba_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_ae1e2c815c043e94549e0c3b285f5b9ba_cgraph" id="aclassdyno_1_1_module_ae1e2c815c043e94549e0c3b285f5b9ba_cgraph">
+<area shape="rect" title=" " alt="" coords="5,59,176,85"/>
+<area shape="rect" href="classdyno_1_1_module.html#a3f3d7525e0c978ba8a189034d4c88c28" title=" " alt="" coords="460,29,634,56"/>
+<area shape="poly" title=" " alt="" coords="176,64,445,47,445,52,176,69"/>
+<area shape="rect" href="classdyno_1_1_module.html#aad9da6c14d5822acffdfcaecf23fade8" title=" " alt="" coords="224,80,412,123"/>
+<area shape="poly" title=" " alt="" coords="176,80,208,85,208,90,176,86"/>
+<area shape="poly" title=" " alt="" coords="510,30,503,21,508,11,523,5,547,3,573,5,587,12,585,16,572,10,547,8,524,10,511,15,508,20,514,27"/>
+<area shape="poly" title=" " alt="" coords="403,77,477,58,478,63,404,82"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#a4e0968cca58d85dd81ceb9bac0dd62b4" title=" " alt="" coords="460,80,634,123"/>
+<area shape="poly" title=" " alt="" coords="412,99,445,99,445,104,412,104"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#a21f639900c480510650969df9c74d17d" title=" " alt="" coords="682,88,856,115"/>
+<area shape="poly" title=" " alt="" coords="634,99,667,99,667,104,634,104"/>
+<area shape="poly" title=" " alt="" coords="732,89,725,79,729,69,745,63,769,61,795,64,809,70,807,75,794,69,769,67,746,69,733,73,730,79,736,86"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_ae1e2c815c043e94549e0c3b285f5b9ba_icgraph.png" border="0" usemap="#aclassdyno_1_1_module_ae1e2c815c043e94549e0c3b285f5b9ba_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_ae1e2c815c043e94549e0c3b285f5b9ba_icgraph" id="aclassdyno_1_1_module_ae1e2c815c043e94549e0c3b285f5b9ba_icgraph">
+<area shape="rect" title=" " alt="" coords="1100,405,1270,432"/>
+<area shape="rect" href="namespacedyno.html#a4e3768406dcc8afa707ad302f981c362" title=" " alt="" coords="932,405,1052,432"/>
+<area shape="poly" title=" " alt="" coords="1085,421,1052,421,1052,416,1085,416"/>
+<area shape="rect" href="classdyno_1_1_q_color_button.html#a4cb21895bbd7394140c3bfdac72572db" title=" " alt="" coords="728,139,864,181"/>
+<area shape="poly" title=" " alt="" coords="982,391,969,348,949,296,921,242,902,217,882,195,863,182,866,178,885,191,907,214,925,239,954,294,975,347,987,390"/>
+<area shape="rect" href="classdyno_1_1_p_data_viewer_widget.html#a68e781c2ac57c692d4dd7a12c1e04b55" title=" " alt="" coords="708,205,884,248"/>
+<area shape="poly" title=" " alt="" coords="964,396,817,250,821,246,968,392"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#aa87cedc07a9bc35184d0c30cdd235a85" title=" " alt="" coords="714,331,878,373"/>
+<area shape="poly" title=" " alt="" coords="935,402,860,376,862,371,937,397"/>
+<area shape="rect" href="classdyno_1_1_multiple_module_port.html#a3b1097c00f4176dc7c82a5f8984493c6" title=" " alt="" coords="712,397,880,440"/>
+<area shape="poly" title=" " alt="" coords="916,421,881,421,881,416,916,416"/>
+<area shape="rect" href="classdyno_1_1_multiple_node_port.html#aa35656f5a6551b5fd2bcd486f2eceea0" title=" " alt="" coords="717,464,875,507"/>
+<area shape="poly" title=" " alt="" coords="937,440,862,466,860,461,935,435"/>
+<area shape="rect" href="classdyno_1_1_single_module_port.html#a53e6d6ba940c739345eb4a5f21fb87de" title=" " alt="" coords="716,531,876,573"/>
+<area shape="poly" title=" " alt="" coords="971,445,933,484,885,521,864,532,861,528,882,516,929,480,967,442"/>
+<area shape="rect" href="classdyno_1_1_single_node_port.html#af2f4aefeaecb3ad92df3e11b47dbab8c" title=" " alt="" coords="722,597,870,640"/>
+<area shape="poly" title=" " alt="" coords="982,447,945,517,918,554,885,587,868,599,865,594,882,583,914,551,941,514,977,445"/>
+<area shape="rect" href="classdyno_1_1_p_integer_viewer_widget.html#ab5153c5ae30d774908d10d6c49ebfa4d" title=" " alt="" coords="452,5,639,48"/>
+<area shape="poly" title=" " alt="" coords="709,198,706,195,693,178,686,160,682,126,678,93,671,78,659,62,638,48,641,43,662,58,676,75,684,92,688,126,691,159,698,175,710,192,713,194"/>
+<area shape="rect" href="classdyno_1_1_p_real_viewer_widget.html#aca1b5e99f9f09c74e248c6d03fe1dd2c" title=" " alt="" coords="458,72,632,115"/>
+<area shape="poly" title=" " alt="" coords="712,199,707,195,691,178,682,161,674,144,659,129,631,114,634,109,662,125,679,141,687,158,695,175,710,191,715,195"/>
+<area shape="rect" href="classdyno_1_1_p_transform3f_viewer_widget.html#ad6f6219eeed083d8e4c0639babe21097" title=" " alt="" coords="430,139,660,181"/>
+<area shape="poly" title=" " alt="" coords="698,203,627,185,629,179,699,198"/>
+<area shape="rect" href="classdyno_1_1_p_vec2_field_viewer_widget.html#aa5a7ae0e4d66692edc5e7d711743be1f" title=" " alt="" coords="443,205,647,248"/>
+<area shape="poly" title=" " alt="" coords="693,229,648,229,648,224,693,224"/>
+<area shape="rect" href="classdyno_1_1_p_vec3_field_viewer_widget.html#ac8118303b957e00d9feb1b5782a5419f" title=" " alt="" coords="443,272,647,315"/>
+<area shape="poly" title=" " alt="" coords="699,255,629,274,627,269,698,250"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a396e065b7db0d9f7b8a39e4750e973f0" title=" " alt="" coords="5,360,170,403"/>
+<area shape="poly" title=" " alt="" coords="698,359,170,381,170,375,698,353"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a7d6c0b70c472f6d4cb956f93230268ef" title=" " alt="" coords="463,389,627,432"/>
+<area shape="poly" title=" " alt="" coords="721,380,629,403,627,397,720,375"/>
+<area shape="poly" title=" " alt="" coords="620,382,713,360,714,365,622,387"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#ab78c7620de0e1b505970874e94cc03e1" title=" " alt="" coords="218,389,382,432"/>
+<area shape="poly" title=" " alt="" coords="448,422,382,422,382,417,448,417"/>
+<area shape="poly" title=" " alt="" coords="202,400,170,395,170,390,203,395"/>
+<area shape="poly" title=" " alt="" coords="398,399,462,399,462,405,398,405"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa23ad635a770080b6ed18e49ac038546" name="aa23ad635a770080b6ed18e49ac038546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23ad635a770080b6ed18e49ac038546">&#9670;&#160;</a></span>getExportModules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> * &gt; &amp; dyno::Module::getExportModules </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00092">92</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+
+</div>
+</div>
+<a id="aaa04ede594505d8317864a8b135a8316" name="aaa04ede594505d8317864a8b135a8316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa04ede594505d8317864a8b135a8316">&#9670;&#160;</a></span>getImportModules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> * &gt; &amp; dyno::Module::getImportModules </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00091">91</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+
+</div>
+</div>
 <a id="a3bd819b959fd3894fa478167a5d2f190" name="a3bd819b959fd3894fa478167a5d2f190"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3bd819b959fd3894fa478167a5d2f190">&#9670;&#160;</a></span>getModuleType()</h2>
 
@@ -743,7 +1223,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_add.html#a411ab74de5ae472c92b63a1f72f2c452">dyno::Add</a>, <a class="el" href="classdyno_1_1_compute_module.html#a8a4e64fd6704e65ae453d6dfacbf2397">dyno::ComputeModule</a>, <a class="el" href="classdyno_1_1_constraint_module.html#a3f5118a7472bdcf21de95d5bd6c5bbce">dyno::ConstraintModule</a>, <a class="el" href="classdyno_1_1_data_source.html#ac62aa62442186d89dc20ba553e47dba1">dyno::DataSource</a>, <a class="el" href="classdyno_1_1_debug_info.html#a071f45506924ed0ef17c713d73f93acc">dyno::DebugInfo</a>, <a class="el" href="classdyno_1_1_divide.html#a497b03c6adf18f16b2aa69c58fc9318a">dyno::Divide</a>, <a class="el" href="classdyno_1_1_input_module.html#aedc26e76e4e46f44233da3104d322e38">dyno::InputModule</a>, <a class="el" href="classdyno_1_1_multiply.html#a95b9750b5f1df1ddca692244c6d3a698">dyno::Multiply</a>, <a class="el" href="classdyno_1_1_output_module.html#a31ea398cf5880fd9be6bdcae8f15b3c9">dyno::OutputModule</a>, <a class="el" href="classdyno_1_1_subtract.html#a50eaccc181e60f8572e8aa45f13d07ba">dyno::Subtract</a>, <a class="el" href="classdyno_1_1_visual_module.html#aa8182951c963c192cd6e9b2f6c490b8d">dyno::VisualModule</a>, and <a class="el" href="classdyno_1_1_vk_visual_module.html#a2508a5447a06988b6350b9e8998d9391">dyno::VkVisualModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00071">71</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00072">72</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -772,7 +1252,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_o_base.html#a5a3de3b2c6f081b2b9423640d5e354d2">dyno::OBase</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00198">198</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00241">241</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -807,7 +1287,7 @@ Here is the caller graph for this function:</div>
 <p>@breif Return the <a class="el" href="classdyno_1_1_node.html">Node</a> that contains this <a class="el" href="classdyno_1_1_module.html">Module</a></p>
 <dl class="section return"><dt>Returns</dt><dd>return nullptr if the <a class="el" href="classdyno_1_1_module.html">Module</a> is not contained in any <a class="el" href="classdyno_1_1_node.html">Node</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00203">203</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00246">246</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -823,86 +1303,115 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_module_a3e3dbcc0b37a89a0be80542fbcd85d2f_icgraph.png" border="0" usemap="#aclassdyno_1_1_module_a3e3dbcc0b37a89a0be80542fbcd85d2f_icgraph" alt=""/></div>
 <map name="aclassdyno_1_1_module_a3e3dbcc0b37a89a0be80542fbcd85d2f_icgraph" id="aclassdyno_1_1_module_a3e3dbcc0b37a89a0be80542fbcd85d2f_icgraph">
-<area shape="rect" title=" " alt="" coords="1157,776,1351,803"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a89206a4a64a463931313a1facf24da06" title="create a QT&#45;based view for the active scene graph." alt="" coords="924,321,1084,364"/>
-<area shape="poly" title=" " alt="" coords="1241,762,1191,628,1153,544,1107,461,1066,409,1027,366,1030,362,1071,405,1111,459,1157,541,1196,626,1246,760"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#af66c8338521e25db6fdbdf31fdb93830" title=" " alt="" coords="440,461,593,504"/>
-<area shape="poly" title=" " alt="" coords="1246,761,1232,704,1206,633,1188,596,1166,562,1139,531,1108,506,1068,490,1013,478,946,472,872,469,721,471,593,479,593,473,721,466,872,463,946,466,1013,473,1069,484,1110,502,1143,528,1170,559,1193,594,1211,631,1237,702,1251,760"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#a7606af04c1a300fd4114f71d20fed048" title=" " alt="" coords="908,516,1101,559"/>
-<area shape="poly" title=" " alt="" coords="1240,763,1220,721,1191,670,1154,618,1107,573,1089,562,1092,557,1111,569,1158,614,1196,667,1225,719,1245,761"/>
-<area shape="rect" href="classdyno_1_1_module.html#a052f40fd04cfd48e8984836e6dfe5ffb" title=" " alt="" coords="906,583,1103,609"/>
-<area shape="poly" title=" " alt="" coords="1235,764,1185,693,1149,655,1108,624,1084,612,1086,608,1110,619,1152,651,1189,690,1240,761"/>
-<area shape="rect" href="classdyno_1_1_discrete_element_renderer.html#a0a11859b38532c52718450df80b3fdf1" title=" " alt="" coords="901,633,1108,676"/>
-<area shape="poly" title=" " alt="" coords="1223,768,1171,729,1108,690,1081,679,1083,674,1110,686,1174,724,1227,764"/>
-<area shape="rect" href="classdyno_1_1_module.html#a73f0c85f66dddc1ab648f2b628fa4fdb" title="Check the completeness of input fields." alt="" coords="903,700,1106,727"/>
-<area shape="poly" title=" " alt="" coords="1202,773,1108,741,1066,730,1067,725,1110,736,1203,768"/>
-<area shape="rect" href="classdyno_1_1_module.html#a5a53a1ff27547593a8358e6ab5767fa2" title=" " alt="" coords="900,751,1109,777"/>
-<area shape="poly" title=" " alt="" coords="1141,781,1109,777,1110,772,1142,775"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#ad03d17db724f154f8ff9cf670bc46ca8" title=" " alt="" coords="917,801,1092,828"/>
-<area shape="poly" title=" " alt="" coords="1142,803,1092,808,1092,803,1141,798"/>
-<area shape="rect" href="classdyno_1_1_animation_pipeline.html#ac512176a1600b9f3115cf4acd0bd35f6" title=" " alt="" coords="924,852,1085,895"/>
-<area shape="poly" title=" " alt="" coords="1201,811,1110,843,1076,854,1074,849,1108,837,1199,806"/>
-<area shape="rect" href="classdyno_1_1_graphics_pipeline.html#a8509dabd2d614b0398d5b061fff200c1" title=" " alt="" coords="927,919,1082,961"/>
-<area shape="poly" title=" " alt="" coords="1231,816,1178,863,1145,887,1110,909,1084,921,1082,916,1108,904,1142,883,1175,858,1227,812"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#a43652b47a395830dbf5c5840ecc3d67e" title=" " alt="" coords="906,985,1103,1028"/>
-<area shape="poly" title=" " alt="" coords="1241,818,1220,853,1190,896,1154,938,1111,976,1090,987,1088,982,1107,971,1150,935,1186,892,1215,850,1236,815"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#a289e913b1d58ca1de4be1fb04e3d9aac" title=" " alt="" coords="914,1052,1095,1079"/>
-<area shape="poly" title=" " alt="" coords="1247,818,1230,867,1202,928,1163,990,1138,1018,1111,1042,1090,1054,1088,1049,1107,1038,1134,1014,1158,986,1197,925,1225,865,1242,816"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#a48a48914caa0a4eae1e694918a8415c0" title=" " alt="" coords="905,1103,1104,1145"/>
-<area shape="poly" title=" " alt="" coords="1250,819,1235,876,1208,950,1167,1026,1141,1062,1111,1093,1094,1104,1091,1100,1107,1089,1137,1058,1163,1023,1203,947,1229,874,1245,817"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#ad1e8ba420873845db26718e0f8329a4e" title=" " alt="" coords="916,1169,1092,1212"/>
-<area shape="poly" title=" " alt="" coords="1253,818,1241,887,1217,979,1198,1027,1175,1075,1146,1120,1111,1159,1095,1171,1091,1167,1107,1155,1142,1117,1170,1072,1193,1025,1212,977,1236,886,1247,818"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ae706c22e0e9f25428ef70bf3177767f2" title=" " alt="" coords="671,73,824,116"/>
-<area shape="poly" title=" " alt="" coords="969,313,769,118,773,114,972,309"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ab47298add0fea824f9705563d4ac7511" title=" " alt="" coords="5,403,159,445"/>
-<area shape="poly" title=" " alt="" coords="909,361,762,382,596,401,357,418,159,425,159,420,357,412,595,396,761,377,908,355"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a5724b716b70d0eda88128b6ad40b3e16" title="Update the view only for the active scene graph, the data model will not be changed." alt="" coords="666,244,829,287"/>
-<area shape="poly" title=" " alt="" coords="916,319,820,290,822,285,917,314"/>
-<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="223,27,372,69"/>
-<area shape="poly" title=" " alt="" coords="702,67,652,39,595,17,537,9,477,10,421,18,371,29,370,23,420,13,477,5,537,4,596,12,654,34,704,62"/>
-<area shape="rect" href="classdyno_1_1_p_main_window.html#a55a1afe7cc3865eb78d59d769ac2d13a" title=" " alt="" coords="7,56,157,99"/>
-<area shape="poly" title=" " alt="" coords="208,63,158,70,157,65,207,58"/>
-<area shape="poly" title=" " alt="" coords="718,234,665,181,631,155,594,134,559,123,511,113,393,98,266,88,157,82,157,77,267,83,394,92,512,108,560,118,596,130,634,150,668,177,722,231"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a89e2c4e433d53c15f6555f214ff92869" title=" " alt="" coords="440,211,593,253"/>
-<area shape="poly" title=" " alt="" coords="650,254,593,246,594,240,651,249"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#aca8575ea60bf553b7f53664ee87d768b" title=" " alt="" coords="437,277,595,320"/>
-<area shape="poly" title=" " alt="" coords="651,282,596,290,595,285,650,277"/>
-<area shape="poly" title=" " alt="" coords="715,299,542,463,539,459,711,295"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a022401728b5ecbedc21628a6b7ec46e7" title=" " alt="" coords="440,344,593,387"/>
-<area shape="poly" title=" " alt="" coords="684,296,596,334,570,346,568,341,594,330,682,291"/>
-<area shape="rect" href="classdyno_1_1_p_main_window.html#a7b4fc7b67d578c57cc9600ed7aeb0154" title=" " alt="" coords="442,27,591,69"/>
-<area shape="poly" title=" " alt="" coords="721,233,667,163,632,125,594,90,566,72,569,68,597,86,636,121,671,159,726,230"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a6f7c3d7d16b63aba8a75946fe1ce3243" title=" " alt="" coords="440,144,593,187"/>
-<area shape="poly" title=" " alt="" coords="682,240,594,201,568,190,570,185,596,196,684,235"/>
-<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#aa41109191c5699b10ad2132eafb64499" title=" " alt="" coords="221,277,374,320"/>
-<area shape="poly" title=" " alt="" coords="431,261,371,279,370,274,429,256"/>
-<area shape="poly" title=" " alt="" coords="248,330,122,404,119,400,245,326"/>
-<area shape="poly" title=" " alt="" coords="421,301,375,301,375,296,421,296"/>
-<area shape="poly" title=" " alt="" coords="424,474,206,445,159,438,159,433,207,440,425,469"/>
-<area shape="poly" title=" " alt="" coords="429,342,370,323,371,318,431,337"/>
-<area shape="poly" title=" " alt="" coords="426,51,373,51,373,45,426,45"/>
-<area shape="poly" title=" " alt="" coords="447,196,438,201,377,241,327,279,324,275,374,236,436,196,444,192"/>
-<area shape="rect" href="classdyno_1_1_module.html#ae904e76fed78ae31f760b710055aaeb9" title=" " alt="" coords="653,700,842,727"/>
-<area shape="poly" title=" " alt="" coords="887,716,842,716,842,711,887,711"/>
-<area shape="rect" href="classdyno_1_1_module.html#a671334fb99ebe01b59adbfd9980fcfa9" title=" " alt="" coords="443,725,589,752"/>
-<area shape="poly" title=" " alt="" coords="638,728,590,733,589,728,638,723"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#add3fcc48f17fe1b925250c56be59d891" title=" " alt="" coords="207,755,389,781"/>
-<area shape="poly" title=" " alt="" coords="428,753,390,758,389,753,427,748"/>
-<area shape="rect" href="classdyno_1_1_vtk_visual_module.html#ad1b6e8ff868d9fa393dde6efcf8f0d33" title=" " alt="" coords="220,688,376,731"/>
-<area shape="poly" title=" " alt="" coords="427,729,375,722,376,717,428,724"/>
-<area shape="rect" href="classdyno_1_1_module.html#a0b3d99d086effb856d9af1aa27bf5ece" title=" " alt="" coords="648,751,847,777"/>
-<area shape="poly" title=" " alt="" coords="884,767,847,767,847,761,884,761"/>
-<area shape="poly" title=" " alt="" coords="632,754,590,749,590,744,633,749"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#a9d3c4cf3bd0ac17dbc37d72516c5ab22" title=" " alt="" coords="653,1052,842,1079"/>
-<area shape="poly" title=" " alt="" coords="898,1068,843,1068,843,1063,898,1063"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#aeec564118716a8eb0374ecd31a48d4a5" title=" " alt="" coords="650,1177,845,1204"/>
-<area shape="poly" title=" " alt="" coords="901,1193,846,1193,846,1188,901,1188"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#a455cc2564ff3c17512d6187017f23ab0" title=" " alt="" coords="660,1228,835,1255"/>
-<area shape="poly" title=" " alt="" coords="901,1214,819,1230,818,1225,900,1208"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#a3af6ef8a6c90d4dba82cee0a69249d0f" title=" " alt="" coords="643,1111,852,1153"/>
-<area shape="poly" title=" " alt="" coords="900,1170,843,1157,844,1151,901,1164"/>
-<area shape="rect" href="classdyno_1_1_pipeline.html#a6dad593d5873df04a18a7875739f3f26" title=" " alt="" coords="437,1169,595,1212"/>
-<area shape="poly" title=" " alt="" coords="634,1193,596,1193,596,1188,634,1188"/>
+<area shape="rect" title=" " alt="" coords="1207,1101,1401,1128"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a89206a4a64a463931313a1facf24da06" title="create a QT&#45;based view for the active scene graph." alt="" coords="974,444,1134,486"/>
+<area shape="poly" title=" " alt="" coords="1293,1087,1242,907,1202,786,1157,665,1109,565,1066,488,1071,485,1113,562,1161,663,1207,784,1247,905,1298,1085"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#af66c8338521e25db6fdbdf31fdb93830" title=" " alt="" coords="460,552,613,594"/>
+<area shape="poly" title=" " alt="" coords="1299,1086,1291,1010,1270,908,1251,853,1227,801,1196,752,1157,710,1095,665,1025,630,951,604,876,587,801,576,731,571,613,570,613,565,731,565,802,571,876,582,953,599,1027,625,1098,660,1161,706,1200,749,1232,798,1256,851,1275,906,1297,1009,1304,1085"/>
+<area shape="rect" href="class_wt_node_flow_scene.html#a8d9c5787e63dbf9b2a4a73a1de5cfe46" title="create a QT&#45;based view for the active scene graph." alt="" coords="950,720,1159,762"/>
+<area shape="poly" title=" " alt="" coords="1296,1086,1283,1023,1258,939,1240,895,1217,852,1190,812,1157,776,1142,765,1145,761,1161,772,1194,808,1222,849,1245,893,1263,937,1288,1021,1301,1085"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a7606af04c1a300fd4114f71d20fed048" title=" " alt="" coords="958,786,1151,829"/>
+<area shape="poly" title=" " alt="" coords="1293,1087,1277,1035,1249,969,1210,901,1185,870,1157,843,1140,832,1143,827,1161,839,1189,867,1214,898,1254,967,1282,1033,1298,1085"/>
+<area shape="rect" href="classdyno_1_1_module.html#a052f40fd04cfd48e8984836e6dfe5ffb" title=" " alt="" coords="956,853,1153,880"/>
+<area shape="poly" title=" " alt="" coords="1290,1088,1272,1045,1243,992,1205,939,1182,915,1158,894,1137,883,1139,878,1160,890,1186,911,1209,935,1248,989,1276,1042,1295,1086"/>
+<area shape="rect" href="classdyno_1_1_discrete_element_renderer.html#a0a11859b38532c52718450df80b3fdf1" title=" " alt="" coords="951,904,1158,946"/>
+<area shape="poly" title=" " alt="" coords="1283,1090,1231,1025,1197,991,1158,961,1136,949,1139,945,1160,956,1200,987,1235,1022,1287,1087"/>
+<area shape="rect" href="classdyno_1_1_module.html#a73f0c85f66dddc1ab648f2b628fa4fdb" title="Check the completeness of input fields." alt="" coords="953,970,1156,997"/>
+<area shape="poly" title=" " alt="" coords="1275,1093,1223,1051,1158,1012,1127,1000,1129,995,1160,1007,1226,1047,1279,1088"/>
+<area shape="rect" href="classdyno_1_1_module.html#a5a53a1ff27547593a8358e6ab5767fa2" title=" " alt="" coords="950,1021,1159,1048"/>
+<area shape="poly" title=" " alt="" coords="1247,1098,1158,1069,1101,1051,1102,1046,1160,1064,1249,1093"/>
+<area shape="rect" href="classdyno_1_1_scene_loader_x_m_l.html#a75c7a5e1ea41bbe41dc1ff52515dc34b" title=" " alt="" coords="963,1122,1146,1165"/>
+<area shape="poly" title=" " alt="" coords="1192,1130,1147,1136,1146,1130,1191,1125"/>
+<area shape="rect" href="classdyno_1_1_scene_loader_x_m_l.html#aeedc24b6772583b72b66b55417c4a301" title=" " alt="" coords="712,1097,873,1140"/>
+<area shape="poly" title=" " alt="" coords="1191,1114,1159,1113,950,1113,873,1116,873,1111,950,1108,1159,1108,1191,1108"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#ad03d17db724f154f8ff9cf670bc46ca8" title=" " alt="" coords="967,1189,1142,1216"/>
+<area shape="poly" title=" " alt="" coords="1262,1137,1160,1180,1121,1191,1119,1186,1158,1175,1260,1133"/>
+<area shape="rect" href="classdyno_1_1_animation_pipeline.html#ac512176a1600b9f3115cf4acd0bd35f6" title=" " alt="" coords="974,1240,1135,1282"/>
+<area shape="poly" title=" " alt="" coords="1280,1141,1227,1186,1160,1230,1135,1242,1133,1237,1158,1225,1224,1182,1276,1137"/>
+<area shape="rect" href="classdyno_1_1_graphics_pipeline.html#a8509dabd2d614b0398d5b061fff200c1" title=" " alt="" coords="977,1306,1132,1349"/>
+<area shape="poly" title=" " alt="" coords="1291,1143,1240,1219,1203,1261,1161,1297,1134,1311,1131,1306,1157,1292,1199,1257,1235,1216,1286,1140"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a43652b47a395830dbf5c5840ecc3d67e" title=" " alt="" coords="956,1373,1153,1416"/>
+<area shape="poly" title=" " alt="" coords="1297,1143,1278,1191,1250,1250,1211,1311,1187,1339,1161,1363,1143,1375,1140,1370,1157,1359,1183,1335,1207,1307,1245,1247,1274,1189,1292,1141"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a289e913b1d58ca1de4be1fb04e3d9aac" title=" " alt="" coords="964,1440,1145,1466"/>
+<area shape="poly" title=" " alt="" coords="1301,1144,1287,1204,1261,1281,1243,1322,1220,1362,1193,1398,1161,1430,1142,1442,1139,1437,1157,1426,1189,1395,1216,1359,1238,1320,1256,1279,1282,1202,1296,1142"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a48a48914caa0a4eae1e694918a8415c0" title=" " alt="" coords="955,1490,1154,1533"/>
+<area shape="poly" title=" " alt="" coords="1302,1144,1291,1212,1266,1302,1248,1350,1224,1397,1196,1441,1161,1480,1145,1492,1142,1488,1157,1477,1191,1438,1220,1395,1243,1348,1261,1300,1286,1211,1297,1143"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#ad1e8ba420873845db26718e0f8329a4e" title=" " alt="" coords="966,1557,1142,1600"/>
+<area shape="poly" title=" " alt="" coords="1304,1144,1297,1223,1275,1331,1256,1389,1232,1446,1200,1500,1161,1547,1144,1560,1141,1555,1157,1543,1196,1497,1227,1444,1251,1387,1270,1329,1291,1222,1299,1143"/>
+<area shape="rect" href="class_wt_node_flow_scene.html#a56b3e4baf67bd9e8b81477dda056193f" title=" " alt="" coords="963,1624,1146,1666"/>
+<area shape="poly" title=" " alt="" coords="1306,1143,1302,1233,1295,1293,1283,1359,1265,1427,1240,1494,1205,1558,1161,1614,1147,1625,1143,1621,1157,1610,1201,1555,1235,1492,1260,1425,1278,1358,1290,1292,1297,1233,1301,1143"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ae706c22e0e9f25428ef70bf3177767f2" title=" " alt="" coords="716,130,869,173"/>
+<area shape="poly" title=" " alt="" coords="1024,434,810,175,814,172,1028,430"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#ab47298add0fea824f9705563d4ac7511" title=" " alt="" coords="5,552,159,594"/>
+<area shape="poly" title=" " alt="" coords="993,495,922,525,834,557,736,587,636,609,571,617,505,621,374,618,255,606,159,591,160,586,255,600,374,612,505,615,571,612,635,604,734,582,832,552,920,520,991,490"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a5724b716b70d0eda88128b6ad40b3e16" title="Update the view only for the active scene graph, the data model will not be changed." alt="" coords="711,318,874,361"/>
+<area shape="poly" title=" " alt="" coords="993,439,838,364,840,359,996,434"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#ae6cab3b2d7262f7c6e8d0db355151c18" title=" " alt="" coords="223,34,372,77"/>
+<area shape="poly" title=" " alt="" coords="762,121,707,68,672,43,634,25,600,15,564,10,490,11,421,21,362,36,361,31,420,16,490,5,564,5,601,10,636,20,675,39,711,64,766,117"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#a55a1afe7cc3865eb78d59d769ac2d13a" title=" " alt="" coords="7,64,157,106"/>
+<area shape="poly" title=" " alt="" coords="208,71,158,78,157,72,207,65"/>
+<area shape="poly" title=" " alt="" coords="767,307,701,212,664,168,634,142,608,134,563,126,433,112,157,92,157,87,434,106,563,121,609,129,637,137,668,165,705,209,771,304"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a89e2c4e433d53c15f6555f214ff92869" title=" " alt="" coords="460,218,613,261"/>
+<area shape="poly" title=" " alt="" coords="728,314,634,276,603,264,605,259,636,271,730,309"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#aca8575ea60bf553b7f53664ee87d768b" title=" " alt="" coords="457,285,615,328"/>
+<area shape="poly" title=" " alt="" coords="695,330,616,319,616,314,695,325"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a9ee5d0e3f3c3bc80b2e592cec1e092dd" title=" " alt="" coords="448,352,624,394"/>
+<area shape="poly" title=" " alt="" coords="696,355,625,364,624,359,695,350"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a4d8a889cfd70d9c20ade8f32350e7e95" title=" " alt="" coords="460,418,613,461"/>
+<area shape="poly" title=" " alt="" coords="730,370,636,409,605,420,603,415,634,404,728,365"/>
+<area shape="poly" title=" " alt="" coords="775,376,752,414,720,459,681,503,637,542,615,555,612,550,634,538,678,500,716,455,747,411,770,373"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a022401728b5ecbedc21628a6b7ec46e7" title=" " alt="" coords="460,485,613,528"/>
+<area shape="poly" title=" " alt="" coords="762,374,707,426,673,452,637,475,613,487,610,482,634,471,670,448,703,422,759,370"/>
+<area shape="rect" href="classdyno_1_1_p_main_window.html#a7b4fc7b67d578c57cc9600ed7aeb0154" title=" " alt="" coords="462,34,611,77"/>
+<area shape="poly" title=" " alt="" coords="763,307,681,186,668,160,661,138,651,119,634,98,607,80,610,76,637,94,656,116,666,136,673,158,686,184,768,304"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#a6f7c3d7d16b63aba8a75946fe1ce3243" title=" " alt="" coords="460,152,613,194"/>
+<area shape="poly" title=" " alt="" coords="759,309,703,258,670,232,634,209,610,197,613,193,637,204,673,227,707,254,762,305"/>
+<area shape="rect" href="class_qt_1_1_qt_node_flow_scene.html#aa41109191c5699b10ad2132eafb64499" title=" " alt="" coords="221,352,374,394"/>
+<area shape="poly" title=" " alt="" coords="449,270,438,275,376,314,326,354,322,349,373,310,436,271,447,265"/>
+<area shape="poly" title=" " alt="" coords="264,407,108,553,105,549,261,403"/>
+<area shape="poly" title=" " alt="" coords="444,335,376,354,374,349,442,330"/>
+<area shape="poly" title=" " alt="" coords="432,376,375,376,375,370,432,370"/>
+<area shape="poly" title=" " alt="" coords="444,417,374,397,376,392,446,412"/>
+<area shape="poly" title=" " alt="" coords="444,576,159,576,159,570,444,570"/>
+<area shape="poly" title=" " alt="" coords="447,481,436,475,373,436,322,397,326,393,376,432,438,471,449,476"/>
+<area shape="poly" title=" " alt="" coords="446,58,373,58,373,53,446,53"/>
+<area shape="poly" title=" " alt="" coords="447,203,439,209,398,243,363,282,314,353,309,350,359,279,394,239,435,204,444,199"/>
+<area shape="rect" href="class_wt_node_flow_scene.html#a36a7c4a0d566347ba41b350541ce7636" title=" " alt="" coords="685,720,900,746"/>
+<area shape="poly" title=" " alt="" coords="934,740,901,739,901,734,934,735"/>
+<area shape="rect" href="class_wt_node_flow_scene.html#a76dcbf57114185d920c4ef1d16af6855" title="Update the view only for the active scene graph, the data model will not be changed." alt="" coords="686,770,899,813"/>
+<area shape="poly" title=" " alt="" coords="935,767,900,774,899,769,934,762"/>
+<area shape="rect" href="class_wt_node_flow_scene.html#a9a98d0d4803270a355e6f27867925f0e" title=" " alt="" coords="683,837,902,880"/>
+<area shape="poly" title=" " alt="" coords="959,772,951,777,937,789,928,801,919,814,903,827,880,839,878,834,900,823,915,811,924,798,933,785,948,772,957,767"/>
+<area shape="rect" href="class_wt_node_flow_scene.html#aed406043a275c6e5f9129a61dc9c47bb" title=" " alt="" coords="442,886,630,929"/>
+<area shape="poly" title=" " alt="" coords="693,822,685,827,670,839,661,851,652,864,637,877,615,888,612,884,634,872,648,860,657,848,667,835,682,823,691,818"/>
+<area shape="rect" href="class_wt_node_flow_scene.html#aa61a55547683e93df9037d589deed0b9" title=" " alt="" coords="442,686,630,729"/>
+<area shape="poly" title=" " alt="" coords="703,768,682,761,634,744,601,732,603,727,636,739,684,756,705,763"/>
+<area shape="rect" href="class_wt_node_flow_scene.html#ac1538ae5713e521edeeeedd0cb0e0bdd" title=" " alt="" coords="442,753,630,796"/>
+<area shape="poly" title=" " alt="" coords="671,786,631,784,631,778,671,781"/>
+<area shape="rect" href="class_wt_node_flow_scene.html#a92f941b99a4468bbfff795b814901c42" title=" " alt="" coords="437,820,635,862"/>
+<area shape="poly" title=" " alt="" coords="671,818,636,825,635,819,670,813"/>
+<area shape="rect" href="classdyno_1_1_module.html#ae904e76fed78ae31f760b710055aaeb9" title=" " alt="" coords="698,970,887,997"/>
+<area shape="poly" title=" " alt="" coords="938,986,887,986,887,981,938,981"/>
+<area shape="rect" href="classdyno_1_1_module.html#a671334fb99ebe01b59adbfd9980fcfa9" title=" " alt="" coords="463,996,609,1022"/>
+<area shape="poly" title=" " alt="" coords="683,997,610,1005,609,999,682,992"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#add3fcc48f17fe1b925250c56be59d891" title=" " alt="" coords="207,1025,389,1052"/>
+<area shape="poly" title=" " alt="" coords="448,1023,390,1030,389,1025,448,1017"/>
+<area shape="rect" href="classdyno_1_1_vtk_visual_module.html#ad1b6e8ff868d9fa393dde6efcf8f0d33" title=" " alt="" coords="220,958,376,1001"/>
+<area shape="poly" title=" " alt="" coords="447,1001,376,992,376,987,448,996"/>
+<area shape="rect" href="classdyno_1_1_module.html#a0b3d99d086effb856d9af1aa27bf5ece" title=" " alt="" coords="693,1021,892,1048"/>
+<area shape="poly" title=" " alt="" coords="934,1037,892,1037,892,1032,934,1032"/>
+<area shape="poly" title=" " alt="" coords="677,1026,610,1019,610,1014,678,1020"/>
+<area shape="poly" title=" " alt="" coords="947,1136,873,1129,873,1124,947,1131"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a9d3c4cf3bd0ac17dbc37d72516c5ab22" title=" " alt="" coords="698,1440,887,1466"/>
+<area shape="poly" title=" " alt="" coords="948,1456,888,1456,888,1450,948,1450"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#aeec564118716a8eb0374ecd31a48d4a5" title=" " alt="" coords="695,1514,890,1541"/>
+<area shape="poly" title=" " alt="" coords="950,1561,865,1544,866,1539,951,1556"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a455cc2564ff3c17512d6187017f23ab0" title=" " alt="" coords="705,1565,880,1592"/>
+<area shape="poly" title=" " alt="" coords="951,1581,880,1581,880,1576,951,1576"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a3af6ef8a6c90d4dba82cee0a69249d0f" title=" " alt="" coords="688,1616,897,1658"/>
+<area shape="poly" title=" " alt="" coords="951,1604,891,1618,890,1613,950,1599"/>
+<area shape="rect" href="classdyno_1_1_pipeline.html#a6dad593d5873df04a18a7875739f3f26" title=" " alt="" coords="457,1506,615,1549"/>
+<area shape="poly" title=" " alt="" coords="679,1530,616,1530,616,1525,679,1525"/>
 </map>
 </div>
 
@@ -925,7 +1434,7 @@ Here is the caller graph for this function:</div>
 <p>@breif Return the <a class="el" href="classdyno_1_1_scene_graph.html">SceneGraph</a> that contains this <a class="el" href="classdyno_1_1_module.html">Module</a></p>
 <dl class="section return"><dt>Returns</dt><dd>return nullptr if the module is not contained in any node </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00212">212</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00255">255</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -938,6 +1447,35 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="445,16,477,16,477,21,445,21"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aefac00cac85d2918a6c8b8c83c053ab9" name="aefac00cac85d2918a6c8b8c83c053ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefac00cac85d2918a6c8b8c83c053ab9">&#9670;&#160;</a></span>importModules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_multiple_module_port.html">MultipleModulePort</a>&lt; <a class="el" href="classdyno_1_1_module.html">Module</a> &gt; * dyno::Module::importModules </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Used to ensure modules can be executed in the correct order. </p>
+
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00146">146</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -956,7 +1494,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00036">36</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00023">23</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1002,14 +1540,14 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_discrete_element_renderer.html#a0a11859b38532c52718450df80b3fdf1">dyno::DiscreteElementRenderer</a>, <a class="el" href="classdyno_1_1_dual_particle_isph_module.html#ae346eb06bc6b3c00828fe68ff9342d5f">dyno::DualParticleIsphModule&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_energy_analysis.html#ad98fa21f2fdaf28cdc458ea744ac46e9">dyno::EnergyAnalysis&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_fixed_points.html#a05ef9e70daab71ad7d8a9245c49013a1">dyno::FixedPoints&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_frame_to_point_set.html#a33761feb17c6ea1c67c6c20ffeb70835">dyno::FrameToPointSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_paticle_uniform_analysis.html#abb6504929a6225e80d06c1b03601a92f">dyno::PaticleUniformAnalysis&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_point_set_to_point_set.html#afa70bcea9ca629eef94736cbba4092f9">dyno::PointSetToPointSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_semi_analytical_incompressibility_module.html#a1083b4ffdd20eb772c14ee4fc0533539">dyno::SemiAnalyticalIncompressibilityModule&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_tetrahedron_set_to_point_set.html#af4ef00577b025bc8af410ab20c103d77">dyno::TetrahedronSetToPointSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_triangle_set_renderer.html#a8f6938982936894538a2b36e2eb008a6">dyno::TriangleSetRenderer</a>, and <a class="el" href="classdyno_1_1_uniform_grid_renderer.html#ab184d2155c82a06f02d53d926d26a320">dyno::UniformGridRenderer</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00231">231</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00274">274</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1044,7 +1582,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00226">226</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00269">269</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1082,7 +1620,7 @@ Here is the caller graph for this function:</div>
 <dd>
 false, if any of the input field is empty. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00104">104</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00094">94</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1134,7 +1672,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00127">127</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00117">117</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1196,7 +1734,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_g_l_visual_module.html#a7a8572686902ba53dc8dea3958b563b7">dyno::GLVisualModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00104">104</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00113">113</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1239,7 +1777,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_g_l_visual_module.html#a7ed5b8384fcdc7bd7edb6d46463a82e5">dyno::GLVisualModule</a>, <a class="el" href="classdyno_1_1_group_module.html#a33adea66d8401eea6cee523ceb7dd001">dyno::GroupModule</a>, <a class="el" href="classdyno_1_1_linear_elasticity_solver.html#a7aceb723b7df8b5723e7f6690bb29648">dyno::LinearElasticitySolver&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_pipeline.html#a455cc2564ff3c17512d6187017f23ab0">dyno::Pipeline</a>, and <a class="el" href="class_pipeline.html#a455cc2564ff3c17512d6187017f23ab0">Pipeline</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00102">102</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00111">111</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1252,6 +1790,94 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="220,38,188,34,189,29,221,33"/>
 <area shape="rect" href="classdyno_1_1_vtk_visual_module.html#ad1b6e8ff868d9fa393dde6efcf8f0d33" title=" " alt="" coords="19,56,174,99"/>
 <area shape="poly" title=" " alt="" coords="221,63,175,69,174,64,220,58"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aad9da6c14d5822acffdfcaecf23fade8" name="aad9da6c14d5822acffdfcaecf23fade8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad9da6c14d5822acffdfcaecf23fade8">&#9670;&#160;</a></span>removeExportModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dyno::Module::removeExportModule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdyno_1_1_module_port.html">ModulePort</a> *</td>          <td class="paramname"><span class="paramname"><em>nodePort</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00176">176</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_aad9da6c14d5822acffdfcaecf23fade8_cgraph.png" border="0" usemap="#aclassdyno_1_1_module_aad9da6c14d5822acffdfcaecf23fade8_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_aad9da6c14d5822acffdfcaecf23fade8_cgraph" id="aclassdyno_1_1_module_aad9da6c14d5822acffdfcaecf23fade8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,51,194,93"/>
+<area shape="rect" href="classdyno_1_1_module.html#a3f3d7525e0c978ba8a189034d4c88c28" title=" " alt="" coords="242,29,416,56"/>
+<area shape="poly" title=" " alt="" coords="193,57,226,53,227,58,194,63"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#a4e0968cca58d85dd81ceb9bac0dd62b4" title=" " alt="" coords="242,80,416,123"/>
+<area shape="poly" title=" " alt="" coords="194,81,227,86,226,91,193,87"/>
+<area shape="poly" title=" " alt="" coords="291,30,285,21,289,11,304,5,329,3,355,5,369,12,367,16,354,10,329,8,306,10,293,15,290,20,296,27"/>
+<area shape="rect" href="classdyno_1_1_module_port.html#a21f639900c480510650969df9c74d17d" title=" " alt="" coords="464,88,637,115"/>
+<area shape="poly" title=" " alt="" coords="416,99,448,99,448,104,416,104"/>
+<area shape="poly" title=" " alt="" coords="513,89,506,79,511,69,526,63,551,61,577,64,591,70,589,75,576,69,551,67,527,69,515,73,512,79,518,86"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_module_aad9da6c14d5822acffdfcaecf23fade8_icgraph.png" border="0" usemap="#aclassdyno_1_1_module_aad9da6c14d5822acffdfcaecf23fade8_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_module_aad9da6c14d5822acffdfcaecf23fade8_icgraph" id="aclassdyno_1_1_module_aad9da6c14d5822acffdfcaecf23fade8_icgraph">
+<area shape="rect" title=" " alt="" coords="1318,397,1507,440"/>
+<area shape="rect" href="classdyno_1_1_module.html#ae1e2c815c043e94549e0c3b285f5b9ba" title=" " alt="" coords="1100,405,1270,432"/>
+<area shape="poly" title=" " alt="" coords="1303,421,1271,421,1271,416,1303,416"/>
+<area shape="rect" href="namespacedyno.html#a4e3768406dcc8afa707ad302f981c362" title=" " alt="" coords="932,405,1052,432"/>
+<area shape="poly" title=" " alt="" coords="1085,421,1052,421,1052,416,1085,416"/>
+<area shape="rect" href="classdyno_1_1_q_color_button.html#a4cb21895bbd7394140c3bfdac72572db" title=" " alt="" coords="728,139,864,181"/>
+<area shape="poly" title=" " alt="" coords="982,391,969,348,949,296,921,242,902,217,882,195,863,182,866,178,885,191,907,214,925,239,954,294,975,347,987,390"/>
+<area shape="rect" href="classdyno_1_1_p_data_viewer_widget.html#a68e781c2ac57c692d4dd7a12c1e04b55" title=" " alt="" coords="708,205,884,248"/>
+<area shape="poly" title=" " alt="" coords="964,396,817,250,821,246,968,392"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#aa87cedc07a9bc35184d0c30cdd235a85" title=" " alt="" coords="714,331,878,373"/>
+<area shape="poly" title=" " alt="" coords="935,402,860,376,862,371,937,397"/>
+<area shape="rect" href="classdyno_1_1_multiple_module_port.html#a3b1097c00f4176dc7c82a5f8984493c6" title=" " alt="" coords="712,397,880,440"/>
+<area shape="poly" title=" " alt="" coords="916,421,881,421,881,416,916,416"/>
+<area shape="rect" href="classdyno_1_1_multiple_node_port.html#aa35656f5a6551b5fd2bcd486f2eceea0" title=" " alt="" coords="717,464,875,507"/>
+<area shape="poly" title=" " alt="" coords="937,440,862,466,860,461,935,435"/>
+<area shape="rect" href="classdyno_1_1_single_module_port.html#a53e6d6ba940c739345eb4a5f21fb87de" title=" " alt="" coords="716,531,876,573"/>
+<area shape="poly" title=" " alt="" coords="971,445,933,484,885,521,864,532,861,528,882,516,929,480,967,442"/>
+<area shape="rect" href="classdyno_1_1_single_node_port.html#af2f4aefeaecb3ad92df3e11b47dbab8c" title=" " alt="" coords="722,597,870,640"/>
+<area shape="poly" title=" " alt="" coords="982,447,945,517,918,554,885,587,868,599,865,594,882,583,914,551,941,514,977,445"/>
+<area shape="rect" href="classdyno_1_1_p_integer_viewer_widget.html#ab5153c5ae30d774908d10d6c49ebfa4d" title=" " alt="" coords="452,5,639,48"/>
+<area shape="poly" title=" " alt="" coords="709,198,706,195,693,178,686,160,682,126,678,93,671,78,659,62,638,48,641,43,662,58,676,75,684,92,688,126,691,159,698,175,710,192,713,194"/>
+<area shape="rect" href="classdyno_1_1_p_real_viewer_widget.html#aca1b5e99f9f09c74e248c6d03fe1dd2c" title=" " alt="" coords="458,72,632,115"/>
+<area shape="poly" title=" " alt="" coords="712,199,707,195,691,178,682,161,674,144,659,129,631,114,634,109,662,125,679,141,687,158,695,175,710,191,715,195"/>
+<area shape="rect" href="classdyno_1_1_p_transform3f_viewer_widget.html#ad6f6219eeed083d8e4c0639babe21097" title=" " alt="" coords="430,139,660,181"/>
+<area shape="poly" title=" " alt="" coords="698,203,627,185,629,179,699,198"/>
+<area shape="rect" href="classdyno_1_1_p_vec2_field_viewer_widget.html#aa5a7ae0e4d66692edc5e7d711743be1f" title=" " alt="" coords="443,205,647,248"/>
+<area shape="poly" title=" " alt="" coords="693,229,648,229,648,224,693,224"/>
+<area shape="rect" href="classdyno_1_1_p_vec3_field_viewer_widget.html#ac8118303b957e00d9feb1b5782a5419f" title=" " alt="" coords="443,272,647,315"/>
+<area shape="poly" title=" " alt="" coords="699,255,629,274,627,269,698,250"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a396e065b7db0d9f7b8a39e4750e973f0" title=" " alt="" coords="5,360,170,403"/>
+<area shape="poly" title=" " alt="" coords="698,359,170,381,170,375,698,353"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#a7d6c0b70c472f6d4cb956f93230268ef" title=" " alt="" coords="463,389,627,432"/>
+<area shape="poly" title=" " alt="" coords="721,380,629,403,627,397,720,375"/>
+<area shape="poly" title=" " alt="" coords="620,382,713,360,714,365,622,387"/>
+<area shape="rect" href="classdyno_1_1_p_animation_widget.html#ab78c7620de0e1b505970874e94cc03e1" title=" " alt="" coords="218,389,382,432"/>
+<area shape="poly" title=" " alt="" coords="448,422,382,422,382,417,448,417"/>
+<area shape="poly" title=" " alt="" coords="202,400,170,395,170,390,203,395"/>
+<area shape="poly" title=" " alt="" coords="398,399,462,399,462,405,398,405"/>
 </map>
 </div>
 
@@ -1282,7 +1908,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_keyboard_input_module.html#a6521aee81460e0bfe15ee7bff8c4bca2">dyno::KeyboardInputModule</a>, <a class="el" href="classdyno_1_1_mouse_input_module.html#a8db73c351e621bee09fa80c8f1f5cedf">dyno::MouseInputModule</a>, <a class="el" href="classdyno_1_1_pipeline.html#a5676160f77eb3cd3d4e5da84b9119c2d">dyno::Pipeline</a>, and <a class="el" href="class_pipeline.html#a5676160f77eb3cd3d4e5da84b9119c2d">Pipeline</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00164">164</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00207">207</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1323,7 +1949,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00187">187</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00230">230</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1399,7 +2025,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_group_module.html#ac30ef8b25576b613ee4cbdf5235550c1">dyno::GroupModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00193">193</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00236">236</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1442,7 +2068,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00221">221</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00264">264</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 
 </div>
 </div>
@@ -1461,7 +2087,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00047">47</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00034">34</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1547,7 +2173,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00154">154</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00158">158</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1583,14 +2209,14 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classdyno_1_1_compute_module.html#a55a5d29ea239156f07a51257c16bf66f">dyno::ComputeModule</a>, <a class="el" href="classdyno_1_1_constraint_module.html#a011cfe6a929ed7f0c17563375390fe00">dyno::ConstraintModule</a>, <a class="el" href="classdyno_1_1_debug_info.html#a84d9c42fd39f8c3bfbd69bfd2aa70c38">dyno::DebugInfo</a>, <a class="el" href="classdyno_1_1_g_l_instance_visual_module.html#ad2c6e292b6261190de557b03576d8783">dyno::GLInstanceVisualModule</a>, <a class="el" href="classdyno_1_1_g_l_photorealistic_instance_render.html#ae9e13d8a86a05260420377faf4512d42">dyno::GLPhotorealisticInstanceRender</a>, <a class="el" href="classdyno_1_1_g_l_photorealistic_render.html#a9841b57fb7210705544f44d14c679f86">dyno::GLPhotorealisticRender</a>, <a class="el" href="classdyno_1_1_g_l_point_visual_module.html#a6f85e3be641449b6bb64c74d276cb872">dyno::GLPointVisualModule</a>, <a class="el" href="classdyno_1_1_g_l_surface_visual_module.html#a072982a3255c4e3a338128407b3c5364">dyno::GLSurfaceVisualModule</a>, <a class="el" href="classdyno_1_1_g_l_visual_module.html#a08e4693713792253cf6c9b3fc6b05253">dyno::GLVisualModule</a>, <a class="el" href="classdyno_1_1_g_l_wireframe_visual_module.html#a7c20907f6953813b9c6f16244772c729">dyno::GLWireframeVisualModule</a>, <a class="el" href="classdyno_1_1_group_module.html#afb9e4bbeeb7b0bd39a25fb6f77217d95">dyno::GroupModule</a>, <a class="el" href="classdyno_1_1_keyboard_input_module.html#a3570c05cfe795348b59ecc33ce0152b2">dyno::KeyboardInputModule</a>, <a class="el" href="classdyno_1_1_mouse_input_module.html#a85ce8f6f4872bf7bd7a2d2be2e572378">dyno::MouseInputModule</a>, <a class="el" href="classdyno_1_1_output_module.html#a92781d15637af5eebdd09da38716ef23">dyno::OutputModule</a>, <a class="el" href="classdyno_1_1_particle_integrator.html#a4d5711ee89cdc824a4eca0890a47edfa">dyno::ParticleIntegrator&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_pipeline.html#a8ddcac4188029556bcc93f9b3b673c50">dyno::Pipeline</a>, <a class="el" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#a316a994d875d52befc3c175e1839c39b">dyno::SemiAnalyticalIncompressibleFluidModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_topology_mapping.html#aee5db3833797454d589d2d1149aaff54">dyno::TopologyMapping</a>, <a class="el" href="classdyno_1_1_vk_visual_module.html#afdb8d7f19f3cd73b2ec44297cc56ec82">dyno::VkVisualModule</a>, and <a class="el" href="class_pipeline.html#a8ddcac4188029556bcc93f9b3b673c50">Pipeline</a>.</p>
+<p>Reimplemented in <a class="el" href="classdyno_1_1_compute_module.html#a55a5d29ea239156f07a51257c16bf66f">dyno::ComputeModule</a>, <a class="el" href="classdyno_1_1_constraint_module.html#a011cfe6a929ed7f0c17563375390fe00">dyno::ConstraintModule</a>, <a class="el" href="classdyno_1_1_debug_info.html#a84d9c42fd39f8c3bfbd69bfd2aa70c38">dyno::DebugInfo</a>, <a class="el" href="classdyno_1_1_g_l_instance_visual_module.html#ad2c6e292b6261190de557b03576d8783">dyno::GLInstanceVisualModule</a>, <a class="el" href="classdyno_1_1_g_l_photorealistic_instance_render.html#ae9e13d8a86a05260420377faf4512d42">dyno::GLPhotorealisticInstanceRender</a>, <a class="el" href="classdyno_1_1_g_l_photorealistic_render.html#a9841b57fb7210705544f44d14c679f86">dyno::GLPhotorealisticRender</a>, <a class="el" href="classdyno_1_1_g_l_point_visual_module.html#a6f85e3be641449b6bb64c74d276cb872">dyno::GLPointVisualModule</a>, <a class="el" href="classdyno_1_1_g_l_surface_visual_module.html#a072982a3255c4e3a338128407b3c5364">dyno::GLSurfaceVisualModule</a>, <a class="el" href="classdyno_1_1_g_l_visual_module.html#a08e4693713792253cf6c9b3fc6b05253">dyno::GLVisualModule</a>, <a class="el" href="classdyno_1_1_g_l_wireframe_visual_module.html#a7c20907f6953813b9c6f16244772c729">dyno::GLWireframeVisualModule</a>, <a class="el" href="classdyno_1_1_group_module.html#afb9e4bbeeb7b0bd39a25fb6f77217d95">dyno::GroupModule</a>, <a class="el" href="classdyno_1_1_keyboard_input_module.html#a3570c05cfe795348b59ecc33ce0152b2">dyno::KeyboardInputModule</a>, <a class="el" href="classdyno_1_1_mouse_input_module.html#a208e8111a397ce0b55bf1edc92293ee3">dyno::MouseInputModule</a>, <a class="el" href="classdyno_1_1_output_module.html#a92781d15637af5eebdd09da38716ef23">dyno::OutputModule</a>, <a class="el" href="classdyno_1_1_particle_integrator.html#a4d5711ee89cdc824a4eca0890a47edfa">dyno::ParticleIntegrator&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_pipeline.html#a8ddcac4188029556bcc93f9b3b673c50">dyno::Pipeline</a>, <a class="el" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#a316a994d875d52befc3c175e1839c39b">dyno::SemiAnalyticalIncompressibleFluidModel&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_topology_mapping.html#aee5db3833797454d589d2d1149aaff54">dyno::TopologyMapping</a>, <a class="el" href="classdyno_1_1_vk_visual_module.html#afdb8d7f19f3cd73b2ec44297cc56ec82">dyno::VkVisualModule</a>, and <a class="el" href="class_pipeline.html#a8ddcac4188029556bcc93f9b3b673c50">Pipeline</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00236">236</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00279">279</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1633,7 +2259,7 @@ Here is the caller graph for this function:</div>
 
 <p>Two functions called at the beginning and end of <a class="el" href="#a671334fb99ebe01b59adbfd9980fcfa9">update()</a> used for debug. </p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00149">149</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00154">154</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1676,7 +2302,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classdyno_1_1_contacts_to_point_set.html#a6a93ed49480187d8c727178f266c2381">dyno::ContactsToPointSet&lt; TDataType &gt;</a>, <a class="el" href="classdyno_1_1_contacts_union.html#aaf1827bfab26c2db967d2e3aa3815358">dyno::ContactsUnion&lt; TDataType &gt;</a>, and <a class="el" href="classdyno_1_1_g_l_visual_module.html#a5586f9528a332eb44e336de5ca7778c6">dyno::GLVisualModule</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00099">99</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00089">89</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1736,7 +2362,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00159">159</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8cpp_source.html#l00202">202</a> of file <a class="el" href="_module_8cpp_source.html">Module.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1773,6 +2399,31 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a3f3d7525e0c978ba8a189034d4c88c28" name="a3f3d7525e0c978ba8a189034d4c88c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3d7525e0c978ba8a189034d4c88c28">&#9670;&#160;</a></span>ModulePort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classdyno_1_1_module_port.html">ModulePort</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00153">153</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="af81c164e1bd1f3f7906ee58ebc954196" name="af81c164e1bd1f3f7906ee58ebc954196"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af81c164e1bd1f3f7906ee58ebc954196">&#9670;&#160;</a></span>m_initialized</h2>
@@ -1794,7 +2445,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00121">121</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00136">136</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -1818,7 +2469,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00120">120</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00135">135</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>
@@ -1842,7 +2493,83 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00119">119</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00134">134</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+
+</div>
+</div>
+<a id="a21a1db093df25cab815024d1dae01fa8" name="a21a1db093df25cab815024d1dae01fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21a1db093df25cab815024d1dae01fa8">&#9670;&#160;</a></span>mAncestors</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdyno_1_1_multiple_module_port.html">MultipleModulePort</a>&lt;<a class="el" href="classdyno_1_1_module.html">Module</a>&gt; dyno::Module::mAncestors</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= MultipleModulePort&lt;Module&gt;(</div>
+<div class="line">            std::string(<span class="stringliteral">&quot;Ancestor&quot;</span>) + std::string(<span class="stringliteral">&quot;(s)&quot;</span>),</div>
+<div class="line">            <span class="stringliteral">&quot;Ancestors&quot;</span>,</div>
+<div class="line">            <span class="keyword">this</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00148">148</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+
+</div>
+</div>
+<a id="a57ace6cd569299281ecf531e9f6a802b" name="a57ace6cd569299281ecf531e9f6a802b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ace6cd569299281ecf531e9f6a802b">&#9670;&#160;</a></span>mExportModules</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a>*&gt; dyno::Module::mExportModules</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00140">140</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
+
+</div>
+</div>
+<a id="aaab0ec2c1e62063d1a62ac022ff4b1b4" name="aaab0ec2c1e62063d1a62ac022ff4b1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaab0ec2c1e62063d1a62ac022ff4b1b4">&#9670;&#160;</a></span>mImportModules</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classdyno_1_1_module_port.html">ModulePort</a>*&gt; dyno::Module::mImportModules</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_module_8h_source.html#l00138">138</a> of file <a class="el" href="_module_8h_source.html">Module.h</a>.</p>
 
 </div>
 </div>

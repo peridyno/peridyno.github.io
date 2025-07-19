@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classdyno_1_1_corrected_kernel-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">dyno::CorrectedKernel&lt; Real &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -126,8 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a724703fba791587dfd3632a504ff94fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f1439887d1102a1f260ad53d43b4a20" id="r_a3f1439887d1102a1f260ad53d43b4a20"><td class="memItemLeft" align="right" valign="top">DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f1439887d1102a1f260ad53d43b4a20">Weight</a> (const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> r, const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> h) override</td></tr>
 <tr class="separator:a3f1439887d1102a1f260ad53d43b4a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2965460e895de29e570b905b7eefe01" id="r_af2965460e895de29e570b905b7eefe01"><td class="memItemLeft" align="right" valign="top">DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2965460e895de29e570b905b7eefe01">WeightR</a> (const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> r, const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> h)</td></tr>
-<tr class="separator:af2965460e895de29e570b905b7eefe01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbdeedc433907ce5caad7d1621d4f1a5" id="r_acbdeedc433907ce5caad7d1621d4f1a5"><td class="memItemLeft" align="right" valign="top">DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbdeedc433907ce5caad7d1621d4f1a5">Gradient</a> (const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> r, const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> h) override</td></tr>
+<tr class="separator:acbdeedc433907ce5caad7d1621d4f1a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaa2261782b156b1606f8fd7439c2e6d" id="r_aeaa2261782b156b1606f8fd7439c2e6d"><td class="memItemLeft" align="right" valign="top">DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaa2261782b156b1606f8fd7439c2e6d">WeightRR</a> (const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> r, const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> h)</td></tr>
 <tr class="separator:aeaa2261782b156b1606f8fd7439c2e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdyno_1_1_kernel"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdyno_1_1_kernel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdyno_1_1_kernel.html">dyno::Kernel&lt; Real &gt;</a></td></tr>
@@ -135,10 +136,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afe5d33c8d7b300b156ab77647cb5b8f5 inherit pub_methods_classdyno_1_1_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bbfde244cb4f686b069ea088c034742 inherit pub_methods_classdyno_1_1_kernel" id="r_a2bbfde244cb4f686b069ea088c034742"><td class="memItemLeft" align="right" valign="top">DYN_FUNC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_kernel.html#a2bbfde244cb4f686b069ea088c034742">~Kernel</a> ()</td></tr>
 <tr class="separator:a2bbfde244cb4f686b069ea088c034742 inherit pub_methods_classdyno_1_1_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef6f323bdf740787aa58d570c89dd7f inherit pub_methods_classdyno_1_1_kernel" id="r_a5ef6f323bdf740787aa58d570c89dd7f"><td class="memItemLeft" align="right" valign="top">virtual DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_kernel.html#a5ef6f323bdf740787aa58d570c89dd7f">Gradient</a> (const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> r, const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> h)</td></tr>
-<tr class="separator:a5ef6f323bdf740787aa58d570c89dd7f inherit pub_methods_classdyno_1_1_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e44b86c161dbe861204ec0ef1826383 inherit pub_methods_classdyno_1_1_kernel" id="r_a3e44b86c161dbe861204ec0ef1826383"><td class="memItemLeft" align="right" valign="top">virtual DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdyno_1_1_kernel.html#a3e44b86c161dbe861204ec0ef1826383">integral</a> (const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> r, const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> h)</td></tr>
 <tr class="separator:a3e44b86c161dbe861204ec0ef1826383 inherit pub_methods_classdyno_1_1_kernel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a293348ab0730c239eb658a8e91bb78c9" id="r_a293348ab0730c239eb658a8e91bb78c9"><td class="memItemLeft" align="right" valign="top">static DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a293348ab0730c239eb658a8e91bb78c9">weight</a> (const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> r, const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> h, <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> scale)</td></tr>
+<tr class="separator:a293348ab0730c239eb658a8e91bb78c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344544e839e4a05100409efd899a8129" id="r_a344544e839e4a05100409efd899a8129"><td class="memItemLeft" align="right" valign="top">static DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a344544e839e4a05100409efd899a8129">gradient</a> (const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> r, const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> h, <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> scale)</td></tr>
+<tr class="separator:a344544e839e4a05100409efd899a8129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83dc21e0957cb1ae0fc682a164fd8a5" id="r_ad83dc21e0957cb1ae0fc682a164fd8a5"><td class="memItemLeft" align="right" valign="top">static DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad83dc21e0957cb1ae0fc682a164fd8a5">weightRR</a> (const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> r, const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> h, <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> scale)</td></tr>
+<tr class="separator:ad83dc21e0957cb1ae0fc682a164fd8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -149,7 +157,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt;<br />
 class dyno::CorrectedKernel&lt; Real &gt;</div>
-<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00190">190</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00207">207</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad45de3153f86f740cdce217de539a987" name="ad45de3153f86f740cdce217de539a987"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad45de3153f86f740cdce217de539a987">&#9670;&#160;</a></span>CorrectedKernel()</h2>
@@ -176,7 +184,7 @@ template&lt;typename <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d6
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00193">193</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00210">210</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -215,11 +223,120 @@ template&lt;typename <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d6
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00194">194</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00211">211</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acbdeedc433907ce5caad7d1621d4f1a5" name="acbdeedc433907ce5caad7d1621d4f1a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbdeedc433907ce5caad7d1621d4f1a5">&#9670;&#160;</a></span>Gradient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> <a class="el" href="classdyno_1_1_corrected_kernel.html">dyno::CorrectedKernel</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt;::Gradient </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classdyno_1_1_kernel.html#a5ef6f323bdf740787aa58d570c89dd7f">dyno::Kernel&lt; Real &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00218">218</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_corrected_kernel_acbdeedc433907ce5caad7d1621d4f1a5_cgraph.png" border="0" usemap="#aclassdyno_1_1_corrected_kernel_acbdeedc433907ce5caad7d1621d4f1a5_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_corrected_kernel_acbdeedc433907ce5caad7d1621d4f1a5_cgraph" id="aclassdyno_1_1_corrected_kernel_acbdeedc433907ce5caad7d1621d4f1a5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,157,48"/>
+<area shape="rect" href="classdyno_1_1_corrected_kernel.html#a344544e839e4a05100409efd899a8129" title=" " alt="" coords="205,5,356,48"/>
+<area shape="poly" title=" " alt="" coords="157,24,189,24,189,29,157,29"/>
+<area shape="rect" href="classdyno_1_1_smooth_kernel.html#a9ec1c2bf500420d453e604d728e3edd8" title=" " alt="" coords="404,5,543,48"/>
+<area shape="poly" title=" " alt="" coords="356,24,388,24,388,29,356,29"/>
+<area shape="rect" href="classdyno_1_1_smooth_kernel.html#a5a540f141c21c136a960941e44ce2f50" title=" " alt="" coords="591,5,731,48"/>
+<area shape="poly" title=" " alt="" coords="544,24,576,24,576,29,544,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a344544e839e4a05100409efd899a8129" name="a344544e839e4a05100409efd899a8129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a344544e839e4a05100409efd899a8129">&#9670;&#160;</a></span>gradient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> <a class="el" href="classdyno_1_1_corrected_kernel.html">dyno::CorrectedKernel</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt;::gradient </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>scale</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00235">235</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_corrected_kernel_a344544e839e4a05100409efd899a8129_cgraph.png" border="0" usemap="#aclassdyno_1_1_corrected_kernel_a344544e839e4a05100409efd899a8129_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_corrected_kernel_a344544e839e4a05100409efd899a8129_cgraph" id="aclassdyno_1_1_corrected_kernel_a344544e839e4a05100409efd899a8129_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,157,48"/>
+<area shape="rect" href="classdyno_1_1_smooth_kernel.html#a9ec1c2bf500420d453e604d728e3edd8" title=" " alt="" coords="205,5,344,48"/>
+<area shape="poly" title=" " alt="" coords="157,24,189,24,189,29,157,29"/>
+<area shape="rect" href="classdyno_1_1_smooth_kernel.html#a5a540f141c21c136a960941e44ce2f50" title=" " alt="" coords="392,5,531,48"/>
+<area shape="poly" title=" " alt="" coords="344,24,377,24,377,29,344,29"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_corrected_kernel_a344544e839e4a05100409efd899a8129_icgraph.png" border="0" usemap="#aclassdyno_1_1_corrected_kernel_a344544e839e4a05100409efd899a8129_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_corrected_kernel_a344544e839e4a05100409efd899a8129_icgraph" id="aclassdyno_1_1_corrected_kernel_a344544e839e4a05100409efd899a8129_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,356,48"/>
+<area shape="rect" href="classdyno_1_1_corrected_kernel.html#acbdeedc433907ce5caad7d1621d4f1a5" title=" " alt="" coords="5,5,157,48"/>
+<area shape="poly" title=" " alt="" coords="189,29,157,29,157,24,189,24"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a3f1439887d1102a1f260ad53d43b4a20" name="a3f1439887d1102a1f260ad53d43b4a20"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f1439887d1102a1f260ad53d43b4a20">&#9670;&#160;</a></span>Weight()</h2>
 
@@ -251,24 +368,26 @@ template&lt;typename <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d6
 
 <p>Reimplemented from <a class="el" href="classdyno_1_1_kernel.html#abb9a3ec79b13e40af5e81129bdb9ae6d">dyno::Kernel&lt; Real &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00196">196</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00213">213</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_corrected_kernel_a3f1439887d1102a1f260ad53d43b4a20_cgraph.png" border="0" usemap="#aclassdyno_1_1_corrected_kernel_a3f1439887d1102a1f260ad53d43b4a20_cgraph" alt=""/></div>
 <map name="aclassdyno_1_1_corrected_kernel_a3f1439887d1102a1f260ad53d43b4a20_cgraph" id="aclassdyno_1_1_corrected_kernel_a3f1439887d1102a1f260ad53d43b4a20_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,157,48"/>
-<area shape="rect" href="classdyno_1_1_smooth_kernel.html#a9ec1c2bf500420d453e604d728e3edd8" title=" " alt="" coords="205,5,344,48"/>
+<area shape="rect" href="classdyno_1_1_corrected_kernel.html#a293348ab0730c239eb658a8e91bb78c9" title=" " alt="" coords="205,5,356,48"/>
 <area shape="poly" title=" " alt="" coords="157,24,189,24,189,29,157,29"/>
-<area shape="rect" href="classdyno_1_1_smooth_kernel.html#a5a540f141c21c136a960941e44ce2f50" title=" " alt="" coords="392,5,531,48"/>
-<area shape="poly" title=" " alt="" coords="344,24,377,24,377,29,344,29"/>
+<area shape="rect" href="classdyno_1_1_smooth_kernel.html#a9ec1c2bf500420d453e604d728e3edd8" title=" " alt="" coords="404,5,543,48"/>
+<area shape="poly" title=" " alt="" coords="356,24,388,24,388,29,356,29"/>
+<area shape="rect" href="classdyno_1_1_smooth_kernel.html#a5a540f141c21c136a960941e44ce2f50" title=" " alt="" coords="591,5,731,48"/>
+<area shape="poly" title=" " alt="" coords="544,24,576,24,576,29,544,29"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af2965460e895de29e570b905b7eefe01" name="af2965460e895de29e570b905b7eefe01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2965460e895de29e570b905b7eefe01">&#9670;&#160;</a></span>WeightR()</h2>
+<a id="a293348ab0730c239eb658a8e91bb78c9" name="a293348ab0730c239eb658a8e91bb78c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293348ab0730c239eb658a8e91bb78c9">&#9670;&#160;</a></span>weight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,34 +398,49 @@ template&lt;typename <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d6
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> <a class="el" href="classdyno_1_1_corrected_kernel.html">dyno::CorrectedKernel</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt;::WeightR </td>
+          <td class="memname">static DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> <a class="el" href="classdyno_1_1_corrected_kernel.html">dyno::CorrectedKernel</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt;::weight </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
+          <td class="paramtype">const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>scale</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00203">203</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00228">228</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classdyno_1_1_corrected_kernel_af2965460e895de29e570b905b7eefe01_cgraph.png" border="0" usemap="#aclassdyno_1_1_corrected_kernel_af2965460e895de29e570b905b7eefe01_cgraph" alt=""/></div>
-<map name="aclassdyno_1_1_corrected_kernel_af2965460e895de29e570b905b7eefe01_cgraph" id="aclassdyno_1_1_corrected_kernel_af2965460e895de29e570b905b7eefe01_cgraph">
+<div class="center"><img src="classdyno_1_1_corrected_kernel_a293348ab0730c239eb658a8e91bb78c9_cgraph.png" border="0" usemap="#aclassdyno_1_1_corrected_kernel_a293348ab0730c239eb658a8e91bb78c9_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_corrected_kernel_a293348ab0730c239eb658a8e91bb78c9_cgraph" id="aclassdyno_1_1_corrected_kernel_a293348ab0730c239eb658a8e91bb78c9_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,157,48"/>
 <area shape="rect" href="classdyno_1_1_smooth_kernel.html#a9ec1c2bf500420d453e604d728e3edd8" title=" " alt="" coords="205,5,344,48"/>
 <area shape="poly" title=" " alt="" coords="157,24,189,24,189,29,157,29"/>
 <area shape="rect" href="classdyno_1_1_smooth_kernel.html#a5a540f141c21c136a960941e44ce2f50" title=" " alt="" coords="392,5,531,48"/>
 <area shape="poly" title=" " alt="" coords="344,24,377,24,377,29,344,29"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_corrected_kernel_a293348ab0730c239eb658a8e91bb78c9_icgraph.png" border="0" usemap="#aclassdyno_1_1_corrected_kernel_a293348ab0730c239eb658a8e91bb78c9_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_corrected_kernel_a293348ab0730c239eb658a8e91bb78c9_icgraph" id="aclassdyno_1_1_corrected_kernel_a293348ab0730c239eb658a8e91bb78c9_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,356,48"/>
+<area shape="rect" href="classdyno_1_1_corrected_kernel.html#a3f1439887d1102a1f260ad53d43b4a20" title=" " alt="" coords="5,5,157,48"/>
+<area shape="poly" title=" " alt="" coords="189,29,157,29,157,24,189,24"/>
 </map>
 </div>
 
@@ -341,17 +475,79 @@ template&lt;typename <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d6
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00210">210</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00223">223</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdyno_1_1_corrected_kernel_aeaa2261782b156b1606f8fd7439c2e6d_cgraph.png" border="0" usemap="#aclassdyno_1_1_corrected_kernel_aeaa2261782b156b1606f8fd7439c2e6d_cgraph" alt=""/></div>
 <map name="aclassdyno_1_1_corrected_kernel_aeaa2261782b156b1606f8fd7439c2e6d_cgraph" id="aclassdyno_1_1_corrected_kernel_aeaa2261782b156b1606f8fd7439c2e6d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,157,48"/>
+<area shape="rect" href="classdyno_1_1_corrected_kernel.html#ad83dc21e0957cb1ae0fc682a164fd8a5" title=" " alt="" coords="205,5,356,48"/>
+<area shape="poly" title=" " alt="" coords="157,24,189,24,189,29,157,29"/>
+<area shape="rect" href="classdyno_1_1_smooth_kernel.html#a9ec1c2bf500420d453e604d728e3edd8" title=" " alt="" coords="404,5,543,48"/>
+<area shape="poly" title=" " alt="" coords="356,24,388,24,388,29,356,29"/>
+<area shape="rect" href="classdyno_1_1_smooth_kernel.html#a5a540f141c21c136a960941e44ce2f50" title=" " alt="" coords="591,5,731,48"/>
+<area shape="poly" title=" " alt="" coords="544,24,576,24,576,29,544,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad83dc21e0957cb1ae0fc682a164fd8a5" name="ad83dc21e0957cb1ae0fc682a164fd8a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad83dc21e0957cb1ae0fc682a164fd8a5">&#9670;&#160;</a></span>weightRR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a>&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static DYN_FUNC <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> <a class="el" href="classdyno_1_1_corrected_kernel.html">dyno::CorrectedKernel</a>&lt; <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a> &gt;::weightRR </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_typedef_8inl.html#a445a5f0e2a34c9d97d69a3c2d1957907">Real</a></td>          <td class="paramname"><span class="paramname"><em>scale</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_kernel_8h_source.html#l00242">242</a> of file <a class="el" href="_kernel_8h_source.html">Kernel.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_corrected_kernel_ad83dc21e0957cb1ae0fc682a164fd8a5_cgraph.png" border="0" usemap="#aclassdyno_1_1_corrected_kernel_ad83dc21e0957cb1ae0fc682a164fd8a5_cgraph" alt=""/></div>
+<map name="aclassdyno_1_1_corrected_kernel_ad83dc21e0957cb1ae0fc682a164fd8a5_cgraph" id="aclassdyno_1_1_corrected_kernel_ad83dc21e0957cb1ae0fc682a164fd8a5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,157,48"/>
 <area shape="rect" href="classdyno_1_1_smooth_kernel.html#a9ec1c2bf500420d453e604d728e3edd8" title=" " alt="" coords="205,5,344,48"/>
 <area shape="poly" title=" " alt="" coords="157,24,189,24,189,29,157,29"/>
 <area shape="rect" href="classdyno_1_1_smooth_kernel.html#a5a540f141c21c136a960941e44ce2f50" title=" " alt="" coords="392,5,531,48"/>
 <area shape="poly" title=" " alt="" coords="344,24,377,24,377,29,344,29"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdyno_1_1_corrected_kernel_ad83dc21e0957cb1ae0fc682a164fd8a5_icgraph.png" border="0" usemap="#aclassdyno_1_1_corrected_kernel_ad83dc21e0957cb1ae0fc682a164fd8a5_icgraph" alt=""/></div>
+<map name="aclassdyno_1_1_corrected_kernel_ad83dc21e0957cb1ae0fc682a164fd8a5_icgraph" id="aclassdyno_1_1_corrected_kernel_ad83dc21e0957cb1ae0fc682a164fd8a5_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,356,48"/>
+<area shape="rect" href="classdyno_1_1_corrected_kernel.html#aeaa2261782b156b1606f8fd7439c2e6d" title=" " alt="" coords="5,5,157,48"/>
+<area shape="poly" title=" " alt="" coords="189,29,157,29,157,24,189,24"/>
 </map>
 </div>
 

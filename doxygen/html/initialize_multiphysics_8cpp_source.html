@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_volume_boundary_8h.html">VolumeBoundary.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_adaptive_boundary_8h.html">AdaptiveBoundary.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_poisson_disk_sampling_8h.html">PoissonDiskSampling.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_poisson_disk_sampler_8h.html">PoissonDiskSampler.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedyno.html">dyno</a></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
@@ -163,7 +163,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            <span class="stringliteral">&quot;Poisson Disk Sampler&quot;</span>,</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <span class="stringliteral">&quot;ToolBarIco/Modeling/PoissonDiskSampler_v2.png&quot;</span>,</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            [=]()-&gt;std::shared_ptr&lt;Node&gt; {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">return</span> std::make_shared&lt;PoissonDiskSampling&lt;DataType3f&gt;&gt;();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">return</span> std::make_shared&lt;PoissonDiskSampler&lt;DataType3f&gt;&gt;();</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            });</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
 </div>
@@ -190,7 +190,7 @@ $(function(){ initResizable(false); });
 </div>
 <div class="ttc" id="a_adaptive_boundary_8h_html"><div class="ttname"><a href="_adaptive_boundary_8h.html">AdaptiveBoundary.h</a></div></div>
 <div class="ttc" id="a_node_factory_8h_html"><div class="ttname"><a href="_node_factory_8h.html">NodeFactory.h</a></div></div>
-<div class="ttc" id="a_poisson_disk_sampling_8h_html"><div class="ttname"><a href="_poisson_disk_sampling_8h.html">PoissonDiskSampling.h</a></div></div>
+<div class="ttc" id="a_poisson_disk_sampler_8h_html"><div class="ttname"><a href="_poisson_disk_sampler_8h.html">PoissonDiskSampler.h</a></div></div>
 <div class="ttc" id="a_volume_boundary_8h_html"><div class="ttname"><a href="_volume_boundary_8h.html">VolumeBoundary.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_multiphysics_initializer_html_a09b9d9b90cbad22fcc768c04feb66dbc"><div class="ttname"><a href="classdyno_1_1_multiphysics_initializer.html#a09b9d9b90cbad22fcc768c04feb66dbc">dyno::MultiphysicsInitializer::initializeActions</a></div><div class="ttdeci">void initializeActions() override</div><div class="ttdef"><b>Definition</b> <a href="#l00039">initializeMultiphysics.cpp:39</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_multiphysics_initializer_html_a143a6d58de118f8fef6fa1994d2edda6"><div class="ttname"><a href="classdyno_1_1_multiphysics_initializer.html#a143a6d58de118f8fef6fa1994d2edda6">dyno::MultiphysicsInitializer::instance</a></div><div class="ttdeci">static PluginEntry * instance()</div><div class="ttdef"><b>Definition</b> <a href="#l00015">initializeMultiphysics.cpp:15</a></div></div>

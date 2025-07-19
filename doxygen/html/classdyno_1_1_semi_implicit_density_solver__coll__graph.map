@@ -1,21 +1,26 @@
 <map id="dyno::SemiImplicitDensitySolver&lt; TDataType &gt;" name="dyno::SemiImplicitDensitySolver&lt; TDataType &gt;">
-<area shape="rect" id="Node000001" title="This class implements a semi&#45;implicit successive substitution method to solve incompressibility...." alt="" coords="10,629,185,672"/>
-<area shape="rect" id="Node000002" href="$classdyno_1_1_particle_approximation.html" title=" " alt="" coords="5,537,190,580"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,596,100,629,95,629,95,596"/>
-<area shape="rect" id="Node000003" href="$classdyno_1_1_compute_module.html" title=" " alt="" coords="21,461,174,488"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="100,504,100,537,95,537,95,504"/>
-<area shape="rect" id="Node000004" href="$classdyno_1_1_module.html" title=" " alt="" coords="48,385,147,412"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="100,427,100,461,95,461,95,427"/>
-<area shape="rect" id="Node000005" href="$classdyno_1_1_o_base.html" title=" " alt="" coords="53,81,150,108"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="104,124,100,385,95,385,98,124"/>
-<area shape="rect" id="Node000007" href="$classdyno_1_1_node.html" title=" " alt="" coords="113,295,202,321"/>
-<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="111,123,157,294,152,295,106,124"/>
-<area shape="rect" id="Node000008" href="$classdyno_1_1_scene_graph.html" title=" " alt="" coords="165,204,294,231"/>
-<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="131,116,147,130,220,202,216,206,144,134,127,120"/>
-<area shape="rect" id="Node000006" href="$classdyno_1_1_object.html" title=" " alt="" coords="54,5,149,32"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="104,47,104,81,99,81,99,47"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="143,336,108,386,104,383,138,333"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="212,245,170,296,166,292,208,241"/>
-<area shape="rect" id="Node000009" href="$classdyno_1_1_vector.html" title=" " alt="" coords="174,81,333,108"/>
-<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="251,124,235,204,229,203,245,123"/>
+<area shape="rect" id="Node000001" title="This class implements a semi&#45;implicit successive substitution method to solve incompressibility...." alt="" coords="10,644,185,687"/>
+<area shape="rect" id="Node000002" href="$classdyno_1_1_particle_approximation.html" title=" " alt="" coords="5,552,190,595"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,610,100,644,95,644,95,610"/>
+<area shape="rect" id="Node000003" href="$classdyno_1_1_compute_module.html" title=" " alt="" coords="21,476,174,503"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="100,518,100,552,95,552,95,518"/>
+<area shape="rect" id="Node000004" href="$classdyno_1_1_module.html" title=" " alt="" coords="172,385,271,412"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="193,423,117,478,114,473,190,419"/>
+<area shape="rect" id="Node000011" href="$classdyno_1_1_module_port.html" title="Input ports for Module." alt="" coords="320,476,443,503"/>
+<area shape="poly" id="edge13_Node000011_Node000004" title=" " alt="" coords="259,418,360,473,357,478,256,422"/>
+<area shape="rect" id="Node000005" href="$classdyno_1_1_o_base.html" title=" " alt="" coords="177,81,274,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="228,124,224,385,219,385,222,124"/>
+<area shape="rect" id="Node000007" href="$classdyno_1_1_node.html" title=" " alt="" coords="237,295,326,321"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="235,123,281,294,276,295,230,124"/>
+<area shape="rect" id="Node000008" href="$classdyno_1_1_scene_graph.html" title=" " alt="" coords="289,204,418,231"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="255,116,271,130,344,202,340,206,268,134,251,120"/>
+<area shape="rect" id="Node000006" href="$classdyno_1_1_object.html" title=" " alt="" coords="178,5,273,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="228,47,228,81,223,81,223,47"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="267,336,232,386,228,383,262,333"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="336,245,294,296,290,292,332,241"/>
+<area shape="rect" id="Node000009" href="$classdyno_1_1_vector.html" title=" " alt="" coords="298,81,457,108"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="375,124,359,204,353,203,369,123"/>
+<area shape="rect" id="Node000010" href="$classdyno_1_1_multiple_module_port.html" title=" " alt="" coords="255,552,423,595"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="276,546,252,528,232,504,222,480,217,455,217,412,223,412,222,454,227,479,236,501,255,524,279,542"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="370,517,352,553,347,551,366,515"/>
 </map>

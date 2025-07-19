@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -146,7 +146,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <a class="code hl_variable" href="classdyno_1_1_q_value_dialog.html#ab8e274f218435edc94a88314931c93d5">button</a>[i]-&gt;buttonDSpinBox = doubleSpinBox;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                VLayout-&gt;addWidget(<a class="code hl_variable" href="classdyno_1_1_q_value_dialog.html#ab8e274f218435edc94a88314931c93d5">button</a>[i]);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                connect(<a class="code hl_variable" href="classdyno_1_1_q_value_dialog.html#ab8e274f218435edc94a88314931c93d5">button</a>[i], SIGNAL(valueChange(<span class="keywordtype">double</span>)), doubleSpinBox, SLOT(ModifyValueAndUpdate(<span class="keywordtype">double</span>)));</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                connect(<a class="code hl_variable" href="classdyno_1_1_q_value_dialog.html#ab8e274f218435edc94a88314931c93d5">button</a>[i], SIGNAL(valueChange(<span class="keywordtype">double</span>)), doubleSpinBox, SLOT(triggerEditingFinished(<span class="keywordtype">double</span>)));</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                connect(<a class="code hl_variable" href="classdyno_1_1_q_value_dialog.html#ab8e274f218435edc94a88314931c93d5">button</a>[i], SIGNAL(mouseReleased(<span class="keywordtype">double</span>)), <span class="keyword">this</span>, SLOT(<a class="code hl_slot" href="classdyno_1_1_q_value_dialog.html#aa4184bc9ca18f8c838d9843d0cb11883">initData</a>(<span class="keywordtype">double</span>)));</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>

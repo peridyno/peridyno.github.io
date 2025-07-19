@@ -9,25 +9,25 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Windows Platform Installation :: Documentation for PeriDyno</title>
+    <title>Windows Source Code Installation :: Documentation for PeriDyno</title>
 
     
-    <link href="/css/nucleus.css?1719408425" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1719408425" rel="stylesheet">
-    <link href="/css/hybrid.css?1719408425" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1719408425" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1719408425" rel="stylesheet">
-    <link href="/css/auto-complete.css?1719408425" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1719408425" rel="stylesheet">
-    <link href="/css/theme.css?1719408425" rel="stylesheet">
-    <link href="/css/tabs.css?1719408425" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1719408425" rel="stylesheet">
+    <link href="/css/nucleus.css?1752936062" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1752936062" rel="stylesheet">
+    <link href="/css/hybrid.css?1752936062" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1752936062" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1752936062" rel="stylesheet">
+    <link href="/css/auto-complete.css?1752936062" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1752936062" rel="stylesheet">
+    <link href="/css/theme.css?1752936062" rel="stylesheet">
+    <link href="/css/tabs.css?1752936062" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1752936062" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1719408425" rel="stylesheet">
+    <link href="/css/theme-blue.css?1752936062" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1719408425"></script>
+    <script src="/js/jquery-3.3.1.min.js?1752936062"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1719408425"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1719408425"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1752936062"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1752936062"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/peridyno.github.io\/\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1719408425"></script>
+<script type="text/javascript" src="/js/search.js?1752936062"></script>
 
     
   </div>
@@ -162,7 +162,7 @@
         
         ">
       <a href="/en/installation/window/">
-           Windows Installation
+          2.1 Windows Installation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -187,13 +187,13 @@
  
   
     
-    <li data-nav-id="/en/installation/window/source/" title="Windows Platform Installation" class="dd-item
+    <li data-nav-id="/en/installation/window/source/" title="Windows Source Code Installation" class="dd-item
         parent
         active
         
         ">
       <a href="/en/installation/window/source/">
-           Windows Installation
+          - Install from Source
           
             <i class="fas fa-check read-icon"></i>
           
@@ -215,13 +215,13 @@
  
   
     
-    <li data-nav-id="/en/installation/window/binary/" title="Window" class="dd-item
+    <li data-nav-id="/en/installation/window/binary/" title="Windows Binary Installation" class="dd-item
         
         
         
         ">
       <a href="/en/installation/window/binary/">
-          - binary installation
+          - Binary Installation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -252,13 +252,13 @@
  
   
     
-    <li data-nav-id="/en/installation/linux/" title="Linux" class="dd-item
+    <li data-nav-id="/en/installation/linux/" title="Linux Platform Installation" class="dd-item
         
         
         
         ">
       <a href="/en/installation/linux/">
-          2.2 Linux
+          2.2 Linux Installation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -2853,7 +2853,7 @@
             
           
           
-            <a href='/en/'>PeriDyno</a> > <a href='/en/installation/'>Installation</a> > <a href='/en/installation/window/'>Windows Platform Installation</a> > Windows Platform Installation
+            <a href='/en/'>PeriDyno</a> > <a href='/en/installation/'>Installation</a> > <a href='/en/installation/window/'>Windows Platform Installation</a> > Windows Source Code Installation
           
         
           
@@ -2868,7 +2868,23 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-system-requirements">1. System Requirements</a></li>
+        <li><a href="#2-runtime-dependencies">2. Runtime Dependencies</a></li>
+        <li><a href="#3-installation">3. Installation</a></li>
+        <li><a href="#4-compiling-the-project">4. Compiling the Project</a></li>
+        <li><a href="#5-running-the-project-glfw-platform">5. Running the Project (GLFW Platform)</a></li>
+        <li><a href="#6-installing-the-interactive-qt-platform-optional">6. Installing the Interactive Qt Platform (Optional)</a></li>
+        <li><a href="#7-vulkan-installation-optional">7. Vulkan Installation (Optional)</a></li>
+        <li><a href="#8-peridyno-plugin-installation-optional">8. Peridyno Plugin Installation (Optional)</a></li>
+        <li><a href="#9-windows-installation-faq">9. Windows Installation FAQ</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -2884,7 +2900,7 @@
           
             <h1>
               
-              Windows Platform Installation
+              Windows Source Code Installation
             </h1>
           
 
@@ -2896,7 +2912,187 @@
 
 
 
-	<p>To be continued&hellip;</p>
+	<h3 id="1-system-requirements">1. System Requirements</h3>
+<ul>
+<li><strong>Windows Platform</strong>: Supports Windows 10 and Windows 11;</li>
+<li><strong>GPU</strong>: <strong>Recommended</strong> Nvidia GPU (most examples require Nvidia GPU support);</li>
+<li><strong>CPU</strong>: Intel i7 or higher;</li>
+<li><strong>OpenGL</strong>: 4.6+;</li>
+<li><strong>RAM</strong>: 8GB or more.</li>
+</ul>
+<h3 id="2-runtime-dependencies">2. Runtime Dependencies</h3>
+<ul>
+<li>IDE: Visual Studio 2017+ (Recommended: <a href="https://visualstudio.microsoft.com/zh-hans/vs/older-downloads/">Visual Studio 2019</a>)</li>
+<li>CUDA: CUDA Toolkit 11.0+ (Recommended: <a href="https://developer.nvidia.com/cuda-11-4-0-download-archive?target_os=Windows&amp;target_arch=x86_64&amp;target_version=10">CUDA Toolkit 11.4</a>)</li>
+<li>CMake: <a href="https://cmake.org/download/">3.17+</a></li>
+</ul>
+<p>Optional Dependencies:</p>
+<ul>
+<li>Qt: <a href="https://download.qt.io/archive/qt/">Version 5.0 or later</a> (Recommended: 5.14.2)</li>
+<li>Vulkan SDK: (<a href="https://vulkan.lunarg.com/">https://vulkan.lunarg.com/</a>)</li>
+</ul>
+<h3 id="3-installation">3. Installation</h3>
+<p>Clone the project and its submodules using the git command:</p>
+<pre><code>git clone --recursive https://gitee.com/peridyno/peridyno.git
+</code></pre><h3 id="4-compiling-the-project">4. Compiling the Project</h3>
+<p>Compile the project using CMake:</p>
+<ol>
+<li>Set the source code path and build path in CMake</li>
+<li>Click <code>Configure</code></li>
+<li>Click <code>Generate</code></li>
+</ol>
+<p><img src="/images/installation/windows/cmake.jpg?width=30pc" alt=""></p>
+<h3 id="5-running-the-project-glfw-platform">5. Running the Project (GLFW Platform)</h3>
+<ol>
+<li>Open the compiled project in Visual Studio</li>
+<li>Select an example from the <code>Examples</code> folder as the startup item</li>
+<li>Run the project</li>
+</ol>
+<p>The screenshot below shows the running result of the <code>GL_ParticleFluid</code> example:</p>
+<p><img src="/images/installation/windows/fluid.jpg?width=50pc" alt=""></p>
+<h3 id="6-installing-the-interactive-qt-platform-optional">6. Installing the Interactive Qt Platform (Optional)</h3>
+<p>The PeriDyno engine supports three interactive platforms. For details, refer to <a href="../../framework/platform/"><strong>Section 3.6</strong></a>. The Qt framework is primarily designed as an interactive framework for engineering R&amp;D. It enables users to connect simulation tasks sequentially through a scene graph, allowing developers to edit properties for each node. We recommend installing <a href="https://download.qt.io/archive/qt/">Qt5.12 or later</a>.</p>
+<p>To install Qt:</p>
+<ol>
+<li>
+<p>Run the Qt installer and log in with your Qt account:
+
+<div class="notices info" ><p>Newer Qt versions require online registration for installation. Older versions (e.g., Qt5.14.2) can be installed offline without registration.</p>
+</div>
+
+<img src="/images/installation/windows/Qt_log.jpg?width=20pc" alt=""></p>
+</li>
+<li>
+<p>Set the installation path:
+<img src="/images/installation/windows/Qt_path.jpg?width=20pc" alt=""></p>
+</li>
+<li>
+<p>Select the following components:
+<img src="/images/installation/windows/Qt_install.png?width=20pc" alt=""></p>
+</li>
+<li>
+<p>Add Qt to your system environment variables:
+<img src="/images/installation/windows/path.jpg?width=20pc" alt=""></p>
+</li>
+</ol>
+<p>Configuration Steps:</p>
+<ol>
+<li>
+<p>Open CMake and search for Qt, then enable the <code>PERIDYNO_Qt_GUI</code> option</p>
+</li>
+<li>
+<p>Click <code>Configure</code> followed by <code>Generate</code>:
+<img src="/images/installation/windows/cmake_qt.png?width=20pc" alt=""></p>
+</li>
+<li>
+<p>Reopen Visual Studio - you&rsquo;ll now see Qt directories and example programs in Solution Explorer:
+<img src="/images/installation/windows/Qt_dir.jpg?width=20pc" alt=""></p>
+</li>
+<li>
+<p>Run the <code>Qt_Bricks</code> project to view the Qt framework interface:
+<img src="/images/installation/windows/Qt_Bricks.jpg?width=40pc" alt=""></p>
+</li>
+</ol>
+<h5 id="qt6-based-installation">Qt6-Based Installation</h5>
+<p>Qt 6 no longer provides precompiled installation packages. You need to first download the <a href="https://download.qt.io/official_releases/online_installers/">online installer</a> to complete the installation. Considering the slow download speeds in mainland China, it&rsquo;s recommended to use Tsinghua mirror for installation:</p>
+<pre><code>./qt-unified-linux-x64-online.exe --mirror https://mirrors.tuna.tsinghua.edu.cn/qt
+</code></pre><p>For the remaining installation process, please refer to the official documentation.</p>
+<p>During installation, make sure to select:</p>
+<ul>
+<li>MSVC 2019 64-bit</li>
+<li>Qt 5 Compatibility Module
+(For VS 2019 users - select corresponding options for other VS versions)</li>
+</ul>
+<p><img src="/images/installation/windows/qt6.png?width=40pc" alt=""></p>
+<h3 id="7-vulkan-installation-optional">7. Vulkan Installation (Optional)</h3>
+<p>PeriDyno supports three configuration modes during CMake: CUDA, Vulkan, and NoGPU. The Vulkan mode provides support for non-NVIDIA GPUs, though it currently offers fewer example cases. Before installation, please verify your graphics card supports Vulkan API.</p>
+<ol>
+<li>
+<p>Download <a href="https://vulkan.lunarg.com/sdk/home#windows">Vulkan SDK</a>:
+<img src="/images/installation/windows/VulkanDownLoad.png?width=30pc" alt=""></p>
+</li>
+<li>
+<p>Run the installer:
+<img src="/images/installation/windows/VulkanInstall.jpg?width=30pc" alt=""></p>
+</li>
+<li>
+<p>Add Vulkan to your system environment variables:
+<img src="/images/installation/windows/VulkanPath.jpg?width=30pc" alt=""></p>
+</li>
+</ol>
+<p>Important Notes:</p>
+<ul>
+<li>The Vulkan SDK version must be compatible with your graphics drivers</li>
+<li>After installation, verify using <code>vulkaninfo</code> in command prompt</li>
+<li>Requires Vulkan 1.1 or later for full functionality</li>
+</ul>
+<h3 id="8-peridyno-plugin-installation-optional">8. Peridyno Plugin Installation (Optional)</h3>
+<p>PeriDyno supports <a href="https://gitee.com/peridyno/peridyno/tree/master/plugins">plugin</a> integration. By default, plugins are disabled to improve compilation speed. To enable plugins:</p>
+<ol>
+<li>
+<p>During CMake configuration:</p>
+<ul>
+<li>Enable the <strong>PERIDYNO_LIBRARY_PLUGIN</strong> option
+<img src="/images/installation/windows/Plugin.jpg?width=30pc" alt=""></li>
+</ul>
+</li>
+<li>
+<p>After re-running Configure and Generate:</p>
+<ul>
+<li>Available plugins will appear as selectable options
+<img src="/images/installation/windows/Plugin2.jpg?width=30pc" alt=""></li>
+</ul>
+</li>
+<li>
+<p>Select desired plugins and reconfigure:</p>
+<ul>
+<li>The Plugin folder will appear in Visual Studio Solution Explorer
+<img src="/images/installation/windows/Plugin3.jpg?width=20pc" alt=""></li>
+</ul>
+</li>
+</ol>
+<h3 id="9-windows-installation-faq">9. Windows Installation FAQ</h3>
+<p><strong>Q1: Is there a specific installation order required for the software?</strong></p>
+<blockquote>
+<p>A: Visual Studio should be installed first. Other software can be installed in any order. CUDA and Qt will automatically detect the Visual Studio installation path.</p>
+</blockquote>
+<p><strong>Q2: What are the GPU requirements for PeriDyno?</strong></p>
+<blockquote>
+<p>A: PeriDyno supports three configuration modes during CMake:</p>
+<ul>
+<li><strong>CUDA Mode</strong>: Only supports NVIDIA GPUs (recommended for most examples)</li>
+<li><strong>Vulkan Mode</strong>: Supports other GPU brands</li>
+<li><strong>NoGPU Mode</strong>: No GPU required</li>
+</ul>
+<p>For optimal performance:</p>
+<ul>
+<li>Use GPUs with <strong>at least 4GB VRAM</strong></li>
+<li>Most PeriDyno examples are developed for CUDA mode</li>
+<li>Vulkan and NoGPU modes have limited examples</li>
+</ul>
+<blockquote>
+<p><strong>There are fewer examples for Vulkan and NoGPU modes, so users are recommended to use CUDA mode for learning.</strong></p>
+</blockquote>
+<p><img src="/images/installation/windows/GPUBackend.jpg?width=40pc" alt=""></p>
+</blockquote>
+<p><strong>Q3: QT application error: &ldquo;qt.qpa.plugin: Could not find the Qt platform plugin &lsquo;windows&rsquo;&quot;</strong></p>
+<blockquote>
+<p>Solution:</p>
+<ol>
+<li>
+<p>Add a system environment variable:</p>
+<ul>
+<li>Name: <code>QT_QPA_PLATFORM_PLUGIN_PATH</code></li>
+<li>Value: <code>C:\Qt\Qt5.15.2\5.15.2\msvc2019_64\plugins</code> (adjust paths for your VS version)</li>
+</ul>
+</li>
+<li>
+<p>If the error persists, manually copy the <code>platforms</code> folder from:<br>
+<code>C:\Qt\Qt{Qt_version}\{Qt_version}\msvc{VS_platform}\plugins</code><br>
+to your application&rsquo;s <code>bin</code> directory.</p>
+</li>
+</ol>
+</blockquote>
 
 
 
@@ -4379,7 +4575,7 @@
 			<a class="nav nav-prev" href="/en/installation/window/" title="Windows Platform Installation"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/en/installation/window/binary/" title="Window" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/en/installation/window/binary/" title="Windows Binary Installation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -4389,16 +4585,16 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1719408425"></script>
-    <script src="/js/perfect-scrollbar.min.js?1719408425"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1719408425"></script>
-    <script src="/js/jquery.sticky.js?1719408425"></script>
-    <script src="/js/featherlight.min.js?1719408425"></script>
-    <script src="/js/highlight.pack.js?1719408425"></script>
+    <script src="/js/clipboard.min.js?1752936062"></script>
+    <script src="/js/perfect-scrollbar.min.js?1752936062"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1752936062"></script>
+    <script src="/js/jquery.sticky.js?1752936062"></script>
+    <script src="/js/featherlight.min.js?1752936062"></script>
+    <script src="/js/highlight.pack.js?1752936062"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1719408425"></script>
-    <script src="/js/learn.js?1719408425"></script>
-    <script src="/js/hugo-learn.js?1719408425"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1752936062"></script>
+    <script src="/js/learn.js?1752936062"></script>
+    <script src="/js/hugo-learn.js?1752936062"></script>
     
         
             <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>

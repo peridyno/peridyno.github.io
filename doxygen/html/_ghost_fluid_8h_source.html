@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -120,7 +120,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classdyno_1_1_ghost_fluid.html#aa511329b8f465f2c1ad0fa94ce2077a1">   44</a></span>        <a class="code hl_function" href="classdyno_1_1_ghost_fluid.html#aa511329b8f465f2c1ad0fa94ce2077a1">DEF_NODE_PORT</a>(<a class="code hl_class" href="classdyno_1_1_ghost_particles.html">GhostParticles&lt;TDataType&gt;</a>, BoundaryParticles, <span class="stringliteral">&quot;Initial boundary ghost particles&quot;</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classdyno_1_1_ghost_fluid.html#ad20a16e6ba0c21d5bd5c6d9ef236ca65">   44</a></span>        <a class="code hl_function" href="classdyno_1_1_ghost_fluid.html#ad20a16e6ba0c21d5bd5c6d9ef236ca65">DEF_NODE_PORTS</a>(<a class="code hl_class" href="classdyno_1_1_ghost_particles.html">GhostParticles&lt;TDataType&gt;</a>, BoundaryParticle, <span class="stringliteral">&quot;Initial boundary ghost particles&quot;</span>);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classdyno_1_1_ghost_fluid.html#a17a7f0c1a817e6174efa36fa9c62fc83">   47</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="classdyno_1_1_ghost_fluid.html#a17a7f0c1a817e6174efa36fa9c62fc83">resetStates</a>() <span class="keyword">override</span>;</div>
@@ -149,7 +149,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="aclassdyno_1_1_ghost_fluid_html_a82635af40759a73305bfaae1e65213aa"><div class="ttname"><a href="classdyno_1_1_ghost_fluid.html#a82635af40759a73305bfaae1e65213aa">dyno::GhostFluid::postUpdateStates</a></div><div class="ttdeci">void postUpdateStates() override</div></div>
 <div class="ttc" id="aclassdyno_1_1_ghost_fluid_html_a92f5a053a61436015c840d163d5d6680"><div class="ttname"><a href="classdyno_1_1_ghost_fluid.html#a92f5a053a61436015c840d163d5d6680">dyno::GhostFluid::Real</a></div><div class="ttdeci">TDataType::Real Real</div><div class="ttdef"><b>Definition</b> <a href="#l00019">GhostFluid.h:19</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_ghost_fluid_html_a97a9c7dda62cd9e8e944b2649422bf80"><div class="ttname"><a href="classdyno_1_1_ghost_fluid.html#a97a9c7dda62cd9e8e944b2649422bf80">dyno::GhostFluid::DEF_ARRAY_STATE</a></div><div class="ttdeci">DEF_ARRAY_STATE(Coord, VelocityMerged, DeviceType::GPU, &quot;Particle velocity&quot;)</div><div class="ttdoc">Particle velocity.</div></div>
-<div class="ttc" id="aclassdyno_1_1_ghost_fluid_html_aa511329b8f465f2c1ad0fa94ce2077a1"><div class="ttname"><a href="classdyno_1_1_ghost_fluid.html#aa511329b8f465f2c1ad0fa94ce2077a1">dyno::GhostFluid::DEF_NODE_PORT</a></div><div class="ttdeci">DEF_NODE_PORT(GhostParticles&lt; TDataType &gt;, BoundaryParticles, &quot;Initial boundary ghost particles&quot;)</div></div>
+<div class="ttc" id="aclassdyno_1_1_ghost_fluid_html_ad20a16e6ba0c21d5bd5c6d9ef236ca65"><div class="ttname"><a href="classdyno_1_1_ghost_fluid.html#ad20a16e6ba0c21d5bd5c6d9ef236ca65">dyno::GhostFluid::DEF_NODE_PORTS</a></div><div class="ttdeci">DEF_NODE_PORTS(GhostParticles&lt; TDataType &gt;, BoundaryParticle, &quot;Initial boundary ghost particles&quot;)</div></div>
 <div class="ttc" id="aclassdyno_1_1_ghost_fluid_html_aea633925b0786024d3e34555bf45a875"><div class="ttname"><a href="classdyno_1_1_ghost_fluid.html#aea633925b0786024d3e34555bf45a875">dyno::GhostFluid::DEF_ARRAY_STATE</a></div><div class="ttdeci">DEF_ARRAY_STATE(Coord, PositionMerged, DeviceType::GPU, &quot;Particle position&quot;)</div><div class="ttdoc">Particle position for both the fluid and solid.</div></div>
 <div class="ttc" id="aclassdyno_1_1_ghost_particles_html"><div class="ttname"><a href="classdyno_1_1_ghost_particles.html">dyno::GhostParticles</a></div><div class="ttdef"><b>Definition</b> <a href="_ghost_particles_8h_source.html#l00008">GhostParticles.h:9</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_particle_fluid_html_afa48f9370686aea2745ebd826397357f"><div class="ttname"><a href="classdyno_1_1_particle_fluid.html#afa48f9370686aea2745ebd826397357f">dyno::ParticleFluid::ParticleFluid</a></div><div class="ttdeci">ParticleFluid()</div><div class="ttdef"><b>Definition</b> <a href="_cuda_2_particle_system_2_particle_fluid_8cpp_source.html#l00029">ParticleFluid.cpp:29</a></div></div>

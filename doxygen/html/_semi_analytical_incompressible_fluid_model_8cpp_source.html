@@ -26,7 +26,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="48.png"/></td>
   <td id="projectalign">
-   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">PeriDyno<span id="projectnumber">&#160;1.2.1</span>
    </div>
   </td>
  </tr>
@@ -151,7 +151,7 @@ $(function(){ initResizable(false); });
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_variable" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#a4ebbdabbddd686e20b1bf5629c6b5640">m_flip</a>.resize(<a class="code hl_variable" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#aa97ec549bb26a7ec3a0f5eb8c33c9c36">m_particle_velocity</a>.size());</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <a class="code hl_variable" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#a7ddf54cda779480fe4adebc17ad7794a">m_meshCollision</a> = std::make_shared&lt;<a class="code hl_class" href="classdyno_1_1_triangular_mesh_constraint.html">TriangularMeshConstraint&lt;TDataType&gt;</a>&gt;();</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        this-&gt;m_particle_position.connect(<a class="code hl_variable" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#a7ddf54cda779480fe4adebc17ad7794a">m_meshCollision</a>-&gt;inPosition());</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        this-&gt;m_particle_position.<a class="code hl_function" href="classdyno_1_1_module.html#a7b0b364bd9c25c4ae9a735533ac3636d">connect</a>(<a class="code hl_variable" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#a7ddf54cda779480fe4adebc17ad7794a">m_meshCollision</a>-&gt;inPosition());</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        this-&gt;m_particle_velocity.connect(<a class="code hl_variable" href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html#a7ddf54cda779480fe4adebc17ad7794a">m_meshCollision</a>-&gt;inVelocity());</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//      this-&gt;m_triangle_vertex.connect(m_meshCollision-&gt;inTriangleVertex());</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//      this-&gt;m_triangle_index.connect(m_meshCollision-&gt;inTriangleIndex());</span></div>
@@ -238,6 +238,7 @@ $(function(){ initResizable(false); });
 <div class="ttc" id="a_semi_analytical_incompressible_fluid_model_8h_html"><div class="ttname"><a href="_semi_analytical_incompressible_fluid_model_8h.html">SemiAnalyticalIncompressibleFluidModel.h</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_group_module_html_a75c637d11880cdbd49de2b13d086701a"><div class="ttname"><a href="classdyno_1_1_group_module.html#a75c637d11880cdbd49de2b13d086701a">dyno::GroupModule::GroupModule</a></div><div class="ttdeci">GroupModule()</div><div class="ttdef"><b>Definition</b> <a href="_group_module_8cpp_source.html#l00010">GroupModule.cpp:10</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_implicit_viscosity_html"><div class="ttname"><a href="classdyno_1_1_implicit_viscosity.html">dyno::ImplicitViscosity</a></div><div class="ttdoc">This class implements an implicit solver for artificial viscosity based on the XSPH method.</div><div class="ttdef"><b>Definition</b> <a href="_implicit_viscosity_8h_source.html#l00025">ImplicitViscosity.h:26</a></div></div>
+<div class="ttc" id="aclassdyno_1_1_module_html_a7b0b364bd9c25c4ae9a735533ac3636d"><div class="ttname"><a href="classdyno_1_1_module.html#a7b0b364bd9c25c4ae9a735533ac3636d">dyno::Module::connect</a></div><div class="ttdeci">bool connect(ModulePort *nPort)</div><div class="ttdef"><b>Definition</b> <a href="_module_8cpp_source.html#l00139">Module.cpp:139</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_neighbor_triangle_query_html"><div class="ttname"><a href="classdyno_1_1_neighbor_triangle_query.html">dyno::NeighborTriangleQuery</a></div><div class="ttdef"><b>Definition</b> <a href="_neighbor_triangle_query_8h_source.html#l00028">NeighborTriangleQuery.h:29</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_particle_integrator_html"><div class="ttname"><a href="classdyno_1_1_particle_integrator.html">dyno::ParticleIntegrator</a></div><div class="ttdef"><b>Definition</b> <a href="_cuda_2_particle_system_2_module_2_particle_integrator_8h_source.html#l00008">ParticleIntegrator.h:9</a></div></div>
 <div class="ttc" id="aclassdyno_1_1_semi_analytical_incompressible_fluid_model_html"><div class="ttname"><a href="classdyno_1_1_semi_analytical_incompressible_fluid_model.html">dyno::SemiAnalyticalIncompressibleFluidModel</a></div><div class="ttdef"><b>Definition</b> <a href="_semi_analytical_incompressible_fluid_model_8h_source.html#l00065">SemiAnalyticalIncompressibleFluidModel.h:66</a></div></div>
